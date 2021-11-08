@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="#ffffff">
+
+    <LinearLayout
+
+        android:id="@+id/record_roll_left"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginTop="23dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/record_roll_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300"
+            android:textColor="@color/pay_button_pressed"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/record_roll_price"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:text="扣除额度"
+            android:textColor="@color/textColorTip"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/record_roll_min_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/record_roll_left"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/start_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已购买3000金币"
+            android:textColor="@color/textColorBlack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/record_roll_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蚂蚁券：myj8892895419375"
+            android:textColor="@color/textColorTip"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/roll_expiration_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="过期时间：2017-10-17 11:03:20"
+            android:textColor="@color/textColorTip"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/record_roll_residue_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩 8 天"
+            android:textColor="@color/textColorRed"
+            android:textSize="11sp" />
+    </LinearLayout>
+</RelativeLayout>

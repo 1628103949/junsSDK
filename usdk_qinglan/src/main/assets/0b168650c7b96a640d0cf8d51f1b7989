@@ -1,0 +1,57 @@
+<cg framecount="98" property="standardaxis:0">
+  <command frame="2" value="show:0|0" order="0" />
+  <command frame="38" value="audio:Assets/GameResources/audio/zhandouyinxiao/fgsl_skill_shifa.mp3" order="1" />
+  <command frame="53" value="show:1|1" order="2" />
+  <command frame="62" value="audio:Assets/GameResources/audio/zhandouyinxiao/fgsl_skill_hudun.mp3" order="3" />
+  <command frame="83" value="hurt:0,100" order="4" />
+  <command frame="93" value="nextbattle:" order="5" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/b_fdgsl_02_zd/b_fdgsl_02_zd.prefab" parent="-1" start="1" end="120" type="11">
+    <command frame="1" value="anim:skill_01,0,3,1,0.3" order="0" />
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <command frame="98" value="anim:guard" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/B_FDGSL_01/B_FGSL_skill.prefab" parent="-1" start="-23" end="130" type="1">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="1" yrotated="2" pos="0,0,-5" scale="1,1,1" rot="0,0.4041041,0,0.914713" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/b_tysn_02/b_tysn_02.prefab" parent="-1" start="1" end="150" type="14">
+    <bezier frame="1" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:guard" order="1" />
+    <command frame="66" value="anim:hit,0,3,1,0.3" order="2" />
+    <command frame="69" value="anim:hit,0,3,1,0.3" order="3" />
+    <command frame="73" value="anim:hit,0,3,1,0.3" order="4" />
+    <command frame="93" value="anim:guard,0,3,1,0.3" order="5" />
+  </cgobject>
+  <cgobject property="copytarget:3" filename="Assets/GameResources/effect/Effect/Shouji_effect/shouji_01/shouji_01.prefab" parent="-1" start="66" end="150" type="1">
+    <bezier frame="66" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0.34,5.05" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:3" filename="Assets/GameResources/effect/Effect/Shouji_effect/shouji_01/shouji_01.prefab" parent="-1" start="69" end="150" type="1">
+    <bezier frame="69" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.44,0.09,5.16" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:3" filename="Assets/GameResources/effect/Effect/Shouji_effect/shouji_01/shouji_01.prefab" parent="-1" start="73" end="150" type="1">
+    <bezier frame="73" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="-0.2,0.57,5.05" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:2" filename="Assets/GameResources/effect/Effect/JueSe_effect/B_FDGSL_01/B_FGSL_attack_dandao.prefab" parent="-1" start="38" end="67" type="1">
+    <bezier frame="38" fov="40" lerp="2" center="4" targetrotate="1" scalez="0" yrotated="1" pos="0.16,1.98,-4.788" scale="1,1,1" rot="0,-0.7071068,-0.7071068,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="42" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0.16,9.87,-4.788" scale="1,1,1" rot="-1.986124E-07,-0.7071068,-0.7071068,1.986124E-07" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <bezier frame="60" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0.17,9.87,-4.788" scale="1,1,1" rot="-1.986124E-07,-0.7071068,-0.7071068,1.986124E-07" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="61" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.339,9.9,5.21" scale="1,1,1" rot="2.006575E-07,-0.7143882,0.6997496,1.965461E-07" handle1="-10,0,0" handle2="10,0,0" order="3" />
+    <bezier frame="67" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.339,0.96,5.28" scale="1,1,1" rot="2.020128E-07,-0.7192145,0.6947882,1.951524E-07" handle1="-10,0,0" handle2="10,0,0" order="4" />
+  </cgobject>
+  <cgobject property="copytarget:2" filename="Assets/GameResources/effect/Effect/JueSe_effect/B_FDGSL_01/B_FGSL_attack_dandao.prefab" parent="-1" start="40" end="71" type="1">
+    <bezier frame="40" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0.5,1.8,-5.4" scale="1,1,1" rot="0.5,0.5,0.5,-0.5" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="44" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0.5,9.83,-5.4" scale="1,1,1" rot="0.5,0.5,0.5,-0.5" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <bezier frame="63" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0.5,9.83,-5.44" scale="1,1,1" rot="0.5,0.5,0.5,-0.5" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="64" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.05,9.8,5.46" scale="1,1,1" rot="-0.4938763,0.4938763,-0.5060496,-0.5060496" handle1="-10,0,0" handle2="10,0,0" order="3" />
+    <bezier frame="70" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.05,1.6,5.44" scale="1,1,1" rot="-0.5046353,0.5046353,-0.4953213,-0.4953213" handle1="-10,0,0" handle2="10,0,0" order="4" />
+  </cgobject>
+  <cgobject property="copytarget:2" filename="Assets/GameResources/effect/Effect/JueSe_effect/B_FDGSL_01/B_FGSL_attack_dandao.prefab" parent="-1" start="39" end="74" type="1">
+    <bezier frame="39" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="-0.13,1.85,-5.48" scale="1,1,1" rot="1.324082E-07,0.7071068,0.7071068,-1.324082E-07" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="43" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="-0.13,9.96,-5.48" scale="1,1,1" rot="1.324082E-07,0.7071068,0.7071068,-1.324082E-07" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <bezier frame="67" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="-0.13,9.96,-5.48" scale="1,1,1" rot="1.324082E-07,0.7071068,0.7071068,-1.324082E-07" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="68" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="-0.25,9.96,4.93" scale="1,1,1" rot="-1.349708E-07,0.7207916,-0.6931519,-1.297952E-07" handle1="-10,0,0" handle2="10,0,0" order="3" />
+    <bezier frame="74" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="-0.25,0.88,4.99" scale="1,1,1" rot="-1.347704E-07,0.7197224,-0.694262,-1.300033E-07" handle1="-10,0,0" handle2="10,0,0" order="4" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/B_FDGSL_01/B_FGSL_skill2.prefab" parent="-1" start="-3" end="99" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="6" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="-0.6532815,0.2705981,0.2705981,0.6532815" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+</cg>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/paycenter_dard_gray"
+    android:gravity="center" >
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dip"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            style="@style/paycenter_text_14_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/pay_ck_style"
+            android:checked="true"
+            android:text="@string/str_paycenter_credit_card" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            style="@style/paycenter_text_14_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/pay_ck_style"
+            android:text="@string/str_paycenter_saving_card" />
+    </RadioGroup>
+
+</LinearLayout>

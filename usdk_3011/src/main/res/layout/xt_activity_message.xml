@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/xt_ll_message"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/xt_color_theme"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/xt_message_tab_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/xt_btn_message_selector"
+                android:drawablePadding="5dip"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="公告"
+                android:textColor="@color/xt_color_white"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/xt_message_bubble_notice"
+                android:visibility="invisible"
+                android:layout_alignRight="@+id/xt_message_tab_notice"
+                android:layout_alignTop="@+id/xt_message_tab_notice"
+                android:background="@drawable/xt_message_selected"
+                android:layout_width="6dip"
+                android:layout_height="6dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/xt_message_tab_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/xt_btn_message_selector"
+                android:drawablePadding="5dip"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="活动"
+                android:textColor="@color/xt_color_white"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/xt_message_bubble_active"
+                android:visibility="invisible"
+                android:layout_alignRight="@+id/xt_message_tab_active"
+                android:layout_alignTop="@+id/xt_message_tab_active"
+                android:background="@drawable/xt_message_selected"
+                android:layout_width="6dip"
+                android:layout_height="6dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/xt_message_tab_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/xt_btn_message_selector"
+                android:drawablePadding="5dip"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="回复"
+                android:textColor="@color/xt_color_white"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/xt_message_bubble_feedback"
+                android:visibility="invisible"
+                android:layout_alignRight="@+id/xt_message_tab_feedback"
+                android:layout_alignTop="@+id/xt_message_tab_feedback"
+                android:background="@drawable/xt_message_selected"
+                android:layout_width="6dip"
+                android:layout_height="6dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/xt_fl_activity_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/xt_ll_message" />
+
+    <FrameLayout
+        android:id="@+id/xt_fl_activity_message_full"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+</RelativeLayout>

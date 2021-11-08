@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/com_lenovo_ll_pay_type"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:id="@+id/com_lenovo_iv_pay_type"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/com_lenovo_tv_pay_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="@string/com_lenovo_pay_type_weixin"
+        android:textColor="@color/com_lenovo_pay_center_text"
+        android:textSize="10sp" />
+
+</LinearLayout>

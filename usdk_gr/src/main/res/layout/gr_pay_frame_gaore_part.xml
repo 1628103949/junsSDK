@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gr_gaore_pay_text_frame" >
+
+        <View
+            android:id="@+id/gr_pay_paymoney_gaore_line"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/gr_pay_paymoney_gaore_line"
+            android:text="充值金额："
+            android:textColor="#838383"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/gr_pay_paymoney_gaore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/gr_pay_paymoney_gaore_line"
+            android:text="x.00元"
+            android:singleLine="true"
+            android:textColor="@color/gr_black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gr_gaore_pay_text_frame" >
+
+        <View
+            android:id="@+id/gr_pay_gamename_gaore_line"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/gr_pay_gamename_gaore_line"
+            android:text="游戏名称："
+            android:textColor="#838383"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/gr_pay_gamename_gaore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/gr_pay_gamename_gaore_line"
+            android:text="xxxxx"
+            android:singleLine="true"
+            android:textColor="@color/gr_black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gr_gaore_pay_text_frame" >
+
+        <View
+            android:id="@+id/gr_pay_rolename_gaore_line"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/gr_pay_rolename_gaore_line"
+            android:text="角色名称："
+            android:textColor="#838383"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/gr_pay_rolename_gaore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/gr_pay_rolename_gaore_line"
+            android:text="xxxxx"
+            android:singleLine="true"
+            android:textColor="@color/gr_black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/gr_pay_choosekind_gaore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择支付方式"
+            android:textColor="@color/gr_black"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/gr_pay_gaore_leftline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/gr_pay_choosekind_gaore"
+            android:background="#C8C8C8" />
+
+        <View
+            android:id="@+id/gr_pay_gaore_rightline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/gr_pay_choosekind_gaore"
+            android:background="#C8C8C8" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/gr_pay_gaore_layout_landscape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/gr_pay_gaore_layout_wechat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" >
+
+
+            <ImageView
+                android:id="@+id/gr_pay_gaore_layout_wechat_way"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/gr_pay_gaore_wechat" />
+
+            <TextView
+                android:id="@+id/gr_pay_gaore_layout_wechat_discount"
+                android:layout_width="35dp"
+                android:layout_height="17.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/gr_pay_gaore_layout_wechat_way"
+                android:background="@drawable/gr_pay_discount_bg"
+                android:textColor="@color/gr_white"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gr_pay_gaore_layout_alipay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:id="@+id/gr_pay_gaore_layout_alipay_way"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/gr_pay_gaore_alipay" />
+
+            <TextView
+                android:id="@+id/gr_pay_gaore_layout_alipay_discount"
+                android:layout_width="35dp"
+                android:layout_height="17.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/gr_pay_gaore_layout_alipay_way"
+                android:background="@drawable/gr_pay_discount_bg"
+                android:gravity="center_horizontal"
+                android:textColor="@color/gr_white"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gr_pay_gaore_kf_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="客服电话：00-00000"
+        android:textColor="#838383"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/gr_pay_sdkversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#838383"
+        android:textSize="14sp" />
+
+</merge>

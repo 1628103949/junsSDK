@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:scrollbarSize="2dp"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbarThumbVertical="@color/juns_scroll_bg"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/header_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/juns_forget_pwd"
+                android:textColor="#151418"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/back_rl"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/juns_fw_btn_bg_tran">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/juns_back" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phone_rl"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/header_rl"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/phone_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/juns_phone" />
+
+            <com.juns.sdk.framework.view.EditText.ClearEditText
+                android:id="@+id/phone_et"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/phone_img"
+                android:background="@android:color/transparent"
+                android:hint="@string/juns_please_input_phone_num"
+                android:imeOptions="flagNoEnterAction"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="#666666"
+                android:textColorHint="#999999"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/code_rl"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/phone_rl"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/code_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/juns_safe" />
+
+            <Button
+                android:id="@+id/code_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/juns_fw_btn_bg_tran"
+                android:gravity="center"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:text="@string/juns_get_phone_code"
+                android:textColor="@color/juns_login_yellow"
+                android:textSize="12sp" />
+
+            <com.juns.sdk.framework.view.EditText.ClearEditText
+                android:id="@+id/code_et"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/code_btn"
+                android:layout_toRightOf="@id/code_img"
+                android:background="@android:color/transparent"
+                android:hint="@string/juns_please_input_phone_code"
+                android:imeOptions="flagNoEnterAction"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:textColor="#666666"
+                android:textColorHint="#999999"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/find_pwd_btn"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/code_rl"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/juns_cancel_btn"
+            android:text="@string/juns_forget_pwd"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</ScrollView>

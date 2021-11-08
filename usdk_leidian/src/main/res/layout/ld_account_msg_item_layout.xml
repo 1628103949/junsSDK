@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ld_dp_15"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/ld_dp_15"
+        android:paddingRight="@dimen/ld_dp_15">
+
+        <TextView
+            android:id="@+id/msg_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:textColor="#7D7D7D"
+            android:textSize="@dimen/ld_sp_10" />
+
+
+        <LinearLayout
+            android:id="@+id/msg_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/msg_tv"
+                style="@style/default_TextView"
+                android:lineSpacingExtra="@dimen/ld_dp_2"
+                android:textColorHighlight="#CCCCCC"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/ld_sp_10" />
+
+            <ImageView
+                android:id="@+id/msg_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ld_dp_10"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/ld_dp_20"
+            android:background="#EFEFEF" />
+    </LinearLayout>
+</FrameLayout>

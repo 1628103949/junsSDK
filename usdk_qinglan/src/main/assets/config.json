@@ -1,0 +1,12 @@
+{
+  "app": {
+    "app_id": "213754",
+    "sdk_type": 1,
+    "game_type": 0,
+    "is_private": true,
+    "screen_orientation": "sensorLandscape",
+    "main_activity": "com.game.chijun.UnityPlayerActivity",
+    "health_service": true,
+    "plugin_sdk": true
+  }
+}

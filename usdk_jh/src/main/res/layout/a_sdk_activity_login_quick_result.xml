@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="306.67dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:minHeight="306.67dp"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/a_sdk_bt_in_bg_whi">
+
+            <RelativeLayout
+                android:id="@+id/rl_in_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23.33dp"
+                android:layout_marginTop="30.33dp"
+                android:layout_marginRight="23.33dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="注册成功！"
+                    android:textColor="@color/yxf_sdk_gray_title"
+                    android:textSize="17.33sp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_in1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_in_title"
+                android:layout_marginTop="36dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_pwd_email_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_in_title"
+                    android:gravity="center_horizontal"
+                    android:text="您的账号"
+                    android:textColor="@color/yxf_sdk_green_result"
+                    android:textSize="14.67sp"/>
+
+                <TextView
+                    android:id="@+id/tv_pwd_email_name_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_in_title"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textColor="@color/yxf_sdk_green_result"
+                    android:textSize="14.67sp"
+                    tools:text="dejavu123456"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_in1"
+                android:layout_marginLeft="26.67dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="26.67dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/yxf_regis_succ_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="该账号可用于登录所有应用XXXX账号系统的游戏，为了您的账号安全请尽快绑定手机"
+                    android:textColor="@color/yxf_sdk_gray_result"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_login_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_title"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="26.67dp"
+                android:layout_marginTop="30.67dp"
+                android:layout_marginRight="26.67dp"
+                android:orientation="vertical"
+                android:paddingBottom="39.67dp">
+
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/a_sdk_lin_shape_red"
+                    android:text="我知道了"
+                    android:textColor="@color/yxf_sdk_gray_title_trasn"
+                    android:textSize="14.67sp"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

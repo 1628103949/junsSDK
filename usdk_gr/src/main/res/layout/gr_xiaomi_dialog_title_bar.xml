@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gr_xiaomi_dialog_top_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="避免过度游戏损害身心健康，请合理安排游戏时间。\n未成年人游戏充值，请在监护人陪同下完成。"
+        android:textColor="#5B4400"
+        android:gravity="center_horizontal"
+        android:textSize="11sp" />
+
+</LinearLayout>

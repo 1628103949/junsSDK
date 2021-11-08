@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_solid_4_ff24252e_ff2e2727_border_1_80ff7700"
+    android:padding="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_sa_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="公告"
+            android:textColor="@color/FF222222"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_sa_close"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/gg_ic_close"
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/tv_sa_title"
+            android:layout_alignTop="@+id/tv_sa_title"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_sa_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/FF8E8E93"/>
+
+    </ScrollView>
+
+</LinearLayout>

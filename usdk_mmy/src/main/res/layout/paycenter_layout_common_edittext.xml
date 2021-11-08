@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pay_black_bg_normal" >
+
+    <com.mumayi.paymentpay.ui.EditTextWithDel
+        android:id="@+id/et_ucenter"
+        style="@style/tip_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="@string/str_paycenter_login_account"
+        android:imeOptions="actionNext"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textColor="@color/paycenter_skin_black_2" />
+
+</LinearLayout>

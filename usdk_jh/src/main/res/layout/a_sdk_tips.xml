@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/framework"
+        android:layout_width="274dp"
+        android:layout_height="143dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/a_sdk_tips_bg"/>
+
+    <TextView
+        android:id="@+id/tips_one"
+        android:layout_width="241.33dp"
+        android:layout_height="wrap_content"
+        android:text="・选择自动后，以后将直接自动登录"
+        android:layout_alignTop="@+id/framework"
+        android:layout_marginTop="25.33dp"
+        android:layout_marginLeft="3.5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/yxf_sdk_white"
+        android:textSize="13.33sp" />
+
+    <TextView
+        android:layout_width="241.33dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tips_one"
+        android:layout_marginTop="14dp"
+        android:layout_alignLeft="@id/tips_one"
+        android:layout_centerHorizontal="true"
+        android:text="・如需取消自动，请点击“悬浮球-个人中心”取消自动登录"
+        android:textColor="#FFFFFFFF"
+        android:textSize="13.33sp" />
+
+    <Button
+        android:id="@+id/tips_close"
+        android:layout_width="wrap_content"
+        android:layout_height="26.67dp"
+        android:layout_marginTop="63.67dp"
+        android:paddingHorizontal="11dp"
+        android:paddingVertical="3.33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tips_one"
+        android:background="@drawable/a_sdk_shape_translate_stroke_yel"
+        android:textColor="@color/yxf_sdk_bt_yel"
+        android:textSize="13.33dp"
+        android:text="我知道了"/>
+
+</RelativeLayout>

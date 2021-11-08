@@ -1,0 +1,135 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.juns.sdk.demo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 如果有视频相关的广告且使用textureView播放，请务必添加，否则黑屏 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:label="JunS Demo"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- JunS sdk components start -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="${applicationId}.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <!-- JunS sdk components end -->
+        <activity
+            android:name="com.anythink.china.activity.TransparentActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.anythink.china.activity.ApkConfirmDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <provider
+            android:name="com.anythink.china.common.ApkFileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/anythink_file_paths" />
+        </provider>
+
+        <receiver android:name="com.anythink.china.common.NotificationBroadcaseReceiver" >
+            <intent-filter>
+                <action android:name="action_notification_click" />
+                <action android:name="action_notification_cancel" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.anythink.china.common.service.ApkDownloadService" />
+        <activity
+            android:name="com.anythink.core.activity.AnyThinkGdprAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.anythink.basead.ui.AdLandscapeActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.anythink.basead.ui.AdPortraitActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.anythink.basead.ui.web.WebLandPageActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <meta-data
+            android:name="LR_TOPON_APPID"
+            android:value="a5f890dad6d1bc" />
+        <meta-data
+            android:name="LR_TOPON_APPKEY"
+            android:value="546074c324e95bedf0b122adcd882cae" />
+        <meta-data
+            android:name="LR_CHANNEL_CLASS"
+            android:value="com.loongcheer.channel.ChannelApi" />
+        <meta-data
+            android:name="LR_SMALL_UID_SIGN"
+            android:value="a" />
+        <meta-data
+            android:name="LR_CHANNEL"
+            android:value="\0" />
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- 广点通开始 -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <provider
+            android:name="com.tramini.plugin.api.TraminiContentProvider"
+            android:authorities="${applicationId}.initprovider"
+            android:exported="false"
+            android:initOrder="100" >
+        </provider>
+        <meta-data
+            android:name="LR_SMALL_APP_ID"
+            android:value="100079" />
+        <meta-data
+            android:name="LR_SMALL_SECRET"
+            android:value="bb691950af04a35d107cb39b781304cb" />
+    </application>
+</manifest>

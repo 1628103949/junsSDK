@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/xt_layout_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/xt_btn_account_bg_shape">
+
+        <TextView
+            android:id="@+id/xt_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="20dip"
+            android:text="请选择支付方式"
+            android:textColor="@color/xt_color_login_select"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/xt_layout_wx_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xt_text_view"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/xt_iv_wx_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="25dip"
+                android:src="@drawable/xt_wx_pay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="25dip"
+                android:layout_toRightOf="@+id/xt_iv_wx_icon"
+                android:text="微信支付"
+                android:textColor="@color/xt_color_login_select"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/xt_iv_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/xt_pay_sel" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/xt_layout_zfb_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xt_layout_wx_pay"
+            android:layout_marginBottom="10dip"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/xt_iv_zfb_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="25dip"
+                android:src="@drawable/xt_zfb_pay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="25dip"
+                android:layout_toRightOf="@+id/xt_iv_zfb_icon"
+                android:text="支付宝支付"
+                android:textColor="@color/xt_color_login_select"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/xt_iv_zfb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/xt_wallet_pay_type_normal" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/xt_tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xt_layout_zfb_pay"
+            android:layout_marginBottom="16dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="28dip"
+            android:background="@drawable/xt_btn_round_f9_shape"
+            android:paddingBottom="9dip"
+            android:paddingLeft="53dip"
+            android:paddingRight="53dip"
+            android:paddingTop="9dip"
+            android:text="@string/xt_cancel"
+            android:textColor="@color/xt_color_login_normal"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/xt_tv_to_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/xt_layout_zfb_pay"
+            android:layout_marginBottom="16dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="28dip"
+            android:background="@drawable/xt_btn_round_orange_shape"
+            android:paddingBottom="9dip"
+            android:paddingLeft="53dip"
+            android:paddingRight="53dip"
+            android:paddingTop="9dip"
+            android:text="@string/xt_string_to_pay"
+            android:textColor="@color/xt_color_white"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

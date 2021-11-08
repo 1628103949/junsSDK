@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="boolean" name="custormattr"/>
+    <color name="background_light_dark">#fff0f0f0</color>
+    <color name="background_tabbar">#222630</color>
+    <color name="black">@color/w1</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorControlActivated">#b8b8b8</color>
+    <color name="colorHafTransparent">#80000000</color>
+    <color name="colorOrange">#F04E0A</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorSplashBackground">@color/white</color>
+    <color name="colorToolbarText">@color/white</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="defaultDivisionLine">@color/w3</color>
+    <color name="defaultHintText">@color/w3</color>
+    <color name="defaultLinkText">#79A7D3</color>
+    <color name="defaultMainText">@color/black</color>
+    <color name="switch_blue">#3370ff</color>
+    <color name="w1">#1f2022</color>
+    <color name="w2">#8f8f90</color>
+    <color name="w3">#cbcbcf</color>
+    <color name="w4">#cd7c08</color>
+    <color name="w5">#ffffff</color>
+    <color name="white">@color/w5</color>
+    <dimen name="jzyx_center_dialog_h">240.00px</dimen>
+    <dimen name="jzyx_center_dialog_w">320.00px</dimen>
+    <dimen name="jzyx_larger_center_dialog_h">520.00px</dimen>
+    <dimen name="jzyx_larger_center_dialog_w">320.00px</dimen>
+    <dimen name="jzyx_popup_dialog_h">420.00px</dimen>
+    <dimen name="jzyx_popup_dialog_w">320.00px</dimen>
+    <dimen name="mohist_utility_large_pad_min_height">700dp</dimen>
+    <dimen name="mohist_utility_large_pad_min_width">540dp</dimen>
+    <string name="app_name">encryptor</string>
+    <string name="hours_ago">%d小时前</string>
+    <string name="just_now">刚刚</string>
+    <string name="minutes_ago">%d分钟前</string>
+    <style name="JZDialog" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:typeface">monospace</item>
+        <!--<item name="android:textSize">25sp</item>-->
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="JZH5Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@color/colorBlack</item>
+    </style>
+    <style name="PopDialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">400dp</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="TranslucentTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="dialogAnimation_bt" parent="android:Animation.Dialog">
+        <!--//进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/jzyx_bottom_to_top</item>
+        <!--//退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/jzyx_top_to_bottom</item>
+    </style>
+    <style name="dialogAnimation_lr" parent="android:Animation.Dialog">
+        <!--//进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/jzyx_left_to_right</item>
+        <!--//退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/jzyx_right_to_left</item>
+    </style>
+</resources>

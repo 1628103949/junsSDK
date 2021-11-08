@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="permissionColorGreen">#67AEF1</color>
+    <color name="permissionColorWhite">#ffffff</color>
+    <color name="permissionBgColorGreenLight">#44A49C</color>
+    <color name="permissionBgColorBlue">#ee447AA4</color>
+    <color name="pb_bg_color">#EBEBEB</color>
+    <color name="pb_transparent">#00000000</color>
+    <color name="pb_line">#CCCCCC</color>
+    <color name="pb_gonelue_nav">#FD9027</color>
+    <color name="pb_gonelue_nav_pressed">#fea44e</color>
+    <color name="pb_gift_state_off">#B8B8B8</color>
+    <color name="pb_area_pickerview_timebtn_nor">#057dff</color>
+    <color name="pb_area_pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pb_area_pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pb_area_pickerview_topbar_title">#000000</color>
+    <color name="pb_area_pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pb_area_pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pb_area_pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="pb_white">#ffffff</color>
+    <color name="pb_easyorange">#FB6A00</color>
+    <color name="pb_deeporange">#ea510f</color>
+    <color name="pb_crimson">#DC143C</color>
+
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pb_area_pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pb_area_pickerview_topbar_paddingleft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pb_area_pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pb_area_pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pb_area_pickerview_topbar_title_textsize">21sp</dimen>
+    <dimen name="pb_editview_bg_height">45dp</dimen>
+    <dimen name="pb_gift_button_height">31dp</dimen>
+
+    <dimen name="pb_login_register_text_fetch_code">11sp</dimen>
+    <dimen name="pb_login_register_text_header_size">13sp</dimen>
+    <dimen name="pb_login_register_text_label_size">15sp</dimen>
+    <dimen name="pb_login_register_text_hint_size">13sp</dimen>
+    <dimen name="pb_login_register_text_jump_size">13sp</dimen>
+    <dimen name="pb_login_register_text_btn_size">15sp</dimen>
+    <dimen name="pb_login_register_frame_height">38dip</dimen>
+
+    <style name="updata_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="pb_gift_dialog" parent="android:Theme.Dialog">
+
+        <!-- 背景颜色及透明程度 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否背景模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置背景模糊的透明度 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <style name="radiostyle">
+        <item name="android:textSize">12dip</item>
+        <item name="android:textColor">#9E9E9E</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="pbDialog">
+
+        <!-- 背景颜色及透明程度 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <string name="permission_storage">存储空间</string>
+    <string name="permission_location">位置信息</string>
+    <string name="permission_camera">拍照权限</string>
+    <string name="permission_dialog_title">开启%s</string>
+    <string name="permission_dialog_msg">为了您能正常使用%s，需要以下权限</string>
+    <string name="permission_title">请允许获取游戏内的必要权限</string>
+    <string name="permission_denied">我们需要获取游戏的权限, 否则您将无法正常使用%2$s</string>
+    <string name="permission_denied_with_naac">"由于%1$s无法获取游戏app权限, 不能正常运行, 请开启权限后再使用。\n\n设置路径: 应用管理->%3$s->权限"</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_ensure">确定</string>
+    <string name="permission_reject">拒绝</string>
+    <string name="permission_btn_next">下一步</string>
+    <string name="permission_go_to_setting">前往设置</string>
+    <string name="pb_protocal">网络服务协议</string>
+    <string name="pb_app_name">library_v4.0</string>
+    <string name="pb_hello_world">Hello world!</string>
+
+    <string name="pb_init_waiting">正在启动,请稍等</string>
+
+    <string name="pb_forget_password"><u>忘记账号/密码</u></string>
+
+
+    <!--布局中的文字-->
+    <attr name="text" format="string" />
+    <!--文字的大小-->
+    <attr name="textSize" format="dimension" />
+    <!--文字的颜色-->
+    <attr name="textColor" format="color" />
+
+    <declare-styleable name="MenuItemView">
+        <!--布局中左边的icon-->
+        <attr name="leftIcon" format="reference" />
+        <!--布局中右边的icon-->
+        <attr name="rightIcon" format="reference" />
+        <!--布局中的文字-->
+        <attr name="text" />
+
+        <!--文字的大小-->
+        <attr name="textSize" />
+
+        <!--文字的颜色-->
+        <attr name="leftTextColor" format="color" />
+        <attr name="rightTextColor" format="color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="RowText">
+        <!--布局中的文字-->
+        <attr name="text" />
+        <!--文字的大小-->
+        <attr name="textSize" />
+        <!--文字的颜色-->
+        <attr name="textColor" />
+    </declare-styleable>
+
+
+    <!--自定义验证码输入布局-->
+    <declare-styleable name="InputCodeLayout">
+        <!--输入框数量-->
+        <attr name="icl_number" format="integer" />
+        <!--输入框宽度-->
+        <attr name="icl_width" format="dimension|reference" />
+        <!--输入框高度-->
+        <attr name="icl_height" format="dimension|reference" />
+        <!--输入框之间的分割线宽度-->
+        <attr name="icl_divideWidth" format="dimension|reference" />
+        <!--输入文字颜色-->
+        <attr name="icl_textColor" format="color|reference" />
+        <!--输入文字大小-->
+        <attr name="icl_textSize" format="dimension|reference" />
+        <!--有焦点时输入框背景-->
+        <attr name="icl_focusBackground" format="reference" />
+        <!--无焦点时输入框背景-->
+        <attr name="icl_unFocusBackground" format="reference" />
+        <!--显示模式-->
+        <attr name="icl_showMode">
+            <enum name="normal" value="0" /><!--正常-->
+            <enum name="password" value="1" /><!--密码-->
+        </attr>
+        <!--输入框显示位置-->
+        <attr name="android:gravity" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+</resources>

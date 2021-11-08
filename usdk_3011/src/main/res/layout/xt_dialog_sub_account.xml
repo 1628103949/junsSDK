@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xt_dialog_bg_shape"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="18dip">
+
+        <TextView
+            android:id="@+id/xt_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xt_change_sun_account"
+            android:textColor="@color/xt_color_login_select"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/xt_tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="3dip"
+            android:text="@string/xt_string_switch_account"
+            android:textColor="@color/xt_color_login_select"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dip"
+            android:drawableRight="@drawable/xt_small_default_select"
+            android:text="勾选"
+            android:textColor="@color/xt_color_login_normal"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:text="下次"
+            android:textColor="@color/xt_color_login_normal"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/xt_tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认登录"
+            android:textColor="@color/xt_color_theme"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="该小号"
+            android:textColor="@color/xt_color_login_normal"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="148dip"
+        android:layout_below="@id/xt_tv_title"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="3dip">
+
+        <ListView
+            android:id="@+id/xt_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:orientation="horizontal">
+
+        <!--添加小号-->
+        <TextView
+            android:id="@+id/xt_tv_add_account"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:background="@drawable/xt_add_sub_account_ring_shape"
+            android:gravity="center"
+            android:paddingBottom="9dip"
+            android:paddingTop="9dip"
+            android:text="@string/xt_string_add_small"
+            android:textColor="@color/xt_color_theme"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/xt_tv_submit"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:background="@drawable/xt_btn_round_orange_shape"
+            android:gravity="center"
+            android:paddingBottom="9dip"
+            android:paddingTop="9dip"
+            android:text="@string/xt_string_enter_now"
+            android:textColor="@color/xt_color_white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

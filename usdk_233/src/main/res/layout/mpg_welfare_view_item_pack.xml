@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mpg_shape_round_rect">
+
+    <LinearLayout
+        android:id="@+id/packInLeft"
+        android:layout_width="96dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mpg_icon_pack" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@id/packInLeft"
+        android:background="#FFE6E6E6" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@id/packInLeft">
+
+        <TextView
+            android:id="@+id/packNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#1B1B1B"
+            android:textSize="14sp"
+            tools:text="新人礼包" />
+
+        <TextView
+            android:id="@+id/packTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/packNameTv"
+            android:layout_alignLeft="@id/packNameTv"
+            android:layout_marginTop="10dp"
+            android:textColor="#999999"
+            android:textSize="10sp"
+            tools:text="2019.1.-2019.12.31" />
+
+        <Button
+            android:id="@+id/packGetBtn"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/mpg_selector_btn_big_round_rect_orange"
+            android:gravity="center"
+            android:text="@string/mpg_get_right_now"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/packConditionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/packGetBtn"
+            android:layout_alignLeft="@id/packGetBtn"
+            android:layout_alignRight="@id/packGetBtn"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textColor="#FF5447"
+            android:textSize="10sp"
+            tools:text="-1000金币" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/packInLeft"
+        android:background="#FFE6E6E6" />
+
+    <TextView
+        android:id="@+id/packContentTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/packInLeft"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:paddingLeft="12dp"
+        android:paddingRight="12sp"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        tools:text="金币*18888、中级经验药水*10、宝箱钥匙*2" />
+
+    <LinearLayout
+        android:id="@+id/codeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@id/packContentTv"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/mpg_shape_round_rect_yellow"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mpg_exchange_code_with_punctuation"
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/codeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FF9500"
+            android:textSize="14sp"
+            tools:text="2DFDFGGG" />
+
+        <Button
+            android:id="@+id/copyBtn"
+            android:layout_width="44dp"
+            android:layout_height="20dp"
+            android:background="@drawable/mpg_selector_btn_big_round_rect_yellow"
+            android:text="@string/mpg_copy_code"
+            android:textColor="#FF9500"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

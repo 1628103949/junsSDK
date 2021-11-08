@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="320dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:id="@+id/ll_bsgamesdk_wiki_game"
+              android:background="?attr/bsgamesdk_main_background"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="bilibili游戏隐私政策提示"
+        android:textColor="#FF20AAE2"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bsgamesdk_full_corner8_f2f4f6"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:layout_weight="1"
+        android:paddingTop="14dp"
+        android:paddingBottom="20dp">
+
+        <com.bsgamesdk.android.widget.GSWikiGameTextView
+            android:id="@+id/tv_bsgamesdk_wiki_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="14dp"
+            android:textColor="#FF505050"
+            android:textSize="12sp" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_bsgamesdk_no_agreement"
+            android:background="@drawable/bsgamesdk_outline_corner24_aeb7c9"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="拒绝"
+            android:textColor="#FF666666"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_bsgamesdk_agreement"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/bsgamesdk_full_corner24_23ade5"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="同意"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

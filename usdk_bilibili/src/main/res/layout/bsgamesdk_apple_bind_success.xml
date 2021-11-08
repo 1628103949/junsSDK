@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="320dp"
+              android:gravity="center"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/bsgamesdk_apple_bind_success_tip"
+        android:textColor="#FF333333"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/bsgamesdk_apple_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="#FF23ADE5"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bsgamesdk_apple_bind_success"
+            android:textColor="#FF3F0000"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginBottom="30dp"
+        android:id="@+id/bagamesdk_apple_bind_success_comfirm"
+        style="?attr/bsgamesdk_confirm_button_style"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/bsgamesdk_apple_bind_success_submit"/>
+</LinearLayout>

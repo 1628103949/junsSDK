@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jzyx_center_dialog_bg"
+    >
+
+        <FrameLayout
+            android:id="@+id/center_webView_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <!--原生内核-->
+                <!--<WebView-->
+                <!--android:id="@+id/webView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+                <!--X5内核-->
+                <com.tencent.smtt.sdk.WebView
+                    android:id="@+id/center_webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <FrameLayout
+                    android:id="@+id/center_loading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorTransparent"
+                    android:visibility="gone">
+                        <ProgressBar
+                            android:id="@+id/center_loading"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:indeterminateBehavior="repeat"
+                            android:background="@color/colorTransparent"
+                            android:indeterminateDrawable="@drawable/jzyx_loading" />
+                </FrameLayout>
+        </FrameLayout>
+
+</RelativeLayout>

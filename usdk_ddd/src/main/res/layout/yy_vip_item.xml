@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="0.5dp">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/coin_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="开通会员，领0个赠币"
+                android:textColor="#4A4A4A"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_below="@id/coin_count_tv"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="3dp"
+                    android:textColor="#4A4A4A"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/validity_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/coin_count_tv"
+                    android:text="会员有效期：7天"
+                    android:textColor="#4A4A4A"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/real_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#F55B43"
+                android:textSize="19sp"
+                android:layout_marginRight="8dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/rule_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#06B4FD"
+                android:drawablePadding="3dp"
+                android:drawableLeft="@drawable/yy_icon_blue_des"
+                android:textSize="11sp"
+                android:text="会员规则"/>
+
+            <TextView
+                android:id="@+id/original_price_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#F55B43"
+                android:textSize="12sp"
+                android:gravity="right"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/pay_tv"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yy_shape_green_corner_dp25_selector"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="立即开通"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#C5C5C5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yy_shape_white_corner_bottom_dp5_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/coin_day_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4A4A4A"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当天不领取则视为放弃"
+                android:textColor="#929292"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赠币不参与累计充值活动"
+                android:textColor="#929292"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/receive_tv"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/yy_shape_green_corner_br_dp5_selector"
+            android:gravity="center"
+            android:text="领取"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

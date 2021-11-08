@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 视频播放的页面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000000">
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/vv"
+        />
+
+    <ProgressBar
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/pb_load"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/load_anim_rotate"
+        />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        tools:text="23"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:background="@drawable/tv_round_bg"
+        android:id="@+id/tv_time"
+        />
+
+    <!-- 底部横幅 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:background="#ddffffff"
+        android:id="@+id/rl_banner"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:id="@+id/iv_head"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_head"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_marginLeft="5dp"
+            tools:text="黎明：奇迹MU"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/tv_name"
+            />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:gravity="center"
+            tools:text="立即下载"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_blue_button"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/btn_click"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_head"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tv_name"
+            android:layout_toLeftOf="@+id/btn_click"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            tools:text="这是一款船新的手游，只需体验3分钟，你就会像我一样，爱上这款游戏"
+            android:textColor="#dd000000"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/tv_content"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        tools:src="@drawable/voice_open"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/rl_banner"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/iv_voice"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/huo_sdk_update_root"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/huo_sdk_update_bg"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/huosdk_uc_update"
+            android:layout_gravity="center"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:id="@+id/huo_sdk_tv_updateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发现新版本"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/huo_sdk_tv_updateContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新版本特性:"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#333333"
+            android:gravity="left"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/huo_sdk_tv_updateDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#666666"
+            android:gravity="left"
+            android:textSize="12sp"
+            android:lineSpacingExtra="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/huo_sdk_up_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ECECEC" />
+
+        <LinearLayout
+            android:id="@+id/ll_btn_root"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/huo_sdk_btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="下次更新"
+                android:background="@null"
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/huo_sdk_mid_line"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="#cccccc" />
+
+            <Button
+                android:id="@+id/huo_sdk_btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="立即更新"
+                android:background="@null"
+                android:textColor="#FF650B" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/huo_sdk_tv_downContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录插件正在努力下载中……"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_margin="5dp"
+            android:visibility="gone" />
+
+        <com.huosdk.gamesdk.view.HorizontalProgressBarWithNumber
+            android:id="@+id/huo_sdk_pb_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            app:progress_text_color="#ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            app:progress_reached_color="#FF6A06"
+            app:progress_unreached_color="#EFEFEF" />
+
+    </LinearLayout>
+</LinearLayout>

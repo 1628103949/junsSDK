@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/paycenter_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/la_paycenter_dialog_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_paycenter_dialog_icon"
+            android:layout_width="3dp"
+            android:layout_height="16dp"
+            android:background="#99CC33" />
+
+
+
+        <TextView
+            android:id="@+id/tv_paycenter_dialog_title"
+            style="@style/paycenter_text_16_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:fadingEdge="horizontal"
+            android:fadingEdgeLength="10dip"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/la_paycenter_dialog_bttom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 主体内容 -->
+
+        <LinearLayout
+            android:id="@+id/la_paycenter_dialog_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <!-- 动态添加进来吧  我不行了 -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/la_paycenter_dialog_button_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="3dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_paycenter_dialog_button_1"
+                style="@style/paycenter_text_14_realwhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/pay_button_cancel_style"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_paycenter_dialog_button_2"
+                style="@style/paycenter_text_14_realwhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/pay_alix_style"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_paycenter_dialog_button_3"
+                style="@style/paycenter_text_14_realwhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/pay_alix_style"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

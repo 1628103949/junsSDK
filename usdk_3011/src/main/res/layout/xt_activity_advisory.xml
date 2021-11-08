@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.xiantu.paysdk.view.spring.SpringView
+        android:id="@+id/xt_advisory_spring_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/xt_color_white">
+
+        <ListView
+            android:id="@+id/xt_advisory_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@color/xt_color_white"
+            android:scrollbars="none" />
+
+    </com.xiantu.paysdk.view.spring.SpringView>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_advisory_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+</RelativeLayout>

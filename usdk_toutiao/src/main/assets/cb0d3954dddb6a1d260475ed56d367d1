@@ -1,0 +1,11 @@
+<cg framecount="100" property="standardaxis:0">
+  <cgobject property="copytarget:2" filename="Assets/GameResources/moudles/A__prefabs/b_tysn_02/b_tysn_02.prefab" parent="-1" start="1" end="100" type="11">
+    <bezier frame="1" fov="40" lerp="2" center="0" targetrotate="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:skill;" order="1" />
+    <bezier frame="80" fov="40" lerp="2" center="4" targetrotate="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/ceshi/Fire.prefab" parent="-1" start="1" end="100" type="1">
+    <bezier frame="1" fov="40" lerp="2" center="0" targetrotate="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="74" fov="40" lerp="2" center="0" targetrotate="0" pos="-7.4,0,5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="1" />
+  </cgobject>
+</cg>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_order_record_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/jolo_white" >
+
+    <ImageView
+        android:id="@+id/game_icon_iv"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/pictures_no"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/jolo_unpaid_order_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/unpaid_order_payment_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/game_name"
+            android:textColor="@color/payment_status_red"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/unpaid_order_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:maxLength="20"
+            android:text="@string/game_name"
+            android:textColor="@color/jolo_light_black22"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/unpaid_order_amount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/unpaid_order_name_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/game_name"
+            android:textColor="@color/jolo_light_black99"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/unpaid_order_discount_amount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/unpaid_order_amount_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/game_name"
+            android:textColor="@color/jolo_light_black99"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/unpaid_order_total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/unpaid_order_discount_amount_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/game_name"
+            android:textColor="@color/jolo_light_black99"
+            android:textSize="11sp" />
+        
+        <TextView
+            android:id="@+id/unpaid_order_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/unpaid_order_total_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/game_name"
+            android:textColor="@color/jolo_light_black99"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/jolo_unpaid_order_cancel_btn"
+            android:layout_width="70dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_unpaid_order_cancel_shape_rect"
+            android:text="@string/jolo_unpaid_order_cancel"
+            android:textColor="@color/jolo_unpaid_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/jolo_unpaid_order_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jolo_unpaid_order_rl"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/jolo_unpaid_order_go_pay_btn"
+            android:layout_width="124dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/btn_unpaid_order_go_pay_shape_rect"
+            android:text="@string/jolo_unpaid_order_go_pay"
+            android:textColor="@color/cmmn_blue"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/jolo_unpaid_order_ll"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/cmmn_gray2" />
+
+</RelativeLayout>

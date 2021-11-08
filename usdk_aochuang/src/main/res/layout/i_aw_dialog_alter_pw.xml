@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/i_aw_bg_shape_ffffff_r20"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/i_aw_bg_shape_eef2f6_r20"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/i_aw_alter_pw"
+                    android:textColor="#5d5d5d"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="51dp"
+                    android:layout_height="51dp"
+                    android:layout_alignParentEnd="true"
+                    android:padding="17dp"
+                    android:src="@drawable/i_aw_icon_close" />
+            </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/i_aw_et_bg"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="21dp">
+
+            <ImageView
+                android:id="@+id/iv_old_show"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/i_aw_icon_pw_hint"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_old_pw"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@id/iv_old_show"
+                android:background="@null"
+                android:hint="@string/i_aw_input_old_pw"
+                android:imeOptions="flagNoExtractUi"
+                android:maxLength="18"
+                android:paddingStart="23dp"
+                android:paddingEnd="23dp"
+                android:singleLine="true"
+                android:textColorHint="#9eb0c7"
+                android:textColor="@color/i_aw_text_default_color"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/i_aw_et_bg"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="21dp">
+
+            <ImageView
+                android:id="@+id/iv_new_show"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/i_aw_icon_pw_hint"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_new_pw"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@id/iv_new_show"
+                android:background="@null"
+                android:hint="@string/i_aw_input_new_pw"
+                android:imeOptions="flagNoExtractUi"
+                android:maxLength="18"
+                android:paddingStart="23dp"
+                android:paddingEnd="23dp"
+                android:singleLine="true"
+                android:textColorHint="#9eb0c7"
+                android:textColor="@color/i_aw_text_default_color"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/i_aw_et_bg"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="21dp">
+
+            <ImageView
+                android:id="@+id/iv_again_show"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/i_aw_icon_pw_hint"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_again_pw"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toStartOf="@id/iv_again_show"
+                android:background="@null"
+                android:hint="@string/i_aw_verify_new_pw"
+                android:imeOptions="flagNoExtractUi"
+                android:maxLength="18"
+                android:paddingStart="23dp"
+                android:paddingEnd="23dp"
+                android:singleLine="true"
+                android:textColorHint="#9eb0c7"
+                android:textColor="@color/i_aw_text_default_color"
+                android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_alter"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="21dp"
+                android:background="@drawable/i_aw_bg_shape_theme_r20"
+                android:gravity="center"
+                android:text="@string/i_aw_alter"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

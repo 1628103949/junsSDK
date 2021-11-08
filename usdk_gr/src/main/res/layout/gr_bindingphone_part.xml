@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/gr_gray_bg_round"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/gr_phone_binding" />
+
+        <EditText
+            android:id="@+id/gr_bindingphone_phone_edit"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="@string/gr_limit_input_num"
+            android:hint="请输入手机号码"
+            android:imeOptions="flagNoExtractUi"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/gr_gray_color"
+            android:textColorHint="@color/gr_gray_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/gr_gray_bg_round"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="11dp"
+                android:src="@drawable/gr_sms" />
+
+            <EditText
+                android:id="@+id/gr_bindingphone_code_edit"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="@string/gr_limit_input_num"
+                android:hint="请输入短信验证码"
+                android:imeOptions="flagNoExtractUi"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/gr_gray_color"
+                android:textColorHint="@color/gr_gray_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/gr_bindingphone_phone_Btn"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/gr_btn_confirm_selector"
+            android:text="获取验证码"
+            android:textColor="@color/gr_white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/gr_bindingphone_gift_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/gr_black"
+            android:visibility="gone"
+            android:text="@string/gr_bind_phone_gift_tips_text" />
+
+        <ImageView
+            android:id="@+id/gr_bindingphone_gift_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:src="@drawable/gr_bind_phone_gift_icon" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gr_bindingphone_code_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gr_btn_confirm_selector"
+        android:gravity="center"
+        android:text="绑     定"
+        android:textColor="@color/gr_white"
+        android:textSize="18sp" />
+
+</merge>

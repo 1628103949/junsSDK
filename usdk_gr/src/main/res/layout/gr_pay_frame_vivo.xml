@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gr_gray_bg_vivo"
+        android:padding="0dp" >
+
+        <!-- 内容 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <include layout="@layout/gr_vivo_dialog_title_bar" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gr_gray_color_ysdk" />
+
+            <include layout="@layout/gr_pay_frame_vivo_part" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

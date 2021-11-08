@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="9dp"
+    android:paddingBottom="9dp"
+    android:background="@color/jolopay_global_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/jolopay_ticket_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/jolo_light_black22"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/jolopay_ticket_des_tv"
+        android:layout_below="@id/jolopay_ticket_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/jolo_light_black99"
+        android:textSize="10sp" />
+    
+    <TextView
+        android:id="@+id/jolopay_ticket_state_tv"
+        android:layout_below="@id/jolopay_ticket_des_tv"
+        android:maxWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/jolo_light_black99"
+        android:textSize="10sp" />
+    
+    <ImageView 
+        android:id="@+id/jolopay_ticket_check_rb"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_width="16dp"     
+        android:layout_height="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/jolopay_unselect_ticket"/>
+    
+    <TextView
+        android:id="@+id/jolopay_ticket_vaule_tv"
+        android:layout_toLeftOf="@id/jolopay_ticket_check_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/jolopay_amount_red"
+        android:textSize="14sp" />
+
+</RelativeLayout>

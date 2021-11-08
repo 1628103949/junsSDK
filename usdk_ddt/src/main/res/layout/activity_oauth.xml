@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_quick_login_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal">
+
+
+    <!--联通默认导航栏，id不可删除-->
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/oauth_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/oauth_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--隐藏联通控件但保留id，防止报错-->
+    <LinearLayout
+        android:id="@+id/oauth_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/navigation_bar_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/other_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/login_before_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/service_and_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/authorize_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/is_agree"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:checked="true"
+        android:visibility="gone" />
+    <!--隐藏联通控件但保留id，防止报错-->
+
+
+    <include
+        android:id="@+id/yd_navigation_rl"
+        layout="@layout/yd_quick_login_navigation_bar" />
+
+
+    <RelativeLayout
+        android:id="@+id/yd_quick_login_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/yd_navigation_rl">
+
+        <ImageView
+            android:id="@+id/oauth_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" />
+
+
+        <EditText
+            android:id="@+id/oauth_mobile_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:background="@null"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:text="152****7777"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:text="中国联通提供认证服务"
+            android:textColor="#989ba4"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/oauth_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/oauth_mobile_et"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="43dp"
+
+            android:background="@drawable/umcsdk_login_btn_bg"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="本机号码一键登录"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/protocol_ll"
+        layout="@layout/yd_quick_login_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>

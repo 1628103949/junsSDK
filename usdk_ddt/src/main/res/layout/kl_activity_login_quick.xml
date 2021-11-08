@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/kl_main_view"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/klbgshape"
+        android:orientation="vertical">
+
+        <com.ddtsdk.ui.view.KLHeadLayoutView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/klshape_bule_top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kl_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="欢迎回到游戏"
+                android:textColor="@color/klfont_white"
+                android:textSize="17sp" />
+
+        </com.ddtsdk.ui.view.KLHeadLayoutView>
+
+        <ListView
+            android:id="@+id/kl_account_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:divider="@null"
+            android:layout_marginRight="22dp"
+            tools:listitem="@layout/kl_item_account_list" />
+
+        <com.ddtsdk.ui.view.KLButtonView
+            android:id="@+id/kl_login"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/klorange_btn_style"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/klfont_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/kl_login_other"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="22dp"
+            android:gravity="center"
+            android:text="其他账号登录"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/color_333333"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

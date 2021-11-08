@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="huouniongame_center_margin_large">20dp</dimen>
+    <dimen name="huouniongame_center_margin_normal">15dp</dimen>
+    <dimen name="huouniongame_center_margin_small">10dp</dimen>
+    <dimen name="huouniongame_center_padding_large">20dp</dimen>
+    <dimen name="huouniongame_center_padding_normal">15dp</dimen>
+    <dimen name="huouniongame_center_padding_small">10dp</dimen>
+    <dimen name="huouniongame_center_share_icon_size">52dp</dimen>
+
+</resources>

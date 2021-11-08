@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xt_color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/xt_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="16dip"
+            android:drawableLeft="@drawable/xt_btn_back"
+            android:drawablePadding="8dip"
+            android:textColor="@color/xt_color_zi_black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.xiantu.paysdk.view.spring.SpringView
+            android:id="@+id/xt_question_info_spring_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/xt_color_white">
+
+            <ListView
+                android:id="@+id/xt_question_info_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="@color/xt_color_white"
+                android:scrollbars="none" />
+        </com.xiantu.paysdk.view.spring.SpringView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/xt_activity_question_info_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/xt_color_white"
+        android:visibility="invisible" />
+</RelativeLayout>

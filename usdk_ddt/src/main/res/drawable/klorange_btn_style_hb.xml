@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--禁用状态  灰色-->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="4.0dip" android:topRightRadius="4.0dip" android:bottomLeftRadius="4.0dip" android:bottomRightRadius="4.0dip" />
+            <gradient android:startColor="#BEBEBE" android:endColor="#BEBEBE" android:angle="270.0" />
+        </shape>
+    </item>
+
+    <!--默认-->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="4.0dip" android:topRightRadius="4.0dip" android:bottomLeftRadius="4.0dip" android:bottomRightRadius="4.0dip" />
+            <gradient android:startColor="@color/other_skin" android:endColor="@color/other_skin" android:angle="270.0" />
+        </shape>
+    </item>
+
+</selector>

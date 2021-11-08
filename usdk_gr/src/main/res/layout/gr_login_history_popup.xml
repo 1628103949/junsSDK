@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dip"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/screen_background_light"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:visibility="invisible"
+        android:src="@drawable/gr_history_dropdown_user" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/gr_history_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:textSize="16sp"
+		android:singleLine="true"
+		android:ellipsize="marquee"
+		android:textColor="@color/gr_input_text_color"
+        android:layout_weight="1" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/gr_account_is_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/gr_img_desc"
+        android:src="@drawable/gr_history_dropdown_select" >
+    </ImageView>
+
+</LinearLayout>

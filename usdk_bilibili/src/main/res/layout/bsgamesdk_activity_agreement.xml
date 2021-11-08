@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bsgamesdk_corners_shape_activity"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bsgamesdk_webpage_content_titler_root"
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/bsgamesdk_agreement_topbar" >
+
+        <ImageButton
+            android:id="@+id/bsgamesdk_id_buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:scaleType="center"
+            android:src="@drawable/bsgamesdk_back_topbar_btn" />
+
+        <TextView
+            android:id="@+id/bsgamesdk_agreement_titler_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/bsgamesdk_id_buttonBack"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:textColor="#ff555555"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/bsgamesdk_linearLayoutLoad"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/bsgamesdk_ProgressBar02"
+            style="@style/bsgamesdk_loading"
+            android:layout_width="71dp"
+            android:layout_height="71dp" />
+
+        <TextView
+            android:id="@+id/bsgamesdk_tvloading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bsgamesdk_loadingTips"
+            android:color="@color/bsgamesdk_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/bsgamesdk_screen_bg_color"
+        android:layout_gravity="center"
+        android:id="@+id/bsgamesdk_linearLayoutLoad_ag"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/bsgamesdk_iv_web_loading_ag"
+            android:background="@drawable/bsgamesdk_animate_progress_captch"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:layout_marginTop="6.67dp"
+            android:id="@+id/bsgamesdk_tv_loading_web_ag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bsgamesdk_loadingTipst" />
+    </LinearLayout>
+
+    <WebView
+        android:visibility="gone"
+        android:id="@+id/bsgamesdk_agreement_webView"
+        style="@style/Bili.no_ovelay"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bsgamesdk_screen_bg_color" />
+    <LinearLayout
+        android:background="@color/bsgamesdk_screen_bg_color"
+        android:id="@+id/bsgamesdk_linearLayoutError_ag"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/bsgamesdk_iv_error_refresh_captch_ag"
+            android:layout_marginTop="16dp"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bsgamesdk_error_web"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bsgamesdk_text_refresh_captch"
+            android:textColor="#FF333333"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+</LinearLayout>

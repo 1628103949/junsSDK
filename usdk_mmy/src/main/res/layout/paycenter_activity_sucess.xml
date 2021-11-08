@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/la_top_title2"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="1dip"
+        android:background="@drawable/pay_black_bg_normal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/iv_top_return2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="11dip"
+            android:background="@drawable/pay_return" />
+
+        <TextView
+            android:id="@+id/tv_top_title2"
+            style="@style/paycenter_text_18_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="105dp"
+            android:text="@string/pay_title" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_pay_sucess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:text="支付成功"
+        android:textColor="#939aa4" />
+
+    <!--
+         <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/pay_line_bg" />
+    -->
+
+    <Button
+        android:id="@+id/bt_pay_back"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/pay_goto"
+        android:text="返回游戏"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门游戏推荐"
+        android:textColor="#939aa4" />
+
+    <GridView
+        android:clickable="false"
+        android:listSelector="#00000000"
+        android:cacheColorHint="#00000000"
+        android:id="@+id/gv_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:columnWidth="50dp"
+        android:horizontalSpacing="20dp"
+        android:numColumns="4"
+        android:verticalSpacing="20dp" 
+        android:stretchMode="columnWidth"
+        >
+    </GridView>
+    
+    <TextView
+        android:layout_marginTop="20dp"
+        style="@style/paycenter_text_14_dark_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dip"
+        android:text="客服邮箱: cz@mumayi.com" />
+
+</LinearLayout>

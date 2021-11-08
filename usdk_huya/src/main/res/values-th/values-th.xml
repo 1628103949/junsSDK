@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="download_cancel">ยกเลิกการดาวน์โหลด</string>
+    <string name="download_compeleted">เสร็จสิ้น</string>
+    <string name="download_failed">การดาวน์โหลดล้มเหลว</string>
+    <string name="download_file_not_exist">ไม่พบมีไฟล์นี้</string>
+    <string name="download_md5_failed">การยืนยันล้มเหลว</string>
+    <string name="download_pause">หยุด</string>
+    <string name="download_waiting">กำลังรอการดาวน์โหลด</string>
+</resources>

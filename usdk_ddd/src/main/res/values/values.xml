@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="comm_split_bg">#C8C8C8</color>
+    <color name="dialog_bg">#ffffff</color>
+    <color name="dialog_btn_cancel_color">#454545</color>
+    <color name="dialog_btn_center_color">#000000</color>
+    <color name="dialog_btn_ok_color">#00AEEF</color>
+    <color name="dialog_button_focus">#ff9a00</color>
+    <color name="dialog_button_nor">#ffffff</color>
+    <color name="dialog_button_press">#DDDDDD</color>
+    <color name="dialog_button_unenable">#95979B</color>
+    <color name="dialog_item_color">#2c2823</color>
+    <color name="dialog_msg_color">#2c2823</color>
+    <color name="dialog_title_color">#8f8f8f</color>
+    <color name="dialog_transhalf_bg">#10000000</color>
+    <color name="yy_c_58B6E3">#58B6E3</color>
+    <string name="app_name">鼎多多游戏</string>
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+    <style name="SdkScreenTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowNoTitle">true</item> <!-- 设置无标题 -->
+        <item name="android:windowFullscreen">?android:windowNoTitle</item> <!-- 是否填充满屏幕，引用android:windowNoTitle 的值 ?android:windowNoTitle，取决于android:windowNoTitle的值-->
+        <item name="android:windowBackground">@color/dialog_transhalf_bg</item><!--设置透明的样式-->
+        <item name="android:windowIsTranslucent">true</item><!--设置透明的样式-->
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+    <style name="libdroid_dialog_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 屏幕背景不变暗 -->
+        <item name="android:backgroundDimAmount">0.1</item>
+    </style>
+    <declare-styleable name="CircleImageView">
+        <attr format="dimension" name="civ_border_width"/>
+        <attr format="color" name="civ_border_color"/>
+        <attr format="boolean" name="civ_border_overlay"/>
+        <attr format="color" name="civ_circle_background_color"/>
+    </declare-styleable>
+    <declare-styleable name="CommonTitleBar">
+        <!-- 标题栏背景 图片或颜色 -->
+        <attr format="color" name="titleBarColor"/>
+        <attr format="reference" name="titleBarDrawable"/>
+        <!-- 填充状态栏 -->
+        <attr format="boolean" name="fillStatusBar"/>
+        <!-- 状态栏颜色 -->
+        <attr format="color" name="statusBarColor"/>
+        <!-- 状态栏模式 -->
+        <attr format="enum" name="statusBarMode">
+            <enum name="dark" value="0"/>
+            <enum name="light" value="1"/>
+        </attr>
+        <!-- 标题栏高度 -->
+        <attr format="dimension" name="titleBarHeight"/>
+        <!-- 显示标题栏分割线 -->
+        <attr format="boolean" name="showBottomLine"/>
+        <!-- 标题栏分割线颜色 -->
+        <attr format="color" name="bottomLineColor"/>
+        <!-- 底部阴影高度 showBottomLine = false时有效 -->
+        <attr format="dimension" name="bottomShadowHeight"/>
+
+        <!-- 左边视图类型 -->
+        <attr name="leftType">
+            <enum name="none" value="0"/>
+            <enum name="textView" value="1"/>
+            <enum name="imageButton" value="2"/>
+            <enum name="customView" value="3"/>
+        </attr>
+        <!-- TextView 文字, 对应leftType_TextView -->
+        <attr format="string" name="leftText"/>
+        <!-- TextView 颜色, 对应leftType_TextView -->
+        <attr format="color" name="leftTextColor"/>
+        <!-- TextView 字体大小, 对应leftType_TextView -->
+        <attr format="dimension" name="leftTextSize"/>
+        <!-- TextView 左边图片, 对应leftType_TextView -->
+        <attr format="reference" name="leftDrawable"/>
+        <!-- TextView 左边padding, 对应leftType_TextView -->
+        <attr format="dimension" name="leftDrawablePadding"/>
+        <!-- ImageView 资源, 对应leftType_ImageBotton -->
+        <attr format="reference" name="leftImageResource"/>
+        <!-- 左边自定义布局, 对应leftType_CustomView -->
+        <attr format="reference" name="leftCustomView"/>
+
+        <!-- 右边视图类型 -->
+        <attr name="rightType">
+            <enum name="none" value="0"/>
+            <enum name="textView" value="1"/>
+            <enum name="imageButton" value="2"/>
+            <enum name="customView" value="3"/>
+        </attr>
+        <!-- TextView 文字, 对应rightType_TextView -->
+        <attr format="string" name="rightText"/>
+        <!-- TextView 颜色, 对应rightType_TextView -->
+        <attr format="color" name="rightTextColor"/>
+        <!-- TextView 字体大小, 对应rightType_TextView -->
+        <attr format="dimension" name="rightTextSize"/>
+        <!-- ImageView 资源, 对应rightType_ImageBotton -->
+        <attr format="reference" name="rightImageResource"/>
+        <!-- 右边自定义布局, 对应rightType_CustomView -->
+        <attr format="reference" name="rightCustomView"/>
+
+        <!-- 中间视图类型 -->
+        <attr name="centerType">
+            <enum name="none" value="0"/>
+            <enum name="textView" value="1"/>
+            <enum name="customView" value="3"/>
+        </attr>
+        <!-- TextView 文字, 对应centerType_TextView -->
+        <attr format="string" name="centerText"/>
+        <!-- TextView 颜色, 对应centerType_TextView -->
+        <attr format="color" name="centerTextColor"/>
+        <!-- TextView 字体大小, 对应centerType_TextView -->
+        <attr format="dimension" name="centerTextSize"/>
+        <!-- TextView 跑马灯效果, 默认打开, 对应centerType_TextView -->
+        <attr format="boolean" name="centerTextMarquee"/>
+        <!-- 子标题TextView 文字, 对应centerType_TextView -->
+        <attr format="string" name="centerSubText"/>
+        <!-- 子标题TextView 颜色, 对应centerType_TextView -->
+        <attr format="color" name="centerSubTextColor"/>
+        <!-- 子标题TextView 字体大小, 对应centerType_TextView -->
+        <attr format="dimension" name="centerSubTextSize"/>
+        <!-- 中间自定义布局, 对应centerType_CustomView -->
+        <attr format="reference" name="centerCustomView"/>
+    </declare-styleable>
+</resources>

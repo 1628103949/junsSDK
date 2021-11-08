@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/dialog_content_layout"
+        android:layout_width="@dimen/ld_base_dialog_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ld_dialog_base_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/notice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/ld_dp_15"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="#131313"
+                android:textSize="@dimen/ld_sp_17" />
+
+            <ImageView
+                android:id="@+id/dialog_close"
+                android:layout_width="@dimen/ld_dp_28"
+                android:layout_height="@dimen/ld_dp_28"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/ld_dp_6"
+                android:layout_marginRight="@dimen/ld_dp_6"
+                android:padding="@dimen/ld_dp_5"
+                android:src="@drawable/ld_charge_close_img" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/notice_desc"
+            style="@style/default_TextView"
+            android:layout_margin="15dp"
+            android:lineSpacingExtra="3dp" />
+
+        <ImageView
+            android:id="@+id/notice_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xt_color_line_f9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--头部标题-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:textColor="@color/xt_color_white">
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="30dip"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dip"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="7dip"
+                    android:layout_height="12dip"
+                    android:src="@drawable/xt_btn_back" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/xt_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/xt_string_my_wallet"
+                android:textColor="@color/xt_color_login_select"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/xt_btn_account_white_bg_shape"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="17dip"
+                android:background="@drawable/xt_wallet_bg">
+
+                <TextView
+                    android:id="@+id/xt_tv_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginTop="15dip"
+                    android:text="@string/xt_string_balance"
+                    android:textColor="@color/xt_color_wallet_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/xt_tv_over"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="8dip"
+                    android:layout_toRightOf="@+id/xt_tv_text"
+                    android:text="0.00"
+                    android:textColor="@color/xt_color_white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/xt_tv_text_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/xt_tv_over"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginTop="15dip"
+                    android:text="@string/xt_string_welfare_coin"
+                    android:textColor="@color/xt_color_wallet_text"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/xt_tv_welfare_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/xt_tv_over"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="15dip"
+                    android:layout_toRightOf="@+id/xt_tv_text_two"
+                    android:drawablePadding="8dip"
+                    android:drawableRight="@drawable/xt_wallet_hint"
+                    android:text="0.00"
+                    android:textColor="@color/xt_color_wallet_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/xt_tv_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="7dip"
+                    android:gravity="center"
+                    android:text="@string/xt_string_recharge"
+                    android:textColor="@color/xt_color_white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="20dip"
+                    android:text="@string/xt_string_wallet_details"
+                    android:textColor="@color/xt_color_login_select"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/xt_tv_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="14dip"
+                    android:drawablePadding="5dip"
+                    android:drawableRight="@drawable/xt_wallet_down"
+                    android:padding="10dip"
+                    android:text="@string/xt_string_all"
+                    android:textColor="@color/xt_color_theme"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.xiantu.paysdk.view.spring.SpringView
+                    android:id="@+id/xt_wallet_spring"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dip">
+
+                    <ListView
+                        android:id="@+id/xt_wallet_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@null"
+                        android:scrollbars="none" />
+                </com.xiantu.paysdk.view.spring.SpringView>
+
+
+                <include layout="@layout/xt_layout_no_data" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/xt_frame_layout_wallet_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/hyberry_fragment_bg"
+        android:orientation="vertical">
+
+        <com.huya.berry.login.common.widgets.CommonTopBar
+            android:id="@+id/ctb_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout_real_name_failed"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/hyberry_real_name_failed_tips" />
+
+                <TextView
+                    android:id="@+id/real_name_failed_context"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/hyberry_color_666666"
+                    android:textSize="14sp"
+                    tools:text="已连续认证失败10次， \n请在Y小时后重新提交认证" />
+
+                <TextView
+                    android:id="@+id/btn_real_name_failed_have_known"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/hyberry_common_button_circle_bg"
+                    android:gravity="center"
+                    android:text="@string/hyberry_have_known"
+                    android:textColor="@color/hyberry_white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_real_name_continue"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/hyberry_login_certification_tip"
+                    android:textColor="@color/hyberry_color_666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_real_name_failed_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/hyberry_color_999999"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    tools:text="连续认证失败X次后Y小时内将无法登录游戏，您还有Z次机会，请谨慎提交。" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/hyberry_common_frame"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_certification_name"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/hyberry_icon_card"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hyberry_login_certification_name_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/hyberry_color_333333"
+                        android:textColorHint="@color/hyberry_graycc"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/hyberry_common_frame"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_certification_number"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:digits="@string/hyberry_alphabet_and_number"
+                        android:drawableLeft="@drawable/hyberry_icon_card_number"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hyberry_login_certification_number_hint"
+                        android:imeOptions="actionDone"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:textColor="@color/hyberry_color_333333"
+                        android:textColorHint="@color/hyberry_graycc"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_space"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_login_certification_ignore"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_marginEnd="@dimen/mtp_dp12"
+                        android:layout_weight="1"
+                        android:background="@drawable/hyberry_comn_shape_btn_stroke_normal"
+                        android:gravity="center"
+                        android:text="@string/hyberry_login_certification_ignore"
+                        android:textColor="@color/hyberry_color_333333"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_login_certification_submit"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/hyberry_common_button_circle_bg"
+                        android:gravity="center"
+                        android:text="@string/hyberry_login_certification_submit"
+                        android:textColor="@color/hyberry_white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

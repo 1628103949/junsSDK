@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dip" >
+
+    <ImageView
+        android:id="@+id/icon_finegame"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:layout_margin="14dip"
+        android:layout_marginBottom="0dip"
+        android:layout_marginTop="0dip"
+        android:background="@null"
+        android:src="@drawable/pay_finegame_icon" />
+
+    <TextView
+        android:id="@+id/app_name_finegame"
+        style="@style/user_center_fine_game_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dip"
+        android:layout_alignBaseline="@id/icon_finegame"
+        android:layout_toRightOf="@id/icon_finegame"/>
+
+    <TextView
+        android:id="@+id/tv_official"
+        android:layout_width="16dip"
+        android:layout_height="16dip"
+        android:layout_alignBaseline="@id/app_name_finegame"
+        android:layout_marginLeft="6dip"
+        android:layout_toRightOf="@id/app_name_finegame"
+        android:background="@drawable/pay_icon_background_offical_green"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_hot"
+        android:layout_width="16dip"
+        android:layout_height="16dip"
+        android:layout_alignBaseline="@id/tv_official"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="4dip"
+        android:layout_toRightOf="@id/tv_official"
+        android:background="@drawable/pay_icon_background_hot_orange"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_finegame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name_finegame"
+        android:layout_marginTop="4dip"
+        android:layout_toRightOf="@id/icon_finegame"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_finegame_appsize"
+            style="@style/paycenter_text_16_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="102.5m" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="10dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:background="#949da9" />
+
+        <TextView
+            android:id="@+id/tv_finegame_app_downcount"
+            style="@style/paycenter_text_16_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/app_introduction_finegame"
+        style="@style/tip_gray2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_finegame"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@id/icon_finegame"
+        android:ellipsize="end"
+        android:layout_marginRight="65dip"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_app_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/pay_button_selector_download"
+        android:textColor="#606062"
+        android:text="@string/str_paycenter_item_finegame_btn_app_download" />
+
+    <com.mumayi.paymentuserinfo.ui.ProgressBarWithTextGame
+        android:id="@+id/progressbar"
+        style="@style/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="12dip"
+        android:layout_below="@id/icon_finegame"
+        android:layout_marginTop="-6dip" />
+
+</RelativeLayout>

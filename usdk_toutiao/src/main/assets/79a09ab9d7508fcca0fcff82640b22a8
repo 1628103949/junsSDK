@@ -1,0 +1,9 @@
+<cg framecount="212" property="standardaxis:0">
+  <cgobject property="copytarget:0" filename="CGCamera" parent="-1" start="1" end="500" type="0">
+    <bezier frame="1" fov="40" lerp="0" center="0" targetrotate="0" scalez="0" yrotated="0" pos="-164.8,15.3,17.4" scale="1,1,1" rot="0.01703331,0.6997737,-0.02441877,0.7137439" handle1="-41.17328,8.109065,-2.699434" handle2="41.17328,-8.109064,2.699458" order="0" />
+    <bezier frame="88" fov="40" lerp="0" center="0" targetrotate="0" scalez="0" yrotated="0" pos="-95.64972,6.6689,-119.9504" scale="1,1,1" rot="0.1431935,0.2775256,-0.04187271,0.9490637" handle1="-45.90057,-5.932013,-20.36572" handle2="45.90059,5.93201,20.3657" order="1" />
+    <bezier frame="150" fov="40" lerp="0" center="0" targetrotate="0" scalez="0" yrotated="0" pos="41.96875,27.10156,-92.26953" scale="1,1,1" rot="0.1536597,-0.3204285,0.05275933,0.9332367" handle1="-57.49874,-17.36806,14.89446" handle2="57.49873,17.36806,-14.89446" order="2" />
+    <bezier frame="197" fov="40" lerp="0" center="0" targetrotate="0" scalez="0" yrotated="0" pos="148.5,81.95451,22.1" scale="1,1,1" rot="0.1505326,-0.6804519,0.1458763,0.7021719" handle1="-48.33517,-5.358206,25.05423" handle2="48.33517,5.358207,-25.05423" order="3" />
+    <bezier frame="209" fov="40" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="83.2,15.3,19.75" scale="1,1,1" rot="-0.104906,0.6884473,-0.101661,-0.7104225" handle1="-10,0,0" handle2="10,0,0" order="4" />
+  </cgobject>
+</cg>

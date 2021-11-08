@@ -1,0 +1,142 @@
+<resources>
+
+    <!-- 登陆strings -->
+    <string name="ssc_login_success">，欢迎进入游戏</string>
+    <string name="ssc_register_title">登录/注册</string>
+    <string name="ssc_login_title">登录</string>
+    <string name="ssc_hint_phone">请输入您的手机号</string>
+    <string name="ssc_hint_num">请输入验证码</string>
+    <string name="ssc_get_num">获取验证码</string>
+    <string name="ssc_hint_user">请输入您的账号/手机号</string>
+    <string name="ssc_hint_pwd">请输入密码</string>
+    <string name="ssc_login_phone">验证码登录</string>
+    <string name="ssc_login_pwd">密码登录</string>
+    <string name="ssc_forget_pwd">忘记密码</string>
+    <string name="ssc_login">登录</string>
+    <string name="ssc_area_default">中国大陆&#160;&#160;+86</string>
+    <string name="ssc_area_select">国际区号</string>
+    <string name="ssc_area_select_tip">暂不支持其他地区手机号登录/注册</string>
+    <string name="ssc_onekey_login">一键登录</string>
+    <string name="ssc_onekey_err">请检查移动数据网络是否打开且可用</string>
+    <string name="ssc_onekey_err2">登录失败，请检查移动网络是否可用再重试，\n或选择其他方式登录</string>
+    <string name="ssc_protocol_title">用户协议</string>
+    <string name="ssc_protocol_agree">同意</string>
+    <string name="ssc_protocol_denial">拒绝</string>
+    <string name="ssc_uname_null">请输入用户名和密码</string>
+    <string name="ssc_uname_short">用户名少于6位</string>
+    <string name="ssc_pwd_short">密码少于6位</string>
+    <string name="ssc_http_error">网络异常，请稍后重试</string>
+    <!-- 账号列表strings -->
+    <string name="ssc_other_login">其他账号登录</string>
+    <string name="ssc_add_user">添加新账号</string>
+    <string name="ssc_del_user">删除记录</string>
+    <string name="ssc_del_user_tips">是否确定删除该账号的登录记录?</string>
+    <string name="ssc_complete">完成</string>
+    <string name="ssc_del_users_tip">本地已无账号记录，请输入账号登陆</string>
+    <!-- 客服strings -->
+    <string name="ssc_contact_us_title">联系客服</string>
+    <string name="ssc_chat_ol">在线咨询</string>
+    <string name="ssc_sc_phone">客服电话</string>
+    <string name="ssc_company_left">关注微信公众号“</string>
+    <string name="ssc_company">77游侠</string>
+    <string name="ssc_company_right">”随时了解问题处理进度</string>
+    <string name="ssc_chat_qq_null">客服QQ未开放，请使用其他方式联系我们</string>
+    <string name="ssc_start_qq_error">您的手机未安装QQ，请安装后使用该功能</string>
+    <string name="ssc_call_tel_null">客服电话未开放，请使用其他方式联系我们</string>
+    <string name="ssc_call_us_error">拉起拨号界面异常，请自行拨号联系我们</string>
+    <string name="ssc_start_wx_tips1">是否打开微信搜索“77游侠”公众号关注?</string>
+    <string name="ssc_start_wx_tips2">微信号“77游侠”复制成功，是否打开微信搜索公众号关注?</string>
+    <string name="ssc_start_wx_error">您的手机未安装微信，请安装后使用该功能</string>
+    <string name="ssc_emulator_tips">启动失败，游戏暂不支持模拟器运行。若系统检测有误，请联系客服，上报您的错误编码：</string>
+    <!-- 忘记密码提示strings -->
+    <string name="ssc_bind_phone">您的帐号是否已绑定手机号?若已绑定可通过手机号+验证码登录;若未绑定则需联系客服通过人工申诉找回密码</string>
+    <string name="ssc_is_bind">已绑定手机号</string>
+    <string name="ssc_is_bind_tip">已绑定手机，请使用手机验证码登录</string>
+    <string name="ssc_not_bind">未绑定手机号</string>
+    <string name="ssc_cancel">取消</string>
+    <string name="ssc_positive">确定</string>
+    <string name="ssc_open">打开</string>
+    <!-- 绑定手机strings -->
+    <string name="ssc_bind_tip">您的账号当前尚未绑定手机号，为保障您的账号安全，避免遗忘账号密码导致无法登录，请尽快绑定手机号</string>
+    <string name="ssc_bind_not">暂不绑定</string>
+    <string name="ssc_bind_now">立即绑定</string>
+    <string name="ssc_bind_title">绑定手机号</string>
+    <string name="ssc_bind_text">绑定手机号后，可以直接通过手机号+验证码登录</string>
+    <string name="ssc_bind">绑定</string>
+    <string name="ssc_phone_error">手机号格式错误</string>
+    <string name="ssc_send_success">验证码已发送，请注意查收</string>
+    <string name="ssc_send_again">重新发送</string>
+    <string name="ssc_bind_success">绑定成功</string>
+    <!-- 实名认证strings -->
+    <string name="ssc_real_name_title">实名信息登记</string>
+    <string name="ssc_real_name_tips">根据《关于防止未成年人沉迷网络游戏的通知》请登记本人实名信息，实名信息将作为帐号归属的依据</string>
+    <string name="ssc_real_name_tips2">尊敬的玩家，由于您未满18岁，您的账号已经被纳入防沉迷系统。每日22时至次日8时无法登陆游戏；节假日每日累计不得超过3小时，满3小时后系统将强制下线，无法通过下线重新登录；非节假日每日累计不得超过1.5小时，满1.5小时后系统将强制下线，无法通过下线重新登录。对8岁以下用户不开放充值功能；对8岁至16岁用户每周限制充值不超过50元，每月限制充值不超过200元；对16岁至18岁用户每周限制充值不超过100元，每月限制充值不超过200元。以此保护未成年人，防止沉迷，使其下线休息、学习。您的剩余游戏时间还有：%1$s。</string>
+    <string name="ssc_real_name_tips3">查看防沉迷系统详细规则</string>
+    <string name="ssc_real_name_remain">实名信息一但登记，无法随意修改。确定信息真实无误吗?</string>
+    <string name="ssc_real_name">姓&#160;&#160;&#160;&#160;名：</string>
+    <string name="ssc_real_name_hint">请填写真实姓名</string>
+    <string name="ssc_id_card">证件号：</string>
+    <string name="ssc_id_card_hint">请填写真实有效身份证号</string>
+    <string name="ssc_real_name_do">确认登记</string>
+    <string name="ssc_real_name_success">登记成功</string>
+    <string name="ssc_over">我知道了</string>
+    <string name="ssc_play_fail_tips1">游戏已断开。根据未成年人防沉迷系统规定，18岁以下用户非节假日游戏时长须少于90分钟</string>
+    <string name="ssc_play_fail_tips2">游戏已断开。根据未成年人防沉迷系统规定，18岁以下用户节假日游戏时长须少于3小时</string>
+    <string name="ssc_play_fail_tips3">游戏已断开。根据未成年人防沉迷系统规定，对18岁以下用户在22:00至8:00之间不提供游戏服务</string>
+    <string name="ssc_time_remaining">未实名用户可试玩60分钟，剩余：%s分钟</string>
+    <string name="ssc_time_remaining2">今日游戏时长将满。剩余时间：9分钟。</string>
+    <string name="ssc_time_over_tip1">60分钟试玩已结束，完成实名认证后方可游玩，是否进行实名认证？</string>
+    <string name="ssc_time_over_tip2">游戏已断开。根据未成年防沉迷系统规定，未进行实名认证的用户，游戏时长须少于60分钟，是否进行实名认证？</string>
+    <string name="ssc_pay_tip1">充值失败。根据未成年防沉迷系统规定，对未进行实名认证的用户，不提供充值服务，是否进行实名认证？</string>
+    <string name="ssc_left_no">否</string>
+    <string name="ssc_right_ok">是</string>
+    <!-- 悬浮窗strings -->
+    <string name="ssc_float_menu_account">账户</string>
+    <string name="ssc_float_menu_wxono">公众号</string>
+    <string name="ssc_float_menu_gift">礼包</string>
+    <string name="ssc_float_menu_customer">客服</string>
+    <string name="ssc_float_menu_setting">设置</string>
+    <string name="ssc_auto_login">自动登录</string>
+    <string name="ssc_float">悬浮窗</string>
+    <string name="ssc_float_off_tips">关闭悬浮窗后，悬浮窗将消失，下次登录游戏才会再次显示</string>
+    <string name="ssc_exit_tips">确认退出游戏吗？</string>
+    <string name="ssc_exit_yes">退出</string>
+    <string name="ssc_exit_no">再玩玩</string>
+    <!-- 悬浮窗2strings -->
+    <string name="ssc_web_net_error">网络不给力，请重新加载</string>
+    <string name="ssc_btn_retry">重新加载</string>
+    <string name="ssc_kefu_qq">客服QQ：</string>
+    <string name="ssc_kefu_wxo">微信公众号：</string>
+    <string name="ssc_no_wx_appId">参数错误，请联系客服</string>
+    <string name="ssc_wx_login_cancel">微信授权已取消</string>
+    <string name="ssc_wx_login_denied">微信授权已拒绝</string>
+
+    <string name="ssp_web_title">选择支付方式</string>
+
+    <color name="ssc_dialog_bg">#F9FAFC</color>
+    <color name="ssc_edit">#282828</color>
+    <color name="ssc_edit_hint">#C0C0C0</color>
+    <color name="ssc_main_color">#FAC239</color>
+    <color name="ssc_main_color_click">#F3AD00</color>
+    <color name="ssc_web_sta_bg">#EEEEED</color>
+
+    <style name="ssc_left_fade">
+        <item name="android:windowEnterAnimation">@anim/ssc_in_hor</item>
+        <item name="android:windowExitAnimation">@anim/ssc_out_hor</item>
+    </style>
+
+    <style name="ssc_bottom_fade">
+        <item name="android:windowEnterAnimation">@anim/ssc_in_ver</item>
+        <item name="android:windowExitAnimation">@anim/ssc_out_ver</item>
+    </style>
+
+    <style name="ssc_dialog_frag" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+</resources>

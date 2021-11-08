@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ld_dialog_base_bg"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:includeFontPadding="false"
+            android:text="游戏更新"
+            android:textColor="#333333"
+            android:textSize="@dimen/ld_base_title_size_sp" />
+
+        <TextView
+            android:id="@+id/update_desc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="发现重大版本更新，请进行更新"
+            android:textColor="#666666"
+            android:textSize="@dimen/ld_base_one_level_text_size_sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/progress_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginTop="10dp"
+                    android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+                    android:max="100"
+                    android:progressDrawable="@drawable/ld_download_progressbar_yellow" />
+
+                <TextView
+                    android:id="@+id/progress_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="0%"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/ld_base_one_level_text_size_sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/download_btn"
+                style="@style/ld_dialog_base_button"
+                android:layout_width="150dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ld_org_btn_selector"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="更新"
+                android:textColor="#131313" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

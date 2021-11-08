@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>admin control</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+</head>
+<body>
+<form>
+    {{#switchs}}
+    <input type="checkbox" name="{{key}}" onClick="handleSwitch(this);" {{#state}}checked{{/state}}/>{{key}}<br>
+    {{/switchs}}
+
+    <input type="button" value="cause gc" onClick="handleGC();"/>
+    
+    <div id="cpuContainer" style="min-width: 200px; height: 200px; margin: 0 auto"></div>
+</form>
+<script>
+function handleSwitch(cb) {
+    var client = new XMLHttpRequest();
+    client.open("PUT", "/api/switch?name=" + cb.name + "&state=" + cb.checked, true);
+    client.send();
+}
+function handleGC() {
+    var client = new XMLHttpRequest();
+    client.open("POST", "/api/method/gc", true);
+    client.send();
+}
+$(function () {
+    $(document).ready(function() {
+        Highcharts.setOptions({
+            global: {
+                useUTC: false
+            }
+        });
+    
+        var chart;
+        $('#cpuContainer').highcharts({
+            chart: {
+                type: 'spline',
+                animation: Highcharts.svg, // don't animate in old IE
+                marginRight: 10,
+                events: {
+                    load: function() {
+                        // set up the updating of the chart each second
+                        var series0 = this.series[0];
+                        var series1 = this.series[1];
+                        setInterval(function() {
+                            var clientCurrent = new XMLHttpRequest();
+                            clientCurrent.onreadystatechange = function()
+                            {
+                                if (clientCurrent.readyState==4 && clientCurrent.status==200)
+                                {
+                                    var x = (new Date()).getTime(), // current time
+                                        y = parseInt(clientCurrent.responseText, 10);
+                                    series0.addPoint([x, y], true, true);
+                                }
+                            };
+                            clientCurrent.open("POST", "/api/status/cpu/current", true);
+                            clientCurrent.send();
+                            var clientSystem = new XMLHttpRequest();
+                            clientSystem.onreadystatechange = function()
+                            {
+                                if (clientSystem.readyState==4 && clientSystem.status==200)
+                                {
+                                    var x = (new Date()).getTime(), // current time
+                                        y = parseInt(clientSystem.responseText, 10);
+                                    series1.addPoint([x, y], true, true);
+                                }
+                            };
+                            clientSystem.open("POST", "/api/status/cpu/system", true);
+                            clientSystem.send();
+                        }, 1000);
+                    }
+                }
+            },
+            title: {
+                text: 'random live cpu usage'
+            },
+            xAxis: {
+                type: 'datetime',
+                tickPixelInterval: 150
+            },
+            yAxis: {
+                title: {
+                    text: 'Value'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                formatter: function() {
+                        return '<b>'+ this.series.name +'</b><br/>'+
+                        Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) +'<br/>'+
+                        Highcharts.numberFormat(this.y, 2) + "%";
+                }
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'left',
+                verticalAlign: 'top',
+                borderWidth: 0
+            },
+            exporting: {
+                enabled: true
+            },
+            series: [{
+                name: 'current usage',
+                data: (function() {
+                    var data0 = [],
+                        time0 = (new Date()).getTime(),
+                        i0;
+    
+                    for (i0 = -29; i0 <= 0; i0++) {
+                        data0.push({
+                            x: time0 + i0 * 1000,
+                            y: 0
+                        });
+                    }
+                    return data0;
+                })()
+            },
+            {
+                name: 'system usage',
+                data: (function() {
+                    var data1 = [],
+                        time1 = (new Date()).getTime(),
+                        i1;
+    
+                    for (i1 = -29; i1 <= 0; i1++) {
+                        data1.push({
+                            x: time1 + i1 * 1000,
+                            y: 0
+                        });
+                    }
+                    return data1;
+                })()
+            }]
+        });
+    }); 
+});
+</script>
+</body>
+</html>

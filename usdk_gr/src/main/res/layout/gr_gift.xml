@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gr_login_bg_red"
+        android:padding="0dp" >
+
+        <!-- 内容 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+            <include layout="@layout/gr_dialog_title_bar"/>
+            <!-- 通行证、密码 -->
+			<include layout="@layout/gr_gift_part"/>
+        </LinearLayout>
+        
+    </FrameLayout>
+
+</RelativeLayout>

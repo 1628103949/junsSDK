@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 实现转动的效果，循环显示图片 -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"   
+	android:oneshot="false">    
+	<item android:drawable="@drawable/mo9_loading1" android:duration="80"></item>
+	<item android:drawable="@drawable/mo9_loading2" android:duration="80"></item>
+	<item android:drawable="@drawable/mo9_loading3" android:duration="80"></item>
+	<item android:drawable="@drawable/mo9_loading4" android:duration="80"></item>
+	<item android:drawable="@drawable/mo9_loading5" android:duration="80"></item>
+	<item android:drawable="@drawable/mo9_loading6" android:duration="80"></item>
+	<item android:drawable="@drawable/mo9_loading7" android:duration="80"></item>
+	<item android:drawable="@drawable/mo9_loading8" android:duration="80"></item>
+	<item android:drawable="@drawable/mo9_loading9" android:duration="80"></item>
+	<item android:drawable="@drawable/mo9_loading10" android:duration="80"></item>
+	<item android:drawable="@drawable/mo9_loading11" android:duration="80"></item>
+	<item android:drawable="@drawable/mo9_loading12" android:duration="80"></item>
+	<item android:drawable="@drawable/mo9_loading13" android:duration="80"></item>
+</animation-list>

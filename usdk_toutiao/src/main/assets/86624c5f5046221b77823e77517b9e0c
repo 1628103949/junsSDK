@@ -1,0 +1,41 @@
+<cg framecount="100" property="standardaxis:0">
+  <command frame="1" value="show:0|0" order="0" />
+  <command frame="14" value="audio:Assets/GameResources/audio/zhandouyinxiao/cybc_skill.mp3" order="1" />
+  <command frame="23" value="hurt:0,20" order="2" />
+  <command frame="40" value="hurt:0,20" order="3" />
+  <command frame="60" value="show:1|1" order="4" />
+  <command frame="62" value="shake:4" order="5" />
+  <command frame="64" value="hurt:0,60" order="6" />
+  <command frame="92" value="nextbattle:" order="7" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/s_cybc_01/s_cybc_01.prefab" parent="-1" start="0" end="100" type="11">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:skill,0,3,1,0.3" order="1" />
+    <bezier frame="10" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="22" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,3.78" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="3" />
+    <bezier frame="46" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,3.78" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="4" />
+    <bezier frame="52" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,2.59,3.94" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="5" />
+    <bezier frame="60" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,3.94" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="6" />
+    <bezier frame="77" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,3.94" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="7" />
+    <bezier frame="89" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="8" />
+    <command frame="100" value="anim:guard,0,3,1,0.3" order="9" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/a_jll_01/a_jll_01.prefab" parent="-1" start="1" end="100" type="15">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="22" value="anim:hit,0,3,1,0.3" order="1" />
+    <command frame="37" value="anim:hit,0,3,1,0.3" order="2" />
+    <command frame="61" value="anim:hit,0,3,1,0.3" order="3" />
+    <command frame="64" value="anim:hit,0,3,1,0.3" order="4" />
+    <command frame="84" value="anim:guard,0,3,1,0.3" order="5" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/CYBC/Cybc_skill.prefab" parent="-1" start="1" end="100" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,3.32" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="CGCamera" parent="-1" start="1" end="100" type="0">
+    <bezier frame="1" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="13" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <bezier frame="23" fov="53.6" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="1.77,3.27,-0.01" scale="1,1,1" rot="0.2287499,-0.2704101,0.06995639,0.9325546" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="43" fov="25.6" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="8.16,3.9,1.53" scale="1,1,1" rot="0.1330376,-0.5676367,0.09591737,0.8067772" handle1="-10,0,0" handle2="10,0,0" order="3" />
+    <bezier frame="59" fov="56.4" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="4.93,5.18,1.42" scale="1,1,1" rot="0.13847,-0.5021935,0.08735134,0.8491158" handle1="-10,0,0" handle2="10,0,0" order="4" />
+    <bezier frame="60" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="5" />
+  </cgobject>
+</cg>

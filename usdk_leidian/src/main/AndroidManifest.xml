@@ -1,0 +1,114 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bswhl.ld">
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序写入外部存储，如SD卡上写文件 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取手机状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 访问wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 读取地理位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 悬浮窗口权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 可以悬浮在桌面上 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 安卓7.0安装权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- 获取设备信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 下载Apk -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+" />
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:label="JunS Demo"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- JunS sdk components start -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="${applicationId}.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <!-- JunS sdk components end -->
+
+        <!--安装apk-->
+        <provider
+            android:name="com.ld.sdk.ApkFileProvider"
+            android:authorities="${applicationId}.ld.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:ignore="Instantiatable">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/ld_sdk_apk_file" />
+        </provider>
+
+        <!-- ldsdk begin -->
+        <activity
+            android:name="com.ld.sdk.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:launchMode="singleTask"
+            android:theme="@style/LoginStyle"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!--悬浮窗服务-->
+        <service
+            android:name="com.ld.sdk.account.ui.floatview.FlyingBallService"
+            android:exported="false" />
+
+        <!-- 雷电支付 -->
+        <activity
+            android:name="com.ld.sdk.charge.ChargeActivity"
+            android:configChanges="locale|mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="true">
+        </activity>
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <!--配置游戏渠道信息-->
+        <meta-data
+            android:name="GAME_ID"
+            android:value="929" />
+        <meta-data
+            android:name="CHANNEL_ID"
+            android:value="14400" />
+        <meta-data
+            android:name="SUN_CHANNEL_ID"
+            android:value="14415" />
+    </application>
+</manifest>

@@ -1,0 +1,78 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.szac.bswhl.quick">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- OAID sdk -->
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+    <uses-permission android:name="freemme.permission.msa" />
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:label="JunS Demo"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="juns_game_action" />
+                <category android:name="juns_game_category" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- JunS sdk components start -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="${applicationId}.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <!-- JunS sdk components end -->
+        <activity
+            android:screenOrientation="landscape"
+            android:name="com.juns.channel.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true">
+        </meta-data>
+        <service
+            android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService"
+            android:label="dexopt"
+            android:process=":dexopt" >
+        </service>
+        <meta-data android:name="AW_CHANNEL_ID" android:value="sdk07504" />
+        <activity android:name=".wxapi.WXEntryActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+    </application>
+</manifest>

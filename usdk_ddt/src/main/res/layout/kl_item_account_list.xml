@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/klshape_quick_login">
+
+        <ImageView
+            android:id="@+id/kl_head_iv"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/kl_icon_user_header" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/kl_head_iv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/kl_account_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="111111"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/kl_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@mipmap/kl_icon_time"
+                android:drawablePadding="4dp"
+                android:text="上次登录"
+                android:textColor="#758ab1"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/kl_often_tv"
+            android:layout_width="39dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:background="@mipmap/kl_icon_quick_usually"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:text="常用"
+            android:visibility="gone"
+            android:textColor="@color/klfont_white"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/kl_open_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:src="@mipmap/kl_icon_open" />
+
+    </RelativeLayout>
+</LinearLayout>

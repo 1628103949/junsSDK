@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <!--项目-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/msg_layout"
+            style="@style/ld_account_menu_layout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/ld_base_account_page_img_size"
+                android:layout_height="@dimen/ld_base_account_page_img_size"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ld_user_center_msg_log" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="消息"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/ld_base_user_center_item_title" />
+
+            <TextView
+                android:id="@+id/new_msg_dot"
+                android:layout_width="6dip"
+                android:layout_height="6dip"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ld_new_msg_dot"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/msg_right_img"
+                android:layout_width="@dimen/ld_base_right_img"
+                android:layout_height="@dimen/ld_base_right_img"
+                android:src="@drawable/ld_menu_spread_img" />
+        </LinearLayout>
+
+        <View style="@style/base_line" />
+
+        <LinearLayout
+            android:id="@+id/money_bag_layout"
+            style="@style/ld_account_menu_layout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/ld_base_account_page_img_size"
+                android:layout_height="@dimen/ld_base_account_page_img_size"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ld_user_center_coupons_log" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="钱包"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/ld_base_user_center_item_title" />
+
+            <TextView
+                android:id="@+id/coupons_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="#848484"
+                android:textSize="@dimen/ld_base_two_level_text_size" />
+
+            <ImageView
+                android:id="@+id/coupons_right_img"
+                android:layout_width="@dimen/ld_base_right_img"
+                android:layout_height="@dimen/ld_base_right_img"
+                android:src="@drawable/ld_menu_spread_img" />
+        </LinearLayout>
+
+        <View style="@style/base_line" />
+
+        <LinearLayout
+            android:id="@+id/gift_layout"
+            style="@style/ld_account_menu_layout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/ld_base_account_page_img_size"
+                android:layout_height="@dimen/ld_base_account_page_img_size"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ld_user_center_gift_log" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="礼包"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/ld_base_user_center_item_title" />
+
+            <TextView
+                android:id="@+id/gift_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="#848484"
+                android:textSize="@dimen/ld_base_two_level_text_size" />
+
+            <ImageView
+                android:id="@+id/gift_right_img"
+                android:layout_width="@dimen/ld_base_right_img"
+                android:layout_height="@dimen/ld_base_right_img"
+                android:src="@drawable/ld_menu_spread_img" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/game_task_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F1F1F1"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/game_task"
+            style="@style/ld_account_menu_layout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/ld_base_user_center_icon"
+                android:layout_height="@dimen/ld_base_user_center_icon"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ld_user_center_order_log" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="游戏任务"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/ld_base_user_center_item_title" />
+
+            <TextView
+                android:id="@+id/game_task_complete"
+                android:layout_width="6dip"
+                android:layout_height="6dip"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ld_new_msg_dot"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="@dimen/ld_base_right_img"
+                android:layout_height="@dimen/ld_base_right_img"
+                android:src="@drawable/ld_menu_spread_img" />
+        </LinearLayout>
+
+        <View style="@style/base_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/qq_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/two_title"
+                    android:textSize="@dimen/ld_base_user_center_item_title" />
+
+                <TextView
+                    android:id="@+id/version_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/two_title"
+                    android:textSize="@dimen/ld_base_user_center_item_title" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/quitAccountPageView"
+                android:layout_width="@dimen/ld_base_button_width"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ld_user_center_button_bg"
+                android:gravity="center"
+                android:text="返回游戏"
+                android:textColor="#666666"
+                android:textSize="@dimen/ld_base_one_level_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="80dip">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:divider="@color/xt_color_line_e1"
+        android:dividerHeight="0.5dip"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:background="@drawable/xt_login_et_bg"/>
+</LinearLayout>

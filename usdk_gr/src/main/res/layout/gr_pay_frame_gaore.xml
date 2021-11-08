@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gr_white"
+        android:padding="0dp" >
+
+        <!-- 内容 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <include layout="@layout/gr_gaore_dialog_title_bar" />
+            <include layout="@layout/gr_pay_frame_gaore_part" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

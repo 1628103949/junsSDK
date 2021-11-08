@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/suggest_tv"
+        android:text="建议使用 手机注册 ，账户更安全"
+        android:textSize="9sp"
+        android:gravity="center"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:textColor="@color/color_333333"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/kleditlogin"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/kl_edit_user"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/user_icon"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请设置您的账号信息(6~10个英文或数字组成)"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_889099"
+            android:paddingLeft="16dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/kleditlogin"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/kl_edit_pwd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/pwd_icon"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请设置密码(6-12个字母或数字)"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_889099"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/kl_pwd_see"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/kl_edit_pwd"
+            android:src="@mipmap/kl_icon_nosee"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/kleditlogin"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/kl_pwd_again"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/pwd_icon"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请重新输入密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_889099"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/kl_pwd_see_again"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/kl_edit_pwd"
+            android:src="@mipmap/kl_icon_nosee"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

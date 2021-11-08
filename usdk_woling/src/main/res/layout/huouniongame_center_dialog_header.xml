@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+    <TextView
+        android:id="@+id/huouniongame_center_dialog_header_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        tools:text="请输入本次邀请体验激活码"
+        style="@style/huouniongame_center_base_text.singleLine" />
+
+    <ImageView
+        android:id="@+id/huouniongame_center_dialog_header_close"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/huouniongame_center_margin_normal"
+        android:src="@drawable/huouniongame_center_close" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="#979797" />
+</FrameLayout>

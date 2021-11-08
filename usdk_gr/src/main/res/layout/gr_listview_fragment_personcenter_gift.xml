@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:descendantFocusability="blocksDescendants"
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp" >
+
+        <com.gaore.mobile.defineview.RoundCornerImageView
+            android:id="@+id/gr_gift_gameicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/gr_floatview_msg_check" />
+
+        <TextView
+            android:layout_marginTop="-3dp"
+            android:id="@+id/gr_tv_gift_name"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@+id/gr_btn_getgift"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/gr_gift_gameicon"
+            android:gravity="left"
+            android:textColor="#FF000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/gr_tv_gift_surplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gr_tv_gift_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"
+            android:layout_toRightOf="@+id/gr_gift_gameicon"
+            android:text="剩余：1000"
+            android:textColor="#FF988B93"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/gr_tv_gift_deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gr_tv_gift_surplus"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/gr_gift_gameicon"
+            android:text="截止日期：2020-2-22"
+            android:textColor="#FF988B93"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/gr_btn_getgift"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/gr_btn_download_selector"
+            android:gravity="center"
+            android:text="领取"
+            android:textColor="#ffffffff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="60dp"
+        android:background="@color/gr_theme_color" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/gr_xuanxian" />
+
+</RelativeLayout>

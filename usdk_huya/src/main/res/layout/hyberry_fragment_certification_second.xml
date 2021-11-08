@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/hyberry_fragment_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/mtp_dp10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="提示"
+            android:textColor="@color/hyberry_black"
+            android:textSize="@dimen/mtp_dp20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/mtp_dp12"
+            android:text="若您不进行实名认证，将受到防沉迷系统限制，影响您正常游戏时长，为不影响您的游戏体验，请尽快填写哦～"
+            android:textColor="@color/hyberry_black"
+            android:textSize="@dimen/mtp_dp16" />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_ignore"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/hyberry_comn_shape_btn_unenabled"
+                android:gravity="center"
+                android:text="下次再说"
+                android:textColor="@color/hyberry_color_white"
+                android:textSize="15sp" />
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/hyberry_comn_selector_corner_btn"
+                android:gravity="center"
+                android:text="返回填写"
+                android:textColor="@color/hyberry_color_white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

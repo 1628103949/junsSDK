@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/i_aw_bg_shape_ffffff_r20"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/i_aw_logo_red" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/i_aw_switch_account"
+        android:textColor="#464747"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center"
+        android:text="@string/i_aw_hint_switch_account"
+        android:textColor="#464747"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="27dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:background="@drawable/i_aw_bg_shape_ededed_r20"
+            android:gravity="center"
+            android:text="@string/i_aw_cancel"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:textColor="@color/i_aw_theme_color"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_toEndOf="@id/tv_cancel"
+            android:background="@drawable/i_aw_bg_shape_theme_r20"
+            android:gravity="center"
+            android:text="@string/i_aw_confirm"
+            android:layout_marginStart="24dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:textColor="#fefeff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="download_cancel">تم إلغاء التنزيل</string>
+    <string name="download_compeleted">الانتهاء</string>
+    <string name="download_failed">فشل التنزيل</string>
+    <string name="download_file_not_exist">الملف غير موجود</string>
+    <string name="download_md5_failed">فشل التحقق</string>
+    <string name="download_pause">توقف مؤقت</string>
+    <string name="download_waiting">في انتظار التنزيل</string>
+</resources>

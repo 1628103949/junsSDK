@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.gaore.mobile.widget.GrRoundBGRelativeLayout
+            android:id="@+id/gr_personcenter_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gr_custom_background="@drawable/gr_gray_bg"/>
+
+        <ImageView
+            android:id="@+id/gr_msg_part_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/gr_background_sy" />
+        <LinearLayout
+            android:id="@+id/gr_ll_login_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#00ffffff"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/gr_img_desc"
+                android:src="@drawable/gr_login_remote" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="正在加载..." />
+        </LinearLayout>
+    </RelativeLayout>
+
+</merge>

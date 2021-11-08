@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/xt_edit_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="26dip"
+        android:background="@drawable/xt_login_et_bg"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:gravity="center_vertical"
+        android:hint="@string/xt_string_register_account"
+        android:paddingBottom="16dip"
+        android:paddingLeft="18dip"
+        android:paddingRight="18dip"
+        android:paddingTop="16dip"
+        android:singleLine="true"
+        android:textColor="@color/xt_color_login_select"
+        android:textColorHint="@color/xt_color_login_normal"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="16dip"
+        android:background="@drawable/xt_login_et_bg"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/xt_edit_password"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:gravity="center_vertical"
+            android:hint="@string/xt_string_setting_password"
+            android:inputType="textPassword"
+            android:paddingBottom="16dip"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+            android:paddingTop="16dip"
+            android:singleLine="true"
+            android:textColor="@color/xt_color_login_select"
+            android:textColorHint="@color/xt_color_login_normal"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:id="@+id/xt_rl_look_pwd_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="16dip"
+            android:src="@drawable/xt_password_unlook" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/xt_pwd_rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="12dip"
+        android:text="@string/xt_password_rule"
+        android:textColor="@color/xt_color_login_normal"
+        android:textSize="10sp" />
+
+
+    <TextView
+        android:id="@+id/xt_tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="16dip"
+        android:background="@drawable/xt_btn_round_orange_shape"
+        android:gravity="center"
+        android:paddingBottom="11dip"
+        android:paddingTop="11dip"
+        android:text="@string/xt_register"
+        android:textColor="@color/xt_color_white"
+        android:textSize="14sp" />
+
+</LinearLayout>

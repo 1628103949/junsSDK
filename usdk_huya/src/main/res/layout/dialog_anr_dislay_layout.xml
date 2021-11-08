@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_anr_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#11666666"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/dialog_anr_title"
+        android:textColor="#000000"
+        android:textSize="19sp" />
+
+
+    <ScrollView
+        android:id="@+id/dialog_anr_scroll_v"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/dialog_anr_title">
+
+        <TextView
+            android:id="@+id/dialog_anr_content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:singleLine="false"
+            android:layout_marginBottom="50dp"
+            android:scrollbars="none" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/dialog_anr_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/dialog_anr_scroll_v"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_anr_wait_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#9983D0F0"
+            android:text="@string/dialog_anr_btn_wait_text"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/dialog_anr_cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#9983D0F0"
+            android:text="@string/dialog_anr_btn_cancel_text"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+</RelativeLayout>

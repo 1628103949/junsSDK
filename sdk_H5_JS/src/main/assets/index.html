@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>君尚微端框架Demo</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui">
+    <script type="text/javascript">
+
+        <!--登录成功回调 请验证登录-->
+        function loginSuccessLisenner(userId,userName,token){
+             //实现回调
+             document.getElementById("content").innerHTML +=
+                 ("<br\>"+'登录成功'+"<br\>"+'userId:'+userId+"<br\>"+'userName:'+userName+"<br\>"+'token:'+token);
+        }
+
+        <!--登录失败回调 -->
+        function loginFailLisenner(code,msg){
+             //实现回调
+             document.getElementById("content").innerHTML +=
+                 ("<br\>"+'登录失败'+"<br\>"+'code:'+code+"<br\>"+'msg:'+msg);
+        }
+
+        <!--用户注销 请返回游戏登录界面-->
+        function logoutLisenner(){
+             document.getElementById("content").innerHTML +=
+                 ("<br\>"+'用户注销');
+        }
+
+        <!--支付回调 实际支付已服务端为准-->
+        function payLisenner(code,msg){
+             document.getElementById("content").innerHTML +=
+                 ("<br\>"+code+msg);
+        }
+
+        <!--角色上传回调-->
+        function submitLisenner(code,msg){
+             document.getElementById("content").innerHTML +=
+                 ("<br\>"+code+msg);
+        }
+
+
+        <!--获取配置回调-->
+        function configLisenner(game_id,pt_id,refer,sdk_version,sdkDeviceId){
+             document.getElementById("content").innerHTML +=
+                 ("<br\>"+game_id+pt_id+refer+sdk_version+"<br\>"+sdkDeviceId);
+        }
+
+         <!--获取屏幕信息回调-->
+        function screenLisenner(left,right,top,bottom){
+             document.getElementById("content").innerHTML +=
+                 ("<br\>"+'屏幕信息'+"<br\>"+'left:'+left+"<br\>"+'right:'+right+"<br\>"+'top:'+top+"<br\>"+'bottom:'+bottom);
+             var testDiv = document.getElementById("btPower");
+             var topCss = top/window.devicePixelRatio
+             testDiv.style.marginTop = topCss+"px";
+        }
+
+        var jsonPay = {
+      'cpOrderId': Date.parse(new Date())+'',
+      'amount': 1,
+      'orderName': '一大袋钻石',
+      'ext': 'CP支付扩展字段',
+      'roleId': '100011',
+      'roleName': '海绵宝宝爱睡觉',
+      'roleLevel': 10,
+      'serverId': '100000',
+      'serverName': '开天辟地',
+      'roleVip': 1,
+      'roleBalance': 100,
+      'rate': 10
+    }
+    var jsonSubmit = {
+      'type': 1,
+      'roleId': '100011',
+      'roleName': '海绵宝宝爱睡觉',
+      'roleLevel': 10,
+      'serverId': '100000',
+      'serverName': '开天辟地',
+      'roleVip': 1,
+      'roleBalance': 1,
+      'party': '1',
+      'roleCreateTime': Date.parse(new Date())+''
+    }
+
+    </script>
+</head>
+<body>
+    <div id="btPower">
+        <li><a onClick="JunS.login()">点击登录</a></li><br/>
+        <li><a onClick="JunS.logout()">点击注销</a></li><br/>
+        <li><a onClick="JunS.pay(JSON.stringify(jsonPay))">点击支付</a></li><br/>
+        <li><a onClick="JunS.submit(JSON.stringify(jsonSubmit))">点击上报</a></li><br/>
+        <li><a onClick="JunS.getConfig()">获取配置</a></li><br/>
+        <li><a onClick="JunS.getScreen()">获取刘海配置,适配刘海屏</a></li><br/>
+    </div>
+    <div id="content" >内容显示</div>
+</body>
+</html>

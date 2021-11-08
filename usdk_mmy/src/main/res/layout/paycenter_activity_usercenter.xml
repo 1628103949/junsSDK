@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/paycenter_little_gray_white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/la_usercenter_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/paycenter_layout_common_title" />
+
+    <include
+        android:id="@+id/la_usercenter_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/la_usercenter_title"
+        layout="@layout/paycenter_layout_usercenter_top" />
+
+    <com.mumayi.paymentpay.ui.ScrollLayout
+        android:id="@+id/sl_usercenter"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/la_usercenter_tab" >
+    </com.mumayi.paymentpay.ui.ScrollLayout>
+
+</RelativeLayout>

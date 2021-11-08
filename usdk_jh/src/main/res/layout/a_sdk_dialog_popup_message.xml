@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/a_sdk_round_anim_whi_yel">
+
+    <!--登陆后弹窗消息-->
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/a_sdk_small_placeholder"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="现在充值打五折嘻嘻嘻嘻，嗝~五" />
+
+    <ImageButton
+        android:id="@+id/img_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a_sdk_voucher_right"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="5dp"
+        android:background="@null"
+        android:layout_marginRight="5dp" />
+
+</LinearLayout>

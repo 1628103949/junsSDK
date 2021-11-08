@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/klfont_white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <ImageView
+                    android:id="@+id/kl_backiv"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="15dp"
+                    android:src="@mipmap/kl_icon_back_black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="支付中心"
+                    android:textColor="@color/other_skin"
+                    android:textSize="20sp" />
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:id="@+id/kl_closeiv"
+                    android:background="@mipmap/kl_close" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:background="@color/klgrey_bg"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="商品名称: "
+                        android:textColor="@color/klfont_black_96"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kl_produtenametv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="钻石"
+                        android:textColor="@color/klfont_black_96"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="充值账号: "
+                        android:textColor="@color/klfont_black_96"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kl_usernametv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123456"
+                        android:textColor="@color/klfont_black_96"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付金额: "
+                        android:textColor="@color/klfont_black_96"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kl_amouttv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="999"
+                        android:textColor="@color/other_skin"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 元"
+                        android:textColor="@color/klfont_black_96"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择支付方式"
+                    android:textColor="@color/klfont_black_0d"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/kl_cardgrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/klfont_white"
+                android:columnWidth="50dp"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:listSelector="@color/klfont_white"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" >
+            </GridView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="温馨提示 "
+                    android:textColor="@color/klfont_black_96"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                 >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="充值若遇问题,请点击【充值QQ:"
+                    android:textColor="@color/klfont_black_96"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/qq_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1507287451"
+                    android:textColor="@color/other_skin"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="】反馈。"
+                    android:textColor="@color/klfont_black_96"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客服QQ:"
+                    android:textColor="@color/klfontgrey_black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="99999999"
+                    android:id="@+id/kl_qqtv"
+                    android:textColor="@color/klfontgrey_black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客服电话:"
+                    android:textColor="@color/klfontgrey_black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8888888"
+                    android:id="@+id/kl_iphoentv"
+                    android:textColor="@color/klfontgrey_black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

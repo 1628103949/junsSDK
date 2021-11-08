@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingTop="10dp">
+
+    <com.bsgamesdk.android.widget.APScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="100"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp">
+
+                <EditText
+                    android:id="@+id/bsgamesdk_edit_apple_name"
+                    style="?attr/bsgamesdk_basic_editText_style"
+                    android:layout_width="fill_parent"
+                    android:completionThreshold="1"
+                    android:dropDownHeight="200dp"
+                    android:hint="@string/bsgamesdk_username_login_hit"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:maxLength="32"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="70dp"
+                    android:textSize="12dp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:src="@drawable/bsgamesdk_user_new"/>
+
+                <ImageView
+                    android:id="@+id/bsgamesdk_id_more_user_apple"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bsgamesdk_arrow_down"/>
+
+                <ImageButton
+                    android:id="@+id/bsgamesdk_apple_usernameDel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_toLeftOf="@id/bsgamesdk_id_more_user_apple"
+                    android:background="@null"
+                    android:contentDescription="@string/bsgamesdk_delbtn"
+                    android:src="@drawable/bsgamesdk_pic_del"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="36dp">
+
+                <EditText
+                    android:id="@+id/bsgamesdk_edit_password_apple"
+                    style="?attr/bsgamesdk_basic_editText_style"
+                    android:hint="@string/bsgamesdk_password_login_hit"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="32"
+                    android:paddingLeft="30dp"
+                    android:textSize="12dp"/>
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:src="@drawable/bsgamesdk_lock"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:id="@+id/bsgamesdk_tv_apple_reg"
+                    style="?attr/bsgamesdk_text_no_image_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="bottom"
+                    android:text="@string/bsgamesdk_apple_register"
+                    android:textColor="@color/bsgamesdk_text_99A2AA"
+                    android:textSize="14sp"/>
+
+
+                <TextView
+                    android:id="@+id/bsgamesdk_tv_apple_findpwd"
+                    style="?attr/bsgamesdk_text_no_image_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="bottom"
+                    android:text="@string/bsgamesdk_login_forgetPwd"
+                    android:textColor="@color/bsgamesdk_text_99A2AA"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <Button
+                android:layout_marginTop="36dp"
+                android:id="@+id/bsgamesdk_apple_bind"
+                style="?attr/bsgamesdk_confirm_button_style"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="@string/bsgamesdk_apple_bind"/>
+
+
+        </LinearLayout>
+
+
+    </com.bsgamesdk.android.widget.APScrollView>
+
+
+</LinearLayout>

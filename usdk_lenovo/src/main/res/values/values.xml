@@ -1,0 +1,1503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ckyc_hfcx_province">
+        <item>北京市</item>
+        <item>上海市</item>
+        <item>天津市</item>
+        <item>重庆市</item>
+        <item>河北省</item>
+        <item>山西省</item>
+        <item>辽宁省</item>
+        <item>吉林省</item>
+        <item>黑龙江省</item>
+        <item>江苏省</item>
+        <item>浙江省</item>
+        <item>安徽省</item>
+        <item>福建省</item>
+        <item>江西省</item>
+        <item>山东省</item>
+        <item>河南省</item>
+        <item>湖北省</item>
+        <item>湖南省</item>
+        <item>广东省</item>
+        <item>海南省</item>
+        <item>四川省</item>
+        <item>贵州省</item>
+        <item>云南省</item>
+        <item>陕西省</item>
+        <item>甘肃省</item>
+        <item>青海省</item>
+        <item>广西</item>
+        <item>内蒙古</item>
+        <item>西藏</item>
+        <item>宁夏</item>
+        <item>新疆</item>
+    </string-array>
+    <string-array name="ckyc_hfcx_province_id">
+        <item>23</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>9</item>
+        <item>21</item>
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>16</item>
+        <item>14</item>
+        <item>15</item>
+        <item>24</item>
+        <item>17</item>
+        <item>13</item>
+        <item>10</item>
+        <item>12</item>
+        <item>1</item>
+        <item>11</item>
+        <item>29</item>
+        <item>26</item>
+        <item>28</item>
+        <item>18</item>
+        <item>22</item>
+        <item>25</item>
+        <item>20</item>
+        <item>27</item>
+        <item>8</item>
+        <item>30</item>
+        <item>19</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="ckyc_unknow_oper">
+        <item>中国移动</item>
+        <item>中国联通</item>
+        <item>中国电信</item>
+    </string-array>
+    <string-array name="shenzhoufu_charge_card_title">
+	    <item>移动卡</item>
+	    <item>联通卡</item>
+	    <item>电信卡</item>
+	</string-array>
+    <color name="color_text_black">#191919</color>
+    <color name="color_text_gray">#626262</color>
+    <color name="color_text_register">#999999</color>
+    <color name="com_lenovo_loading_dialog_bg">#80000000</color>
+    <color name="com_lenovo_lsf_account_setting_item_function_description_font_color">#a3a3a3</color>
+    <color name="com_lenovo_lsf_account_setting_subtitle_font_color">#757575</color>
+    <color name="com_lenovo_lsf_appcolor">#fafafa</color>
+    <color name="com_lenovo_lsf_change_account_function_description_font_color">#757575</color>
+    <color name="com_lenovo_lsf_content_background">#ffffff</color>
+    <color name="com_lenovo_lsf_content_text_font_color">#191919</color>
+    <color name="com_lenovo_lsf_devider_between_title_and_content">#d1d1d1</color>
+    <color name="com_lenovo_lsf_divider_color">#3381c2</color>
+    <color name="com_lenovo_lsf_edittext_hint_font_color">#d1d1d1</color>
+    <color name="com_lenovo_lsf_error_tip_font_color">#ff0000</color>
+    <color name="com_lenovo_lsf_find_pwd_captcha_font_color">#757575</color>
+    <color name="com_lenovo_lsf_list_item_gray">#a3a3a3</color>
+    <color name="com_lenovo_lsf_list_item_white">#ffffff</color>
+    <color name="com_lenovo_lsf_loginTabColorDark">#474747</color>
+    <color name="com_lenovo_lsf_loginTabColorLight">#ffffff</color>
+    <color name="com_lenovo_lsf_my_account_content_account_description_font_color">#757575</color>
+    <color name="com_lenovo_lsf_my_account_set_item_tip_font_color">#a3a3a3</color>
+    <color name="com_lenovo_lsf_pay_appcolor">#f3f3f3</color>
+    <color name="com_lenovo_lsf_pay_color_text_gray">#626262</color>
+    <color name="com_lenovo_lsf_pay_content_text_font_color">#DB000000</color>
+    <color name="com_lenovo_lsf_pay_devider_between_title_and_content">#d1d1d1</color>
+    <color name="com_lenovo_lsf_pay_goods_bg">#FFFFFF</color>
+    <color name="com_lenovo_lsf_pay_goods_border_line">#ffd1d1d1</color>
+    <color name="com_lenovo_lsf_pay_goods_label">#0b7cd9</color>
+    <color name="com_lenovo_lsf_pay_goods_unit">#757575</color>
+    <color name="com_lenovo_lsf_pay_item">#ffffff</color>
+    <color name="com_lenovo_lsf_pay_list_item_gray">#a3a3a3</color>
+    <color name="com_lenovo_lsf_pay_next_button">#0b7cd9</color>
+    <color name="com_lenovo_lsf_pay_phone_card_choosed">#191919</color>
+    <color name="com_lenovo_lsf_pay_phone_card_line_normal">#a3a3a3</color>
+    <color name="com_lenovo_lsf_pay_phone_card_normal">#757575</color>
+    <color name="com_lenovo_lsf_pay_record_detail_text">#757575</color>
+    <color name="com_lenovo_lsf_pay_result_text">#ffffffff</color>
+    <color name="com_lenovo_lsf_pay_text_color_black">#000000</color>
+    <color name="com_lenovo_lsf_pay_title_bg">#606B7F</color>
+    <color name="com_lenovo_lsf_pay_title_text">#FFFFFF</color>
+    <color name="com_lenovo_lsf_pay_transparent_all">#00000000</color>
+    <color name="com_lenovo_lsf_pay_white_pure">#ffffff</color>
+    <color name="com_lenovo_lsf_sdk_title_background">#0062b3</color>
+    <color name="com_lenovo_lsf_set_safemail_confirm_email_account_font_color">#757575</color>
+    <color name="com_lenovo_lsf_text_font_blue">#60b43c</color>
+    <color name="com_lenovo_lsf_textclick">#0062b3</color>
+    <color name="com_lenovo_lsf_textedit">#d1d1d1</color>
+    <color name="com_lenovo_lsf_tile_font_color">#ffffff</color>
+    <color name="com_lenovo_lsf_title_bg">#ffffff</color>
+    <color name="com_lenovo_lsf_transparent">#9000</color>
+    <color name="com_lenovo_lsf_transparent_color">#00000000</color>
+    <color name="com_lenovo_lsf_white">#ffffffff</color>
+    <color name="com_lenovo_pay_balance">#ff9600</color>
+    <color name="com_lenovo_pay_button">#0B7CD9</color>
+    <color name="com_lenovo_pay_card_input_warning">#FDEFE9</color>
+    <color name="com_lenovo_pay_center_bg">#FAFAFA</color>
+    <color name="com_lenovo_pay_center_blue">#579DFF</color>
+    <color name="com_lenovo_pay_center_line_color">#CCCCCC</color>
+    <color name="com_lenovo_pay_center_org">#FF7200</color>
+    <color name="com_lenovo_pay_center_red">#FF0000</color>
+    <color name="com_lenovo_pay_center_text">#666666</color>
+    <color name="com_lenovo_pay_center_text_gray">#999999</color>
+    <color name="com_lenovo_pay_center_title">#191919</color>
+    <color name="com_lenovo_pay_center_value">#333333</color>
+    <color name="com_lenovo_pay_center_white">#FFFFFF</color>
+    <color name="com_lenovo_pay_coupon_unuser_gray">#F5F5F5</color>
+    <color name="com_lenovo_pay_coupon_unuser_rbn">#C6C6C6</color>
+    <color name="com_lenovo_pay_coupon_unuser_text">#C5C5C5</color>
+    <color name="com_lenovo_pay_coupon_user_gray">#EFEFEF</color>
+    <color name="com_lenovo_pay_goods_bg">#FFFFFF</color>
+    <color name="com_lenovo_pay_goods_label">#191919</color>
+    <color name="com_lenovo_pay_goods_paytpe_bg">#FFFFFF</color>
+    <color name="com_lenovo_pay_goods_paytpe_text">#000000</color>
+    <color name="com_lenovo_pay_goods_unit">#757575</color>
+    <color name="com_lenovo_pay_gray">#a3a3a3</color>
+    <color name="com_lenovo_pay_input_gray">#EDEDED</color>
+    <color name="com_lenovo_pay_lsf_next_button">#0b7cd9</color>
+    <color name="com_lenovo_pay_title_bg">#606B7F</color>
+    <color name="com_lenovo_pay_title_text">#FFFFFF</color>
+    <color name="com_lenovo_pay_transparent_color">#00000000</color>
+    <color name="com_lenovo_pay_userinfo_bg">#FFFFFF</color>
+    <color name="default_listview_item_pressed_color">#CEEEFD</color>
+    <color name="dialog_title_color">#2967A8</color>
+    <color name="dialog_verify_code_btn_disable">#DEDEDE</color>
+    <color name="dialog_verify_code_btn_enable">#4EA1F9</color>
+    <color name="pay_card_input_warning">#FDEFE9</color>
+    <color name="pay_center_dialog_bg">#40000000</color>
+    <color name="pay_center_gray">#808080</color>
+    <color name="pay_center_loading_dialog_bg">#80000000</color>
+    <color name="pay_center_org">#FF7200</color>
+    <color name="pay_center_red">#FF0000</color>
+    <color name="payeco_bgColor">#E8E8E8</color>
+    <color name="payeco_hintTextColor">#C4C4C4</color>
+    <color name="payeco_textColorBlack">#2B2B2B</color>
+    <color name="payeco_textColorBlue">#6CA6CD</color>
+    <color name="payeco_textColorGrayTwo">#A2A2A2</color>
+    <color name="payeco_textColorWhite">#FFFFFF</color>
+    <color name="payeco_textColorYellow">#FF8C00</color>
+    <color name="payeco_tipsTextColor">#4A5761</color>
+    <color name="payeco_titleTextColor">#1780C7</color>
+    <color name="phone_card_line_choosed">#0b7cda</color>
+    <color name="rank_listview_divider_color">#C9C8C8</color>
+    <color name="sharedialog_blue">#155AA1</color>
+    <dimen name="com_lenovo_lsf_account_change_last_step_content_margin_top">18dp</dimen>
+    <dimen name="com_lenovo_lsf_account_change_last_step_font_size">16sp</dimen>
+    <dimen name="com_lenovo_lsf_account_change_margin_top_reget_captcha">18dp</dimen>
+    <dimen name="com_lenovo_lsf_account_setting_content_padding_left_right">16dp</dimen>
+    <dimen name="com_lenovo_lsf_account_setting_item_font_size">16sp</dimen>
+    <dimen name="com_lenovo_lsf_account_setting_item_function_description_font_size">12sp</dimen>
+    <dimen name="com_lenovo_lsf_account_setting_setting_item_margin_left">12dp</dimen>
+    <dimen name="com_lenovo_lsf_account_setting_subtitle_font_size">12sp</dimen>
+    <dimen name="com_lenovo_lsf_account_setting_subtitle_margin_top">8dp</dimen>
+    <dimen name="com_lenovo_lsf_ad_btn_text_size">16sp</dimen>
+    <dimen name="com_lenovo_lsf_btn_text_font_size">16sp</dimen>
+    <dimen name="com_lenovo_lsf_button_height">36dp</dimen>
+    <dimen name="com_lenovo_lsf_change_account_content_margin_top">24dp</dimen>
+    <dimen name="com_lenovo_lsf_change_account_margin_top_between_function_description_and_current_account">18dp</dimen>
+    <dimen name="com_lenovo_lsf_change_account_margin_top_to_button">40dp</dimen>
+    <dimen name="com_lenovo_lsf_colon_horizon_margin">5dp</dimen>
+    <dimen name="com_lenovo_lsf_content_edittext_height">42dp</dimen>
+    <dimen name="com_lenovo_lsf_content_edittext_width">42dp</dimen>
+    <dimen name="com_lenovo_lsf_content_margin_between_edittext_and_button">32dp</dimen>
+    <dimen name="com_lenovo_lsf_content_margin_between_text_and_edittext">8dp</dimen>
+    <dimen name="com_lenovo_lsf_content_margin_top">26dp</dimen>
+    <dimen name="com_lenovo_lsf_content_padding_left_right">16dp</dimen>
+    <dimen name="com_lenovo_lsf_content_password_icon_width_or_height">33dp</dimen>
+    <dimen name="com_lenovo_lsf_content_text_font_size">16sp</dimen>
+    <dimen name="com_lenovo_lsf_divider_height">1px</dimen>
+    <dimen name="com_lenovo_lsf_edittext_hint_font_size">14sp</dimen>
+    <dimen name="com_lenovo_lsf_eror_tip_margin_bottom">6dp</dimen>
+    <dimen name="com_lenovo_lsf_error_tip_font_size">10sp</dimen>
+    <dimen name="com_lenovo_lsf_error_tip_margin_top">6dp</dimen>
+    <dimen name="com_lenovo_lsf_findpwd_button_margin_top">20dp</dimen>
+    <dimen name="com_lenovo_lsf_findpwd_captcha_margin">8dp</dimen>
+    <dimen name="com_lenovo_lsf_findpwd_captcha_tip_font_size">14sp</dimen>
+    <dimen name="com_lenovo_lsf_findpwd_margin_between_reget_captcha_and_new_password">8dp</dimen>
+    <dimen name="com_lenovo_lsf_findpwd_margin_top_of_reget_captcha">20dp</dimen>
+    <dimen name="com_lenovo_lsf_horizon_margin_between_editext_and_button">8dp</dimen>
+    <dimen name="com_lenovo_lsf_my_account_content_account_description_font_size">12sp</dimen>
+    <dimen name="com_lenovo_lsf_my_account_content_margin_left_right">16dp</dimen>
+    <dimen name="com_lenovo_lsf_my_account_setting_item_height">52dp</dimen>
+    <dimen name="com_lenovo_lsf_password_icon_margin_left">2dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_account_setting_item_font_size_left">16sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_button_fontsize">18sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_button_height">60dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_divider_height">1px</dimen>
+    <dimen name="com_lenovo_lsf_pay_edit_text_height_for_theme">36dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_gamecard_item_index_font_size">18sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_gamecard_item_index_height">46dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_gamecard_item_index_width">136dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_good_fontsize">14sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_fontsize">24sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_height">180dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_item_balance_fontsize">16sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_item_fontsize">22sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_item_paytpye_bottom_height">80dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_item_paytpye_fontsize">12sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_item_paytpye_height">90dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_item_paytpye_margin">50dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_item_paytpye_top_height">10dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_item_price_tip_fontsize">9sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_item_space">4dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_item_unit_fontsize">12sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_line_space">8dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_marginLeft">16dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_marginTop">12dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_paddingBottom">16dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_price_fontsize">16sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_record_detail_header_height">24dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_record_detail_leftspace">6dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_record_detail_margin">8dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_record_detail_margin_bottom">16dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_record_detail_margin_left">16dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_record_detail_order">16sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_record_detail_text">12sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_record_detail_topspace">8dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_title_balance_fontsize">12sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_title_fontsize">14sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_title_height">45dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_title_internal_space">16dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_title_userinfo_width">330dp</dimen>
+    <dimen name="com_lenovo_lsf_set_safemail_confirm_email_account_font_size">14sp</dimen>
+    <dimen name="com_lenovo_lsf_set_safemail_margin_top_between_top_and_content">20dp</dimen>
+    <dimen name="com_lenovo_lsf_set_safemail_margin_top_button">18dp</dimen>
+    <dimen name="com_lenovo_lsf_title_font_size">22sp</dimen>
+    <dimen name="com_lenovo_lsf_title_fontsize">20sp</dimen>
+    <dimen name="com_lenovo_lsf_title_height">54dp</dimen>
+    <dimen name="com_lenovo_lsf_title_introduce_fontsize">14sp</dimen>
+    <dimen name="com_lenovo_lsf_title_margin_left">16dp</dimen>
+    <dimen name="com_lenovo_lsf_title_text_margin_left">8dp</dimen>
+    <dimen name="com_lenovo_lsf_top_content_height">24dp</dimen>
+    <dimen name="com_lenovo_lsf_top_content_margin_height">14dp</dimen>
+    <dimen name="com_lenovo_lsf_view_adv_height">294dp</dimen>
+    <dimen name="com_lenovo_lsf_view_height">250dp</dimen>
+    <dimen name="com_lenovo_lsf_view_margin_left">8dp</dimen>
+    <dimen name="com_lenovo_lsf_view_margin_right">8dp</dimen>
+    <dimen name="com_lenovo_lsf_view_no_title_height">260dp</dimen>
+    <dimen name="com_lenovo_lsf_view_width">328dp</dimen>
+    <dimen name="com_lenovo_lsf_view_width_portrait">304dp</dimen>
+    <dimen name="com_lenovo_pay_button_fontsize">18sp</dimen>
+    <dimen name="com_lenovo_pay_button_height">60dp</dimen>
+    <dimen name="com_lenovo_pay_goods_fontsize">16sp</dimen>
+    <dimen name="com_lenovo_pay_goods_item_space">4dp</dimen>
+    <dimen name="com_lenovo_pay_goods_line_space">12dp</dimen>
+    <dimen name="com_lenovo_pay_goods_marginLeft">18dp</dimen>
+    <dimen name="com_lenovo_pay_goods_marginTop">16dp</dimen>
+    <dimen name="com_lenovo_pay_title_height">40dp</dimen>
+    <dimen name="com_lenovo_toolbar_end_right_margin">12dp</dimen>
+    <dimen name="com_lenovo_toolbar_first_left_margin">5dp</dimen>
+    <dimen name="com_lenovo_toolbar_height">40dp</dimen>
+    <dimen name="com_lenovo_toolbar_left_margin">8dp</dimen>
+    <dimen name="com_lenovo_toolbar_right_margin">8dp</dimen>
+    <dimen name="com_lenovo_toolbar_top_margin">4dp</dimen>
+    <dimen name="com_lenvo_lsf_account_setting_subtitle_height">24dp</dimen>
+    <dimen name="common_dash_height">1px</dimen>
+    <dimen name="middle_text_size">16sp</dimen>
+    <dimen name="payeco_button_textsize">18.0sp</dimen>
+    <dimen name="payeco_large_textsize">18.0sp</dimen>
+    <dimen name="payeco_larger_textsize">22.0sp</dimen>
+    <dimen name="payeco_middle_textsize">17.0sp</dimen>
+    <dimen name="payeco_normal_textsize">16.0sp</dimen>
+    <dimen name="payeco_pw_textsize">20.0sp</dimen>
+    <dimen name="payeco_pwkeyboard_button_textsize">15.0sp</dimen>
+    <dimen name="payeco_small_textsize">15.0sp</dimen>
+    <dimen name="payeco_smaller_textsize">14.0sp</dimen>
+    <item name="com_lenovo_toolbar_id_account" type="id"/>
+    <item name="com_lenovo_toolbar_id_close" type="id"/>
+    <item name="com_lenovo_toolbar_id_forum" type="id"/>
+    <item name="com_lenovo_toolbar_id_gift" type="id"/>
+    <item name="com_lenovo_toolbar_id_mine" type="id"/>
+    <item name="com_lenovo_toolbar_id_strategy" type="id"/>
+    <item name="com_lenovo_toolbar_id_vip" type="id"/>
+    <string name="account_manager">帐号管理</string>
+    <string name="base_webview_back">返回</string>
+    <string name="base_webview_browser">浏览器</string>
+    <string name="base_webview_close">关闭</string>
+    <string name="com_lenovo_check_real_name">正在检测实名认证信息...</string>
+    <string name="com_lenovo_lsf_about">关于</string>
+    <string name="com_lenovo_lsf_account_alter">变更帐号</string>
+    <string name="com_lenovo_lsf_account_binding_password">密码</string>
+    <string name="com_lenovo_lsf_account_manager">帐号管理</string>
+    <string name="com_lenovo_lsf_account_settings">帐号设置</string>
+    <string name="com_lenovo_lsf_account_settings_summery">退出,修改密码等.</string>
+    <string name="com_lenovo_lsf_activity_title_name">公告</string>
+    <string name="com_lenovo_lsf_app_copyright">Copyright(C) 1998-2014</string>
+    <string name="com_lenovo_lsf_app_copyright_bottom">联想公司 版权所有</string>
+    <string name="com_lenovo_lsf_app_name">用户框架</string>
+    <string name="com_lenovo_lsf_app_version">软件版本</string>
+    <string name="com_lenovo_lsf_app_web_url">http://passport.lenovo.com</string>
+    <string name="com_lenovo_lsf_app_web_url_label">门户网站</string>
+    <string name="com_lenovo_lsf_auto_oneKeyLogin_application_no_permissions">您的应用无权使用此项操作</string>
+    <string name="com_lenovo_lsf_auto_oneKeyLogin_goinig">您的上次登录操作还未完成,请勿重复操作</string>
+    <string name="com_lenovo_lsf_auto_oneKeyLogin_times_more_than_limit">今天自动登录次数已超过限制，请明天再使用此项操作</string>
+    <string name="com_lenovo_lsf_binding_acitivities_details">详情</string>
+    <string name="com_lenovo_lsf_change_string_changepassword">修改密码</string>
+    <string name="com_lenovo_lsf_change_string_confirm">确认</string>
+    <string name="com_lenovo_lsf_change_string_confirmpassword">重复新密码</string>
+    <string name="com_lenovo_lsf_change_string_confirmset">确认设置</string>
+    <string name="com_lenovo_lsf_change_string_hint">4-20个字符，区分大小写</string>
+    <string name="com_lenovo_lsf_change_string_newpassword">新密码</string>
+    <string name="com_lenovo_lsf_change_string_oldpassword">原密码</string>
+    <string name="com_lenovo_lsf_change_string_setpassword">设置密码</string>
+    <string name="com_lenovo_lsf_charge_failed">抱歉您的充值失败了</string>
+    <string name="com_lenovo_lsf_charge_query_error">查询失败，请稍后查询或联系客服QQ:3007422129   手机号:18911779532</string>
+    <string name="com_lenovo_lsf_check_update">正在检查更新......</string>
+    <string name="com_lenovo_lsf_choose_location_title"/>
+    <string name="com_lenovo_lsf_click_sixty_min_later">请60秒后再执行此操作</string>
+    <string name="com_lenovo_lsf_close_text">关闭</string>
+    <string name="com_lenovo_lsf_commit_login">提交并登录</string>
+    <string name="com_lenovo_lsf_dialog_title_tip">提示</string>
+    <string name="com_lenovo_lsf_email_send_prefix">注册链接已经发送到您的注册邮箱</string>
+    <string name="com_lenovo_lsf_email_send_suffix">您已经完成注册。现在只需登录到您的注册邮箱，点击链接即可完成账号激活。激活账号能够享有更多联想服务。</string>
+    <string name="com_lenovo_lsf_enter_forum_text">点我试试</string>
+    <string name="com_lenovo_lsf_error_empty_phone">请输入手机号</string>
+    <string name="com_lenovo_lsf_error_empty_verycode">请输入验证码</string>
+    <string name="com_lenovo_lsf_error_net_exception">网络异常</string>
+    <string name="com_lenovo_lsf_error_regist_default">注册失败</string>
+    <string name="com_lenovo_lsf_error_update_account_name_default">帐号变更失败</string>
+    <string name="com_lenovo_lsf_error_uss_0100">无效的用户名，请检查您的用户名格式是否正确</string>
+    <string name="com_lenovo_lsf_error_uss_0101">口令错误</string>
+    <string name="com_lenovo_lsf_error_uss_0103">用户不存在，请检查用户名是否正确</string>
+    <string name="com_lenovo_lsf_error_uss_0104">用户名已存在，请勿重复注册</string>
+    <string name="com_lenovo_lsf_error_uss_0105">帐号必须激活后才能登录</string>
+    <string name="com_lenovo_lsf_error_uss_0106">切换新设备前必须从老设备上注销</string>
+    <string name="com_lenovo_lsf_error_uss_0107">无效的帐号ID</string>
+    <string name="com_lenovo_lsf_error_uss_0108">该用户已激活，请勿重复操作</string>
+    <string name="com_lenovo_lsf_error_uss_0110">无效的IMEI，SN或MAC</string>
+    <string name="com_lenovo_lsf_error_uss_0111">帐号已被disable.</string>
+    <string name="com_lenovo_lsf_error_uss_0112">设备注册在SDI系统中校验不合法</string>
+    <string name="com_lenovo_lsf_error_uss_0113">口令类型错误</string>
+    <string name="com_lenovo_lsf_error_uss_0120">无效的TGT</string>
+    <string name="com_lenovo_lsf_error_uss_0121">无效的realm</string>
+    <string name="com_lenovo_lsf_error_uss_0122">此服务不支持该realm</string>
+    <string name="com_lenovo_lsf_error_uss_0123">该服务无权访问</string>
+    <string name="com_lenovo_lsf_error_uss_0124">找不到与指定用户有关的缓存</string>
+    <string name="com_lenovo_lsf_error_uss_0125">在用户缓存中找不到指定的Ticket</string>
+    <string name="com_lenovo_lsf_error_uss_0126">Ticket值解析失败</string>
+    <string name="com_lenovo_lsf_error_uss_0127">在缓存中找不到收回无效Ticket的信息</string>
+    <string name="com_lenovo_lsf_error_uss_0131">ticket和realm不一致该Ticket不属于该安全域</string>
+    <string name="com_lenovo_lsf_error_uss_0135">无效的请求数据</string>
+    <string name="com_lenovo_lsf_error_uss_0140">无效的验证码</string>
+    <string name="com_lenovo_lsf_error_uss_0141">过期的链接</string>
+    <string name="com_lenovo_lsf_error_uss_0150">提交的密码找回答案错误</string>
+    <string name="com_lenovo_lsf_error_uss_0151">帐号已锁定</string>
+    <string name="com_lenovo_lsf_error_uss_0160">需要使用验证码</string>
+    <string name="com_lenovo_lsf_error_uss_0161">pidpassword错误</string>
+    <string name="com_lenovo_lsf_error_uss_0162">bindpid无效</string>
+    <string name="com_lenovo_lsf_error_uss_0163">bindpid已被disable</string>
+    <string name="com_lenovo_lsf_error_uss_0164">非一键注册未设置密码用户</string>
+    <string name="com_lenovo_lsf_error_uss_0170">密码格式错误(密码的限制规则是:4～20位字符，包括英文大小写字母、英文数字、减号和下划线)</string>
+    <string name="com_lenovo_lsf_error_uss_0180">已经校验</string>
+    <string name="com_lenovo_lsf_error_uss_0181">校验码错误或失效，针对手机帐号对帐号校验时可能产生</string>
+    <string name="com_lenovo_lsf_error_uss_0190">尚未开通，请尝试其他方式注册</string>
+    <string name="com_lenovo_lsf_error_uss_0191">三方登录超时</string>
+    <string name="com_lenovo_lsf_error_uss_0193">三方帐号绑定出现错误,请重试！</string>
+    <string name="com_lenovo_lsf_error_uss_0194">联想帐号已经绑定其它三方帐号</string>
+    <string name="com_lenovo_lsf_error_uss_0195">三方帐号已经绑定其它联想帐号</string>
+    <string name="com_lenovo_lsf_error_uss_0200">提交的数据格式错误，无法解析，请检查请求数据格式是否合法</string>
+    <string name="com_lenovo_lsf_error_uss_0201">提交的XML数据不符合XSD要求，请检查数据正确性</string>
+    <string name="com_lenovo_lsf_error_uss_0210">appkey无效</string>
+    <string name="com_lenovo_lsf_error_uss_0211">三方帐号未绑定，三方用户名非联想帐号</string>
+    <string name="com_lenovo_lsf_error_uss_0212">三方帐号未绑定，三方用户名为联想帐号</string>
+    <string name="com_lenovo_lsf_error_uss_0213">三方帐号未绑定</string>
+    <string name="com_lenovo_lsf_error_uss_0214">三方帐号未绑定，三方用户名为联想非信任域帐号，需要手动绑定</string>
+    <string name="com_lenovo_lsf_error_uss_0215">三方账号已绑定过联想帐号</string>
+    <string name="com_lenovo_lsf_error_uss_0220">accesstoken校验不合法</string>
+    <string name="com_lenovo_lsf_error_uss_0221">authcode校验不合法</string>
+    <string name="com_lenovo_lsf_error_uss_0222">tid 不合法</string>
+    <string name="com_lenovo_lsf_error_uss_0230">thirdName无效</string>
+    <string name="com_lenovo_lsf_error_uss_0231">绑定帐号不符合规则</string>
+    <string name="com_lenovo_lsf_error_uss_0404">该接口已过时，服务端不再支持客户端应提示用户升级版本</string>
+    <string name="com_lenovo_lsf_error_uss_0530">无效的lpsst</string>
+    <string name="com_lenovo_lsf_error_uss_0531">Ticket和realm不一致</string>
+    <string name="com_lenovo_lsf_error_uss_0532">未提供lpsst信息</string>
+    <string name="com_lenovo_lsf_error_uss_0540">无效的lpsust</string>
+    <string name="com_lenovo_lsf_error_uss_0542">未提供lpsust信息</string>
+    <string name="com_lenovo_lsf_error_uss_0550">无效的跨安全服务票据</string>
+    <string name="com_lenovo_lsf_error_uss_0551">不符合应用的跨安全域服务票据强度要求</string>
+    <string name="com_lenovo_lsf_error_uss_0560">远程图片校验失败</string>
+    <string name="com_lenovo_lsf_error_uss_0605">用于Gateway使用silentlogin方式登录失败</string>
+    <string name="com_lenovo_lsf_error_uss_0606">无效的回调地址</string>
+    <string name="com_lenovo_lsf_error_uss_0607">无效的签名</string>
+    <string name="com_lenovo_lsf_error_uss_0608">无效的验证随机数</string>
+    <string name="com_lenovo_lsf_error_uss_0700">请求地址无效</string>
+    <string name="com_lenovo_lsf_error_uss_0701">无权限获取对应realm的UST</string>
+    <string name="com_lenovo_lsf_error_uss_0801">用户授权拒绝</string>
+    <string name="com_lenovo_lsf_error_verifycode_exception">验证码获取失败</string>
+    <string name="com_lenovo_lsf_error_wrong_phone">请输入正确的手机号</string>
+    <string name="com_lenovo_lsf_forget_password_error">操作过于频繁，请稍后再试</string>
+    <string name="com_lenovo_lsf_forget_string_findpassword">"忘记密码 "</string>
+    <string name="com_lenovo_lsf_forget_string_findpasswordinfo">我们会将您的新密码发送至联想帐号的注册邮箱或手机号内</string>
+    <string name="com_lenovo_lsf_forget_string_reset">密码重置</string>
+    <string name="com_lenovo_lsf_forgetfail_string_detail">错误原因</string>
+    <string name="com_lenovo_lsf_forgetfail_string_empty_verify_code">请输入验证码</string>
+    <string name="com_lenovo_lsf_forgetfail_string_fail">发送失败</string>
+    <string name="com_lenovo_lsf_forgetfail_string_resend">重新发送密码</string>
+    <string name="com_lenovo_lsf_get_update_pkginfo_null">无法获取更新信息,请检查网络是否正常</string>
+    <string name="com_lenovo_lsf_i_know">我知道了</string>
+    <string name="com_lenovo_lsf_input_password">设置密码(4-20个字符)</string>
+    <string name="com_lenovo_lsf_input_verify_code">验证码</string>
+    <string name="com_lenovo_lsf_lenovouser_app_name">联想帐号</string>
+    <string name="com_lenovo_lsf_lenovouser_btn_cancel">取消</string>
+    <string name="com_lenovo_lsf_lenovouser_btn_ok">确定</string>
+    <string name="com_lenovo_lsf_lenovouser_btn_retry">重试</string>
+    <string name="com_lenovo_lsf_lenovouser_forget_failure">网络连接出错，请检查您的网络是否正常。</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error1">用户不存在</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error10">无效的请求参数</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error11">无效的appkey</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error12">无效的三方accesstoken</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error13">无效的realm</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error2">您输入的密码错误</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error20">未知错误:</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error21">网络连接出错</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error22">请打开手机短信权限</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error3">请先激活您的帐号</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error4">请输入密码</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error5">请输入帐号</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error6">因为连续5次登录错误，您的帐号暂时被锁定，请10分钟后再试</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error7">用户名格式不正确</string>
+    <string name="com_lenovo_lsf_lenovouser_login_error8">帐号已禁用</string>
+    <string name="com_lenovo_lsf_lenovouser_login_failure">帐号登录失败</string>
+    <string name="com_lenovo_lsf_lenovouser_login_networkfailure">网络连接出错，请检查您的网络是否正常。</string>
+    <string name="com_lenovo_lsf_lenovouser_login_progess">正在登录，请稍候</string>
+    <string name="com_lenovo_lsf_lenovouser_login_resendf">网络连接出错，请检查网络是否正常。</string>
+    <string name="com_lenovo_lsf_lenovouser_login_resendf1">网络连接出错，请检查网络是否正常。</string>
+    <string name="com_lenovo_lsf_lenovouser_login_resendfailure">您的帐号尚未激活，是否向该邮箱重新发送激活邮件？</string>
+    <string name="com_lenovo_lsf_lenovouser_login_resendfailure1">您的帐号尚未激活，是否向该手机号重新发送激活短信？</string>
+    <string name="com_lenovo_lsf_lenovouser_login_resendft">重发激活邮件失败</string>
+    <string name="com_lenovo_lsf_lenovouser_login_resendft1">重发激活短信失败</string>
+    <string name="com_lenovo_lsf_lenovouser_login_resends">已将新的激活邮件发送到您的注册邮箱，请查收。</string>
+    <string name="com_lenovo_lsf_lenovouser_login_resends1">已将新的激活短信发送到您的注册手机号，请查收。</string>
+    <string name="com_lenovo_lsf_lenovouser_login_resendst">激活邮件已发送</string>
+    <string name="com_lenovo_lsf_lenovouser_login_resendst1">激活短信已经发送至该手机:</string>
+    <string name="com_lenovo_lsf_lenovouser_login_rprogess">正在发送激活邮件，请稍候</string>
+    <string name="com_lenovo_lsf_lenovouser_login_rprogess1">正在发送激活短信，请稍候</string>
+    <string name="com_lenovo_lsf_lenovouser_login_text0">登录联想帐号</string>
+    <string name="com_lenovo_lsf_lenovouser_login_text7">登录成功</string>
+    <string name="com_lenovo_lsf_lenovouser_onekey_error_titlt">登录失败</string>
+    <string name="com_lenovo_lsf_lenovouser_onekey_imeiinvalid">IMEI号无效</string>
+    <string name="com_lenovo_lsf_lenovouser_register_error1">用户名格式不正确</string>
+    <string name="com_lenovo_lsf_lenovouser_register_error2">该用户已经存在</string>
+    <string name="com_lenovo_lsf_lenovouser_register_error3">请输入格式正确的密码</string>
+    <string name="com_lenovo_lsf_lenovouser_register_error4">两次输入密码不一致</string>
+    <string name="com_lenovo_lsf_lenovouser_register_error5">验证码错误</string>
+    <string name="com_lenovo_lsf_lenovouser_register_error6">获取验证码失败</string>
+    <string name="com_lenovo_lsf_lenovouser_register_failure">网络连接出错，请检查您的网络是否正常。</string>
+    <string name="com_lenovo_lsf_lenovouser_register_failuret">帐号注册失败</string>
+    <string name="com_lenovo_lsf_lenovouser_register_progess">正在注册，请稍候</string>
+    <string name="com_lenovo_lsf_lenovouser_register_sendfailure">网络连接出错，请检查您的网络是否正常。</string>
+    <string name="com_lenovo_lsf_lenovouser_register_sendfailure1">网络连接出错，请检查您的网络是否正常。</string>
+    <string name="com_lenovo_lsf_lenovouser_register_sendfailuret">重发激活邮件失败</string>
+    <string name="com_lenovo_lsf_lenovouser_register_sendfailuret1">重发激活短信失败</string>
+    <string name="com_lenovo_lsf_lenovouser_register_sendprogess">正在发送激活邮件，请稍候</string>
+    <string name="com_lenovo_lsf_lenovouser_register_sendprogess1">正在发送激活短信，请稍候</string>
+    <string name="com_lenovo_lsf_lenovouser_register_sendsuccess">已将新的激活邮件发送到您的注册邮箱，请查收。</string>
+    <string name="com_lenovo_lsf_lenovouser_register_sendsuccess1">已将新的激活短信发送到您的注册手机号，请查收。</string>
+    <string name="com_lenovo_lsf_lenovouser_register_sendsuccesst">激活邮件已发送</string>
+    <string name="com_lenovo_lsf_lenovouser_register_sendsuccesst1">激活短信已发送</string>
+    <string name="com_lenovo_lsf_lenovouser_userinfo_logouting">正在退出，请稍候</string>
+    <string name="com_lenovo_lsf_lenovouser_userinfo_logouts">帐号已退出</string>
+    <string name="com_lenovo_lsf_lenovouser_userinfo_registerlegalt">联想帐号服务条款</string>
+    <string name="com_lenovo_lsf_lenovouser_userinfo_text16">提示</string>
+    <string name="com_lenovo_lsf_lenovouser_userinfo_text17">确定退出当前帐号？</string>
+    <string name="com_lenovo_lsf_login_common_at_hint_account">手机号/邮箱</string>
+    <string name="com_lenovo_lsf_login_common_button_login">登录</string>
+    <string name="com_lenovo_lsf_login_common_et_hint_email">邮箱</string>
+    <string name="com_lenovo_lsf_login_common_et_hint_password">密码</string>
+    <string name="com_lenovo_lsf_login_common_et_hint_phone">手机号</string>
+    <string name="com_lenovo_lsf_login_common_findpassword">找回密码</string>
+    <string name="com_lenovo_lsf_login_common_logining">正在登录，请稍候...</string>
+    <string name="com_lenovo_lsf_login_common_loginsuccess_toast">登录成功</string>
+    <string name="com_lenovo_lsf_login_entrance_emaillogin_text">邮箱登录</string>
+    <string name="com_lenovo_lsf_login_entrance_loginsuccess_toast">登录成功</string>
+    <string name="com_lenovo_lsf_login_entrance_onekey_authentication_tips">正在发送一条短信认证手机号，联想不会收取任何费用，短信费由运营商收取。</string>
+    <string name="com_lenovo_lsf_login_entrance_onekey_authentication_title">正在认证...</string>
+    <string name="com_lenovo_lsf_login_entrance_onekey_logining_dialog_cancle">取消</string>
+    <string name="com_lenovo_lsf_login_entrance_onekey_logining_tips">短信认证成功，正在为您登录中...</string>
+    <string name="com_lenovo_lsf_login_entrance_onekey_logining_title">正在登录...</string>
+    <string name="com_lenovo_lsf_login_entrance_onekey_show1">一个帐号，畅享联想所有服务</string>
+    <string name="com_lenovo_lsf_login_entrance_onekey_show2">乐同步、乐记事、超级相册</string>
+    <string name="com_lenovo_lsf_login_entrance_onekey_show3">使用您的手机号作为联想帐号登录</string>
+    <string name="com_lenovo_lsf_login_entrance_onekey_text">当前手机号一键登录</string>
+    <string name="com_lenovo_lsf_login_entrance_onekey_tips1">注册</string>
+    <string name="com_lenovo_lsf_login_entrance_onekey_tips2">第三方登录</string>
+    <string name="com_lenovo_lsf_login_entrance_otherlogin_text">其他方式登录</string>
+    <string name="com_lenovo_lsf_login_entrance_phonelogin_text">手机号码登录（推荐）</string>
+    <string name="com_lenovo_lsf_login_entrance_qqlogin_text">QQ帐号登录</string>
+    <string name="com_lenovo_lsf_login_entrance_sinalogin_text">新浪微博登录</string>
+    <string name="com_lenovo_lsf_login_password_error">密码错误。如果忘记密码，您可以尝试密码找回</string>
+    <string name="com_lenovo_lsf_login_string_account">帐号  </string>
+    <string name="com_lenovo_lsf_login_string_accounthint">请输入邮箱或手机号</string>
+    <string name="com_lenovo_lsf_login_string_agree">登录即表示您接受</string>
+    <string name="com_lenovo_lsf_login_string_forgetpwd">找回密码</string>
+    <string name="com_lenovo_lsf_login_string_havenoid">还没有帐号</string>
+    <string name="com_lenovo_lsf_login_string_password">密码  </string>
+    <string name="com_lenovo_lsf_login_string_protocol">登录即表示您接受 <u>联想帐号服务条款</u></string>
+    <string name="com_lenovo_lsf_login_string_pwdhint">请输入密码</string>
+    <string name="com_lenovo_lsf_login_string_registration">注册</string>
+    <string name="com_lenovo_lsf_login_string_sendrequest">正在发送登录请求......</string>
+    <string name="com_lenovo_lsf_login_string_verifing">正在登录......</string>
+    <string name="com_lenovo_lsf_logout_are_you_sure_logout_lenovo_account">确定退出当前帐号？</string>
+    <string name="com_lenovo_lsf_more_info">更多帐号选项</string>
+    <string name="com_lenovo_lsf_no_network">没有有效的网络连接</string>
+    <string name="com_lenovo_lsf_no_phone">还没有手机号?</string>
+    <string name="com_lenovo_lsf_normal_login">帐号登录</string>
+    <string name="com_lenovo_lsf_notification">你已成功注册联想帐号，为了你的帐号安全，去设置密码？</string>
+    <string name="com_lenovo_lsf_notification_content">您的联想帐号%s已登录成功,是否现在设置密码?</string>
+    <string name="com_lenovo_lsf_notification_msg">您的联想帐号初始密码为:</string>
+    <string name="com_lenovo_lsf_notification_set_pwd">设置密码</string>
+    <string name="com_lenovo_lsf_onekey_airplanemode">飞行模式下无法使用此功能，请先关闭飞行模式</string>
+    <string name="com_lenovo_lsf_onekey_authenticating">正在认证...</string>
+    <string name="com_lenovo_lsf_open_browser_error">无法打开浏览器，请确认您的浏览器已正确安装或是否已被安全软件禁用</string>
+    <string name="com_lenovo_lsf_open_sms_error">无法打开短信，请确认您的信息应用已正确安装或是否已被安全软件禁用</string>
+    <string name="com_lenovo_lsf_password_cannot_be_blank">请输入格式正确的密码 </string>
+    <string name="com_lenovo_lsf_password_not_null">请输入密码</string>
+    <string name="com_lenovo_lsf_pay_account_label">帐号：</string>
+    <string name="com_lenovo_lsf_pay_action_record">我的订单</string>
+    <string name="com_lenovo_lsf_pay_alipay_loading_text">正在加载支付宝，请稍候...</string>
+    <string name="com_lenovo_lsf_pay_alipay_quick_faile_unsign">您已取消使用支付宝免密支付，正在为您加载支付宝支付...</string>
+    <string name="com_lenovo_lsf_pay_app_name">V币中心</string>
+    <string name="com_lenovo_lsf_pay_back_vbi_text">预计将到账</string>
+    <string name="com_lenovo_lsf_pay_balance_label">余额</string>
+    <string name="com_lenovo_lsf_pay_benefit_detail_price">产品价格：￥</string>
+    <string name="com_lenovo_lsf_pay_canceled">用户取消支付</string>
+    <string name="com_lenovo_lsf_pay_card_charge">立即充值</string>
+    <string name="com_lenovo_lsf_pay_card_input_error">%1$s输入应为数字,请重新输入！</string>
+    <string name="com_lenovo_lsf_pay_card_no_min_error">卡号长度应最小为%1$s位.</string>
+    <string name="com_lenovo_lsf_pay_card_no_min_error_1">卡号长度应为%1$s位.</string>
+    <string name="com_lenovo_lsf_pay_card_pwd_min_error">卡密长度应最小为%1$s位.</string>
+    <string name="com_lenovo_lsf_pay_card_pwd_min_error_1">卡密长度应为%1$s位.</string>
+    <string name="com_lenovo_lsf_pay_card_tip">请输入正确的卡号和密码</string>
+    <string name="com_lenovo_lsf_pay_cashier_title">联想收银台</string>
+    <string name="com_lenovo_lsf_pay_charge_amount">选择金额</string>
+    <string name="com_lenovo_lsf_pay_charge_canceled">用户取消充值</string>
+    <string name="com_lenovo_lsf_pay_charge_continue">继续充值</string>
+    <string name="com_lenovo_lsf_pay_charge_deno">选择面额</string>
+    <string name="com_lenovo_lsf_pay_charge_detail">充值详情</string>
+    <string name="com_lenovo_lsf_pay_charge_error">很抱歉，道具购买失败，支付金额已转为V币存入您的账户。</string>
+    <string name="com_lenovo_lsf_pay_charge_failed">充值失败</string>
+    <string name="com_lenovo_lsf_pay_charge_failed_desc">抱歉您的充值失败了，你可以</string>
+    <string name="com_lenovo_lsf_pay_charge_immediately">立即充值</string>
+    <string name="com_lenovo_lsf_pay_charge_loding">支付中</string>
+    <string name="com_lenovo_lsf_pay_charge_pay_Type_title">充值并支付方式</string>
+    <string name="com_lenovo_lsf_pay_charge_pay_tequan_type_title">支付方式</string>
+    <string name="com_lenovo_lsf_pay_charge_progress_30s_no_arrive">还没到账，过会再试</string>
+    <string name="com_lenovo_lsf_pay_charge_progress_3m_arrive">预计3分钟到账</string>
+    <string name="com_lenovo_lsf_pay_charge_progress_auto_return">%1$s秒自动查询</string>
+    <string name="com_lenovo_lsf_pay_charge_progress_checking">验证中，请求已提交</string>
+    <string name="com_lenovo_lsf_pay_charge_record">充值记录</string>
+    <string name="com_lenovo_lsf_pay_charge_result">充值结果</string>
+    <string name="com_lenovo_lsf_pay_charge_return">返回</string>
+    <string name="com_lenovo_lsf_pay_charge_scale">兑换比例：1元=10V币</string>
+    <string name="com_lenovo_lsf_pay_charge_success">支付成功</string>
+    <string name="com_lenovo_lsf_pay_charge_success_desc">您可以在联想V币中心查询余额和购买记录,系统将在5秒内自动跳转至V币中心</string>
+    <string name="com_lenovo_lsf_pay_charge_tequan_pay_value">支付金额：</string>
+    <string name="com_lenovo_lsf_pay_charge_type">充值方式</string>
+    <string name="com_lenovo_lsf_pay_click_when_not_return">如未跳转请点击</string>
+    <string name="com_lenovo_lsf_pay_comfire_alipay_quick">是否使用支付宝免密支付？</string>
+    <string name="com_lenovo_lsf_pay_commit_operator_info">提交运营商信息</string>
+    <string name="com_lenovo_lsf_pay_computer">电脑充值</string>
+    <string name="com_lenovo_lsf_pay_computer_charge_account_tip">联想帐号</string>
+    <string name="com_lenovo_lsf_pay_computer_charge_web">vb.lenovo.com</string>
+    <string name="com_lenovo_lsf_pay_computer_charge_web_tip">访问网址</string>
+    <string name="com_lenovo_lsf_pay_confirm_text">确认充值</string>
+    <string name="com_lenovo_lsf_pay_cur_app_name">Current App Name</string>
+    <string name="com_lenovo_lsf_pay_default_operator">中国移动</string>
+    <string name="com_lenovo_lsf_pay_default_provence">北京市</string>
+    <string name="com_lenovo_lsf_pay_detail">购买详情</string>
+    <string name="com_lenovo_lsf_pay_dlg_cancel_text">取消</string>
+    <string name="com_lenovo_lsf_pay_dlg_ok_text">确定</string>
+    <string name="com_lenovo_lsf_pay_dlg_title_text">提示</string>
+    <string name="com_lenovo_lsf_pay_error_cardno">卡号长度错误,请重新输入！</string>
+    <string name="com_lenovo_lsf_pay_error_cardpassword">密码长度错误,请重新输入！</string>
+    <string name="com_lenovo_lsf_pay_error_goods_expired_text">商品价格已过期，正在重新获取...</string>
+    <string name="com_lenovo_lsf_pay_error_limit_to_num">充值卡与所选面额不一致</string>
+    <string name="com_lenovo_lsf_pay_error_pwd_to_cardno">序列号或密码错误，请重新输入</string>
+    <string name="com_lenovo_lsf_pay_error_remote_call_failed_text">调用远程服务失败</string>
+    <string name="com_lenovo_lsf_pay_failed">支付失败</string>
+    <string name="com_lenovo_lsf_pay_failed_again">支付失败，请稍后再试！</string>
+    <string name="com_lenovo_lsf_pay_fee_rate_4_charge">扣除%1$s元手续费.</string>
+    <string name="com_lenovo_lsf_pay_game_card_charge_num_tips">游戏点卡卡号</string>
+    <string name="com_lenovo_lsf_pay_game_card_charge_password_tips">游戏点卡密码</string>
+    <string name="com_lenovo_lsf_pay_game_card_charge_tips">请确保所选面额与卡实际面额一致,否则将可能充值失败、意外销卡或资金损失</string>
+    <string name="com_lenovo_lsf_pay_game_card_other_amount_tips">或输入其他面额</string>
+    <string name="com_lenovo_lsf_pay_goods_caifutong_text">财付通</string>
+    <string name="com_lenovo_lsf_pay_goods_chargecard_text">手机充值卡</string>
+    <string name="com_lenovo_lsf_pay_goods_gamecard_text">游戏点卡</string>
+    <string name="com_lenovo_lsf_pay_goods_weixin_text">手机微信</string>
+    <string name="com_lenovo_lsf_pay_goods_zhifubao_text">支付宝</string>
+    <string name="com_lenovo_lsf_pay_gps_content">继续操作将会获取您的位置，是否继续？</string>
+    <string name="com_lenovo_lsf_pay_gps_title">获取位置</string>
+    <string name="com_lenovo_lsf_pay_info_tips">正在进入收银台...</string>
+    <string name="com_lenovo_lsf_pay_input_amount_big_error">输入的金额不能超过1000元,请重新输入!</string>
+    <string name="com_lenovo_lsf_pay_input_amount_format_error">您输入的金额不合法,请重新输入!"</string>
+    <string name="com_lenovo_lsf_pay_input_amount_null_error">您输入的金额不正确,请重新输入!</string>
+    <string name="com_lenovo_lsf_pay_input_amount_null_error1">输入的金额不能为空,请重新输入!</string>
+    <string name="com_lenovo_lsf_pay_input_amount_small_error">输入的最小金额为1元,请重新输入!</string>
+    <string name="com_lenovo_lsf_pay_input_correct_deno">输入面额范围应为1~1000元</string>
+    <string name="com_lenovo_lsf_pay_input_deno_null_error">您输入的面额不正确,请重新输入!</string>
+    <string name="com_lenovo_lsf_pay_lenovouser_btn_ok">OK</string>
+    <string name="com_lenovo_lsf_pay_liquan_activity">优惠活动</string>
+    <string name="com_lenovo_lsf_pay_loading_cashier">正在连接支付中心，请稍后...</string>
+    <string name="com_lenovo_lsf_pay_loading_cashier_error">无法连接支付中心，请稍后再试</string>
+    <string name="com_lenovo_lsf_pay_my_liquan">我的优惠</string>
+    <string name="com_lenovo_lsf_pay_need_price_label">还需要支付：</string>
+    <string name="com_lenovo_lsf_pay_network_unconnent">网络连接失败，请检查网络！</string>
+    <string name="com_lenovo_lsf_pay_no_such_permission_contacts">No Contacts permission,please go to "Settings"->“App manager”->%1$s->“Permission management” to open the permission</string>
+    <string name="com_lenovo_lsf_pay_no_such_permission_location">No Your location permission,please go to "Settings"->“App manager”->%1$s->“Permission management” to open the permission</string>
+    <string name="com_lenovo_lsf_pay_no_such_permission_phone_state">No phone permission,please go to "Settings"->“App manager”->%1$s->“Permission management” to open the permission</string>
+    <string name="com_lenovo_lsf_pay_order_label">售价：</string>
+    <string name="com_lenovo_lsf_pay_other_charge_type">选择其它充值方式</string>
+    <string name="com_lenovo_lsf_pay_pay_finish_text">该订单已经处理成功</string>
+    <string name="com_lenovo_lsf_pay_pay_retry_text">商品价格刷新完成，请重新支付</string>
+    <string name="com_lenovo_lsf_pay_phone_card_charge_num_tips">请输入手机充值卡序列号</string>
+    <string name="com_lenovo_lsf_pay_phone_card_charge_password_tips">请输入手机充值卡密码</string>
+    <string name="com_lenovo_lsf_pay_phone_card_charge_tips">充值卡金额将全部充入账户</string>
+    <string name="com_lenovo_lsf_pay_phone_card_type_mobile">移动</string>
+    <string name="com_lenovo_lsf_pay_phone_card_type_tel">电信</string>
+    <string name="com_lenovo_lsf_pay_phone_card_type_union">联通</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_charge_amount">金额:</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_choose_pay_type">选择支付方式</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_input_tips">请输入手机号码</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_lenovo_charge">联想充值:</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_number">充值号码:</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_tips_down">联想话费充值实惠多多</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_tips_up">充话费</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_title">充值手机话费</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_yinlian_online">银联在线支付</string>
+    <string name="com_lenovo_lsf_pay_pleast_input_id">请输入卡号</string>
+    <string name="com_lenovo_lsf_pay_pleast_input_pwd">请输入卡密码</string>
+    <string name="com_lenovo_lsf_pay_product_label">商品：</string>
+    <string name="com_lenovo_lsf_pay_qecode_title">扫码支付</string>
+    <string name="com_lenovo_lsf_pay_query_now_text">立即查询</string>
+    <string name="com_lenovo_lsf_pay_query_wait_text">确认</string>
+    <string name="com_lenovo_lsf_pay_query_waiting_to_account_text">充值未成功，请稍后查询或重试</string>
+    <string name="com_lenovo_lsf_pay_record">购买记录</string>
+    <string name="com_lenovo_lsf_pay_record_charge_datetime">充值时间</string>
+    <string name="com_lenovo_lsf_pay_record_charge_mount">充值金额</string>
+    <string name="com_lenovo_lsf_pay_record_orderid">流水单号</string>
+    <string name="com_lenovo_lsf_pay_record_pay_mount">消费金额</string>
+    <string name="com_lenovo_lsf_pay_record_productname_text">商品名称</string>
+    <string name="com_lenovo_lsf_pay_record_query">查询记录</string>
+    <string name="com_lenovo_lsf_pay_result_charging_desc">正在充值：%1$sV币</string>
+    <string name="com_lenovo_lsf_pay_result_kefu">客服电话：</string>
+    <string name="com_lenovo_lsf_pay_result_not_account_desc">还没有到账，请放心款不会丢失，我们会在两个工作日内为您核实。</string>
+    <string name="com_lenovo_lsf_pay_return_to_vb_center">返回V币中心</string>
+    <string name="com_lenovo_lsf_pay_security_label">您处于联想安全支付环境，请放心支付！</string>
+    <string name="com_lenovo_lsf_pay_sms_init_failed">sms pay init failed</string>
+    <string name="com_lenovo_lsf_pay_social_action">特权优惠</string>
+    <string name="com_lenovo_lsf_pay_social_loading">加载中...</string>
+    <string name="com_lenovo_lsf_pay_social_product_title">联想用户专享购</string>
+    <string name="com_lenovo_lsf_pay_success">支付成功</string>
+    <string name="com_lenovo_lsf_pay_tenpay_loading_text">正在加载财付通，请稍候...</string>
+    <string name="com_lenovo_lsf_pay_tgt_error">当前登录已过期，请重新登录</string>
+    <string name="com_lenovo_lsf_pay_trade_record_failed">失败</string>
+    <string name="com_lenovo_lsf_pay_trade_record_loadmore">查看更多</string>
+    <string name="com_lenovo_lsf_pay_trade_record_refresh">下拉刷新</string>
+    <string name="com_lenovo_lsf_pay_trade_record_refresh_time">上次更新时间：</string>
+    <string name="com_lenovo_lsf_pay_trade_record_success">成功</string>
+    <string name="com_lenovo_lsf_pay_traderecord_bankcard_text">银行卡</string>
+    <string name="com_lenovo_lsf_pay_traderecord_detail_productname_text">商品名称:</string>
+    <string name="com_lenovo_lsf_pay_traderecord_detail_productvalue_text">商品价值：</string>
+    <string name="com_lenovo_lsf_pay_traderecord_detail_text">订单详情  ></string>
+    <string name="com_lenovo_lsf_pay_traderecord_detail_tradestatus_text">交易状态：</string>
+    <string name="com_lenovo_lsf_pay_traderecord_no_charge_tip_text">没有充值记录。</string>
+    <string name="com_lenovo_lsf_pay_traderecord_no_pay_tip_text">没有购买记录。</string>
+    <string name="com_lenovo_lsf_pay_tv_lenovo_preferential_tips">联想特惠: </string>
+    <string name="com_lenovo_lsf_pay_tv_lenovo_preferential_unit">元</string>
+    <string name="com_lenovo_lsf_pay_unknown_operator">无法正确识别的运营商</string>
+    <string name="com_lenovo_lsf_pay_upay_service1_text">本服务由北京优森移动互联网技术有限公司提供</string>
+    <string name="com_lenovo_lsf_pay_upay_service2_text">服务电话：4000010733</string>
+    <string name="com_lenovo_lsf_pay_v_name">V币</string>
+    <string name="com_lenovo_lsf_pay_vb_center">V币中心</string>
+    <string name="com_lenovo_lsf_pay_vb_charge">充值V币</string>
+    <string name="com_lenovo_lsf_pay_vb_info_tips">V币是联想官方唯一指定虚拟币（1元人民币=10V币），可以购买联想平台所有虚拟产品和增值业务，包括：主题、游戏、彩票等（不含手机、电脑等实体商品）。</string>
+    <string name="com_lenovo_lsf_pay_vb_info_title">什么是联想V币</string>
+    <string name="com_lenovo_lsf_pay_vb_unit">V币</string>
+    <string name="com_lenovo_lsf_pay_weixin_loading_text">正在加载微信，请稍候...</string>
+    <string name="com_lenovo_lsf_pay_weixin_needinstall_text">请先安装微信</string>
+    <string name="com_lenovo_lsf_pay_weixin_version_low_text">您的微信版本过低，请先安装微信6.0.2以上版本，再进行微信充值</string>
+    <string name="com_lenovo_lsf_pay_xlistview_footer_hint_normal">查看更多</string>
+    <string name="com_lenovo_lsf_pay_xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="com_lenovo_lsf_pay_xlistview_header_hint_loading">正在加载。。。</string>
+    <string name="com_lenovo_lsf_pay_xlistview_header_hint_normal">下拉刷新</string>
+    <string name="com_lenovo_lsf_pay_xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="com_lenovo_lsf_pay_xlistview_header_last_time">上次更新时间：</string>
+    <string name="com_lenovo_lsf_pay_yixun_amount_reminder_text"> (不包含通讯费用)</string>
+    <string name="com_lenovo_lsf_pay_yixun_back_text">返回</string>
+    <string name="com_lenovo_lsf_pay_yixun_charge_amout_text">金额:</string>
+    <string name="com_lenovo_lsf_pay_yixun_checkorder_text">正在核对订单信息</string>
+    <string name="com_lenovo_lsf_pay_yixun_confirm_tip">点击\"确认充值\"后，系统会发送一条短信息给运营商完成充值服务</string>
+    <string name="com_lenovo_lsf_pay_yixun_failed_tip">支付失败</string>
+    <string name="com_lenovo_lsf_pay_yixun_getorder_success_text">已获取订单信息</string>
+    <string name="com_lenovo_lsf_pay_yixun_goods_name_text">充值:</string>
+    <string name="com_lenovo_lsf_pay_yixun_reminder_text"><u>短信充值提醒</u></string>
+    <string name="com_lenovo_lsf_pay_yixun_retry_text">未获取到运营商订单信息，正尝试再次获取</string>
+    <string name="com_lenovo_lsf_pay_yixun_search_result_tip">正在查询是否到帐</string>
+    <string name="com_lenovo_lsf_pay_yixun_search_wait_tip">请您稍等...</string>
+    <string name="com_lenovo_lsf_pay_yixun_service1_text">本服务由北京易讯无限信息技术股份有限公司提供</string>
+    <string name="com_lenovo_lsf_pay_yixun_service2_text">服务电话：4007767080</string>
+    <string name="com_lenovo_lsf_pay_yixun_service_text">本服务由北京易讯无限信息技术股份有限公司提供 服务电话：4007767080</string>
+    <string name="com_lenovo_lsf_pay_yixun_sms_send_tip">正在为您发送短信</string>
+    <string name="com_lenovo_lsf_pay_yixun_success_charge_tip">已经成功充值</string>
+    <string name="com_lenovo_lsf_pay_yixun_success_tip">支付成功</string>
+    <string name="com_lenovo_lsf_pay_yixun_title_text">充值说明</string>
+    <string name="com_lenovo_lsf_pay_yixun_wait_again_text">再次获取通知</string>
+    <string name="com_lenovo_lsf_pay_yixun_wait_confirm_text">等待充值确认</string>
+    <string name="com_lenovo_lsf_pay_yixun_wait_timeout_text">等待超时</string>
+    <string name="com_lenovo_lsf_pay_yixun_wait_timeout_tip_text">还没有到帐，请放心款不会丢失，我们会在两个工作日内为您核实。如有其他疑问请拨打</string>
+    <string name="com_lenovo_lsf_pay_yixun_warning2_tip">2 每笔短信充值，运营商收取通讯费用</string>
+    <string name="com_lenovo_lsf_pay_yixun_warning_tip"><![CDATA[ <Font color=\"#757575\">1 由于运营商会收取渠道费用，</Font> <Font color=\"#ff9600\">%1$s元兑换%2$sV币</Font>]]></string>
+    <string name="com_lenovo_lsf_phone_area_code">+86</string>
+    <string name="com_lenovo_lsf_phone_login">手机号登录</string>
+    <string name="com_lenovo_lsf_phoneloginin">用本手机号登录</string>
+    <string name="com_lenovo_lsf_psauthen_error1">网络连接出错</string>
+    <string name="com_lenovo_lsf_psauthen_error10">不允许注册多个联想帐号</string>
+    <string name="com_lenovo_lsf_psauthen_error2">获取帐号状态失败</string>
+    <string name="com_lenovo_lsf_psauthen_error3">用户不存在</string>
+    <string name="com_lenovo_lsf_psauthen_error4">密码错误</string>
+    <string name="com_lenovo_lsf_psauthen_error5">请先激活您的帐号</string>
+    <string name="com_lenovo_lsf_psauthen_error6">该帐号已禁用</string>
+    <string name="com_lenovo_lsf_psauthen_error7">该帐号已锁定</string>
+    <string name="com_lenovo_lsf_psauthen_error8">网络连接出错</string>
+    <string name="com_lenovo_lsf_psauthen_error9">用户取消</string>
+    <string name="com_lenovo_lsf_psauthen_text15">以下一个或多个应用程序请求获得在目前和将来访问您帐号的权限</string>
+    <string name="com_lenovo_lsf_psauthen_text16">允许</string>
+    <string name="com_lenovo_lsf_psauthen_text17">拒绝</string>
+    <string name="com_lenovo_lsf_psauthen_text18">您是否同意此请求？</string>
+    <string name="com_lenovo_lsf_psauthen_text19">访问请求</string>
+    <string name="com_lenovo_lsf_psauthen_text20">不能同时登录两个联想帐号</string>
+    <string name="com_lenovo_lsf_quickly_login">快捷登录</string>
+    <string name="com_lenovo_lsf_quit_text">退出游戏</string>
+    <string name="com_lenovo_lsf_quit_title_name">确认退出？</string>
+    <string name="com_lenovo_lsf_regist_by_phone">用手机号注册</string>
+    <string name="com_lenovo_lsf_regist_read_access">注册表示您已阅读并同意</string>
+    <string name="com_lenovo_lsf_regist_real_auth_button_text">立即认证</string>
+    <string name="com_lenovo_lsf_regist_real_auth_error">请输入正确的身份证信息</string>
+    <string name="com_lenovo_lsf_regist_real_auth_id">身份证:</string>
+    <string name="com_lenovo_lsf_regist_real_auth_id_hint">身份证</string>
+    <string name="com_lenovo_lsf_regist_real_auth_introduce">根据文化部《网络游戏管理暂行办法》规定，网络游戏用户需使用有效身份证进行实名认证</string>
+    <string name="com_lenovo_lsf_regist_real_auth_name">姓    名:</string>
+    <string name="com_lenovo_lsf_regist_real_auth_name_hint">姓名</string>
+    <string name="com_lenovo_lsf_regist_real_auth_neterror">认证失败，请联系客服，QQ：3007422129</string>
+    <string name="com_lenovo_lsf_regist_real_auth_neterrorunkown">很抱歉，请求超时，请稍后再试！</string>
+    <string name="com_lenovo_lsf_regist_real_auth_title">联想游戏实名认证</string>
+    <string name="com_lenovo_lsf_regist_real_regist_success">认证成功</string>
+    <string name="com_lenovo_lsf_regist_real_registing">认证中...</string>
+    <string name="com_lenovo_lsf_register_string_account">帐号</string>
+    <string name="com_lenovo_lsf_register_string_accounthint">手机号/邮箱</string>
+    <string name="com_lenovo_lsf_register_string_agree">我接受</string>
+    <string name="com_lenovo_lsf_register_string_changeanother">换一个</string>
+    <string name="com_lenovo_lsf_register_string_confirmpwd">确认密码  </string>
+    <string name="com_lenovo_lsf_register_string_confirmpwd_hint">再次输入密码</string>
+    <string name="com_lenovo_lsf_register_string_countries">您的位置</string>
+    <string name="com_lenovo_lsf_register_string_haveid">已有帐号</string>
+    <string name="com_lenovo_lsf_register_string_location_selection">请选择您的国家/地区？</string>
+    <string name="com_lenovo_lsf_register_string_login">登    录</string>
+    <string name="com_lenovo_lsf_register_string_protocol">我接受 <u>联想帐号服务条款</u></string>
+    <string name="com_lenovo_lsf_register_string_register">注    册</string>
+    <string name="com_lenovo_lsf_register_string_registerinfo">如果您曾经在别的联想产品或服务上注册过联想帐号，请返回登录</string>
+    <string name="com_lenovo_lsf_register_string_setpwd">密码  </string>
+    <string name="com_lenovo_lsf_register_string_setpwdhint">密码</string>
+    <string name="com_lenovo_lsf_register_string_verifycode">验证码  </string>
+    <string name="com_lenovo_lsf_register_string_verifycodehint">验证码</string>
+    <string name="com_lenovo_lsf_register_time_out">登录超时！请重试</string>
+    <string name="com_lenovo_lsf_registersuccess_string_detailmail1">验证邮件已发往您的注册邮箱</string>
+    <string name="com_lenovo_lsf_registersuccess_string_detailmail2">请点击该邮箱中的验证链接验证帐号</string>
+    <string name="com_lenovo_lsf_registersuccess_string_detailphone1">验证码已发往您的注册手机号！</string>
+    <string name="com_lenovo_lsf_registersuccess_string_detailphone2">请进入短信中的链接验证帐号</string>
+    <string name="com_lenovo_lsf_registersuccess_string_login">登录联想帐号</string>
+    <string name="com_lenovo_lsf_registersuccess_string_resend">重新发送</string>
+    <string name="com_lenovo_lsf_registersuccess_string_resend_mail">重新发送验证邮件</string>
+    <string name="com_lenovo_lsf_registersuccess_string_resend_phone">重新发送验证短信</string>
+    <string name="com_lenovo_lsf_registersuccess_string_success">注册成功</string>
+    <string name="com_lenovo_lsf_senced_password_not_null">请输入重复密码</string>
+    <string name="com_lenovo_lsf_set_network">设置网络</string>
+    <string name="com_lenovo_lsf_sim_error">当前手机SIM卡不可用</string>
+    <string name="com_lenovo_lsf_sso_qq_auth_cancel">取消认证</string>
+    <string name="com_lenovo_lsf_sso_qq_auth_error">认证失败:</string>
+    <string name="com_lenovo_lsf_sso_qq_login_progress">QQ登录中，请稍后...</string>
+    <string name="com_lenovo_lsf_string_account_hint">手机号</string>
+    <string name="com_lenovo_lsf_string_account_is_empty">帐号为空</string>
+    <string name="com_lenovo_lsf_string_account_no_match_pattern">绑定帐号不符合规则</string>
+    <string name="com_lenovo_lsf_string_account_pattern_is_wrong">帐号格式错误</string>
+    <string name="com_lenovo_lsf_string_account_setting_about">关于</string>
+    <string name="com_lenovo_lsf_string_account_setting_account">帐户</string>
+    <string name="com_lenovo_lsf_string_account_setting_other">其他</string>
+    <string name="com_lenovo_lsf_string_associated_phone_description">推荐使用手机号作为您的帐号,当您忘记密码,可通过关联手机号码快速重置密码</string>
+    <string name="com_lenovo_lsf_string_associated_phone_function_description">快捷登录,安全可靠</string>
+    <string name="com_lenovo_lsf_string_associated_phone_input_phone_number_hint">请输入常用手机号码</string>
+    <string name="com_lenovo_lsf_string_associated_phone_number">关联手机号</string>
+    <string name="com_lenovo_lsf_string_associated_phone_tips">我的手机号:</string>
+    <string name="com_lenovo_lsf_string_associated_with_phone_number">关联手机号码</string>
+    <string name="com_lenovo_lsf_string_auth_deny">用户拒绝</string>
+    <string name="com_lenovo_lsf_string_autologin_failed">自动登录失败，请手工登录</string>
+    <string name="com_lenovo_lsf_string_bind_account">帐户绑定</string>
+    <string name="com_lenovo_lsf_string_bind_failure">解绑失败</string>
+    <string name="com_lenovo_lsf_string_binging_failure">绑定不成功</string>
+    <string name="com_lenovo_lsf_string_btn_adv_ok">立即参与</string>
+    <string name="com_lenovo_lsf_string_captcha_checking">正在验证中...</string>
+    <string name="com_lenovo_lsf_string_captcha_has_send_to_your_mailbox">验证码已经发送至您的邮箱:</string>
+    <string name="com_lenovo_lsf_string_captcha_has_sent_to_your_new_phone">验证码已发送至您的新手机:</string>
+    <string name="com_lenovo_lsf_string_captcha_is_empty">验证码为空</string>
+    <string name="com_lenovo_lsf_string_captcha_pattern_is_wrong">验证码格式错误</string>
+    <string name="com_lenovo_lsf_string_captcha_tips">验证码:</string>
+    <string name="com_lenovo_lsf_string_chang_password_failure">修改密码失败</string>
+    <string name="com_lenovo_lsf_string_change_account">帐号迁移</string>
+    <string name="com_lenovo_lsf_string_change_account_function_description">此功能会将您原帐号的所有资料信息全部迁移至您的新帐号</string>
+    <string name="com_lenovo_lsf_string_change_account_last_step_function_description">帐号变更成功后,原帐号将被注销,请使用新帐号登录,登录密码不变</string>
+    <string name="com_lenovo_lsf_string_change_account_last_step_please_input_password">请输入登录密码进行安全验证:</string>
+    <string name="com_lenovo_lsf_string_change_account_text">切换帐号</string>
+    <string name="com_lenovo_lsf_string_change_personal_information">修改个人信息</string>
+    <string name="com_lenovo_lsf_string_current_account">当前帐号:</string>
+    <string name="com_lenovo_lsf_string_current_registed_phone_number">当前注册手机号:</string>
+    <string name="com_lenovo_lsf_string_current_version">当前版本:</string>
+    <string name="com_lenovo_lsf_string_email_patter_is_wrong">邮箱格式错误</string>
+    <string name="com_lenovo_lsf_string_empty_phone_number">手机号为空</string>
+    <string name="com_lenovo_lsf_string_failed_get_captcha">获取验证码失败</string>
+    <string name="com_lenovo_lsf_string_findpwd_new_pwd_tips">新密码:</string>
+    <string name="com_lenovo_lsf_string_finish_startgame">完成并开始</string>
+    <string name="com_lenovo_lsf_string_forget_password"><u>忘记密码？</u></string>
+    <string name="com_lenovo_lsf_string_game_checkin">正在登录···</string>
+    <string name="com_lenovo_lsf_string_game_loginning">正在进入···</string>
+    <string name="com_lenovo_lsf_string_game_loginning_dot">···</string>
+    <string name="com_lenovo_lsf_string_get_back_password_failed">找回密码失败</string>
+    <string name="com_lenovo_lsf_string_getting_captcha">正在获取验证码</string>
+    <string name="com_lenovo_lsf_string_has_already_set_safemail">已经设置安全邮箱</string>
+    <string name="com_lenovo_lsf_string_has_associated_phone">你已经关联手机手机号</string>
+    <string name="com_lenovo_lsf_string_has_band_safemail">你已经绑定安全邮箱</string>
+    <string name="com_lenovo_lsf_string_invalid_account">无效帐户</string>
+    <string name="com_lenovo_lsf_string_invalid_param_request">无效的请求参数</string>
+    <string name="com_lenovo_lsf_string_invalid_username">无效的用户名</string>
+    <string name="com_lenovo_lsf_string_is_binding">正在绑定</string>
+    <string name="com_lenovo_lsf_string_is_registing">正在注册</string>
+    <string name="com_lenovo_lsf_string_is_setting">正在设置中</string>
+    <string name="com_lenovo_lsf_string_is_unbanding">正在解除绑定</string>
+    <string name="com_lenovo_lsf_string_modifying_password">正在修改中</string>
+    <string name="com_lenovo_lsf_string_msg_of_captcha_send_to_your_phone">验证码短信已经发送至您的手机:</string>
+    <string name="com_lenovo_lsf_string_my_account">我的帐号</string>
+    <string name="com_lenovo_lsf_string_my_account_with_title">我的帐号:</string>
+    <string name="com_lenovo_lsf_string_network_error">网络连接出错</string>
+    <string name="com_lenovo_lsf_string_network_error_goback">返回</string>
+    <string name="com_lenovo_lsf_string_network_error_retry">重试</string>
+    <string name="com_lenovo_lsf_string_next_step">下一步</string>
+    <string name="com_lenovo_lsf_string_no_account">无此帐号</string>
+    <string name="com_lenovo_lsf_string_no_net_work">当前无网络</string>
+    <string name="com_lenovo_lsf_string_offical_website">官方网站:</string>
+    <string name="com_lenovo_lsf_string_ok_and_login">确认并登录</string>
+    <string name="com_lenovo_lsf_string_other_account_login">使用其他帐号登录</string>
+    <string name="com_lenovo_lsf_string_password_hint_text">新密码(4-20个字符)</string>
+    <string name="com_lenovo_lsf_string_password_is_empty">密码为空</string>
+    <string name="com_lenovo_lsf_string_password_pattern_is_wrong">密码格式须为8-20位且包含数字及字母</string>
+    <string name="com_lenovo_lsf_string_phone_quick_startgame">用本手机号快速登录</string>
+    <string name="com_lenovo_lsf_string_please_input_catcha">请填写图中的验证码</string>
+    <string name="com_lenovo_lsf_string_please_input_lost_password_account">输入您要找回的帐号</string>
+    <string name="com_lenovo_lsf_string_please_input_phone_number">请填写手机号码</string>
+    <string name="com_lenovo_lsf_string_please_input_your_new_phone_number">请输入新的手机号:</string>
+    <string name="com_lenovo_lsf_string_privacy1">注册则表示同意</string>
+    <string name="com_lenovo_lsf_string_privacy2">《用户隐私协议》</string>
+    <string name="com_lenovo_lsf_string_qq">腾讯QQ</string>
+    <string name="com_lenovo_lsf_string_quick_startgame">快速开始</string>
+    <string name="com_lenovo_lsf_string_regist_sucess_and_login">注册成功正在登录</string>
+    <string name="com_lenovo_lsf_string_repeated_request_failed">多次请求失败</string>
+    <string name="com_lenovo_lsf_string_second_text">秒</string>
+    <string name="com_lenovo_lsf_string_send_again">重新发送</string>
+    <string name="com_lenovo_lsf_string_send_verify_email">发送验证邮件</string>
+    <string name="com_lenovo_lsf_string_send_verify_message">发送验证短信</string>
+    <string name="com_lenovo_lsf_string_sending_captch">正在发送验证码</string>
+    <string name="com_lenovo_lsf_string_set_password_for_your_lenovo_account">为您的联想帐号设置一个安全密码</string>
+    <string name="com_lenovo_lsf_string_set_safemail">设置安全邮箱</string>
+    <string name="com_lenovo_lsf_string_set_safemail_description">推荐设置安全邮箱,当您忘记忘记密码时,可以通过安全邮箱快速重置密码</string>
+    <string name="com_lenovo_lsf_string_set_safemail_input_mail_hint">请输入常用邮箱</string>
+    <string name="com_lenovo_lsf_string_set_safemail_ok">完成</string>
+    <string name="com_lenovo_lsf_string_set_safemail_tips">安全邮箱:</string>
+    <string name="com_lenovo_lsf_string_set_your_new_password">设置你的新密码</string>
+    <string name="com_lenovo_lsf_string_set_your_password_for_security">为保障帐号安全,请设置密码</string>
+    <string name="com_lenovo_lsf_string_setting_new_password_is">设置新密码:</string>
+    <string name="com_lenovo_lsf_string_sina_webo">新浪微博</string>
+    <string name="com_lenovo_lsf_string_startgame">开始</string>
+    <string name="com_lenovo_lsf_string_title_regist_by_mail">邮箱注册</string>
+    <string name="com_lenovo_lsf_string_title_regist_by_phone">手机号注册</string>
+    <string name="com_lenovo_lsf_string_unset_safemail">解除设置</string>
+    <string name="com_lenovo_lsf_string_use_email_registe">用邮箱注册</string>
+    <string name="com_lenovo_lsf_string_user_not_exist">无此用户</string>
+    <string name="com_lenovo_lsf_string_username_has_exist">您输入的帐号已经注册</string>
+    <string name="com_lenovo_lsf_string_verify_code_sendto">验证码已经发送到：</string>
+    <string name="com_lenovo_lsf_string_verify_message_has_send_to_your_phone">验证短信已经发送至您的手机</string>
+    <string name="com_lenovo_lsf_string_verifyemail_sendto_mailbox">验证码邮件已发送到:</string>
+    <string name="com_lenovo_lsf_string_verifysms_sendto_phone">验证码已发至:</string>
+    <string name="com_lenovo_lsf_string_welcome_comeback">欢迎回来,</string>
+    <string name="com_lenovo_lsf_string_welcome_text">欢迎你,</string>
+    <string name="com_lenovo_lsf_string_wrong_captcha">验证码错误</string>
+    <string name="com_lenovo_lsf_string_wrong_password">密码错误</string>
+    <string name="com_lenovo_lsf_string_wrong_server">服务器异常</string>
+    <string name="com_lenovo_lsf_string_wrong_tgt">tgt错误</string>
+    <string name="com_lenovo_lsf_string_wrong_verify_code">校验码错误</string>
+    <string name="com_lenovo_lsf_tgt_error">当前帐号已过期，请重新登录</string>
+    <string name="com_lenovo_lsf_tip_input_phone">请输入您要注册的手机号</string>
+    <string name="com_lenovo_lsf_title_about">关于</string>
+    <string name="com_lenovo_lsf_title_account_info">帐号设置</string>
+    <string name="com_lenovo_lsf_title_account_setting">我的帐号</string>
+    <string name="com_lenovo_lsf_title_bindthird_qq">绑定腾讯QQ</string>
+    <string name="com_lenovo_lsf_title_bindthird_sina">绑定新浪微博</string>
+    <string name="com_lenovo_lsf_title_regist">手机号注册</string>
+    <string name="com_lenovo_lsf_title_update_account_name">帐号迁移</string>
+    <string name="com_lenovo_lsf_u_message">您本机的联想用户服务框架需要更新安装，安装后可以用联想帐号自动登录，并保障帐号安全(仅安装一次，不耗费流量)</string>
+    <string name="com_lenovo_lsf_u_message_install">您本机未安装联想用户服务框架，安装后可以用联想帐号自动登录，并保障帐号安全(仅安装一次，不耗费流量)</string>
+    <string name="com_lenovo_lsf_u_title">提示</string>
+    <string name="com_lenovo_lsf_ui_name">联想帐号</string>
+    <string name="com_lenovo_lsf_update">更新</string>
+    <string name="com_lenovo_lsf_update_already_last_version">当前已是最新版本</string>
+    <string name="com_lenovo_lsf_username_not_null">请输入帐号</string>
+    <string name="com_lenovo_lsf_watch_text">查看详情</string>
+    <string name="com_lenovo_lsf_webview_error_text1">未能连接到互联网</string>
+    <string name="com_lenovo_lsf_webview_error_text2">请检查您的网络连接</string>
+    <string name="com_lenovo_lsf_webview_error_text3">重新</string>
+    <string name="com_lenovo_lsf_webview_error_text4">刷新</string>
+    <string name="com_lenovo_lsf_webview_refresh">刷新</string>
+    <string name="com_lenovo_lsft_string_my_account_unset">未设置</string>
+    <string name="com_lenovo_pay_account_apk_offline_tip">获取不到您的账户信息，请点击登录联想帐号并完成支付。</string>
+    <string name="com_lenovo_pay_account_different_title">帐号不一致</string>
+    <string name="com_lenovo_pay_account_permission_html_tip">"读取账户信息"权限已被禁止，为您跳转浏览器支付</string>
+    <string name="com_lenovo_pay_account_permission_tip">没有"读取帐号信息"权限，请在系统设置-应用权限管理中开启权限，才能正常支付</string>
+    <string name="com_lenovo_pay_account_warning_tip">
+        
+        <![CDATA[ 您当前游戏登录的帐号：  <Font color=\"#4c96e0\">%1$s,</Font>与当前手机登录的联想帐号不一致，请在帐号设置中切换帐号，再进行充值。]]>
+
+    </string>
+    <string name="com_lenovo_pay_account_zuk_apk_offline_tip">获取不到您的账户信息，请点击登录ZUK帐号并完成支付。</string>
+    <string name="com_lenovo_pay_back_game">返回游戏</string>
+    <string name="com_lenovo_pay_balancing_text">帐号已过期，正在刷新...</string>
+    <string name="com_lenovo_pay_card_charge_succ">充值成功</string>
+    <string name="com_lenovo_pay_card_chargeing">充值中…</string>
+    <string name="com_lenovo_pay_card_commit_succ">提交成功</string>
+    <string name="com_lenovo_pay_card_input_info">请填写卡号和密码</string>
+    <string name="com_lenovo_pay_card_number">充值卡卡号</string>
+    <string name="com_lenovo_pay_card_passw">充值卡密码</string>
+    <string name="com_lenovo_pay_cashbalance_tip">
+        
+        <![CDATA[可使用礼券<Font color=\"#4c96e0\"> %1$s </Font>V币券]]>
+
+    </string>
+    <string name="com_lenovo_pay_cashier_title_text">联想收银台</string>
+    <string name="com_lenovo_pay_coupon_default_name">优惠券</string>
+    <string name="com_lenovo_pay_coupon_item_end_time">有效期至：%1$s</string>
+    <string name="com_lenovo_pay_coupon_item_limit">无金额门槛</string>
+    <string name="com_lenovo_pay_coupon_item_rule">满%1$s元可用</string>
+    <string name="com_lenovo_pay_coupon_item_rule_tip">使用规则：%1$s</string>
+    <string name="com_lenovo_pay_coupon_null">未使用优惠券</string>
+    <string name="com_lenovo_pay_coupon_warning">温馨提示：使用满减券的订单不能与其他优惠活动同享</string>
+    <string name="com_lenovo_pay_data_error">很抱歉，数据异常，请稍后再试！</string>
+    <string name="com_lenovo_pay_dlg_cancel_text">取消</string>
+    <string name="com_lenovo_pay_dlg_change_text">快速切换</string>
+    <string name="com_lenovo_pay_dlg_ok_text">确定</string>
+    <string name="com_lenovo_pay_dlg_tip_title_text">提示</string>
+    <string name="com_lenovo_pay_dlg_title_text">提示</string>
+    <string name="com_lenovo_pay_do_query_loading">正在查询支付结果...</string>
+    <string name="com_lenovo_pay_downloading_text">正在下载联想帐号，请稍候...</string>
+    <string name="com_lenovo_pay_error_account_expired_text">帐号已过期，请重新登录。</string>
+    <string name="com_lenovo_pay_error_download_idapk_text">联想帐号下载失败，请检查网络连接并稍后重试</string>
+    <string name="com_lenovo_pay_error_goods_expired_text">商品价格已过期，正在重新获取...</string>
+    <string name="com_lenovo_pay_error_insufficient_aftercharging_text">充值后V币余额不足</string>
+    <string name="com_lenovo_pay_error_moto_download_idapk_text">MOTO帐号下载失败，请检查网络连接并稍后重试</string>
+    <string name="com_lenovo_pay_error_network_failed_text">网络连接失败，请检查网络！</string>
+    <string name="com_lenovo_pay_error_no_apk_text">尚未安装联想支付插件，无法进行充值。</string>
+    <string name="com_lenovo_pay_error_zuk_download_idapk_text">ZUK帐号下载失败，请检查网络连接并稍后重试</string>
+    <string name="com_lenovo_pay_exit_pay_tip_text">确定放弃本次支付?</string>
+    <string name="com_lenovo_pay_failed_again">支付失败，请稍后再试！</string>
+    <string name="com_lenovo_pay_finish_text">本次支付已经完成</string>
+    <string name="com_lenovo_pay_gamecard_sure_pay_text">确认支付</string>
+    <string name="com_lenovo_pay_get_login_info_text">正在载入登陆进程...</string>
+    <string name="com_lenovo_pay_goods_cancel_text">取消</string>
+    <string name="com_lenovo_pay_goods_name_text">商品:</string>
+    <string name="com_lenovo_pay_goods_order_text">售价:</string>
+    <string name="com_lenovo_pay_goods_pay_text">支付</string>
+    <string name="com_lenovo_pay_gp_text">前往</string>
+    <string name="com_lenovo_pay_idapk_lowversion_text">您的联想帐号版本过低，无法进行充值。是否现在下载并安装？</string>
+    <string name="com_lenovo_pay_idapk_prompt_text">尚未安装联想支付插件，是否下载并安装？</string>
+    <string name="com_lenovo_pay_idapk_signature_prompt_text">您手机上安装的应用不是官方发布联想用户中心，请从乐商店下载用户中心安装，是否卸载这个应用？</string>
+    <string name="com_lenovo_pay_idapk_wrong_version_text">您的联想帐号版本过低，无法进行充值。请通过网页充值</string>
+    <string name="com_lenovo_pay_immediate">立即支付</string>
+    <string name="com_lenovo_pay_intallupdate_wait_text">正在等待安装完成</string>
+    <string name="com_lenovo_pay_limit_error">很抱歉，支付金额不符合文化部《网络游戏管理暂行办法》规定 ！</string>
+    <string name="com_lenovo_pay_loading_cashier_text">正在连接支付中心，请稍候...</string>
+    <string name="com_lenovo_pay_loginning_cashier_text">正在登入联想收银台</string>
+    <string name="com_lenovo_pay_modify_realauth_hint_idno">请填写您的身份证号</string>
+    <string name="com_lenovo_pay_modify_realauth_hint_name">请填写您的真实姓名</string>
+    <string name="com_lenovo_pay_modify_realauth_title">实名制信息登记</string>
+    <string name="com_lenovo_pay_modify_realauth_title_id">修改身份证信息：</string>
+    <string name="com_lenovo_pay_modify_realauth_title_idno">身份证号：</string>
+    <string name="com_lenovo_pay_modify_realauth_title_name">真实姓名：</string>
+    <string name="com_lenovo_pay_moto_downloading_text">正在下载MOTO帐号，请稍候...</string>
+    <string name="com_lenovo_pay_net_error">很抱歉，请求超时，请稍后再试！</string>
+    <string name="com_lenovo_pay_no_coupons">暂无可使用的优惠券</string>
+    <string name="com_lenovo_pay_no_sufficient_funds">V币余额不足，请前往充值.</string>
+    <string name="com_lenovo_pay_no_use_coupon">不使用优惠券</string>
+    <string name="com_lenovo_pay_order_charge">应付金额</string>
+    <string name="com_lenovo_pay_order_coupon">优惠券抵扣</string>
+    <string name="com_lenovo_pay_order_v">V币抵扣</string>
+    <string name="com_lenovo_pay_overlimit_goto_vbc">充值V币</string>
+    <string name="com_lenovo_pay_paying_aftercharging_text">您已充值完毕，正在支付中...</string>
+    <string name="com_lenovo_pay_paying_text">正在请求支付...</string>
+    <string name="com_lenovo_pay_plugin_download_text">您没有安装支付插件，无法进行充值。是否现在下载并安装？</string>
+    <string name="com_lenovo_pay_plugin_download_title_text">下载</string>
+    <string name="com_lenovo_pay_plugin_lowversion_text">您的支付插件版本过低，无法进行充值。请通过网页充值</string>
+    <string name="com_lenovo_pay_price_unit_text">V币</string>
+    <string name="com_lenovo_pay_processing_text">正在处理中...</string>
+    <string name="com_lenovo_pay_qr_error">二维码生成失败</string>
+    <string name="com_lenovo_pay_qr_error1">二维码已失效</string>
+    <string name="com_lenovo_pay_qr_refresh">刷新</string>
+    <string name="com_lenovo_pay_qr_tip">打开%1$s扫一扫付款</string>
+    <string name="com_lenovo_pay_qr_title">扫码支付</string>
+    <string name="com_lenovo_pay_regist_realauth_title_id">输入身份证信息：</string>
+    <string name="com_lenovo_pay_retry_balancing_text">账户已刷新完成，请重新支付</string>
+    <string name="com_lenovo_pay_retry_text">商品价格刷新完成，请重新支付</string>
+    <string name="com_lenovo_pay_rnb">%1$s元</string>
+    <string name="com_lenovo_pay_select_coupon">我的优惠券</string>
+    <string name="com_lenovo_pay_select_pay_type">请选择支付方式</string>
+    <string name="com_lenovo_pay_title_account_text">帐号:</string>
+    <string name="com_lenovo_pay_title_balance_text">余额:</string>
+    <string name="com_lenovo_pay_title_charge_text">充值并支付</string>
+    <string name="com_lenovo_pay_type_ali">支付宝</string>
+    <string name="com_lenovo_pay_type_ali_qr">支付宝扫码</string>
+    <string name="com_lenovo_pay_type_ali_text">手机支付宝</string>
+    <string name="com_lenovo_pay_type_szf">手机充值卡</string>
+    <string name="com_lenovo_pay_type_weixin">微信支付</string>
+    <string name="com_lenovo_pay_type_weixin_qr">微信扫码</string>
+    <string name="com_lenovo_pay_update_btn_text">更新</string>
+    <string name="com_lenovo_pay_update_tip_text">您的联想帐号版本需要更新。</string>
+    <string name="com_lenovo_pay_update_title_text">版本更新</string>
+    <string name="com_lenovo_pay_usecashbalance_pay_tip_text">该订单将直接用使用抵扣券支付?</string>
+    <string name="com_lenovo_pay_v_spend">%1$s个(%2$s元)</string>
+    <string name="com_lenovo_pay_v_unit">%1$s个</string>
+    <string name="com_lenovo_pay_vcoin_pay_fee_tip">您将使用V币支付%1$s%2$s\u0020（其中%3$s为支付手续费, 1元=%4$s）, 请确认.</string>
+    <string name="com_lenovo_pay_vcoin_pay_finish_success">支付成功</string>
+    <string name="com_lenovo_pay_vcoin_pay_finish_tip">您已成功支付了\u0020%1$s\u0020V币.</string>
+    <string name="com_lenovo_pay_vcoin_pay_tip">您将使用V币支付%1$s%2$s\u0020（1元=%3$s）,请确认.</string>
+    <string name="com_lenovo_pay_zuk_downloading_text">正在下载ZUK帐号，请稍候...</string>
+    <string name="com_lenovo_pay_zuk_update_tip_text">您的ZUK帐号版本需要更新。</string>
+    <string name="com_lenovo_plugin_downloading_text">正在下载支付插件，请稍候...</string>
+    <string name="com_lenovo_plugin_error_download_text">支付插件下载失败，请检查网络连接并稍后重试</string>
+    <string name="com_lenovo_plugin_pay_download_tip_text">您需要下载支付插件。</string>
+    <string name="com_lenovo_plugin_pay_update_tip_text">您的支付插件需要更新。</string>
+    <string name="com_lenovo_pop_active_get_faile">领取激活码失败</string>
+    <string name="com_lenovo_pop_active_get_success">成功复制激活码，请直接粘贴！</string>
+    <string name="com_lenovo_pop_vb_get_active">复制激活码</string>
+    <string name="com_lenovo_pop_vb_get_faile">领取优惠券失败</string>
+    <string name="com_lenovo_pop_vb_get_repeat">领取失败，您已经领取过该优惠券</string>
+    <string name="com_lenovo_pop_vb_get_success">成功领取%s元优惠券</string>
+    <string name="com_lenovo_pop_vb_get_vb">领取V币</string>
+    <string name="com_lenovo_toolbar_id_close">"关闭"</string>
+    <string name="com_lenovo_toolbar_label_account">帐号</string>
+    <string name="com_lenovo_toolbar_label_forum">论坛</string>
+    <string name="com_lenovo_toolbar_label_gift">礼包</string>
+    <string name="com_lenovo_toolbar_label_mine">V币</string>
+    <string name="com_lenovo_toolbar_label_strategy">攻略</string>
+    <string name="com_lenovo_toolbar_label_vip">VIP</string>
+    <string name="com_lenvo_lsf_string_current_email">当前注册邮箱:</string>
+    <string name="com_lenvo_lsf_string_current_phone_number">当前注册手机号:</string>
+    <string name="com_lenvo_lsf_string_email_is_empty">邮箱为空</string>
+    <string name="com_lenvo_lsf_string_please_input_new_email">输入新的邮箱:</string>
+    <string name="com_lenvo_lsf_string_please_input_new_phone_number">输入新的手机号:</string>
+    <string name="download_falied">下载失败，点击重试。</string>
+    <string name="gw_empty_data_retry">触屏即可重试</string>
+    <string name="gw_empty_network">网络不给力</string>
+    <string name="lenovouser_password_fail_five">您的账户已被锁定，请20分钟后再试</string>
+    <string name="lenovouser_password_fail_four">密码连续输错5次时账户将被锁定，还剩1次</string>
+    <string name="lenovouser_password_fail_three">密码连续输错5次时账户将被锁定，还剩2次</string>
+    <string name="lenovouser_quick_welcome">欢迎</string>
+    <string name="pay_card_input_hint">温馨提示：充值的金额将转为V币存入您的账户，充值卡充值到账稍有延迟，请勿重复充值</string>
+    <string name="pay_card_input_limit">充值金额</string>
+    <string name="pay_card_input_warning">注意：如果充值卡与所选金额不一致会导致卡内金额丢失</string>
+    <string name="pay_card_limit_hint">请选择充值卡面额（1元=10V币）</string>
+    <string name="pay_type_warning">优先使用所选付款方式，如付款失败将尝试使用其他方式完成付款</string>
+    <string name="payeco_confirm">"确\u0020\u0020认"</string>
+    <string name="payeco_error_get_order_error">"获取订单失败"</string>
+    <string name="payeco_keyboard">"密\u0020\u0020码\u0020\u0020键\u0020\u0020盘"</string>
+    <string name="payeco_keyboard_character">"字母"</string>
+    <string name="payeco_keyboard_confirm">"确\u0020\u0020定"</string>
+    <string name="payeco_keyboard_delete">"回\u0020\u0020退"</string>
+    <string name="payeco_keyboard_digital">"数字"</string>
+    <string name="payeco_keyboard_edit_hint">"请输入银行卡密码"</string>
+    <string name="payeco_keyboard_next">"下一页"</string>
+    <string name="payeco_keyboard_pre">"上一页"</string>
+    <string name="payeco_keyboard_symbol">"符号"</string>
+    <string name="payeco_keyboard_tips">"采用银联标准加密技术传输，保证密码输入安全"</string>
+    <string name="payeco_networkError">"没有网络连接，请检查网络设置"</string>
+    <string name="payeco_pay_cvn2">"卡背面签名栏后三位"</string>
+    <string name="payeco_pay_validate">"有效期:"</string>
+    <string name="payeco_plugin_initing">"正在初始化..."</string>
+    <string name="payeco_plugin_pay_fail">"支付失败"</string>
+    <string name="payeco_plugin_pay_init_fail">"插件初始化失败"</string>
+    <string name="payeco_plugin_pay_verify_fail">"订单验证失败"</string>
+    <string name="payeco_prompt">"提示"</string>
+    <string name="push_app_name">设备服务</string>
+    <string name="text_set_later">以后再说</string>
+    <string name="text_set_wifi">设置Wifi</string>
+    <string name="text_start_task">开始下载</string>
+    <string name="warring_network_mobile">当前没有可用的wifi网络，是否使用移动网络下载？</string>
+    <string name="warring_no_network">当前没有可用的网络连接，请设置wifi网络。</string>
+    <style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+	</style>
+    <style name="LenovoSDKDialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@android:color/white</item>
+	</style>
+    <style name="MaxTextDeepStyle">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="com_lenovo_lsf_Translucent_NoTitle_Dialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:background">#00000000</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+		<item name="android:windowIsTranslucent">true</item>
+	</style>
+    <style name="com_lenovo_lsf_Translucent_Title_Dialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:background">#00000000</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+		<item name="android:windowIsTranslucent">true</item>
+	</style>
+    <style name="com_lenovo_lsf_account_setting_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FF333333</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="com_lenovo_lsf_account_setting_text_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FF9d9d9d</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="com_lenovo_lsf_bottom">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:orientation">vertical</item>
+		<item name="android:gravity">center_horizontal|bottom</item>
+		<item name="android:layout_marginBottom">15dp</item>
+	</style>
+    <style name="com_lenovo_lsf_button">
+		<item name="android:layout_height">32dp</item>
+	</style>
+    <style name="com_lenovo_lsf_button.commit" parent="@style/com_lenovo_lsf_text">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@drawable/com_lenovo_lsf_btn_register_selector</item>
+	</style>
+    <style name="com_lenovo_lsf_button_small_style">
+		<item name="android:layout_width">90dp</item>
+		<item name="android:layout_height">35dp</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:background">@drawable/com_lenovo_lsf_find_pwd</item>
+	</style>
+    <style name="com_lenovo_lsf_button_style">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">10dp</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:textColor">#666666</item>
+		<item name="android:background">@drawable/com_lenovo_lsf_find_pwd</item>
+	</style>
+    <style name="com_lenovo_lsf_content">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:paddingLeft">@dimen/com_lenovo_lsf_content_padding_left_right</item>
+		<item name="android:paddingRight">@dimen/com_lenovo_lsf_content_padding_left_right</item>
+		<item name="android:background">?android:attr/windowBackground</item>
+		<item name="android:paddingTop">@dimen/com_lenovo_lsf_content_margin_top</item>
+	</style>
+    <style name="com_lenovo_lsf_detail_text">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">15sp</item>
+	</style>
+    <style name="com_lenovo_lsf_dialogactivitytheme" parent="android:Theme.Light">
+		<item name="android:windowBackground">@color/com_lenovo_lsf_transparent</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+	</style>
+    <style name="com_lenovo_lsf_divider_content">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">1px</item>
+		<item name="android:background">#efefef</item>
+	</style>
+    <style name="com_lenovo_lsf_edit">
+		<item name="android:layout_height">@dimen/com_lenovo_lsf_content_edittext_height</item>
+	</style>
+    <style name="com_lenovo_lsf_head_text">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">#2e2e2e</item>
+		<item name="android:textSize">24sp</item>
+	</style>
+    <style name="com_lenovo_lsf_input_text">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:layout_marginLeft">7dp</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+    <style name="com_lenovo_lsf_layout_loc">
+		<item name="android:layout_marginLeft">18dp</item>
+		<item name="android:layout_marginRight">18dp</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:orientation">vertical</item>
+	</style>
+    <style name="com_lenovo_lsf_layout_location">
+		<item name="android:paddingLeft">18dp</item>
+		<item name="android:paddingRight">18dp</item>
+		<item name="android:paddingTop">10dp</item>
+	</style>
+    <style name="com_lenovo_lsf_myaccount_relative">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:paddingTop">10dp</item>
+		<item name="android:gravity">bottom</item>
+	</style>
+    <style name="com_lenovo_lsf_pay_LenovoSDKDialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@android:color/white</item>
+	</style>
+    <style name="com_lenovo_lsf_regist_editext_hint_style">
+	    <item name="android:textColorHint">#d1d1d1</item>
+	    <item name="android:textSize">14sp</item>
+	</style>
+    <style name="com_lenovo_lsf_setting_hint">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:id">@android:id/hint</item>
+		<item name="android:textAppearance">@style/com_lenovo_lsf_text.hint</item>
+	</style>
+    <style name="com_lenovo_lsf_setting_icon">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:id">@android:id/icon</item>
+	</style>
+    <style name="com_lenovo_lsf_setting_item_title">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">24dp</item>
+		<item name="android:textColor">#757575</item>
+		<item name="android:textSize">12sp</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:layout_marginLeft">16dp</item>
+		<item name="android:layout_marginRight">16dp</item>
+	</style>
+    <style name="com_lenovo_lsf_setting_summary">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:id">@android:id/summary</item>
+		<item name="android:textAppearance">@style/com_lenovo_lsf_text.link.multiline</item>
+	</style>
+    <style name="com_lenovo_lsf_setting_title">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:id">@android:id/title</item>
+		<item name="android:textAppearance">@style/com_lenovo_lsf_text</item>
+	</style>
+    <style name="com_lenovo_lsf_setting_titlegroup">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_weight">1</item>
+	</style>
+    <style name="com_lenovo_lsf_spinner">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">15sp</item>
+	</style>
+    <style name="com_lenovo_lsf_text">
+		<item name="android:textColor">#191919</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+    <style name="com_lenovo_lsf_text.edit">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColorHint">#D1D1D1</item>
+	</style>
+    <style name="com_lenovo_lsf_text.error">
+		<item name="android:textSize">10sp</item>
+		<item name="android:textColor">#FF0000</item>
+	</style>
+    <style name="com_lenovo_lsf_text.hint">
+		<item name="android:textColor">#A3A3A3</item>
+	</style>
+    <style name="com_lenovo_lsf_text.link">
+		<item name="android:textSize">12sp</item>
+		<item name="android:textColor">#191919</item>
+	</style>
+    <style name="com_lenovo_lsf_text.link.multiline">
+		<item name="android:textColor">#474747</item>
+	</style>
+    <style name="com_lenovo_lsf_text.medium">
+		<item name="android:textSize">18sp</item>
+	</style>
+    <style name="com_lenovo_lsf_text.pre">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">#D1D1D1</item>
+	</style>
+    <style name="com_lenovo_lsf_text.resend">
+		<item name="android:textSize">14sp</item>
+	</style>
+    <style name="com_lenovo_lsf_text.tip">
+		<item name="android:textColor">#757575</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+    <style name="com_lenovo_lsf_text.white">
+		<item name="android:textColor">#FFFFFFFF</item>
+	</style>
+    <style name="com_lenovo_lsf_text_large">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">30sp</item>
+	</style>
+    <style name="com_lenovo_lsf_text_middle">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">15sp</item>
+	</style>
+    <style name="com_lenovo_lsf_text_size_large">
+		<item name="android:textSize">30sp</item>
+	</style>
+    <style name="com_lenovo_lsf_text_size_middle">
+		<item name="android:textSize">16sp</item>
+	</style>
+    <style name="com_lenovo_lsf_text_size_small">
+		<item name="android:textSize">15sp</item>
+	</style>
+    <style name="com_lenovo_lsf_text_small">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">15sp</item>
+	</style>
+    <style name="com_lenovo_lsf_theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item> <!-- 除去背景色 -->
+        
+    </style>
+    <style name="com_lenovo_lsf_ui" parent="android:Theme.Light">
+		<item name="android:windowTitleSize">41dp</item>
+		<item name="android:windowFullscreen">false</item>
+		<item name="android:windowBackground">@color/com_lenovo_lsf_appcolor</item>
+		<item name="android:windowTitleBackgroundStyle">@style/com_lenovo_lsf_uititlebackground</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+    <style name="com_lenovo_lsf_ui.dialog">
+		<item name="android:windowIsFloating">true</item>
+	</style>
+    <style name="com_lenovo_lsf_ui.no_title">
+		<item name="android:windowNoTitle">true</item>
+	</style>
+    <style name="com_lenovo_lsf_uititlebackground">
+		<item name="android:background">#ffffff</item>
+	</style>
+    <style name="com_lenovo_pay_theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item> 
+        <item name="android:windowBackground">@null</item>
+    </style>
+    <style name="lenovo_theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@android:color/transparent</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景色 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="login_autocomplete_drop" parent="@android:style/Widget.AutoCompleteTextView">
+		<item name="android:focusable">true</item>
+		<item name="android:popupBackground">@drawable/com_lenovo_lsf_autolist</item>
+		<item name="android:dropDownVerticalOffset">3dp</item>
+	</style>
+    <style name="lsf_pay_ui" parent="android:Theme.Light">
+        <item name="android:windowTitleSize">41dp</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    <style name="lsf_pay_ui.no_title">
+        <item name="android:windowNoTitle">true</item>
+                <item name="android:windowFullscreen">true</item> <!-- 除去背景色 -->
+    </style>
+    <style name="lsf_pay_ui.translate" parent="@android:style/Theme">
+        <item name="android:windowIsTranslucent">true</item> <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+        <item name="android:windowAnimationStyle">@null</item> <!-- 除去动画 -->
+        <item name="android:backgroundDimEnabled">false</item><!-- 模糊 -->
+        <item name="android:colorBackgroundCacheHint">@null</item><!-- 背景缓存颜色 -->
+        <item name="android:color">@color/com_lenovo_lsf_pay_next_button</item><!-- 背景透明 -->
+    </style>
+    <style name="payeco_datepPickDialog" parent="android:style/Theme.Dialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="payeco_fullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="payeco_keyboardButton">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_width">70.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/payeco_pwkeyboard_button_textsize</item>
+    </style>
+    <style name="payeco_keyboardDigitButton_hx">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:background">@drawable/payeco_stand_digtselector</item>
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="payeco_pluginNormalText">
+        <item name="android:textSize">@dimen/payeco_normal_textsize</item>
+        <item name="android:textColor">@color/payeco_textColorBlack</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="payeco_pluginSpinnerButton">
+        <item name="android:background">@drawable/payeco_plugin_spinner_selector</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/payeco_textColorBlack</item>
+        <item name="android:textSize">@dimen/payeco_small_textsize</item>
+        <item name="android:layout_height">30.0dip</item>
+    </style>
+    <style name="setting_item_major_text">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">@color/color_text_gray</item>
+		<item name="android:textSize">@dimen/middle_text_size</item>
+		<item name="android:layout_alignParentLeft">true</item>
+		<item name="android:layout_centerVertical">true</item>
+	</style>
+</resources>

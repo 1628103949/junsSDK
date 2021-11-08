@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/gift_list_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:divider="@null"
+        android:listSelector="@drawable/selector_list_bkg"
+        android:visibility="gone" >
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/loading_view_pb"
+        style="@style/mProgress_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/no_more_gift_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_more_gift"
+        android:textColor="@color/jolo_gray_font_color"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <include layout="@layout/net_error_layout" />
+
+    <!-- <ImageView
+        android:id="@+id/jolo_gift_adv_image"
+        android:visibility="gone"
+        android:src="@drawable/jolo_libao_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="209dp"
+        android:layout_height="207dp" /> -->
+
+</RelativeLayout>

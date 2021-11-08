@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ld_dialog_base_bg"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="@dimen/ld_base_dialog_width"
+        android:layout_height="@dimen/ld_base_dialog_height"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/ld_base_dialog_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:text="历史登录账号"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/account_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:divider="#E5E5E5"
+            android:dividerHeight="1dip"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/ld_dialog_base_bottom_bg"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="快捷登录"
+                    android:textColor="#666666"
+                    android:textSize="11sp" />
+
+                <ImageView
+                    android:id="@+id/qq_login"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="3dp"
+                    android:src="@drawable/ld_qq_login_icon" />
+
+                <ImageView
+                    android:id="@+id/wx_login"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="3dp"
+                    android:src="@drawable/ld_wx_login_icon" />
+
+                <ImageView
+                    android:id="@+id/phone_login"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="3dp"
+                    android:src="@drawable/ld_phone_login_icon" />
+
+                <ImageView
+                    android:id="@+id/qrcode_login"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="3dp"
+                    android:src="@drawable/ld_qrcode_login_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/switch_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="账号登录"
+                    android:textColor="@color/new_text_color"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/right_arrow_yellow_icon" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

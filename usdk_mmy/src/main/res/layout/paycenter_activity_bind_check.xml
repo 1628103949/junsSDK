@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paycenter_little_gray">
+
+    <include
+        android:id="@+id/la_usercenter_title"
+        layout="@layout/paycenter_layout_common_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/ll_titile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/la_usercenter_title"
+        android:layout_marginBottom="14dip"
+        android:layout_marginTop="28dip">
+
+        <TextView
+            android:id="@+id/tv_bindphone_text"
+            style="@style/body_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="已绑定的邮箱"
+            android:textColor="#606062"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_bindphone_text"
+            android:id="@+id/btn_release_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/str_paycenter_unbind"
+            android:textColor="#606062"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_release_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_titile"
+        android:background="@color/paycenter_little_gray">
+
+        <Button
+            android:id="@+id/btn_phone_release_valid"
+            style="@style/paycenter_text_style_4"
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:layout_marginLeft="22dip"
+            android:layout_marginRight="22dip"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/pay_btn_paycenter_login_style"
+            android:text="获取验证码"
+            android:textColor="@color/paycenter_white" />
+
+        <LinearLayout
+            android:id="@+id/ll_edt_release"
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:layout_below="@id/btn_phone_release_valid"
+            android:layout_marginTop="22dip"
+            android:orientation="horizontal">
+
+            <com.mumayi.paymentuserinfo.ui.EditTextWithDel
+                android:id="@+id/et_bind_validcode"
+                style="@style/tip_gray"
+                android:layout_width="0dip"
+                android:layout_height="44dip"
+                android:layout_marginLeft="22dip"
+                android:layout_weight="1"
+                android:background="@drawable/pay_edit_bg"
+                android:gravity="right"
+                android:hint="@string/str_paycenter_valid_code"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="#606062"
+                android:textColorHint="#bbc0c6" />
+
+            <Button
+                android:id="@+id/btn_phone_release"
+                style="@style/paycenter_text_style_4"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="22dip"
+                android:background="@drawable/pay_btn_paycenter_login_style"
+                android:text="验证"
+                android:textColor="@color/paycenter_white" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

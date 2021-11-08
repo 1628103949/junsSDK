@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <TextView
+        android:id="@+id/kkk_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:text="@string/kkk_select_fee"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ld_button_bg_while"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kkk_money_01"
+                style="@style/kkk_no_money_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kkk_money_01" />
+
+            <TextView
+                android:id="@+id/kkk_money_02"
+                style="@style/kkk_no_money_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kkk_money_02" />
+
+            <TextView
+                android:id="@+id/kkk_money_03"
+                style="@style/kkk_no_money_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kkk_money_03" />
+
+            <TextView
+                android:id="@+id/kkk_money_04"
+                style="@style/kkk_no_money_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kkk_money_04" />
+
+            <TextView
+                android:id="@+id/kkk_money_05"
+                style="@style/kkk_no_money_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kkk_money_05" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kkk_money_06"
+                style="@style/kkk_no_money_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kkk_money_06" />
+
+            <TextView
+                android:id="@+id/kkk_money_07"
+                style="@style/kkk_no_money_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kkk_money_07" />
+
+            <TextView
+                android:id="@+id/kkk_money_08"
+                style="@style/kkk_no_money_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kkk_money_08" />
+
+            <TextView
+                android:id="@+id/kkk_money_09"
+                style="@style/kkk_no_money_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kkk_money_09" />
+
+            <TextView
+                android:id="@+id/kkk_money_10"
+                style="@style/kkk_no_money_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/kkk_money_10" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kkk_fee_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kkk_button_height"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ld_button_bg_while"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="@string/kkk_money"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/kkk_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="left|center_vertical"
+            android:hint="@string/kkk_fee"
+            android:text=""
+            android:numeric="integer"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/kkk_agree"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kkk_button_height"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ld_button_bg_yellow"
+        android:text="确定"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="36dp"/>
+</LinearLayout>

@@ -1,0 +1,274 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bswhl.game.am">
+    <!-- 开始添加Amigo Play SDK 需要的权限,开发者重点关注，直接复制即可，不要用手打，避免出错 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.REAL_GET_TASKS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 结束Amigo Play SDK 添加权限 -->
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:label="JunS Demo"
+        android:supportsRtl="true"
+
+
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- JunS sdk components start -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="${applicationId}.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <!-- JunS sdk components end -->
+        <!-- Amigo Play SDK 组件声明开始 -->
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <!-- Amigo Play SDK 组件声明开始 -->
+        <service android:name="com.gionee.gsp.floatingwindow.FloatingWindowService" >
+            <intent-filter>
+                <action android:name="com.gionee.pay.ic.FloatingWindowService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.gionee.gamesdk.business.SdkHoldingActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:theme="@style/zzz_activity_dialog" />
+        <activity
+            android:name="com.gionee.gamesdk.business.SdkWebViewHoldingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="amigoplay.intent.action.WEBVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gionee.gamesdk.business.usercenter.daily_sign.DailySignActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="amigoplay.intent.action.DAILYSIGN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gionee.gamesdk.business.usercenter.billboard.CostBillboardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="amigoplay.intent.action.COST_BILLBOARD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.gionee.gsp.provider.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.gionee.permission.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.gionee.gsp.unified.h5.PayWebViewActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.gionee.gamesdk.floatwindow.newpay.H5Activity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- GSP service ************************************************************ -->
+        <activity
+            android:name="com.gionee.gsp.service.activity.AssistActivity"
+            android:configChanges="mcc|mnc|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <!-- GSP service end -->
+
+        <service android:name="com.gionee.gsp.floatingwindow.FloatingWindowService" >
+            <intent-filter>
+                <action android:name="com.gionee.pay.ic.FloatingWindowService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.gionee.gsp.provider.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <receiver android:name="com.gionee.gameservice.reveiver.PowerReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- account SDK ************************************************************ -->
+        <activity
+            android:name="com.gionee.account.sdk.activity.AssistActivity"
+            android:configChanges="mcc|mnc|orientation|screenSize"
+            android:screenOrientation="unspecified"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <meta-data
+                android:name="version"
+                android:value="6.0.1.q" />
+        </activity>
+        <activity
+            android:name="com.gionee.account.sdk.core.activity.SDKAccountChangeActivity"
+            android:configChanges="mcc|mnc|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified"
+            android:theme="@style/gn_account_Theme.AndroidDevelopers.white"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gionee.account.sdk.core.activity.SDKAuthorizationActivity"
+            android:configChanges="mcc|mnc|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified"
+            android:theme="@style/gn_account_Theme.AndroidDevelopers.white"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gionee.account.sdk.core.activity.SDKLoginActivity"
+            android:configChanges="mcc|mnc|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified"
+            android:theme="@style/gn_account_sdk_Theme.FloatActivity"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gionee.account.sdk.core.activity.SDKLoginingActivity"
+            android:configChanges="mcc|mnc|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gionee.account.sdk.core.activity.SDKDialogActivity"
+            android:configChanges="mcc|mnc|orientation|screenSize"
+            android:launchMode="singleInstance"
+            android:screenOrientation="unspecified"
+            android:theme="@style/gn_account_Theme.AndroidDevelopers.white"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gionee.account.sdk.core.activity.SDKPersonalDataActivity"
+            android:configChanges="mcc|mnc|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified"
+            android:theme="@style/gn_account_Theme.AndroidDevelopers.white"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gionee.account.sdk.core.area.SDKProviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/gn_account_Theme.AndroidDevelopers.white"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.gionee.account.sdk.core.area.SDKCityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/gn_account_Theme.AndroidDevelopers.white"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <service android:name="com.gionee.account.sdk.core.AccountService" >
+            <intent-filter>
+                <action android:name="com.gionee.account.aidl.GNAccountInterface" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

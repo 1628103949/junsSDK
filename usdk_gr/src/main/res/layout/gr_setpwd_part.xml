@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        style="@style/gr_option_margin_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 通行证 -->
+
+        <LinearLayout
+            android:id="@+id/gr_account_layout_dialog"
+            style="@style/gr_login_input_area"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/gr_gray_input_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gr_password_login" />
+
+            <EditText
+                android:id="@+id/gr_setpwd_account_dialog"
+                style="@style/gr_option_edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+                android:hint="@string/gr_set_password_password"
+                android:imeOptions="flagNoExtractUi"
+                android:nextFocusDown="@+id/gr_account_login_password"
+                android:inputType="textPassword"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:paddingTop="3dp"
+                android:singleLine="true"
+                android:textColor="@color/gr_gray_color"
+                android:textColorHint="@color/gr_gray_color" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/gr_setpwd_del_account_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/gr_img_desc"
+                android:paddingRight="5dp"
+                android:src="@drawable/gr_login_default_del"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- 密码 -->
+
+        <LinearLayout
+            style="@style/gr_login_input_area"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gr_gray_input_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/gr_password_login" />
+
+            <EditText
+                android:id="@+id/gr_setpwd_password_dialog"
+                style="@style/gr_option_edittext_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:digits="@string/gr_limit_input_password_str"
+                android:hint="@string/gr_set_password_password_again"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:textColor="@color/gr_gray_color"
+                android:textColorHint="@color/gr_gray_color" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/gr_setpwd_del_password_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/gr_img_desc"
+                android:paddingRight="5dp"
+                android:src="@drawable/gr_login_default_del"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/gr_forget_password_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/gr_set_password_password_hint"
+            android:textColor="@color/gr_gray_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/gr_option_margin_style"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/gr_setpwd_log_dialog"
+            android:layout_width="120dp"
+            android:layout_height="32dp"
+            android:background="@drawable/gr_register_auto_selector"
+            android:text="确定"
+            android:textColor="@color/gr_white"
+            android:textSize="16sp" >
+        </Button>
+    </LinearLayout>
+
+</merge>

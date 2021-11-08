@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/jolo_theme_blue"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/jolo_theme_blue"
+        android:padding="4dp" >
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:onClick="onBack" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jolopay_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/ticket_center"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.jolosdk.home.ui.widget.xlistview.XListView
+            android:id="@+id/ticket_center_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:divider="#00000000"
+            android:dividerHeight="5dp"
+            android:listSelector="@null"
+            android:scrollbars="none"
+            android:visibility="gone" >
+        </com.jolosdk.home.ui.widget.xlistview.XListView>
+
+        <LinearLayout
+            android:id="@+id/jolo_ticket_center_check_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="21dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全场通用券暂时不支持部分游戏"
+                android:textColor="@color/jolo_light_black66"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/jolo_ticket_center_check_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/check_available"
+                android:textColor="#00B2FC"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/loading_view_pb"
+            style="@style/mProgress_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/no_more_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:text="@string/have_no_ticket"
+            android:textColor="@color/jolo_gray_font_color"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <include layout="@layout/net_error_layout" />
+    </RelativeLayout>
+
+</LinearLayout>

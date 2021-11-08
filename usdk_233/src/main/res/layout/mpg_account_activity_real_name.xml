@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/mpg_default_click_selector"
+            android:src="@drawable/mpg_icon_back_arrow" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#2B2B2B"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/mpg_real_name_title"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F8F8"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/flBrief"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#F8F8F8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/mpg_real_name_warn"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/clCertification"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textRealNameTitle"
+                style="@style/MetaSDKRealNameInput"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/mpg_real_name"/>
+
+            <EditText
+                android:id="@+id/etIdentifyRealName"
+                style="@style/MetaSDKRealNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="16dp"
+                android:background="@null"
+                android:hint="@string/mpg_real_name_hint"
+                android:inputType="text"
+                android:minEms="2"
+                android:textColorHint="#CCCCCC"
+                android:layout_toRightOf="@id/textRealNameTitle"/>
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#EEEEEE"
+                android:layout_below="@id/textRealNameTitle" />
+
+            <TextView
+                android:id="@+id/tvIdentifyTitle"
+                style="@style/MetaSDKRealNameInput"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/mpg_real_name_no"
+                android:layout_below="@id/viewLine"/>
+
+            <EditText
+                android:id="@+id/etIdentifyNumber"
+                style="@style/MetaSDKRealNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="16dp"
+                android:background="@null"
+                android:hint="@string/mpg_real_name_no_hint"
+                android:maxEms="18"
+                android:digits="0123456789xX"
+                android:textColorHint="#CCCCCC"
+                android:maxLength="18"
+                android:layout_alignTop="@id/tvIdentifyTitle"
+                android:layout_toRightOf="@id/tvIdentifyTitle"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/tvIdentifyWhatIs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#44E2FB"
+                android:textSize="13sp"
+                android:text="@string/mpg_what_is_id"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvStartIdentifyCertification"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/mpg_selector_btn_big_round_rect_orange"
+            android:gravity="center"
+            android:text="@string/mpg_real_name_start"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvContinueAgree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mpg_real_name_continue"
+                android:textColor="#4A4A4A"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvIdentifyNeedKnowledge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/mpg_real_name_notice"
+                android:textColor="#FF9500"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

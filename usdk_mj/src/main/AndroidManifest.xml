@@ -1,0 +1,179 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hy2.xwyx">
+    <!-- 悬浮窗口权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 可以悬浮在桌面上 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序写入外部存储，如SD卡上写文件 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取手机状态，银联支付插件需要该权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 访问wifi状态，银联支付插件需要该权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 读取地理位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 硬件加速对X5视频播放非常重要，建议开启 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+
+    <!-- 联通支付渠道权限 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!--  oaid  -->
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:label="JunS MJ"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- JunS sdk components start -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="${applicationId}.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <!-- JunS sdk components end -->
+
+        <!-- 聚合sdk -->
+<!--        &lt;!&ndash; 闪屏Activity &ndash;&gt;-->
+<!--        <activity android:name="fusion.mj.communal.element.SplashScreenActivity"-->
+<!--            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"-->
+<!--            android:screenOrientation="landscape">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+        <activity android:name="fusion.mj.communal.element.RequestPermissionsHelpActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="fullSensor"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+
+
+        <!-- 是否有闪屏图片 -->
+        <meta-data
+            android:name="fusion_splash_pic"
+            android:value="false"/>
+        <!-- cp的启动Activity -->
+        <meta-data
+            android:name="fusion_entryactivity"
+            android:value="com.qianxi.sdk.demo.MainActivity"/>
+        <!-- sdk对接类 -->
+        <meta-data
+            android:name="fusion_userimp"
+            android:value="fusion.sdk.channel.mj.Mj"/>
+        <!-- 自己渠道sdk的appid -->
+        <meta-data
+            android:name="fusion_pf_gameid"
+            android:value="304"/>
+        <!-- 自己渠道sdk的appkey -->
+        <meta-data
+            android:name="fusion_app_key"
+            android:value="%171%169%221%94%101%162%221%199%207%143%154%207%172%174%216%144%150%207%169%151%212%148%156%160%174%167%167%103%101%158%216%149"/>
+        <meta-data
+            android:name="fusion_game_id"
+            android:value="191"/>
+        <meta-data
+            android:name="fusion_game_name"
+            android:value="HY"/>
+        <meta-data
+            android:name="fusion_package_id"
+            android:value="1"/>
+
+
+        <!--现网填true 测试网填false-->
+        <meta-data
+            android:name="fusion_online"
+            android:value="true"/>
+        <!-- 聚合sdk -->
+
+        <!-- 千禧组件 -->
+        <meta-data android:name="tt_app_id" android:value="182718"/>
+        <meta-data android:name="tt_app_name" android:value="cqhsb001"/>
+        <meta-data android:name="fusion_tf_planId" android:value="1001"/>
+        <meta-data android:name="fusion_tf_pfname" android:value="toutiao"/>
+
+        <activity
+            android:name="cn.mj.sdk.LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <service android:name="cn.mj.sdk.CallbackResultService" >
+        </service>
+
+        <service
+            android:name="cn.mj.sdk.ui.floatView.FloatBallService"
+            android:exported="false" />
+
+        <activity
+            android:name="cn.mj.sdk.CommonWebviewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity
+            android:name="fusion.mj.communal.element.FusionChaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="fusion.mj.communal.element.NoticeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+
+        <activity
+            android:name="cn.mj.sdk.PaymentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/pb_gift_dialog">
+        </activity>
+
+        <activity
+            android:name="cn.mj.sdk.ui.ActicitySide"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        </activity>
+
+        <!--SDK更新新增-->
+        <service android:name="fusion.mj.communal.update.DownLoadService"/>
+        <provider
+            android:name="fusion.mj.communal.update.MJFileProvider"
+            android:authorities="${applicationId}.fusion.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fasion_filepaths" />
+        </provider>
+    </application>
+</manifest>

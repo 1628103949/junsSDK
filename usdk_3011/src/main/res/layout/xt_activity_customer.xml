@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/xt_customer_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/xt_tv_title_ll"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:textColor="@color/xt_color_white">
+            <TextView
+                android:id="@+id/xt_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:textColor="@color/xt_color_zi_black"
+                android:textSize="16sp"
+                android:text="常见问题"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/xt_tv_title_line"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/xt_tv_title_ll"
+            android:layout_height="0.5dip"
+            android:background="@color/xt_color_line_e1" />
+        <com.xiantu.paysdk.view.spring.SpringView
+            android:id="@+id/xt_question_spring_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/xt_tv_title_line"
+            android:layout_marginTop="16dip"
+            android:background="@color/xt_color_white">
+
+            <ListView
+                android:id="@+id/xt_question_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="@color/xt_color_white"
+                android:scrollbars="none" />
+        </com.xiantu.paysdk.view.spring.SpringView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_above="@+id/xt_bottom_ll"
+            android:background="@color/xt_color_line_e1" />
+
+        <LinearLayout
+            android:id="@+id/xt_bottom_ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/xt_ll_customer"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/xt_color_theme"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="19dip"
+                    android:layout_height="19dip"
+                    android:layout_marginRight="6dip"
+                    android:src="@drawable/xt_icon_customer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="联系客服"
+                    android:textColor="@color/xt_color_white"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/xt_ll_feedback"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/xt_color_white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="19dip"
+                    android:layout_height="19dip"
+                    android:layout_marginRight="6dip"
+                    android:src="@drawable/xt_icon_proposal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="问题反馈"
+                    android:textColor="@color/xt_color_theme"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/xt_frameLayout_customer_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+</RelativeLayout>

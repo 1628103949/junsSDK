@@ -1,0 +1,20 @@
+
+ios需要删除producefilelistname=filelist produceurl=resurl 使用 filelist resurl   安卓如果要兼容老版本就还是用producefilelistname produceurl
+
+version:2011020000
+jumpversion:1910290000
+
+producefilelistname:filelistall.txt
+filelist:filelistall.txt
+
+url1:http://baishi-release-1253685291.file.myqcloud.com/c1/v10sao/saochange/version/android_c/
+
+produceurl:http://baishi-release-1253685291.file.myqcloud.com/c1/v10sao/saochange/resources/
+resurl:http://baishi-release-1253685291.file.myqcloud.com/c1/v10sao/saochange/resources/
+
+server:212.129.152.131
+serverport:27005
+
+server1:115.159.104.25|27009
+
+gametitle:gametitle4

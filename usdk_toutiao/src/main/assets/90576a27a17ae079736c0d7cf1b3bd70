@@ -1,0 +1,22 @@
+<cg framecount="110" property="standardaxis:0">
+  <command frame="1" value="audio:Assets/GameResources/audio/zhandouyinxiao/wxpp_skill.mp3" order="0" />
+  <command frame="62" value="hurt:0,100" order="1" />
+  <command frame="99" value="nextbattle:" order="2" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/a_wxpp_02/a_wxpp_02.prefab" parent="-1" start="0" end="110" type="11">
+    <command frame="1" value="anim:skill_01,0,3,0.6,0.3" order="0" />
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <command frame="60" value="anim:skill_01,1.2,3,1,0.3" order="2" />
+    <command frame="102" value="anim:guard,0,3,1,0.3" order="3" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/a_jll_02/a_jll_02.prefab" parent="-1" start="1" end="110" type="14">
+    <bezier frame="1" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="60" value="anim:hit,0,3,1,0.3" order="1" />
+    <command frame="80" value="anim:guard,0,3,1,0.3" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_WXPP/A_wxpp_skill.prefab" parent="-1" start="15" end="100" type="1">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:2" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_WXPP/A_wxpp_skill_shouji.prefab" parent="-1" start="60" end="100" type="1">
+    <bezier frame="60" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+</cg>

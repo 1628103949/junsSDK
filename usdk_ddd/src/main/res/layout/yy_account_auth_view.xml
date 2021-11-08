@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="15dp">
+
+    <com.yysy.yygamesdk.view.CommonTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:centerText="实名认证"
+        app:centerType="textView"
+        app:leftType="imageButton"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp">
+
+        <com.yysy.yygamesdk.view.ClearableEditText
+            android:id="@+id/realname_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yy_edittext_bg"
+            android:drawableLeft="@drawable/yy_icon_edit_name"
+            android:drawablePadding="5dp"
+            android:hint="请输入姓名"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColor="#181516"
+            android:textColorHint="#C8C8C8"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp">
+
+        <com.yysy.yygamesdk.view.ClearableEditText
+            android:id="@+id/idno_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yy_edittext_bg"
+            android:digits="0123456789xX"
+            android:drawableLeft="@drawable/yy_icon_edit_id"
+            android:drawablePadding="5dp"
+            android:hint="请输入身份证号"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColor="#181516"
+            android:textColorHint="#C8C8C8"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/auth_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/yy_shape_green_corner_dp25_selector"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="立即认证"
+        android:textColor="#FFFEFF"
+        android:textSize="16sp" />
+
+</LinearLayout>

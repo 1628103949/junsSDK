@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="@dimen/mtp_dp10"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/hyberry_fragment_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="@dimen/mtp_dp20"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/title"
+            android:text="健康公告"
+            android:textColor="@color/hyberry_black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_marginTop="@dimen/mtp_dp12"
+            android:textSize="@dimen/mtp_dp16"
+            android:textColor="@color/hyberry_black"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/content"
+            android:text="根据未成年人防沉迷规定，您今日累计游戏在线时长已经超过3小时，当前无法继续游戏，请注意休息哦"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_rest"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:background="@drawable/hyberry_comn_selector_corner_btn"
+                android:gravity="center"
+                android:text="离开游戏"
+                android:textColor="@color/hyberry_color_white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_logout"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/hyberry_comn_selector_corner_btn"
+                android:gravity="center"
+                android:text="退出登录"
+                android:textColor="@color/hyberry_color_white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</FrameLayout>

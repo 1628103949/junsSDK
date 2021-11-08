@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/float_menu_ll1"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:src="@drawable/ssc_ic_float_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/ssc_float_menu_account"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/float_menu_ll2"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:src="@drawable/ssc_ic_float_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/ssc_float_menu_customer"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/float_menu_rl"
+        android:layout_width="45dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/float_menu_rl_img"
+            android:src="@drawable/ssc_ic_float_wxo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:layout_width="16dp"
+            android:layout_height="8dp"
+            android:layout_alignStart="@+id/float_menu_rl_img"
+            android:layout_alignTop="@+id/float_menu_rl_img"
+            android:layout_marginStart="14dp"
+            android:gravity="center"
+            android:background="@drawable/ssc_bg_float_menu_gift"
+            android:text="@string/ssc_float_menu_gift"
+            android:textColor="@android:color/white"
+            android:textSize="6sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/float_menu_rl_img"
+            android:layout_marginTop="6dp"
+            android:text="@string/ssc_float_menu_wxono"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/float_menu_ll4"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:src="@drawable/ssc_ic_float_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/ssc_float_menu_setting"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+    </LinearLayout>
+
+</LinearLayout>

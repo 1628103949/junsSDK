@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ssc_rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ssc_iv_user_icon"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ssc_ic_user" />
+
+            <TextView
+                android:id="@+id/ssc_tv_phone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_toEndOf="@id/ssc_iv_user_icon"
+                android:text="187***54557"
+                android:textColor="@color/ssc_edit"
+                android:textSize="14sp"
+                tools:ignore="SmallSp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="7dp"
+                android:layout_toEndOf="@id/ssc_iv_user_icon">
+
+                <ImageView
+                    android:id="@+id/ssc_iv_icon6"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ssc_ic_last_time" />
+
+                <TextView
+                    android:id="@+id/ssc_tv_login_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_toEndOf="@id/ssc_iv_icon6"
+                    android:text="上次登录1分钟前"
+                    android:textColor="#BFBFBF"
+                    android:textSize="8sp"
+                    tools:ignore="SmallSp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ssc_iv_del_user"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/ssc_ic_del" />
+
+    </RelativeLayout>
+</LinearLayout>

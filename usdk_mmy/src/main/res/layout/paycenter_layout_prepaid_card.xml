@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/la_prepaid_card_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_prepaid_card_type_name"
+                    style="@style/paycenter_text_14_dark_gray"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="22dp"
+                    android:text="@string/str_paycenter_prepaid_card_type"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_prepaid_card_price_name"
+                    style="@style/paycenter_text_14_dark_gray"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="29dp"
+                    android:text="@string/str_paycenter_prepaid_card_value"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/la_prepaid_card_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/la_prepaid_card_title"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/la_prepaid_card_type_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="5"
+                    android:background="@color/paycenter_pay_edit_bg">
+
+                    <TextView
+                        android:id="@+id/tv_prepaid_card_type"
+                        style="@style/paycenter_text_16_big_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:singleLine="true"
+                        android:text="@string/str_paycenter_prepaid_card_type_choice" />
+
+                    <ImageView
+                        android:id="@+id/iv_prepaid_card_type_choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginRight="3dip"
+                        android:src="@drawable/pay_pop_icon" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/la_prepaid_card_price_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="6"
+                    android:background="@color/paycenter_pay_edit_bg">
+
+                    <TextView
+                        android:id="@+id/tv_prepaid_card_price"
+                        style="@style/paycenter_text_16_big_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:singleLine="true"
+                        android:text="@string/str_paycenter_prepaid_card_type_choice" />
+
+                    <ImageView
+                        android:id="@+id/iv_prepaid_card_price_choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginRight="3dip"
+                        android:src="@drawable/pay_pop_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/la_prepaid_card_number_title"
+                style="@style/paycenter_text_14_dark_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/la_prepaid_card_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/str_paycenter_prepaid_card_number"
+                android:textSize="12sp" />
+
+
+            <com.mumayi.paymentpay.ui.TryEditText
+                android:id="@+id/et_prepaid_card_number"
+                style="@style/paycenter_text_16_big_black"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_below="@id/la_prepaid_card_number_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/paycenter_pay_edit_bg"
+                android:hint="@string/input_card_sn"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textColorHint="@color/paycenter_big_black" />
+
+            <TextView
+                android:id="@+id/la_prepaid_card_pass_title"
+                style="@style/paycenter_text_14_dark_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_prepaid_card_number"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/str_paycenter_prepaid_card_pass"
+                android:textSize="12sp" />
+
+
+            <com.mumayi.paymentpay.ui.TryEditText
+                android:id="@+id/et_prepaid_card_pass"
+                style="@style/paycenter_text_16_big_black"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_below="@id/la_prepaid_card_pass_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/paycenter_pay_edit_bg"
+                android:hint="@string/input_card_pwd"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textColorHint="@color/paycenter_big_black" />
+
+            <!-- android:id="@+id/et_prepaid_card_pass" -->
+
+
+            <TextView
+                android:id="@+id/tv_prepaid_comfirm_money"
+                style="@style/paycenter_text_14_dark_gray"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_prepaid_card_pass"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="@string/pay_confirm_prepaid_card" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_goto_pay_prepaid_card"
+        style="@style/paycenter_text_14_realwhite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_company_email"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/pay_alix_style"
+        android:text="@string/pay_goto_pay" />
+
+    <TextView
+        android:id="@+id/tv_company_email"
+        style="@style/paycenter_text_14_dark_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:text="@string/str_paycenter_email" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_above="@id/btn_goto_pay_prepaid_card"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center"
+        android:paddingBottom="3dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:src="@drawable/pay_wechatpay_tip_ico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/pay_confirm_tip"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/xt_pop_reset_pass_pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/xt_btn_account_bg_shape">
+
+        <TextView
+            android:id="@+id/xt_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="20dip"
+            android:text="请输入安全密码"
+            android:textColor="@color/xt_color_login_select"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.xiantu.paysdk.view.CustomPasswordInputView
+            android:id="@+id/xt_custom_pwd_input"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_below="@+id/xt_text_view"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:background="@null"
+            android:inputType="numberPassword"
+            android:numeric="integer" />
+
+        <TextView
+            android:id="@+id/xt_tv_no_secret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xt_custom_pwd_input"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:drawableLeft="@drawable/xt_wallet_pay_type_normal"
+            android:drawablePadding="5dip"
+            android:text="10分钟内免密支付"
+            android:textColor="@color/xt_color_login_normal"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/xt_tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xt_tv_no_secret"
+            android:layout_marginBottom="16dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="28dip"
+            android:background="@drawable/xt_btn_round_f9_shape"
+            android:paddingBottom="9dip"
+            android:paddingLeft="53dip"
+            android:paddingRight="53dip"
+            android:paddingTop="9dip"
+            android:text="@string/xt_cancel"
+            android:textColor="@color/xt_color_login_normal"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/xt_tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/xt_tv_no_secret"
+            android:layout_marginBottom="16dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="28dip"
+            android:background="@drawable/xt_btn_round_orange_shape"
+            android:paddingBottom="9dip"
+            android:paddingLeft="53dip"
+            android:paddingRight="53dip"
+            android:paddingTop="9dip"
+            android:text="@string/xt_determine"
+            android:textColor="@color/xt_color_white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

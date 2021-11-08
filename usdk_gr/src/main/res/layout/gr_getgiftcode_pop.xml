@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gr_pop_suredownload_background"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/gr_relat_getgift_getting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/progressbar"
+                android:text="正在获取兑换码..." />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gr_relat_gifttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp" >
+
+        <com.gaore.mobile.defineview.RoundCornerImageView
+            android:id="@+id/gr_img_icon_giftdetail"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/gr_getcode_succe" />
+
+        <TextView
+            android:id="@+id/gr_giftname_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gr_img_icon_giftdetail"
+            android:gravity="center_vertical"
+            android:text="礼包兑换码已经保存到“已领礼包”。"
+            android:textColor="#FF000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gr_giftname_detail"
+            android:text="领到的号码要尽快兑换哦，迟了就有可能被人家淘走，快去兑换吧！"
+            android:textColor="#FF000000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gr_relat_giftcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/gr_giftcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gr_gift_code"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/gr_getgiftcode_copy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/gr_giftcode"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gr_btn_personcenter_suggest"
+            android:text="确定并复制兑换码"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/ld_base_dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ld_dialog_base_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/ld_base_dialog_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ld_base_dialog_padding">
+
+            <!--为了扩大点击返回，设置点击区域25dp-->
+            <LinearLayout
+                android:id="@+id/account_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/ld_base_back_img_size"
+                    android:layout_height="@dimen/ld_base_back_img_size"
+                    android:src="@drawable/ld_dialog_base_back_img" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/ld_dialog_base_title_tv"
+                android:text="验证手机" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ld_base_dialog_button_height"
+            android:background="@drawable/ld_dialog_base_edittext_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/verify_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:textSize="@dimen/ld_base_one_level_text_size_sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ld_base_dialog_button_height"
+            android:layout_marginTop="@dimen/ld_base_dialog_edittext_top"
+            android:paddingLeft="6dp"
+            android:background="@drawable/ld_dialog_base_edittext_bg"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/verify_phone_code"
+                style="@style/ld_dialog_base_edittext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="0123456789"
+                android:hint="请输入验证码"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/verify_phone_get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/ld_base_dialog_edittext_left"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="#3399ff"
+                android:textSize="@dimen/account_text_hint_size" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/account_verify_phone"
+            style="@style/ld_dialog_base_button"
+            android:text="验证" />
+    </LinearLayout>
+
+</LinearLayout>

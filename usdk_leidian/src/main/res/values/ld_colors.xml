@@ -1,0 +1,61 @@
+<resources>
+
+    <color name="kkk_bg_color">#EBEBEB</color>
+    <color name="kkk_transparent">#00000000</color>
+    <color name="kkk_line">#CCCCCC</color>
+    <color name="kkk_gonelue_nav">#FD9027</color>
+    <color name="kkk_gonelue_nav_pressed">#fea44e</color>
+
+    <color name="kkk_gift_state_off">#B8B8B8</color>
+
+    <color name="kkk_area_pickerview_timebtn_nor">#057dff</color>
+    <color name="kkk_area_pickerview_timebtn_pre">#c2daf5</color>
+    <color name="kkk_area_pickerview_bg_topbar">#f5f5f5</color>
+    <color name="kkk_area_pickerview_topbar_title">#000000</color>
+    <color name="kkk_area_pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="kkk_area_pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="kkk_area_pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="kkk_white">#ffffff</color>
+
+
+    <color name="account_bk">#f0f2f5</color>
+    <color name="account_title">#fe871d</color>
+    <color name="account_text">#555555</color>
+
+    <color name="framlaylout_color">#eff6f6f6</color>
+
+
+    <color name="ld_line">#eeeeee</color>
+    <color name="ld_yellow">#fe9129</color>
+
+
+    <!--active add-->
+
+    <color name="default_yellow_color">#FF9414</color>
+    <color name="pressed_yellow_color">#e98612</color>
+    <color name="default_bg_color_gray">#cccccc</color>
+
+    <color name="new_yellow">#FFCC00</color>
+
+    <color name="frame_color">#000000</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="blue_color">#30ACE6</color>
+
+    <color name="level_two_title_color">#5c5c5c</color>
+    <color name="port_level_two_title_color">#949494</color>
+    <color name="layout_stroke_color">#cccccc</color>
+    <color name="layout_bg_color">#f4f4f4</color>
+
+    <color name="title_text_color">#333333</color>
+
+    <color name="special_text_color">#24a9e5</color>
+    <color name="port_special_text_color">#c9e8ff</color>
+
+    <color name="C_666666">#666666</color>
+
+    <color name="two_title">#999999</color>
+
+    <color name="new_text_color">#FFB31A</color>
+</resources>

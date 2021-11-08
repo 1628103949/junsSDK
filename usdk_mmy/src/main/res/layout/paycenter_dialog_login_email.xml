@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/la_mail_content"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/pay_dialog_round_corner"
+    android:paddingBottom="14dip" >
+    <ImageView
+        android:layout_width="4dip"
+        android:layout_height="22dip"
+        android:layout_marginTop="17dip"
+        android:src="@drawable/icon_short_line_header" />
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dip"
+        android:layout_marginTop="18dip"
+        android:text="@string/paycenter_mail_dialog_title"
+        android:textColor="#bbc0c6"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_paycenter_mail_dialog_remond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_title"
+        android:layout_marginLeft="14dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/paycenter_mail_dialog_tip"
+        android:textColor="#606062"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/line_03"
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dip"
+        android:layout_below="@id/tv_paycenter_mail_dialog_remond"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/pay_diving_light_line" />
+
+    <LinearLayout
+        android:id="@+id/la_regist_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_03"
+        android:layout_marginBottom="0dip"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/paycenter_text_style_3"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/str_paycenter_login_name" />
+
+        <com.mumayi.paymentuserinfo.ui.EditTextWithDel
+            android:id="@+id/et_mail_user_name"
+            android:layout_width="0dip"
+            android:layout_height="44dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/paycenter_mail_dialog_account"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textColor="#606062"
+            android:textColorHint="#bbc0c6"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:padding="3dip"
+            android:src="@drawable/pay_undisplay_password"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_01"
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dip"
+        android:layout_below="@id/la_regist_name"
+        android:background="@drawable/pay_diving_light_line" />
+
+    <LinearLayout
+        android:id="@+id/la_mail_pass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_01"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/paycenter_text_style_3"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/str_paycenter_login_pass" />
+
+        <com.mumayi.paymentuserinfo.ui.EditTextWithDel
+            android:id="@+id/et_mail_password"
+            android:layout_width="0dip"
+            android:layout_height="44dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/paycenter_mail_dialog_pwd"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textColor="#606062"
+            android:textColorHint="#bbc0c6"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_mail_display_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:padding="3dip"
+            android:src="@drawable/pay_undisplay_password"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_02"
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dip"
+        android:layout_below="@id/la_mail_pass"
+        android:background="@drawable/pay_usercenter_main_body_dividing_line_deep" >
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_02"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:layout_marginTop="15dip" >
+
+        <Button
+            android:id="@+id/btn_mail_submit"
+            style="@style/paycenter_text_style_4"
+            android:layout_width="112dip"
+            android:layout_height="38dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/pay_btn_paycenter_login_style"
+            android:text="@string/str_paycenter_login_login"
+            android:textColor="@color/paycenter_white" />
+
+        <Button
+            android:id="@+id/btn_mail_cancel"
+            style="@style/paycenter_text_style_4"
+            android:layout_width="112dip"
+            android:layout_height="38dip"
+            android:background="@drawable/pay_btn_binphone_cancel"
+            android:text="@string/paycenter_bind_phone_dialog_cancel"
+            android:textColor="#949da9" />
+    </RelativeLayout>
+
+</RelativeLayout>

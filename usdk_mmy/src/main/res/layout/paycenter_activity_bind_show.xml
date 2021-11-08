@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/la_usercenter_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/paycenter_layout_common_title" />
+    <RelativeLayout
+        android:id="@+id/ra_usercenter_iphone"
+        style="@style/paycenter_tab_height_40"
+        android:background="@drawable/pay_tab_ucenter_style" >
+
+        <TextView
+            style="@style/paycenter_text_18_big_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dip"
+            android:text="手机号" />
+
+        <ImageView
+            android:id="@+id/iv_usercenter_iphone_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:contentDescription="@string/pay_title"
+            android:focusable="false"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:src="@drawable/pay_arrow_style" />
+        <TextView
+            android:id="@+id/tv_usercenter_iphone_sign"
+            style="@style/paycenter_text_18_big_black"
+            android:layout_centerVertical="true"
+            android:text="添加"
+            android:layout_toLeftOf="@id/iv_usercenter_iphone_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:id="@+id/ra_usercenter_mail"
+        style="@style/paycenter_tab_height_40"
+        android:background="@drawable/pay_tab_ucenter_style" >
+
+        <TextView
+            style="@style/paycenter_text_18_big_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dip"
+            android:text="邮箱" />
+
+        <ImageView
+            android:id="@+id/iv_usercenter_mail_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:contentDescription="@string/pay_title"
+            android:focusable="false"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:src="@drawable/pay_arrow_style" />
+        <TextView
+            android:id="@+id/tv_usercenter_mail_sign"
+            style="@style/paycenter_text_18_big_black"
+            android:layout_centerVertical="true"
+            android:text="添加"
+            android:layout_toLeftOf="@id/iv_usercenter_mail_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/paycenter_little_gray">
+
+        <include
+            android:id="@+id/la_usercenter_title"
+            layout="@layout/paycenter_layout_common_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/la_usercenter_title"
+            android:layout_margin="1dip"
+            android:background="@color/paycenter_little_gray"
+            android:orientation="vertical"
+            android:paddingBottom="50dip">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dip"
+                android:layout_marginTop="40dip"
+                android:background="@drawable/pay_usercenter_main_body_dividing_line_deep"></View>
+
+            <LinearLayout
+                android:id="@+id/la_regist_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dip"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/paycenter_text_style_3"
+                    android:layout_width="84dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/str_paycenter_login_name" />
+
+                <com.mumayi.paymentuserinfo.ui.EditTextWithDel
+                    android:id="@+id/et_regist_user_name"
+                    android:layout_width="0dip"
+                    android:layout_height="44dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/str_paycenter_regist_username"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="#606062"
+                    android:textColorHint="#bbc0c6"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:padding="3dip"
+                    android:src="@drawable/pay_undisplay_password"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/pay_diving_light_line"></View>
+
+            <TextView
+                style="@style/paycenter_text_12_light_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="83dip"
+                android:text="@string/str_paycenter_regist_username_limit"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/la_regist_pass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/paycenter_text_style_3"
+                    android:layout_width="84dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/str_paycenter_login_pass" />
+
+                <com.mumayi.paymentuserinfo.ui.EditTextWithDel
+                    android:id="@+id/et_regist_password"
+                    android:layout_width="0dip"
+                    android:layout_height="44dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/str_paycenter_regist_password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:textColor="#606062"
+                    android:textColorHint="#bbc0c6"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_regist_display_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:padding="3dip"
+                    android:src="@drawable/pay_undisplay_password"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dip"
+                android:background="@drawable/pay_usercenter_main_body_dividing_line_deep"></View>
+
+            <TextView
+                style="@style/paycenter_text_12_light_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="83dip"
+                android:text="@string/str_paycenter_regist_password_limit"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_regist_regist"
+                style="@style/paycenter_text_style_4"
+                android:layout_width="fill_parent"
+                android:layout_height="44dip"
+                android:layout_marginLeft="22dip"
+                android:layout_marginRight="22dip"
+                android:layout_marginTop="50dip"
+                android:background="@drawable/pay_btn_paycenter_login_style"
+                android:text="@string/str_paycenter_login_regist"
+                android:textColor="@color/paycenter_white" />
+        </LinearLayout>
+
+        <include
+            layout="@layout/paycenter_activity_foot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</ScrollView>

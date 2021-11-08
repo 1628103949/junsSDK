@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="huouniongame_center_accent">#F17D17</color>
+    <color name="huouniongame_center_normal">#333333</color>
+    <color name="huouniongame_center_white">#FFFFFF</color>
+    <color name="huouniongame_sdk_black">#2A2A2A</color>
+</resources>

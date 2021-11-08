@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/com_lenovo_lsf_view_width_portrait"
+    android:layout_height="@dimen/com_lenovo_lsf_view_adv_height"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/com_lenovo_lsf_view_margin_left"
+    android:layout_marginRight="@dimen/com_lenovo_lsf_view_margin_left"
+    android:background="@drawable/com_lenovo_lsf_activity_bg"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/common_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/com_lenovo_lsf_activity_bg" >
+
+        <TextView
+            android:id="@+id/common_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="31dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="我是弹窗标题我最多十六个字好吧"
+            android:textColor="@color/color_text_black"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/iv_adv_close"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/com_lenovo_lsf_btn_adv_close"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_center_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/common_title_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/com_lenovo_lsf_white"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@drawable/com_lenovo_lsf_adv_line" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="17dp"
+        android:layout_below="@+id/edit_center_line"
+        android:background="@color/com_lenovo_lsf_white"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/LinearLayout01" >
+
+        <RelativeLayout
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/edit_center_line_textend"
+            android:layout_alignEnd="@+id/layout_start_game"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="#ffffff"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/common_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:lineSpacingExtra="4dp"
+                android:text="《王者荣耀》是腾讯第一5V5团队公平竞技手游，国民MOBA手游大作！5V5王者峡谷、公平对战、还原MOBA经典体验；契约之战、五军对决、边境突围等，带来花式作战乐趣！\n10秒实时跨区匹配，与好友开黑上分，向最强王者进击！多款英雄任凭选择，一血、五杀、超神，实力碾压，收割全场！《王者荣耀》是腾讯第一5V5团队公平竞技手游，国民MOBA手游大作！5V5王者峡谷、公平对战、还原MOBA经典体验；契约之战、五军对决、边境突围等，带来花式作战乐趣！\n10秒实时跨区匹配，与好友开黑上分，向最强王者进击！多款英雄任凭选择，一血、五杀、超神，实力碾压，收割全场！"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#717171"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/edit_center_line_textend"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_above="@+id/layout_start_game"
+            android:layout_weight="1"
+            android:background="@color/com_lenovo_lsf_white"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_start_game"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_above="@+id/re_findandreg"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/b_ok"
+                android:layout_width="80dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="53dp"
+                android:layout_marginRight="53dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/com_lenovo_lsf_btn_adv_ok"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="@string/com_lenovo_lsf_string_btn_adv_ok"
+                android:textColor="#733f01"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_findandreg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="@dimen/com_lenovo_lsf_content_padding_left_right"
+            android:gravity="center" >
+
+            <CheckBox
+                android:id="@+id/cb_nervershow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/com_lenovo_lsf_btn_adv_checkbox"
+                android:text=" 不再显示本期公告"
+                android:textColor="#474747"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

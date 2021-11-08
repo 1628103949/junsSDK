@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/hyberry_selector_normal_btn_bg"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/ticket_name"
+        android:text="ticketname"
+        android:textColor="@color/hyberry_color_333333"
+        android:textSize="14sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_detail"
+        android:layout_marginRight="6dp"
+        android:textSize="14sp"
+        android:textColor="#ffa900"
+        android:text="-¥ 6.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/cant_use"
+        android:textSize="14sp"
+        android:textColor="@color/hyberry_color_999999"
+        android:text="未满足条件"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:visibility="gone"
+        android:id="@+id/cb_rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:checked="false"
+        android:drawableLeft="@drawable/hyberry_common_checkbox"
+        android:drawablePadding="5dp"
+        android:paddingLeft="0dp"
+        android:text=""
+        android:textColor="@color/hyberry_color_666666"
+        android:textSize="12sp"/>
+</LinearLayout>

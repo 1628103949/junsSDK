@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/xt_color_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:textColor="@color/xt_color_white"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="50dip" >
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:gravity="center"
+            android:layout_marginLeft="6dip"
+            android:layout_centerVertical="true"
+            android:layout_width="30dip"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/xt_btn_back"
+                android:layout_width="7dip"
+                android:layout_height="12dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/xt_tv_title"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/xt_color_zi_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/xt_color_line_e1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"/>
+<FrameLayout
+    android:id="@+id/frameLayout_bind_phone"
+    android:background="@color/xt_color_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</FrameLayout>
+</LinearLayout>

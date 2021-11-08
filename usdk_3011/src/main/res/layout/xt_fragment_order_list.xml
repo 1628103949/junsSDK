@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xt_color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:textColor="@color/xt_color_white">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dip"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="7dip"
+                android:layout_height="12dip"
+                android:src="@drawable/xt_btn_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/xt_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="订单列表"
+            android:textColor="@color/xt_color_zi_black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/xt_color_line_e1" />
+
+    <RelativeLayout
+        android:id="@+id/xt_rl_cop_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1a000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:paddingBottom="6dip"
+            android:paddingTop="6dip"
+            android:text="点击订单号即可复制"
+            android:textColor="@color/xt_color_white"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/xt_iv_close_cop_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dip"
+            android:padding="4dip"
+            android:src="@drawable/xt_order_cop_close" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xiantu.paysdk.view.spring.SpringView
+            android:id="@+id/xt_recharge_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/xt_color_white">
+
+            <ListView
+                android:id="@+id/xt_recharge_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="@color/xt_color_white"
+                android:scrollbars="none" />
+        </com.xiantu.paysdk.view.spring.SpringView>
+
+        <include layout="@layout/xt_layout_no_data" />
+    </RelativeLayout>
+
+
+</LinearLayout>

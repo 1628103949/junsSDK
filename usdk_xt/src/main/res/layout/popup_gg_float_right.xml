@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/shape_solid_25_e6141414"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_sf_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="16dp"
+        android:drawableTop="@drawable/gg_ic_lxkf"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:text="联系客服"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/FF222222"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_sf_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp"
+        android:drawableTop="@drawable/gg_ic_qhzh"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:text="切换账号"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/FF222222"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_sf_real_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp"
+        android:drawableTop="@drawable/gg_ic_smrz"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:text="实名认证"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/FF222222"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_sf_bind_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp"
+        android:drawableTop="@drawable/gg_ic_bind_phone"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:text="绑定手机"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/FF222222"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_sf_edit_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp"
+        android:drawableTop="@drawable/gg_ic_edit_psw"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:text="修改密码"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/FF222222"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/iv_sf_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/gg_ic_suspend_close" />
+
+</LinearLayout>

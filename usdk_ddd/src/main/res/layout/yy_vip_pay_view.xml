@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="15dp">
+
+    <com.yysy.yygamesdk.view.CommonTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:centerText="购买会员"
+        app:centerType="textView"
+        app:leftType="imageButton"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/yy_icon_vip_type"
+                android:text="会员类型："
+                android:textColor="#4A4A4A"
+                android:textSize="14sp"
+                android:drawablePadding="3dp"/>
+
+            <com.yysy.yygamesdk.view.NoScrollGridView
+                android:id="@+id/money_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:horizontalSpacing="15dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:verticalSpacing="15dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付方式："
+                android:textColor="#4A4A4A"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <LinearLayout
+                    android:id="@+id/wechat_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/yy_shape_gray_corner_dp5_border"
+                    android:padding="10dp">
+
+                    <View
+                        android:id="@+id/wechat_radio_view"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:background="@drawable/yy_radio_selector" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/yy_icon_wechat_round"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微信支付"
+                        android:textSize="14sp"
+                        android:textColor="#4A4A4A"
+                        android:layout_marginLeft="15dp"/>
+
+                    <TextView
+                        android:id="@+id/wechat_price_tv"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="10元"
+                        android:textSize="15sp"
+                        android:textColor="#FF8814"
+                        android:gravity="right"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/zfb_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/yy_shape_gray_corner_dp5_border"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:id="@+id/zfb_radio_view"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:background="@drawable/yy_radio_selector"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/yy_icon_alipay_round"
+                        android:layout_marginLeft="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付宝"
+                        android:textSize="14sp"
+                        android:textColor="#4A4A4A"
+                        android:layout_marginLeft="15dp"/>
+
+                    <TextView
+                        android:id="@+id/zfb_price_tv"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="10元"
+                        android:textSize="15sp"
+                        android:textColor="#FF8814"
+                        android:gravity="right"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/confirm_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/yy_shape_green_corner_dp25_selector"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="确定"
+        android:textColor="#FFFEFF"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

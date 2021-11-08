@@ -1,0 +1,58 @@
+<resources>
+
+    <string name="cgx_dialog_ensure">確定</string>
+    <string name="cgx_dialog_cancel">取消</string>
+    <string name="cgx_warm_hint_1">溫馨提示</string>
+    <string name="cgx_comfirm_dialog_title">提示</string>
+    <string name="cgx_username">賬號:</string>
+    <string name="cgx_password">密碼:</string>
+    <string name="cgx_input_username">請輸入用戶名</string>
+    <string name="cgx_input_password">請輸入密碼</string>
+    <string name="cgx_goto_register"><u>註冊新賬號</u></string>
+    <string name="cgx_goto_login"><u>我有賬號</u></string>
+    <string name="cgx_use_test_account"><u>使用sdktest賬號</u></string>
+    <string name="cgx_pay_title">本次支付</string>
+    <string name="cgx_sdk_not_init">sdk還沒有初始化.</string>
+    <string name="cgx_pay_need_login_first">支付需要先登入哦.</string>
+    <string name="cgx_need_login_first">需要先登入哦.</string>
+    <string name="cgx_order_submit_failed_and_try">訂單提交失敗，請重試.</string>
+    <string name="cgx_order_cannot_be_empty">充值訂單號不能為空哦.</string>
+    <string name="cgx_submitting_order_and_waiting">正在提交訂單，請稍候...</string>
+    <string name="cgx_login">登入</string>
+    <string name="cgx_register">註冊</string>
+    <string name="cgx_login_success">登入成功</string>
+    <string name="cgx_login_failed">登入失敗</string>
+    <string name="cgx_login_failed_and_try">登入失敗，請重試</string>
+    <string name="cgx_login_unusual">登入異常</string>
+    <string name="cgx_register_success">註冊成功</string>
+    <string name="cgx_register_unusual">註冊異常</string>
+    <string name="cgx_pay_success">支付成功</string>
+    <string name="cgx_pay_failed">支付失敗</string>
+    <string name="cgx_check_your_network">請檢查您的網路鏈接</string>
+    <string name="cgx_pay_params_cannot_be_empty">支付參數不能為空</string>
+    <string name="cgx_price_must_lager_then_zero">價格必須大於0</string>
+    <string name="cgx_connecting_server_and_wait">正在連接服務器，請稍候...</string>
+    <string name="cgx_if_sure_to_exit_game">是否確定退出遊戲？</string>
+    <string name="cgx_has_used_high_grade_test_account">已使用sdktest高級測試號</string>
+    <string name="cgx_messages_of_submit">上發的訊息</string>
+    <string name="cgx_debug_mode_account_login">賬號登入(調試模式)</string>
+    <string name="cgx_debug_mode_account_register">註冊賬號(調試模式)</string>
+    <string name="cgx_debug_mode_recharge">遊戲儲值(調試模式)</string>
+    <string name="cgx_username_cannot_be_empty">用戶不能為空</string>
+    <string name="cgx_pwd_cannot_be_empty">密碼不能為空</string>
+    <string name="cgx_logining_and_wait">正在登入，請稍候..</string>
+    <string name="cgx_registering_and_wait">正在註冊，請稍候..</string>
+    <string name="cgx_paying_and_wait">正在支付中，請稍候..</string>
+    <string name="cgx_change_account_success_and_ready_to_restart">切換賬號成功，準備重啟遊戲~</string>
+    <string name="cgx_stop_accelerating">停止加速</string>
+    <string name="cgx_using_accelerate_mode">正在使用加速模式</string>
+    <string name="cgx_ready_to_accelerate">開始加速</string>
+    <string name="cgx_knowed">知道了</string>
+    <string name="cgx_exit_game">退出遊戲</string>
+    <string name="cgx_i_want_to_download">我要下載</string>
+    <string name="cgx_pay_with_c_coin">使用c幣支付</string>
+    <string name="cgx_rmb_unit">元</string>
+    <string name="cgx_pay_with_c_coin_in_debug_mode"><Data><![CDATA[<font color="red">1、調試模式下將使用c幣支付</font><br/>]]></Data></string>
+    <string name="cgx_c_coin_balance"><Data><![CDATA[<font color="red">2、賬號餘額：%1$dc幣</font><br /><br />]]></Data></string>
+    <string name="cgx_you_need_to_pay_some_c_coin">你將支付%1$d元(需%2$dc幣)，確定支付嗎？</string>
+</resources>

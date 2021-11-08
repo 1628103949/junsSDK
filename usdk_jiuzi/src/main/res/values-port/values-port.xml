@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="jzyx_center_dialog_h">240.00px</dimen>
+    <dimen name="jzyx_center_dialog_w">320.00px</dimen>
+    <dimen name="jzyx_popup_dialog_h">420.00px</dimen>
+    <dimen name="jzyx_popup_dialog_w">320.00px</dimen>
+</resources>

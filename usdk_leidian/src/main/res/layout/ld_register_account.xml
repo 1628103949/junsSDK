@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/ld_base_dialog_width"
+        android:layout_height="@dimen/ld_base_dialog_height"
+        android:layout_gravity="center"
+        android:background="@drawable/ld_dialog_base_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/ld_base_dialog_padding"
+        android:paddingTop="12dp"
+        android:paddingRight="@dimen/ld_base_dialog_padding">
+
+        <include layout="@layout/ld_dialog_top_icon_layout" />
+
+        <EditText
+            android:id="@+id/register_account_username"
+            style="@style/ld_dialog_base_edittext"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+            android:hint="用户名，6-20个字符"
+            android:imeOptions="flagNoExtractUi"
+            android:maxLength="20" />
+
+        <EditText
+            android:id="@+id/register_account_password"
+            style="@style/ld_dialog_base_edittext"
+            android:layout_marginTop="@dimen/ld_base_dialog_edittext_top"
+            android:hint="密码，6-20个字符"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textPassword"
+            android:maxLength="20" />
+
+        <EditText
+            android:id="@+id/register_confirm_account_password"
+            style="@style/ld_dialog_base_edittext"
+            android:layout_marginTop="@dimen/ld_base_dialog_edittext_top"
+            android:hint="再次输入密码"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textPassword"
+            android:maxLength="20" />
+
+        <Button
+            android:id="@+id/register_account_register"
+            style="@style/ld_dialog_base_button"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ld_org_btn_selector"
+            android:text="完成" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="@dimen/ld_base_dialog_edittext_top"
+            android:layout_marginRight="1dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/register_accept_agreement"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/ld_accept_checkbox"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <TextView
+                    android:id="@+id/register_accept_agreement_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:includeFontPadding="false"
+                    android:text="同意"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/ld_base_two_level_text_size_sp" />
+
+                <TextView
+                    android:id="@+id/register_user_show_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/ld_base_two_level_text_size_sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/back_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:includeFontPadding="false"
+                android:text="返回登录"
+                android:textColor="@color/new_text_color"
+                android:textSize="@dimen/ld_base_two_level_text_size_sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

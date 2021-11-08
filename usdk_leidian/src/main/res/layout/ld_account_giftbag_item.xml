@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ld_dp_15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/ld_dp_10"
+            android:paddingRight="@dimen/ld_dp_10">
+
+            <ImageView
+                android:id="@+id/iconView"
+                android:layout_width="@dimen/ld_dp_40"
+                android:layout_height="@dimen/ld_dp_40"
+                android:scaleType="fitStart"
+                android:src="@drawable/ld_gitbag_default" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/ld_dp_10"
+                android:layout_marginRight="@dimen/ld_dp_10"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameView"
+                    style="@style/default_TextView"
+                    android:textColor="#131313"
+                    android:textSize="@dimen/ld_sp_11" />
+
+                <TextView
+                    android:id="@+id/numberView"
+                    style="@style/default_TextView"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#7d7d7d"
+                    android:textSize="@dimen/ld_sp_8" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/copyView"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/ld_dp_70"
+                android:layout_height="@dimen/ld_dp_22"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ld_button_yellow_corners_bg"
+                android:gravity="center"
+                android:padding="0dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/ld_sp_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ld_dp_10"
+            android:layout_marginTop="@dimen/ld_dp_18"
+            android:layout_marginRight="@dimen/ld_dp_10"
+            android:orientation="horizontal">
+
+            <View style="@style/yellow_line" />
+
+            <TextView
+                android:id="@+id/package_content"
+                style="@style/default_TextView"
+                android:layout_marginLeft="@dimen/ld_dp_5"
+                android:lineSpacingExtra="@dimen/ld_dp_2"
+                android:textColor="#7D7D7D"
+                android:textSize="@dimen/ld_sp_8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ld_dp_10"
+            android:layout_marginRight="@dimen/ld_dp_10"
+            android:orientation="horizontal">
+
+            <View style="@style/yellow_line" />
+
+            <TextView
+                android:id="@+id/package_receive_mode"
+                style="@style/default_TextView"
+                android:layout_marginLeft="@dimen/ld_dp_5"
+                android:lineSpacingExtra="@dimen/ld_dp_2"
+                android:textColor="#7D7D7D"
+                android:textSize="@dimen/ld_sp_8" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="@dimen/ld_dp_14"
+            android:background="#EFEFEF" />
+    </LinearLayout>
+
+</FrameLayout>

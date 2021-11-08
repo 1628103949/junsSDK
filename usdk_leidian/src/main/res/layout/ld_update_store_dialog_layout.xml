@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/dialog_content_layout"
+        android:layout_width="@dimen/ld_base_dialog_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ld_dialog_base_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/ld_dp_15"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="提示"
+            android:textColor="#131313"
+            android:textSize="@dimen/ld_sp_17" />
+
+        <TextView
+            android:id="@+id/desc_tv"
+            style="@style/default_TextView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="40dp"
+            android:lineSpacingExtra="4dp" />
+
+        <Button
+            android:id="@+id/update_btn"
+            style="@style/ld_dialog_base_button"
+            android:layout_width="150dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ld_org_btn_selector"
+            android:text="更新" />
+    </LinearLayout>
+</FrameLayout>

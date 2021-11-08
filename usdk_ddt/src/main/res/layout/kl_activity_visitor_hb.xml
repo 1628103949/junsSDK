@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/kl_main_view"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:minHeight="230dp"
+        android:background="@drawable/klbgshape"
+        android:orientation="vertical">
+
+        <com.ddtsdk.ui.view.KLHeadLayoutView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/klshape_bule_top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kl_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="游客注册"
+                android:textColor="@color/klfont_white"
+                android:textSize="17sp" />
+
+        </com.ddtsdk.ui.view.KLHeadLayoutView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="14dp"
+                android:orientation="horizontal">
+
+<!--                <View-->
+<!--                    android:layout_width="3dp"-->
+<!--                    android:layout_height="13dp"-->
+<!--                    android:background="@drawable/klorange_btn_style_hb" />-->
+
+                <TextView
+                    android:id="@+id/kl_account_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="账号："
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="14dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:id="@+id/kl_password_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="密码："
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="避免账号密码丢失，建议截图保存，尽快修改密码及绑定手机"
+            android:textColor="@color/klfont_red"
+            android:textSize="10sp" />-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="22dp"
+            android:orientation="horizontal">
+
+            <com.ddtsdk.ui.view.KLCheckBoxView
+                android:id="@+id/kl_accept_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/klcheckbox_register"
+                android:paddingRight="7dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="我已阅读并同意 "
+                android:textColor="@color/color_333333"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/kl_agreement_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="用户隐私协议政策"
+                android:textColor="@color/other_skin"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/kl_login"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+
+            android:layout_marginRight="22dp"
+            android:background="@drawable/klorange_btn_style_hb"
+            android:gravity="center"
+            android:text="进入游戏"
+            android:layout_weight="1"
+            android:textColor="@color/klfont_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/kl_bind_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/klorange_btn_style_hb"
+            android:gravity="center"
+            android:text="绑定手机"
+            android:layout_weight="1"
+            android:textColor="@color/klfont_white"
+            android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="22dp"
+            android:background="@color/color_eeeeee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="22dp"
+            android:text="绑定手机可通过手机号码登录以及找回密码，为了您的账号安全，请尽快绑定手机"
+            android:textColor="@color/color_666666"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

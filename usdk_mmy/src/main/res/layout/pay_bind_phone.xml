@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bind_phone_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_shape_update_version_dialog"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/relative_ok_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/linear_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="3dp"
+                android:layout_height="16dp"
+                android:background="#99CC33" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="木蚂蚁支付" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_pay_dialog_mess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_title"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:lineSpacingExtra="5dp"
+            android:text="正在验证支付有效性，商品将稍后发送到您的账户"
+            android:textColor="#606062"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/bt_ok_bind_phone"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_pay_dialog_mess"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/shape_bind_phone_dialog"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_bind_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:visibility="visible"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_bind_phone_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="绑定手机号"
+            android:textColor="#2B2B2B"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="为了您的财产安全，请绑定手机号"
+            android:textColor="#ed4007" />
+
+        <EditText
+            android:id="@+id/edt_input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edt_shape"
+            android:gravity="center"
+            android:hint="输入手机号码"
+            android:inputType="phone"
+            android:textColorHint="#4A5761" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_input_code"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="5"
+                android:background="@drawable/edt_shape"
+                android:gravity="center"
+                android:hint="输入验证码"
+                android:textColorHint="#4A5761" />
+
+            <TextView
+                android:id="@+id/tv_get_code"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/shape_bind_phone_dialog"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_save_phone_num"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_bind_phone_dialog"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><!--个性化颜色配置-->
+<resources>
+    <!--主标题文字颜色-->
+    <color name="iqiyi_color_title_main">#333333</color>
+    <!--主标题按钮颜色-->
+    <color name="iqiyi_color_title_secondary">#666666</color>
+
+    <!--内容正文常规文字颜色-->
+    <color name="iqiyi_color_content_text_normal">#666666</color>
+    <!--内容提示性文字颜色-->
+    <color name="iqiyi_color_content_text_tip">#999999</color>
+    <!--内容正文着重(加下划线)文字颜色-->
+    <color name="iqiyi_color_content_text_emphasize">#333333</color>
+    <!--内容正文高亮(加下划线且高亮)文字颜色-->
+    <color name="iqiyi_color_content_text_highlight">#0bbe06</color>
+
+    <!--edit_text选中时,文字提示颜色(输入框上部)-->
+    <color name="iqiyi_color_edit_hint_checked">#999999</color>
+    <!--edit_text未选中时,文字提示颜色(输入框上部和输入框内部)-->
+    <color name="iqiyi_color_edit_hint_unchecked">#CC999999</color>
+    <!--edit_text输入框文字颜色-->
+    <color name="iqiyi_color_edit_text">#333333</color>
+    <!--edit_text选中时,输入框下部线条颜色-->
+    <color name="iqiyi_color_edit_line_checked">#0bbe06</color>
+    <!--edit_text未选中时,输入框下部线条颜色-->
+    <color name="iqiyi_color_edit_line_unchecked">#e7e7e7</color>
+
+    <!--主button可点击时,边框颜色-->
+    <color name="iqiyi_color_btn_frame_main_clicked">#0bbe06</color>
+    <!--主button不可点击时,边框颜色-->
+    <color name="iqiyi_color_btn_frame_main_unclicked">#e7e7e7</color>
+    <!--主button可点击时,背景颜色-->
+    <color name="iqiyi_color_btn_bg_main_clicked">#0bbe06</color>
+    <!--主button不可点击时,背景颜色-->
+    <color name="iqiyi_color_btn_bg_main_unclicked">#e7e7e7</color>
+    <!--主button可点击时,text颜色-->
+    <color name="iqiyi_color_btn_text_main_clicked">#ffffff</color>
+    <!--主button不可点击时,text颜色-->
+    <color name="iqiyi_color_btn_text_main_unclicked">#999999</color>
+
+    <!--副button可点击时,边框颜色-->
+    <color name="iqiyi_color_btn_frame_secondary_clicked">#0bbe06</color>
+    <!--副button不可点击时,边框颜色-->
+    <color name="iqiyi_color_btn_frame_secondary_unclicked">#999999</color>
+    <!--副button可点击时,背景颜色-->
+    <color name="iqiyi_color_btn_bg_secondary_clicked">#FFFFFF</color>
+    <!--副button不可点击时,背景颜色-->
+    <color name="iqiyi_color_btn_bg_secondary_unclicked">#ffffff</color>
+    <!--副button可点击时,text颜色-->
+    <color name="iqiyi_color_btn_text_secondary_clicked">#0bbe06</color>
+    <!--副button不可点击时,text颜色-->
+    <color name="iqiyi_color_btn_text_secondary_unclicked">#999999</color>
+
+    <!--登录成功,toast背景颜色-->
+    <color name="iqiyi_color_bg_toast">#ffffff</color>
+
+    <!--++++++++++++++++++++++++++++++++++++++个人中心++++++++++++++++++++++++++++++++++++++-->
+    <!--个人中心背景颜色-->
+    <color name="iqiyi_color_personal_center_bg_main">#dddddd</color>
+    <!--个人中心标题背景颜色-->
+    <color name="iqiyi_color_personal_center_bg_title">#ffffff</color>
+    <!--个人中心菜单栏背景颜色-->
+    <color name="iqiyi_color_personal_center_bg_menu">#FAFAFA</color>
+    <!--个人中心account标题背景颜色,区分与标题背景色,需要一定的透明度-->
+    <color name="iqiyi_color_personal_center_bg_account">#CCFFFFFF</color>
+    <!--个人中心item背景颜色-->
+    <color name="iqiyi_color_personal_center_bg_item">#FFFFFF</color>
+    <!--个人中心btn背景颜色-->
+    <color name="iqiyi_color_personal_center_bg_btn">#FFC128</color>
+
+    <!--个人中心标题文字颜色-->
+    <color name="iqiyi_color_personal_center_text_title_main">#333333</color>
+    <!--个人中心副标题文字颜色-->
+    <color name="iqiyi_color_personal_center_text_title_secondary">#999999</color>
+
+    <!--个人中心btn文字颜色-->
+    <color name="iqiyi_color_personal_center_text_btn">#FFFFFF</color>
+    <!--个人中心version code文字颜色-->
+    <color name="iqiyi_color_personal_center_text_version">#CC999999</color>
+    <!--个人中心item正文标题文字颜色-->
+    <color name="iqiyi_color_personal_center_text_item_title">#333333</color>
+    <!--个人中心item正文内容文字颜色-->
+    <color name="iqiyi_color_personal_center_text_item_content">#999999</color>
+    <!--个人中心item正文高亮文字颜色(代金券价格)-->
+    <color name="iqiyi_color_personal_center_text_item_highlight">#FF5722</color>
+    <!--个人中心加载数据失败、零状态文字颜色-->
+    <color name="iqiyi_color_personal_center_text_empty_or_err">#FF5722</color>
+
+</resources>

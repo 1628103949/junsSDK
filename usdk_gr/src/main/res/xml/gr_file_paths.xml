@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+
+    <external-path
+        name="gr_hm_app"
+        path="grcommplatform/downapp" />
+    
+    <external-path 
+        name="gr_app_pic" 
+        path="QWB/temp" />
+</paths>

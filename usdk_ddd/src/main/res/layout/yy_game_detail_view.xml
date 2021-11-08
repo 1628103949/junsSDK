@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <com.yysy.yygamesdk.view.CommonTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:centerType="textView"
+        app:leftType="imageButton" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.创角有礼"
+                android:textColor="#4A4A4A"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/plat_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:textColor="#FD8822"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plat_tv"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:text="下载并登录当前游戏账号"
+                    android:textColor="#4a4a4a"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/receive_tv"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/yy_shape_orange_corner_dp25_selector"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#C8C8C8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/money_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:textColor="#FD8822"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/money_tv"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:text="完成游戏内任务领取更多奖励"
+                    android:textColor="#A4A4A4"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/yy_shape_orange_corner_dp25_selector"
+                    android:gravity="center"
+                    android:text="游戏内领取"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/role_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2.流程步骤"
+                android:textColor="#4A4A4A"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="第一步"
+                android:textColor="#4A4A4A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="进入游戏详细页面，点击“开始任务”下载安装游戏。"
+                android:textColor="#A4A4A4"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="第二步"
+                android:textColor="#4A4A4A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="安装后打开游戏登陆当前账号，并进入游戏创建角色可领取平台币奖励。"
+                android:textColor="#A4A4A4"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="第三步"
+                android:textColor="#4A4A4A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="在游戏详细页面启动游戏，完成游戏内任务可领取平台币奖励。"
+                android:textColor="#A4A4A4"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/down_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/down_tv"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/yy_shape_orange_corner_dp25_selector"
+            android:gravity="center"
+            android:text="下载"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@android:color/transparent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/jolo_auto_login_ll"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_before_login_activity"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/logo_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:adjustViewBounds="true"
+                android:gravity="center" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/customer_phone_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="phone"
+                    android:onClick="doCallCustomerPhone"
+                    android:text="@string/jolo_customer_tele"
+                    android:textColor="@color/jolo_light_black22"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/customer_qq_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jolo_customer_qq"
+                    android:textColor="@color/jolo_light_black22"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/jolo_auto_login_white_shape_rect"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jolo_auto_login_account"
+                    android:textColor="@color/jolo_light_black22"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/jolo_auto_login_account_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/jolo_account_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:onClick="changeAccount"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/jolo_change_account" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/jolo_change_user_account"
+                    android:textColor="@color/jolo_light_black22"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/shape_enter_game"
+                android:onClick="enterGame"
+                android:text="@string/jolo_enter_game"
+                android:textColor="@color/jolo_white"
+                android:textSize="16sp" />
+
+           
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/before_login_adv_iv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="246dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/jolo_look_more" />
+
+</RelativeLayout>

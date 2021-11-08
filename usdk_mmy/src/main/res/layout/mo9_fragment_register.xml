@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mo9_bg_white_with_frame_corners"
+    android:orientation="vertical"
+    android:padding="@dimen/common_padding_middle" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/mo9_common_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mo9_register_error_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mo9_error_margin_top"
+                android:background="@drawable/mo9_bg_error_msg"
+                android:paddingBottom="3dp"
+                android:paddingLeft="@dimen/mo9_row_margin_top_small"
+                android:paddingTop="3dp"
+                android:text="@string/mo9_errormsg_unvalidate_phone_num"
+                android:textColor="@color/mo9_error_text_color" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mo9_input_frame_height"
+                android:layout_marginTop="@dimen/mo9_error_margin_top"
+                android:background="@drawable/mo9_bg_input_all_short"
+                android:gravity="center_vertical" >
+
+                <com.mumayi.paymentpay.ui.TryEditText
+                    android:id="@+id/mo9_input_phone"
+                    style="@style/mo9_input_register"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:ems="20"
+                    android:hint="@string/mo9_input_phonenum"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="20" />
+
+                <ImageButton
+                    android:id="@+id/mo9_ibtn_account_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/mo9_edit_margin_left"
+                    android:background="@drawable/mo9_btn_clear"
+                    android:src="@drawable/mo9_btn_clear" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mo9_input_frame_height"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:orientation="horizontal" >
+
+                <com.mumayi.paymentpay.ui.TryEditText
+                    android:id="@+id/mo9_input_reg_pinCode"
+                    style="@style/mo9_input_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/mo9_bg_input_all_short"
+                    android:hint="@string/mo9_hint_register_input_pincode"
+                    android:maxLength="6"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/mo9_btn_pinCode"
+                    style="@style/mo9_btn_pin_code_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/mo9_btn_orange"
+                    android:text="@string/mo9_register_get_pincode" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/mo9_btn_register"
+                style="@style/mo9_btn_register_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/mo9_input_frame_height"
+                android:layout_marginBottom="@dimen/common_padding"
+                android:layout_marginTop="@dimen/common_padding_middle"
+                android:text="@string/mo9_register" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/mo9_cb_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mo9_checkbox_selector"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mo9_statement_part1"
+                    android:textColor="@color/mo9_text_color_light_grey" />
+
+                <TextView
+                    android:id="@+id/tv_mo9_user_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/mo9_statement_part2"
+                    android:textColor="@color/btn_blue_normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

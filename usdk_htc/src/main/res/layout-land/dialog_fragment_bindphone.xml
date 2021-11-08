@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="252dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/jolo_white_shape_rect5" >
+
+        <TextView
+            android:id="@+id/jolo_username_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/jolo_bind_username"
+            android:textColor="@color/jolo_light_black22"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/jolo_username_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/jolo_username_title_tv"
+            android:text="@string/jolo_bind_username"
+            android:textColor="@color/jolo_account_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/jolo_jump_bindphone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:padding="5dp"
+            android:text="@string/jolo_jump_bindphone"
+            android:textColor="@color/jolo_light_black22"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/jolo_bindphone_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/jolo_username_title_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/jolo_gray_edit_bg"
+            android:digits="@string/jolo_register_digits"
+            android:gravity="center_vertical"
+            android:hint="@string/jolo_input_phone"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/jolo_light_black22"
+            android:textColorHint="@color/jolo_light_black99"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/jolo_auth_code_ll"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/jolo_bindphone_et"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/auth_code_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.6"
+                android:background="@drawable/jolo_gray_edit_bg"
+                android:digits="@string/jolo_register_digits"
+                android:gravity="center_vertical"
+                android:hint="@string/jolo_input_code"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/jolo_light_black22"
+                android:textColorHint="@color/jolo_light_black99"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/fetch_code_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:background="@drawable/jolo_gray_edit_bg"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingTop="8dp"
+                android:text="@string/jolo_fetchcode"
+                android:textColor="@color/jolo_light_black99"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/jolo_bindphone_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/jolo_auth_code_ll"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/btn_gray_shape_rect5"
+            android:gravity="center"
+            android:text="@string/jolo_bind_phone"
+            android:textColor="@color/jolo_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/jolo_bindphone_tip_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jolo_bindphone_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/jolo_bindphone_dialog_tip"
+            android:textColor="@color/jolo_light_black99"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

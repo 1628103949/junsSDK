@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--添加小号-->
+    <TextView
+        android:id="@+id/xt_tv_add_sub_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/xt_add_sub_account_ring_shape"
+        android:gravity="center"
+        android:paddingBottom="6dip"
+        android:paddingLeft="24dip"
+        android:paddingRight="24dip"
+        android:paddingTop="6dip"
+        android:text="添加小号"
+        android:textColor="@color/xt_color_theme"
+        android:textSize="14sp" />
+
+    <!--切换小号-->
+    <TextView
+        android:id="@+id/xt_tv_cutover_sub_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/xt_btn_round_orange_shape"
+        android:gravity="center"
+        android:paddingBottom="6dip"
+        android:paddingLeft="24dip"
+        android:paddingRight="24dip"
+        android:paddingTop="6dip"
+        android:text="切换小号"
+        android:textColor="@color/xt_color_white"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

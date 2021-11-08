@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mumayi.paymentpay.ui.KeyboardListenLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_pay_key"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/paycenter_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/rl_pay_title"
+        layout="@layout/mumayi_layout_pay_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_pay_title"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:listSelector="@android:color/transparent"></ListView>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:text="警告：线下交易\n账号行为引发的\n经济纠纷，官方\n不予受理."
+                android:textColor="#FF0000"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+        <com.mumayi.paymentpay.ui.ScrollViewExtend
+            android:id="@+id/sl_pay_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/sl_pay_linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/paycenter_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_content_height"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pay_right_bg"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_game_name_value"
+                            style="@style/paycenter_text_14_dark_gray"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="@string/str_paycenter_game_name"
+                            android:textColor="#455061"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_official"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/pay_official" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/pay_line_bg" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/paycenter_text_14_dark_gray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="left"
+                            android:paddingRight="10dp"
+                            android:text="@string/str_paycenter_accoutn_name"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_account_name_value"
+                            style="@style/paycenter_text_14_dark_gray"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="#455061"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/pay_line_bg" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/paycenter_text_14_dark_gray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="left"
+                            android:paddingRight="10dp"
+                            android:text="@string/str_paycenter_pay_price"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_product_price_value"
+                            style="@style/paycenter_text_14_dark_gray"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="#f78c45"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/pay_line_bg" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_after_rebate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/paycenter_text_14_dark_gray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="left"
+                            android:paddingRight="10dp"
+                            android:text="折扣后金额 :"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_after_rebate"
+                            style="@style/paycenter_text_14_dark_gray"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="#f78c45"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/pay_line_bg"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/paycenter_text_14_dark_gray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="left"
+                            android:paddingRight="10dp"
+                            android:text="@string/str_paycenter_product_name"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_product_name_value"
+                            style="@style/paycenter_text_14_dark_gray"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textColor="#455061"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/pay_line_bg" />
+                </LinearLayout>
+
+                <com.mumayi.paymentpay.ui.ScrollLayout
+                    android:id="@+id/sl_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="230dp"
+                    android:background="@drawable/pay_right_bg" />
+            </LinearLayout>
+        </com.mumayi.paymentpay.ui.ScrollViewExtend>
+    </LinearLayout>
+
+</com.mumayi.paymentpay.ui.KeyboardListenLinearLayout>

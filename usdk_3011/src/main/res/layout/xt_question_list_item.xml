@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xt_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/xt_question_list_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="10dip"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/xt_color_zi_black"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:background="@color/xt_color_line_e1" />
+
+    <TextView
+        android:id="@+id/xt_question_list_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="13dip"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/xt_color_zi_hui2"
+        android:textSize="11sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:background="@color/xt_color_line_f1" />
+
+</LinearLayout>

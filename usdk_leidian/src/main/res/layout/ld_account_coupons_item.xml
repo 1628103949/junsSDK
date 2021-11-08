@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/coupons_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ld_dp_15"
+        android:layout_marginBottom="@dimen/ld_dp_5"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/account_coupons_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/ld_dp_75"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/backgroundView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/nameView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:textColor="#131313"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/typeView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="@dimen/ld_dp_3"
+                                android:layout_marginBottom="0.5dp"
+                                android:textColor="#131313"
+                                android:textSize="@dimen/ld_sp_13" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/old_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#131313"
+                            android:textSize="@dimen/ld_sp_15"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/ld_dp_20"
+                    android:paddingRight="@dimen/ld_dp_20">
+
+                    <TextView
+                        android:id="@+id/descView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="@dimen/ld_dp_2"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/ld_sp_12" />
+
+                    <TextView
+                        android:id="@+id/deadlineView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ld_dp_5"
+                        android:textColor="#7D6444"
+                        android:textSize="@dimen/ld_sp_9" />
+
+                    <TextView
+                        android:id="@+id/conditionView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ld_dp_5"
+                        android:textColor="#AB8A60"
+                        android:textSize="@dimen/ld_sp_9" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/selectView"
+            android:layout_width="@dimen/ld_dp_15"
+            android:layout_height="@dimen/ld_dp_15"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/ld_dp_10"
+            android:visibility="gone" />
+    </LinearLayout>
+</FrameLayout>

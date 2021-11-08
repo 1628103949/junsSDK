@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_paycenter_dialog_content"
+        style="@style/paycenter_text_16_big_black"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:visibility="gone" />
+
+    <com.mumayi.paymentpay.ui.EditTextWithDel
+        android:id="@+id/et_paycenter_dialog"
+        style="@style/tip_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="@string/str_paycenter_input_pay_pass"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textColor="@color/paycenter_skin_black_2"
+        android:textColorHint="@color/paycenter_gray_1"
+        android:visibility="gone" />
+
+</LinearLayout>

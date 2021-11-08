@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_progress_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="32.0dip"
+        android:paddingTop="20.0dip"
+        android:paddingRight="32.0dip"
+        android:paddingBottom="20.0dip">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/progress_anim" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

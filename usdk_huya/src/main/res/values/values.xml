@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_blue">#ff32d2f3</color>
+    <color name="dialog_blue">#ff008aff</color>
+    <color name="hyberry_black">#000000</color>
+    <color name="hyberry_black_transparent_10">#19000000</color>
+    <color name="hyberry_black_transparent_15">#26000000</color>
+    <color name="hyberry_black_transparent_20">#33000000</color>
+    <color name="hyberry_black_transparent_30">#4d000000</color>
+    <color name="hyberry_black_transparent_40">#99000000</color>
+    <color name="hyberry_black_transparent_50">#7f000000</color>
+    <color name="hyberry_black_transparent_60">#99000000</color>
+    <color name="hyberry_black_transparent_70">#b3000000</color>
+    <color name="hyberry_black_transparent_80">#cc000000</color>
+    <color name="hyberry_black_transparent_90">#e6000000</color>
+    <color name="hyberry_color_222222">#222222</color>
+    <color name="hyberry_color_333333">#333333</color>
+    <color name="hyberry_color_3D3D3D_transparency_80">#CD3D3D3D</color>
+    <color name="hyberry_color_4A90E2">#4A90E2</color>
+    <color name="hyberry_color_555555">#555555</color>
+    <color name="hyberry_color_666666">#666666</color>
+    <color name="hyberry_color_979797">#979797</color>
+    <color name="hyberry_color_999999">#999999</color>
+    <color name="hyberry_color_B9B9B9">#B9B9B9</color>
+    <color name="hyberry_color_CCCCCC">#CCCCCC</color>
+    <color name="hyberry_color_D0D0D0">#D0D0D0</color>
+    <color name="hyberry_color_D3E0E7">#D3E0E7</color>
+    <color name="hyberry_color_D5D5D5">#D5D5D5</color>
+    <color name="hyberry_color_D8D8D8">#D8D8D8</color>
+    <color name="hyberry_color_E1E1E1">#E1E1E1</color>
+    <color name="hyberry_color_E1E1E1_50">#7FE1E1E1</color>
+    <color name="hyberry_color_EAEAEA">#EAEAEA</color>
+    <color name="hyberry_color_F8F8F8">#F8F8F8</color>
+    <color name="hyberry_color_F9F4EE">#F9F4EE</color>
+    <color name="hyberry_color_FF4949">#FF4949</color>
+    <color name="hyberry_color_cdcdcd">#CDCDCD</color>
+    <color name="hyberry_color_cfcfcf">#CFCFCF</color>
+    <color name="hyberry_color_e8e8ed">#e8e8ed</color>
+    <color name="hyberry_color_ececec">#ececec</color>
+    <color name="hyberry_color_f5f5f5">#f5f5f5</color>
+    <color name="hyberry_color_ff8800">#ff8800</color>
+    <color name="hyberry_color_ffa200">#FFA200</color>
+    <color name="hyberry_color_ffa200_transparency_50">#80FFA200</color>
+    <color name="hyberry_color_fofofo">#F0F0F0</color>
+    <color name="hyberry_color_white">#FFFFFF</color>
+    <color name="hyberry_divider">#ffdddddd</color>
+    <color name="hyberry_gift_list_tab_checked">@color/hyberry_color_ffa200</color>
+    <color name="hyberry_gift_list_tab_uncheck">@color/hyberry_white_transparency_30_percent</color>
+    <color name="hyberry_gray22">#ff222222</color>
+    <color name="hyberry_gray33">#ff333333</color>
+    <color name="hyberry_gray33_40">#66333333</color>
+    <color name="hyberry_gray55">#ff555555</color>
+    <color name="hyberry_gray66">#ff666666</color>
+    <color name="hyberry_gray88">#ff888888</color>
+    <color name="hyberry_gray99">#ff999999</color>
+    <color name="hyberry_graycc">#ffcccccc</color>
+    <color name="hyberry_graye6">#ffe6e6e6</color>
+    <color name="hyberry_orange">#ffff9000</color>
+    <color name="hyberry_pressed">#fff2f2f2</color>
+    <color name="hyberry_tab_index_checked">#ffa300</color>
+    <color name="hyberry_tab_index_uncheck">@color/hyberry_white_transparency_30_percent</color>
+    <color name="hyberry_text_orange">@color/hyberry_orange</color>
+    <color name="hyberry_transparent">#00000000</color>
+    <color name="hyberry_white">#ffffff</color>
+    <color name="hyberry_white_transparency_10_percent">#19FFFFFF</color>
+    <color name="hyberry_white_transparency_15_percent">#26FFFFFF</color>
+    <color name="hyberry_white_transparency_20_percent">#33FFFFFF</color>
+    <color name="hyberry_white_transparency_30_percent">#4CFFFFFF</color>
+    <color name="hyberry_white_transparency_40_percent">#66FFFFFF</color>
+    <color name="hyberry_white_transparency_50_percent">#7FFFFFFF</color>
+    <color name="hyberry_white_transparency_60_percent">#9aFFFFFF</color>
+    <color name="hyberry_white_transparency_70_percent">#b3FFFFFF</color>
+    <color name="hyberry_white_transparency_80_percent">#CCFFFFFF</color>
+    <color name="hyberry_white_transparency_90_percent">#5AFFFFFF</color>
+    <color name="hyberry_white_transparent_30">#4cffffff</color>
+    <color name="hyberry_white_transparent_50">#7fffffff</color>
+    <color name="hyberry_white_transparent_60">#99ffffff</color>
+    <color name="kiwi_auxiliary_blue_color">#75a8ff</color>
+    <color name="kiwi_black_both_day_night_color">#000000</color>
+    <color name="kiwi_bottom_horizontal_interative_bg_color">#d8242424</color>
+    <color name="kiwi_bottom_interative_bg_color">#ffffff</color>
+    <color name="kiwi_bottom_interative_line_color">#eeeeee</color>
+    <color name="kiwi_btn_bg_blue_color">#75a8ff</color>
+    <color name="kiwi_btn_bg_grey_color">#f5f6f7</color>
+    <color name="kiwi_btn_bg_orange_color">#ffa900</color>
+    <color name="kiwi_btn_bg_vip_color">#FFD27F</color>
+    <color name="kiwi_btn_bg_white_color">#ffffff</color>
+    <color name="kiwi_btn_disabled_color">#dddddd</color>
+    <color name="kiwi_btn_gradient1_color">#ffa900</color>
+    <color name="kiwi_btn_gradient2_color">#ffc828</color>
+    <color name="kiwi_btn_gradient3_color">#ffd937</color>
+    <color name="kiwi_btn_line_blue_color">#75a8ff</color>
+    <color name="kiwi_btn_line_color">#eeeeee</color>
+    <color name="kiwi_btn_line_orange_color">#ffa900</color>
+    <color name="kiwi_btn_live_subscribed_color">#f7f7f9</color>
+    <color name="kiwi_card_grey_bg_color">#f7f9fa</color>
+    <color name="kiwi_card_placeholder_color">#eeeeee</color>
+    <color name="kiwi_card_white_bg_color">#ffffff</color>
+    <color name="kiwi_cc_both_day_night_color">#cccccc</color>
+    <color name="kiwi_dark_divider">#292929</color>
+    <color name="kiwi_decorateline_color">#d5d9df</color>
+    <color name="kiwi_divider_block_color">#F5F6F7</color>
+    <color name="kiwi_divider_line_color">#eeeeee</color>
+    <color name="kiwi_divider_line_inblackbg_color">#19FFFFFF</color>
+    <color name="kiwi_forenotice_bg_color">#e6f8ff</color>
+    <color name="kiwi_forenotice_text_color">#7aa3d9</color>
+    <color name="kiwi_gotv_bg_color">#fffcf7</color>
+    <color name="kiwi_gotv_bottom_bg_color">#fff6e8</color>
+    <color name="kiwi_gotv_info1_bg_color">#fffcf7</color>
+    <color name="kiwi_gotv_info2_bg_color">#fff2d5</color>
+    <color name="kiwi_gotv_line_color">#ffe1ae</color>
+    <color name="kiwi_gotv_set_bg_color">#ffffff</color>
+    <color name="kiwi_gotv_text1_color">#7a0b04</color>
+    <color name="kiwi_gotv_text2_color">#a4504b</color>
+    <color name="kiwi_icon_nav_color">#222222</color>
+    <color name="kiwi_input_bg_color">#f5f6f7</color>
+    <color name="kiwi_input_disable_bg_color">#fcfcfc</color>
+    <color name="kiwi_input_horizontal_bg_color">#333333</color>
+    <color name="kiwi_input_line_color">#eeeeee</color>
+    <color name="kiwi_line_both_day_night_color">#eeeeee</color>
+    <color name="kiwi_live_chaoshen_bg_color">#FFFBE9</color>
+    <color name="kiwi_live_chaoshen_line_color">#FFE580</color>
+    <color name="kiwi_live_chaoshen_text_color">#FFAA00</color>
+    <color name="kiwi_live_chatroom_competition_bg_color">#EAF4FF</color>
+    <color name="kiwi_live_chatroom_competition_text_color">#5896E9</color>
+    <color name="kiwi_live_chatroom_font_highlight_color">#FFA900</color>
+    <color name="kiwi_live_chatroom_font_systeminfo_color">#5896E9</color>
+    <color name="kiwi_live_chatroom_kongtou_bg_color">#FFF5F7</color>
+    <color name="kiwi_live_chatroom_kongtou_line_color">#FFD6D6</color>
+    <color name="kiwi_live_chatroom_kongtou_text_color">#e73a5d</color>
+    <color name="kiwi_live_chatroom_nickname_color">#7F94C0</color>
+    <color name="kiwi_live_chatroom_peiwan_bg_color">#EAF4FF</color>
+    <color name="kiwi_live_chatroom_peiwan_text_color">#56A2FF</color>
+    <color name="kiwi_live_chatroom_text_black1_color">#222222</color>
+    <color name="kiwi_live_chatroom_text_black2_color">#666666</color>
+    <color name="kiwi_live_chatroom_text_black3_color">#999999</color>
+    <color name="kiwi_live_dihuang_bg_color">#FFF2E9</color>
+    <color name="kiwi_live_dihuang_line_color">#FFE1D5</color>
+    <color name="kiwi_live_dihuang_text_color">#FF7200</color>
+    <color name="kiwi_live_diwang_marquee_desc_text_color">#673401</color>
+    <color name="kiwi_live_diwang_marquee_name_text_color">#A30000</color>
+    <color name="kiwi_live_gongjue_bg_color">#FFF5F7</color>
+    <color name="kiwi_live_gongjue_line_color">#FFE9ED</color>
+    <color name="kiwi_live_gongjue_marquee_name_text_color">#fee900</color>
+    <color name="kiwi_live_gongjue_text__color">#EE2873</color>
+    <color name="kiwi_live_gotv1_color">#999999</color>
+    <color name="kiwi_live_gotv2_color">#9FDE33</color>
+    <color name="kiwi_live_gotv3_color">#33DE65</color>
+    <color name="kiwi_live_gotv4_color">#50DBDB</color>
+    <color name="kiwi_live_gotv5_color">#1ABBFF</color>
+    <color name="kiwi_live_gotv6_color">#FF76B6</color>
+    <color name="kiwi_live_gotv7_color">#FF5151</color>
+    <color name="kiwi_live_gotv8_color">#FF8300</color>
+    <color name="kiwi_live_gotv9_color">#FFDE00</color>
+    <color name="kiwi_live_jianshi_bgcolor">#FDF7F3</color>
+    <color name="kiwi_live_jianshi_line_color">#FEEEE4</color>
+    <color name="kiwi_live_jianshi_text__color">#7F432F</color>
+    <color name="kiwi_live_junwang_bg_color">#FFF3FE</color>
+    <color name="kiwi_live_junwang_line_color">#FFE1FD</color>
+    <color name="kiwi_live_junwang_text__color">#8000BB</color>
+    <color name="kiwi_live_lingzhu_bg_color">#F5FAFF</color>
+    <color name="kiwi_live_lingzhu_line_color">#E3F1FF</color>
+    <color name="kiwi_live_lingzhu_text__color">#005BAF</color>
+    <color name="kiwi_live_nav_bg_color">#ffffff</color>
+    <color name="kiwi_live_nav_divider_color">#eeeeee</color>
+    <color name="kiwi_live_nav_text_nor_color">#222222</color>
+    <color name="kiwi_live_nav_text_sel_color">#222222</color>
+    <color name="kiwi_live_peiwan_jiedai_bg_color">#F4F8FF</color>
+    <color name="kiwi_live_peiwan_jiedai_line_color">#E5E7E9</color>
+    <color name="kiwi_live_potrait_entrance_bg_color">#ffffff</color>
+    <color name="kiwi_live_potrait_entrance_line_color">#efefef</color>
+    <color name="kiwi_live_qishi_bg_color">#F7FFF2</color>
+    <color name="kiwi_live_qishi_line_color">#E6FFD6</color>
+    <color name="kiwi_live_qishi_text__color">#179936</color>
+    <color name="kiwi_lottery_info_bg_color">#fffaea</color>
+    <color name="kiwi_lottery_info_line_color">#ffe472</color>
+    <color name="kiwi_lottery_info_text_color">#803622</color>
+    <color name="kiwi_lottery_tip_bg_color">#666666</color>
+    <color name="kiwi_mask_black_color_10">#19000000</color>
+    <color name="kiwi_mask_black_color_50">#80000000</color>
+    <color name="kiwi_mask_black_color_70">#b2000000</color>
+    <color name="kiwi_mask_light1_color">#b2f5f6f7</color>
+    <color name="kiwi_match_community_slider_tip_bar_color">#cccccc</color>
+    <color name="kiwi_moment_comment_bg_color">#f5f6f7</color>
+    <color name="kiwi_nav_bg_color">#ffffff</color>
+    <color name="kiwi_nav_divider_color">#eeeeee</color>
+    <color name="kiwi_nav_text_nor_color">#222222</color>
+    <color name="kiwi_nav_text_sel_color">#222222</color>
+    <color name="kiwi_nav_top_bg_color">#ffffff</color>
+    <color name="kiwi_nav_top_text_action_color">#222222</color>
+    <color name="kiwi_nav_top_text_action_disablecolor">#cccccc</color>
+    <color name="kiwi_nav_top_text_action_highlightcolor">#ffa900</color>
+    <color name="kiwi_option_coldstart_type2_color">#ff7875</color>
+    <color name="kiwi_option_sel_line_color">#ffa200</color>
+    <color name="kiwi_option_type1_bg_color">#f5f6f7</color>
+    <color name="kiwi_option_type2_bg_color">#ffffff</color>
+    <color name="kiwi_option_type2_line_color">#eeeeee</color>
+    <color name="kiwi_page_bg_dark1_color">#282828</color>
+    <color name="kiwi_page_bg_dark2_color">#212121</color>
+    <color name="kiwi_page_bg_grey_color">#f5f6f7</color>
+    <color name="kiwi_page_bg_white_color">#ffffff</color>
+    <color name="kiwi_pic_bg_color">#33ffffff</color>
+    <color name="kiwi_primary_orange_color">#ffa900</color>
+    <color name="kiwi_rank1_bg_color">#ff574e</color>
+    <color name="kiwi_rank2_bg_color">#ff8827</color>
+    <color name="kiwi_rank3_bg_color">#ffbf27</color>
+    <color name="kiwi_rank_other_bg_color">#c2c0c5</color>
+    <color name="kiwi_search_bg_color">#ffffff</color>
+    <color name="kiwi_search_divider_color">#dddddd</color>
+    <color name="kiwi_search_input_bg_color">#f5f6f7</color>
+    <color name="kiwi_search_text_color">#222222</color>
+    <color name="kiwi_search_text_placeholder_color">#999999</color>
+    <color name="kiwi_segmentedcontrol_nor_color">#b1b1b7</color>
+    <color name="kiwi_segmentedcontrol_sel_color">#b1b1b7</color>
+    <color name="kiwi_segmentedcontrol_text_nor_color">#b1b1b7</color>
+    <color name="kiwi_segmentedcontrol_text_sel_color">#ffffff</color>
+    <color name="kiwi_subnav1_bg_color">#ffffff</color>
+    <color name="kiwi_subnav1_indicator_color">#ffa900</color>
+    <color name="kiwi_subnav1_text_nor_color">#888888</color>
+    <color name="kiwi_subnav1_text_sel_color">#ffa900</color>
+    <color name="kiwi_subnav2_bg_color">#f5f6f7</color>
+    <color name="kiwi_subnav2_indicator_color">#ffa900</color>
+    <color name="kiwi_subnav2_text_nor_color">#888888</color>
+    <color name="kiwi_subnav2_text_sel_color">#ffa900</color>
+    <color name="kiwi_tabbar_bg_color">#ffffff</color>
+    <color name="kiwi_tabbar_divider_color">#eeeeee</color>
+    <color name="kiwi_tabbar_text_nor_color">#999999</color>
+    <color name="kiwi_tabbar_text_sel_color">#222222</color>
+    <color name="kiwi_text_auxiliary_blue_color">#75a8ff</color>
+    <color name="kiwi_text_black1_color">#222222</color>
+    <color name="kiwi_text_black2_color">#666666</color>
+    <color name="kiwi_text_black3_color">#999999</color>
+    <color name="kiwi_text_black4_color">#AAAAAA</color>
+    <color name="kiwi_text_black5_color">#CCCCCC</color>
+    <color name="kiwi_text_card_message_color">#ffffff</color>
+    <color name="kiwi_text_disable_color">#ffffff</color>
+    <color name="kiwi_text_link_blue_color">#7aa3d9</color>
+    <color name="kiwi_text_moment_comment_name_color">#99a2aa</color>
+    <color name="kiwi_text_placeholder_color">#aaaaaa</color>
+    <color name="kiwi_text_primary_orange_color">#ffa900</color>
+    <color name="kiwi_text_pushtip_color">#663100</color>
+    <color name="kiwi_text_vip_color">#DBAE5B</color>
+    <color name="kiwi_text_white_color">#ffffff</color>
+    <color name="kiwi_tip_background_blue_color">#e6f8ff</color>
+    <color name="kiwi_tip_background_green_color">#dcfcdc</color>
+    <color name="kiwi_tip_background_normal_color">#ffffff</color>
+    <color name="kiwi_tip_background_orange_color">#fff8e6</color>
+    <color name="kiwi_tip_background_red_color">#fff0f0</color>
+    <color name="kiwi_tip_font_green_color">#08b226</color>
+    <color name="kiwi_tip_message_bg_color">#dddddd</color>
+    <color name="kiwi_tip_red_point_color">#ff0000</color>
+    <color name="kiwi_tip_text_blue_color">#188cfb</color>
+    <color name="kiwi_tip_text_normal_color">#666666</color>
+    <color name="kiwi_tip_text_orange_color">#fb8218</color>
+    <color name="kiwi_tip_text_red_color">#ff4c66</color>
+    <color name="kiwi_transparent">#00000000</color>
+    <color name="kiwi_video_bg_color">#222222</color>
+    <color name="kiwi_white_both_day_night_color">#ffffff</color>
+    <color name="preview_black">#ff000000</color>
+    <color name="text_black">#ff333333</color>
+    <color name="text_black_for_name">#ff1a1a1a</color>
+    <color name="text_blue">#ff3ba7f3</color>
+    <color name="text_green">#ff35c041</color>
+    <color name="text_light_black">#ff666666</color>
+    <color name="text_light_white">#ffececec</color>
+    <color name="text_lighter_black">#ff999999</color>
+    <color name="text_lighter_white">#ffd7d7d7</color>
+    <color name="text_red">#ffff0000</color>
+    <color name="text_white">@android:color/white</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_black">#70000000</color>
+    <color name="transparent_half">#30000000</color>
+    <color name="umeng_fb_color_btn_normal">#333333</color>
+    <color name="umeng_fb_color_btn_pressed">#1495F7</color>
+    <color name="videoshow_transparent">#aa000000</color>
+    <color name="white">#ffffff</color>
+    <declare-styleable name="AsyncImageView"><attr format="reference" name="stubImage"/><attr name="type">
+            <flag name="normal" value="0x0"/>
+            <flag name="circle" value="0x1"/>
+            <flag name="adjustWidth" value="0x2"/>
+            <flag name="addReflection" value="0x3"/>
+        </attr></declare-styleable>
+    <declare-styleable name="FrameAnimationView"><attr format="reference" name="frame_animation"/><attr format="reference" name="normal_drawable"/><attr format="enum" name="frame_scale">
+            <enum name="FIT_XY" value="0"/>
+            <enum name="WRAP_CONTENT" value="1"/>
+        </attr></declare-styleable>
+    <declare-styleable name="RecyclerView">
+        <attr format="string" name="layoutManager"/>
+        <attr name="android:orientation"/>
+        <attr format="integer" name="spanCount"/>
+        <attr format="boolean" name="reverseLayout"/>
+        <attr format="boolean" name="stackFromEnd"/>
+    </declare-styleable>
+    <dimen name="header_refresh_text_size">25sp</dimen>
+    <dimen name="header_refresh_time_text_size">20sp</dimen>
+    <dimen name="header_text_margin_left">30dp</dimen>
+    <dimen name="hyberry_action_button_margin">40dp</dimen>
+    <dimen name="hyberry_action_button_size">72dp</dimen>
+    <dimen name="hyberry_action_menu_radius">75dp</dimen>
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
+    <item name="item_touch_helper_previous_elevation" type="id"/>
+    <string name="app_name">hydeviceid</string>
+    <string name="contents_contact">联系人信息</string>
+    <string name="contents_email">Email地址</string>
+    <string name="contents_location">地理坐标</string>
+    <string name="contents_phone">电话号码</string>
+    <string name="contents_sms">短信地址</string>
+    <string name="contents_text">纯文本</string>
+    <string name="description_none">图片无备注</string>
+    <string name="dialog_anr_btn_cancel_text">Cancel</string>
+    <string name="dialog_anr_btn_wait_text">Waiting</string>
+    <string name="dialog_anr_title">出现卡顿，请反馈给开发</string>
+    <string name="download_cancel">下载取消</string>
+    <string name="download_compeleted">已完成</string>
+    <string name="download_failed">下载失败</string>
+    <string name="download_file_not_exist">文件不存在</string>
+    <string name="download_md5_failed">校验失败</string>
+    <string name="download_pause">已暂停</string>
+    <string name="download_waiting">等待下载中...</string>
+    <string name="file_downloading">"努力下载中…"</string>
+    <string name="hyberry_account_input_check">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_</string>
+    <string name="hyberry_agree_rule">请阅读并同意《用户注册协议》</string>
+    <string name="hyberry_alert_no">否</string>
+    <string name="hyberry_alert_return_login">是否返回登录界面？</string>
+    <string name="hyberry_alert_return_login_fail">登录失败，请重试</string>
+    <string name="hyberry_alert_title">提示</string>
+    <string name="hyberry_alert_window_permission_huya_remeber">记住我的选择</string>
+    <string name="hyberry_alert_window_permission_huya_tip">需要获得悬浮窗权限才能开播，是否开启？</string>
+    <string name="hyberry_alert_window_permission_huya_vivo_tip">已开启请勾选“记住我的选择”并确认；\n未开启请在手机管家>权限管理中设置。</string>
+    <string name="hyberry_alert_window_permission_huya_vivo_tip_title">是否已开启悬浮窗权限？</string>
+    <string name="hyberry_alert_yes">是</string>
+    <string name="hyberry_alphabet_and_number">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+    <string name="hyberry_appid">5172</string>
+    <string name="hyberry_appkey">237d5bacaa2ca7add646db155b633cc1</string>
+    <string name="hyberry_back">返回</string>
+    <string name="hyberry_cancel">取消</string>
+    <string name="hyberry_certification_tip_input_card_number">请填写身份证号码</string>
+    <string name="hyberry_certification_tip_input_name">请填写真实姓名</string>
+    <string name="hyberry_certification_title">实名认证</string>
+    <string name="hyberry_channel">official</string>
+    <string name="hyberry_confirm">确定</string>
+    <string name="hyberry_confirm_stop_live">确定要结束直播吗？</string>
+    <string name="hyberry_default_live_desc">虎牙直播</string>
+    <string name="hyberry_default_nick_name">我是一颗小虎牙</string>
+    <string name="hyberry_empty_live_list">暂无直播</string>
+    <string name="hyberry_enter_live_room">进入直播间</string>
+    <string formatted="false" name="hyberry_format_living_share_msg">通过你的%s分享进入直播间，%s</string>
+    <string name="hyberry_get_channel_fail">获取频道号失败</string>
+    <string name="hyberry_get_presenter_config_fail">获取参数失败，请重试！</string>
+    <string name="hyberry_have_known">知道了</string>
+    <string name="hyberry_input_live_title">输入直播标题</string>
+    <string name="hyberry_input_phone">请输入手机号</string>
+    <string name="hyberry_input_pwd">请输入登录密码</string>
+    <string name="hyberry_input_pwd_tip">请设置6-20位英文数字组合密码</string>
+    <string name="hyberry_input_verify_code">请输入验证码</string>
+    <string name="hyberry_is_agree_rule">已阅读并同意</string>
+    <string name="hyberry_live_endlive_notice">直播因“%1$s”已被关停,请尝试重新开播</string>
+    <string name="hyberry_live_gift">收益</string>
+    <string name="hyberry_live_message_empty">暂无聊天信息</string>
+    <string name="hyberry_live_munber_unit">%s人</string>
+    <string name="hyberry_live_notifination_content">正在直播...</string>
+    <string name="hyberry_live_notifination_title">虎牙手游</string>
+    <string name="hyberry_live_title_hint">请输入直播标题</string>
+    <string name="hyberry_living_start_alert_title">开播提示</string>
+    <string name="hyberry_living_sys_tips">虎牙官方倡导绿色直播，对直播内容进行24小时在线巡查。任何传播违法、违规、低俗、暴力等不良信息的行为将会封停账号。切勿与他人私下交易转账，以免上当受骗。</string>
+    <string name="hyberry_login_account">账号登录</string>
+    <string name="hyberry_login_account_prompt">请使用虎牙账号登录</string>
+    <string name="hyberry_login_account_register">注册账号</string>
+    <string name="hyberry_login_and_register">注册并登录</string>
+    <string name="hyberry_login_certification_failed_tip">实名信息有误，认证失败，请确认信息后重新提交。</string>
+    <string name="hyberry_login_certification_failed_tip1">连续认证失败</string>
+    <string name="hyberry_login_certification_failed_tip2">次后</string>
+    <string name="hyberry_login_certification_failed_tip3">小时内将无法登录游戏，您还有</string>
+    <string name="hyberry_login_certification_failed_tip4">次机会，请谨慎提交。</string>
+    <string name="hyberry_login_certification_failed_tip5">已连续认证失败</string>
+    <string name="hyberry_login_certification_failed_tip6">次, \n请在</string>
+    <string name="hyberry_login_certification_failed_tip7">小时后重新提交认证</string>
+    <string name="hyberry_login_certification_ignore">跳过</string>
+    <string name="hyberry_login_certification_name_hint">真实姓名</string>
+    <string name="hyberry_login_certification_number_hint">身份证号码</string>
+    <string name="hyberry_login_certification_submit">提交认证</string>
+    <string name="hyberry_login_certification_tip">根据《关于防止未成年人沉迷网络游戏的通知》，请使用有效身份证件完成实名认证。为保证流畅游戏体验，请尽快完成认证。</string>
+    <string name="hyberry_login_find_back_password">找回密码</string>
+    <string name="hyberry_login_forget_password">忘记密码</string>
+    <string name="hyberry_login_get_verify_code">获取验证码</string>
+    <string name="hyberry_login_guest">游客模式</string>
+    <string name="hyberry_login_huya">虎牙APP授权登录</string>
+    <string name="hyberry_login_login">登录</string>
+    <string name="hyberry_login_mobcode">手机令牌号码</string>
+    <string name="hyberry_login_not_get_code">收不到验证码</string>
+    <string name="hyberry_login_password">密码</string>
+    <string name="hyberry_login_phone_hint">账号/手机号</string>
+    <string name="hyberry_login_phone_number">输入手机号</string>
+    <string name="hyberry_login_piccode">图片验证码</string>
+    <string name="hyberry_login_privacy">《隐私政策》</string>
+    <string name="hyberry_login_registered">注册</string>
+    <string name="hyberry_login_rule">《用户注册协议》</string>
+    <string name="hyberry_login_set_password">设置登录密码</string>
+    <string name="hyberry_login_tips">为了保证您的账号安全，本次登录需要进行\n信息验证</string>
+    <string name="hyberry_login_tips_vertify_phone">验证手机号：%s</string>
+    <string name="hyberry_login_tourist_certification">立即升级</string>
+    <string name="hyberry_login_tourist_enter">进入游戏</string>
+    <string name="hyberry_login_tourist_name">游客: %s</string>
+    <string name="hyberry_login_tourist_tip">亲爱的玩家，根据国家法律法规规定，未实名账号游戏体验时长累计不能超过1小时，并且不可在游戏内进行充值。请尽快完成实名登记，拥有完整游戏体验。</string>
+    <string name="hyberry_login_verify_code">输入验证码</string>
+    <string name="hyberry_look_for_details">查看详情</string>
+    <string name="hyberry_message">消息</string>
+    <string name="hyberry_no_web_browser_found">没有安装浏览器</string>
+    <string name="hyberry_not_found_picture">找不到图片</string>
+    <string name="hyberry_ok">确定</string>
+    <string name="hyberry_openappid">HYNXsL84f4xTuLa6qX</string>
+    <string name="hyberry_pay">立即支付%.2f元</string>
+    <string name="hyberry_pay_price">¥ %.2f</string>
+    <string name="hyberry_pay_shop_name">商品名：%s</string>
+    <string name="hyberry_perssiom_tips">请确保获取以下权限:</string>
+    <string name="hyberry_phone_format_error">手机号格式不正确</string>
+    <string name="hyberry_props_to_presenter">赠送</string>
+    <string name="hyberry_re_send_verify_code">重新发送</string>
+    <string name="hyberry_recharge_age_tips">未实名暂不支持支付</string>
+    <string name="hyberry_recharge_check_balance">查询余额</string>
+    <string name="hyberry_recharge_doing">正在处理中</string>
+    <string name="hyberry_recharge_fail">抱歉，支付不成功</string>
+    <string name="hyberry_recharge_guest_tips">游客账号暂不支持支付</string>
+    <string name="hyberry_recharge_install_alipay_client">请先安装支付宝客户端</string>
+    <string name="hyberry_recharge_install_qq_client">请先安装QQ客户端</string>
+    <string name="hyberry_recharge_install_webchat_client">请先安装微信客户端</string>
+    <string name="hyberry_recharge_select_pay_mode">请勾选支付方式</string>
+    <string name="hyberry_recharge_success">支付成功</string>
+    <string name="hyberry_recharge_user_cancel">您已取消支付</string>
+    <string name="hyberry_register_and_upgrade">注册并绑定游客账号</string>
+    <string name="hyberry_register_upgrade_account_title">注册升级账号</string>
+    <string name="hyberry_resend_verify_code">重新获取</string>
+    <string name="hyberry_send_verify_code">发送验证码</string>
+    <string name="hyberry_stop_live">结束直播</string>
+    <string name="hyberry_string_ellipsis_end">%s…</string>
+    <string name="hyberry_system_notice">系统消息</string>
+    <string name="hyberry_text_new_msg">%d条新弹幕</string>
+    <string name="hyberry_verify_code_error">验证码错误，请重新输入</string>
+    <string name="hyberry_version">1.1.8</string>
+    <string name="hyberry_vip_enter_live_room">%s 驾临直播间</string>
+    <string name="hyberry_webview_scheme">huyagame123456</string>
+    <string name="ids_str_button_cancel">取 消</string>
+    <string name="ids_str_button_ok">确 定</string>
+    <string name="modify_nick_name_content_illegal">保存失败，昵称包含敏感词汇</string>
+    <string name="modify_nick_name_input_nickname">输入昵称</string>
+    <string name="msg_default_status">请将YY频道二维码置于取景框内扫描。  </string>
+    <string name="mtp_app_name">dimens</string>
+    <string name="network_error">本地无可用网络，请检测网络设置</string>
+    <string name="none">图片无备注</string>
+    <string name="set_network">网络设置</string>
+    <string name="statistics_app_name">Statistics</string>
+    <string formatted="false" name="str_date_format">%d年%d月%d日</string>
+    <string name="str_day_before_yesterday">前天</string>
+    <string formatted="false" name="str_short_date_format">%d月%d日</string>
+    <string formatted="false" name="str_time_format">%02d:%02d</string>
+    <string name="str_today">今天</string>
+    <string name="str_yesterday">昨天</string>
+    <string formatted="false" name="sysmsg_fmt0">%d分钟前</string>
+    <string formatted="false" name="sysmsg_fmt1">%02d:%02d</string>
+    <string formatted="false" name="sysmsg_fmt2">昨天</string>
+    <string formatted="false" name="sysmsg_fmt3">%d-%d</string>
+    <string formatted="false" name="sysmsg_fmt4">%d-%d-%d</string>
+    <string name="umeng_common_action_cancel">Cancel</string>
+    <string name="umeng_common_action_pause">Pause</string>
+    <string name="umeng_fb_contact_info">Contact Info</string>
+    <string name="umeng_fb_contact_info_hint">Email, msn, gtalk, or whatever we can find you.</string>
+    <string name="umeng_fb_contact_title">Contact</string>
+    <string name="umeng_fb_contact_update_at">Updated at </string>
+    <string name="umeng_fb_powered_by">Powered by</string>
+    <string name="umeng_fb_reply_content_default">Your precious feedback are appriciated.</string>
+    <string name="umeng_fb_reply_content_hint">I want to tell</string>
+    <string name="umeng_fb_reply_date_default">2013–3–12 13:24:00</string>
+    <string name="umeng_fb_send">Send</string>
+    <string name="umeng_fb_title">Feedback</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="BerryFullScreen" parent="android:Theme.Translucent.NoTitleBar.Fullscreen">
+    </style>
+    <style name="BerryNoTitleBar" parent="android:Theme.Translucent.NoTitleBar">
+    </style>
+    <style name="NotificationText" parent="android:TextAppearance.StatusBar.EventContent"/>
+    <style name="NotificationTitle" parent="android:TextAppearance.StatusBar.EventContent.Title"/>
+    <style name="Theme.Dialog.Kiwi" parent="android:Theme.Dialog">
+
+        <!-- Window attributes -->
+        <item name="android:windowSoftInputMode">adjustNothing|stateAlwaysHidden</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/hyberry_transparent</item>
+
+        <!-- Widget styles -->
+        <item name="android:imageButtonStyle">@style/Widget.ImageButton.Kiwi</item>
+        <item name="android:textViewStyle">@style/Widget.TextView.Kiwi</item>
+        <item name="android:buttonStyle">@style/Widget.Button.Kiwi</item>
+        <item name="android:editTextStyle">@style/Widget.EditText.Kiwi</item>
+        <item name="android:progressBarStyle">@style/Widget.ProgressBar.Kiwi</item>
+
+        <!-- Text styles -->
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ff333333</item>
+
+        <!-- Text selection handle attributes -->
+        <item name="android:textCursorDrawable">@drawable/hyberry_text_cursor</item>
+    </style>
+    <style name="Widget.Button.Kiwi" parent="android:Widget.Button">
+        <item name="android:background">@drawable/hyberry_state_button_default</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">60dp</item>
+        <item name="android:minHeight">30dp</item>
+    </style>
+    <style name="Widget.EditText.Kiwi" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/hyberry_state_background_edit</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+    <style name="Widget.ImageButton.Kiwi" parent="android:Widget.ImageButton">
+        <item name="android:background">@color/hyberry_transparent</item>
+    </style>
+    <style name="Widget.ProgressBar.Kiwi" parent="android:Widget">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/hyberry_animation_progress</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">1500</item>
+        <item name="android:minWidth">29dip</item>
+        <item name="android:maxWidth">29dip</item>
+        <item name="android:minHeight">29dip</item>
+        <item name="android:maxHeight">29dip</item>
+    </style>
+    <style name="Widget.TextView.Kiwi" parent="android:Widget.TextView">
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="anr_dialog_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="hyberry.Widget.Dialog" parent="android:Theme.Dialog">
+        <!-- Text styles -->
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <!-- Window attributes -->
+        <item name="android:windowSoftInputMode">adjustNothing|stateAlwaysHidden</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowMinWidthMajor">@dimen/dialog_min_width_major</item>-->
+        <!--<item name="android:windowMinWidthMinor">@dimen/dialog_min_width_minor</item>-->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <style name="hyberry.Widget.FullScreenDialog" parent="hyberry.Widget.Dialog">
+        <item name="android:windowBackground">@color/hyberry_transparent</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <!--<item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowNoTitle">true</item>-->
+    </style>
+    <style name="hyberry.Widget.InputTitle.Dialog" parent="hyberry.Widget.Dialog">
+        <item name="android:windowBackground">@color/hyberry_transparent</item>
+        <!--<item name="android:windowMinWidthMinor">100%</item>-->
+        <!--<item name="android:windowMinWidthMajor">100%</item>-->
+        <!--<item name="android:backgroundDimAmount">0</item>-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="hyberry.Widget.Live.Dialog" parent="hyberry.Widget.Dialog">
+        <item name="android:windowBackground">@color/hyberry_transparent</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <!--<item name="android:backgroundDimAmount">0</item>-->
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="hyberry.Widget.Live.DialogFullscreen" parent="hyberry.Widget.Dialog">
+        <item name="android:windowBackground">@color/hyberry_transparent</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <!--<item name="android:backgroundDimAmount">0</item>-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="hyberry.Widget.LiveList.Dialog" parent="hyberry.Widget.Dialog">
+        <item name="android:windowBackground">@color/hyberry_transparent</item>
+        <!--<item name="android:windowMinWidthMinor">100%</item>-->
+        <!--<item name="android:windowMinWidthMajor">100%</item>-->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <!--<item name="android:windowNoTitle">true</item>-->
+    </style>
+    <style name="hyberry.Widget.Loading.Dialog" parent="hyberry.Widget.Dialog">
+        <item name="android:windowBackground">@color/hyberry_transparent</item>
+        <!--<item name="android:windowMinWidthMinor">100%</item>-->
+        <!--<item name="android:windowMinWidthMajor">100%</item>-->
+        <!--<item name="android:backgroundDimAmount">0</item>-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+</resources>

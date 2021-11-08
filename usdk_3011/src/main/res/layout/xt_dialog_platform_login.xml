@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xt_login_bg_horizontal"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/xt_layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/xt_tv_phone_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="37dip"
+            android:background="@drawable/xt_btn_akey_register_shape"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingLeft="12dip"
+            android:paddingRight="17dip"
+            android:paddingTop="10dip"
+            android:text="@string/xt_phone_register"
+            android:textColor="@color/xt_color_white"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/xt_tv_akey_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xt_btn_akey_register_shape"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingLeft="12dip"
+            android:paddingRight="17dip"
+            android:paddingTop="10dip"
+            android:text="@string/xt_one_key_register"
+            android:textColor="@color/xt_color_white"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dip"
+        android:orientation="vertical">
+        <!--关闭按钮-->
+        <RelativeLayout
+            android:id="@+id/xt_rl_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="2dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:src="@drawable/xt_login_exit2" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/xt_iv_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:src="@drawable/xt_logo_icon" />
+
+
+        <!--账号-->
+        <LinearLayout
+            android:id="@+id/xt_input_layout_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="49dip"
+            android:layout_marginTop="22dip"
+            android:background="@drawable/xt_edittext_login_input_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:src="@drawable/xt_login_account" />
+
+            <EditText
+                android:id="@+id/xt_edit_account"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/xt_login_hint"
+                android:paddingBottom="2dip"
+                android:paddingTop="2dip"
+                android:singleLine="true"
+                android:textColor="@color/xt_color_zi_black"
+                android:textColorHint="@color/xt_color_c1"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/xt_rl_down"
+                android:layout_width="45dip"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/xt_iv_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xt_down" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <!--密码-->
+        <LinearLayout
+            android:id="@+id/xt_input_layout_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="49dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/xt_edittext_login_input_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:src="@drawable/xt_login_password" />
+
+            <EditText
+                android:id="@+id/xt_edit_password"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/xt_password_hint"
+                android:inputType="textPassword"
+                android:paddingBottom="2dip"
+                android:paddingTop="2dip"
+                android:singleLine="true"
+                android:textColor="@color/xt_color_zi_black"
+                android:textColorHint="@color/xt_color_c1"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/xt_rl_look_pwd"
+                android:layout_width="45dip"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/xt_rl_look_pwd_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xt_password_unlook" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/xt_tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/xt_btn_round_orange_shape"
+            android:paddingBottom="8dip"
+            android:paddingLeft="36dip"
+            android:paddingRight="36dip"
+            android:paddingTop="8dip"
+            android:text="@string/xt_login"
+            android:textColor="@color/xt_color_white"
+            android:textSize="13sp"
+            android:layout_marginLeft="39dip"/>
+
+        <!--忘记密码-->
+        <TextView
+            android:id="@+id/xt_tv_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="6dip"
+            android:text="@string/xt_forget_password"
+            android:textColor="@color/xt_color_zi_hui"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

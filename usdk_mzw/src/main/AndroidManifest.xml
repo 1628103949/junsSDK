@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.js.hdxbdzz.mzw">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:label="MZW Demo"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- JunS sdk components start -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="${applicationId}.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <activity android:name="com.muzhiwan.plugin.LActivityProxy"
+            android:theme="@android:style/Theme.Translucent"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize"/>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <service android:name="com.muzhiwan.plugin.service.LProxyService" />
+        <meta-data  android:name="MZWAPPKEY"  android:value="a16adae5cd90d6393a35e4a2b6638db8" />
+        <meta-data  android:name="mzw_channel"  android:value="mzw" />
+        <meta-data android:name="mzw_cps" android:value="mzw" />
+        <meta-data android:name="mzw_sdk" android:value="3615" />
+        <meta-data android:name="DEBUG" android:value="true" />
+        <!-- JunS sdk components end -->
+    </application>
+</manifest>

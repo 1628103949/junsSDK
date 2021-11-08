@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="enjoy_fw_album_found_description_color">#aaaaaa</color>
+    <color name="enjoy_fw_album_found_divide_color">#d9d9d9</color>
+    <color name="enjoy_fw_album_found_text_color">#353535</color>
+    <color name="enjoy_fw_album_light_blue">#4FA8FB</color>
+    <color name="enjoy_fw_album_transparent">#00000000</color>
+    <color name="enjoy_fw_album_white">#FFFFFF</color>
+    <color name="enjoy_fw_gray">#999999</color>
+    <color name="enjoy_fw_gray_select">#DDDDDD</color>
+    <color name="enjoy_fw_red">#EC6B62</color>
+    <color name="enjoy_fw_red_select">#FDB7B2</color>
+    <string name="enjoy_fw_common_back">返回游戏</string>
+    <string name="enjoy_fw_common_cancel">取消</string>
+    <string name="enjoy_fw_common_confirm">确认</string>
+    <string name="enjoy_fw_common_net_error_tips">加载失败，请检查网络或稍后重试！</string>
+    <string name="enjoy_fw_common_refresh">刷新</string>
+    <string name="enjoy_fw_common_tips">提示</string>
+    <string name="enjoy_fw_tiny_game">泰尼游戏</string>
+</resources>

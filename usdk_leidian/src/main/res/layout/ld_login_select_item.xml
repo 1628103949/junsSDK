@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.ld.sdk.account.ui.stackview.weight.CircleImageView
+        android:id="@+id/portrait_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/login_select_account_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textSize="@dimen/ld_base_one_level_text_size_sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/right_arrow_yellow_icon" />
+</LinearLayout>

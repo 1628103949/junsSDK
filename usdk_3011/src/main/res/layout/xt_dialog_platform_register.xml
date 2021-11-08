@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xt_dialog_bg_shape">
+
+    <!--关闭按钮-->
+    <RelativeLayout
+        android:id="@+id/xt_rl_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="2dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:src="@drawable/xt_login_exit" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/xt_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/xt_one_key_register"
+        android:textColor="@color/xt_color_zi_black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xt_tv_title"
+        android:layout_marginTop="12dip"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/xt_iv_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/xt_logo_icon"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginLeft="46dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="19dip"
+                android:src="@drawable/xt_login_account" />
+
+            <EditText
+                android:id="@+id/xt_et_account"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginRight="54dip"
+                android:layout_marginTop="19dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+                android:hint="@string/xt_input_account"
+                android:singleLine="true"
+                android:textColor="@color/xt_color_zi_black2"
+                android:textColorHint="@color/xt_color_zi_hui2"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="46dip"
+            android:layout_marginRight="54dip"
+            android:layout_marginTop="2dip"
+            android:background="@color/xt_color_line_e1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginLeft="46dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="19dip"
+                android:src="@drawable/xt_login_password" />
+
+            <EditText
+                android:id="@+id/xt_et_password"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="19dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/xt_set_password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/xt_color_zi_black2"
+                android:textColorHint="@color/xt_color_zi_hui2"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/xt_rl_look_pwd"
+                android:layout_width="45dip"
+                android:layout_height="28dip"
+                android:layout_marginRight="54dip"
+                android:layout_marginTop="20dip">
+
+                <ImageView
+                    android:id="@+id/xt_iv_look_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/xt_password_unlook" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="46dip"
+            android:layout_marginRight="54dip"
+            android:layout_marginTop="2dip"
+            android:background="@color/xt_color_line_e1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dip"
+            android:layout_marginRight="54dip"
+            android:layout_marginTop="3dip"
+            android:gravity="center"
+            android:text="@string/xt_password_rule"
+            android:textColor="@color/xt_color_zi_hui2"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/xt_tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/xt_btn_round_orange_shape"
+            android:paddingBottom="9dip"
+            android:paddingLeft="26dip"
+            android:paddingRight="26dip"
+            android:paddingTop="9dip"
+            android:text="@string/xt_register"
+            android:textColor="@color/xt_color_white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/xt_tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dip"
+            android:layout_marginLeft="21dip"
+            android:drawableLeft="@drawable/xt_btn_back"
+            android:drawablePadding="5dip"
+            android:gravity="center"
+            android:padding="3dip"
+            android:text="@string/xt_existing_account"
+            android:textColor="@color/xt_color_zi_hui"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</RelativeLayout>

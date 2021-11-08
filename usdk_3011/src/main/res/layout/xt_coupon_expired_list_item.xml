@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="88dip"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="8dip"
+            android:layout_weight="3"
+            android:background="@drawable/xt_coupon_use_left_bg_shape"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/xt_layout_denomination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/xt_tv_coupon_denomination"
+                    android:text="￥"
+                    android:textColor="@color/xt_color_use"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/xt_tv_coupon_denomination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textColor="@color/xt_color_use"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/xt_tv_use_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xt_layout_denomination"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dip"
+                android:text=""
+                android:textColor="@color/xt_color_use"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="88dip"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="8dip"
+            android:layout_weight="5"
+            android:background="@drawable/xt_coupon_use_right_bg_shape"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/xt_tv_coupon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:text=""
+                android:textColor="@color/xt_color_use"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/xt_tv_coupon_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:text="@string/xt_string_use_range"
+                android:textColor="@color/xt_color_use"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/xt_tv_coupon_validity_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:text="@string/xt_string_valid_period"
+                android:textColor="@color/xt_color_use"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="8dip"
+        android:src="@drawable/xt_watermark_expired" />
+
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xt_color_line_f9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/xt_layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:orientation="horizontal">
+
+        <!--优惠券-->
+        <LinearLayout
+            android:id="@+id/xt_layout_discount"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/xt_tv_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/xt_string_game_discount"
+                android:textColor="@drawable/xt_card_title_status_color_select"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/xt_tv_discount_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/xt_color_login_normal"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <!--礼包-->
+        <LinearLayout
+            android:id="@+id/xt_layout_gift"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/xt_tv_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/xt_string_game_gift"
+                android:textColor="@drawable/xt_card_title_status_color_select"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/xt_tv_gift_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/xt_color_login_normal"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <!--活动-->
+        <LinearLayout
+            android:id="@+id/xt_layout_active"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/xt_tv_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/xt_string_game_active"
+                android:textColor="@drawable/xt_card_title_status_color_select"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/xt_tv_active_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/xt_color_login_normal"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <!--交易-->
+        <LinearLayout
+            android:id="@+id/xt_layout_transaction"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/xt_tv_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/xt_string_game_transaction"
+                android:textColor="@drawable/xt_card_title_status_color_select"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/xt_tv_transaction_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/xt_color_login_normal"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/xt_fl_activity_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/xt_layout_bar"
+        android:layout_marginTop="10dip"/>
+
+    <FrameLayout
+        android:id="@+id/xt_fl_activity_game_full"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_first_code"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/tv_first_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="首充码: "
+                android:textColor="#979fab"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/relative_first_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_first_code"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_sign1_first_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您有"
+                    android:textColor="#979fab"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_count_first_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tv_sign1_first_code"
+                    android:text="0张"
+                    android:textColor="#f78d44"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_sign2_first_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tv_count_first_code"
+                    android:text="可用首充码"
+                    android:textColor="#979fab"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_price_first_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:textColor="#455061"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_no_use_first_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:text="无可用"
+                android:textColor="#979fab"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/tiaozhuan" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_company_email"
+        style="@style/paycenter_text_14_dark_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dip"
+        android:text="@string/str_paycenter_email" />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:layout_above="@id/tv_company_email"
+        android:id="@+id/tv_channel_version_frist_mayicoin"
+        style="@style/paycenter_text_14_dark_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_goto_pay_frist_mayicoin"
+        style="@style/paycenter_text_14_realwhite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_channel_version_frist_mayicoin"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/pay_alix_style"
+        android:text="@string/pay_goto_pay" />
+
+    <LinearLayout
+        android:id="@+id/ll_message_frist_mayicon"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_above="@id/btn_goto_pay_frist_mayicoin"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center"
+        android:paddingBottom="3dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:src="@drawable/pay_wechatpay_tip_ico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/pay_confirm_tip"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_above="@id/ll_message_frist_mayicon"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#faf8df">
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="警告：线下交易账号行为引发的经济纠纷，官方不予受理。"
+            android:textColor="#ff7800"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

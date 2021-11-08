@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xt_color_white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/xt_tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="16dip"
+                android:drawableLeft="@drawable/xt_btn_back"
+                android:drawablePadding="8dip"
+                android:text="礼包详情"
+                android:textColor="@color/xt_color_zi_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/xt_color_line_e1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/xt_gift_icon"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:layout_marginBottom="9dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="15dip"
+                    />
+
+                <TextView
+                    android:id="@+id/xt_gift_name"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dip"
+                    android:layout_toRightOf="@+id/xt_gift_icon"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="特权礼包"
+                    android:textColor="@color/xt_color_theme"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/xt_game_name"
+                    android:visibility="invisible"
+                    android:layout_width="105dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/xt_gift_name"
+                    android:layout_marginTop="8dip"
+                    android:layout_toRightOf="@+id/xt_gift_icon"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="盗墓笔记"
+                    android:textColor="@color/xt_color_zi_black2"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/xt_gift_receive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip"
+                    android:background="@drawable/xt_btn_rectangle_orange_ring_shape"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="9dip"
+                    android:paddingRight="9dip"
+                    android:paddingTop="5dip"
+                    android:text="领取礼包"
+                    android:textColor="@color/xt_color_theme"
+                    android:textSize="11sp" />
+                <TextView
+                    android:id="@+id/xt_gift_copy"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip"
+                    android:background="@drawable/xt_btn_rectangle_orange_ring_shape"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="9dip"
+                    android:paddingRight="9dip"
+                    android:paddingTop="5dip"
+                    android:text="复制礼包"
+                    android:textColor="@color/xt_color_theme"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/xt_gift_period"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/xt_gift_icon"
+                    android:layout_marginBottom="9dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="16dip"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="2019-09-06 15:11-永久"
+                    android:textColor="@color/xt_color_zi_6a"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="13dip"
+                android:background="@color/xt_color_line_f1" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="16dip"
+                android:drawableLeft="@drawable/xt_gamenew_png"
+                android:drawablePadding="6dip"
+                android:text="礼包内容"
+                android:textColor="@color/xt_color_zi_black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/xt_gift_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xt_gift_name"
+                android:layout_marginBottom="16dip"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="8dip"
+                android:layout_toRightOf="@+id/xt_gift_icon"
+                android:text="伙伴修炼册x30，高级五灵珠x1，高级九彩云龙珠x1，驯养令x1"
+                android:textColor="@color/xt_color_zi_6a"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/xt_color_line_e1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="16dip"
+                android:drawableLeft="@drawable/xt_gamenew_png"
+                android:drawablePadding="6dip"
+                android:text="使用方法"
+                android:textColor="@color/xt_color_zi_black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/xt_gift_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xt_gift_name"
+                android:layout_marginBottom="16dip"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="8dip"
+                android:layout_toRightOf="@+id/xt_gift_icon"
+                android:text="物品均为绑定物品\n兑换方法：进入游戏后，点击右上角“活动”按钮，选择礼品码页签，输入序列号，点击“使用”，即可领取；"
+                android:textColor="@color/xt_color_zi_6a"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/xt_color_line_e1" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="28.0dip"
+    android:paddingRight="28.0dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bind_phone_num"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/item_reaName"
+            layout="@layout/layout_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/item_idCard"
+            layout="@layout/layout_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/item_phone_with_btn"
+            layout="@layout/layout_phone_with_btn_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <include
+            android:id="@+id/item_code"
+            layout="@layout/layout_code_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip" />
+    </LinearLayout>
+</RelativeLayout>

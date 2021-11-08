@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/kl_main_view"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:minHeight="250dp"
+        android:background="@drawable/klbgshape"
+        android:orientation="vertical">
+
+        <com.ddtsdk.ui.view.KLHeadLayoutView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/klshape_bule_top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kl_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="实名认证"
+                android:textColor="@color/klfont_white"
+                android:textSize="17sp" />
+
+        </com.ddtsdk.ui.view.KLHeadLayoutView>
+
+        <TextView
+            android:textSize="8sp"
+            android:textColor="@color/color_333333"
+            android:text="根据国家规定，玩家需实名认证，否则后续无法正常游戏"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/kleditlogin"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/kl_real_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/user_icon"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入身份证姓名"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_889099"
+                android:paddingLeft="16dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/kleditlogin"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/kl_idcard_et"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/pwd_icon"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入身份证号码"
+                android:maxLength="18"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_889099"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@color/color_eeeeee" />
+
+        <com.ddtsdk.ui.view.KLTextView
+            android:id="@+id/kl_authenticate_tv"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/klorange_btn_style"
+            android:gravity="center"
+            android:text="立即认证"
+            android:textColor="@color/klfont_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/real_name_tip"
+            android:textColor="@color/color_999999"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/kl_next_tv"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="22dp"
+            android:text="下次认证"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/other_skin"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

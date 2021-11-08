@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gr_close_btn_height">55dp</dimen>
+    <dimen name="gr_close_btn_width">55dp</dimen>
+    <dimen name="gr_kefu_part_frame_marginTop">22dp</dimen>
+</resources>

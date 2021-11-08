@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/com_lenovo_corner_coupon_use_7_bg"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/com_lenovo_coupon_tv_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/com_lenovo_pay_center_blue"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/com_lenovo_tv_coupon_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/com_lenovo_pay_center_text_gray"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/com_lenovo_tv_coupon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="middle"
+                android:gravity="center"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:textColor="@color/com_lenovo_pay_center_title"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/com_lenovo_tv_coupon_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/com_lenovo_pay_center_text_gray"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <FrameLayout
+                android:id="@+id/com_lenovo_fl_coupon_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical" >
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/com_lenovo_iv_coupon_unuse"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/com_lenovo_icon_coupon_unuser"
+                />
+        </FrameLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/com_lenovo_pay_center_line_color"
+        android:layout_marginTop="4dp"
+        />
+    <TextView
+        android:id="@+id/com_lenovo_tv_coupon_details_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/com_lenovo_pay_center_text_gray"
+        android:textSize="10sp" />
+
+</LinearLayout>

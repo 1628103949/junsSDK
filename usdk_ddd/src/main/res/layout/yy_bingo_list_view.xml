@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yysy.yygamesdk.view.CommonTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftType="textView"
+        app:leftTextSize="16sp"
+        app:rightType="textView"
+        app:rightText="规则玩法"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"/>
+
+    <com.yysy.yygamesdk.view.SmartRefreshView
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp">
+
+        <ListView
+            android:id="@+id/data_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:scrollbars="none"
+            android:dividerHeight="8dp"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:stackFromBottom="true"
+            android:transcriptMode="normal"/>
+
+    </com.yysy.yygamesdk.view.SmartRefreshView>
+
+
+    <ImageView
+        android:id="@+id/convert_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title_bar"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/yy_icon_bingo_recharge" />
+
+    <ImageView
+        android:id="@+id/publish_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/yy_icon_bingo_add"/>
+
+    <com.yysy.yygamesdk.view.LoadRetryView
+        android:id="@+id/load_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar"/>
+
+</RelativeLayout>

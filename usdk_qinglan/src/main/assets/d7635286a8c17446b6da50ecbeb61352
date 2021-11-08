@@ -1,0 +1,28 @@
+<cg framecount="55" property="standardaxis:0">
+  <command frame="1" value="audio:Assets/GameResources/audio/zhandouyinxiao/szbf-attack_gongji.mp3" order="0" />
+  <command frame="32" value="audio:Assets/GameResources/audio/zhandouyinxiao/szbf-attack_shouji.mp3" order="1" />
+  <command frame="45" value="hurt:0,100" order="2" />
+  <command frame="50" value="nextbattle:" order="3" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/s2_szbf_01/s2_szbf_01.prefab" parent="-1" start="0" end="100" type="11">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:attack,0,3,1,0.3" order="1" />
+    <command frame="43" value="anim:guard,0,3,1,0.3" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/s_xzbh_01/s_xzbh_01.prefab" parent="-1" start="1" end="100" type="15">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:guard,0,3,1,0.3" order="1" />
+    <command frame="32" value="anim:hit,0,3,1,0.3" order="2" />
+    <command frame="35" value="anim:hit,0,3,1,0.3" order="3" />
+    <command frame="55" value="anim:guard,0,3,1,0.3" order="4" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/s2_szbf_01/szbf_attack_1.prefab" parent="-1" start="-1" end="100" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/s2_szbf_01/szbf_attack_2.prefab" parent="-1" start="32" end="100" type="1">
+    <bezier frame="32" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,1.3,5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/s2_szbf_01/szbf_attack_3.prefab" parent="-1" start="24" end="34" type="1">
+    <bezier frame="24" fov="22" lerp="2" center="4" targetrotate="1" scalez="0" yrotated="0" pos="0,1.53,-3.45" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="33" fov="22" lerp="2" center="8" targetrotate="1" scalez="0" yrotated="0" pos="0,1.53,5.11" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="1" />
+  </cgobject>
+</cg>

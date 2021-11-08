@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:background="@color/bsgamesdk_white"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="?attr/bsgamesdk_info_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/bsgamesdk_tourist_before"
+                    android:textColor="@color/bsgamesdk_text_99A2AA"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/bsgamesdk_tourist_limit_name"
+                    style="?attr/bsgamesdk_info_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/bsgamesdk_text_666666"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bsgamesdk_tourist_limit_content"
+                style="?attr/bsgamesdk_info_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/bsgamesdk_btn_color"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bagamesdk_tourist_limit_bind"
+            style="?attr/bsgamesdk_confirm_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/bsgamesdk_tourist_limit_bind"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/bagamesdk_tourist_limit_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/bsgamesdk_tourist_limit_close"
+            android:textColor="@color/bsgamesdk_text_title_color"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</RelativeLayout>

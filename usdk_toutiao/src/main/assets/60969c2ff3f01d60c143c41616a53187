@@ -1,0 +1,24 @@
+<cg framecount="50" property="standardaxis:0">
+  <command frame="25" value="hurt:0,100" order="0" />
+  <command frame="49" value="nextbattle:" order="1" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/s_yq_01/s_yq_01.prefab" parent="-1" start="0" end="100" type="11">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:attack,0,3,1,0.3" order="1" />
+    <command frame="49" value="anim:guard,0,3,1,0.3" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/s_xzbh_01/s_xzbh_01.prefab" parent="-1" start="1" end="100" type="15">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="24" value="anim:hit,0,3,1,0.3" order="1" />
+    <command frame="44" value="anim:guard,0,3,1,0.3" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/s_yq_01/s_yq_attack01.prefab" parent="-1" start="1" end="100" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/s_yq_01/s_yq_attack02.prefab" parent="-1" start="15" end="23" type="1">
+    <bezier frame="15" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="1" pos="0,1.18,-3.36" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="22" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="1" pos="0,1.18,4.85" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="1" />
+  </cgobject>
+  <cgobject property="copytarget:2" filename="Assets/GameResources/effect/Effect/JueSe_effect/s_yq_01/s_yq_attack03.prefab" parent="-1" start="22" end="100" type="1">
+    <bezier frame="22" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,0,1.498028E-06,-1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+</cg>

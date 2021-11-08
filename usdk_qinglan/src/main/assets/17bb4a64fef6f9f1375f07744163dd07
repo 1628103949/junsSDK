@@ -1,0 +1,23 @@
+<cg framecount="49" property="standardaxis:0">
+  <command frame="13" value="audio:Assets/GameResources/audio/zhandouyinxiao/yzt_attack.mp3" order="0" />
+  <command frame="26" value="hurt:0,100" order="1" />
+  <command frame="44" value="nextbattle:" order="2" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/s_lsft_01/s_lsft_01.prefab" parent="-1" start="0" end="100" type="11">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:attack,0,3,1,0.3" order="1" />
+    <command frame="49" value="anim:guard,0,3,1,0.3" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:4" filename="Assets/GameResources/moudles/A__prefabs/a_jll_01/a_jll_01.prefab" parent="-1" start="1" end="100" type="15">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:guard,0,3,1,0.3" order="1" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/s_lsft_01/lsft_attack_1.prefab" parent="-1" start="1" end="100" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="-0.148,1.71,-3.181" scale="1,1,1" rot="-0.7082254,0,0,0.7059864" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:4" filename="Assets/GameResources/effect/Effect/JueSe_effect/s_lsft_01/lsft_attack_beiji.prefab" parent="-1" start="20" end="100" type="1">
+    <bezier frame="20" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/Shouji_effect/Zhiliao_shouji/Zhiliao.prefab" parent="-1" start="20" end="49" type="1">
+    <bezier frame="20" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+</cg>

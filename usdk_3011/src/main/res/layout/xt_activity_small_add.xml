@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xt_color_line_f9"
+    android:orientation="vertical">
+
+    <!--头部标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:textColor="@color/xt_color_white">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dip"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="7dip"
+                android:layout_height="12dip"
+                android:src="@drawable/xt_btn_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/xt_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/xt_string_add_small"
+            android:textColor="@color/xt_color_login_select"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/xt_btn_account_white_bg_shape">
+
+        <EditText
+            android:id="@+id/xt_et_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/xt_tv_length"
+            android:background="@null"
+            android:hint="请输入3-12位的小号昵称"
+            android:maxLength="12"
+            android:paddingBottom="18dip"
+            android:paddingLeft="10dip"
+            android:paddingTop="18dip"
+            android:textColor="@color/xt_color_login_select"
+            android:textColorHint="@color/xt_color_login_normal"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/xt_tv_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:text="0/12"
+            android:textColor="@color/xt_color_login_normal"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="25dip">
+
+        <TextView
+            android:id="@+id/xt_tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xt_btn_round_white_shape"
+            android:paddingBottom="10dip"
+            android:paddingLeft="38dip"
+            android:paddingRight="38dip"
+            android:paddingTop="10dip"
+            android:text="@string/xt_cancel"
+            android:textColor="@color/xt_color_login_normal"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/xt_tv_determine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/xt_btn_round_orange_shape"
+            android:paddingBottom="10dip"
+            android:paddingLeft="38dip"
+            android:paddingRight="38dip"
+            android:paddingTop="10dip"
+            android:text="@string/xt_determine"
+            android:textColor="@color/xt_color_white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

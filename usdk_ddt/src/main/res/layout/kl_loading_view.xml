@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@drawable/klloading_bg"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        >
+        <!--<TextView-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@mipmap/klalipay"-->
+            <!--/>-->
+        <TextView
+            android:id="@+id/bt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:text="1232315"
+            android:textSize="12sp"
+            android:textColor="@color/klgrey_black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text=",进入游戏..."
+            android:textSize="12sp"
+            android:textColor="@color/klfont_black"
+            />
+        <View
+            android:layout_marginLeft="25dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            />
+        <Button
+            android:id="@+id/bt_logout"
+            android:layout_width="60dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="35dp"
+            android:text="切换账号"
+            android:textSize="12sp"
+            android:background="@color/klfont_white"
+            android:textColor="@color/other_skin"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

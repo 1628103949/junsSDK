@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/xt_btn_down_bg_f1">
+
+        <TextView
+            android:id="@+id/xt_voucher_tv_validity_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="7dip"
+            android:textColor="@color/xt_color_zi_hui2"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/xt_voucher_tv_surplusbalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xt_voucher_tv_validity_period"
+            android:layout_marginLeft="16dip"
+            android:text="￥00.00"
+            android:textColor="@color/xt_color_theme"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/xt_voucher_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/xt_voucher_tv_surplusbalance"
+            android:layout_alignBottom="@+id/xt_voucher_tv_surplusbalance"
+            android:layout_marginLeft="16dip"
+            android:layout_toEndOf="@+id/xt_voucher_tv_surplusbalance"
+            android:textColor="@color/xt_color_zi_black"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/xt_voucher_check_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/xt_voucher_tv_name"
+            android:layout_alignEnd="@+id/xt_voucher_tv_validity_period"
+            android:src="@drawable/xt_vouvher_check_bok_selector" />
+
+        <View
+            android:id="@+id/xt_voucher_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@+id/xt_voucher_tv_surplusbalance"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="6dip"
+            android:background="@color/xt_color_theme" />
+
+        <TextView
+            android:id="@+id/xt_voucher_tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xt_voucher_view"
+            android:layout_marginBottom="11dip"
+            android:layout_marginLeft="18dip"
+            android:layout_marginTop="12dip"
+            android:textColor="@color/xt_color_zi_hui"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

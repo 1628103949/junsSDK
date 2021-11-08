@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/la_usercenter_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/paycenter_layout_common_title" />
+
+    <ListView
+        android:id="@+id/lv_q_questions"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="4dip"
+        android:layout_weight="1"
+        android:background="@color/paycenter_little_gray"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdgeLength="25dip"
+        android:listSelector="@color/paycenter_white" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <include layout="@layout/paycenter_usercenter_question_bottom" />
+
+</LinearLayout>

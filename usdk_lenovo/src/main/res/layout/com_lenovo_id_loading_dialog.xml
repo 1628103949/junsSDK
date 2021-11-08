@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:gravity="center"
+    android:background="@drawable/corner_half_balck_3_bg"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        >
+        <ProgressBar
+            android:id="@+id/com_lenovo_pay_dialog_pb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateDrawable="@drawable/com_lenovo_pay_progress_pb_circle"
+            android:indeterminate="false"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:id="@+id/com_lenovo_pay_dialog_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/com_lenovo_pay_ic_pay_success"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/com_lenovo_pay_dialog_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:text="加载中"
+        />
+</LinearLayout>

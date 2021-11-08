@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/la_pay_channel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="2dip"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_pay_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_pay_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="@color/paycenter_black"
+        android:textSize="18dip" />
+
+</LinearLayout>

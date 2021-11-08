@@ -1,0 +1,26 @@
+package com.juns.channel;
+
+import android.app.Application;
+
+import com.juns.sdk.core.platform.OPlatformAPP;
+import com.juns.sdk.core.platform.OPlatformBean;
+import com.juns.sdk.framework.log.LogFactory;
+import com.juns.sdk.framework.log.TNLog;
+
+import cn.uc.gamesdk.UCGameSdk;
+
+public class UCAPP extends OPlatformAPP {
+    private static final String TAG = "UCAPP";
+    private static TNLog logger = LogFactory.getLog(TAG, true);
+
+    public UCAPP(OPlatformBean bean) {
+        super(bean);
+    }
+
+    //需要到application执行的可在此操作
+    @Override
+    public void onCreate(Application application) {
+        super.onCreate(application);
+
+    }
+}

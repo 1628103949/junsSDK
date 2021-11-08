@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/xt_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/xt_tv_coupon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="11dip"
+            android:layout_marginTop="8dip"
+            android:layout_toLeftOf="@+id/xt_iv_check_tag"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/xt_color_login_normal"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/xt_iv_check_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="8dip"
+            android:paddingLeft="11dip"
+            android:paddingRight="11dip"
+            android:paddingTop="8dip"
+            android:src="@drawable/xt_wallet_pay_type_normal" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

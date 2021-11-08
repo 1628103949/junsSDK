@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--头部标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:textColor="@color/xt_color_white">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dip"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="7dip"
+                android:layout_height="12dip"
+                android:src="@drawable/xt_btn_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/xt_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/xt_string_my_wallet"
+            android:textColor="@color/xt_color_login_select"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/xt_btn_account_white_bg_shape">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/xt_string_current_balance"
+                        android:textColor="#8a8a8a"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/xt_tv_current_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dip"
+                        android:text="0.00"
+                        android:textColor="#383838"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/xt_text_pay_200"
+                        android:layout_width="0dp"
+                        android:layout_height="43dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/xt_wallet_top_up_gear_bg_shape"
+                        android:gravity="center"
+                        android:text="￥200"
+                        android:textColor="@drawable/xt_text_color_wallet_pay_gear_selector"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/xt_text_pay_300"
+                        android:layout_width="0dp"
+                        android:layout_height="43dip"
+                        android:layout_marginLeft="18dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/xt_wallet_top_up_gear_bg_shape"
+                        android:gravity="center"
+                        android:text="￥300"
+                        android:textColor="@drawable/xt_text_color_wallet_pay_gear_selector"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/xt_text_pay_500"
+                        android:layout_width="0dp"
+                        android:layout_height="43dip"
+                        android:layout_marginLeft="18sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/xt_wallet_top_up_gear_bg_shape"
+                        android:gravity="center"
+                        android:text="￥500"
+                        android:textColor="@drawable/xt_text_color_wallet_pay_gear_selector"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/xt_text_pay_1000"
+                        android:layout_width="0dp"
+                        android:layout_height="43dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/xt_recommend_gear_tag"
+                        android:gravity="center"
+                        android:text="￥1000"
+                        android:textColor="@drawable/xt_text_color_wallet_pay_gear_selector"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/xt_text_pay_2000"
+                        android:layout_width="0dp"
+                        android:layout_height="43dip"
+                        android:layout_marginLeft="18dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/xt_wallet_top_up_gear_bg_shape"
+                        android:gravity="center"
+                        android:text="￥2000"
+                        android:textColor="@drawable/xt_text_color_wallet_pay_gear_selector"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/xt_text_pay_customize"
+                        android:layout_width="0dp"
+                        android:layout_height="43dip"
+                        android:layout_marginLeft="18sp"
+                        android:layout_weight="1"
+                        android:background="@drawable/xt_wallet_top_up_gear_bg_shape"
+                        android:gravity="center"
+                        android:text="@string/xt_string_customize"
+                        android:textColor="@drawable/xt_text_color_wallet_pay_gear_selector"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--自定义输入充值金额-->
+                <LinearLayout
+                    android:id="@+id/xt_layout_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/xt_wallet_input_amount_bg_shape"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="￥"
+                        android:textColor="@color/xt_color_login_select"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/xt_et_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="@string/xt_string_input_amount"
+                        android:inputType="number"
+                        android:paddingBottom="13dip"
+                        android:paddingLeft="3dip"
+                        android:paddingTop="13dip"
+                        android:singleLine="true"
+                        android:textColor="@color/xt_color_login_normal"
+                        android:textColorHint="@color/xt_color_use"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginTop="15dip"
+                    android:background="@color/xt_color_line_f9" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xt_string_select_pay_type"
+                    android:textColor="@color/xt_color_login_select"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!--微信支付-->
+                <RelativeLayout
+                    android:id="@+id/xt_layout_wx_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="16dip">
+
+                    <ImageView
+                        android:id="@+id/xt_iv_wx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/xt_wx_pay" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/xt_iv_wx"
+                        android:text="@string/xt_string_wx_pay"
+                        android:textColor="@color/xt_color_login_select"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/xt_cb_wx"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/xt_wallet_pay_type_selector"
+                        android:button="@null"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <!--支付宝支付-->
+                <RelativeLayout
+                    android:id="@+id/xt_layout_zfb_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dip"
+                    android:layout_marginTop="10dip">
+
+                    <ImageView
+                        android:id="@+id/xt_iv_zfb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/xt_zfb_pay" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/xt_iv_zfb"
+                        android:text="@string/xt_string_zfb_pay"
+                        android:textColor="@color/xt_color_login_select"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/xt_cb_zfb"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/xt_wallet_pay_type_selector"
+                        android:button="@null" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xt_string_wallet_tips"
+                    android:textColor="@color/xt_color_login_select"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:text="@string/xt_string_wallet_tips_one"
+                    android:textColor="@color/xt_color_login_normal"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/xt_string_wallet_tips_two"
+                    android:textColor="@color/xt_color_login_normal"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@color/xt_color_white">
+
+            <TextView
+                android:id="@+id/xt_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/xt_string_actually_paid"
+                android:textColor="@color/xt_color_login_select"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/xt_text_view_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/xt_tv_amount"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dip"
+                android:layout_toRightOf="@+id/xt_text_view"
+                android:text="￥"
+                android:textColor="@color/xt_color_theme"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/xt_tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dip"
+                android:layout_toRightOf="@+id/xt_text_view_two"
+                android:text="0.00"
+                android:textColor="@color/xt_color_theme"
+                android:textSize="16dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/xt_tv_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="15dip"
+                android:background="@drawable/xt_btn_round_orange_shape"
+                android:paddingBottom="8dip"
+                android:paddingLeft="32dip"
+                android:paddingRight="32dip"
+                android:paddingTop="8dip"
+                android:text="@string/xt_string_recharge"
+                android:textColor="@color/xt_color_white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="download_cancel">Загрузка отменена</string>
+    <string name="download_compeleted">Выполнена</string>
+    <string name="download_failed">Ошибка загрузки</string>
+    <string name="download_file_not_exist">Файл не существует</string>
+    <string name="download_md5_failed">Проверка не удалась</string>
+    <string name="download_pause">Остановлено</string>
+    <string name="download_waiting">Ожидание загрузки</string>
+</resources>

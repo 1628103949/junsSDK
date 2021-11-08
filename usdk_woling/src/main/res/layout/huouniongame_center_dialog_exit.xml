@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/huouniongame_center_dialog_exit_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/huouniongame_center_padding_small"
+        android:paddingLeft="@dimen/huouniongame_center_padding_normal"
+        android:paddingRight="@dimen/huouniongame_center_padding_normal"
+        tools:text="确认是否退出游戏？"
+        style="@style/huouniongame_center_base_text" />
+
+    <View
+        android:id="@+id/widget_toolbar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/huouniongame_center_accent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/huouniongame_center_dialog_exit_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@null"
+            tools:text="返回游戏"
+            style="@style/huouniongame_center_base_text.accent" />
+
+        <Button
+            android:id="@+id/huouniongame_center_dialog_exit_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/huouniongame_center_btn_accent_edge"
+            tools:text="退出"
+            style="@style/huouniongame_center_base_text" />
+
+    </LinearLayout>
+</LinearLayout>

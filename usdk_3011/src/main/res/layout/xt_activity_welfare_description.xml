@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xt_color_line_f9"
+    android:orientation="vertical">
+
+    <!--头部标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:textColor="@color/xt_color_white">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dip"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="7dip"
+                android:layout_height="12dip"
+                android:src="@drawable/xt_btn_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/xt_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="福利币说明"
+            android:textColor="@color/xt_color_login_select"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/xt_btn_account_white_bg_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/xt_string_description_one"
+            android:textColor="@color/xt_color_login_select"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/xt_string_description_two"
+            android:textColor="@color/xt_color_login_select"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/xt_string_description_three"
+            android:textColor="@color/xt_color_login_select"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

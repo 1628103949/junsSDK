@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_paycenter_complete_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:background="@drawable/pay_complete_title"
+        android:gravity="center"
+        android:paddingBottom="3dip"
+        android:paddingTop="3dip"
+        android:textColor="@color/paycenter_white"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dip"
+        android:background="@drawable/pay_complete_back" >
+
+        <LinearLayout
+            android:id="@+id/la_complete_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_paycenter_complete_dialog_remond"
+                style="@style/paycenter_text_14_gray"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dip"
+                android:text="@string/str_paycenter_complete_remind" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/la_complete_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/btn_complete_submit"
+                style="@style/paycenter_text_14_realwhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:gravity="center"
+                android:background="@drawable/pay_btn_goto_complete_style"
+                android:text="@string/Ensure" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

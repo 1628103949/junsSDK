@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="@dimen/ld_base_dialog_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ld_dialog_base_bg"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="@dimen/ld_base_dialog_padding">
+
+            <TextView
+                android:id="@+id/announcement_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:text="雷币说明"
+                android:textColor="#333333"
+                android:textSize="@dimen/ld_base_title_size_sp" />
+
+            <ImageView
+                android:id="@+id/close_dialog_img"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ld_dialog_base_close_img" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/default_TextView"
+            android:layout_marginTop="20dp"
+            android:text="雷币是什么？"
+            android:textColor="#000000" />
+
+        <TextView
+            style="@style/default_TextView"
+            android:layout_marginTop="3dp"
+            android:lineSpacingExtra="1dp"
+            android:text="@string/ldbit"
+            android:textColor="#4B4B4B" />
+
+        <TextView
+            style="@style/default_TextView"
+            android:layout_marginTop="20dp"
+            android:text="如何获取雷币？"
+            android:textColor="#000000" />
+
+        <TextView
+            style="@style/default_TextView"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="100dp"
+            android:lineSpacingExtra="1dp"
+            android:text="@string/get_ldbit"
+            android:textColor="#4B4B4B" />
+    </LinearLayout>
+
+</FrameLayout>

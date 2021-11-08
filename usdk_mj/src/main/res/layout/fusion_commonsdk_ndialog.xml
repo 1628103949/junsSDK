@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fusion_commonsdk_dialog_re"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/fusion_commonsdk_dialog_bg">
+
+        <ScrollView
+            android:id="@+id/Fusion_common_sv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/fusion_commonsdk_line">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/fusion_commonsdk_tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="标题"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fusion_commonsdk_tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fusion_commonsdk_tv_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="内容"
+                    android:textColor="#696969"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+        <View
+            android:id="@+id/fusion_commonsdk_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@id/fusion_commonsdk_tv_comfi"
+            android:layout_marginTop="10dp"
+            android:background="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/fusion_commonsdk_tv_comfi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="确定"
+            android:textColor="#FD9027"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

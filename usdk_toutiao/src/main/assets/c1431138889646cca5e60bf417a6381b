@@ -1,0 +1,61 @@
+<cg framecount="135" property="standardaxis:1">
+  <command frame="1" value="audio:Assets/GameResources/audio/zhandouyinxiao/ywgjj_skill_xuli.mp3" order="0" />
+  <command frame="89" value="audio:Assets/GameResources/audio/zhandouyinxiao/ywgjj_skill_shouji.mp3" order="1" />
+  <command frame="96" value="hurt:0,100" order="2" />
+  <command frame="123" value="nextbattle:" order="3" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/a_ywgjj_zhandou_02/a_ywgjj_zhandou_02.prefab" parent="-1" start="0" end="135" type="11">
+    <command frame="1" value="anim:skill_01,0,3,1.2,0.3" order="0" />
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <bezier frame="85" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="88" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,3.52" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="3" />
+    <bezier frame="112" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,3.52" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="4" />
+    <bezier frame="119" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="5" />
+    <command frame="134" value="anim:guard,0,3,1,0.3" order="6" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_YWGJ_01/skill01_back_jian@Bip001 Prop1.prefab" parent="0" parentname="Bip001 Prop1" start="1" end="200" type="119">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="-0.5826001,-0.8412078,0.4178859" scale="1,1,1" rot="-0.1368093,0.05626365,-0.1541327,0.9769139" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_YWGJ_01/skill01_back_jian@bone_00.prefab" parent="0" parentname="bone_00" start="1" end="54" type="119">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="-2.108146,0.2262773,1.233072" scale="1,1,1" rot="-0.355004,-0.3099557,-0.7134098,0.5186002" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_YWGJ_01/skill01_back_jian@bone_09.prefab" parent="0" parentname="bone_09" start="1" end="59" type="119">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="-2.438878,-0.03778718,1.371944" scale="1,1,1" rot="-0.1848151,-0.1693432,-0.7289296,0.6370463" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_YWGJ_01/skill01_back_jian@bone_10.prefab" parent="0" parentname="bone_10" start="1" end="46" type="119">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="-2.271384,0.01973247,1.317973" scale="1,1,1" rot="-0.04669932,-0.05235783,-0.7289997,0.6809092" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_YWGJ_01/skill01_back_jian@bone_24.prefab" parent="0" parentname="bone_24" start="1" end="34" type="119">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="-2.0667,-0.1290446,1.201279" scale="1,1,1" rot="0.2901263,0.3401759,-0.5344449,0.7172698" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_YWGJ_01/skill01_back_jian@bone_31.prefab" parent="0" parentname="bone_31" start="1" end="51" type="119">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="-2.310798,-0.04875194,1.234203" scale="1,1,1" rot="0.1682256,0.1910685,-0.6180661,0.7437656" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_YWGJ_01/skill01_back_jian@bone_61.prefab" parent="0" parentname="bone_61" start="1" end="43" type="119">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="-2.359479,0.1752719,1.230982" scale="1,1,1" rot="0,0,-0.683917,0.7295598" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_YWGJ_01/A_YWGJ_skill01.prefab" parent="-1" start="-15" end="135" type="1">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="1" pos="0.4,0.94,9.57" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="83" fov="40" lerp="2" center="4" targetrotate="1" scalez="0" yrotated="1" pos="0.44,0.94,9.15" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <bezier frame="84" fov="40" lerp="2" center="8" targetrotate="1" scalez="0" yrotated="1" pos="0.12,1.32,8.71" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="120" fov="40" lerp="2" center="8" targetrotate="1" scalez="0" yrotated="1" pos="0.12,1.32,8.71" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="3" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/b_qtss_02/b_qtss_02.prefab" parent="-1" start="1" end="135" type="15">
+    <command frame="1" value="anim:guard" order="0" />
+    <command frame="89" value="anim:hit" order="1" />
+    <command frame="92" value="anim:hit" order="2" />
+    <command frame="95" value="anim:hit" order="3" />
+    <bezier frame="105" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="4" />
+    <command frame="115" value="anim:guard,0,3,1,0.3" order="5" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_YWGJ_01/A_YWGJ_skill01_xuli.prefab" parent="-1" start="0" end="135" type="1">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="1" yrotated="2" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:,0,3,1.2,0.3" order="1" />
+  </cgobject>
+  <cgobject property="copytarget:2" filename="Assets/GameResources/effect/Effect/Shouji_effect/shouji_100/shouji_100.prefab" parent="-1" start="89" end="200" type="1">
+    <bezier frame="89" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5.19" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:2" filename="Assets/GameResources/effect/Effect/Shouji_effect/shouji_100/shouji_100.prefab" parent="-1" start="93" end="200" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5.73" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="93" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5.73" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="1" />
+  </cgobject>
+</cg>

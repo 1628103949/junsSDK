@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/ld_dp_10"
+        android:paddingRight="@dimen/ld_dp_10">
+
+        <TextView
+            android:id="@+id/verify_id_card_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ld_dp_10"
+            android:paddingBottom="@dimen/ld_dp_20"
+            android:src="@drawable/ld_order_empty"
+            android:text="@string/verify_id_card_desc"
+            android:textColor="#5b5b5b"
+            android:textSize="@dimen/ld_sp_12" />
+
+        <EditText
+            android:id="@+id/verify_name"
+            style="@style/ld_user_center_ui_edittext"
+            android:layout_width="match_parent"
+            android:background="@drawable/ld_dialog_base_edittext_bg"
+            android:hint="@string/name_hint"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/verify_id_card"
+            style="@style/ld_user_center_ui_edittext"
+            android:layout_marginTop="@dimen/ld_dp_20"
+            android:background="@drawable/ld_dialog_base_edittext_bg"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/id_card_hint"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/submit_verify_btn"
+            style="@style/ld_user_center_ui_button"
+            android:text="@string/submit_verify" />
+    </LinearLayout>
+
+</FrameLayout>

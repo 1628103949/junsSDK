@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ld.sdk.account.ui.accountview.weight.MyRadioGroup
+        android:id="@+id/my_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ld_dp_1"
+        android:layout_below="@id/my_radiogroup"
+        android:layout_marginLeft="@dimen/ld_dp_10"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="@dimen/ld_dp_10"
+        android:background="#EFEFEF" />
+
+    <ImageView
+        android:id="@+id/bkEmptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ld_order_empty"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:layout_marginTop="@dimen/ld_dp_20"
+        android:background="#ffffff"
+        android:divider="@null"
+        android:scrollbars="none" />
+</RelativeLayout>

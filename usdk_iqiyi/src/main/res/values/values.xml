@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="IFlexFullScreenAndTranslucentThemeForAppCompatStub" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="IFlexTranslucentThemeForAppCompatStub" parent="Theme.AppCompat.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <attr format="reference" name="iqiyi_title_main"/>
+    <declare-styleable name="CommonSidebarTopBar"><attr format="string" name="slide_top_bar_center_text"/><attr format="string" name="slide_top_bar_right_text"/><attr format="color" name="slide_top_bar_center_text_color"/><attr format="reference" name="slide_top_bar_left_src"/><attr format="reference" name="slide_top_bar_right_src"/><attr format="boolean" name="slide_top_bar_show_red_point"/></declare-styleable>
+    <declare-styleable name="RoundedRectImageView"><attr format="boolean" name="is_circle"/><attr format="boolean" name="is_cover_src"/><attr format="dimension" name="corner_radius"/><attr format="dimension" name="corner_top_left_radius"/><attr format="dimension" name="corner_top_right_radius"/><attr format="dimension" name="corner_bottom_left_radius"/><attr format="dimension" name="corner_bottom_right_radius"/><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/><attr format="dimension" name="inner_border_width"/><attr format="color" name="inner_border_color"/><attr format="color" name="mask_color"/></declare-styleable>
+    <declare-styleable name="roundedimageview"><attr format="dimension" name="border_thickness"/><attr format="color" name="border_outside_color"/><attr format="color" name="border_inside_color"/></declare-styleable>
+    <style name="ThemeCommonDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="download_cancel">Unduhan dibatalkan</string>
+    <string name="download_compeleted">Lengkap</string>
+    <string name="download_failed">Unduhan gagal</string>
+    <string name="download_file_not_exist">File tidak ada</string>
+    <string name="download_md5_failed">Verifikasi gagal</string>
+    <string name="download_pause">Berhenti sebentar</string>
+    <string name="download_waiting">Menunggu unduhan</string>
+</resources>

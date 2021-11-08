@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gr_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <!-- 左按钮 -->
+
+        <ImageView
+            android:id="@+id/gr_oppo_dialog_title_bar_button_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="4dp"
+            android:padding="4dp"
+            android:src="@drawable/gr_oppo_arrow_left" />
+        <!-- 标题 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="支付中心"
+            android:textColor="@color/gr_black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gr_gray_color_ysdk" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/gr_oppo_dialog_pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="5000元宝"
+            android:textColor="@color/gr_black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F2F2F2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:text="选择支付方式"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/gr_vivo_pay_frame_part_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/gr_oppo_pay_part_layout_weichat"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/gr_oppo_weichat_img" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="微信支付"
+                android:textColor="@color/gr_black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/gr_oppo_select_weichat"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/gr_pay_select_true_oppo" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gr_gray_line_color_vivo" />
+
+        <RelativeLayout
+            android:id="@+id/gr_oppo_pay_part_layout_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/gr_oppo_img_alipay"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/gr_pay_alipay_vivo" />
+
+            <TextView
+                android:id="@+id/gr_oppo_text_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/gr_oppo_img_alipay"
+                android:text="支付宝"
+                android:textColor="@color/gr_black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/gr_oppo_select_alipay"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/gr_pay_select_false_oppo" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gr_gray_line_color_vivo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/gr_oppo_pay_comfirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/gr_oppo_pay_bluebutton"
+            android:text="支付%s元"
+            android:textColor="@color/gr_white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

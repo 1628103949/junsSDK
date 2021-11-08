@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical">
+
+    <com.yysy.yygamesdk.view.CommonTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:centerText="游戏赚钱"
+        app:centerType="textView" />
+
+    <com.yysy.yygamesdk.view.SmartRefreshView
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/data_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:scrollbars="none"
+            android:dividerHeight="8dp"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:transcriptMode="normal"/>
+
+    </com.yysy.yygamesdk.view.SmartRefreshView>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="26dp">
+
+    <TextView
+        android:id="@+id/bsgamesdk_id_top"
+        style="?attr/bsgamesdk_info_text_style"
+        android:layout_width="match_parent"
+        android:textColor="#FF151515"
+        android:textSize="14sp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/bsgamesdk_edit_auth_name"
+            style="?attr/bsgamesdk_basic_editText_style"
+            android:maxLength="20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bsgamesdk_text_auth_name"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/bsgamesdk_auth_nameDel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dp"
+            android:background="@null"
+            android:contentDescription="@string/bsgamesdk_delbtn"
+            android:src="@drawable/bsgamesdk_pic_del"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/bsgamesdk_edit_auth_id_number"
+            style="?attr/bsgamesdk_basic_editText_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bsgamesdk_text_auth_id"
+            android:maxLength="25"
+            android:maxLines="1"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/bsgamesdk_auth_id_numberDel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dp"
+            android:background="@null"
+            android:contentDescription="@string/bsgamesdk_delbtn"
+            android:src="@drawable/bsgamesdk_pic_del"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bsgamesdk_auth_submit"
+        style="?attr/bsgamesdk_confirm_button_style"
+        android:layout_width="240dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/bsgamesdk_text_authentication_submit"/>
+
+
+</LinearLayout>

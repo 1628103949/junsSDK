@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/enjoy_login_content_width"
+        android:layout_height="280dp"
+        android:background="@drawable/enjoy_fw_dialog_tran_bg">
+
+        <RelativeLayout
+            android:id="@+id/header_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/enjoy_to_pay"
+                android:textColor="#151418"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/close_rl"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/enjoy_fw_btn_bg_tran">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/enjoy_close" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header_rl"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/enjoy_pay_bg"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

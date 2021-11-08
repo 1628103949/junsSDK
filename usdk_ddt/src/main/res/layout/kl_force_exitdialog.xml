@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="140dp"
+        android:background="@drawable/kldialog"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/force_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="@color/klfont_black"
+            android:text="禁止模拟器打开此游戏，\n请您使用手机畅玩!">
+        </TextView>
+        <Button
+            android:id="@+id/force_exit"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="退出游戏"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/klorange_btn_style">
+        </Button>
+        <TextView
+            android:id="@+id/force_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/klfont_somber"
+            android:text="10秒"
+            android:visibility="gone">
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

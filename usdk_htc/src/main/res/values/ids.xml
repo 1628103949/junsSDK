@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="jolo_gift_list_fragment_layout"></item>
+    <item type="id" name="jolo_gift_list_fragment_footer"></item>
+    <item type="id" name="jolo_gift_list_item_type"></item>
+</resources>

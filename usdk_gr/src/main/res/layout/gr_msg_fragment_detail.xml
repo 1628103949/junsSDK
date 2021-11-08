@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+     >
+
+    <TextView
+        android:id="@+id/gr_tv_msg_account_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFC81E27"
+        android:visibility="gone"
+        android:textSize="15sp" />
+
+    <WebView
+        android:id="@+id/gr_tv_msg_content_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/gr_tv_msg_account_detail" />
+    <!--
+         <TextView
+        android:id="@+id/gr_tv_msg_content_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gr_tv_msg_account_detail"
+        android:textColor="#FF505050" />
+    -->
+
+    <Button
+        android:id="@+id/gr_tv_msg_back_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gr_btn_logout_background"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/gr_msg_back"
+        android:textColor="#FFFFFFFF" />
+
+    <TextView
+        android:id="@+id/gr_tv_msg_date_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gr_tv_msg_back_detail"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#FF505050"
+        android:visibility="gone"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/gr_tv_msg_from_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gr_tv_msg_date_detail"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:textColor="#FF505050" />
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="juns_request_permission">权限申请</string>
+    <string name="juns_sdcard_permission_rationale_message">读写手机存储是必要的权限，如不授予该权限游戏将无法正常运行哦。请放心，我们保证权限仅用于必要功能。</string>
+    <string name="juns_device_permission_rationale_message">获取手机设备信息是必要的权限，如不授予该权限游戏将无法正常运行哦。请放心，我们保证权限仅用于必要功能。</string>
+
+    <string name="juns_game">DS游戏</string>
+    <string name="juns_name">DS</string>
+    <string name="juns_account_store_tips">您的DS手游帐号已注册成功\n点击进入游戏按钮将截图保存到手机相册</string>
+    <string name="juns_user_login">用户登录</string>
+    <string name="juns_please_input_user_name">请输入您的用户名</string>
+    <string name="juns_please_input_pwd">请输入您的密码</string>
+    <string name="juns_i_agree">已详细阅读并同意</string>
+    <string name="juns_user_service_agreement">《用户服务协议及隐私政策》</string>
+    <string name="juns_user_service_agreement_title">用户服务协议及隐私政策</string>
+    <string name="juns_to_accept_agreement">点击&#160;\"接受\"&#160;代表我已详细阅读并同意《用户服务协议及隐私政策》</string>
+    <string name="juns_login_quick">立即登录</string>
+    <string name="juns_one_key_reg">一键注册</string>
+    <string name="juns_forget_pwd">找回密码</string>
+    <string name="juns_user_reg">帐号注册</string>
+    <string name="juns_reg_quick">立即注册</string>
+    <string name="juns_exist_account">已有帐号</string>
+    <string name="juns_phone_reg">手机注册</string>
+    <string name="juns_please_input_phone_num">请输入手机号码</string>
+    <string name="juns_please_input_phone_code">请输入短信验证码</string>
+    <string name="juns_reset_pwd_tips">请输入绑定手机号的帐号</string>
+    <string name="juns_certification">实名认证</string>
+    <string name="juns_name_tips">请输入您的姓名</string>
+    <string name="juns_id_card_tips">请输入您的身份证号码</string>
+    <string name="juns_verify">认证</string>
+    <string name="juns_certification_tips">按文化部《网络游戏管理暂行办法》要求，网络游戏用户需进行实名认证，请先实名认证后再进入游戏。</string>
+
+    <string name="juns_warm_prompt">温馨提示</string>
+    <string name="juns_reg_success">注册成功</string>
+    <string name="juns_refuse">拒绝</string>
+    <string name="juns_accept">接受</string>
+    <string name="juns_change_account">切换帐号</string>
+    <string name="juns_get_phone_code">获取验证码</string>
+    <string name="juns_logging">正在登录中&#8230;</string>
+    <string name="juns_enter_game">进入游戏</string>
+
+    <string name="juns_user_name_success">帐号：</string>
+    <string name="juns_user_pwd_success">密码：</string>
+    <string name="juns_find_pwd">重置密码</string>
+
+    <string name="juns_logout">注销</string>
+    <string name="juns_account">帐号</string>
+    <string name="juns_service">客服</string>
+    <string name="juns_service_tel">0512&#8211;57606027(8:30-22:00)</string>
+    <string name="juns_gzh">微信关注668wan游戏</string>
+    <string name="juns_bind_phone">绑定手机</string>
+    <string name="juns_pwd">密码</string>
+    <string name="juns_modify">重置密码</string>
+    <string name="juns_phone_num">手机号</string>
+    <string name="juns_reset_pwd">重置密码</string>
+
+    <!-- update start -->
+    <string name="juns_update">更新</string>
+    <string name="juns_update_default_tips">快来体验新版本吧!</string>
+    <string name="juns_begin_update">开始更新</string>
+    <string name="juns_update_later">以后再说</string>
+    <string name="juns_not_wifi_type_download_tips">当前网络非WIFI，您确定要下载更新吗？</string>
+    <string name="juns_update_to_install">游戏包下载成功，请安装！</string>
+    <string name="juns_update_to_retry">游戏包下载异常，请重试！</string>
+    <!-- update end -->
+
+    <string name="juns_network_error">网络环境异常，请检查！</string>
+    <string name="juns_setting_network">设置网络</string>
+    <string name="juns_ops">公告</string>
+
+    <string name="juns_confirm_exit_game">你确定要退出游戏吗？</string>
+    <string name="juns_yes">是的</string>
+    <string name="juns_cancel">取消</string>
+    <string name="juns_exit_game">退出游戏</string>
+    <string name="juns_continue_game">确定</string>
+
+    <string name="juns_drag_to_hide">拖动到此隐藏</string>
+    <string name="juns_hide_tips">浮标将在下次登录游戏重新出现</string>
+    <string name="juns_hide">隐藏</string>
+
+    <string name="juns_to_pay">游戏支付</string>
+
+</resources>

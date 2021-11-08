@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.xtsdk.sdktestdemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/to_login"
+            android:layout_width="0dp"
+            android:layout_height="100dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="登录" />
+
+        <Button
+            android:id="@+id/to_logout"
+            android:layout_width="0dp"
+            android:layout_height="100dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="注销" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/to_pay"
+            android:layout_width="0dp"
+            android:layout_height="100dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="充值" />
+
+        <Button
+            android:id="@+id/set_params"
+            android:layout_width="0dp"
+            android:layout_height="100dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="参数" />
+    </LinearLayout>
+
+
+</LinearLayout>

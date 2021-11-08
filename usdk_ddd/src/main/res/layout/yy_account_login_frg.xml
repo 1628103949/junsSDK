@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.yysy.yygamesdk.view.CommonTitleBar2
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:centerText="@string/app_name"
+        app:centerType="textView"
+        app:leftType="imageButton"
+        app:titleBarDrawable="@drawable/yy_dialog_corner_top_bg" />
+
+    <LinearLayout
+        android:id="@+id/account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/yy_edittext_bg"
+        android:gravity="center_vertical"
+        android:padding="12dp">
+
+        <com.yysy.yygamesdk.view.ClearableEditText
+            android:id="@+id/account_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入账号"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLength="24"
+            android:maxLines="1"
+            android:textColor="#181516"
+            android:textColorHint="#C8C8C8"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/yy_icon_edit_name"
+            android:drawablePadding="5dp"
+            android:imeOptions="flagNoExtractUi"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#C9C9C9" />
+
+        <ImageView
+            android:id="@+id/arrow_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yy_icon_arrow_down"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp">
+
+        <com.yysy.yygamesdk.view.ClearableEditText
+            android:id="@+id/pwd_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yy_edittext_bg"
+            android:drawableLeft="@drawable/yy_icon_edit_pwd"
+            android:drawablePadding="5dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColor="#181516"
+            android:textColorHint="#C8C8C8"
+            android:textSize="16sp"
+            android:imeOptions="flagNoExtractUi"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/yy_shape_green_corner_dp25_selector"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="登录"
+        android:textColor="#FFFEFF"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="right|bottom"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/forget_pwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码 >"
+            android:textSize="11sp"
+            android:padding="5dp"
+            android:textColor="#00C85E"/>
+
+    </LinearLayout>
+
+</LinearLayout>

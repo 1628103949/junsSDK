@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xt_dialog_bg_shape"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/xt_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dip"
+        android:text="内容描述"
+        android:textColor="@color/xt_color_zi_black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/xt_et_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="137dip"
+        android:layout_marginBottom="14dip"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="12dip"
+        android:background="@color/xt_color_line_f1"
+        android:textSize="12sp"
+        android:textColorHint="@color/xt_color_zi_hui2"
+        android:textColor="@color/xt_color_zi_black2"
+        android:gravity="start"
+        android:padding="5dip"
+        android:hint="请详细描述需要反馈的问题"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dip">
+
+        <TextView
+            android:id="@+id/xt_tv_feedback_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dip"
+            android:layout_toLeftOf="@+id/xt_tv_feedback_submit"
+            android:background="@drawable/xt_btn_rectangle_black_ring_shape"
+            android:gravity="center"
+            android:paddingBottom="6dip"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+            android:paddingTop="6dip"
+            android:text="取消"
+            android:textColor="@color/xt_color_zi_black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/xt_tv_feedback_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dip"
+            android:background="@drawable/xt_btn_rectangle_orange_shape"
+            android:gravity="center"
+            android:paddingBottom="6dip"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+            android:paddingTop="6dip"
+            android:text="提交"
+            android:textColor="@color/xt_color_white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

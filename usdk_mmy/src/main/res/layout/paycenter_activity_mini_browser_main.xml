@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/content_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/mini_brower_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pay_bitmap_top_tab" >
+
+            <Button
+                android:id="@+id/mini_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="2dip"
+                android:background="@drawable/pay_public_image_back"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/mini_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/str_paycenter_mini_market" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/pb"
+            android:layout_width="fill_parent"
+            android:layout_height="4dip"
+            layout="@layout/paycenter_progressbar" />
+    </LinearLayout>
+
+</RelativeLayout>

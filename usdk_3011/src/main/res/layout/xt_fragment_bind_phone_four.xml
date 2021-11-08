@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xt_color_white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/xt_input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="36dip"
+        android:layout_marginRight="36dip"
+        android:layout_marginTop="36dip"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/xt_et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/xt_input_new_phone"
+            android:maxLength="12"
+            android:singleLine="true"
+            android:textColor="@color/xt_color_zi_black"
+            android:textColorHint="@color/xt_color_zi_hui"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginTop="10dip"
+            android:background="@color/xt_color_line_e1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/xt_et_code"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="36dip"
+            android:layout_marginTop="25dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/xt_input_verification_code"
+            android:singleLine="true"
+            android:textColor="@color/xt_color_zi_black"
+            android:textColorHint="@color/xt_color_zi_hui2"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/xt_tv_send"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="44dip"
+            android:layout_marginTop="18dip"
+            android:background="@drawable/xt_btn_down_bg"
+            android:gravity="center"
+            android:paddingBottom="7dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="7dip"
+            android:text="@string/xt_get_verification_code"
+            android:textColor="@color/xt_color_white"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="36dip"
+        android:layout_marginRight="36dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/xt_color_line_e1" />
+
+
+    <TextView
+        android:id="@+id/xt_tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dip"
+        android:layout_marginRight="56dip"
+        android:layout_marginTop="24dip"
+        android:background="@drawable/xt_btn_change_pwd_bg_shape"
+        android:gravity="center"
+        android:paddingBottom="7dip"
+        android:paddingTop="7dip"
+        android:text="提交"
+        android:textColor="@color/xt_color_white"
+        android:textSize="15sp" />
+
+</LinearLayout>

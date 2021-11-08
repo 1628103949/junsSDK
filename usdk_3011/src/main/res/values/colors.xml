@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff67940</color>
+    <color name="colorPrimaryDark">#88f67940</color>
+    <color name="colorAccent">#66f67940</color>
+
+    <color name="xt_transparent">#00000000</color>
+
+    <color name="xt_color_theme">#fff67940</color>
+    <color name="xt_color_theme2">#abf67940</color>
+    <color name="xt_color_white">#FFFFFFFF</color>
+    <!--字体颜色-->
+    <color name="xt_color_zi_black">#262626</color>
+    <color name="xt_color_zi_black2">#4d4d4d</color>
+    <color name="xt_color_zi_black3">#333333</color>
+    <color name="xt_color_zi_black4">#272727</color>
+    <color name="xt_color_zi_hui">#aeaeae</color>
+    <color name="xt_color_zi_hui2">#969696</color>
+    <color name="xt_color_zi_hui3">#a2a2a2</color>
+    <color name="xt_color_zi_hui5">#646464</color>
+    <color name="xt_color_hui_f2">#f2f2f2</color>
+    <color name="xt_color_zi_hui4">#a3a3a3</color>
+    <color name="xt_color_zi_71">#717171</color>
+    <color name="xt_color_zi_d1">#d1d1d1</color>
+    <color name="xt_color_zi_7b">#7b7b7b</color>
+    <color name="xt_color_zi_6a">#6a6a6a</color>
+    <color name="xt_color_zi_red">#f64040</color>
+
+
+    <!--背景颜色-->
+    <color name="xt_color_c1">#c1c1c1</color>
+    <color name="xt_color_line_e1">#e1e1e1</color>
+    <color name="xt_color_line_f1">#f1f1f1</color>
+    <color name="xt_color_line_f5">#f5f5f5</color>
+    <color name="xt_color_line_f9">#f9f9f9</color>
+    <color name="xt_color_line_f0">#f0f0f0</color>
+    <!--按钮颜色-->
+    <color name="xt_color_dialog_bg">#fff9fafd</color>
+    <color name="xt_color_btn_blue_bg">#40daf6</color>
+    <color name="xt_color_d2">#d2d2d2</color>
+    <color name="xt_color_gray_81">#818181</color>
+    <color name="xt_color_bg_orange">#36f67940</color>
+
+
+    <color name="xt_color_small_select_bg">#18f67940</color>
+    <color name="xt_color_login_normal">#8a8a8a</color>
+    <color name="xt_color_login_select">#383838</color>
+    <color name="xt_color_login_et_bg">#f9f9f9</color>
+    <color name="xt_color_forget_password">#ff9e35</color>
+    <color name="xt_color_voucher_validity_period">#ccffffff</color>
+    <color name="xt_color_use">#dedede</color>
+    <color name="xt_color_wallet_text">#f0ffffff</color>
+
+    <color name="xt_color_order_pay_text">#80ffffff</color>
+    <color name="xt_color_order_pay_over_bg">#1af67940</color>
+
+    <color name="default_shadow_color">#1Aefefef</color>
+</resources>

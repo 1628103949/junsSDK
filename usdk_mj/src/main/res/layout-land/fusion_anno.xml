@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="430dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="415dp"
+            android:layout_height="245dp"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fusion_anno_item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="189dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <fusion.mj.communal.ui.CircleWebView
+                    android:id="@+id/fusion_anno_webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </fusion.mj.communal.ui.CircleWebView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fusion_anno_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-15dp"
+            android:background="@drawable/fusion_anno_close" />
+    </LinearLayout>
+</LinearLayout>

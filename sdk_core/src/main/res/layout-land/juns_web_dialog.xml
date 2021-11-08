@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/juns_web_width"
+        android:layout_height="@dimen/juns_web_height"
+        android:background="@drawable/juns_web_bg">
+
+        <RelativeLayout
+            android:id="@+id/header_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/juns_web_title_bg">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/juns_fw_btn_bg_tran"
+                android:scaleType="centerInside"
+                android:src="@drawable/juns_web_back"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/juns_game"
+                android:textColor="#555555"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/close_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/juns_fw_btn_bg_tran"
+                android:scaleType="centerInside"
+                android:src="@drawable/juns_web_close" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header_rl" />
+
+    </RelativeLayout>
+</RelativeLayout>

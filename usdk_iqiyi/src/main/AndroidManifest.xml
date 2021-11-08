@@ -1,0 +1,458 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bswhl.iqiyi">
+
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:label="JunS Demo"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- JunS sdk components start -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="${applicationId}.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <!-- JunS sdk components end -->
+        <!-- iFlex do not support Translucent theme on singleTask mode -->
+        <activity
+            android:name="com.iqiyigame.sdk.activity.PPSUserActivity"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.iqiyigame.sdk.activity.PPSPushActivity"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.iqiyigame.sdk.activity.GooglePlayActivity"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.iqiyi.sdk.platform.PermissionCheckActivity"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan" />
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:process=":remote.sdk.service"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- alipay sdk end -->
+
+
+        <!-- 银联 -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:process=":remote.sdk.service"
+            android:screenOrientation="sensorPortrait" />
+        <!-- 银联 -->
+        <!-- 现在支付-微信支付 -->
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 现在支付-微信支付 -->
+        <service
+            android:name="com.iqiyi.sdk.service.GamePlatformService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote.sdk.service" />
+
+        <activity
+            android:name="com.iqiyigame.sdk.mvp.view.GameSidebarActivity"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- Stub Activities -->
+        <activity
+            android:name="com.iqiyi.iflex.core.Standard$0"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="standard"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.Standard$1"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="standard"
+            android:process=":remote.sdk.service"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.iqiyi.iflex.core.Standard$2"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="standard"
+            android:process=":remote.sdk.service"
+            android:theme="@style/IFlexTranslucentThemeForAppCompatStub" />
+        <activity
+            android:name="com.iqiyi.iflex.core.Standard$3"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="standard"
+            android:process=":remote.sdk.service"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.iqiyi.iflex.core.Standard$4"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="standard"
+            android:process=":remote.sdk.service"
+            android:theme="@style/IFlexFullScreenAndTranslucentThemeForAppCompatStub" />
+        <activity
+            android:name="com.iqiyi.iflex.core.StandardTA0$0"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="standard"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t0" />
+        <activity
+            android:name="com.iqiyi.iflex.core.StandardTA0$1"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="standard"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t0"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.iqiyi.iflex.core.StandardTA0$2"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="standard"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t0"
+            android:theme="@style/IFlexTranslucentThemeForAppCompatStub" />
+        <activity
+            android:name="com.iqiyi.iflex.core.StandardTA1$0"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="standard"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t1" />
+        <activity
+            android:name="com.iqiyi.iflex.core.StandardTA1$1"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="standard"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t1"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.iqiyi.iflex.core.StandardTA1$2"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="standard"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t1"
+            android:theme="@style/IFlexTranslucentThemeForAppCompatStub" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTop$0"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTop$1"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTop$2"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTop$3"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTop$4"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTop$5"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTop$6"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTop$7"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTop$8"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTop$9"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTopTA0$0"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t0" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTopTA0$1"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t0" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTopTA0$2"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t0" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTopTA1$0"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t1" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTopTA1$1"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t1" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTopTA1$2"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTop"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t1" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTask$0"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTask$1"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTask$2"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTask$3"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTask$4"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTask$5"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTask$6"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTask$7"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTask$8"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTask$9"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTaskTA0$0"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t0" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTaskTA0$1"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t0" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTaskTA0$2"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t0" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTaskTA1$0"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t1" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTaskTF1$1"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t1" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleTaskTA1$2"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleTask"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t1" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstance$0"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstance$1"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstance$2"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstance$3"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstance$4"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstance$5"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstance$6"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstance$7"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstance$8"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstance$9"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstanceTA0$0"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t0" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstanceTA0$1"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t0" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstanceTA0$2"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t0" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstanceTA1$0"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t1" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstanceTA1$1"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t1" />
+        <activity
+            android:name="com.iqiyi.iflex.core.SingleInstanceTA1$2"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:launchMode="singleInstance"
+            android:process=":remote.sdk.service"
+            android:taskAffinity=":t1" />
+
+        <!-- Local Service -->
+        <service
+            android:name="com.iqiyi.iflex.LocalService"
+            android:process=":remote.sdk.service" />
+
+        <!-- Remote Service -->
+        <service
+            android:name="com.iqiyi.iflex.RemoteService"
+            android:process=":service" >
+            <intent-filter>
+                <action android:name="${applicationId}.intent.ACTION_REMOTE_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.iqiyi.iflex.core.StandardRemote$0"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:process=":remote" />
+
+        <provider
+            android:name="com.iqiyi.iflex.RemoteContentProvider"
+            android:authorities="${applicationId}.Provider"
+            android:exported="true"
+            android:process=":daemon" />
+    </application>
+</manifest>

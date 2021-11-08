@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/activity_container"
+    >
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:padding="36dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/updating"
+            android:id="@+id/tv_hint"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blue"
+            />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:id="@+id/pb_content"
+            android:layout_below="@+id/tv_hint"
+            android:layout_marginTop="12dp"
+            android:progressDrawable="@drawable/progress_dl"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pb_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/tv_progress"
+            android:textColor="@color/blue"
+            />
+
+
+        <Button
+            android:layout_width="118dp"
+            android:layout_height="40dp"
+            android:text="@string/stop"
+            android:background="@drawable/round_blue_button"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/btn_stop"
+            android:layout_below="@+id/tv_progress"
+            android:layout_marginTop="12dp"
+            />
+
+        <Button
+            android:layout_alignTop="@+id/btn_stop"
+            android:layout_width="118dp"
+            android:layout_height="40dp"
+            android:text="@string/cancel"
+            android:background="@drawable/round_blue_button"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_close"
+
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

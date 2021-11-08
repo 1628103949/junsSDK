@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/paycenter_white" >
+
+    <TextView
+        android:id="@+id/tv_usercenter_welcome"
+        style="@style/paycenter_text_11_white"
+        android:layout_width="fill_parent"
+        android:layout_height="22dip"
+        android:background="@drawable/pay_top_remind"
+        android:gravity="center"
+        android:text="@string/str_paycenter_login_welcome" />
+
+    <TextView
+        android:id="@+id/tv_usercenter_divider_welcome"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/tv_usercenter_welcome"
+        android:background="@color/paycenter_black" >
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/ra_usercenter_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/tv_usercenter_divider_welcome"
+        android:background="@drawable/pay_top_title" >
+
+        <Button
+            android:id="@+id/btn_usercenter_back"
+            android:layout_width="45dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/pay_btn_paycenter_exit_style" />
+
+        <TextView
+            android:id="@+id/tv_usercenter_login"
+            style="@style/paycenter_text_16_white_shadow_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/str_paycenter_usercenter" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_usercenter_divider_title"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/ra_usercenter_title"
+        android:background="@color/paycenter_black" >
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_usercenter_divider_title" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/pay_content_background"
+            android:orientation="vertical"
+            android:paddingBottom="30dip" >
+
+            <RelativeLayout
+                android:id="@+id/ra_usercenter_userinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:layout_marginBottom="8dip" >
+
+                <RelativeLayout
+                    android:id="@+id/ra_usercenter_userlogo"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="18dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="18dip"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/iv_usercenter_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                    <ImageView
+                        android:layout_width="90dip"
+                        android:layout_height="90dip"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/pay_log_back" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_usercenter_name"
+                    style="@style/paycenter_text_style_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginTop="22dip"
+                    android:layout_toRightOf="@id/ra_usercenter_userlogo"
+                    android:ellipsize="end"
+                    android:maxWidth="100dip"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/tv_usercenter_now_ingot_str"
+                    style="@style/paycenter_text_style_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_usercenter_name"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_toRightOf="@id/ra_usercenter_userlogo"
+                    android:singleLine="true"
+                    android:text="@string/str_paycenter_center_nowingot" />
+
+                <TextView
+                    android:id="@+id/tv_usercenter_uid"
+                    style="@style/paycenter_text_style_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginTop="22dip"
+                    android:layout_toRightOf="@id/tv_usercenter_name"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/tv_usercenter_now_ingot"
+                    style="@style/paycenter_text_style_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_usercenter_uid"
+                    android:layout_marginLeft="7dip"
+                    android:layout_marginTop="4dip"
+                    android:layout_toRightOf="@id/tv_usercenter_now_ingot_str"
+                    android:singleLine="true"
+                    android:text="@string/str_paycenter_usercenter_zeroyuan" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_usercenter_divider_centent"
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="@color/paycenter_black" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/la_account"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_usercenter_completeinfo"
+                    android:layout_width="0.0dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/pay_btn_paycenter_login_style"
+                    android:text="@string/str_paycenter_center_modifyinfo"
+                    android:textColor="@color/paycenter_black" />
+
+                <Button
+                    android:id="@+id/btn_usercenter_changeaccount"
+                    android:layout_width="0.0dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/pay_btn_paycenter_login_style"
+                    android:text="@string/str_paycenter_center_changeaccount"
+                    android:textColor="@color/paycenter_black" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        style="@style/paycenter_text_12_light_black"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:text="@string/str_paycenter_email" />
+
+</RelativeLayout>

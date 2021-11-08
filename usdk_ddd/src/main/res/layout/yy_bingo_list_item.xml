@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top">
+
+        <com.yysy.yygamesdk.view.CircleImageView
+            android:id="@+id/left_head_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/left_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#A3A3A3"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/left_head_iv"
+            android:layout_alignParentTop="true"/>
+
+        <LinearLayout
+            android:id="@+id/left_packet_layout"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:background="@drawable/yy_icon_bingo_msg_left_normal"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/left_head_iv"
+            android:layout_below="@id/left_name_tv"
+            android:gravity="center_vertical"
+            android:layout_marginTop="3dp">
+
+            <ImageView
+                android:id="@+id/left_status_iv"
+                android:layout_width="30dp"
+                android:layout_height="37dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="6dp">
+
+                <TextView
+                    android:id="@+id/left_coin_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:id="@+id/left_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top">
+
+        <com.yysy.yygamesdk.view.CircleImageView
+            android:id="@+id/right_head_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/right_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#A3A3A3"
+            android:layout_toLeftOf="@id/right_head_iv"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/right_packet_layout"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/right_head_iv"
+            android:layout_below="@id/right_name_tv"
+            android:background="@drawable/yy_icon_bingo_msg_right_normal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="3dp">
+
+            <ImageView
+                android:id="@+id/right_status_iv"
+                android:layout_width="30dp"
+                android:layout_height="37dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="6dp">
+
+                <TextView
+                    android:id="@+id/right_coin_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:id="@+id/right_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

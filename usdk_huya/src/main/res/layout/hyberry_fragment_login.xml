@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/hyberry_fragment_bg"
+        android:minHeight="290dp"
+        android:orientation="vertical">
+
+        <com.huya.berry.login.common.widgets.CommonTopBar
+            android:id="@+id/ctb_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_height="37dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/third_login_layout"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:minHeight="252dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_huya_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableTop="@drawable/huya_third_logo"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="检测到虎牙账号"
+                    android:textColor="#ffcccccc"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ll_third_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/tv_huya_logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/hyberry_common_button_circle_bg"
+                    android:gravity="center"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:text="@string/hyberry_login_huya"
+                    android:textColor="@color/hyberry_color_white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btn_account_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:text="@string/hyberry_login_account"
+                        android:textColor="@color/hyberry_color_666666"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_registered2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:text="@string/hyberry_login_account_register"
+                        android:textColor="@color/hyberry_color_666666"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/login_line2"
+                        android:layout_width="0.5dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="14dp"
+                        android:background="@color/hyberry_color_D8D8D8"
+                        tools:background="@color/text_red" />
+
+                    <TextView
+                        android:id="@+id/login_guest2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:text="@string/hyberry_login_guest"
+                        android:textColor="@color/hyberry_color_666666"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/account_login_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/hyberry_login_account_prompt"
+                    android:textColor="#ff666666"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/hyberry_common_frame"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:digits="@string/hyberry_account_input_check"
+                        android:drawableLeft="@drawable/hyberry_icon_accont"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hyberry_login_phone_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="30"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text=""
+                        android:textColor="@color/hyberry_color_333333"
+                        android:textColorHint="@color/hyberry_graycc"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="9dp"
+                        android:src="@drawable/hyberry_delete" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/hyberry_common_frame"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_password"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/hyberry_icon_password"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hyberry_login_password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLength="30"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text=""
+                        android:textColor="@color/hyberry_color_333333"
+                        android:textColorHint="@color/hyberry_graycc"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_delete2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="9dp"
+                        android:src="@drawable/hyberry_delete" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/verify_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/pic_code_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/pic_code"
+                            android:layout_width="179dp"
+                            android:layout_height="36dp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="left"
+                            android:background="@drawable/hyberry_common_frame"
+                            android:drawableLeft="@drawable/hyberry_icon_code"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/hyberry_login_piccode"
+                            android:inputType="textVisiblePassword"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textColor="@color/hyberry_color_333333"
+                            android:textColorHint="@color/hyberry_graycc"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/hyberry_comn_shape_btn_d5d5d5"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image_code"
+                                android:layout_width="96dp"
+                                android:layout_height="36dp"
+                                android:contentDescription="@string/description_none" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mobile_code_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hyberry_common_frame"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <EditText
+                            android:id="@+id/mobile_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:drawableLeft="@drawable/hyberry_icon_phone_token"
+                            android:drawablePadding="8dp"
+                            android:hint="@string/hyberry_login_mobcode"
+                            android:inputType="textVisiblePassword"
+                            android:maxLength="30"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textColor="@color/hyberry_color_333333"
+                            android:textColorHint="@color/hyberry_graycc"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/hyberry_comn_selector_corner_btn"
+                    android:gravity="center"
+                    android:text="@string/hyberry_login_login"
+                    android:textColor="@color/hyberry_color_white"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/login_guest_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/login_guest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:text="@string/hyberry_login_guest"
+                        android:textColor="@color/hyberry_color_666666"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_registered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:text="@string/hyberry_login_account_register"
+                        android:textColor="@color/hyberry_color_666666"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/login_line"
+                        android:layout_width="0.5dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="14dp"
+                        android:background="@color/hyberry_color_D8D8D8" />
+
+                    <TextView
+                        android:id="@+id/forget_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp"
+                        android:text="@string/hyberry_login_forget_password"
+                        android:textColor="@color/hyberry_color_666666"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<cg framecount="100" property="standardaxis:0">
+  <cgobject property="copytarget:0" filename="CGCamera" parent="-1" start="1" end="100" type="0">
+    <bezier frame="1" fov="64.5" lerp="2" center="0" targetrotate="0" pos="-1.52,0.03,2.88" scale="1,1,1" rot="0,-0.9999803,0,-0.006283063" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="25" fov="40" lerp="2" center="0" targetrotate="0" pos="2.49,0.86,2.88" scale="1,1,1" rot="0,-0.9999803,0,-0.006283063" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <bezier frame="58" fov="40" lerp="2" center="0" targetrotate="0" pos="0.09,0.86,-0.54" scale="1,1,1" rot="0,-0.9999803,0,-0.006283063" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="80" fov="67" lerp="2" center="0" targetrotate="0" pos="0.09,2.6,-0.88" scale="1,1,1" rot="0,-0.9999803,0,-0.006283063" handle1="-10,0,0" handle2="10,0,0" order="3" />
+    <bezier frame="91" fov="40" lerp="2" center="0" targetrotate="0" pos="-0.14,1.73,-3.62" scale="1,1,1" rot="0,-0.9999803,0,-0.006283063" handle1="-10,0,0" handle2="10,0,0" order="4" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/b_qtss_02/b_qtss_02.prefab" parent="-1" start="1" end="100" type="15" />
+</cg>

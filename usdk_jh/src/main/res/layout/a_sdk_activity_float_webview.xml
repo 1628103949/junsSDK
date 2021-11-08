@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_wx"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_wx"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:background="@color/yxf_sdk_black_gray"
+             >
+
+            <ImageView
+                android:id="@+id/iv_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:src="@drawable/a_sdk_left_back" />
+
+            <TextView
+                android:id="@+id/tv_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:ellipsize="end"
+                android:layout_centerInParent="true"
+                android:text="服务条款"
+                android:textColor="@color/yxf_sdk_white"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="#eeeeee"
+        android:layout_above="@+id/wx"
+        android:layout_height="1dp"/>
+        <WebView
+            android:id="@+id/wx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_wx"
+            android:background="@color/yxf_sdk_white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ld_dialog_base_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/ld_base_dialog_padding">
+
+    <RelativeLayout
+        android:layout_width="@dimen/ld_base_dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ld_base_dialog_padding">
+
+        <TextView
+            android:id="@+id/install_app_title"
+            style="@style/ld_dialog_base_title_tv"
+            android:text="@string/couponsNotice" />
+
+        <ImageView
+            android:id="@+id/close_dialog_img"
+            android:layout_width="@dimen/ld_base_user_center_icon"
+            android:layout_height="@dimen/ld_base_user_center_icon"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ld_dialog_base_close_img" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/install_app_desc"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/install_app_clear_btn"
+            style="@style/ld_dialog_base_button"
+            android:layout_width="0dp"
+            android:layout_marginBottom="1px"
+            android:layout_weight="1"
+            android:background="@drawable/ld_org_red_btn_selector"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/install_app_confirm_btn"
+            style="@style/ld_dialog_base_button"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/account_item_margin_left"
+            android:layout_marginBottom="1px"
+            android:layout_weight="1"
+            android:background="@drawable/ld_org_btn_selector"
+            android:text="立即打开" />
+    </LinearLayout>
+</LinearLayout>

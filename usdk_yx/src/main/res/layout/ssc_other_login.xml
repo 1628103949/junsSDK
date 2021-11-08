@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    <include layout="@layout/custom_port_dialog_action_bar"/>-->
+    <RelativeLayout
+        android:id="@+id/container_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/tv_other_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="其他方式登录"
+            android:textColor="@drawable/ssc_sel_oth_btn_text"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</RelativeLayout>

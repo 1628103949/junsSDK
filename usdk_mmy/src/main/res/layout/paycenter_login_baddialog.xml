@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/pay_dialog_round_corner"
+    android:paddingBottom="15dip" >
+
+    <ImageView
+        android:layout_width="4dip"
+        android:layout_height="22dip"
+        android:layout_marginTop="18dip"
+        android:src="@drawable/icon_short_line_header" />
+
+    <TextView
+        android:id="@+id/tv_paycenter_bad_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dip"
+        android:layout_marginTop="18dip"
+        android:text="木蚂蚁想对您说的话："
+        android:textColor="#bbc0c6"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="65dip"
+        android:layout_below="@id/tv_paycenter_bad_dialog_title"
+        android:layout_marginLeft="22dip"
+        android:layout_marginRight="22dip"
+        android:layout_marginTop="12dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_paycenter_bad_dialog_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="服务器控制"
+            android:maxLines="4"
+            android:textColor="#606062"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="48dip"
+        android:layout_marginRight="48dip"
+        android:layout_marginTop="10dip" >
+
+        <Button
+            android:id="@+id/btn_paycenter_bad_dialog_button"
+            style="@style/paycenter_text_style_4"
+            android:layout_width="0dip"
+            android:layout_height="42dip"
+            android:layout_marginLeft="18dip"
+            android:layout_weight="1"
+            android:background="@drawable/pay_btn_paycenter_login_style"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/paycenter_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

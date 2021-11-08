@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/function_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ld_dp_65"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/ld_dp_15"
+        android:paddingEnd="@dimen/ld_dp_15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/function_icon"
+                android:layout_width="@dimen/ld_dp_27"
+                android:layout_height="@dimen/ld_dp_27"
+                android:scaleType="centerInside" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ld_dp_36"
+                android:layout_marginLeft="@dimen/ld_dp_4"
+                android:layout_marginRight="@dimen/ld_dp_4"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/function_title"
+                    style="@style/default_TextView"
+                    android:layout_marginTop="@dimen/ld_dp_2"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/ld_sp_12"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+                <View
+                    android:id="@+id/function_hot"
+                    android:layout_width="@dimen/ld_dp_6"
+                    android:layout_height="@dimen/ld_dp_6"
+                    android:layout_marginLeft="@dimen/ld_dp_1"
+                    android:layout_marginBottom="@dimen/ld_dp_1"
+                    android:layout_toRightOf="@id/function_title"
+                    android:background="@drawable/ld_hot_bg"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/function_desc"
+                    style="@style/default_TextView"
+                    android:layout_below="@id/function_title"
+                    android:layout_marginTop="@dimen/ld_dp_6"
+                    android:textColor="#717171"
+                    android:textSize="@dimen/ld_sp_9" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/function_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/ld_dp_1"
+            android:layout_marginEnd="@dimen/ld_dp_1"
+            android:background="#E5E5E5" />
+    </LinearLayout>
+</FrameLayout>

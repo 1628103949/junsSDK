@@ -1,0 +1,280 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/paycenter_little_gray" >
+
+    <include
+        android:id="@+id/la_usercenter_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/paycenter_layout_common_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_titile"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/la_usercenter_title"
+        android:layout_marginBottom="14dip"
+        android:layout_marginTop="28dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_bindphone_text"
+            style="@style/body_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="已绑定的邮箱"
+            android:textColor="#606062" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/btn_release_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/str_paycenter_unbind"
+            android:textColor="#99cc33"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_titile" >
+
+        <RelativeLayout
+            android:id="@+id/rl_lllll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dip"
+            android:background="@null"
+            android:paddingBottom="50dip" >
+
+            <RelativeLayout
+                android:visibility="invisible"
+                android:id="@+id/rl_release_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null">
+
+                <Button
+                    android:id="@+id/btn_phone_release_valid"
+                    style="@style/paycenter_text_style_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dip"
+                    android:layout_marginLeft="22dip"
+                    android:layout_marginRight="22dip"
+                    android:layout_marginTop="16dip"
+                    android:background="@drawable/pay_btn_paycenter_login_style"
+                    android:text="@string/str_paycenter_get_bind_code"
+                    android:textColor="@color/paycenter_white" />
+
+                <LinearLayout
+                    android:id="@+id/ll_edt_release"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dip"
+                    android:layout_below="@id/btn_phone_release_valid"
+                    android:layout_marginTop="22dip"
+                    android:orientation="horizontal" >
+
+                    <com.mumayi.paymentuserinfo.ui.EditTextWithDel
+                        android:id="@+id/et_bind_phone_validcode"
+                        style="@style/tip_gray"
+                        android:layout_width="0dip"
+                        android:layout_height="44dip"
+                        android:layout_marginLeft="22dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/pay_edit_bg"
+                        android:gravity="right"
+                        android:hint="@string/str_paycenter_valid_code"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textColor="#606062"
+                        android:textColorHint="#bbc0c6" />
+
+                    <Button
+                        android:id="@+id/btn_phone_release"
+                        style="@style/paycenter_text_style_4"
+                        android:layout_width="100dip"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginRight="22dip"
+                        android:background="@drawable/pay_btn_paycenter_login_style"
+                        android:text="@string/str_paycenter_unbind"
+                        android:textColor="@color/paycenter_white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_bind_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:visibility="gone" >
+
+                <com.mumayi.paymentuserinfo.ui.EditTextWithDel
+                    android:id="@+id/et_bind_phone_phonenum"
+                    style="@style/tip_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dip"
+                    android:background="@drawable/pay_edit_bg"
+                    android:gravity="center"
+                    android:hint="请输入邮箱"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="#606062"
+                    android:textColorHint="#bbc0c6" />
+
+                <LinearLayout
+                    android:id="@+id/ll_edt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dip"
+                    android:layout_below="@id/et_bind_phone_phonenum"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="12dip"
+                    android:orientation="horizontal" >
+
+                    <com.mumayi.paymentuserinfo.ui.EditTextWithDel
+                        android:id="@+id/et_phone_validcode"
+                        style="@style/tip_gray"
+                        android:layout_width="0dip"
+                        android:layout_height="44dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/pay_edit_bg"
+                        android:gravity="center"
+                        android:hint="@string/str_paycenter_input_valied_code"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:textColor="#606062"
+                        android:textColorHint="#bbc0c6" />
+
+                    <Button
+                        android:id="@+id/btn_phone_getvalid"
+                        style="@style/paycenter_text_style_4"
+                        android:layout_width="120dip"
+                        android:layout_height="44dip"
+                        android:layout_marginLeft="12dip"
+                        android:background="@drawable/pay_btn_paycenter_login_style"
+                        android:text="@string/str_paycenter_get_valid_code"
+                        android:textColor="@color/paycenter_white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_edt_phone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="22dip"
+                    android:layout_marginRight="22dip"
+                    android:layout_marginTop="26dip" >
+
+                    <Button
+                        android:id="@+id/btn_bindphone_cancel"
+                        style="@style/paycenter_text_style_4"
+                        android:layout_width="0dip"
+                        android:layout_height="42dip"
+                        android:layout_marginRight="11dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/pay_btn_binphone_cancel"
+                        android:text="@string/paycenter_faqs_cancel"
+                        android:textColor="#949da9" />
+
+                    <Button
+                        android:id="@+id/btn_bindphone_bind"
+                        style="@style/paycenter_text_style_4"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:layout_height="44dip"
+                        android:layout_marginLeft="11dip"
+                        android:background="@drawable/pay_btn_paycenter_login_style"
+                        android:text="@string/str_paycenter_complete_save"
+                        android:textColor="@color/paycenter_white" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/ll_bindphone_01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_bind_phone"
+                android:layout_marginTop="22dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dip"
+                    android:layout_gravity="top"
+                    android:background="@drawable/pay_usercenter_icon_cirlce" />
+
+                <TextView
+                    style="@style/tip_gray2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:layout_weight="1"
+                    android:layout_marginRight="15dp"
+                    android:singleLine="false"
+                    android:text="邮箱是您使用木蚂蚁各项服务、找回密码的主要依据，请你如实认真填写。" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_bindphone_02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_bindphone_01"
+                android:layout_marginTop="16dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dip"
+                    android:background="@drawable/pay_usercenter_icon_cirlce" />
+
+                <TextView
+                    style="@style/tip_gray2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:layout_weight="1"
+                    android:text="@string/paycenter_bind_phone_tip2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_bindphone_03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_bindphone_02"
+                android:layout_marginTop="16dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dip"
+                    android:background="@drawable/pay_usercenter_icon_cirlce" />
+
+                <TextView
+                    style="@style/tip_gray2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/paycenter_bind_phone_tip3" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

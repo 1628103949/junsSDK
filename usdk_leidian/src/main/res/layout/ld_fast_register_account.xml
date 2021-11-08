@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="@dimen/account_frame_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ld_content_bk_mid"
+        android:orientation="vertical"
+        android:padding="@dimen/account_background_shadow">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/account_logo_title_height"
+            android:layout_marginLeft="@dimen/account_item_margin_left"
+            android:layout_marginRight="@dimen/account_item_margin_right">
+
+            <!--为了扩大点击返回，设置点击区域25dp-->
+            <LinearLayout
+                android:id="@+id/account_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ld_dialog_base_back_img" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="5dip"
+                android:text="一键试玩"
+                android:textColor="#333333"
+                android:textSize="@dimen/kkk_login_register_text_header_size" />
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/account_input_height"
+            android:background="@drawable/ld_gray_shape"
+            android:layout_marginLeft="@dimen/account_item_margin_left"
+            android:layout_marginRight="@dimen/account_item_margin_right"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/account_icon_margin_left"
+                android:layout_marginRight="@dimen/account_icon_margin_right" />
+
+            <EditText
+                android:id="@+id/register_account_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00a9aba9"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+                android:hint="5-20位数字+英文任意组合"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:imeOptions="flagNoExtractUi"
+                android:textColorHint="#cccccc"
+                android:textColor="#333333"
+                android:textSize="@dimen/account_text_hint_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/account_input_height"
+            android:background="@drawable/ld_gray_shape"
+            android:layout_marginTop="@dimen/account_item_input_margin"
+            android:layout_marginLeft="@dimen/account_item_margin_left"
+            android:layout_marginRight="@dimen/account_item_margin_right"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:id="@+id/login_account_password_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/account_icon_margin_left"
+                android:layout_marginRight="@dimen/account_icon_margin_right" />
+
+            <EditText
+                android:id="@+id/register_account_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/login_account_password_name"
+                android:background="#00a9aba9"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="6-20位的数字或字母"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:imeOptions="flagNoExtractUi"
+                android:textColorHint="#cccccc"
+                android:textColor="#333333"
+                android:textSize="@dimen/account_text_hint_size"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_account_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/account_item_login_height"
+            android:layout_marginTop="@dimen/account_item_login_margin"
+            android:layout_marginLeft="@dimen/account_item_margin_left"
+            android:layout_marginRight="@dimen/account_item_margin_right"
+            android:background="@drawable/ld_org_btn_selector"
+            android:text="完成并登录"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/account_login_btn_text_size" />
+
+        <TextView
+            android:id="@+id/register_account_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/account_item_margin_left"
+            android:layout_marginRight="@dimen/account_item_margin_left"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="同意遵守雷电游戏协议"
+            android:textColor="#8c8c8c"
+            android:textSize="@dimen/account_agreement_text_size"  />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/activity_container"
+    >
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="260dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="18sp"
+            android:text="@string/update"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:id="@+id/tv_title"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:layout_width="142dp"
+            android:layout_height="40dp"
+            android:text="@string/update_now"
+            android:background="@drawable/blue_selete"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_update"
+            />
+
+        <Button
+            android:layout_width="142dp"
+            android:layout_height="40dp"
+            android:text="@string/next_time"
+            android:background="@drawable/gray_selete"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_close"
+            android:layout_marginBottom="12dp"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="6dp"
+            android:id="@+id/fl_web"
+            android:layout_below="@+id/tv_title"
+            android:layout_above="@+id/btn_update"
+            >
+        </FrameLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

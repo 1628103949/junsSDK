@@ -1,0 +1,71 @@
+<cg framecount="110" property="standardaxis:0">
+  <command frame="2" value="show:0|0" order="0" />
+  <command frame="3" value="audio:Assets/GameResources/audio/zhandouyinxiao/syfz_skill.mp3" order="1" />
+  <command frame="11" value="hurt:0,10" order="2" />
+  <command frame="15" value="hurt:0,10" order="3" />
+  <command frame="17" value="hurt:0,10" order="4" />
+  <command frame="20" value="hurt:0,10" order="5" />
+  <command frame="22" value="hurt:0,10" order="6" />
+  <command frame="46" value="show:1|1" order="7" />
+  <command frame="48" value="hurt:0,10" order="8" />
+  <command frame="50" value="shake:5" order="9" />
+  <command frame="50" value="hurt:0,40" order="10" />
+  <command frame="93" value="nextbattle:" order="11" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/a_syfz_02/a_syfz_02.prefab" parent="-1" start="0" end="110" type="11">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:skill,0,3,0.9,0.3" order="1" />
+    <bezier frame="7" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,1.85" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="43" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,1.85" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="3" />
+    <bezier frame="46" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,3.17" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="4" />
+    <bezier frame="68" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,3.17" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="5" />
+    <bezier frame="87" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="6" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/a_jll_01/a_jll_01.prefab" parent="-1" start="1" end="110" type="15">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="10" value="anim:hit,0,3,1,0.3" order="1" />
+    <command frame="13" value="anim:hit,0,3,1,0.3" order="2" />
+    <command frame="20" value="anim:hit,0,3,1,0.3" order="3" />
+    <command frame="39" value="anim:guard,0,3,1,0.3" order="4" />
+    <command frame="46" value="anim:hit,0,3,1,0.3" order="5" />
+    <command frame="48" value="anim:hit,0,3,1,0.3" order="6" />
+    <command frame="52" value="anim:hit,0,3,1,0.3" order="7" />
+    <command frame="73" value="anim:guard,0,3,1,0.3" order="8" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_syfz_02/Skill_chongci.prefab" parent="-1" start="1" end="110" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="1" pos="0,0,-4.06" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="9" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="1" pos="0,0,-2.07" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="1" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_syfz_02/Skill_dilie_.prefab" parent="-1" start="9" end="110" type="1">
+    <bezier frame="9" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="1" pos="0,0,5" scale="1,1,1" rot="0,-0.7071068,0.7071068,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_syfz_02/Skill_wuqi_zhuanquan.prefab" parent="-1" start="9" end="23" type="1">
+    <bezier frame="9" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.471,0.21,4.32" scale="1,1,1" rot="0,-1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="11" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.337,0.71,5.04" scale="1,1,1" rot="-0.02794647,-0.8934005,0.4410612,-0.08074329" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <bezier frame="12" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.317,1.13,4.87" scale="1,1,1" rot="-0.01185631,-0.9942594,0.1035511,-0.02418443" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="13" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.317,1.19,4.68" scale="1,1,1" rot="-0.007787518,-0.9644085,0.2630415,-0.02578399" handle1="-10,0,0" handle2="10,0,0" order="3" />
+    <bezier frame="14" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.317,1.35,4.48" scale="1,1,1" rot="-0.0129448,-0.9979421,0.05818974,-0.0236197" handle1="-10,0,0" handle2="10,0,0" order="4" />
+    <bezier frame="15" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.317,1.12,4.39" scale="1,1,1" rot="-0.0129448,-0.9979421,0.05818974,-0.0236197" handle1="-10,0,0" handle2="10,0,0" order="5" />
+    <bezier frame="16" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.317,0.83,4.1" scale="1,1,1" rot="-0.01770334,-0.9872466,-0.1569035,-0.02029904" handle1="-10,0,0" handle2="10,0,0" order="6" />
+    <bezier frame="17" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.317,0.83,4.42" scale="1,1,1" rot="-0.01889923,-0.975943,-0.216356,-0.01919059" handle1="-10,0,0" handle2="10,0,0" order="7" />
+    <bezier frame="18" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.317,0.73,4.56" scale="1,1,1" rot="-0.02328523,-0.8845402,-0.4656858,-0.01353732" handle1="-10,0,0" handle2="10,0,0" order="8" />
+    <bezier frame="19" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.317,0.83,4.73" scale="1,1,1" rot="-0.02449322,-0.8349685,-0.5496383,-0.01120461" handle1="-10,0,0" handle2="10,0,0" order="9" />
+    <bezier frame="20" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.317,1,4.73" scale="1,1,1" rot="-0.02641956,-0.6853436,-0.7277216,-0.005240869" handle1="-10,0,0" handle2="10,0,0" order="10" />
+    <bezier frame="21" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.317,1,4.54" scale="1,1,1" rot="-0.02662543,-0.6524989,-0.7573109,-0.004067661" handle1="-10,0,0" handle2="10,0,0" order="11" />
+    <bezier frame="22" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.317,1.24,4.38" scale="1,1,1" rot="-0.02693265,-0.5401312,-0.8411497,-0.0003026386" handle1="-10,0,0" handle2="10,0,0" order="12" />
+    <bezier frame="23" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.317,1.02,3.57" scale="1,1,1" rot="0.1415605,-0.8930502,-0.3316519,-0.2691265" handle1="-10,0,0" handle2="10,0,0" order="13" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_syfz_02/Skill_wuqixuanzhuan_dimian_effect.prefab" parent="-1" start="7" end="110" type="1">
+    <bezier frame="7" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/A_syfz_02/Skill_zhadi.prefab" parent="-1" start="45" end="110" type="1">
+    <bezier frame="46" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="CGCamera" parent="-1" start="1" end="110" type="0">
+    <bezier frame="1" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="2" fov="44" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="2.2,6.3,-10.5" scale="1,1,1" rot="0.2460356,-0.2211391,0.04738321,0.9425067" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <bezier frame="7" fov="43" lerp="0" center="8" targetrotate="0" scalez="0" yrotated="0" pos="-0.07,3.9,-3.85" scale="1,1,1" rot="0.1972354,-0.06915845,-0.008649979,0.9778755" handle1="-4.363319,-1.577844,-2.105713" handle2="4.363318,1.577843,2.105712" order="2" />
+    <bezier frame="25" fov="69" lerp="0" center="8" targetrotate="0" scalez="0" yrotated="0" pos="3.09,2.52,3.86" scale="1,1,1" rot="0.1403015,-0.7398466,0.1387239,0.6431938" handle1="-3.02808,1.432874,-0.708383" handle2="3.028079,-1.432875,0.7083833" order="3" />
+    <bezier frame="45" fov="45" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="4.87,4.56,6.39" scale="1,1,1" rot="0.1659424,-0.8325402,0.1886464,0.493713" handle1="-10,0,0" handle2="10,0,0" order="4" />
+    <bezier frame="46" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="5" />
+  </cgobject>
+</cg>

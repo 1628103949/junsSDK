@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/huouniongame_center_padding_large">
+
+    <include layout="@layout/huouniongame_center_dialog_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/huouniongame_center_margin_large"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/huouniongame_center_padding_normal"
+        android:paddingRight="@dimen/huouniongame_center_padding_normal">
+
+        <EditText
+            android:id="@+id/huouniongame_center_dialog_active_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="填写激活码"
+            android:maxLength="20"
+            style="@style/huouniongame_center_base_edit_text" />
+
+        <Button
+            android:id="@+id/huouniongame_center_dialog_active_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/huouniongame_center_margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/huouniongame_center_btn_accent"
+            android:text="确认提交"
+            style="@style/huouniongame_center_base_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/huouniongame_center_margin_small"
+        android:layout_marginTop="@dimen/huouniongame_center_margin_normal"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/huouniongame_center_padding_normal"
+        android:paddingRight="@dimen/huouniongame_center_padding_normal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:lineSpacingExtra="4dp"
+            android:text="*本次测试为封闭测试，需要激活码"
+            style="@style/huouniongame_center_base_text.small" />
+
+        <Button
+            android:id="@+id/huouniongame_center_dialog_active_url"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/huouniongame_center_margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/huouniongame_center_btn_border"
+            android:text="一键获取激活码"
+            style="@style/huouniongame_center_base_text.accent" />
+    </LinearLayout>
+</LinearLayout>

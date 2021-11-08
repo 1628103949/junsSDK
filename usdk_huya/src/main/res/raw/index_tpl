@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>httpd</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+	<h4>httpd:</h4>
+	<ul>
+		<li><a href="/test">test</a></li>
+		<li><a href="/admin">admin</a></li>
+		<li><a href="/api/log">query log level</a></li>
+		<li><a href="/api/log?level=v">verbose log level</a></li>
+		<li><a href="/api/log?level=d">debug log level</a></li>
+		<li><a href="/api/log?level=i">info log level</a></li>
+		<li><a href="/api/log?level=w">warn log level</a></li>
+		<li><a href="/api/log?level=e">error log level</a></li>
+		<li><a href="/api/log?level=a">assert log level</a></li>
+		<li><a href="/suicide">suicide</a></li>
+		<li><a href="/sendMessage">send message</a></li>
+		<li><a href="/dump_stack">getAllStackTraces</a></li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/ld_base_dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ld_dialog_base_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/ld_base_dialog_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="@dimen/ld_base_dialog_padding"
+            android:text="请绑定手机"
+            android:textColor="#333333"
+            android:textSize="@dimen/account_text_header_size" />
+
+        <TextView
+            android:id="@+id/login_account_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="#676666"
+            android:textSize="@dimen/account_text_hint_size" />
+
+        <TextView
+            android:id="@+id/login_account_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:includeFontPadding="false"
+            android:textColor="#676666"
+            android:textSize="@dimen/account_text_hint_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="3dp"
+            android:text="绑定手机可以通过手机号登录及找回密码，为了您的账号安全，请尽快绑定手机。"
+            android:textColor="#ff545f"
+            android:textSize="@dimen/account_agreement_text_size" />
+
+        <!--距离上部是17dp-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ld_base_dialog_padding"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/account_bind_phone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/account_item_login_height"
+                android:layout_weight="1"
+                android:background="@drawable/ld_org_btn_selector"
+                android:gravity="center"
+                android:text="绑定手机"
+                android:textColor="#333333"
+                android:textSize="@dimen/account_text_btn_size" />
+
+            <Button
+                android:id="@+id/account_start_game"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/account_item_login_height"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/ld_org_red_btn_selector"
+                android:gravity="center"
+                android:text="登录游戏"
+                android:textColor="#333333"
+                android:textSize="@dimen/account_text_btn_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ld_base_dialog_buttom_layout_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/account_no_toast"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/ld_accept_checkbox"
+                android:button="@null"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/account_no_toast_chick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="不再提示"
+                android:textColor="#5b5a5a"
+                android:textSize="@dimen/account_register_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

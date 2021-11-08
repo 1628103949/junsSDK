@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/gr_realname_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/gr_realname_repeat_text"
+        android:textColor="@color/gr_black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/gr_gray_bg_round"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/gr_fcm" />
+
+        <EditText
+            android:id="@+id/gr_realname_edit"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/gr_realname_edit_hint"
+            android:imeOptions="flagNoExtractUi"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/gr_gray_color"
+            android:textColorHint="@color/gr_gray_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/gr_gray_bg_round"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/gr_smyz" />
+
+        <EditText
+            android:id="@+id/gr_idCard"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="@string/gr_limit_input_password_str"
+            android:hint="@string/gr_idCard_hint"
+            android:imeOptions="flagNoExtractUi"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/gr_gray_color"
+            android:textColorHint="@color/gr_gray_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gr_fcm_confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/gr_btn_confirm_selector"
+        android:gravity="center"
+        android:text="@string/gr_fcm_confirm_btn_text"
+        android:textColor="@color/gr_white"
+        android:textSize="18sp" />
+
+</merge>

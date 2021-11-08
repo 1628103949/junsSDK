@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="306.67dp"
+    android:layout_height="306.67dp"
+    android:background="@drawable/a_sdk_bt_in_bg_whi">
+
+    <include
+        layout="@layout/a_sdk_act_login_top_bar"
+        android:id="@+id/top_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="187.33dp" />
+
+    <TextView
+        android:id="@+id/quick"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="13.33dp"
+        android:text="快速登录>"
+        android:textColor="#333333"
+        android:textSize="12sp"/>
+
+</LinearLayout>

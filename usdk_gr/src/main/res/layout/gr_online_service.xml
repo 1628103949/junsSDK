@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gr_white" >
+
+    <LinearLayout
+        android:id="@+id/gr_game_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" />
+
+    <ProgressBar
+        android:id="@+id/gr_web_load_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/gr_progress_large"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/gr_game_error_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        layout="@layout/gr_network_error"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/gr_webview_online_service"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideOverlay" />
+
+    <ImageView
+        android:id="@+id/gr_online_close_btn"
+        android:layout_width="@dimen/gr_close_btn_width"
+        android:layout_height="@dimen/gr_close_btn_height"
+        android:src="@drawable/gr_online_close_btn"
+        android:visibility="gone" />
+
+</RelativeLayout>

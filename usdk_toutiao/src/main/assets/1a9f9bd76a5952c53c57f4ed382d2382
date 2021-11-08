@@ -1,0 +1,33 @@
+<cg framecount="100" property="standardaxis:0">
+  <command frame="1" value="audio:Assets/GameResources/audio/zhandouyinxiao/hmms-skill_shifa.mp3" order="0" />
+  <command frame="2" value="show:0|0" order="1" />
+  <command frame="44" value="audio:Assets/GameResources/audio/zhandouyinxiao/hmms-skill_shouji.mp3" order="2" />
+  <command frame="45" value="show:1|1" order="3" />
+  <command frame="50" value="hurt:0,20" order="4" />
+  <command frame="53" value="hurt:0,20" order="5" />
+  <command frame="59" value="hurt:0,60" order="6" />
+  <command frame="94" value="nextbattle:" order="7" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/s_hmms_01/s_hmms_01.prefab" parent="-1" start="0" end="100" type="11">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:skill,0,3,0.8,0.3" order="1" />
+    <command frame="96" value="anim:guard,0,3,1,0.3" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/a_jll_01/a_jll_01.prefab" parent="-1" start="1" end="100" type="15">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="44" value="anim:hit,0,3,1,0.3" order="1" />
+    <command frame="53" value="anim:hit,0,3,1,0.3" order="2" />
+    <command frame="73" value="anim:guard,0,3,1,0.3" order="3" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/S_Hmms/Hmms_skill.prefab" parent="-1" start="1" end="100" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:2" filename="Assets/GameResources/effect/Effect/JueSe_effect/S_Hmms/Hmms_skill_shouji.prefab" parent="-1" start="44" end="100" type="1">
+    <bezier frame="44" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0.01,5" scale="1,1,1" rot="-0.7071068,0,0,0.7071068" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="CGCamera" parent="-1" start="1" end="100" type="0">
+    <bezier frame="1" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="2" fov="50" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="2.35,1.81,-3.08" scale="1,1,1" rot="0.07051504,-0.8551132,0.1501688,0.4911807" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <bezier frame="44" fov="60" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="4.15,2.25,-3.83" scale="1,1,1" rot="0.1151743,-0.759169,0.1649903,0.6190118" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="45" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="3" />
+  </cgobject>
+</cg>

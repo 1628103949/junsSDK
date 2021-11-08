@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/jolo_white" >
+
+        <RelativeLayout
+            android:id="@+id/title_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:id="@+id/dialog_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:text="@string/jolo_game_mainpage"
+                android:textColor="@color/jolo_white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/close_btn"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                android:src="@drawable/jolopay_clear_btn_n"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dialog_tip_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_rl"
+            android:background="@color/jolo_white"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="应用需要开启悬浮窗"
+            android:textColor="@color/cmmn_black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialog_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_tip_tv"
+            android:background="@color/jolo_white"
+            android:padding="20dp"
+            android:text="此权限允许该应用在当前使用的其它应用的上层显示，为了方便您在游戏中进入到个人中心管理您的帐号信息，我们需要您开启此权限！"
+            android:textColor="@color/cmmn_black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/dialog_content_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_content_tv"
+            android:background="@color/jolo_white"
+            android:paddingLeft="20dp"
+            android:text="可在  设置-权限管理-悬浮窗-当前应用  开启或关闭该权限"
+            android:textColor="@color/cmmn_black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/dialog_content_tv2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dialog_cancel_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/dialog_content_tv2"
+                android:background="@color/jolo_white"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="暂不开启"
+                android:textColor="@color/jolo_light_black99"
+                android:textSize="11sp" />
+            
+            <View 
+                android:layout_width="1px"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/cmmn_black"/>
+
+            <TextView
+                android:id="@+id/dialog_sure_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/dialog_content_tv2"
+                android:background="@color/jolo_white"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="去开启"
+                android:textColor="@color/cmmn_black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

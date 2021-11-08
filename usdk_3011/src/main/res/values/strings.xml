@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">PaySDk</string>
+
+    <string name="xt_determine">确定</string>
+    <string name="xt_cancel">取消</string>
+
+    <string name="xt_login_hint">请输入3011账号或手机号</string>
+    <string name="xt_password_hint">请输入账号密码</string>
+    <string name="xt_login">立即登录</string>
+    <string name="xt_one_key_register">一键注册</string>
+    <string name="xt_phone_register">手机注册</string>
+    <string name="xt_forget_password">忘记密码</string>
+
+    <string name="xt_input_account">请设置3011账号</string>
+    <string name="xt_input_verification_code">请输入验证码</string>
+    <string name="xt_get_verification_code">获取验证码</string>
+    <string name="xt_send_verification_code">验证码将以短信形式发送至</string>
+    <string name="xt_check_verification_code">，请注意查收</string>
+    <string name="xt_next">下一步</string>
+
+
+    <string name="xt_old_password">请输入原密码</string>
+    <string name="xt_new_password">请输入新密码</string>
+    <string name="xt_again_new_password">请再次输入新密码</string>
+    <string name="xt_account_rule">账号格式为字母开头6-16位数字、字母、下划线</string>
+    <string name="xt_password_rule">密码格式为字母开头的6-15位数字、字母组合 </string>
+    <string name="xt_2password_rule">安全密码格式为6位纯数字</string>
+    <string name="xt_complete">完成</string>
+    <string name="xt_back_login">返回登录</string>
+
+    <string name="xt_set_password">请设置账号密码</string>
+    <string name="xt_register">立即注册</string>
+    <string name="xt_existing_account">已有账号</string>
+
+
+    <string name="xt_change_sun_account">小号管理</string>
+
+
+    <string name="xt_add_sun_account">创建小号</string>
+    <string name="xt_input_nickname">请输入昵称</string>
+    <string name="xt_input_phone">请输入手机号码</string>
+    <string name="xt_input_username">请输入用户名</string>
+    <string name="xt_input_secondary_pwd">请输入安全密码</string>
+    <string name="xt_change_nickname">修改昵称</string>
+
+    <string name="xt_input_old_phone">请输入原手机号码</string>
+    <string name="xt_input_new_phone">请输入新手机号码</string>
+
+    <!--账号页面-->
+    <string name="xt_string_gift">礼包</string>
+    <string name="xt_string_my_coupons">卡券</string>
+    <string name="xt_string_wallet">钱包</string>
+    <string name="xt_string_my_platform">3011账号</string>
+    <string name="xt_string_voucher">代金券</string>
+    <string name="xt_string_coupon">优惠券</string>
+
+    <!--卡券-->
+    <string name="xt_string_unused">未使用</string>
+    <string name="xt_string_used">已使用</string>
+    <string name="xt_string_expired">已过期</string>
+    <string name="xt_string_use_range">使用范围:</string>
+    <string name="xt_string_valid_period">有效期至:</string>
+    <string name="xt_string_all_game">所有游戏</string>
+    <string name="xt_string_recharge_voucher">%1$s元充值代金券</string>
+    <string name="xt_string_full_use">满%1$s可用</string>
+
+    <!--我的钱包-->
+    <string name="xt_string_my_wallet">我的钱包</string>
+    <string name="xt_string_recharge">充值</string>
+    <string name="xt_string_balance">账户余额</string>
+    <string name="xt_string_welfare_coin">含福利币 </string>
+    <string name="xt_string_all">全部 </string>
+    <string name="xt_string_wallet_details">钱包明细 </string>
+    <string name="xt_string_prompt_description">提示说明 </string>
+    <string name="xt_string_description_one">1.通过每日任务、精彩评论、试玩有奖等平台活动获得 </string>
+    <string name="xt_string_description_two">2.游戏内消费时，将优先使用赠送部分福利币 </string>
+    <string name="xt_string_description_three">3.福利币不可提现，交易不可使用 </string>
+    <string name="xt_string_current_balance">当前余额 </string>
+    <string name="xt_string_customize">自定义 </string>
+    <string name="xt_string_input_amount">请输入充值金额 </string>
+    <string name="xt_string_select_pay_type">请选择支付方式 </string>
+    <string name="xt_string_wx_pay">微信支付 </string>
+    <string name="xt_string_zfb_pay">支付宝支付 </string>
+    <string name="xt_string_wallet_tips">温馨提示 </string>
+    <string name="xt_string_wallet_tips_one">1.充值额度单笔最小1元，单笔最高10000元 </string>
+    <string name="xt_string_wallet_tips_two">2.当日累计充值不超过50000元 </string>
+    <string name="xt_string_actually_paid">实付： </string>
+
+    <!--我的礼包-->
+    <string name="xt_string_my_gift">我的礼包</string>
+    <string name="xt_string_be_usable">可使用</string>
+    <string name="xt_string_activation_code">激活码</string>
+    <string name="xt_string_copy">复制</string>
+
+    <!--福利版块-->
+    <string name="xt_string_welfare_title">天天领福利</string>
+
+    <!--游戏模块-->
+    <string name="xt_string_game_discount">优惠</string>
+    <string name="xt_string_game_gift">礼包</string>
+    <string name="xt_string_game_active">活动</string>
+    <string name="xt_string_game_transaction">交易</string>
+    <string name="xt_string_receive_now">立即领取</string>
+    <string name="xt_string_received">已领取</string>
+
+
+    <string name="xt_string_fast_login">快捷登录</string>
+    <string name="xt_string_pwd_login">密码登录</string>
+    <string name="xt_string_phone_login">手机登录</string>
+    <string name="xt_string_register_account">请输入注册账号</string>
+    <string name="xt_string_setting_password">请设置密码</string>
+    <string name="xt_string_phone_register_hint">未注册用户默认注册登录</string>
+
+    <string name="xt_string_app_fast_login">APP快捷登录</string>
+    <string name="xt_string_down_3011_app">下载3011APP</string>
+    <string name="xt_string_set_new_password">设置新密码</string>
+    <string name="xt_string_switch_account">切换账号</string>
+    <string name="xt_string_enter_now">立即进入</string>
+    <string name="xt_string_add_small">添加小号</string>
+
+    <string name="xt_string_to_pay">去支付</string>
+
+
+    <string name="xt_string_account_format_tips">用户名格式不正确</string>
+    <string name="xt_string_pwd_format_tips">密码格式不正确</string>
+</resources>

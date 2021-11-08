@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rll"
+        android:layout_width="260dp"
+        android:layout_height="320dp"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/logout_bkg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/jolo_background_exit" />
+
+        <Button
+            android:id="@+id/exit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/jolo_exit" />
+
+        <Button
+            android:id="@+id/goto_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/jolo_get" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/image_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/jolo_close_icon" />
+
+</RelativeLayout>

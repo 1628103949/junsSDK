@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pb_gray_frame_login"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:text="是否通过QQ联系客服"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pb_connectqq"
+            android:text="联系客服"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/pb_btn_color_blue"
+            android:layout_width="90dp"
+            android:textSize="14sp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/pb_copy_qq"
+            android:textColor="#FFFFFF"
+            android:text="复制QQ号"
+            android:background="@drawable/pb_btn_color_org"
+            android:layout_width="90dp"
+            android:textSize="14sp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

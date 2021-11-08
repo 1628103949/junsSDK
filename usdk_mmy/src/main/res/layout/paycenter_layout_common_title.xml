@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip"
+    android:background="@drawable/pay_black_bg_normal" >
+
+    <LinearLayout
+        android:id="@+id/la_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="1dip"
+        android:background="@drawable/pay_back_button_selector"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/iv_top_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:background="@drawable/pay_return"
+            android:contentDescription="@string/pay_title" />
+
+        <ImageView
+            android:id="@+id/iv_top_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="6dip"
+            android:contentDescription="@string/pay_title"
+            android:src="@drawable/pay_logo" />
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            style="@style/paycenter_text_18_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="2dip"
+            android:text="@string/str_paycenter_login_regist" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip" >
+
+        <ImageView
+            android:id="@+id/iv_top_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="15dip"
+            android:contentDescription="@string/pay_title"
+            android:src="@drawable/pay_help"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

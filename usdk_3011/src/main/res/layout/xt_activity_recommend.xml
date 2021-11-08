@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.xiantu.paysdk.view.ImageBannerFragemntLayout
+            android:id="@+id/xt_image_banner_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="16dip"
+            android:drawableLeft="@drawable/xt_gamenew_png"
+            android:drawablePadding="6dip"
+            android:text="推荐游戏"
+            android:textColor="@color/xt_color_zi_black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/xt_color_line_e1" />
+
+
+        <com.xiantu.paysdk.view.spring.SpringView
+            android:id="@+id/xt_recommend_spring_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/xt_color_white">
+
+            <ListView
+                android:id="@+id/xt_recommend_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="@color/xt_color_white"
+                android:scrollbars="none" />
+
+        </com.xiantu.paysdk.view.spring.SpringView>
+    </LinearLayout>
+    <!--</ScrollView>-->
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout_recommend_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+</RelativeLayout>

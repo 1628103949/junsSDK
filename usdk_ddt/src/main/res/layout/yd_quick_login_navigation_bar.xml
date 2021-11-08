@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yd_navigation_rl"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+    <ImageView
+        android:id="@+id/yd_navigation_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/yd_left" />
+
+    <TextView
+        android:id="@+id/yd_navigation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="免密登录"
+        android:textColor="#080808"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

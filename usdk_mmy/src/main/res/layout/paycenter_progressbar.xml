@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+   	 android:id="@+id/mini_progressbar"							  
+	 android:layout_width="fill_parent" 
+	 android:layout_height="4dip"
+	 style="?android:attr/progressBarStyleHorizontal"
+	 android:progressDrawable="@drawable/pay_progressbar_mini_browser_style" 
+	 android:secondaryProgress="100"  >
+    
+
+</ProgressBar>

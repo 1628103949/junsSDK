@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?><!--项目-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#F1F1F1" />
+
+    <RelativeLayout
+        android:id="@+id/verify_id_card_layout"
+        style="@style/ld_account_menu_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="实名认证"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/ld_sp_12" />
+
+        <ImageView
+            android:id="@+id/right_img"
+            android:layout_width="@dimen/ld_dp_11"
+            android:layout_height="@dimen/ld_dp_11"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ld_menu_spread_img" />
+
+        <TextView
+            android:id="@+id/not_verify_realname_dot"
+            android:layout_width="@dimen/ld_dp_6"
+            android:layout_height="@dimen/ld_dp_6"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ld_dp_10"
+            android:layout_toLeftOf="@id/right_img"
+            android:background="@drawable/ld_new_msg_dot"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View style="@style/base_line" />
+
+    <RelativeLayout
+        android:id="@+id/bind_phone_code_layout"
+        style="@style/ld_account_menu_layout">
+
+        <TextView
+            android:id="@+id/bind_phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="绑定手机"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/ld_sp_12" />
+
+        <ImageView
+            android:id="@+id/ld_menu_spread_img"
+            android:layout_width="@dimen/ld_dp_11"
+            android:layout_height="@dimen/ld_dp_11"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ld_menu_spread_img" />
+
+        <TextView
+            android:id="@+id/phone_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ld_dp_10"
+            android:layout_toLeftOf="@id/ld_menu_spread_img"
+            android:textColor="#949494"
+            android:textSize="@dimen/ld_sp_10" />
+    </RelativeLayout>
+
+    <View style="@style/base_line" />
+
+    <RelativeLayout
+        android:id="@+id/update_password_layout"
+        style="@style/ld_account_menu_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="修改密码"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/ld_sp_12" />
+
+        <ImageView
+            android:layout_width="@dimen/ld_dp_11"
+            android:layout_height="@dimen/ld_dp_11"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ld_menu_spread_img" />
+    </RelativeLayout>
+
+    <View style="@style/base_line" />
+
+    <RelativeLayout
+        android:id="@+id/quit_login"
+        style="@style/ld_account_menu_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="退出登录"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/ld_sp_12" />
+
+        <ImageView
+            android:layout_width="@dimen/ld_dp_11"
+            android:layout_height="@dimen/ld_dp_11"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ld_menu_spread_img" />
+    </RelativeLayout>
+
+    <View style="@style/base_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/version_text"
+            style="@style/default_TextView"
+            android:layout_gravity="bottom|right"
+            android:layout_marginLeft="@dimen/ld_dp_20"
+            android:layout_marginRight="@dimen/ld_dp_20"
+            android:layout_marginBottom="@dimen/ld_dp_50"
+            android:textColor="#717171"
+            android:textSize="@dimen/ld_sp_11" />
+    </FrameLayout>
+</LinearLayout>

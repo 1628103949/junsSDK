@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/gr_web_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/gr_web_recharge_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gr_alipay_port"
+        android:visibility="invisible" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/gr_web_recharge_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:text="关 闭"
+        android:textColor="@color/gr_theme_color"
+        android:textSize="18sp" />
+
+</RelativeLayout>

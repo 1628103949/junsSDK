@@ -1,0 +1,27 @@
+<cg framecount="72" property="standardaxis:0">
+  <command frame="2" value="show:0|0" order="0" />
+  <command frame="21" value="show:1|1" order="1" />
+  <command frame="50" value="hurt:0,100" order="2" />
+  <command frame="67" value="nextbattle:" order="3" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/s_qxj_01/s_qxj_01.prefab" parent="-1" start="0" end="120" type="11">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:skill,0,3,1,0.3" order="1" />
+    <command frame="72" value="anim:guard,0,3,1,0.3" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:4" filename="Assets/GameResources/moudles/A__prefabs/s_fmqqxq_01/S_fmqqxq_01.prefab" parent="-1" start="1" end="120" type="14">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:guard,0,3,1,0.3" order="1" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/s_qxj_01/qxj_skill_01.prefab" parent="-1" start="1" end="120" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/s_qxj_01/qxj_skill_02.prefab" parent="-1" start="26" end="72" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="2" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,-0.7071068,0,-0.7071068" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:4" filename="Assets/GameResources/effect/Effect/Shouji_effect/Zhiliao_shouji/Zhiliao.prefab" parent="-1" start="44" end="72" type="1">
+    <bezier frame="44" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:4" filename="Assets/GameResources/effect/Effect/Shouji_effect/Zhiliao_shouji/zhiliao2.prefab" parent="-1" start="44" end="72" type="1">
+    <bezier frame="44" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+</cg>

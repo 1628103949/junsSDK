@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/account_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="#181516"
+        android:textSize="14sp"
+        android:padding="12dp"/>
+
+    <ImageView
+        android:id="@+id/delete_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/yy_icon_close"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"/>
+
+</LinearLayout>

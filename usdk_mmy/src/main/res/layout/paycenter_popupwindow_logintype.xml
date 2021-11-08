@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/pay_popup_login_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_logintye_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="农行帐号" />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#808080"/>
+
+    <TextView
+        android:id="@+id/tv_logintye_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="木蚂蚁帐号" />
+
+</LinearLayout>

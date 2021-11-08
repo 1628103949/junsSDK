@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp" >
+
+    <!-- 左按钮 -->
+
+    <ImageView
+        android:id="@+id/gr_ysdk_dialog_title_bar_button_back"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:src="@drawable/gr_ysdk_arrow_left" />
+    <!-- 标题 -->
+
+    <TextView
+        android:id="@+id/gr_ysdk_dialog_title_bar_titletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"
+        android:textColor="@color/gr_black"
+        android:text="title" />
+
+    <ImageView
+        android:id="@+id/gr_ysdk_dialog_title_bar_button_close"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/gr_ysdk_close"
+         />
+
+</RelativeLayout>

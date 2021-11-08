@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_p"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip">
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20.0dip">
+
+            <ImageView
+                android:id="@+id/leiting_logo"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_logo" />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/leiting_logo"
+                android:text="雷霆通行证服务条款"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0">
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="wrap_content"
+            android:paddingTop="50.0dip"
+            android:paddingBottom="50.0dip" />
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginBottom="15.0dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/button_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40.0dip"
+        android:layout_marginRight="40.0dip"
+        android:layout_marginBottom="20.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_positive"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_bg_green_shape"
+            android:maxLines="1"
+            android:paddingTop="10.0dip"
+            android:paddingBottom="10.0dip"
+            android:text="同意"
+            android:textColor="@color/white"
+            android:textSize="14.0sp" />
+
+        <Button
+            android:id="@+id/btn_negative"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_bg_red_shape"
+            android:maxLines="1"
+            android:paddingTop="10.0dip"
+            android:paddingBottom="10.0dip"
+            android:text="拒绝"
+            android:textColor="@color/white"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+</LinearLayout>

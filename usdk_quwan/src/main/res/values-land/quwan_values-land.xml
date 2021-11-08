@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="enjoy_hide_tips_width">355dp</dimen>
+    <dimen name="enjoy_web_height">330dp</dimen>
+    <dimen name="enjoy_web_width">360dp</dimen>
+</resources>

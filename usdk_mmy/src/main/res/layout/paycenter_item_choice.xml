@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40dip"
+    android:background="@drawable/pay_list_select_style">
+
+    <TextView
+        android:id="@+id/tv_prepaid_value"
+        style="@style/paycenter_text_16_big_black"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:gravity="center_vertical" />
+
+    <RadioButton
+        android:id="@+id/ck_prepaid_choice"
+        style="@style/paycenter_text_14_dark_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:button="@drawable/pay_ck_style"
+        android:gravity="center_vertical"></RadioButton>
+
+</RelativeLayout>

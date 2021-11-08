@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="juns_in_blue">#4FA8FB</color>
+    <color name="juns_in_red">#FB4F4F</color>
+    <color name="juns_scroll_bg">#FDB7B2</color>
+    <color name="juns_login_blue">#D12035</color>
+    <color name="juns_login_yellow">#BB5A25</color>
+    <color name="juns_float_red">#d81e06</color>
+</resources>

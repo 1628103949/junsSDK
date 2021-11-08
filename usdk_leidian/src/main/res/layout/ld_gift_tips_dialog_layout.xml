@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ld_dialog_base_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tips_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tips_desc"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tips_cancel_btn"
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ld_org_red_shape_chick"
+            android:textColor="@color/two_title"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/tips_confirm_btn"
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ld_org_btn_selector"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

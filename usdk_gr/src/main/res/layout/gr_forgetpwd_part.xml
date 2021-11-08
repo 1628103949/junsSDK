@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/gr_online_service_forgetpwd"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/gr_online_service" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系客服"
+                android:textColor="@color/gr_theme_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/gr_option_margin_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 通行证 -->
+
+            <LinearLayout
+                android:id="@+id/gr_account_layout_dialog"
+                style="@style/gr_login_input_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/gr_gray_input_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:padding="4dp"
+                    android:src="@drawable/gr_forgetpwd_user_" />
+
+                <EditText
+                    android:id="@+id/gr_forgetpwd_account_dialog"
+                    style="@style/gr_option_edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+                    android:hint="@string/gr_account_input_hint"
+                    android:imeOptions="flagNoExtractUi"
+                    android:nextFocusDown="@+id/gr_account_login_password"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:singleLine="true"
+                    android:textColor="@color/gr_black"
+                    android:textColorHint="@color/gr_gray_color"
+                    android:textSize="14sp" >
+                </EditText>
+
+            </LinearLayout>
+
+            <!-- 密码 -->
+
+            <LinearLayout
+                style="@style/gr_login_input_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gr_gray_input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center"
+                    android:text="+86"
+                    android:textColor="#707070" />
+
+                <EditText
+                    android:id="@+id/gr_forgetpwd_phone_dialog"
+                    style="@style/gr_option_edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:digits="@string/gr_limit_input_num"
+                    android:hint="输入手机号"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="@color/gr_black"
+                    android:textColorHint="@color/gr_gray_color"
+                    android:textSize="14sp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/gr_login_input_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gr_gray_input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:padding="4dp"
+                    android:src="@drawable/gr_sms_forgetpwd" />
+
+                <EditText
+                    android:id="@+id/gr_code_forgetpwd_dialog"
+                    style="@style/gr_option_edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:digits="@string/gr_limit_input_num"
+                    android:hint="输入验证码"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/gr_black"
+                    android:textColorHint="@color/gr_gray_color"
+                    android:textSize="14sp" >
+                </EditText>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:background="#8D8D8D" />
+                <TextView 
+                    android:id="@+id/gr_getcode_forgetpwd_dialog"
+                    android:text="获取验证码"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="1dp"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_height="fill_parent"
+                    android:textSize="14sp"
+                    android:background="@drawable/gr_btn_forgetpwd_getcode_selector"
+                    android:textColor="@color/gr_black"
+                    android:layout_width="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/gr_option_margin_style"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/gr_account_forgetpwd_log_dialog"
+            android:layout_width="120dp"
+            android:layout_height="32dp"
+            android:background="@drawable/gr_register_auto_selector"
+            android:text="确定"
+            android:textColor="@color/gr_white"
+            android:textSize="16sp" >
+        </Button>
+    </LinearLayout>
+
+</merge>

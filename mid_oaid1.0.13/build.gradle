@@ -1,0 +1,96 @@
+def sdkVersionName = '1.1.1'
+def sdkVersionCode = 12
+def publishVersion = "1.1.1"
+
+def releaseTime() {
+    new java.util.Date().format("yyyy-MM-dd", TimeZone.getDefault());
+}
+
+def exportJarName = "juns_sdk_core_oaid1.0.13-V" + sdkVersionName + "-" + releaseTime() + ".jar"
+
+apply plugin: 'com.android.library'
+
+android {
+
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.androidBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.androidMinSdkVersion
+        targetSdkVersion rootProject.ext.androidTargetSdkVersion
+
+        versionCode sdkVersionCode
+        versionName sdkVersionName
+
+        if (rootProject.ext.isReleaseStatus) {
+            buildConfigField 'boolean', 'DEBUG_STATUS', 'false'
+        } else {
+            buildConfigField 'boolean', 'DEBUG_STATUS', 'true'
+        }
+    }
+
+    // 配置结构
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            assets.srcDirs = ['src/main/assets']
+            res.srcDirs = ['src/main/res']
+            java.srcDirs = ['src/main/java']
+            resources.srcDirs = ['src/main/resources']
+            aidl.srcDirs = ['src/main/aidl']
+            renderscript.srcDirs = ['src/maom']
+            jniLibs.srcDir 'src/main/jniLibs'
+        }
+    }
+
+    //这个是解决lint报错的代码
+    lintOptions {
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        checkReleaseBuilds false//方法过时警告的开关
+        disable 'InvalidPackage' //Some libraries have issues with this.
+        disable 'OldTargetApi' //Lint gives this warning but SDK 20 would be Android L Beta.
+        disable 'IconDensities' //For testing purpose. This is safe to remove.
+        disable 'IconMissingDensityFolder' //For testing purpose. This is safe to remove.
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    /**
+     * 构建配置
+     */
+    buildTypes {
+
+        release {
+            //执行proguard混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+
+            libraryVariants.all { variant ->
+                variant.outputs.all { output ->
+                    outputFileName = "juns_sdk_core_oaid_1.0.13" + "-V${publishVersion}-${releaseTime()}.aar"
+                }
+            }
+        }
+
+    }
+}
+dependencies {
+    api fileTree(include: ['*.aar', '*.jar'], dir: 'libs')
+    api project(path: ':sdk_core_standard_oaid_Adapter')
+}

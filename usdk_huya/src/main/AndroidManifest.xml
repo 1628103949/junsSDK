@@ -1,0 +1,153 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.huya.berry.mlgj">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+    <uses-permission android:name="freemme.permission.msa" />
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:label="HuYa Demo"
+
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- JunS sdk components start -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="${applicationId}.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <!-- JunS sdk components end -->
+        <meta-data
+            android:name="HY_CHANNEL"
+            android:value="@string/hyberry_channel" />
+        <meta-data
+            android:name="HY_APPID"
+            android:value="@string/hyberry_appid" />
+        <meta-data
+            android:name="HY_APPKEY"
+            android:value="@string/hyberry_appkey" />
+        <meta-data
+            android:name="HY_VERSION"
+            android:value="@string/hyberry_version" />
+        <meta-data
+            android:name="com.huya.berry.login.common.glide.GlideConfiguration"
+            android:value="GlideModule" />
+
+        <activity
+            android:name="com.huya.berry.login.webview.WebViewActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/hyberry_webview_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.huya.berry.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.huya.berry.qqapi.QQPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="qwallet1101115626" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.huya.berry.login.common.ImagePickerActivity"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- <receiver android:name="com.huya.berry.login.common.util.NetWorkStateReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchForeService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":patch" />
+        <!--
+            Notice:
+            Following service must run in the same process.
+              TinkerPatchService
+              TinkerPatchService$InnerService
+        -->
+        <!-- ########################################################################### -->
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":patch" />
+        <service
+            android:name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService"
+            android:exported="false"
+            android:process=":patch" /> <!-- ########################################################################### -->
+        <service
+            android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <meta-data
+            android:name="HY_OPENAPPID"
+            android:value="HYNMFg8a2ApPZEZ8tJ" />
+    </application>
+</manifest>

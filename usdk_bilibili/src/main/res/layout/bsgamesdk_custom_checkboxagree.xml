@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <CheckBox
+        android:id="@+id/bsgamesdk_id_checkboxAgree_custom"
+        style="?attr/bsgamesdk_basic_checkbox_style"
+        android:background="@null"
+        android:text=""
+        android:checked="false"/>
+    <TextView
+        android:id="@+id/bsgamesdk_tv_xy"
+        android:textColor="@color/bsgamesdk_text_agree_color"
+        android:layout_width="match_parent"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

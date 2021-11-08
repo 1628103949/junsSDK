@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/ipay_margin_10"
+              android:paddingTop="0dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_list_view_item"
+        android:layout_width="fill_parent"
+        android:layout_height="83dp"
+        android:background="@drawable/ipay_border_style"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_amount_show"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ipay_cash_coupon_balance_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ipay_symbol_rmb"
+                    android:textColor="@color/ipay_color_value_1"
+                    android:textSize="@dimen/ipay_text_size_11"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_cash_coupon_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="x"
+                    android:textColor="@color/ipay_color_value_1"
+                    android:textSize="@dimen/ipay_text_size_18"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_cash_coupon_enabled_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ipay_margin_5"
+                android:gravity="center"
+                android:text="满x元可用"
+                android:textColor="@color/ipay_color_value_1"
+                android:textSize="@dimen/ipay_text_size_12"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/ipay_margin_8"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/ll_amount_show">
+
+
+            <LinearLayout
+                android:id="@+id/ll_zonge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ipay_margin_2"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_cash_coupon_resource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:lineSpacingMultiplier="1"
+                    android:text="登录活动赠送"
+                    android:textColor="@color/ipay_transparent_75"
+                    android:textSize="@dimen/ipay_text_size_13"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_cash_coupon_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:lineSpacingMultiplier="1"
+                    android:paddingLeft="@dimen/ipay_margin_5"
+                    android:text="总额xx元"
+                    android:textColor="@color/ipay_transparent_75"
+                    android:textSize="@dimen/ipay_text_size_13"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_cash_coupon_expairet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_zonge"
+                android:layout_marginBottom="@dimen/ipay_margin_2"
+                android:text="有效期2018.12.19-2019.12.19"
+                android:textColor="@color/ipay_color_value_4"
+                android:textSize="@dimen/ipay_text_size_10"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/ll_consume_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_cash_coupon_expairet"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cash_coupon_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:lineSpacingMultiplier="1"
+                    android:text="剩余消费次数"
+                    android:textColor="@color/ipay_color_value_4"
+                    android:textSize="@dimen/ipay_text_size_11"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_cash_coupon_consume_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ipay_margin_5"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="0dp"
+                    android:lineSpacingMultiplier="1"
+                    android:text="x次"
+                    android:textColor="@color/ipay_transparent_75"
+                    android:textSize="@dimen/ipay_text_size_13"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_consume_count"
+                android:paddingBottom="@dimen/ipay_margin_4"
+                android:paddingTop="@dimen/ipay_margin_4"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_to_show_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:drawablePadding="@dimen/ipay_margin_4"
+                    android:gravity="center"
+                    android:text="查看使用限制"
+                    android:textColor="@color/ipay_color_value_7"
+                    android:textSize="@dimen/ipay_text_size_11"
+                    android:visibility="gone"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cbx_cash_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/ipay_margin_7"
+                    android:button="@drawable/ipay_checkbox_button_bg"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/ll_show_app_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ipay_margin_10"
+            android:layout_marginRight="@dimen/ipay_margin_10"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ipay_border_style"
+                >
+
+                <TextView
+                    android:id="@+id/tv_show_app_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/ipay_margin_10"
+                    android:paddingLeft="@dimen/ipay_margin_6"
+                    android:paddingRight="@dimen/ipay_margin_6"
+                    android:paddingTop="@dimen/ipay_margin_10"
+                    android:textColor="@color/ipay_color_value_5"
+                    android:textSize="@dimen/ipay_text_size_10"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/ipay_ui_shadow_down"
+                ></View>
+        </FrameLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/list_no_more"
+        layout="@layout/ipay_layout_no_more"></include>
+
+    <include
+        android:id="@+id/list_empty"
+        layout="@layout/ipay_layout_listview_empty"></include>
+
+</LinearLayout>

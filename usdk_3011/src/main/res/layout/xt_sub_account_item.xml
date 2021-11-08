@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/xt_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/xt_small_select_bg_select">
+
+
+        <TextView
+            android:id="@+id/xt_tv_sub_account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dip"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:textColor="@color/xt_color_theme"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/xt_iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="13dip"
+            android:src="@drawable/xt_small_delete_check" />
+
+        <ImageView
+            android:id="@+id/xt_iv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/xt_iv_delete"
+            android:padding="13dip"
+            android:src="@drawable/xt_small_updata_check" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/xt_iv_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="9dip"
+        android:src="@drawable/xt_wallet_pay_type_checke" />
+</RelativeLayout>

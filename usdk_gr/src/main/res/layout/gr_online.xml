@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <WebView
+        android:id="@+id/gr_online_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+    </WebView>
+
+    <ImageView
+        android:id="@+id/gr_close_btn"
+        android:layout_width="@dimen/gr_close_btn_width"
+        android:layout_height="@dimen/gr_close_btn_height"
+        android:visibility="gone"
+        android:src="@drawable/gr_online_close_btn" />
+</FrameLayout>

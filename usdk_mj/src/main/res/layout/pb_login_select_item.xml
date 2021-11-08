@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pb_select_list_item_selector"
+    android:padding="10dip">
+
+    <TextView
+        android:id="@+id/pb_login_select_account_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="25dip"
+        android:singleLine="true"
+        android:textColor="#bbbbbb"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/pb_login_select_account_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:paddingRight="3dip"
+        android:src="@drawable/pb_login_select_clear" />
+
+</RelativeLayout>

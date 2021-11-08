@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="anythink_basead_click_fail">广告打开失败</string>
+    <string name="anythink_myoffer_splash_skip_text">跳过</string>
+    <string name="anythink_plugin_splash_skip_text">跳过</string>
+</resources>

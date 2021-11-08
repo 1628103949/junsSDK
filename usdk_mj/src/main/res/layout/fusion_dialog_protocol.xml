@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:background="#F7F7F7">
+
+    <RelativeLayout
+        android:id="@+id/unisdk_protocol_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/unisdk_protocol_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:text="隐私协议"
+            android:textColor="#ff3d3d39"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/unisdk_protocol_botttom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/unisdk_protocol_reject_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/unisdk_protocol_reject_btn"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="#ffcf4231"
+                android:text="取消"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/unisdk_protocol_agreed_btn"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="#ff23b260"
+                android:text="确定"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/protocol_agree_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/unisdk_protocol_botttom_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ff990000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/unisdk_protocol_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/protocol_agree_tv"
+        android:layout_below="@id/unisdk_protocol_top_layout"
+        android:layout_margin="8dp" />
+
+</RelativeLayout>

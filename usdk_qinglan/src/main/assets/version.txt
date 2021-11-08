@@ -1,0 +1,20 @@
+﻿
+ios��Ҫɾ��producefilelistname=filelist produceurl=resurl ʹ�� filelist resurl   ��׿���Ҫ�����ϰ汾�ͻ�����producefilelistname produceurl
+
+version:2101151538
+jumpversion:1910290000
+
+producefilelistname:2101151538filelistall.txt
+filelist:2101151538filelistall.txt
+
+url1:http://baishi-release-1253685291.file.myqcloud.com/c1/v11/cn/version/android_a/
+
+produceurl:http://baishi-release-1253685291.file.myqcloud.com/c1/v11/cn/resources/
+resurl:http://baishi-release-1253685291.file.myqcloud.com/c1/v11/cn/resources/
+
+server:212.129.152.131
+serverport:27001
+
+server1:159.75.43.47|27001
+
+gametitle:gametitle2

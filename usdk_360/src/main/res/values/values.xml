@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qihooAppid">204764436</string>
+    <string name="qihooAppkey">f5db3bcac3ac179348944702c699dc34</string>
+    <string name="qihooPrivatekey">78b8963fc5f7c559de4a204c2b94218f</string>
+</resources>

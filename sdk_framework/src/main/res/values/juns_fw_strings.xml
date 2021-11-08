@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- common start -->
+    <string name="juns_fw_tiny_game">泰尼游戏</string>
+    <string name="juns_fw_common_tips">提示</string>
+    <string name="juns_fw_common_confirm">确认</string>
+    <string name="juns_fw_common_cancel">取消</string>
+    <string name="juns_fw_common_net_error_tips">加载失败，请检查网络或稍后重试！</string>
+    <string name="juns_fw_common_refresh">刷新</string>
+    <string name="juns_fw_common_back">返回游戏</string>
+    <!-- common end -->
+
+    <!-- album start -->
+    <string name="juns_fw_album_all_pic">全部图片</string>
+    <string name="juns_fw_album_preview_without_num">预览</string>
+    <string name="juns_fw_album_preview_with_num">预览(%1$d)</string>
+    <string name="juns_fw_album_choose_pic_finish">完成</string>
+    <string name="juns_fw_album_choose_pic_finish_with_num">完成(%1$d/%2$d)</string>
+    <string name="juns_fw_album_choose_pic_num_out_of_index">你最多只能选择%1$d张照片</string>
+    <string name="juns_fw_album_choose_pic">选择</string>
+    <string name="juns_fw_album_permission_rationale_message">您已拒绝读取相册申请授权。请同意授权，否则上传功能将无法正常运行！</string>
+    <string name="juns_fw_album_permission_to_setting">您已拒绝读取相册申请授权。请前往应用设置页面进行授权，否则上传功能将无法正常运行！</string>
+    <!-- album end -->
+
+</resources>

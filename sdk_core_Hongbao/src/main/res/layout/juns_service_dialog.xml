@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:layout_width="353dp"
+            android:layout_height="275dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/juns_dialog_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/header_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp">
+
+                    <TextView
+                        android:id="@+id/title_tv"
+                        android:layout_width="61dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="150dp"
+                        android:background="@drawable/juns_service_txt" />
+
+                    <RelativeLayout
+                        android:id="@+id/close_rl"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="45dp"
+                        android:background="@drawable/juns_fw_btn_bg_tran">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/juns_close" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <com.juns.sdk.framework.view.circleimageview.CircleImageView
+                    android:id="@+id/service_icon_img"
+                    android:layout_width="87dp"
+                    android:layout_height="87dp"
+                    android:layout_marginLeft="137dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/juns_service" />
+
+                <Button
+                    android:id="@+id/gzh_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/juns_cancel_btn"
+                    android:text="@string/juns_gzh"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/tel_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tel_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:gravity="center"
+                        android:text="@string/juns_service_tel"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/tel_tv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/juns_call_phone" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

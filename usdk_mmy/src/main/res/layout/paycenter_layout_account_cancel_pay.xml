@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/ra_cancel_reason_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_cancel_reason_1"
+            style="@style/paycenter_text_16_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:gravity="center_vertical"
+            android:text="@string/str_paycenter_account_exit_reason_1" />
+
+        <RadioButton
+            android:id="@+id/ck_cancel_reason_1"
+            style="@style/paycenter_text_16_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/pay_ck_style"></RadioButton>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ck_cancel_reason_1"
+            android:layout_marginTop="5dip"
+            android:visibility="gone"
+            android:background="@drawable/pay_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ra_cancel_reason_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ra_cancel_reason_1">
+
+        <TextView
+            android:id="@+id/tv_cancel_reason_2"
+            style="@style/paycenter_text_16_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:gravity="center_vertical"
+            android:text="@string/str_paycenter_account_exit_reason_2" />
+
+        <RadioButton
+            android:id="@+id/ck_cancel_reason_2"
+            style="@style/paycenter_text_16_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/pay_ck_style"></RadioButton>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ck_cancel_reason_2"
+            android:layout_marginTop="5dip"
+            android:visibility="gone"
+            android:background="@drawable/pay_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ra_cancel_reason_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ra_cancel_reason_2">
+
+        <TextView
+            android:id="@+id/tv_cancel_reason_3"
+            style="@style/paycenter_text_16_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:text="@string/str_paycenter_account_exit_reason_3" />
+
+        <RadioButton
+            android:id="@+id/ck_cancel_reason_3"
+            style="@style/paycenter_text_16_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/pay_ck_style"></RadioButton>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ck_cancel_reason_3"
+            android:layout_marginTop="5dip"
+            android:visibility="gone"
+            android:background="@drawable/pay_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ra_cancel_reason_4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ra_cancel_reason_3">
+
+        <TextView
+            android:id="@+id/tv_cancel_reason_4"
+            style="@style/paycenter_text_16_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:gravity="center_vertical"
+            android:text="@string/str_paycenter_account_exit_reason_4" />
+
+        <RadioButton
+            android:id="@+id/ck_cancel_reason_4"
+            style="@style/paycenter_text_16_dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/pay_ck_style"></RadioButton>
+    </RelativeLayout>
+
+    <com.mumayi.paymentpay.ui.TryEditText
+        android:id="@+id/et_cancel_other_reason"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ra_cancel_reason_4"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+
+        android:gravity="top"
+        android:lines="4"
+        android:maxLines="4" />
+
+    <LinearLayout
+        android:id="@+id/la_contact_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_cancel_other_reason"
+        android:layout_marginTop="12dip">
+
+        <ImageView
+            android:layout_width="3dp"
+            android:layout_height="16dp"
+            android:background="#99CC33" />
+
+        <TextView
+            android:id="@+id/tv_account_cancel_pay_contact"
+            style="@style/paycenter_text_16_dark_gray"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:text="@string/str_paycenter_contact" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/la_input_contact"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/la_contact_title"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/pay_input_bg">
+        <RelativeLayout
+            android:id="@+id/ra_contact_type"
+            android:layout_width="65dip"
+            android:layout_gravity="center_vertical"
+            android:layout_height="40dip">
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_centerVertical="true"
+                style="@style/paycenter_text_16_dark_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_paycenter_account_exit_email" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dip"
+                android:layout_marginLeft="3dip"
+                android:layout_toRightOf="@id/tv_contact"
+                android:src="@drawable/pay_pop_icon" />
+        </RelativeLayout>
+
+        <com.mumayi.paymentpay.ui.TryEditText
+            android:id="@+id/et_cancel_pay_contact"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="3dip"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</RelativeLayout>

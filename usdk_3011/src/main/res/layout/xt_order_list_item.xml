@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="8dip">
+
+        <TextView
+            android:id="@+id/xt_tv_spend_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="订单号：xxxxxxxxxxxxxxxxxx"
+            android:textColor="@color/xt_color_zi_hui"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/xt_tv_spend_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="交易失败"
+            android:textColor="@color/xt_color_theme"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="4dip">
+
+        <TextView
+            android:id="@+id/xt_tv_spend_order_comm_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="购买游戏内xx商品"
+            android:textColor="@color/xt_color_zi_7b"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/xt_tv_spend_order_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="128.00"
+            android:textColor="@color/xt_color_theme"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip">
+
+        <TextView
+            android:id="@+id/xt_tv_spend_order_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dip"
+            android:text="2019.04.07 11:11"
+            android:textColor="@color/xt_color_zi_hui"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/xt_btn_order_info_bg_shape"
+            android:paddingBottom="4dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="4dip"
+            android:text="查看详情"
+            android:textColor="@color/xt_color_zi_black2"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:background="@color/xt_color_line_e1" />
+
+</LinearLayout>

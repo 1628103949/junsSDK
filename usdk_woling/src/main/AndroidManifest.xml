@@ -1,0 +1,120 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.junshang.hdxbdzz.woling">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <!--注意此处需要继承sdk的application 如果不方便继承，请参考对接文档中的非继承使用-->
+    <!--适配安卓9.0 请设置networkSecurityConfig 配置-->
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:label="WoLing Demo"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/huouniongame_center_network_security_config"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- JunS sdk components start -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="${applicationId}.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <!-- JunS sdk components end -->
+        <!--对接sdk需要 start-->
+
+        <!--以下${HuoUnion_APPID}类似参数需要替换成从渠道获取到的对应的参数值-->
+        <meta-data
+            android:name="HuoUnion_APPID"
+            android:value="621" />
+        <meta-data
+            android:name="HuoUnion_CLIENTID"
+            android:value="621" />
+        <meta-data
+            android:name="HuoUnion_CLIENTKEY"
+            android:value="37d255a543d4e279d213a3ab8ac91521" />
+        <!--测试时，可设置为true，查看sdk 联网日志-->
+        <!--对接完成后，出包时，请设置为false，关闭日志-->
+        <meta-data
+            android:name="HUO_NETWORK_DEBUGGABLE"
+            android:value="false" />
+        <!--下方为文件提供者配置样例，仅供参考，对接时请删除此provider 配置-->
+        <!--注意：如果游戏配置文件提供者，并且是authorities 是已包名做前缀的-->
+        <!--需要添加 android:label="applicationId" 节点，用于标记反编译打包可以修改包名，
+           如果不加入多个不同包名的游戏包是无法安装到同一手机上  -->
+        <!--<provider-->
+        <!--android:name="android.support.v4.content.FileProvider"-->
+        <!--android:authorities="${applicationId}.xxxxxxxxx"-->
+        <!--android:enabled="true"-->
+        <!--android:exported="true"-->
+
+        <!--android:label="applicationId" />-->
+
+        <!--权限申请-->
+        <activity
+            android:name="com.huosdk.huounion.sdk.util.PermissionUtils$PermissionActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.huosdk.huounion.sdk.ui.RKLlqActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="com.huosdk.huounion.sdk.user.RKLoginActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="com.huosdk.huounion.sdk.ui.RKMaiActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <service
+            android:name="com.huosdk.huounion.sdk.service.OnlineService"
+            android:exported="false">
+            <intent-filter>
+                <action
+                    android:name="com.huosdk.huounion.sdk.action.startOnlineService"
+                    android:label="applicationId" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.huosdk.huounion.sdk.service.HuounionsdkService" />
+        <!--对接sdk需要 end-->
+    </application>
+</manifest>

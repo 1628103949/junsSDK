@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:paddingBottom="10dp" >
+
+    <TextView
+        android:id="@+id/tv_gamecenter"
+        android:textColor="#bbc0c6"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dip"
+        android:gravity="center_horizontal"
+        android:text="木蚂蚁游戏中心" />
+
+    <TextView
+        android:id="@+id/tv_questions"
+        android:textColor="#99cc33"
+        android:textSize="13sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_gamecenter"
+        android:gravity="center_horizontal"
+       
+        android:text="常见问题" />
+
+</RelativeLayout>

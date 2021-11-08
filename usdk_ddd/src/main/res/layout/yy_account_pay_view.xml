@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="15dp">
+
+    <com.yysy.yygamesdk.view.CommonTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:centerText="平台币充值"
+        app:centerType="textView"
+        app:leftType="imageButton"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <com.yysy.yygamesdk.view.NoScrollGridView
+                android:id="@+id/money_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/other_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自定义金额:"
+                    android:textColor="#4a4a4a"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/code_et"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yy_edittext_corner_dp5_bg"
+                    android:layout_marginLeft="6dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:textSize="14sp"
+                    android:textColor="#999999"
+                    android:textColorHint="#66999999"
+                    android:hint="10-10万"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:imeOptions="flagNoExtractUi"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="#4a4a4a"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付方式: "
+                android:textColor="#4a4a4a"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"/>
+
+            <RadioGroup
+                android:id="@+id/pay_type_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginBottom="15dp">
+
+                <RadioButton
+                    android:id="@+id/zfb_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/yy_icon_alipay"
+                    android:button="@drawable/yy_radio_selector"
+                    android:drawablePadding="10dp"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/wx_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/yy_icon_wechat"
+                    android:layout_marginLeft="40dp"
+                    android:button="@drawable/yy_radio_selector"
+                    android:drawablePadding="10dp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/comm_split_bg"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/confirm_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/yy_shape_green_corner_dp25_selector"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="确定"
+        android:textColor="#FFFEFF"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

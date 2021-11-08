@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_center_dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:visibility="invisible">
+
+    <LinearLayout
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:longClickable="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.3"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ld_dp_110"
+                android:background="@drawable/ld_user_center_top_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/user_info_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ld_dp_70">
+
+                    <com.ld.sdk.account.ui.stackview.weight.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="@dimen/ld_dp_32"
+                        android:layout_height="@dimen/ld_dp_32"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/ld_dp_10"
+                        android:src="@drawable/ld_default_avatar" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/ld_dp_10"
+                        android:layout_toRightOf="@id/profile_image"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/ld_sp_14" />
+
+                        <ImageView
+                            android:id="@+id/vipImageView"
+                            android:layout_width="@dimen/ld_dp_50"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ld_dp_3"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <GridView
+                    android:id="@+id/msg_bill_qq_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/function_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#EFEFEF" />
+
+        <RelativeLayout
+            android:id="@+id/centerLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6.7"
+            android:background="#ffffff"
+            android:fillViewport="true" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</FrameLayout>

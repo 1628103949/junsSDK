@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="juns_fw_gray">#999999</color>
+    <color name="juns_fw_gray_select">#DDDDDD</color>
+    <color name="juns_fw_red">#EC6B62</color>
+    <color name="juns_fw_red_select">#FDB7B2</color>
+
+    <color name="juns_fw_album_found_text_color">#353535</color>
+    <color name="juns_fw_album_found_description_color">#aaaaaa</color>
+    <color name="juns_fw_album_found_divide_color">#d9d9d9</color>
+    <color name="juns_fw_album_white">#FFFFFF</color>
+    <color name="juns_fw_album_transparent">#00000000</color>
+    <color name="juns_fw_album_light_blue">#4FA8FB</color>
+</resources>

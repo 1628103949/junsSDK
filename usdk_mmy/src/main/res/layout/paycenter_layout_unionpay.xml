@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_alipay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/pay_type_unionpay" />
+
+    <TextView
+        android:id="@+id/tv_pay_creadit_card_title"
+        style="@style/paycenter_text_14_dark_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="3dip"
+        android:text="@string/pay_confirm_unionpay_creadit_card"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/ra_pay_support_creadit_card"
+        android:layout_width="255dip"
+        android:layout_height="35dip"
+        android:layout_below="@id/tv_pay_creadit_card_title"
+        android:layout_marginLeft="5dip"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/pay_white_bg_normal">
+
+            <ImageView
+                android:id="@+id/iv_pay_bank_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:src="@drawable/pay_creadit_card" />
+
+            <TextView
+                android:id="@+id/tv_pay_bank"
+                style="@style/paycenter_text_12_big_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/iv_pay_bank_icon"
+                android:paddingRight="5dip"
+                android:text="@string/pay_confirm_unionpay_savings_Card" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ra_pay_support_creadit_card_selected"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/pay_bank_pressed"
+            android:visibility="gone"></RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ra_pay_savings_card"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_goto_pay_union"
+        android:layout_below="@id/ra_pay_support_creadit_card"
+        android:layout_marginTop="5dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_pay_savings_confirm"
+            style="@style/paycenter_text_14_dark_gray"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="3dip"
+            android:text="@string/pay_confirm_unionpay" />
+
+        <GridView
+            android:id="@+id/gv_pay_savings_card_support_bank"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pay_savings_confirm"></GridView>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_company_email"
+        style="@style/paycenter_text_14_dark_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:text="@string/str_paycenter_email" />
+    <TextView
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:layout_above="@id/tv_company_email"
+        android:id="@+id/tv_channel_version_unionpay"
+        style="@style/paycenter_text_14_dark_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sdfa" />
+    <Button
+        android:id="@+id/btn_goto_pay_union"
+        style="@style/paycenter_text_14_realwhite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_channel_version_unionpay"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/pay_alix_style"
+        android:text="@string/pay_goto_pay" />
+
+    <LinearLayout
+        android:id="@+id/ll_unionpay_message"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_above="@id/btn_goto_pay_union"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center"
+        android:paddingBottom="3dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:src="@drawable/pay_wechatpay_tip_ico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/pay_confirm_tip"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_above="@id/ll_unionpay_message"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#faf8df">
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="警告：线下交易账号行为引发的经济纠纷，官方不予受理。"
+            android:textColor="#ff7800"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</RelativeLayout>

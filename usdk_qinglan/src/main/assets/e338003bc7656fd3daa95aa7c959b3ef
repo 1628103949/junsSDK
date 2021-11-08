@@ -1,0 +1,39 @@
+<cg framecount="97" property="standardaxis:0">
+  <command frame="2" value="show:0|0" order="0" />
+  <command frame="40" value="shake:5" order="1" />
+  <command frame="41" value="audio:Assets/GameResources/audio/zhandouyinxiao/jgscy_skill_qiaogu.mp3.meta" order="2" />
+  <command frame="43" value="show:1|1" order="3" />
+  <command frame="43" value="hurt:0,100" order="4" />
+  <command frame="48" value="audio:Assets/GameResources/audio/zhandouyinxiao/jgscy_skill_fanweibaozha.mp3" order="5" />
+  <command frame="85" value="nextbattle:" order="6" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/c_jgscy_01/c_jgscy_01.prefab" parent="-1" start="0" end="97" type="11">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:skill_01,0,3,0.7,0.3" order="1" />
+    <command frame="97" value="anim:guard" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/C_jgscy_01/C_jgscy_01_skill@Bip001 R Hand.prefab" parent="0" parentname="Bip001 R Hand" start="1" end="100" type="119">
+    <bezier frame="1" fov="40" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="-0.093,0.044,-0.025" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/a_jll_02/a_jll_02.prefab" parent="-1" start="1" end="97" type="14">
+    <bezier frame="1" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:guard" order="1" />
+    <command frame="39" value="anim:hit,0,3,1,0.3" order="2" />
+    <command frame="44" value="anim:hit,0,3,1,0.3" order="3" />
+    <command frame="64" value="anim:guard,0,3,1,0.3" order="4" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/C_jgscy_01/C_jgscy_01_skill.prefab" parent="-1" start="11" end="97" type="1">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0.41,0.7,-4.22" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/s_xzbh_01/xzbh_skill_1.prefab" parent="-1" start="42" end="97" type="1">
+    <bezier frame="42" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/C_jgscy_01/C_jgscy_skill_01.prefab" parent="-1" start="42" end="97" type="1">
+    <bezier frame="42" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="CGCamera" parent="-1" start="1" end="97" type="0">
+    <bezier frame="1" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="2" fov="46" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="3.16,1.46,-4.09" scale="1,1,1" rot="0.06660838,-0.7598377,0.06162295,0.6437489" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <bezier frame="42" fov="58" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="4.01,2.27,-2.63" scale="1,1,1" rot="0.03346093,-0.8188656,0.04924266,0.5708895" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="43" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="3" />
+  </cgobject>
+</cg>

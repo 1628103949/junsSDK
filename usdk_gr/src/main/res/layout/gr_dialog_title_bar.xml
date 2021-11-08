@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/gr_login_dialog_top_bg" >
+
+    <!-- 左按钮 -->
+
+    <ImageView
+        android:id="@+id/gr_dialog_title_bar_button_left"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:paddingBottom="9dp"
+        android:paddingRight="10dp"
+        android:layout_centerVertical="true"
+        android:paddingTop="9dp"
+        android:src="@drawable/gr_title_leftback" />
+
+    <!-- 右按钮 -->
+
+    <ImageView
+        android:id="@+id/gr_dialog_title_bar_button_right"
+        android:layout_width="42dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="9dp"
+        android:visibility="gone"
+        android:paddingTop="9dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/gr_pop_back"
+        />
+
+    <!-- 标题 -->
+
+    <ImageView
+        android:id="@+id/gr_dialog_title_bar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/gr_img_desc"
+        android:src="@drawable/gr_login_logo" />
+
+</RelativeLayout>

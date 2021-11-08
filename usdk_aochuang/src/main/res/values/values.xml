@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="i_aw_color_fdf6f3">#FDF6F3</color>
+    <color name="i_aw_color_transparent">#0000</color>
+    <color name="i_aw_color_white">#ffffff</color>
+    <color name="i_aw_text_default_color">#333333</color>
+    <color name="i_aw_theme_color">#ff7A0f</color>
+    <string name="i_aw_affirm_alter">确认修改</string>
+    <string name="i_aw_alter">修改</string>
+    <string name="i_aw_alter_account_alias">修改账号名称</string>
+    <string name="i_aw_alter_account_hint">设置一个好记的账号名称，只有一次机会哦~</string>
+    <string name="i_aw_alter_pw">修改密码</string>
+    <string name="i_aw_auth_name">实名认证</string>
+    <string name="i_aw_bind_phone">绑定手机</string>
+    <string name="i_aw_cancel">取消</string>
+    <string name="i_aw_channel_id">渠道id：</string>
+    <string name="i_aw_click_copy_all">点击复制全部</string>
+    <string name="i_aw_confirm">确定</string>
+    <string name="i_aw_game_version">游戏版本：</string>
+    <string name="i_aw_hint_auth_name">依据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》，您必须完善实名信息。您的认证信息不会泄露于任何第三方，请您放心。</string>
+    <string name="i_aw_hint_bind_phone">建议您尽快绑定手机，以便找回您的账号</string>
+    <string name="i_aw_hint_input_ew_account_alias">请输入新的账号名称</string>
+    <string name="i_aw_hint_input_id_no">请填入身份证号</string>
+    <string name="i_aw_hint_input_name">请填入真实姓名</string>
+    <string name="i_aw_hint_input_phone">请输入手机号</string>
+    <string name="i_aw_hint_input_verify_code">请输入验证码</string>
+    <string name="i_aw_hint_switch_account">将退出当前角色，并返回登录界面</string>
+    <string name="i_aw_imei">IMEI：</string>
+    <string name="i_aw_imei2">IMEI2：</string>
+    <string name="i_aw_input_new_pw">请输入新密码</string>
+    <string name="i_aw_input_old_pw">请输入旧密码</string>
+    <string name="i_aw_loading">加载中…</string>
+    <string name="i_aw_network_error">网络错误</string>
+    <string name="i_aw_oa_id">OAId：</string>
+    <string name="i_aw_promptly_auth">立即认证</string>
+    <string name="i_aw_retry">重 试</string>
+    <string name="i_aw_retry_network">请检查网络连接重试</string>
+    <string name="i_aw_sdk_version">sdk版本：</string>
+    <string name="i_aw_send">发送</string>
+    <string name="i_aw_switch_account">确定切换账号？</string>
+    <string name="i_aw_verify_new_pw">请再次确认新密码</string>
+    <string name="i_aw_warm_prompt">温馨提示</string>
+    <style name="i_aw_DialogAppTheme" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@color/i_aw_color_transparent</item>
+    </style>
+    <style name="i_aw_TranslucentDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="i_aw_dialog_custom_no_black_bg" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="i_dialog_anim_bottom" parent="android:Animation">
+        <!--进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/i_aw_dialog_in_anim_bottom</item>
+        <!--退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/i_aw_dialog_out_anim_bottom</item>
+    </style>
+    <style name="i_dialog_anim_horizontal" parent="android:Animation">
+        <!--进入时的动画-->
+        <item name="android:windowEnterAnimation">@anim/i_aw_dialog_in_anim_horizontal</item>
+        <!--退出时的动画-->
+        <item name="android:windowExitAnimation">@anim/i_aw_dialog_out_anim_horizontal</item>
+    </style>
+    <style name="qk_game_style_loading" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/qk_game_loadbg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

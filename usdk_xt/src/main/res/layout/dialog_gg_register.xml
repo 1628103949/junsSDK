@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape_solid_4_ff24252e_ff2e2727_border_1_80ff7700">
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@drawable/gg_ic_back"
+        android:text="快速注册"
+        android:textColor="@color/FF222222"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        android:background="@color/alpha_33FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_solid_4_white">
+
+        <EditText
+            android:id="@+id/et_register_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/gg_ic_login_id"
+            android:drawablePadding="10dp"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/FF222222"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/v_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/FFE1E1E1" />
+
+        <EditText
+            android:id="@+id/et_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/gg_ic_login_psw"
+            android:drawablePadding="10dp"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/FF222222"
+            android:textColorHint="@color/FF8E8E93"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register_register"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_solid_01aafd"
+        android:text="进入游戏"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/cb_check"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:button="@drawable/selector_fast_register_checkbox"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/FF8E8E93"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</LinearLayout>

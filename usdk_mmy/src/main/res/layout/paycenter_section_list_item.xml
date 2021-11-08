@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="30dip"
+    android:background="#ffffffff"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_parent"
+        android:layout_width="match_parent"
+        android:layout_height="22dip"
+        android:background="#dfe2e7"
+        android:paddingLeft="12dip" >
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="22dip"
+            android:gravity="center_vertical"
+            android:text="header"
+            android:textColor="#949da9"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_solid_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/pay_light_solid_line"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_dash_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="64dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/pay_dash_line"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" >
+
+        <LinearLayout
+            android:id="@+id/ll_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="16dip"
+                android:background="@drawable/pay_usercenter_icon_backgrond_black_date"
+                android:gravity="center"
+                android:text="5-2"
+                android:layout_marginTop="1dip"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ll_date" >
+
+            <TextView
+                android:id="@+id/tv_sum"
+                style="@style/user_center_charge_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dip"
+                android:text="@string/str_paycenter_charge_value" />
+
+            <TextView
+                android:id="@+id/tv_chargetime"
+                style="@style/user_center_charge_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24dip"
+                android:text="16:31:34" />
+
+            <TextView
+                android:id="@+id/example_text_chargesum"
+                style="@style/user_center_charge_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_sum"
+                android:layout_toRightOf="@id/tv_sum"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tv_unit"
+                android:textColor="@color/paycenter_top_bg_red_line"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_sum"
+                android:layout_toRightOf="@id/example_text_chargesum" 
+                android:text="@string/str_paycenter_currency_unit"/>
+
+            <TextView
+                android:id="@+id/tv_chargetype"
+                style="@style/user_center_charge_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sum"
+                android:layout_marginTop="10dip"
+                android:text="@string/str_paycenter_charge_type" />
+
+            <TextView
+                android:id="@+id/example_text_chargetype"
+                style="@style/user_center_charge_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_chargetype"
+                android:layout_below="@id/example_text_chargesum"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@id/tv_chargetype"
+                android:text="0" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_orderno"
+                style="@style/user_center_charge_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_chargetype"
+                android:layout_marginTop="10dip"
+                android:text="@string/str_paycenter_order_id" />
+
+            <com.mumayi.paymentuserinfo.ui.MyTextView
+                android:id="@+id/example_text_orderno"
+                style="@style/user_center_charge_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_orderno"
+                android:layout_below="@id/example_text_chargetype"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@id/tv_orderno"
+                android:singleLine="true"
+                android:background="@null"
+                android:text="0" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

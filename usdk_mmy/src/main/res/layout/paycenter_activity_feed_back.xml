@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/paycenter_little_gray" >
+
+    <include
+        android:id="@+id/la_fqs_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/paycenter_layout_common_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/la_fqs_title"
+        android:background="@color/paycenter_little_gray" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dip"
+            android:background="@null"
+            android:orientation="vertical"
+            android:paddingBottom="50dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="5dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_short_line_header"
+                    android:layout_height="20dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/str_paycenter_feedback_content"
+                    android:textColor="#606062"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dip"
+                android:background="@drawable/pay_usercenter_main_body_dividing_line_deep" >
+            </View>
+
+            <LinearLayout
+                android:id="@+id/la_mail_content"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <com.mumayi.paymentuserinfo.ui.TryEditText
+                    android:id="@+id/et_fqs_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="230dip"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/paycenter_mail_dialog_content"
+                    android:imeOptions="actionNext"
+                    android:lines="10"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="5dip"
+                    android:textColor="#606062"
+                    android:textColorHint="#bbc0c6"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dip"
+                android:background="@drawable/pay_usercenter_main_body_dividing_line_deep" >
+            </View>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:layout_marginBottom="5dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_short_line_header" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/str_paycenter_contact"
+                    android:textColor="#606062"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dip"
+                android:background="@drawable/pay_usercenter_main_body_dividing_line_deep" >
+            </View>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="35dip"
+                    android:layout_weight="1" >
+
+                    <!--
+                         <Spinner
+                        android:id="@+id/connect_type_list"
+                        style="@android:attr/spinnerDropDownItemStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:textColor="#606062"
+                        android:background="@null" />
+                    -->
+
+                    <TextView
+                        android:id="@+id/tv_connect"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dip"
+                        android:text="QQ"
+                        android:gravity="center"
+                        android:textColor="#606062" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/pay_pop_icon" />
+                </RelativeLayout>
+
+                <com.mumayi.paymentuserinfo.ui.EditTextWithDel
+                    android:id="@+id/et_connect"
+                    android:layout_width="0dip"
+                    android:layout_height="35dip"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:paddingLeft="4dip"
+                    android:singleLine="true"
+                    android:textColor="#606062"
+                    android:textColorHint="#bbc0c6" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.6dip"
+                android:background="@drawable/pay_usercenter_main_body_dividing_line_deep" >
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dip"
+                android:layout_marginRight="24dip"
+                android:layout_marginTop="26dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_fqs_cancel"
+                    style="@style/paycenter_text_style_4"
+                    android:layout_width="0dip"
+                    android:layout_height="44dip"
+                    android:layout_marginRight="12dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/pay_btn_binphone_cancel"
+                    android:text="@string/paycenter_faqs_cancel"
+                    android:textColor="#949da9" />
+
+                <Button
+                    android:id="@+id/btn_fqs_send"
+                    style="@style/paycenter_text_style_4"
+                    android:layout_width="0dip"
+                    android:layout_height="44dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/pay_btn_paycenter_login_style"
+                    android:text="@string/paycenter_mail_dialog_send"
+                    android:textColor="@color/paycenter_white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

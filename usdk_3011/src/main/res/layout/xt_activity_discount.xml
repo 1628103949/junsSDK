@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xt_btn_account_white_bg_shape">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/xt_tv_open_app"
+        android:orientation="vertical">
+
+        <com.xiantu.paysdk.view.spring.SpringView
+            android:id="@+id/xt_spring_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/xt_color_white">
+
+            <ListView
+                android:id="@+id/xt_discount_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:listSelector="@color/xt_color_white"
+                android:scrollbars="none" />
+
+        </com.xiantu.paysdk.view.spring.SpringView>
+
+        <include layout="@layout/xt_layout_no_coupon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/xt_tv_open_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dip"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/xt_btn_round_orange_shape"
+        android:gravity="center"
+        android:paddingBottom="9dip"
+        android:paddingTop="9dip"
+        android:text="打开APP查看全部"
+        android:textColor="@color/xt_color_white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

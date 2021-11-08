@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/ll_user_center_6"
+        style="@style/user_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView android:id="@+id/iv_line"
+            android:layout_width="3dip"
+            android:layout_height="20dip"
+            android:background="@drawable/icon_short_line_header"
+            android:visibility="visible"
+            android:layout_marginTop="3dip" />
+
+        <TextView
+            android:id="@+id/tv_aboutus_title"
+            style="@style/user_center_subject"
+            android:layout_width="85dip"
+            android:layout_marginLeft="6dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/paycenter_about_us_item_title" />
+
+        <TextView
+            android:id="@+id/tv_aboutus_msg"
+            style="@style/user_center_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web|email"
+            android:text="@string/paycenter_about_us_item_content" />
+    </LinearLayout>
+
+</RelativeLayout>

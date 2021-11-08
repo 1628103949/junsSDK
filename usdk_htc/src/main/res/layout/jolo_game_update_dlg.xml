@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:keepScreenOn="true"
+    android:background="@color/jolo_white" >
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/jolo_tiptop" >
+
+        <TextView
+            android:id="@+id/update_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/jolo_game_mainpage"
+            android:textColor="@color/jolo_white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:src="@drawable/jolo_close" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_rl" >
+
+        <TextView
+            android:id="@+id/update_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/jolo_white"
+            android:padding="20dp"
+            android:text="游戏有新版本更新，点击确定下载最新安装包！"
+            android:textColor="@color/cmmn_black"
+            android:textSize="15sp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/update_game_size_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sl"
+        android:layout_centerHorizontal="true"
+        android:background="@color/jolo_white"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/cmmn_black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/update_progress_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_game_size_tv"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/update_progress_tv"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/jolo_white"
+            android:text="0%"
+            android:textColor="@color/cmmn_black"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/update_progress_bar"
+            style="@style/load_item_progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/load_progress_layer" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/update_sure_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_progress_ll"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/jolo_tipdown"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/jolo_ok"
+        android:textColor="@color/jolo_white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/la_bindphone"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/pay_dialog_round_corner"
+    android:paddingBottom="14dip" >
+
+    <TextView
+        android:id="@+id/tv_paycenter_bindphone_dialog_title"
+        style="@style/paycenter_text_15_white"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:background="@drawable/pay_complete_title"
+        android:gravity="center"
+        android:paddingBottom="3dip"
+        android:paddingTop="3dip"
+        android:text="@string/str_paycenter_compelete_title"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="4dip"
+        android:layout_height="22dip"
+        android:layout_marginTop="17dip"
+        android:src="@drawable/icon_short_line_header" />
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dip"
+        android:layout_marginTop="18dip"
+        android:text="@string/paycenter_bind_phone_dialog_title"
+        android:textColor="#bbc0c6"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_paycenter_mail_dialog_remond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_title"
+        android:layout_marginLeft="14dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/paycenter_bind_phone_dialog_tip"
+        android:textColor="#606062"
+        android:textSize="16sp" />
+
+    <com.mumayi.paymentuserinfo.ui.EditTextWithDel
+        android:id="@+id/et_paycenter_bindphone_phone"
+        style="@style/tip_gray"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:layout_below="@id/tv_paycenter_mail_dialog_remond"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/pay_edit_bg"
+        android:digits="1234567890"
+        android:gravity="center"
+        android:hint="@string/str_paycenter_user_bindphone_tip"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:textColor="@color/paycenter_skin_black_2"
+        android:textColorHint="@color/paycenter_light_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_paycenter_bindphone_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:layout_marginTop="10dip" >
+
+        <Button
+            android:id="@+id/btn_bindphone_submit"
+            style="@style/paycenter_text_style_4"
+            android:layout_width="112dip"
+            android:layout_height="38dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/pay_btn_paycenter_login_style"
+            android:text="@string/paycenter_bind_phone_dialog_ok"
+            android:gravity="center"
+            android:textColor="@color/paycenter_white" />
+
+        <Button
+            android:id="@+id/btn_bindphone_cancel"
+            style="@style/paycenter_text_style_4"
+            android:layout_width="112dip"
+            android:layout_height="38dip"
+            android:background="@drawable/pay_btn_binphone_cancel"
+            android:text="@string/paycenter_bind_phone_dialog_cancel"
+            android:gravity="center"
+            android:textColor="#949da9" />
+    </RelativeLayout>
+
+</RelativeLayout>

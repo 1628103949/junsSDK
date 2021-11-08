@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <TextView
+        android:id="@+id/gr_fcm_limt_tips_content"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:padding="20dp"
+        android:textColor="@color/gr_black"
+        android:text="@string/gr_fcm_tips_0_17_years_limt"
+        android:textSize="14sp" />
+    
+    <Button
+        android:id="@+id/gr_fcm_limt_confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gr_btn_confirm_selector"
+        android:gravity="center"
+        android:text="@string/gr_fcm_confirm_btn_text"
+        android:textColor="@color/gr_white"
+        android:textSize="18sp" />
+
+
+</merge>

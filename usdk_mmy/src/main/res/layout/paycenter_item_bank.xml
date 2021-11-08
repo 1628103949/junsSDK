@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dip"
+    android:layout_marginTop="2dip" >
+
+    <RelativeLayout
+        android:layout_width="90dip"
+        android:layout_height="35dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/pay_white_bg_normal" >
+
+        <ImageView
+            android:id="@+id/iv_pay_bank_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dip"
+            android:src="@drawable/pay_gongshang_bank" />
+
+        <TextView
+            android:id="@+id/tv_pay_bank"
+            style="@style/paycenter_text_12_big_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dip"
+            android:layout_toRightOf="@id/iv_pay_bank_icon"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ra_bank_select"
+        android:layout_width="90dip"
+        android:layout_height="35dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/pay_bank_pressed"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+</RelativeLayout>

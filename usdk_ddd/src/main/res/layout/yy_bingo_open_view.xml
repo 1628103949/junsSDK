@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="15dp">
+
+    <com.yysy.yygamesdk.view.CommonTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:centerText="开红包"
+        app:centerType="textView"
+        app:leftType="imageButton"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发现一个扫雷红包，金额随机！"
+                android:textColor="#4A4A4A"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/thunder_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="请选择雷号"
+                    android:textColor="#4A4A4A"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.yysy.yygamesdk.view.NoScrollGridView
+                    android:id="@+id/thunder_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="5"
+                    android:scrollbars="none"
+                    android:verticalSpacing="10dp"
+                    android:listSelector="@android:color/transparent"
+                    android:choiceMode="singleChoice"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="若未中雷，抢到的金币将归你所有！"
+                    android:textColor="#FF623B"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/hit_trap_rate_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="若中雷会将抢到的金币*15.0倍贡献给红包主人！"
+                    android:textColor="#FF623B"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lack_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="金币余额不足！"
+                    android:textColor="#FF623B"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lock_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#FF623B"
+                    android:textSize="12sp"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/open_tv"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/yy_shape_orange_corner_dp25_selector"
+                android:gravity="center"
+                android:text="开红包"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

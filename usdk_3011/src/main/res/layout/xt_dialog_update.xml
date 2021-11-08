@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xt_dialog_bg_shape">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/xt_tv_content"
+            android:background="@drawable/xt_btn_update_content"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip"
+            android:paddingTop="15dip"
+            android:paddingBottom="15dip"
+            android:layout_margin="14dip"
+            android:textSize="14sp"
+            android:text="检测到当前游戏版本需要更新,点击确认即可进行下载更新"
+            android:textColor="@color/xt_color_zi_black4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/xt_tv_confirm_cancel"
+            android:layout_width="100dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/xt_btn_update_cancle"
+            android:paddingBottom="6dip"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+            android:paddingTop="6dip"
+            android:text="@string/xt_cancel"
+            android:textColor="@color/xt_color_gray_81"
+            android:textSize="14sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/xt_tv_confirm_submit"
+            android:layout_width="100dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/xt_btn_update_confirm"
+            android:paddingBottom="6dip"
+            android:paddingLeft="18dip"
+            android:paddingRight="18dip"
+            android:paddingTop="6dip"
+            android:text="确认"
+            android:textColor="@color/xt_color_white"
+            android:textSize="14sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

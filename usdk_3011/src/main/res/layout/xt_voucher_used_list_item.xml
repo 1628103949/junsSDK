@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/xt_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/xt_voucher_use_top_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/xt_tv_use_range"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dip"
+            android:layout_marginRight="14dip"
+            android:layout_weight="1"
+            android:text="@string/xt_string_use_range"
+            android:textColor="@color/xt_color_use"
+            android:textSize="11sp" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dip"
+            android:layout_marginRight="14dip"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/xt_tv_voucher_over"
+                android:layout_toLeftOf="@+id/xt_tv_voucher_over"
+                android:text="￥"
+                android:textColor="@color/xt_color_use"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/xt_tv_voucher_over"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="00.00"
+                android:textColor="@color/xt_color_use"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/xt_tv_voucher_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xt_tv_voucher_over"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dip"
+                android:text=""
+                android:textColor="@color/xt_color_use"
+                android:textSize="9sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/xt_tv_voucher_validity_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xt_layout_top"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/xt_voucher_use_down_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:text="@string/xt_string_valid_period"
+        android:textColor="#ccdedede"
+        android:textSize="9sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/xt_tv_voucher_validity_period"
+        android:src="@drawable/xt_watermark_use" />
+
+
+</RelativeLayout>

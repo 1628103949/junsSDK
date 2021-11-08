@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按压时 -->
+    <item android:state_pressed="true" android:color="#c7752e" />
+    <!-- 默认时 -->
+    <item android:color="#f28c37" />
+
+</selector>

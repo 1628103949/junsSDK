@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/content_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="接口一览"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="1.帐号登录/切换"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/sdkLoginBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/juns_fw_btn_bg_gray"
+                        android:text="sdkLogin(登录)"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/sdkLogoutBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/juns_fw_btn_bg_gray"
+                        android:text="sdkLogout(注销)"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/sdkIsLoginBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/juns_fw_btn_bg_gray"
+                        android:text="是否已登录"
+                        android:textColor="#ffffff" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:text="2.帐号充值"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/goodsMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="#00ffffff"
+                        android:gravity="center_vertical"
+                        android:hint="商品价格"
+                        android:textColor="#000000"
+                        android:textColorHint="#cccccc" />
+
+                    <Button
+                        android:id="@+id/sdkPayBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/juns_fw_btn_bg_gray"
+                        android:text="sdkPay(支付)"
+                        android:textColor="#ffffff" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:text="3.返回键退出游戏"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/sdkExitBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/juns_fw_btn_bg_gray"
+                    android:text="sdkGameExit(退出游戏)"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:text="4.角色提交接口"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/creatRoleBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/juns_fw_btn_bg_gray"
+                        android:text="创建角色"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/submitDataBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/juns_fw_btn_bg_gray"
+                        android:text="进入游戏"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/upgradeDataBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/juns_fw_btn_bg_gray"
+                        android:text="角色升级"
+                        android:textColor="#ffffff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/updateDataBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/juns_fw_btn_bg_gray"
+                        android:text="角色换名"
+                        android:textColor="#ffffff" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical"
+                    android:text="5.其他"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/getConfigBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/juns_fw_btn_bg_gray"
+                    android:text="获取SDK参数信息"
+                    android:textColor="#ffffff" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="#994FA8FB">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/retTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="SDK操作结果！"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

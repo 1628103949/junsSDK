@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="FF01AAFD">#01AAFD</color>
+    <color name="FF222222">#FF222222</color>
+    <color name="FF24252E">#FF24252E</color>
+    <color name="FF2E2727">#FF2E2727</color>
+    <color name="FF8E8E93">#FF8E8E93</color>
+    <color name="FFE1E1E1">#FFE1E1E1</color>
+    <color name="FFEFEFEF">#EFEFEF</color>
+    <color name="FFFF6400">#FFFF6400</color>
+    <color name="FFFF8800">#FFFF8800</color>
+    <color name="FFFFB800">#FFFFB800</color>
+    <color name="alpha_33FFFFFF">#33FFFFFF</color>
+    <color name="alpha_70000000">#70000000</color>
+    <color name="alpha_80FF7700">#80FF7700</color>
+    <color name="alpha_80FFFFFF">#80FFFFFF</color>
+    <color name="alpha_E6141414">#E6141414</color>
+    <color name="white">#FFF</color>
+    <style name="DialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

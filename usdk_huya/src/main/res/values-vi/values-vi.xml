@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="download_cancel">Huỷ tải về</string>
+    <string name="download_compeleted">Đã hoàn thành</string>
+    <string name="download_failed">Đã tải thất bại</string>
+    <string name="download_file_not_exist">File không tồn tại</string>
+    <string name="download_md5_failed">Xác nhận thất bại</string>
+    <string name="download_pause">Tạm ngừng</string>
+    <string name="download_waiting">Đang chờ tải về</string>
+</resources>

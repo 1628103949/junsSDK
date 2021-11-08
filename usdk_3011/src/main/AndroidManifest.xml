@@ -1,0 +1,138 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.js.hdxbdzz.xt">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 悬浮窗权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="ndroid.permission.ACTION_MANAGE_OVERLAY_PERMISSION" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--头像图片上传权限-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 8.0安装未知来源权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!--应用上层显示权限-->
+    <uses-permission android:name="android.permissionmission.SYSTEM_OVERLAY_WINDOW" />
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:label="JunS Demo"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- JunS sdk components start -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="${applicationId}.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <!-- JunS sdk components end -->
+        <activity
+            android:name="com.xiantu.paysdk.activity.TransparencyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/XtMyTransparent" />
+
+        <activity
+            android:name="com.xiantu.paysdk.activity.MenuActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:theme="@style/XtActivityMenu" />
+        <activity android:name="com.xiantu.paysdk.activity.AccountActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.MessageActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.CustomerActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.GameActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.WalletActivity" />
+
+        <activity android:name="com.xiantu.paysdk.activity.ChangePwdActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.BindPhoneActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.TrumpetManageActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.VerifiedActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.TicketListActivity" />
+        <activity
+            android:name="com.xiantu.paysdk.activity.XTChoosePayActivityRecharge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiantu.paysdk.activity.XTChoosePayActivityOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiantu.paysdk.activity.XTChooseVoucherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiantu.paysdk.activity.XTPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xiantu.paysdk.activity.XTOrderPayActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.xiantu.paysdk.activity.SetLevel2PwdActivity" />
+
+        <activity android:name="com.xiantu.paysdk.activity.MyOrderListdActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.NoticeActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.NoticeDetActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.ActiveActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.ActiveDetActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.FeedBackActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.FeedBackDetActivity" />
+
+
+        <activity android:name="com.xiantu.paysdk.activity.QuestionInfoListActivity" />
+
+        <activity android:name="com.xiantu.paysdk.activity.GiftActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.MovableActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.AdvisoryActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.RecommendActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.GiftInfoActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.MovableInfoActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.AdvisoryInfoActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.RecommendInfoActivity" />
+        <activity
+            android:name="com.xiantu.paysdk.activity.AuthenticationActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.xiantu.paysdk.activity.SmallAddActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.SmallUpdateActivity" />
+
+        <activity android:name="com.xiantu.paysdk.activity.WelfareDescriptionActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.MyGiftListActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.BalanceRechargeActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.WelfareActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.DiscountActivity" />
+        <activity android:name="com.xiantu.paysdk.activity.TransactionActivity" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <meta-data
+            android:name="sdk_version"
+            android:value="2.0.2" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepath" />
+        </provider>
+    </application>
+</manifest>

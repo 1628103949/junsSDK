@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/xt_ll_game_info"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/xt_iv_icon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginTop="16dip"
+            android:layout_marginRight="16dip"
+            android:layout_marginBottom="16dip"
+            />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/xt_tv_game_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22.2G"
+            android:textColor="@color/xt_color_zi_black2"
+            android:textSize="9sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/xt_tv_game_name"
+        android:ellipsize="end"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:layout_marginTop="18dip"
+        android:layout_alignBaseline="@+id/xt_ll_game_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/xt_ll_game_info"
+        android:textColor="@color/xt_color_zi_black"
+        android:textSize="13sp"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/xt_tv_game_synopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xt_tv_game_name"
+        android:layout_marginRight="68dip"
+        android:layout_marginTop="6dip"
+        android:layout_toRightOf="@+id/xt_ll_game_info"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/xt_color_zi_black2"
+        android:textSize="10sp"
+        />
+
+
+    <TextView
+        android:id="@+id/xt_tv_to_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/xt_tv_game_name"
+        android:background="@drawable/xt_btn_rectangle_orange_shape"
+        android:text="详情"
+        android:textColor="@color/xt_color_white"
+        android:layout_marginRight="16dip"
+        android:textSize="10sp"
+        android:paddingTop="3dip"
+        android:paddingBottom="3dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"/>
+
+</RelativeLayout>

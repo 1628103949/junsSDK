@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xt_order_ll_voucher"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip">
+
+        <ImageView
+            android:id="@+id/xt_order_iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/xt_order_tv_pay_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="17dip"
+            android:layout_toRightOf="@+id/xt_order_iv_icon"
+            android:textColor="@color/xt_color_zi_black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/xt_order_tv_voucher_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dip"
+            android:layout_toLeftOf="@+id/xt_order_iv_voucher_check"
+            android:drawablePadding="13dip"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="可用抵用券数量"
+            android:textColor="@color/xt_color_zi_71"
+            android:textSize="11sp" />
+
+
+        <ImageView
+            android:id="@+id/xt_order_iv_voucher_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/xt_customer_for"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/xt_order_iv_voucher_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:enabled="false"
+            android:focusableInTouchMode="false"
+            android:button="@drawable/xt_btn_order_choose_paytype_selector" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:background="@color/xt_color_line_e1" />
+</LinearLayout>

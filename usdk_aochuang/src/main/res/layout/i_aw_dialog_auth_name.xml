@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/i_aw_bg_shape_ffffff_r20"
+            android:paddingBottom="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/i_aw_bg_shape_eef2f6_r20"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/i_aw_auth_name"
+                    android:textColor="#5d5d5d"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="51dp"
+                    android:layout_height="51dp"
+                    android:layout_alignParentEnd="true"
+                    android:padding="17dp"
+                    android:src="@drawable/i_aw_icon_close" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="13dp"
+                android:textColor="#464747"
+                android:textSize="12sp"
+                android:text="@string/i_aw_hint_auth_name"
+                android:layout_marginEnd="21dp" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/i_aw_et_bg"
+                android:hint="@string/i_aw_hint_input_name"
+                android:inputType="text"
+                android:singleLine="true"
+                android:imeOptions="flagNoExtractUi"
+                android:paddingStart="23dp"
+                android:textColorHint="#9eb0c7"
+                android:textColor="@color/i_aw_text_default_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_idcard"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="21dp"
+                android:background="@drawable/i_aw_et_bg"
+                android:hint="@string/i_aw_hint_input_id_no"
+                android:maxLength="18"
+                android:singleLine="true"
+                android:paddingStart="23dp"
+                android:paddingEnd="0dp"
+                android:textColorHint="#9eb0c7"
+                android:imeOptions="flagNoExtractUi"
+                android:textColor="@color/i_aw_text_default_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_certification"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="21dp"
+                android:background="@drawable/i_aw_bg_shape_theme_r20"
+                android:gravity="center"
+                android:text="@string/i_aw_promptly_auth"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

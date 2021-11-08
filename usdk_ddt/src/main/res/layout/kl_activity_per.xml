@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/klfont_black"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/kl_splash_iv"
+        android:background="@color/klfont_white"
+        android:src="@mipmap/kl_splash"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

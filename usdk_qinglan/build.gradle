@@ -1,0 +1,179 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.androidBuildToolsVersion
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        minSdkVersion rootProject.ext.androidMinSdkVersion
+        targetSdkVersion rootProject.ext.androidTargetSdkVersion
+
+        applicationId "com.bswhlx5.bytedance.gamecenter"
+        versionCode 1
+        versionName '1.0.0'
+
+        multiDexEnabled true
+        manifestPlaceholders.put("APPLOG_SCHEME", "union_game")
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi-v7a' //, 'x86', 'armeabi', 'x86_64', 'arm64-v8a'
+        }
+    }
+
+    // 配置结构
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            assets.srcDirs = ['src/main/assets']
+            res.srcDirs = ['src/main/res']
+            java.srcDirs = ['src/main/java']
+            resources.srcDirs = ['src/main/resources']
+            aidl.srcDirs = ['src/main/aidl']
+            renderscript.srcDirs = ['src/maom']
+            jniLibs.srcDir 'src/main/jniLibs'
+        }
+    }
+
+    //这个是解决lint报错的代码
+    lintOptions {
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        checkReleaseBuilds false//方法过时警告的开关
+        disable 'InvalidPackage' //Some libraries have issues with this.
+        disable 'OldTargetApi' //Lint gives this warning but SDK 20 would be Android L Beta.
+        disable 'IconDensities' //For testing purpose. This is safe to remove.
+        disable 'IconMissingDensityFolder' //For testing purpose. This is safe to remove.
+    }
+
+    aaptOptions {
+        noCompress = ['.unity3d', '.ress', '.resource', '.obb']
+    }
+    dexOptions{
+        incremental true
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        pickFirst 'okhttp3/internal/publicsuffix/publicsuffixes.gz'
+        pickFirst '**/libc++_shared.so'
+        pickFirst '**/libweibosdkcore.so'
+    }
+
+    /**
+     * 签名设置
+     */
+    signingConfigs {
+        release {
+            v2SigningEnabled false
+            File propFile = file('../config/build-system/signing.properties');
+            if (propFile.exists()) {
+                def Properties props = new Properties()
+                props.load(new FileInputStream(propFile))
+                if (props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') &&
+                        props.containsKey('KEY_ALIAS') &&
+                        props.containsKey('KEY_PASSWORD')) {
+                    storeFile file(props['STORE_FILE'])
+                    storePassword props['STORE_PASSWORD']
+                    keyAlias props['KEY_ALIAS']
+                    keyPassword props['KEY_PASSWORD']
+                }
+            }
+        }
+
+        debug {
+            v2SigningEnabled false
+            File propFile = file('../config/build-system/signing.properties');
+            if (propFile.exists()) {
+                def Properties props = new Properties()
+                props.load(new FileInputStream(propFile))
+                if (props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') &&
+                        props.containsKey('KEY_ALIAS') &&
+                        props.containsKey('KEY_PASSWORD')) {
+                    storeFile file(props['STORE_FILE'])
+                    storePassword props['STORE_PASSWORD']
+                    keyAlias props['KEY_ALIAS']
+                    keyPassword props['KEY_PASSWORD']
+                }
+            }
+        }
+    }
+
+    /**
+     * 构建配置
+     */
+    buildTypes {
+
+        release {
+            //执行proguard混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            //签名
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            //不执行proguard
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            //签名
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+    //新增-um
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+//    implementation 'com.github.dfqin:grantor:2.5'
+
+    implementation 'com.android.support:support-compat:28.0.0'
+    implementation 'com.android.support:support-core-utils:28.0.0'
+    implementation 'com.android.support:support-core-ui:28.0.0'
+
+    //新增
+//    implementation  'com.umeng.umsdk:game:8.0.0+G'
+//    implementation  'com.umeng.umsdk:common:2.0.0'
+//    implementation  'com.umeng.umsdk:utdid:1.1.5.3'
+
+    implementation 'com.qw:soulpermission:1.2.2'
+    implementation 'com.android.support:multidex:1.0.3'  //需要支持multidex
+//    configurations {
+//       //这句话在依赖中全局排除了“com.android.support”为group name的远程依赖。避免因为  com.android.support名下的包导致的类冲突
+//         compile.exclude group: 'com.android.support'
+//    }
+
+    implementation "com.bytedance.ttgame:rocket_sdk_TobRelease:1.3.5.0"
+    // 以插件形式接入  sdk内部功能会自动更新，无需游戏重新接入（推荐）
+    //implementation "com.bytedance.ttgame:channel_union_plugin_TobRelease:1.3.5.0"
+    //implementation(name: "channel_union_plugin_TobRelease-1.3.5.0", ext: 'aar')
+    implementation project(path: ':sdk_core_QingLan')
+    implementation fileTree(dir: 'aar', include: ['*.aar', '*.jar'], exclude: [])
+
+}
+
+repositories {
+
+    flatDir {
+        dir "../${project.name}/aar"
+        dirs "libs"
+    }
+
+}

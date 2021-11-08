@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:paddingLeft="30dp"
+              android:paddingRight="30dp"
+              android:paddingTop="12dp"
+              android:paddingBottom="20dp"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:paddingLeft="12dp"
+        android:id="@+id/bsgamesdk_registe_areaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/bsgamesdk_bg_input_normal">
+
+        <TextView
+            android:id="@+id/bsgamesdk_tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#FF333333"
+            android:textSize="12sp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/bsgamesdk_iv_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="8.0dp"
+            android:src="@drawable/bsgamesdk_arrow_down"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bsgamesdk_register_usernameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/bsgamesdk_edit_username_reg"
+            style="?attr/bsgamesdk_basic_editText_style"
+            android:completionHint="@string/bsgamesdk_tel_number_please"
+            android:hint="@string/bsgamesdk_tel_number_please"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:textSize="12sp"
+            android:textColor="@color/bsgamesdk_text_99A2AA"
+            android:maxLength="32">
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/bsgamesdk_register_usernameDel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dp"
+            android:background="@null"
+            android:contentDescription="@string/bsgamesdk_delbtn"
+            android:src="@drawable/bsgamesdk_pic_del"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bsgamesdk_reg_tip"
+        android:textColor="#FFAAAAAA"
+        android:textSize="12sp"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/bsgamesdk_id_reg_btn_next"
+        style="?attr/bsgamesdk_confirm_button_style"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="@string/bsgamesdk_get_captcha"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/bsgamesdk_id_other_reg"
+            style="?attr/bsgamesdk_text_image_style"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:clickable="true"
+            android:text="@string/bsgamesdk_other_reg"/>
+    </LinearLayout>
+    <com.bsgamesdk.android.widget.CheckBoxAgreeLayout
+        android:layout_marginTop="12dp"
+        android:id="@+id/bsgamesdk_id_checkboxAgreeLayout_register_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

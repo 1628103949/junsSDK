@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mpg_btn_round_rect_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="24dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/tvRealNameSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mpg_auth_success"
+        android:textColor="#1C1C1C"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvRealNameFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/mpg_already_auth"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvRealNameConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/mpg_selector_btn_big_round_rect_orange"
+        android:gravity="center"
+        android:text="@string/mpg_confirm"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+</LinearLayout>

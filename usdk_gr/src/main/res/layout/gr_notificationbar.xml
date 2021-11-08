@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/gr_img_notify_gameicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gr_msg_notice" />
+
+    <TextView
+        android:id="@+id/gr_tv_notify_apkname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/gr_img_notify_gameicon"
+        android:text="241e6....apk"
+        android:textColor="#ff000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/gr_tv_notify_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="00.00kb/s"
+        android:textColor="#55000000"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/gr_tv_notify_apklength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/gr_tv_notify_speed"
+        android:text="未知大小-"
+        android:textColor="#55000000"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/gr_tv_notify_percentum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gr_tv_notify_speed"
+        android:layout_marginRight="10dp"
+        android:gravity="bottom"
+        android:text="100%"
+        android:textSize="10sp" />
+
+    <ProgressBar
+        android:id="@+id/gr_pb_notify"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gr_tv_notify_percentum"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/gr_img_notify_gameicon"
+        android:max="100"
+        android:progress="0" />
+
+</RelativeLayout>

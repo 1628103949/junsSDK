@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xt_color_white"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/xt_order_tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dip"
+                android:layout_marginTop="12dip"
+                android:drawableLeft="@drawable/xt_btn_back"
+                android:drawablePadding="8dip"
+                android:text="订单确认"
+                android:textColor="@color/xt_color_zi_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/xt_order_tv_order_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="26dip"
+                android:text="订单号："
+                android:textColor="@color/xt_color_zi_hui"
+                android:textSize="11sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="9dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/xt_order_tv_commodity_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="11"
+                    android:singleLine="true"
+                    android:text="商品名称"
+                    android:textColor="@color/xt_color_zi_black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/xt_order_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="￥00.00"
+                    android:textColor="@color/xt_color_theme"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/xt_order_tv_game_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="8dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="游戏名称"
+                android:textColor="@color/xt_color_zi_hui"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="8dip"
+                android:background="@color/xt_color_line_e1" />
+
+            <com.xiantu.paysdk.view.NoSlideListView
+                android:id="@+id/xt_order_list_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="55dip"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:listSelector="@color/xt_color_white"/>
+
+
+
+            <TextView
+                android:id="@+id/xt_order_tv_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="56dip"
+                android:layout_marginRight="55dip"
+                android:layout_marginTop="71dp"
+                android:background="@drawable/xt_btn_round_orange_shape"
+                android:gravity="center"
+                android:paddingBottom="13dip"
+                android:paddingTop="13dip"
+                android:text="￥0.00去支付"
+                android:textColor="@color/xt_color_white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+
+</LinearLayout>

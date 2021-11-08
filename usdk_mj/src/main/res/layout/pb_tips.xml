@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="16.0dip"
+    android:layout_marginRight="16.0dip"
+    android:background="@drawable/shape_bg_white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="25.0dip"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="#000000"
+        android:textSize="15.0sp" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="内容"
+        android:textColor="#000000"
+        android:textSize="14.0sp" />
+
+    <Button
+        android:id="@+id/btn_action"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="12.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:background="@drawable/shape_btn_next"
+        android:text="action"
+        android:textColor="@android:color/white"
+        android:textSize="16.0sp" />
+</LinearLayout>

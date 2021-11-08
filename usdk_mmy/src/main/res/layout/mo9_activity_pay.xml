@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mo9_lay_pay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mo9_bg_white_corners_out"
+    android:orientation="vertical"
+    >   
+	<WebView
+	    android:id="@+id/mo9_relayout_web"
+	    android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dip"
+        android:background="@drawable/mo9_bg_white_corners_out"
+        android:visibility="visible"/>
+</LinearLayout>

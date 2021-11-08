@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dldl.quwan.h5">
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    <application
+        android:allowBackup="true"
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:icon="@drawable/dldl"
+        android:label="斗罗大陆"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.juns.sdk.h5.MainActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- JunS sdk components start -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <!-- JunS sdk components end -->
+    </application>
+</manifest>

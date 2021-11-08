@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dip"
+        android:background="@drawable/xt_small_default_tips">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="15dip"
+            android:text="下次登陆自动选择此账号进入游戏，如需切换默认小号，请至悬浮球内小号管理切换"
+            android:textColor="@color/xt_color_white"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/xt_iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="5dip"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/xt_tips_close" />
+
+
+</RelativeLayout>

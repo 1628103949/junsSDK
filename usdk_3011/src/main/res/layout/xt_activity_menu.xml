@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xt_transparent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="330dip"
+        android:layout_height="match_parent"
+        android:background="@color/xt_color_white"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/xt_rg_menu"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--账户-->
+            <com.xiantu.paysdk.view.MCenterRadioButton
+                android:id="@+id/xt_rb_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:button="@null"
+                android:checked="true"
+                android:drawablePadding="-27dip"
+                android:drawableTop="@drawable/xt_btn_menu_account_selector"
+                android:gravity="center"
+                android:text="账户"
+                android:textColor="@drawable/xt_btn_menu_text_selector"
+                android:textSize="12sp" />
+
+
+            <!--游戏-->
+            <com.xiantu.paysdk.view.MCenterRadioButton
+                android:id="@+id/xt_rb_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:button="@null"
+                android:drawablePadding="-27dip"
+                android:drawableTop="@drawable/xt_btn_menu_game_selector"
+                android:gravity="center"
+                android:text="游戏"
+                android:textColor="@drawable/xt_btn_menu_text_selector"
+                android:textSize="12sp" />
+
+
+            <!--福利-->
+            <com.xiantu.paysdk.view.MCenterRadioButton
+                android:id="@+id/xt_rb_welfare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:button="@null"
+                android:drawablePadding="-27dip"
+                android:drawableTop="@drawable/xt_btn_menu_welfare_selector"
+                android:gravity="center"
+                android:text="福利"
+                android:textColor="@drawable/xt_btn_menu_text_selector"
+                android:textSize="12sp" />
+            <!--消息-->
+            <com.xiantu.paysdk.view.MCenterRadioButton
+                android:id="@+id/xt_rb_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:button="@null"
+                android:drawablePadding="-27dip"
+                android:drawableTop="@drawable/xt_btn_menu_message_selector"
+                android:gravity="center"
+                android:text="消息"
+                android:textColor="@drawable/xt_btn_menu_text_selector"
+                android:textSize="12sp" />
+
+
+            <!--客服-->
+            <com.xiantu.paysdk.view.MCenterRadioButton
+                android:id="@+id/xt_rb_waiter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:button="@null"
+                android:drawablePadding="-27dip"
+                android:drawableTop="@drawable/xt_btn_menu_waiter_selector"
+                android:gravity="center"
+                android:text="客服"
+                android:textColor="@drawable/xt_btn_menu_text_selector"
+                android:textSize="12sp" />
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="@color/xt_color_line_e1" />
+
+        <FrameLayout
+            android:id="@+id/xt_fl_activity_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_close_menu"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>

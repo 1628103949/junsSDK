@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_login_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_close"
+        android:paddingBottom="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="15dip"
+        android:text="sy232655"
+        android:textColor="@color/xt_color_c1"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="14dip"
+        android:layout_marginRight="-14dip"
+        android:src="@drawable/xt_login_close" />
+</RelativeLayout>

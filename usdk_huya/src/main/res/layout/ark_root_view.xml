@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/ark_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/ark_background_title_bar"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/ark_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center_vertical"
+            android:contentDescription="@string/description_none"
+            android:src="@drawable/state_button_back_ark"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ark_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="@string/description_none"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ark_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:gravity="center"
+            android:shadowColor="#ff156290"
+            android:shadowDy="-1"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/ark_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center_vertical"
+            android:contentDescription="@string/description_none"
+            android:src="@drawable/state_button_search"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/ark_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/state_button_ark"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ark_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

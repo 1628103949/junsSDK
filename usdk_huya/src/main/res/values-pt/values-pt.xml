@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="download_cancel">Download cancelado</string>
+    <string name="download_compeleted">Concluído</string>
+    <string name="download_failed">Falha no download</string>
+    <string name="download_file_not_exist">Arquivo não existe</string>
+    <string name="download_md5_failed">Falha na verificação</string>
+    <string name="download_pause">Suspenso</string>
+    <string name="download_waiting">A fazer download ...</string>
+</resources>

@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="320dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/pb_gray_frame_login"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="5dip">
+
+            <TextView
+                android:id="@+id/pb_register_account_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/pb_login_register_return"
+                android:drawablePadding="5dip"
+                android:text="返回登陆"
+                android:textColor="#6355DC"
+                android:textSize="@dimen/pb_login_register_text_header_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开启app存储权限,一键截图账号和密码到相册哦！！！"
+            android:gravity="center"
+            android:textColor="#4eaff7"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <cn.mj.sdk.ui.CustomLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pb_login_register_frame_height"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/pb_login_register_gray"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="5dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="账号:"
+                    android:textColor="#000"
+                    android:textSize="@dimen/pb_login_register_text_label_size" />
+
+                <EditText
+                    android:id="@+id/pb_register_account_username"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:background="#fff"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+                    android:hint="5-20位数字+英文任意组合"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="#ff002a"
+                    android:textColorHint="#a9aba9"
+                    android:textCursorDrawable="@drawable/pb_login_register_cursor"
+                    android:textSize="@dimen/pb_login_register_text_hint_size"
+                    android:imeOptions="flagNoExtractUi" />
+
+            </cn.mj.sdk.ui.CustomLinearLayout>
+
+            <cn.mj.sdk.ui.CustomRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pb_login_register_frame_height"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/pb_login_register_gray"
+                android:paddingRight="5dip">
+
+                <TextView
+                    android:id="@+id/pb_login_account_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12.5dip"
+                    android:text="密码:"
+                    android:textColor="#000"
+                    android:textSize="@dimen/pb_login_register_text_label_size" />
+
+                <EditText
+                    android:id="@+id/pb_register_account_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/pb_login_account_name"
+                    android:background="#fff"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="6-20位的数字或字母"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="#ff002a"
+                    android:textColorHint="#a9aba9"
+                    android:textCursorDrawable="@drawable/pb_login_register_cursor"
+                    android:textSize="@dimen/pb_login_register_text_hint_size"
+                    android:imeOptions="flagNoExtractUi" />
+            </cn.mj.sdk.ui.CustomRelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/pb_register_account_register"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/pb_login_register_frame_height"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/pb_login_register_gradient_btn"
+                android:text="进入游戏"
+                android:textColor="#fff"
+                android:textSize="@dimen/pb_login_register_text_btn_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

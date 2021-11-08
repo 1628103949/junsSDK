@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="30dp"
+    android:background="@drawable/yy_shape_gray_border">
+
+    <ListView
+        android:id="@+id/account_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:overScrollMode="never"
+        android:dividerHeight="1px"
+        android:divider="@color/comm_split_bg"/>
+
+</LinearLayout>

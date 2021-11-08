@@ -1,0 +1,17 @@
+{
+  "app": {
+    "app_id": "196381",
+    "game_type": 0,
+    "is_private": true,
+    "plugin_sdk": true,
+    "screen_orientation": "sensorLandscape",
+    "main_activity": "com.juns.sdk.demo.DemoActivity",
+    "health_service": true
+  },
+  "channel": {
+    "aweme_platform_id": "839",
+    "toutiao_platform_id": "838",
+    "aweme_platform_key": "awwnuezl6jrldgkt",
+    "toutiao_platform_key": "tt9536fa543a82ab"
+  }
+}

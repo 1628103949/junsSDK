@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/xt_color_white">
+
+    <RelativeLayout
+        android:id="@+id/xt_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/xt_small_select_bg_select">
+
+        <TextView
+            android:id="@+id/xt_tv_small_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="17dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/xt_color_theme"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/xt_iv_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="9dip"
+        android:src="@drawable/xt_wallet_pay_type_checke" />
+</RelativeLayout>

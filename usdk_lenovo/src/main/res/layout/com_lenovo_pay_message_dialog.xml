@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="332dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/com_lenovo_corner_white_10_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingEnd="30dp"
+    android:paddingStart="30dp" >
+
+    <ImageView
+        android:id="@+id/com_lenovo_iv_dialog_state"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/com_lenovo_ic_qe_pay_error" />
+
+    <TextView
+        android:id="@+id/com_lenovo_tv_dialog_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/com_lenovo_lsf_pay_charge_error"
+        android:textColor="@color/com_lenovo_pay_center_text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/com_lenovo_tv_dialog_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/com_lenovo_corner_blue_33_bg"
+        android:gravity="center"
+        android:text="@string/com_lenovo_lsf_pay_dlg_ok_text"
+        android:textColor="@color/com_lenovo_pay_center_white"
+        android:textSize="16sp" />
+
+</LinearLayout>

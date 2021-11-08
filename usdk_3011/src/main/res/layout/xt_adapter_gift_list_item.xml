@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/xt_color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/xt_gift_icon"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_margin="15dip"
+            />
+
+        <TextView
+            android:id="@+id/xt_gift_name"
+            android:layout_width="105dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dip"
+            android:layout_toRightOf="@+id/xt_gift_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/xt_color_theme"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/xt_gift_content"
+            android:layout_width="105dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xt_gift_name"
+            android:layout_marginTop="8dip"
+            android:layout_toRightOf="@+id/xt_gift_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/xt_color_zi_6a"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/xt_gift_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/xt_btn_rectangle_orange_ring_shape"
+            android:paddingBottom="4dip"
+            android:paddingLeft="9dip"
+            android:paddingRight="9dip"
+            android:paddingTop="4dip"
+            android:text="领取礼包"
+            android:textColor="@color/xt_color_theme"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/xt_gift_copy"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/xt_btn_rectangle_orange_ring_shape"
+            android:paddingBottom="4dip"
+            android:paddingLeft="9dip"
+            android:paddingRight="9dip"
+            android:paddingTop="4dip"
+            android:text="复制礼包"
+            android:textColor="@color/xt_color_theme"
+            android:textSize="11sp" />
+        <TextView
+            android:id="@+id/xt_gift_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/xt_gift_receive"
+            android:layout_below="@+id/xt_gift_receive"
+            android:layout_marginTop="3dip"
+            android:text="剩余80%"
+            android:textColor="@color/xt_color_zi_7b"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:background="@color/xt_color_line_e1" />
+</LinearLayout>

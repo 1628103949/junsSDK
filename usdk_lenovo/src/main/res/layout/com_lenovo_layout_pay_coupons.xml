@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="332dp"
+    android:layout_height="310dp"
+    android:background="@drawable/com_lenovo_corner_white_10_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        >
+        <ImageView
+            android:id="@+id/com_lenovo_iv_coupons_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="16dp"
+            android:src="@drawable/com_lenovo_pay_center_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/com_lenovo_pay_select_coupon"
+            android:textColor="@color/com_lenovo_pay_center_title"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="17dp"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/com_lenovo_lv_coupons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:divider="@null"
+                android:scrollbarThumbVertical="@drawable/com_lenovo_list_scroll_bar"
+                android:dividerHeight="10dp"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/com_lenovo_tv_no_use_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/com_lenovo_pay_no_use_coupon"
+                android:textColor="@color/com_lenovo_pay_center_blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="18dp"
+                android:gravity="center"
+                android:text="@string/com_lenovo_pay_coupon_warning"
+                android:textColor="@color/com_lenovo_pay_center_text_gray"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/com_lenovo_ll_no_coupons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/com_lenovo_pay_center_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/com_lenovo_icon_no_coupons"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:textColor="@color/com_lenovo_pay_center_text_gray"
+                android:textSize="16sp"
+                android:text="@string/com_lenovo_pay_no_coupons"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

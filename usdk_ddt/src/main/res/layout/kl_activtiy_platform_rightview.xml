@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+
+    android:paddingStart="10.5dp"
+    android:paddingEnd="10.5dp">
+
+<!--    <View-->
+<!--        android:layout_width="2dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"/>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/share_ll"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginStart="7dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <ImageView-->
+<!--            android:background="@drawable/klcircular_bg"-->
+<!--            android:padding="8dp"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:src="@drawable/kl_icon_share"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="分享"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:textColor="@color/color_ffad42" />-->
+<!--    </LinearLayout>-->
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/return_ll"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/klcircular_bg"
+            android:padding="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/kl_icon_return"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回游戏"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/other_skin" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/refresh_ll"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/klcircular_bg"
+            android:padding="3dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/kl_icon_refresh"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刷新游戏"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/other_skin" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_space"
+        android:visibility="gone"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/exit_ll"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/klcircular_bg"
+            android:padding="9dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/kl_icon_exit"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出游戏"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/other_skin" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/return_tv"-->
+    <!--        android:layout_marginTop="113dp"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:drawableTop="@drawable/klcircluar_bg_list"-->
+    <!--        android:text="返回游戏"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:textColor="@color/color_ffad42" />-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/refresh_tv"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:drawableTop="@drawable/klcircluar_bg_list"-->
+    <!--        android:text="刷新游戏"-->
+    <!--        android:textColor="@color/color_ffad42"-->
+    <!--        android:layout_weight="1" />-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/exit_tv"-->
+    <!--        android:layout_marginBottom="113dp"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:drawableTop="@drawable/klcircluar_bg_list"-->
+    <!--        android:text="退出游戏"-->
+    <!--        android:textColor="@color/color_ffad42"/>-->
+
+</LinearLayout>

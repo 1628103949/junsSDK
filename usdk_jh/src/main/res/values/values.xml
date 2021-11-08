@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yiyuan_sdk_50B9C0_circle">#FFC936</color>
+    <color name="yiyuan_sdk_font_black">#191B1B</color>
+    <color name="yxf_sdk_bg_stroke">#49494C</color>
+    <color name="yxf_sdk_bg_tran">#c0000000</color>
+    <color name="yxf_sdk_black">#000000</color>
+    <color name="yxf_sdk_black_gray">#282828</color>
+    <color name="yxf_sdk_blue">#10C5DA</color>
+    <color name="yxf_sdk_bt_font">@color/yxf_sdk_black</color>
+    <color name="yxf_sdk_bt_font_half_trans">#827A69</color>
+    <color name="yxf_sdk_bt_theme_half_trans">#FFE49A</color>
+    <color name="yxf_sdk_bt_yel">#FFC936</color>
+    <color name="yxf_sdk_gray">#9E9E9E</color>
+    <color name="yxf_sdk_gray_edit">#E8E8E8</color>
+    <color name="yxf_sdk_gray_float_order">#141C20</color>
+    <color name="yxf_sdk_gray_result">#8A8A8F</color>
+    <color name="yxf_sdk_gray_title">#35280B</color>
+    <color name="yxf_sdk_gray_title_trasn">@color/yxf_sdk_gray_title</color>
+    <color name="yxf_sdk_gray_voice">#E0E0E0</color>
+    <color name="yxf_sdk_green">#45BC0E</color>
+    <color name="yxf_sdk_green_result">#26CC14</color>
+    <color name="yxf_sdk_input_bg">#F5F5F5</color>
+    <color name="yxf_sdk_nav_bar">#191B1B</color>
+    <color name="yxf_sdk_nav_bar_select">#2D1F1F</color>
+    <color name="yxf_sdk_orange">#FF7417</color>
+    <color name="yxf_sdk_red">#E72224</color>
+    <color name="yxf_sdk_white">#FFFFFF</color>
+    <string name="test_appkey" translatable="false">43f9370bcfe40ee730ee1dc38943e471</string>
+    <string name="test_appname" translatable="false">"游戏fan"</string>
+    <string name="test_gameid" translatable="false">5</string>
+    <style name="SDKAnimation">
+        <item name="android:windowEnterAnimation">@anim/a_sdk_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/a_sdk_popup_out</item>
+    </style>
+    <style name="Theme.SDKTransparent" parent="@android:style/Theme.Dialog">
+        <!-- 设置允许窗口半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 引用Android系统的动画半透明样式 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <!-- 设定窗口背景颜色 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 隐藏窗口标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowCloseOnTouchOutside">@null</item>
+        <!--Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+<!--        <item name="android:windowAnimationStyle">@style/Theme.SDKInOut</item>-->
+    </style>
+    <style name="YXFcustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 隐藏窗口标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="popupWindowToTop">
+        <item name="android:windowEnterAnimation">@anim/a_sdk_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/a_sdk_popup_to_top</item>
+    </style>
+</resources>

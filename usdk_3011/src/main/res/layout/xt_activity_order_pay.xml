@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xt_ll_heand_order_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xt_color_line_f9"	
+    android:orientation="vertical">
+    <!--顶部标题栏-->
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/xt_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dip"
+            android:src="@drawable/xt_btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="订单确认"
+            android:textColor="@color/xt_color_login_select"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!--嵌套一层做水印-->
+    <RelativeLayout
+        android:id="@+id/xt_layout_watermark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/xt_color_line_f9">
+        <!--账户余额展示-->
+        <LinearLayout
+            android:id="@+id/xt_layout_over"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/xt_color_order_pay_over_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dip"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="16dip"
+                android:text="您当前的余额"
+                android:textColor="@color/xt_color_login_normal"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/xt_tv_over"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dip"
+                android:layout_marginTop="16dip"
+                android:text="0.00"
+                android:textColor="@color/xt_color_theme"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="16dip"
+                android:text="包含福利币"
+                android:textColor="@color/xt_color_login_normal"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/xt_tv_welfare_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dip"
+                android:layout_marginRight="12dip"
+                android:layout_marginTop="16dip"
+                android:text="0.00"
+                android:textColor="@color/xt_color_theme"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="361dp"
+            android:layout_alignBottom="@+id/xt_layout_bottom"
+            android:layout_below="@+id/xt_layout_over"
+            android:layout_marginBottom="52dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="6dip"
+                    android:background="@drawable/xt_order_pay_white_bg_shape"
+                    android:orientation="vertical">
+
+                    <!--订单号-->
+                    <TextView
+                        android:id="@+id/xt_tv_order_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="6dip"
+                        android:text="订单编号："
+                        android:textColor="@color/xt_color_login_normal"
+                        android:textSize="12sp" />
+
+                    <!--订单信息-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/xt_iv_game_icon"
+                            android:layout_width="62dip"
+                            android:layout_height="62dip"
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="10dip"
+                            />
+
+                        <TextView
+                            android:id="@+id/xt_tv_game_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:layout_marginTop="10dip"
+                            android:layout_toRightOf="@+id/xt_iv_game_icon"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/xt_color_login_select"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/xt_tv_props"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/xt_tv_game_name"
+                            android:layout_marginTop="10dip"
+                            android:layout_toRightOf="@+id/xt_iv_game_icon"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="购买道具:"
+                            android:textColor="@color/xt_color_login_normal"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/xt_tv_props_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/xt_tv_game_name"
+                            android:layout_marginTop="10dip"
+                            android:layout_toRightOf="@+id/xt_tv_props"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/xt_color_login_select"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/xt_tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/xt_iv_game_icon"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dip"
+                            android:text="￥0.00"
+                            android:textColor="@color/xt_color_login_select"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <!--代金券-->
+                    <RelativeLayout
+                        android:id="@+id/xt_layout_voucher_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/xt_tv_voucher"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginTop="10dip"
+                            android:text="代金券"
+                            android:textColor="@color/xt_color_login_select"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/xt_tv_voucher_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:drawablePadding="3dip"
+                            android:drawableRight="@drawable/xt_wallet_down"
+                            android:paddingBottom="10dip"
+                            android:paddingRight="10dip"
+                            android:paddingTop="10dip"
+                            android:text="共0张可用"
+                            android:textColor="@color/xt_color_forget_password"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <ListView
+                        android:id="@+id/xt_list_view_voucher"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/xt_tv_voucher"
+                        android:divider="@null"
+                        android:visibility="gone" />
+
+                    <!--优惠券-->
+                    <RelativeLayout
+                        android:id="@+id/xt_layout_coupon_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/xt_tv_coupon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginTop="10dip"
+                            android:text="优惠券"
+                            android:textColor="@color/xt_color_login_select"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/xt_tv_coupon_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:drawablePadding="3dip"
+                            android:drawableRight="@drawable/xt_wallet_down"
+                            android:paddingBottom="10dip"
+                            android:paddingRight="10dip"
+                            android:paddingTop="10dip"
+                            android:text="共0张可用"
+                            android:textColor="@color/xt_color_forget_password"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <ListView
+                        android:id="@+id/xt_list_view_coupon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/xt_tv_coupon"
+                        android:divider="@null"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <!--折扣支付-->
+                <RelativeLayout
+                    android:id="@+id/xt_layout_discount_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/xt_order_pay_white_bg_shape"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/xt_tv_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dip"
+                        android:layout_marginLeft="13dip"
+                        android:layout_marginTop="28dip"
+                        android:text="折扣"
+                        android:textColor="@color/xt_color_login_select"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/xt_tv_discount_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:drawablePadding="5dip"
+                        android:drawableRight="@drawable/xt_wallet_pay_type_normal"
+                        android:text="-￥0.00"
+                        android:textColor="@color/xt_color_forget_password"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <!--余额支付-->
+                <RelativeLayout
+                    android:id="@+id/xt_layout_over_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/xt_order_pay_white_bg_shape"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/xt_tv_over_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dip"
+                        android:layout_marginLeft="13dip"
+                        android:layout_marginTop="28dip"
+                        android:text="余额支付"
+                        android:textColor="@color/xt_color_login_select"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/xt_tv_over_pay_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:drawablePadding="5dip"
+                        android:drawableRight="@drawable/xt_wallet_pay_type_normal"
+                        android:text="-￥0.00"
+                        android:textColor="@color/xt_color_forget_password"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <!--底部悬浮支付模块-->
+        <RelativeLayout
+            android:id="@+id/xt_layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="17dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:background="@drawable/xt_order_pay_bg_shape">
+
+            <TextView
+                android:id="@+id/xt_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dip"
+                android:text="您还需支付"
+                android:textColor="@color/xt_color_order_pay_text"
+                android:textSize="10sp" />
+
+
+            <TextView
+                android:id="@+id/xt_tv_pay_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="10dip"
+                android:layout_toLeftOf="@+id/xt_tv_pay"
+                android:layout_toRightOf="@+id/xt_text_view"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="￥0.00"
+                android:textColor="@color/xt_color_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/xt_tv_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/xt_btn_round_orange_shape"
+                android:paddingBottom="15dip"
+                android:paddingLeft="35dip"
+                android:paddingRight="35dip"
+                android:paddingTop="15dip"
+                android:text="立即支付"
+                android:textColor="@color/xt_color_white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

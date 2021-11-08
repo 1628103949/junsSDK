@@ -1,0 +1,192 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.juns.sdk.demo">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:label="JunS Demo"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        </activity>
+        <!-- JunS sdk components start -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="${applicationId}.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <!-- JunS sdk components end -->
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name="com.ddtsdk.ui.activity.MHPerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="behind">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!--{your mainActvity Path}修改为你自己工程的MainActivity路径-->
+
+            <!--{you need permission}修改为你自己工程所需要的权限(只能选一条权限)，如果不需要，
+            请将{you need permission}修改为空字符-->
+
+            <!--注: sdk固定的权限有WRITE_EXTERNAL_STORAGE和READ_PHONE_STATE，如果已满足你的需求
+                 请将{you need permission}修改为空字符-->
+            <meta-data android:name="mainAct" android:value="com.juns.sdk.demo.DemoActivity" />
+            <meta-data android:name="thirdPer" android:value=""/>
+
+        </activity>
+
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLLoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLRegisterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLPaymentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLpayWebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLUserInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLForgetPasswordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+        <activity
+            android:name="com.ddtsdk.ui.activity.RealNameActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLVisitorRegisterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLBindPhoneActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLQuickLoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLTipActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLServiceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLPlatformPayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLPlatformPayWebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+
+        <activity
+            android:name="com.cmic.sso.wy.activity.LoginAuthActivity"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/kl_Transparent"/>
+
+        <activity
+            android:name="com.netease.nis.quicklogin.ui.YDQuickLoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+
+        <activity
+            android:name="com.netease.nis.quicklogin.ui.ProtocolDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+
+
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLFirstLoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLFirstQuickLoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+
+        <activity
+            android:name="com.ddtsdk.platform.PlatformWebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/kl_Transparent" />
+
+        <activity
+            android:name="com.ddtsdk.ui.activity.KLSmallGameActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/kl_Transparent"
+            android:screenOrientation="behind" />
+    </application>
+</manifest>

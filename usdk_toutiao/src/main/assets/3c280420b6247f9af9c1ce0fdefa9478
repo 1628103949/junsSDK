@@ -1,0 +1,39 @@
+<cg framecount="120" property="standardaxis:0">
+  <command frame="2" value="show:0|0" order="0" />
+  <command frame="20" value="hurt:0,10" order="1" />
+  <command frame="20" value="show:1|1" order="2" />
+  <command frame="37" value="hurt:0,10" order="3" />
+  <command frame="43" value="hurt:0,10" order="4" />
+  <command frame="53" value="hurt:0,10" order="5" />
+  <command frame="78" value="hurt:0,60" order="6" />
+  <command frame="114" value="nextbattle:" order="7" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/a_qjd_01/a_qjd_01.prefab" parent="-1" start="0" end="120" type="11">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:skill,0,3,1,0.3" order="1" />
+    <command frame="114" value="anim:guard,0,3,1,0.3" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/a_mtfy_hh/a_mtfy_hh.prefab" parent="-1" start="1" end="1200" type="14">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="18" value="anim:hit,0,3,1,0.3" order="1" />
+    <command frame="35" value="anim:hit,0,3,1,0.3" order="2" />
+    <command frame="42" value="anim:hit,0,3,1,0.3" order="3" />
+    <command frame="50" value="anim:hit,0,3,1,0.3" order="4" />
+    <command frame="77" value="anim:hit,0,3,1,0.3" order="5" />
+    <command frame="97" value="anim:guard,0,3,1,0.3" order="6" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/a_qjd_01/a_qjd_skill01.prefab" parent="-1" start="0" end="120" type="1">
+    <bezier frame="18" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:2" filename="Assets/GameResources/effect/Effect/JueSe_effect/a_qjd_01/a_qjd_skill03.prefab" parent="-1" start="1" end="94" type="1">
+    <bezier frame="18" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:2" filename="Assets/GameResources/effect/Effect/JueSe_effect/a_qjd_01/a_qjd_skill02.prefab" parent="-1" start="1" end="120" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,3.5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="CGCamera" parent="-1" start="1" end="120" type="0">
+    <bezier frame="1" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="2" fov="54" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="2.08,1.96,-6.77" scale="1,1,1" rot="0.1325403,-0.3612298,0.07366676,0.9200649" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <bezier frame="19" fov="54" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="2.49,1.15,-3.16" scale="1,1,1" rot="0.03514321,-0.8559063,0.08008811,0.5096816" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="20" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="3" />
+  </cgobject>
+</cg>

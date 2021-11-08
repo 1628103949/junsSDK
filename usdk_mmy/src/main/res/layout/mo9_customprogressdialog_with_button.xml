@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/lay_dialog_view"
+  android:layout_width="@dimen/mo9_progress_dialog_with_button_width"
+  android:layout_height="@dimen/mo9_progress_dialog_with_button_height"
+  android:background="@drawable/mo9_bg_loading"
+  android:padding="15dip"
+  android:gravity="center_vertical"
+  android:orientation="vertical"
+  >
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <ImageView
+        android:id="@+id/loadingImageView"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:background="@anim/mo9_progress_round"
+       	/>
+    <TextView
+        android:id="@+id/id_tv_loadingmsg"
+        android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_gravity="center_vertical"
+       	android:textColor="@color/mo9_text_color_grey"
+       	android:textSize="@dimen/mo9_loading_content_size"
+       	/>
+  </LinearLayout>
+    <Button
+        android:id="@+id/btn_change_account"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mo9_button_padding"
+        android:background="@drawable/mo9_btn_white"
+        android:paddingBottom="@dimen/mo9_button_padding"
+        android:paddingTop="@dimen/mo9_button_padding"
+        android:text="@string/mo9_change_account"
+        android:textColor="@color/mo9_text_color_grey"
+        android:textSize="@dimen/mo9_button_content_size" />
+</LinearLayout>

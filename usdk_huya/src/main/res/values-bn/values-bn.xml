@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="download_cancel">ডাউনলোড বাতিল হয়েছে</string>
+    <string name="download_compeleted">সম্পূর্ণ হয়েছে</string>
+    <string name="download_failed">ডাউনলোড ব্যর্থ হয়েছে</string>
+    <string name="download_file_not_exist">ফাইলের অস্তিত্ব নেই</string>
+    <string name="download_md5_failed">যাচাইকরণ ব্যর্থ হয়েছে</string>
+    <string name="download_pause">সাময়িকভাবে স্থগিত হয়েছে</string>
+    <string name="download_waiting">ডাউনলোডের জন্য অপেক্ষা করছে</string>
+</resources>

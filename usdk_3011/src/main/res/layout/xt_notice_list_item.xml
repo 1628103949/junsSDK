@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/xt_active_tv_ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="49dip"
+            android:background="@color/xt_color_hui_f2"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/xt_notice_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dip"
+                android:textColor="@color/xt_color_zi_hui3"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/xt_notice_tv_status"
+            android:layout_width="50dip"
+            android:layout_height="19dip"
+            android:layout_below="@+id/xt_active_tv_ll_top"
+            android:layout_marginLeft="16dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:textColor="@color/xt_color_white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/xt_notice_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xt_active_tv_ll_top"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/xt_notice_tv_status"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/xt_color_zi_black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/xt_notice_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xt_notice_tv_title"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="8dip"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/xt_color_zi_hui4"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/xt_notice_tv_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/xt_notice_tv_desc"
+            android:layout_marginTop="7dip"
+            android:background="@color/xt_color_line_e1" />
+
+        <LinearLayout
+            android:id="@+id/xt_notice_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xt_notice_tv_line"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/xt_notice_tv_2det"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginTop="8dip"
+                android:text="查看详情"
+                android:textColor="@color/xt_color_zi_hui4"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/xt_notice_tv_expiration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="8dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="8dip"
+                android:src="@drawable/xt_customer_for" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

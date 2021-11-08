@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/fusion_anno_item_layout"
+        android:layout_width="300dp"
+        android:layout_height="420dp"
+        android:orientation="vertical">
+
+        <fusion.mj.communal.ui.CircleWebView
+            android:id="@+id/fusion_anno_webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </fusion.mj.communal.ui.CircleWebView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fusion_anno_close"
+        android:layout_marginTop="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/fusion_anno_close" />
+</LinearLayout>

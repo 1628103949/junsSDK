@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="326dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/ssc_bg_dialog"
+    android:orientation="vertical">
+
+    <include layout="@layout/ssc_layout_title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_qq"
+            android:layout_width="match_parent"
+            android:background="@drawable/ssc_bg_edit"
+            android:layout_height="36dp">
+
+
+            <ImageView
+                android:id="@+id/ssc_iv_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="13dp"
+                android:src="@drawable/ssc_ic_qq" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/ssc_iv_icon2"
+                android:layout_marginStart="18dp"
+                android:text="@string/ssc_chat_ol"
+                android:textColor="#282828"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                android:src="@drawable/ssc_ic_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tel"
+            android:layout_width="match_parent"
+            android:background="@drawable/ssc_bg_edit"
+            android:layout_height="36dp">
+
+            <ImageView
+                android:id="@+id/iv_icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="13dp"
+                android:src="@drawable/ssc_ic_tel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/iv_icon3"
+                android:layout_marginStart="18dp"
+                android:text="@string/ssc_sc_phone"
+                android:textColor="#282828"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                android:src="@drawable/ssc_ic_right" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tip_wxofficeno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ssc_company_left"
+                android:textColor="#8A8A8A"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/tv_wxn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ssc_company"
+                android:textColor="@drawable/ssc_sel_oth_btn_text"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ssc_company_right"
+                android:textColor="#8A8A8A"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

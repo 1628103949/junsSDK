@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_pay_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您选择了充值方式"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kkk_button_height"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ld_button_bg_while"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="充值卡面额："
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="请输入金额"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:textColorHint="#e7e7e7"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kkk_button_height"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/ld_button_bg_while"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="充值卡号码："
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/et_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="请输入卡号"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:textColorHint="#e7e7e7"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kkk_button_height"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/ld_button_bg_while"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="充值卡密码："
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:textColorHint="#e7e7e7"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kkk_button_height"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ld_button_bg_yellow"
+        android:padding="8dp"
+        android:text="确定"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kkk_button_height"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ld_button_bg_while"
+        android:padding="8dp"
+        android:text="取消"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

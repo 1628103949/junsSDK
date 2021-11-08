@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:background="@drawable/mpg_dialog_background_round_white"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="24dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="24dp">
+    <TextView
+        android:id="@+id/maintainTitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+        <com.meta.android.mpg.foundation.view.MgsScrollView
+            android:id="@+id/maintainSlv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@drawable/mpg_shape_scroll_thumb"
+            android:scrollbarThumbHorizontal="@drawable/mpg_shape_scroll_thumb"
+            android:scrollbarSize="5dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="26dp">
+            <TextView
+                android:id="@+id/maintainContentTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </com.meta.android.mpg.foundation.view.MgsScrollView>
+
+    <Button
+        android:id="@+id/maintainBtn"
+        android:layout_width="160dp"
+        android:layout_height="44dp"
+        android:background="@drawable/mpg_selector_btn_big_round_rect_orange_deep"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="@string/mpg_known"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</LinearLayout>

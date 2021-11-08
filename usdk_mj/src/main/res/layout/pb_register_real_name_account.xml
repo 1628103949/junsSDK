@@ -1,0 +1,254 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="280dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/pb_dialog_black_transparent_bg"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pb_logo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="5dip">
+
+
+            <TextView
+                android:id="@+id/pb_register_real_name_account_phone_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/pb_phone_selector"
+                android:drawablePadding="5dip"
+                android:text="手机快捷注册"
+                android:textColor="@drawable/pb_text_color_6_selector"
+                android:textSize="@dimen/pb_login_register_text_header_size"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <cn.mj.sdk.ui.CustomLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pb_login_register_frame_height"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/pb_login_register_gray"
+                android:gravity="center_vertical"
+                android:paddingRight="5dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="账号:"
+                    android:textColor="#000"
+                    android:textSize="@dimen/pb_login_register_text_label_size" />
+
+                <EditText
+                    android:id="@+id/pb_register_real_account_name_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#00a9aba9"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+                    android:hint="请输入您的账号"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#a9aba9"
+                    android:imeOptions="flagNoExtractUi"
+                    android:textSize="@dimen/pb_login_register_text_hint_size"
+                    android:textCursorDrawable="@drawable/pb_login_register_cursor" />
+            </cn.mj.sdk.ui.CustomLinearLayout>
+
+            <cn.mj.sdk.ui.CustomRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pb_login_register_frame_height"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/pb_login_register_gray"
+                android:paddingRight="5dip">
+
+                <TextView
+                    android:id="@+id/pb_login_account_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12.5dip"
+                    android:text="密码:"
+                    android:textColor="#000"
+                    android:textSize="@dimen/pb_login_register_text_label_size" />
+
+                <EditText
+                    android:id="@+id/pb_register_real_name_account_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/pb_login_account_name"
+                    android:background="#00a9aba9"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="请输入您的密码"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#a9aba9"
+                    android:imeOptions="flagNoExtractUi"
+                    android:textSize="@dimen/pb_login_register_text_hint_size"
+                    android:textCursorDrawable="@drawable/pb_login_register_cursor" />
+            </cn.mj.sdk.ui.CustomRelativeLayout>
+
+            <cn.mj.sdk.ui.CustomLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pb_login_register_frame_height"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/pb_login_register_gray"
+                android:gravity="center_vertical"
+                android:paddingRight="5dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="姓名:"
+                    android:textColor="#000"
+                    android:textSize="@dimen/pb_login_register_text_label_size" />
+
+                <EditText
+                    android:id="@+id/pb_register_real_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#00a9aba9"
+                    android:hint="请输入您的名字"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#a9aba9"
+                    android:imeOptions="flagNoExtractUi"
+                    android:textCursorDrawable="@drawable/pb_login_register_cursor"
+                    android:textSize="@dimen/pb_login_register_text_hint_size" />
+            </cn.mj.sdk.ui.CustomLinearLayout>
+
+            <cn.mj.sdk.ui.CustomLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pb_login_register_frame_height"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/pb_login_register_gray"
+                android:gravity="center_vertical"
+                android:paddingRight="5dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="身份证:"
+                    android:textColor="#000"
+                    android:textSize="@dimen/pb_login_register_text_label_size" />
+
+                <EditText
+                    android:id="@+id/pb_register_real_name_id_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#00a9aba9"
+                    android:digits="0123456789X"
+                    android:hint="请输入您的身份证"
+                    android:maxLength="18"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#a9aba9"
+                    android:imeOptions="flagNoExtractUi"
+                    android:textCursorDrawable="@drawable/pb_login_register_cursor"
+                    android:textSize="@dimen/pb_login_register_text_hint_size" />
+            </cn.mj.sdk.ui.CustomLinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/pb_register_real_name_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/pb_help_selector"
+                android:drawablePadding="5dip"
+                android:text="帮助"
+                android:textColor="@drawable/pb_text_color_6_selector"
+                android:textSize="@dimen/pb_login_register_text_jump_size"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/pb_register_acceptAgreement"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:background="@drawable/pb_accept_checkbox"
+                    android:button="@null"
+                    android:checked="true"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pb_register_real_name_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="网络服务协议"
+                    android:textColor="@drawable/pb_text_color_6_selector"
+                    android:textSize="@dimen/pb_login_register_text_jump_size"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/pb_register_real_name_account_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pb_login_register_frame_height"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/pb_login_register_gradient_btn"
+            android:text="立即注册"
+            android:textColor="#fff"
+            android:textSize="@dimen/pb_login_register_text_btn_size" />
+
+        <Button
+            android:id="@+id/pb_register_real_name_account_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pb_login_register_frame_height"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/pb_login_register_gradient_btn"
+            android:text="我有账号"
+            android:textColor="#fff"
+            android:textSize="@dimen/pb_login_register_text_btn_size" />
+    </LinearLayout>
+
+</LinearLayout>

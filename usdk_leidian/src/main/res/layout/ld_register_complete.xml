@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/account_frame_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ld_content_bk_mid"
+        android:orientation="vertical"
+        android:padding="@dimen/account_background_shadow">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/account_icon_margin_left"
+                android:layout_marginRight="@dimen/account_icon_margin_right"
+                android:src="@drawable/ld_register_success" />
+
+            <TextView
+                android:id="@+id/account_username_success_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="恭喜您注册成功！"
+                android:textColor="#333333"
+                android:textSize="@dimen/account_text_header_size" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_account_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#18bf21"
+            android:textSize="@dimen/account_text_hint_size" />
+
+        <TextView
+            android:id="@+id/login_account_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#18bf21"
+            android:textSize="@dimen/account_text_hint_size" />
+
+        <!--距离上部是17dp-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/account_item_margin_left"
+            android:layout_marginRight="@dimen/account_item_margin_right"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/account_bind_phone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/account_item_login_height"
+                android:layout_weight="1"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/ld_org_red_btn_selector"
+                android:text="绑定手机"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="@dimen/account_text_btn_size"/>
+
+            <Button
+                android:id="@+id/account_start_game"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/account_item_login_height"
+                android:layout_weight="1"
+                android:background="@drawable/ld_white_btn_selector"
+                android:layout_marginLeft="10dp"
+                android:text="继续游戏"
+                android:textColor="#545353"
+                android:gravity="center"
+                android:textSize="@dimen/account_text_btn_size"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/gr_xiaomi_pay_frame_part_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gr_white"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@+id/gr_xiaomi_pay_game_coin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="游戏币"
+                android:textColor="#696969"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/gr_xiaomi_pay_game_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.00元"
+                android:textColor="@color/gr_blue_color_xiaomi"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gr_gray_color_ysdk" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textSize="13sp"
+            android:text="选择支付方式"
+            android:textColor="#B1B1B1" />
+
+        <RelativeLayout
+            android:id="@+id/gr_xiaomi_pay_frame_part_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/gr_xiaomi_pay_part_layout_weichat"
+                android:layout_width="110dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gr_xiaomi_pay_select_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/gr_oppo_weichat_img" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="微信支付"
+                    android:textColor="@color/gr_black" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/gr_xiaomi_pay_select_iv_weichat"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/gr_xiaomi_pay_part_layout_weichat"
+                android:src="@drawable/gr_pay_select_true_oppo" />
+
+            <LinearLayout
+                android:id="@+id/gr_xiaomi_pay_part_layout_alipay"
+                android:layout_width="110dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/gr_xiaomi_pay_part_layout_weichat"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/gr_oppo_alipay_img" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="支付宝"
+                    android:textColor="@color/gr_black" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/gr_xiaomi_pay_select_iv_alipay"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/gr_xiaomi_pay_part_layout_alipay"
+                android:src="@drawable/gr_pay_select_true_oppo"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/gr_xiaomi_pay_comfirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/gr_xiaomi_pay_bluebutton"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/gr_pay_comfirm_text_xiaomi" />
+
+            <TextView
+                android:id="@+id/gr_xiaomi_pay_comfirm_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用微信支付%s元"
+                android:textColor="@color/gr_white"
+                android:layout_marginLeft="3dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/libao"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/gr_rbtn_gift_allgift"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gr_gifttype_get_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="所有礼包"
+            android:textColor="#FFFFFFFF" />
+
+        <RadioButton
+            android:id="@+id/gr_rbtn_gift_alreadygift"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/gr_gifttype_get_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已领礼包"
+            android:textColor="#FFFFFFFF" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/gr_ll_getgiftdata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#00ffffff"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gr_login_remote" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="正在加载..." />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/gr_listview_fragment_gift"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/libao"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+</RelativeLayout>

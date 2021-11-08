@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="download_cancel">İndirme iptal edildi</string>
+    <string name="download_compeleted">Tamamlandı</string>
+    <string name="download_failed">İndirme başarısız oldu</string>
+    <string name="download_file_not_exist">Dosya bulunmuyor</string>
+    <string name="download_md5_failed">Doğrulama başarısız oldu</string>
+    <string name="download_pause">Durdu</string>
+    <string name="download_waiting">İndirmeyi bekliyor</string>
+</resources>

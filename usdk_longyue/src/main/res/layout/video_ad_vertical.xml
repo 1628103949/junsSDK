@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:id="@+id/iv_head"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:id="@+id/iv_close"
+        android:src="@drawable/video_close"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:background="#DDffffff"
+        >
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:id="@+id/iv_icon"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:id="@+id/tv_name"
+            android:layout_below="@+id/iv_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            tools:text="黎明：奇迹MU"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:textColor="#dd000000"
+            android:textSize="14sp"
+            android:id="@+id/tv_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            tools:text="这是一款船新的手游，只需体验3分钟，你就会像我一样，爱上这款游戏"
+            />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_content"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/round_blue_button"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            tools:text="立即下载"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/btn_action"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

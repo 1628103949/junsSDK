@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/huouniongame_center_padding_large">
+
+    <include layout="@layout/huouniongame_center_dialog_header" />
+
+    <TextView
+        android:id="@+id/huouniongame_center_dialog_message_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/huouniongame_center_margin_large"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/huouniongame_center_padding_small"
+        android:paddingLeft="@dimen/huouniongame_center_padding_normal"
+        android:paddingRight="@dimen/huouniongame_center_padding_normal"
+        tools:text="勇士，您的通关激活码已被激活，请重新获取\n《热血1.76》登录激活码"
+        style="@style/huouniongame_center_base_text" />
+
+    <Button
+        android:id="@+id/huouniongame_center_dialog_message_confirm"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/huouniongame_center_margin_large"
+        android:background="@drawable/huouniongame_center_btn_border"
+        tools:text="确认"
+        style="@style/huouniongame_center_base_text.accent" />
+</LinearLayout>

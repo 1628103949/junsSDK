@@ -1,0 +1,207 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tencent.tmgp.nznh">
+
+    <uses-sdk tools:overrideLibrary="com.tencent.sandboxbridge" />
+
+    <!-- TODO GAME SDK接入必须权限模块 START -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+
+    <!-- TODO GAME SDK Midas接入配置 设置屏幕兼容声明 START -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true" />
+    <!-- TODO GAME SDK Midas接入配置 设置屏幕兼容声明 END -->
+
+
+    <!-- TODO GAME SDK设备指纹接入权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+
+
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:label="JunS_YSDK"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- JunS sdk components start -->
+
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="${applicationId}.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <!-- JunS sdk components end -->
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <!-- ysdk start -->
+        <service android:name="com.tencent.ysdk.module.sandbox.pipe.PipeService">
+            <intent-filter>
+                <action android:name="com.tencent.ysdk.framework.communicate.PipeService" />
+            </intent-filter>
+        </service>
+        <!-- TODO android:authorities中的${applicationId}要修改为游戏自身的包名 -->
+        <provider
+            android:name="com.tencent.ysdk.framework.YSDKInitProvider"
+            android:authorities="${applicationId}.ysdk.ysdkinitprovider"
+            android:exported="false" />
+        <meta-data
+            android:name="MAIN_ACTIVITY"
+            android:value="com.juns.sdk.demo.DemoActivity"/>
+        <!-- ysdk end -->
+
+        <!-- TODO GAME SDK接入YSDK登陆接入配置 START -->
+
+        <!-- TODO GAME SDK接入YSDK登陆接入配置 END -->
+        <!-- TODO GAME SDK QQ接入配置 START -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1111375718" />
+                <!-- TODO GAME 这里为游戏QQ登录的配置，游戏需要修改为自己手Q的appid -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- TODO GAME SDK QQ接入配置 END -->
+
+        <!-- TODO GAME SDK 微信接入配置 START -->
+        <activity
+            android:name="com.tencent.ysdk.module.user.impl.wx.YSDKWXEntryActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="WXEntryActivity"
+            android:launchMode="singleTop"
+            android:taskAffinity="${applicationId}.diff"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <!-- TODO GAME android:taskAffinity这里为游戏微信登录的配置，游戏需要修改为自己的包名加.diff -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- TODO GAME android:scheme这里为游戏微信登录的配置，游戏需要修改为自己的微信appid -->
+                <data android:scheme="wx21913216acbf11fd" />
+            </intent-filter>
+        </activity>
+        <!-- TODO GAME "${applicationId}.wxapi.WXEntryActivity，此处的${applicationId}需要修改为游戏自己的包名 -->
+        <activity-alias
+            android:name="${applicationId}.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.tencent.ysdk.module.user.impl.wx.YSDKWXEntryActivity"
+            />
+        <!-- TODO GAME 1.4.1之后版本支持微信扫码登录，低于此版本升级的YSDK务必增加此处Activity用于二维码展示 -->
+        <activity android:name="com.tencent.ysdk.module.user.impl.wx.qrcode.QRActivity">
+
+        </activity>
+        <!-- TODO GAME SDK 微信接入配置 END -->
+        <!-- TODO GAME SDK接入免登录接入配置 START -->
+
+        <!--        &lt;!&ndash; TODO GAME SDK接入YSDK登陆接入配置 END &ndash;&gt;-->
+        <!-- TODO GAME SDK Midas接入配置 START -->
+        <!-- 请务必设置屏幕方向! midas当前不支持屏幕旋转 android:screenOrientation="portrait" android:screenOrientation="landscape" -->
+        <activity
+            android:name="com.tencent.midas.proxyactivity.APMidasPayProxyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.midas.wx.APMidasWXPayActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.midas.qq.APMidasQQWalletActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="qwallet100703379" />
+                <!-- TODO GAME 这里为米大师的默认配置，游戏不要修改 -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.midas.jsbridge.APWebJSBridgeActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- TODO GAME SDK Midas接入配置 END -->
+        <!--省流量更新SDK的下载服务须注册-->
+        <service
+            android:name="com.tencent.tmdownloader.TMAssistantDownloadService"
+            android:exported="false"
+            android:process=":TMAssistantDownloadSDKService"></service>
+        <activity
+            android:name="com.tencent.ysdk.module.user.impl.freelogin.FreeLoginInfoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- TODO GAME 注意:这里的 applicationId 不需要修改！！！ -->
+                <data android:scheme="tencentysdk${applicationId}" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

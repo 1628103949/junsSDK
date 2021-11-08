@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/pb_notice_ad_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/pb_dialog_close" />
+
+    <ImageView
+        android:id="@+id/pb_notice_ad_img"
+        android:layout_width="290dip"
+        android:layout_height="435dip"
+        android:layout_marginTop="10dip"
+        android:background="#d5000000"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

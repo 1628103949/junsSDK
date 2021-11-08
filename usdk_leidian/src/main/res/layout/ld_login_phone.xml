@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ld_dialog_base_bg">
+
+    <LinearLayout
+        android:layout_width="@dimen/ld_base_dialog_width"
+        android:layout_height="@dimen/ld_base_dialog_height"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/ld_base_dialog_padding"
+        android:paddingRight="@dimen/ld_base_dialog_padding"
+        android:paddingTop="12dp">
+
+        <include layout="@layout/ld_dialog_top_icon_layout" />
+
+        <RelativeLayout
+            android:id="@+id/login_account_username_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ld_base_edittext_height">
+
+            <EditText
+                android:id="@+id/login_account_username"
+                style="@style/ld_dialog_base_edittext"
+                android:layout_centerVertical="true"
+                android:hint="输入手机号"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:maxLength="20"
+                android:textColorHint="#999999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ld_base_edittext_height"
+            android:layout_marginTop="@dimen/ld_base_dialog_edittext_top">
+
+            <EditText
+                android:id="@+id/login_account_password"
+                style="@style/ld_dialog_base_edittext"
+                android:layout_centerVertical="true"
+                android:digits="0123456789"
+                android:hint="输入验证码"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColorHint="#999999"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:id="@+id/login_get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:text="获取验证码"
+                android:textColor="#FFB31A"
+                android:textSize="@dimen/ld_base_two_level_text_size_sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login_account_login"
+            style="@style/ld_dialog_base_button"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1px"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ld_org_btn_selector"
+            android:text="登录" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/agreement_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center|bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="登录即视为同意"
+                android:textColor="#ADADAD"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/show_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="《服务协议》"
+                android:textColor="#333333"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="280dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/juns_float_account_dialog_bg">
+
+        <RelativeLayout
+            android:id="@+id/header_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="170dp"
+                android:text="@string/juns_account"
+                android:textColor="#B88730"
+                android:textSize="23dp"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/back_rl"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/juns_fw_btn_bg_tran">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/juns_back" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/close_rl"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/juns_fw_btn_bg_tran">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/juns_close" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/main_content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_rl"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cccccc"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/juns_edit_bg">
+
+                <TextView
+                    android:id="@+id/main_name_img"
+                    android:layout_width="33dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/juns_account_name" />
+
+                <TextView
+                    android:id="@+id/main_name_tv"
+                    android:layout_width="210dp"
+                    android:layout_height="38dp"
+                    android:layout_toRightOf="@id/main_name_img"
+                    android:background="@drawable/juns_edit_bg"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="188264091456"
+                    android:textColor="#747474"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#cccccc"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/main_reset_rl"
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/juns_edit_bg"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/main_pwd_img"
+                    android:layout_width="33dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/juns_pwd_txt_float" />
+
+                <RelativeLayout
+                    android:layout_width="210dp"
+                    android:layout_height="38dp"
+                    android:layout_toRightOf="@id/main_pwd_img"
+                    android:background="@drawable/juns_edit_bg">
+
+                    <ImageView
+                        android:id="@+id/pwd_forward"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="-2dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/juns_forward" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="65dp"
+                        android:layout_toLeftOf="@id/pwd_forward"
+                        android:text="@string/juns_modify"
+                        android:textColor="#747474"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#cccccc"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/main_phone_rl"
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/juns_edit_bg"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/main_phone_img"
+                    android:layout_width="50dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/juns_phone_num_txt_float" />
+
+                <RelativeLayout
+                    android:layout_width="210dp"
+                    android:layout_height="38dp"
+                    android:layout_toRightOf="@id/main_phone_img"
+                    android:background="@drawable/juns_edit_bg">
+
+                    <ImageView
+                        android:id="@+id/phone_forward"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="14dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/juns_forward" />
+
+
+                    <TextView
+                        android:id="@+id/main_phone_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="65dp"
+                        android:layout_toLeftOf="@id/phone_forward"
+                        android:text="@string/juns_bind_phone"
+                        android:textColor="#747474"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#cccccc"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/main_realname_rl"
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/juns_edit_bg"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/main_realname_img"
+                    android:layout_width="66dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/juns_real_name_txt_float" />
+
+                <RelativeLayout
+                    android:layout_width="210dp"
+                    android:layout_height="38dp"
+                    android:layout_toRightOf="@id/main_realname_img"
+                    android:background="@drawable/juns_edit_bg">
+
+                    <ImageView
+                        android:id="@+id/realname_forward"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/juns_forward" />
+
+                    <TextView
+                        android:id="@+id/main_realname_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="85dp"
+                        android:layout_toLeftOf="@id/realname_forward"
+                        android:text="@string/juns_verify"
+                        android:textColor="#747474"
+                        android:textSize="16dp" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="25dp"
+                android:background="#cccccc"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/reset_pwd_content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_rl"
+            android:layout_marginTop="30dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/reset_phone_rl"
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/juns_edit_bg">
+
+                <ImageView
+                    android:id="@+id/reset_phone_img"
+                    android:layout_width="43dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/juns_account_name" />
+
+                <com.juns.sdk.framework.view.EditText.ClearEditText
+                    android:id="@+id/reset_phone_et"
+                    android:layout_width="210dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/reset_phone_img"
+                    android:background="@drawable/juns_edit_bg"
+                    android:hint="@string/juns_reset_pwd_tips"
+                    android:imeOptions="flagNoEnterAction"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#747474"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reset_code_rl"
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/juns_edit_bg"
+                android:layout_below="@id/reset_phone_rl"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/reset_code_img"
+                    android:layout_width="43dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/juns_phone_code" />
+
+                <com.juns.sdk.framework.view.EditText.ClearEditText
+                    android:id="@+id/reset_code_et"
+                    android:layout_width="210dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/reset_code_img"
+                    android:background="@drawable/juns_edit_bg"
+                    android:hint="@string/juns_please_input_phone_code"
+                    android:imeOptions="flagNoEnterAction"
+                    android:paddingLeft="12dp"
+                    android:textColor="#f7633b"
+                    android:textColorHint="#747474"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+
+                <FrameLayout
+                    android:id="@+id/reset_null_view"
+                    android:layout_width="10dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/reset_code_btn"
+                    android:layout_width="75dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@id/reset_null_view"
+                    android:background="@drawable/juns_fw_btn_bg_tran"
+                    android:text="@string/juns_get_phone_code"
+                    android:textColor="#f7633b"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/reset_pwd_btn"
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/reset_code_rl"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/juns_confrim_txt" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bind_phone_content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_rl"
+            android:layout_marginTop="30dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/bind_phone_rl"
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/juns_edit_bg">
+
+                <ImageView
+                    android:id="@+id/bind_phone_img"
+                    android:layout_width="43dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/juns_phone_num" />
+
+                <com.juns.sdk.framework.view.EditText.ClearEditText
+                    android:id="@+id/bind_phone_et"
+                    android:layout_width="210dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/bind_phone_img"
+                    android:background="@drawable/juns_edit_bg"
+                    android:hint="@string/juns_please_input_phone_num"
+                    android:imeOptions="flagNoEnterAction"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#747474"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bind_code_rl"
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/juns_edit_bg"
+                android:layout_below="@id/bind_phone_rl"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/bind_code_img"
+                    android:layout_width="43dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/juns_phone_code" />
+
+                <com.juns.sdk.framework.view.EditText.ClearEditText
+                    android:id="@+id/bind_code_et"
+                    android:layout_width="210dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/bind_code_img"
+                    android:background="@drawable/juns_edit_bg"
+                    android:hint="@string/juns_please_input_phone_code"
+                    android:imeOptions="flagNoEnterAction"
+                    android:paddingLeft="12dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#747474"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+
+                <FrameLayout
+                    android:id="@+id/null_view"
+                    android:layout_width="10dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/bind_code_btn"
+                    android:layout_width="75dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@id/null_view"
+                    android:background="@drawable/juns_fw_btn_bg_tran"
+                    android:text="@string/juns_get_phone_code"
+                    android:textColor="#f7633b"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bind_phone_btn"
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/bind_code_rl"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/juns_bind_phone_txt" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/real_name_content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_rl"
+            android:layout_marginTop="30dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/real_name_tips"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/juns_certification_tips"
+                android:textColor="#747474"
+                android:textSize="11sp" />
+
+            <RelativeLayout
+                android:id="@+id/user_rl"
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/juns_edit_bg"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/real_name_tips">
+
+                <ImageView
+                    android:id="@+id/user_img"
+                    android:layout_width="43dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/juns_name_txt" />
+
+                <com.juns.sdk.framework.view.EditText.ClearEditText
+                    android:id="@+id/user_et"
+                    android:layout_width="210dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/user_img"
+                    android:background="@drawable/juns_edit_bg"
+                    android:hint="@string/juns_name_tips"
+                    android:imeOptions="flagNoEnterAction"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#747474"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pwd_rl"
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/user_rl"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/juns_edit_bg">
+
+                <ImageView
+                    android:id="@+id/pwd_img"
+                    android:layout_width="43dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/juns_id_txt" />
+
+                <com.juns.sdk.framework.view.EditText.ClearEditText
+                    android:id="@+id/id_et"
+                    android:layout_width="210dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/pwd_img"
+                    android:background="@drawable/juns_edit_bg"
+                    android:hint="@string/juns_id_card_tips"
+                    android:imeOptions="flagNoEnterAction"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#747474"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/real_name_btn"
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/pwd_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/juns_verify_txt"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

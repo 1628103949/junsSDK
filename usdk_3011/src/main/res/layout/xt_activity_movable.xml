@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.xiantu.paysdk.view.spring.SpringView
+        android:id="@+id/xt_movable_spring_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/xt_color_white">
+
+        <ListView
+            android:id="@+id/xt_movable_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@color/xt_color_white"
+            android:scrollbars="none" />
+
+    </com.xiantu.paysdk.view.spring.SpringView>
+
+    <RelativeLayout
+        android:id="@+id/xt_layout_no_data_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/xt_iv_no_data_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dip"
+            android:src="@drawable/xt_no_activity" />
+
+        <TextView
+            android:id="@+id/xt_tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xt_iv_no_data_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dip"
+            android:text="暂无活动"
+            android:textColor="@color/xt_color_login_normal"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

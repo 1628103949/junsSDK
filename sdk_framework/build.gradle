@@ -1,0 +1,75 @@
+apply plugin: 'com.android.library'
+
+def publishVersion = "1.0.0"
+
+def releaseTime() {
+    new java.util.Date().format("yyyy-MM-dd", TimeZone.getDefault());
+}
+
+def exportJarName = "juns_sdk_framework-V" + publishVersion + "-" + releaseTime() + ".jar"
+
+android {
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.androidBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.androidMinSdkVersion
+        targetSdkVersion rootProject.ext.androidTargetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    //这个是解决lint报错的代码
+    lintOptions {
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        checkReleaseBuilds false//方法过时警告的开关
+        disable 'InvalidPackage' //Some libraries have issues with this.
+        disable 'OldTargetApi' //Lint gives this warning but SDK 20 would be Android L Beta.
+        disable 'IconDensities' //For testing purpose. This is safe to remove.
+        disable 'IconMissingDensityFolder' //For testing purpose. This is safe to remove.
+    }
+
+    /**
+     * 构建配置
+     */
+    buildTypes {
+
+        release {
+            //执行proguard混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            proguardFile 'proguard_common_rules.pro'
+            proguardFile 'proguard_rules_juns_game_sdk_framework.pro'
+            libraryVariants.all { variant ->
+                variant.outputs.all { output ->
+                    outputFileName = "juns_sdk_framework" + "-V${publishVersion}-${releaseTime()}.aar"
+                }
+            }
+        }
+
+        debug {
+            //不执行proguard
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFile 'proguard_common_rules.pro'
+            proguardFile 'proguard_rules_juns_game_sdk_framework.pro'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.android.support:support-compat:28.0.0'
+    api 'com.android.support:support-core-utils:28.0.0'
+    api 'com.android.support:support-core-ui:28.0.0'
+}
+

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/gr_vivo_pay_frame_part_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/gr_vivo_pay_game_coin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center|left"
+            android:text="游戏币"
+            android:textColor="@color/gr_graytext_color_vivo"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/gr_vivo_pay_frame_part_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="15dp"
+            android:background="@drawable/gr_vivo_pay_select_background"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/gr_vivo_pay_part_layout_weichat"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/gr_pay_wechat_vivo" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="微信支付"
+                    android:textColor="@color/gr_black" />
+
+                <ImageView
+                    android:id="@+id/gr_vivo_select_weichat"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/gr_pay_select_true_vivo" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gr_gray_line_color_vivo" />
+
+            <LinearLayout
+                android:id="@+id/gr_vivo_pay_part_layout_alipay"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/gr_pay_alipay_vivo" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="支付宝"
+                    android:textColor="@color/gr_black" />
+
+                <ImageView
+                    android:id="@+id/gr_vivo_select_alipay"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/gr_pay_select_false_vivo" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/gr_vivo_pay_comfirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/gr_vivo_pay_bluebutton"
+            android:text="去充值%s元并支付"
+            android:textColor="@color/gr_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</merge>

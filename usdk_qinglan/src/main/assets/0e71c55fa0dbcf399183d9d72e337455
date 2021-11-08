@@ -1,0 +1,52 @@
+<cg framecount="150" property="standardaxis:0">
+  <command frame="2" value="show:0|0" order="0" />
+  <command frame="11" value="audio:Assets/GameResources/audio/zhandouyinxiao/nianshou_luodi.mp3" order="1" />
+  <command frame="12" value="shake:" order="2" />
+  <command frame="115" value="audio:Assets/GameResources/audio/zhandouyinxiao/nianshou_baozha.mp3" order="3" />
+  <command frame="116" value="shake:3" order="4" />
+  <command frame="124" value="show:1|1" order="5" />
+  <command frame="131" value="hurt:0,100" order="6" />
+  <command frame="145" value="nextbattle:" order="7" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/nianshou_01_attack/nianshou_01_attack.prefab" parent="-1" start="1" end="183" type="11">
+    <bezier frame="1" fov="40" lerp="2" center="2" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:attack,0,6,0.4,0.3" order="1" />
+    <bezier frame="59" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="69" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="0,14,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="3" />
+    <bezier frame="93" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="0,14,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="4" />
+    <bezier frame="101" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="5" />
+    <bezier frame="102" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="0,50,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="6" />
+    <bezier frame="112" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="7" />
+    <command frame="117" value="anim:attack,3.6,3,0.6,0.3" order="8" />
+  </cgobject>
+  <cgobject property="copytarget:2" filename="Assets/GameResources/moudles/A__prefabs/b_qtss_02/b_qtss_02.prefab" parent="-1" start="1" end="183" type="14">
+    <bezier frame="1" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:guard,0,3,1,0.3" order="1" />
+    <command frame="114" value="anim:hit,0,3,1,1" order="2" />
+    <command frame="117" value="anim:hit,0,3,1,0.3" order="3" />
+    <command frame="121" value="anim:hit,0,3,1,0.3" order="4" />
+    <command frame="141" value="anim:guard,0,3,1,1" order="5" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/nianshou_01/nianshou_attack.prefab" parent="-1" start="108" end="140" type="1">
+    <bezier frame="109" fov="22" lerp="2" center="5" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/nianshou_01/nianshou_attack_luoxia.prefab" parent="-1" start="7" end="140" type="1">
+    <bezier frame="7" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5.9" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="CGCamera" parent="-1" start="1" end="185" type="0">
+    <bezier frame="1" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="2" fov="50" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="8.7,13.46,2.38" scale="1,1,1" rot="-0.0435853,-0.8982577,-0.09820913,0.4261319" handle1="-0.3973849,6.683242,-1.138723" handle2="0.3973838,-6.683245,1.138722" order="1" />
+    <bezier frame="12" fov="55" lerp="0" center="4" targetrotate="0" scalez="0" yrotated="0" pos="11.1,5.42,0.3" scale="1,1,1" rot="0.01617396,-0.8639901,0.03058412,0.5023189" handle1="3.259948,-0.541229,0.7786072" handle2="-3.259949,0.541228,-0.7786068" order="2" />
+    <bezier frame="58" fov="75" lerp="1" center="4" targetrotate="0" scalez="0" yrotated="0" pos="7.5,2.28,-12.7" scale="1,1,1" rot="-0.03299979,-0.3951417,-0.007139612,0.9179995" handle1="5.282654,0.2862547,-3.040581" handle2="-3.139616,0.5634367,-5.914578" order="3" />
+    <bezier frame="62" fov="75" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="7.892727,1.741818,-13.76727" scale="1,1,1" rot="-0.2465569,-0.3408849,-0.1684547,0.8914204" handle1="-10,0,0" handle2="10,0,0" order="4" />
+    <bezier frame="69" fov="90" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="10,0.8,-12.6" scale="1,1,1" rot="-0.2859083,-0.4873824,-0.2278443,0.7929702" handle1="-10,0,0" handle2="10,0,0" order="5" />
+    <bezier frame="70" fov="70" lerp="1" center="0" targetrotate="0" scalez="0" yrotated="0" pos="10.4,25.9,-3.2" scale="1,1,1" rot="0.04084959,-0.7737132,0.05191221,0.6300828" handle1="-7.691987,-0.372153,-2.760191" handle2="-4.333412,2.188079,-1.964095" order="6" />
+    <bezier frame="93" fov="60" lerp="1" center="4" targetrotate="0" scalez="0" yrotated="0" pos="6.9,31.5,-16.5" scale="1,1,1" rot="0.2105753,-0.2756793,0.06569233,0.935598" handle1="4.308655,-0.371556,1.261078" handle2="0.3703279,-1.732009,-7.257562" order="7" />
+    <bezier frame="101" fov="60" lerp="1" center="0" targetrotate="0" scalez="0" yrotated="0" pos="9.7,50.3,-19.3" scale="1,1,1" rot="0.5010161,-0.2564577,0.1576322,0.8113967" handle1="-0.2948902,-15.53665,8.485264" handle2="10,0,0" order="8" />
+    <bezier frame="102" fov="60" lerp="1" center="4" targetrotate="0" scalez="0" yrotated="0" pos="4.69,9.82,17.42" scale="1,1,1" rot="0.02521261,-0.8284405,-0.5574828,0.04757616" handle1="-10,0,0" handle2="-3.510683,11.36733,2.597505" order="9" />
+    <bezier frame="112" fov="50" lerp="1" center="0" targetrotate="0" scalez="0" yrotated="0" pos="3.93,3.63,8.37" scale="1,1,1" rot="-0.007424958,-0.9860418,-0.04289531,0.1607063" handle1="0.8343224,2.09419,-4.239385" handle2="10,0,0" order="10" />
+    <bezier frame="114" fov="50" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="5.5,1.8,12.9" scale="1,1,1" rot="-0.01744784,-0.9584231,0.01676647,0.2843234" handle1="-10,0,0" handle2="10,0,0" order="11" />
+    <bezier frame="116" fov="60" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="11.51,6,16.6" scale="1,1,1" rot="0.01791031,-0.9259883,0.01524762,0.3768187" handle1="-10,0,0" handle2="10,0,0" order="12" />
+    <bezier frame="123" fov="70" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="11.51,6,16.6" scale="1,1,1" rot="0.01791031,-0.9259883,0.01524762,0.3768187" handle1="-10,0,0" handle2="10,0,0" order="13" />
+    <bezier frame="124" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="14" />
+  </cgobject>
+</cg>

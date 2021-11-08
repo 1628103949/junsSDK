@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <RelativeLayout
+        android:id="@+id/tn_common_wh_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/tn_common_wh_loading_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#00000000">
+
+            <com.juns.sdk.framework.view.loading.AVLoadingIndicatorView
+                android:id="@+id/tn_user_wh_loading_avi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tn_common_wh_net_error_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/tn_common_wh_net_error_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:scaleType="center"
+                android:src="@drawable/juns_fw_web_net_error" />
+
+            <TextView
+                android:id="@+id/tn_common_wh_net_error_tips_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tn_common_wh_net_error_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:text="@string/juns_fw_common_net_error_tips"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/tn_common_wh_refresh_btn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/tn_common_wh_net_error_tips_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/juns_fw_btn_bg_red"
+                android:text="@string/juns_fw_common_refresh"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

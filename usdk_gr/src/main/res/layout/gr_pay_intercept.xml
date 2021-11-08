@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gr_theme_color"
+    android:padding="2dp"
+    android:orientation="vertical" >
+    
+
+    <TextView 
+        android:id="@+id/gr_pay_intercept_msg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="您尚未安装支付宝，请安装后重试"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="@color/gr_theme_color"/>
+    
+    <LinearLayout 
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gr_white"
+        android:gravity="center">
+        
+        <Button 
+            android:id="@+id/gr_pay_intercept_ok"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:background="@drawable/gr_btn_personcenter_suggest"
+            />
+        
+    </LinearLayout>
+    
+</LinearLayout>

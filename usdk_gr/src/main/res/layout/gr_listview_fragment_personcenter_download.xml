@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="2dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp" >
+
+        <com.gaore.mobile.defineview.RoundCornerImageView
+            android:id="@+id/gr_img_gameicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/gr_tv_gamename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-3dp"
+            android:layout_toRightOf="@+id/gr_img_gameicon"
+            android:gravity="center"
+            android:textColor="#FF000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/gr_tv_game_introduce"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gr_tv_gamename"
+            android:layout_marginRight="70dp"
+            android:layout_toRightOf="@+id/gr_img_gameicon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#FF988B93"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/gr_btn_download"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gr_btn_personcenter_suggest"
+            android:gravity="center"
+            android:text="下载"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="60dp"
+        android:background="#FFFFAE00" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/gr_xuanxian" />
+
+</RelativeLayout>

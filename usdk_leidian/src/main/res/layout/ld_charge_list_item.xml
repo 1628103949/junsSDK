@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/payItemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/ld_dp_10"
+        android:paddingBottom="@dimen/ld_dp_10">
+
+        <ImageView
+            android:id="@+id/play_icon"
+            android:layout_width="@dimen/ld_dp_35"
+            android:layout_height="@dimen/ld_dp_35" />
+
+        <TextView
+            android:id="@+id/payNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ld_dp_8"
+            android:includeFontPadding="false"
+            android:textColor="#5C5C5C"
+            android:textSize="@dimen/ld_sp_10" />
+
+        <ImageView
+            android:id="@+id/play_select_status_icon"
+            android:layout_width="@dimen/ld_dp_13"
+            android:layout_height="@dimen/ld_dp_13"
+            android:layout_marginTop="@dimen/ld_dp_8"
+            android:src="@drawable/ld_charge_select_default" />
+    </LinearLayout>
+</FrameLayout>

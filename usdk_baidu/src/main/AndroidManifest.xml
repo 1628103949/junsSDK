@@ -1,0 +1,80 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ksyq.bswhl.g.baidu">
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <!-- ↓↓↓ SDK ↓↓↓ -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- 指纹登录 -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <!-- 百度PUSH 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名 -->
+    <uses-permission
+        android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.ksyq.bswhl.g.baidu" />
+    <permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.ksyq.bswhl.g.baidu"
+        android:protectionLevel="normal" />
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:label="JunS Demo"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- JunS sdk components start -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="com.ksyq.bswhl.g.baidu.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <!-- 适配Android P，否则系统缺少相关类会崩溃 -->
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <meta-data android:name="android.notch_support" android:value="true"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ksyq.bswhl.g.baidu.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <!--元数据-->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- 适配Android N系统必需的ContentProvider声明，写权限包含应用包名-->
+        <provider android:name="com.baidu.android.pushservice.PushInfoProvider"
+            android:authorities="com.ksyq.bswhl.g.baidu.bdpush" android:exported="true"
+            android:protectionLevel="signature"
+            android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.ksyq.bswhl.g.baidu" />
+
+    </application>
+</manifest>

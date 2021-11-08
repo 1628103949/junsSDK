@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        style="@style/gr_option_margin_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/gr_kefu_phone_layout_dialog"
+            style="@style/gr_login_input_area"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/gr_kefu_part_frame_marginTop"
+            android:background="@drawable/gr_gray_bg_round"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话 "
+                android:textColor="@color/gr_light_blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/gr_kefu_phone_tv_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="020-89285864"
+                android:textColor="@color/gr_light_blue"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gr_kefu_qqonline_layout_dialog"
+            style="@style/gr_login_input_area"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/gr_kefu_part_frame_marginTop"
+            android:background="@drawable/gr_gray_bg_round"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QQ客服"
+                android:textColor="@color/gr_light_blue"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gr_kefu_online_layout_dialog"
+            style="@style/gr_login_input_area"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="@dimen/gr_kefu_part_frame_marginTop"
+            android:background="@drawable/gr_gray_bg_round"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在线客服"
+                android:textColor="@color/gr_light_blue"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gr_kefu_sdkversion"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="right|bottom"
+            android:textColor="@color/gr_gray_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</merge>

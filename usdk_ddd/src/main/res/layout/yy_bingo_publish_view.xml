@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="15dp">
+
+    <com.yysy.yygamesdk.view.CommonTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:centerText="发红包埋雷"
+        app:centerType="textView"
+        app:leftType="imageButton"
+        app:rightType="textView"
+        app:rightText="充值"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/yy_edittext_corner_dp5_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4A4A4A"
+                    android:text="金额" />
+
+                <EditText
+                    android:id="@+id/coin_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:hint="1千-10万"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textColor="#FFA146"
+                    android:textColorHint="#C8C8C8"
+                    android:textSize="15sp"
+                    android:imeOptions="flagNoExtractUi"/>
+
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4A4A4A"
+                    android:text="金币"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/thunder_obtain_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A4A4A4"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/yy_edittext_corner_dp5_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4A4A4A"
+                    android:text="红包个数" />
+
+                <EditText
+                    android:id="@+id/count_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="end"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:text="10"
+                    android:textColor="#FFA146"
+                    android:textColorHint="#C8C8C8"
+                    android:textSize="15sp"
+                    android:imeOptions="flagNoExtractUi"/>
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4A4A4A"
+                    android:text="个"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A4A4A4"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="设置雷号"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <com.yysy.yygamesdk.view.NoScrollGridView
+                android:id="@+id/thunder_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scrollbars="none"
+                android:numColumns="5"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/publish_tv"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/yy_shape_orange_corner_dp25_selector"
+                android:text="塞钱进红包"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.androidBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.androidMinSdkVersion
+        targetSdkVersion rootProject.ext.androidTargetSdkVersion
+
+        applicationId "hdxbdzz.js.mumayi"
+        versionCode 1
+        versionName '1.0.0'
+    }
+
+    // 配置结构
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            assets.srcDirs = ['src/main/assets']
+            res.srcDirs = ['src/main/res']
+            java.srcDirs = ['src/main/java']
+            resources.srcDirs = ['src/main/resources']
+            aidl.srcDirs = ['src/main/aidl']
+            renderscript.srcDirs = ['src/maom']
+            jniLibs.srcDir 'src/main/jniLibs'
+        }
+    }
+
+    //这个是解决lint报错的代码
+    lintOptions {
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        checkReleaseBuilds false//方法过时警告的开关
+        disable 'InvalidPackage' //Some libraries have issues with this.
+        disable 'OldTargetApi' //Lint gives this warning but SDK 20 would be Android L Beta.
+        disable 'IconDensities' //For testing purpose. This is safe to remove.
+        disable 'IconMissingDensityFolder' //For testing purpose. This is safe to remove.
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    /**
+     * 签名设置
+     */
+    signingConfigs {
+        release {
+            v2SigningEnabled false
+            File propFile = file('../config/build-system/signing.properties');
+            if (propFile.exists()) {
+                def Properties props = new Properties()
+                props.load(new FileInputStream(propFile))
+                if (props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') &&
+                        props.containsKey('KEY_ALIAS') &&
+                        props.containsKey('KEY_PASSWORD')) {
+                    storeFile file(props['STORE_FILE'])
+                    storePassword props['STORE_PASSWORD']
+                    keyAlias props['KEY_ALIAS']
+                    keyPassword props['KEY_PASSWORD']
+                }
+            }
+        }
+
+        debug {
+            v2SigningEnabled false
+            File propFile = file('../config/build-system/signing.properties');
+            if (propFile.exists()) {
+                def Properties props = new Properties()
+                props.load(new FileInputStream(propFile))
+                if (props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') &&
+                        props.containsKey('KEY_ALIAS') &&
+                        props.containsKey('KEY_PASSWORD')) {
+                    storeFile file(props['STORE_FILE'])
+                    storePassword props['STORE_PASSWORD']
+                    keyAlias props['KEY_ALIAS']
+                    keyPassword props['KEY_PASSWORD']
+                }
+            }
+        }
+    }
+
+    /**
+     * 构建配置
+     */
+    buildTypes {
+
+        release {
+            //执行proguard混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            //签名
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            //不执行proguard
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            //签名
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation fileTree(dir: 'lib', include: ['*.aar', '*.jar'], exclude: [])
+    implementation project(path: ':mid_oaid1.0.10')
+}
+
+repositories {
+
+    flatDir {
+        dir "../${project.name}/aar"
+    }
+
+}

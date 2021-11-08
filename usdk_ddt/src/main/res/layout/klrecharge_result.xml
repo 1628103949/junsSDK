@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="150dp"
+    android:layout_gravity="center"
+    android:background="@drawable/klrecharge_result_style"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/klfontgrey_black"
+        android:text="温馨提示"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/kl_result"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textColor="@color/klfont_black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/klresultbutton"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/klorange_btn_style"
+            android:gravity="center"
+            android:text="返回游戏"
+            android:textColor="@color/klfont_white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

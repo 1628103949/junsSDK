@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.xiantu.paysdk.view.spring.SpringView
+            android:id="@+id/xt_notice_spring"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/xt_color_white">
+
+            <ListView
+                android:id="@+id/xt_notice_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/xt_color_white"
+                android:divider="@null"
+                android:scrollbars="none" />
+        </com.xiantu.paysdk.view.spring.SpringView>
+
+        <include layout="@layout/xt_layout_no_data"/>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout_notice_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+    </FrameLayout>
+</RelativeLayout>

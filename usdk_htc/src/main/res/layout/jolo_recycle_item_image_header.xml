@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="207dp">
+    
+    <ImageView 
+        android:id="@+id/jolo_recycler_header_image"
+        android:src="@drawable/jolo_libao_icon"
+        android:layout_width="209dp"
+        android:layout_gravity="center"
+        android:layout_height="207dp"/>
+    
+</FrameLayout>

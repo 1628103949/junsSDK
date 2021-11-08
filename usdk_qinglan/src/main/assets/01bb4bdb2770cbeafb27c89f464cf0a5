@@ -1,0 +1,43 @@
+<cg framecount="94" property="standardaxis:0">
+  <command frame="2" value="show:0|0" order="0" />
+  <command frame="20" value="audio:Assets/GameResources/audio/zhandouyinxiao/bnt-skill_shifa.mp3" order="1" />
+  <command frame="46" value="show:1|1" order="2" />
+  <command frame="63" value="audio:Assets/GameResources/audio/zhandouyinxiao/bnt-skill_shouji.mp3" order="3" />
+  <command frame="80" value="hurt:0,100" order="4" />
+  <command frame="85" value="nextbattle:" order="5" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/s2_bnt_01/s2_bnt_01.prefab" parent="-1" start="1" end="120" type="11">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0.008802043,0.008649743,0.008649744,0.9998865" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:skill,0,3,1,0.3" order="1" />
+    <command frame="92" value="anim:guard,0,3,1,0.3" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/s_zgln_01/s_zgln_01.prefab" parent="-1" start="1" end="120" type="14">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:guard,0,3,1,0.3" order="1" />
+    <command frame="63" value="anim:hit,0,3,1,0.3" order="2" />
+    <command frame="66" value="anim:hit,0,3,1,0.3" order="3" />
+    <command frame="70" value="anim:hit,0,3,1,0.3" order="4" />
+    <command frame="90" value="anim:guard,0,3,1,0.3" order="5" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/s2_bnt_01/s2_bnt_skill1.prefab" parent="-1" start="20" end="120" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/s2_bnt_01/s2_bnt_skill2.prefab" parent="-1" start="60" end="105" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="CGCamera" parent="-1" start="1" end="120" type="0">
+    <bezier frame="1" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="2" fov="80" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="1.88,1.66,-3.08" scale="1,1,1" rot="0.03117361,-0.9105275,0.06175546,0.4076201" handle1="-0.6993088,0.04134473,0.171406" handle2="0.6993082,-0.04134428,-0.171406" order="1" />
+    <bezier frame="20" fov="80" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="1.875814,1.3,-2.904186" scale="1,1,1" rot="0.0345749,-0.9226798,0.08512016,0.3744613" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="45" fov="75" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="1.87,1.46,-2.66" scale="1,1,1" rot="0.03919538,-0.9367948,0.1173162,0.327286" handle1="-0.1385436,-0.5476863,0.1148705" handle2="0.1385436,0.5476862,-0.1148704" order="3" />
+    <bezier frame="46" fov="22" lerp="2" center="0" targetrotate="0" scalez="0" yrotated="0" pos="22.91,6.65,0" scale="1,1,1" rot="0.1114081,-0.6982752,0.1114081,0.6982752" handle1="-10,0,0" handle2="10,0,0" order="4" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/Shouji_effect/shouji_02/shouji_02.prefab" parent="-1" start="63" end="92" type="1">
+    <bezier frame="63" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0.24,4.8" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/Shouji_effect/shouji_02/shouji_02.prefab" parent="-1" start="66" end="92" type="1">
+    <bezier frame="66" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="-0.17,0,5.46" scale="1,1,1" rot="0,-0.6354026,0,0.7721811" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/Shouji_effect/shouji_02/shouji_02.prefab" parent="-1" start="70" end="92" type="1">
+    <bezier frame="70" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.16,-0.53,5.36" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+</cg>

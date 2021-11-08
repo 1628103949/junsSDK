@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xt_head_icon_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xt_color_white"
+    android:orientation="vertical">
+
+    <com.xiantu.paysdk.view.NotifyingScrollView
+        android:id="@+id/xt_sv_account"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--头像账号信息-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView"
+                android:layout_alignParentBottom="true"
+                android:background="@color/xt_color_white">
+
+                <com.xiantu.paysdk.view.CircleImageView
+                    android:id="@+id/xt_iv_head_icon"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_marginBottom="14dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginTop="21dip" />
+
+                <TextView
+                    android:id="@+id/xt_tv_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="28dip"
+                    android:layout_toRightOf="@+id/xt_iv_head_icon"
+                    android:drawablePadding="10dip"
+                    android:drawableRight="@drawable/xt_btn_revisename"
+                    android:ellipsize="end"
+                    android:maxEms="11"
+                    android:singleLine="true"
+                    android:textColor="@color/xt_color_login_select"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/xt_tv_platform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/xt_tv_nick_name"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="11dip"
+                    android:layout_toRightOf="@+id/xt_iv_head_icon"
+                    android:text="@string/xt_string_my_platform"
+                    android:textColor="@color/xt_color_login_normal"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/xt_tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/xt_tv_nick_name"
+                    android:layout_marginLeft="4dip"
+                    android:layout_marginTop="11dip"
+                    android:layout_toRightOf="@+id/xt_tv_platform"
+                    android:textColor="@color/xt_color_login_select"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/xt_iv_change_sub_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dip"
+                    android:src="@drawable/xt_account_switch_orange" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="14dip"
+                android:background="@color/xt_color_line_f0" />
+
+            <!--用户资产信息-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dip"
+                android:layout_marginTop="-6dp"
+                android:background="@drawable/xt_btn_account_white_bg_shape"
+                android:orientation="horizontal">
+
+                <!--我的卡券-->
+                <LinearLayout
+                    android:id="@+id/xt_ll_ticket_over"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/xt_tv_ticket_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="19dip"
+                        android:text="0"
+                        android:textColor="@color/xt_color_login_select"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/xt_tv_recharge_over"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dip"
+                        android:text="@string/xt_string_my_coupons"
+                        android:textColor="@color/xt_color_login_normal"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--我的钱包-->
+                <LinearLayout
+                    android:id="@+id/xt_ll_wallet_over"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/xt_tv_overage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="19dip"
+                        android:ellipsize="end"
+                        android:maxEms="6"
+                        android:singleLine="true"
+                        android:text="0.00"
+                        android:textColor="@color/xt_color_login_select"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/xt_tv_wallet_over"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dip"
+                        android:text="@string/xt_string_wallet"
+                        android:textColor="@color/xt_color_login_normal"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--礼包-->
+                <LinearLayout
+                    android:id="@+id/xt_ll_gift_over"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/xt_tv_gift_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="19dip"
+                        android:text="0"
+                        android:textColor="@color/xt_color_login_select"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/xt_tv_gift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dip"
+                        android:text="@string/xt_string_my_gift"
+                        android:textColor="@color/xt_color_login_normal"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="14dip"
+                android:background="@color/xt_color_line_f0" />
+
+            <!--我的订单-->
+            <RelativeLayout
+                android:id="@+id/xt_ll_order_over"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-6dp"
+                android:background="@drawable/xt_btn_account_bg_shape">
+
+                <TextView
+                    android:id="@+id/xt_tv_order_over"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginTop="18dip"
+                    android:text="我的订单"
+                    android:textColor="@color/xt_color_zi_black"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dip"
+                    android:src="@drawable/xt_customer_for" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@+id/xt_tv_order_over"
+                    android:background="@color/xt_color_line_e1" />
+            </RelativeLayout>
+
+            <!--修改密码-->
+            <RelativeLayout
+                android:id="@+id/xt_rl_update_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/xt_tv_update_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginTop="18dip"
+                    android:text="修改密码"
+                    android:textColor="@color/xt_color_zi_black"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dip"
+                    android:src="@drawable/xt_customer_for" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@+id/xt_tv_update_password"
+                    android:background="@color/xt_color_line_e1" />
+            </RelativeLayout>
+
+            <!--绑定手机-->
+            <RelativeLayout
+                android:id="@+id/xt_rl_binding_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/xt_tv_binding_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginTop="18dip"
+                    android:text="绑定手机"
+                    android:textColor="@color/xt_color_zi_black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_bind_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageView"
+                    android:text="未绑定"
+                    android:textColor="@color/xt_color_theme"
+                    android:textSize="12sp" />
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dip"
+                    android:src="@drawable/xt_customer_for" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@+id/xt_tv_binding_phone"
+                    android:background="@color/xt_color_line_e1" />
+            </RelativeLayout>
+
+            <!--小号管理-->
+            <RelativeLayout
+                android:id="@+id/xt_rl_trumpet_manage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/xt_tv_trumpet_manage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginTop="18dip"
+                    android:text="小号管理"
+                    android:textColor="@color/xt_color_zi_black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/xt_tv_sub_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_sub_account"
+                    android:text=""
+                    android:textColor="@color/xt_color_login_normal"
+                    android:textSize="12sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_sub_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dip"
+                    android:src="@drawable/xt_customer_for" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@+id/xt_tv_trumpet_manage"
+                    android:background="@color/xt_color_line_e1" />
+            </RelativeLayout>
+
+            <!--实名认证-->
+            <RelativeLayout
+                android:id="@+id/xt_rl_verified"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/xt_tv_verified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginTop="18dip"
+                    android:text="实名认证"
+                    android:textColor="@color/xt_color_zi_black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_verified_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/xt_iv_verified"
+                    android:text="去认证"
+                    android:textColor="@color/xt_color_theme"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/xt_iv_verified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dip"
+                    android:src="@drawable/xt_customer_for" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@+id/xt_tv_verified"
+                    android:background="@color/xt_color_line_e1" />
+            </RelativeLayout>
+
+            <!--设置安全密码-->
+            <RelativeLayout
+                android:id="@+id/xt_rl_set_level2_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/xt_tv_level2_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginTop="18dip"
+                    android:text="安全密码"
+                    android:textColor="@color/xt_color_zi_black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_set_level2_password_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/xt_iv_level2_password"
+                    android:text="未设置"
+                    android:textColor="@color/xt_color_theme"
+                    android:textSize="12sp" />
+
+
+                <ImageView
+                    android:id="@+id/xt_iv_level2_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dip"
+                    android:src="@drawable/xt_customer_for" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@+id/xt_tv_level2_password"
+                    android:background="@color/xt_color_line_e1" />
+            </RelativeLayout>
+
+            <!--自动登录-->
+            <RelativeLayout
+                android:id="@+id/xt_rl_auto_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/xt_tv_auto_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginTop="18dip"
+                    android:text="自动登录"
+                    android:textColor="@color/xt_color_zi_black"
+                    android:textSize="13sp" />
+
+                <Switch
+                    android:id="@+id/xt_sw_auto_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="16dip"
+                    android:thumb="@drawable/xt_thumb_check_selector"
+                    android:track="@drawable/xt_track_check_selector" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@+id/xt_tv_auto_login"
+                    android:background="@color/xt_color_line_e1" />
+
+            </RelativeLayout>
+
+            <!--设置版本号-->
+            <RelativeLayout
+                android:id="@+id/xt_rl_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/xt_tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dip"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginTop="18dip"
+                    android:text="版本号"
+                    android:textColor="@color/xt_color_zi_black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/xt_account_tv_version_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="16dip"
+                    android:paddingRight="16dip"
+                    android:paddingTop="5dip"
+                    android:textColor="@color/xt_color_login_normal"
+                    android:textSize="12sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@+id/xt_tv_version"
+                    android:background="@color/xt_color_line_e1" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.xiantu.paysdk.view.NotifyingScrollView>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_account_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+    </FrameLayout>
+
+</RelativeLayout>

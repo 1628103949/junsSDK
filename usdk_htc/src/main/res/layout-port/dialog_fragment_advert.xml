@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/jolo_advert_img_type_rl"
+        android:layout_width="320dp"
+        android:layout_height="291dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/jolo_advert_img_type_background_img"
+            android:layout_width="match_parent"
+            android:layout_height="247dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/jolo_advert_default_img" />
+
+        <ImageView
+            android:id="@+id/jolo_advert_img_type_cancel_img"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/jolo_advert_close_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/jolo_advert_text_type_rl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/jolo_white_shape_rect10"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/jolo_advert_background_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/jolo_advert_background_img"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/jolo_advert_cancel_img"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/jolo_advert_cancel_btn" />
+
+        <TextView
+            android:id="@+id/jolo_advert_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:maxLength="12"
+            android:textColor="@color/jolo_light_black22"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_below="@id/jolo_advert_title_tv"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/jolo_advert_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/jolo_light_black66"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

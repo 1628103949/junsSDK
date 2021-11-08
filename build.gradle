@@ -1,0 +1,40 @@
+apply from: 'config/build-system/dependencies.gradle'
+
+buildscript {
+
+    repositories {
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/jcenter" }
+//        google()
+//        jcenter()
+//        maven { url 'https://maven.google.com' }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven {
+            url 'https://dl.bintray.com/ttgamesdk/public'
+        }
+    }
+
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.2'
+    }
+
+}
+
+allprojects {
+    repositories {
+
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/jcenter" }
+        maven {
+            url 'https://jitpack.io'
+        }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url 'https://jitpack.io' }
+        google()
+//        maven { url "http://192.168.10.145:8081/artifactory/DEV_GOOGLE" }
+        maven {
+            url 'https://dl.bintray.com/ttgamesdk/public'
+        }
+    }
+}

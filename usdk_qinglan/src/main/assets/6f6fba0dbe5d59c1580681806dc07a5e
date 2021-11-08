@@ -1,0 +1,36 @@
+<cg framecount="59" property="standardaxis:1">
+  <command frame="6" value="audio:Assets/GameResources/audio/zhandouyinxiao/wwfcm_attack_cisha.mp3" order="0" />
+  <command frame="10" value="audio:Assets/GameResources/audio/zhandouyinxiao/wwfcm_attack_shouji.mp3" order="1" />
+  <command frame="23" value="hurt:0,100" order="2" />
+  <command frame="54" value="nextbattle:" order="3" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/b_wwfcm_02/b_wwfcm_02.prefab" parent="-1" start="0" end="100" type="11">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:attack,0,3,1,0.3" order="1" />
+    <bezier frame="6" fov="40" lerp="2" center="4" targetrotate="1" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="2" />
+    <bezier frame="9" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,2.7" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="3" />
+    <bezier frame="38" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,2.7" scale="1,1,1" rot="0,0,0,1" handle1="-0.06735849,0,0" handle2="0.009101391,1.456399,-6.146004" order="4" />
+    <bezier frame="50" fov="40" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="0.0158782,1.463081,1.22953" handle2="-0.04915524,-0.02912772,0" order="5" />
+    <command frame="59" value="anim:guard,0,3,1,0.3" order="6" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/b_qtss_02/b_qtss_02.prefab" parent="-1" start="1" end="100" type="15">
+    <bezier frame="1" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:guard,0,3,1,0.3" order="1" />
+    <command frame="10" value="anim:hit,0,3,1,0.3" order="2" />
+    <command frame="13" value="anim:hit" order="3" />
+    <command frame="32" value="anim:guard,0,3,1,0.3" order="4" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/B_WWFC_01/B_WWFC_attack.prefab" parent="-1" start="-12" end="40" type="1">
+    <bezier frame="1" fov="40" lerp="2" center="4" targetrotate="1" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/B_WWFC_01/B_WWFC_attack_qiang_01.prefab" parent="-1" start="-24" end="100" type="1">
+    <bezier frame="9" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.11,0.12,2.67" scale="1,1,1" rot="0.0154349,-0.03890091,0.004942989,0.9991117" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <bezier frame="10" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="-0.27,-0.71,0.14" scale="1,1,1" rot="-0.08959116,0.154101,0.02347876,0.9837048" handle1="-10,0,0" handle2="10,0,0" order="1" />
+    <bezier frame="11" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.39,0.12,1.01" scale="1,1,1" rot="0.01556012,-0.01248829,0.004533434,0.9997907" handle1="-10,0,0" handle2="10,0,0" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/Shouji_effect/shouji_02/shouji_02.prefab" parent="-1" start="10" end="100" type="1">
+    <bezier frame="10" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="-0.03,-0.2,4.91" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/Shouji_effect/shouji_02/shouji_02.prefab" parent="-1" start="13" end="100" type="1">
+    <bezier frame="13" fov="40" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="-0.1,1.23,3.96" scale="1,1,1" rot="0.7071068,0,0,0.7071068" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+</cg>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="326dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:background="@drawable/ssc_bg_dialog"
+    android:orientation="vertical">
+
+    <include layout="@layout/ssc_layout_title" />
+
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ssc_bg_edit"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:text="@string/ssc_auto_login"
+                android:textColor="#282828"
+                android:textSize="12sp" />
+
+            <Switch
+                android:id="@+id/sw_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:showText="false"
+                android:switchMinWidth="30dp"
+                android:checked="true"
+                android:thumb="@drawable/ssc_sel_switch_thumb"
+                android:track="@drawable/ssc_sel_switch_track" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.33dp"
+            android:background="#E8E8E8"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:text="@string/ssc_float"
+                android:textColor="#282828"
+                android:textSize="12sp"  />
+
+            <Switch
+                android:id="@+id/sw_float"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:showText="false"
+                android:switchMinWidth="30dp"
+                android:checked="true"
+                android:thumb="@drawable/ssc_sel_switch_thumb"
+                android:track="@drawable/ssc_sel_switch_track" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="@string/ssc_float_off_tips"
+        android:textSize="10sp"
+        android:textColor="#8A8A8A"
+        tools:ignore="SmallSp" />
+
+</LinearLayout>

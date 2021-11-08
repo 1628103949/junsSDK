@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/i_aw_verify_bg_theme_r20" android:state_enabled="true" />
+    <item android:drawable="@drawable/i_aw_verify_bg_fac194_r20" android:state_enabled="false" />
+</selector>

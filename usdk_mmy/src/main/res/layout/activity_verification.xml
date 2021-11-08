@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/verification_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#91c728"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="310dp"
+            android:layout_height="57dp"
+            android:background="#91c728"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="实名认证"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edt_name_verification"
+            android:layout_width="260dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dialog_shape"
+            android:gravity="center"
+            android:hint="请输入您的姓名"
+            android:textColorHint="#cccccc"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edt_code_verification"
+            android:layout_width="260dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dialog_shape"
+            android:gravity="center"
+            android:hint="请输入您的身份证号"
+            android:textColorHint="#cccccc"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_sure_verification"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bt_dialog_shape"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/relative_verification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/bt_cancel_verification"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bt_cancel_dialog_shape"
+                android:gravity="center"
+                android:text="稍后认证"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/bt_sure1_verification"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/bt_cancel_verification"
+                android:background="@drawable/bt_dialog_shape"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

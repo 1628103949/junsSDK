@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/i_aw_bg_shape_ffffff_r20"
+    android:paddingBottom="30dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/i_aw_bg_shape_eef2f6_r20">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_alignParentEnd="true"
+            android:padding="17dp"
+            android:src="@drawable/i_aw_icon_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/i_aw_alter_account_alias"
+            android:textColor="#5d5d5d"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/i_aw_color_fdf6f3"
+        android:gravity="center"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:text="@string/i_aw_alter_account_hint"
+        android:textColor="#ff8e57"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="21dp"
+        android:gravity="center_vertical"
+        android:paddingStart="21dp"
+        android:paddingEnd="0dp"
+        android:singleLine="true"
+        android:textColor="@color/i_aw_text_default_color"
+        android:textSize="14sp"
+        tool:text="账号" />
+
+    <EditText
+        android:id="@+id/et_account_alias"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/i_aw_et_bg"
+        android:hint="@string/i_aw_hint_input_ew_account_alias"
+        android:imeOptions="flagNoExtractUi"
+        android:maxLength="20"
+        android:paddingStart="23dp"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:paddingEnd="23dp"
+        android:singleLine="true"
+        android:textColorHint="#9eb0c7"
+        android:textColor="@color/i_aw_text_default_color"
+        android:textSize="14sp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_alter"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/i_aw_bg_shape_theme_r20"
+        android:gravity="center"
+        android:text="@string/i_aw_affirm_alter"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/la_top_title2"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="1dip"
+        android:background="@drawable/pay_black_bg_normal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/iv_top_return2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="11dip"
+            android:background="@drawable/pay_return" />
+
+        <TextView
+            android:id="@+id/tv_top_title2"
+            style="@style/paycenter_text_18_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="102dp"
+            android:text="@string/pay_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="当前充值折扣 :"
+            android:textColor="#a3a9b1"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_rebate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="198dp"
+            android:textColor="#f78c45"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/pay_line_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="实际支付金额 :"
+            android:textColor="#a3a9b1"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_real_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="185dp"
+            android:textColor="#455061"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:background="@drawable/pay_real_money" 
+        >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一个界面显示金额为 折扣前金额 "
+            android:textColor="#e60012"
+            android:textSize="11dp" />
+       <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实际支付会显示  折扣后金额"
+            android:textColor="#e60012"
+            android:textSize="11dp" /> -->
+        
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/pay_line_bg" />
+
+    <Button
+        android:id="@+id/bt_pay_goto"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/pay_goto"
+        android:text="去支付"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</LinearLayout>

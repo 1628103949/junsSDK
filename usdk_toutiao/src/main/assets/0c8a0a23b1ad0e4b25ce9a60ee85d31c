@@ -1,0 +1,21 @@
+<cg framecount="50" property="standardaxis:0">
+  <command frame="17" value="hurt:0,70" order="0" />
+  <command frame="19" value="hurt:0,30" order="1" />
+  <command frame="43" value="nextbattle:" order="2" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/a_qjd_01/a_qjd_01.prefab" parent="-1" start="1" end="100" type="11">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:attack,0,3,1,0.3" order="1" />
+    <bezier frame="12" fov="22" lerp="0" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-0.03135026,-0.1743526,-2.93732" handle2="0.03135026,0.1743526,2.93732" order="2" />
+    <bezier frame="16" fov="22" lerp="0" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,3.25" scale="1,1,1" rot="0,0,0,1" handle1="0.07541621,0.1807975,-2.964005" handle2="-0.07541621,-0.1807975,2.964005" order="3" />
+    <bezier frame="30" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,3.25" scale="1,1,1" rot="0,0,0,1" handle1="-1.113171,-0.188783,1.300989" handle2="1.113171,0.188783,-1.300989" order="4" />
+    <bezier frame="33" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,-1.035801,-0.1479869" handle2="10,1.035801,0.1479869" order="5" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/a_mtfy_04/A_mtfy_04.prefab" parent="-1" start="1" end="100" type="15">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="17" value="anim:hit,0,3,1,0.3" order="1" />
+    <command frame="37" value="anim:guard,0,3,1,0.3" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/a_qjd_01/a_qjd_attack.prefab" parent="-1" start="1" end="50" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,3.25" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+</cg>

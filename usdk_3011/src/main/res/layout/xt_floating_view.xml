@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_shadow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- 这应该就是最终展示的icon   默认展示图-->
+    <ImageView
+        android:id="@+id/icon_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@drawable/xt_mch_float_ico" />
+
+</RelativeLayout>

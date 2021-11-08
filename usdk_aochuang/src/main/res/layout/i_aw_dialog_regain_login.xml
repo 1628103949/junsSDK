@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/i_aw_bg_shape_ffffff_r20"
+    android:orientation="vertical"
+    android:paddingBottom="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center"
+        android:text="@string/i_aw_warm_prompt"
+        android:textColor="#5d5d5d"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:gravity="center"
+        android:text="登录异常"
+        android:textColor="@color/i_aw_text_default_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_regain"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/i_aw_bg_shape_theme_r20"
+        android:gravity="center"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="@string/i_aw_retry"
+        android:textColor="#fefeff"
+        android:textSize="16sp" />
+</LinearLayout>

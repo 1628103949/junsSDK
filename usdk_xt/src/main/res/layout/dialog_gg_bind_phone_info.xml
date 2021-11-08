@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_solid_4_ff24252e_ff2e2727_border_1_80ff7700"
+    android:paddingBottom="20dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_sbpi_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="绑定信息"
+            android:textColor="@color/FF222222"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/tv_sbpi_close"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/gg_ic_close"
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/tv_sbpi_title"
+            android:layout_alignTop="@+id/tv_sbpi_title"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/FF8E8E93" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:text="手机号："
+        android:textSize="14sp"
+        android:textColor="@color/FF222222" />
+
+    <TextView
+        android:id="@+id/tv_sbpi_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:text="xxxx"
+        android:textSize="14sp"
+        android:textColor="@color/FF8E8E93" />
+
+</LinearLayout>

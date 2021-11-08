@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/yy_dialog_corner_bg" />
+
+    <ImageView
+        android:id="@+id/left_close_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/container"
+        android:scaleType="fitXY"
+        android:src="@drawable/yy_icon_close_circle" />
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="280dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/yy_icon_float_tab_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/gift_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/gift_tv"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/yy_float_ball_gift_selector" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/game_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/game_tv"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/yy_float_ball_game_selector" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bingo_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/bingo_tv"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/yy_float_ball_bingo_selector" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vip_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/vip_tv"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/yy_float_ball_vip_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/account_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/account_tv"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/yy_float_ball_account_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/service_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/service_tv"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/yy_float_ball_service_selector" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bottom_close_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/yy_icon_close_circle" />
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+          package="com.bswhl.net.bytedance.gamecenter">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/> <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> <!-- 用于提高GPS定位速度 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/> <!-- 插件中多处的资源需要放到宿主中 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"/>
+    <uses-feature android:name="android.hardware.vulkan" android:required="false"/>
+
+    <!-- ###################声明umSDK使用的相关权限###################### -->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--<uses-permission android:name="android.permission.READ_LOGS" />-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+
+    <!-- ###################声明热云SDK使用的相关权限###################### -->
+    <!--<uses-permission android:name="android.permission.INTERNET"/>-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
+    <!--<uses-permission android:name="android.permission.READ_LOGS"/>-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true"
+                      android:smallScreens="true" android:xlargeScreens="true"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true"
+                      android:smallScreens="true" android:xlargeScreens="true"/>
+
+    <application tools:replace="android:label"
+        android:name="com.game.chijun.GameApplication" android:icon="@drawable/bswhl_icon" android:isGame="true"
+                 android:label="@string/game_name" android:theme="@style/UnityThemeSelector.Translucent"
+                 android:usesCleartextTraffic="true">
+        <activity android:name="com.game.chijun.UnityPlayerActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection"
+            android:launchMode="singleTask" android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <!--todo fb接入之后 这里移除=====begin======-->
+                <action android:name="android.intent.action.VIEW"/>
+                <!--todo fb接入之后 这里移除=====end======-->
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true"/>
+            <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true"/>
+        </activity>
+        <meta-data android:name="unity.build-id" android:value="f54dff88-7291-453a-9352-2ddda572ba72"/>
+        <meta-data android:name="unity.splash-mode" android:value="2"/>
+        <meta-data android:name="unity.splash-enable" android:value="True"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+
+        <!-- JunS sdk components start -->
+        <!-- 【注意】其中"com.juns.sdk.demo"需要替换为应⽤本包名 -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="com.bswhl.net.bytedance.gamecenter.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path"/>
+        </provider>
+        <!-- JunS sdk components end -->
+    </application>
+</manifest>

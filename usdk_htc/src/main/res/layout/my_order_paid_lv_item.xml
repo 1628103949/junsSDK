@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/business_record_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/jolo_white" >
+
+    <ImageView
+        android:id="@+id/game_icon_iv"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/pictures_no"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/jolo_paid_order_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/paid_order_payment_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="@string/game_name"
+            android:textColor="@color/jolo_paid_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/paid_order_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/game_name"
+            android:textColor="@color/jolo_light_black22"
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/paid_order_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paid_order_name_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/game_name"
+            android:textColor="@color/jolo_light_black99"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/paid_order_amount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paid_order_detail_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/game_name"
+            android:textColor="@color/jolo_light_black99"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/paid_order_way_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paid_order_amount_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/game_name"
+            android:textColor="@color/jolo_light_black99"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/order_total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paid_order_way_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/game_name"
+            android:textColor="@color/jolo_light_black99"
+            android:textSize="11sp" /> 
+        
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@id/jolo_paid_order_rl"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/cmmn_gray2" />
+
+</RelativeLayout>

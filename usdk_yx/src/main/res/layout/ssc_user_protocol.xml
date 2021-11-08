@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/ssc_bg_dialog"
+    android:orientation="vertical">
+
+    <include layout="@layout/ssc_layout_title"/>
+
+    <ScrollView
+        android:id="@+id/sv_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp">
+        <TextView
+            android:id="@+id/tv_protocol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11sp"
+            android:textColor="@color/ssc_edit"
+            tools:ignore="SmallSp" />
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp">
+
+        <Button
+            android:id="@+id/btn_denial"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ssc_sel_neg_btn"
+            android:stateListAnimator="@null"
+            android:text="@string/ssc_protocol_denial"
+            android:textColor="@drawable/ssc_sel_neg_btn_text"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_agree"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ssc_sel_pos_btn"
+            android:stateListAnimator="@null"
+            android:text="@string/ssc_protocol_agree"
+            android:textColor="@color/ssc_edit"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

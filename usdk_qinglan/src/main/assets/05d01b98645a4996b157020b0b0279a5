@@ -1,0 +1,32 @@
+<cg framecount="106" property="standardaxis:0">
+  <command frame="1" value="audio:Assets/GameResources/audio/zhandouyinxiao/qchk_skill.mp3" order="0" />
+  <command frame="2" value="show:0|0" order="1" />
+  <command frame="63" value="show:1|1" order="2" />
+  <command frame="92" value="hurt:0,100" order="3" />
+  <command frame="101" value="nextbattle:" order="4" />
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/s_qckh_01/s_qckh_01.prefab" parent="-1" start="0" end="200" type="11">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="0" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:skill,0,3,1,0.3" order="1" />
+    <command frame="106" value="anim:guard,0,3,1,0.3" order="2" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/moudles/A__prefabs/a_jll_01/a_jll_01.prefab" parent="-1" start="1" end="200" type="15">
+    <bezier frame="1" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0,5" scale="1,1,1" rot="0,1,0,0" handle1="-10,0,0" handle2="10,0,0" order="0" />
+    <command frame="1" value="anim:guard,0,3,1,0.3" order="1" />
+    <command frame="76" value="anim:hit,0,3,1,0.3" order="2" />
+    <command frame="79" value="anim:hit,0,3,1,0.3" order="3" />
+    <command frame="82" value="anim:hit,0,3,1,0.3" order="4" />
+    <command frame="102" value="anim:guard,0,3,1,0.3" order="5" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/S_qckh_01/QCKH_Skill.prefab" parent="-1" start="0" end="200" type="1">
+    <bezier frame="1" fov="22" lerp="2" center="4" targetrotate="0" scalez="0" yrotated="1" pos="0,0,-5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/S_qckh_01/QCKH_Attack_hit.prefab" parent="-1" start="76" end="110" type="1">
+    <bezier frame="76" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0,0.99,5" scale="1,1,1" rot="0,0,0,1" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/S_qckh_01/QCKH_Attack_hit.prefab" parent="-1" start="79" end="110" type="1">
+    <bezier frame="79" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="-0.47,1.34,5.2" scale="1,1,1" rot="0.1106146,-0.5312089,-0.2631445,0.797707" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+  <cgobject property="copytarget:0" filename="Assets/GameResources/effect/Effect/JueSe_effect/S_qckh_01/QCKH_Attack_hit.prefab" parent="-1" start="82" end="110" type="1">
+    <bezier frame="82" fov="22" lerp="2" center="8" targetrotate="0" scalez="0" yrotated="0" pos="0.02,0.79,5.09" scale="1,1,1" rot="-0.5879562,-0.1469498,-0.6578713,0.4471227" handle1="-10,0,0" handle2="10,0,0" order="0" />
+  </cgobject>
+</cg>

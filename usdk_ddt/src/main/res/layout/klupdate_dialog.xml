@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/klbgshape"
+    android:orientation="vertical" >
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/result_updata"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/klfont_black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/next_button_updata"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/klblues_btn_style"
+            android:gravity="center"
+            android:text="下次更新"
+            android:textColor="@color/klfont_white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_updata"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/klorange_btn_style"
+            android:gravity="center"
+            android:text="立即更新"
+            android:textColor="@color/klfont_white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

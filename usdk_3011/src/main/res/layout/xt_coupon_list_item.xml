@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/xt_voucher_item_bg_top_gradient">
+
+        <TextView
+            android:id="@+id/xt_coupon_tv_validity_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dip"
+            android:layout_marginTop="7dip"
+            android:textColor="@color/xt_color_white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/xt_coupon_tv_y"
+            android:layout_marginLeft="16dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/xt_coupon_tv_surplusbalance"
+            android:layout_alignBottom="@+id/xt_coupon_tv_surplusbalance"
+            android:layout_alignParentStart="true"
+            android:text="￥"
+            android:textColor="@color/xt_color_white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_toRightOf="@+id/xt_coupon_tv_y"
+            android:id="@+id/xt_coupon_tv_surplusbalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xt_coupon_tv_validity_period"
+            android:text="00.00"
+            android:textColor="@color/xt_color_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/xt_coupon_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xt_coupon_tv_surplusbalance"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginTop="7dip"
+            android:textColor="@color/xt_color_white"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/xt_coupon_tv_expiration"
+            android:layout_width="39dip"
+            android:layout_height="22dip"
+            android:layout_alignBottom="@+id/xt_coupon_tv_name"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/xt_voucher_expiration_bg"
+            android:gravity="center"
+            android:text="即将过期"
+            android:layout_marginBottom="11dip"
+            android:textColor="@color/xt_color_white"
+            android:textSize="8sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:background="@drawable/xt_voucher_item_bg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/xt_coupon_tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginTop="8dip"
+            android:textColor="@color/xt_color_zi_hui"
+            android:textSize="10sp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

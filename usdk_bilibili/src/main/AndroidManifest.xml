@@ -1,0 +1,234 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ksyq.bswhl.bilibili">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <uses-sdk tools:overrideLibrary="com.bun.miitmdid"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:label="JunS Demo"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- JunS sdk components start -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="${applicationId}.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <!-- JunS sdk components end -->
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.bsgamesdk.android.activity.PrePayActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgamesdk_customDialog" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.PaymentActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/bsgamesdk_customPaymentTranslucentTheme" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.BSGameSdkAgreementActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.Login_RegActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgamesdk_customDialog" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.LoadingActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgamesdk_customDialog" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.TouristActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgamesdk_customDialog" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.WelcomeActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgemsdk_activity_welcome_style" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.NoticeActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgamesdk_customDialog" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.PointActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgamesdk_customDialog" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.ExitActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgamesdk_customDialog" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.RegisterActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgamesdk_customDialog" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.LicenseAgreementActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgamesdk_customDialog" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.CaptchaWebActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgamesdk_customDialog" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.WebActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgamesdk_customDialog" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.BSGameAppleLoginActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.RealNameWebActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgamesdk_customDialog" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.PreWebActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgamesdk_customDialog" >
+        </activity>
+        <activity
+            android:name="com.bsgamesdk.android.activity.WikiGameTipActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/bsgamesdk_customDialog" >
+        </activity>
+
+        <!-- paypal  start -->
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+        <!-- paypal  end -->
+
+        <activity
+            android:name="com.bsgamesdk.android.dc.activity.BSGameAntiIndulegnceActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/bsgamesdk_dc_customDialog" >
+        </activity>
+        <!-- data-collect start -->
+        <service
+            android:name="com.bsgamesdk.android.dc.service.DcUpService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <!-- data-collect end -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.PayResultActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.AlipayResultActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5OpenAuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <meta-data
+            android:name="BSGameSdk_PaidGame"
+            android:value="false" />
+        <activity
+            android:name="com.ksyq.bswhl.bilibili.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+    </application>
+</manifest>

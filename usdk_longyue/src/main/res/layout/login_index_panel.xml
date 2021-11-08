@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingTop="10dp"
+    android:paddingBottom="20dp">
+
+    <include
+        android:id="@+id/item_phone_num"
+        layout="@layout/layout_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <Button
+        android:id="@+id/next_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_phone_num"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_diy_btn"
+        android:text="短信登录"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/choose_entry_way_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/next_step"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:background="#ffd4d4d4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="其他登录方式"
+            android:textColor="#ff787878"
+            android:textSize="12.0sp" />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:background="#ffd4d4d4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_index_btn_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_entry_way_ly"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/account_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg_white_shape"
+            android:drawableLeft="@drawable/ic_customer_blue"
+            android:drawablePadding="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:text="账密登录"
+            android:textColor="#ffac1027"
+            android:textSize="12.0sp" />
+
+        <Button
+            android:id="@+id/guest_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choose_entry_way_ly"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/btn_bg_white_shape"
+            android:drawableLeft="@drawable/ic_user_blue"
+            android:drawablePadding="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:text="游客登录"
+            android:textColor="#ffac1027"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_index_bottom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_index_btn_ly"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="遇到问题"
+        android:textColor="#ff787878"
+        android:textSize="13.0sp" />
+</RelativeLayout>

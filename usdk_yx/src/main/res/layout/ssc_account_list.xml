@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="326dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/ssc_bg_dialog"
+    android:orientation="vertical">
+
+    <include layout="@layout/ssc_layout_title" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="24dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rl_show_list"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:background="@drawable/ssc_bg_edit">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_user_icon"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/ssc_ic_user" />
+
+                <TextView
+                    android:id="@+id/tv_uname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_toEndOf="@id/iv_user_icon"
+                    android:text="187***54557"
+                    android:textColor="@color/ssc_edit"
+                    android:textSize="14sp"
+                    tools:ignore="SmallSp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_toEndOf="@id/iv_user_icon">
+
+                    <ImageView
+                        android:id="@+id/iv_icon6"
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ssc_ic_last_time" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_toEndOf="@id/iv_icon6"
+                        android:text="上次登录1分钟前"
+                        android:textColor="#BFBFBF"
+                        android:textSize="8sp"
+                        tools:ignore="SmallSp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:src="@drawable/ssc_ic_down" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ssc_sel_pos_btn"
+            android:stateListAnimator="@null"
+            android:text="@string/ssc_login"
+            android:textColor="@color/ssc_edit"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_other_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="18dp"
+            android:text="@string/ssc_other_login"
+            android:textColor="@drawable/ssc_sel_oth_btn_text"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ssc_bg_edit"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_users"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:divider="@drawable/ssc_line"
+            android:dividerHeight="1dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.33dp"
+            android:background="#E8E8E8"/>
+
+        <LinearLayout
+            android:id="@+id/ll_edit"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/ll_add_user"
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ssc_ic_user_add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/ssc_add_user"
+                    android:textColor="@color/ssc_main_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.33dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
+                android:background="#E8E8E8"
+                tools:ignore="Suspicious0dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_del_user"
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ssc_ic_user_del" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/ssc_del_user"
+                    android:textColor="#8A8A8A"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="@string/ssc_complete"
+            android:gravity="center"
+            android:textColor="@drawable/ssc_sel_oth_btn_text"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>
