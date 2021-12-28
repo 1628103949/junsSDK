@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/new_message_tip_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center_horizontal"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dip"
+    android:visibility="visible">
+
+    <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/new_message_tip_head_image_view"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:contentDescription="@string/empty"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/bubble_head_margin_horizontal" />
+
+    <TextView
+        android:id="@+id/new_message_tip_text_view"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:textColor="#575757"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:visibility="gone"
+        android:background="@drawable/nim_message_unread_news_icon_selector"
+        android:contentDescription="@string/empty" />
+
+    <TextView
+        android:id="@+id/x7ChatRoomHaveNewMessageTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="11dp"
+        android:paddingRight="8dp"
+        android:drawablePadding="3dp"
+        android:drawableRight="@drawable/x7_chat_room_have_new_message_tips"
+        android:text="@string/x7_chat_room_have_new_message"
+        android:background="@drawable/bg_solid_white_corner_50"
+        android:textSize="11dp"
+        android:textColor="@color/x7base_orange_ff9900"
+        />
+
+</LinearLayout>

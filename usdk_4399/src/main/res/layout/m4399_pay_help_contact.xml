@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/m4399_activity_spacing_h"
+    android:paddingRight="@dimen/m4399_activity_spacing_h">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m4399_pay_help_tel_name"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/m4399_pay_help_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/m4399_pay_spacing_v"
+        android:paddingBottom="@dimen/m4399_pay_spacing_v"
+        android:textColor="@color/m4399_ope_color_primary"
+        android:textSize="15sp"
+        tools:text="400-633-4399转3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:text="@string/m4399_pay_help_qq_name"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/m4399_pay_help_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/m4399_pay_spacing_v"
+        android:paddingBottom="@dimen/m4399_pay_spacing_v"
+        android:text="@string/m4399_pay_help_qq_value"
+        android:textColor="@color/m4399_ope_color_primary"
+        android:textSize="15sp" />
+</LinearLayout>
+

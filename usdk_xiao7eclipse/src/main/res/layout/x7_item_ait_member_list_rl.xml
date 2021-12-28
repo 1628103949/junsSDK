@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/item_aitMember_top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textMessageType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/color_12cdb0"
+            android:textSize="14dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                android:id="@+id/imageViewHeader"
+                android:layout_marginRight="10dp"
+                android:layout_width="@dimen/avatar_size_in_session"
+                android:layout_height="@dimen/avatar_size_in_session" />
+
+            <com.netease.nim.uikit.x7.myview.X7TextViewBorder
+                android:id="@+id/identityFlag_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:textSize="9dp"
+                app:styleIndex="1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_black_333333"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginRight="10dp"
+            android:background="@color/color_gray_f2f2f2" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:clickable="true"
+    android:layout_height="wrap_content" >
+        
+    <ImageView
+        android:id="@+id/imageView1"        
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:scaleType="centerCrop" 
+         />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignTop="@+id/imageView1" 
+        android:button="@drawable/helpfrag_cb_bg" 
+        android:checked="false"
+        android:focusable="false" 
+        android:clickable="false"       
+        />
+
+</RelativeLayout>

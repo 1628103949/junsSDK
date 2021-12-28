@@ -13,6 +13,9 @@ import com.juns.sdk.core.platform.event.OExitEv;
 import com.juns.sdk.core.platform.event.OInitEv;
 import com.juns.sdk.core.platform.event.OLoginEv;
 import com.juns.sdk.core.platform.event.OPayEv;
+import com.juns.sdk.core.sdk.SDKData;
+import com.juns.sdk.core.sdk.common.InitInfoCallBack;
+import com.juns.sdk.core.sdk.common.InitInfoDialog;
 import com.juns.sdk.framework.log.LogFactory;
 import com.juns.sdk.framework.log.TNLog;
 import com.juns.sdk.framework.view.dialog.BounceEnter.BounceBottomEnter;
@@ -36,7 +39,6 @@ public class XiaoMi extends OPlatformSDK {
     private static TNLog logger = LogFactory.getLog(TAG, true);
     private Context mContext;
 
-    private XiaoMiAgreementDialog agreementDialog;
 
     public XiaoMi(OPlatformBean pBean) {
         super(pBean);
@@ -45,27 +47,12 @@ public class XiaoMi extends OPlatformSDK {
     @Override
     public void init(Activity activity) {
         mContext = activity;
-        //MiCommplatform.getInstance().onMainActivityCreate(activity);
         Bus.getDefault().post(OInitEv.getSucc());
     }
 
     @Override
     public void login(final Activity activity) {
-        MiCommplatform.getInstance().onUserAgreed(activity);
         xiaomiDoLogin();
-//        showAgreementDialog(new XiaoMiAgreementDialog.AgreementCallback() {
-//            @Override
-//            public void onRefuse() {
-//                Toast.makeText(activity,"需要同意才能继续游戏",Toast.LENGTH_LONG).show();
-//                login(activity);
-//            }
-//
-//            @Override
-//            public void onAccept() {
-//                MiCommplatform.getInstance().onUserAgreed(activity);
-//                xiaomiDoLogin();
-//            }
-//        },activity);
     }
 
     @Override
@@ -231,15 +218,6 @@ public class XiaoMi extends OPlatformSDK {
             Bus.getDefault().post(OPayEv.getFail(JunSConstants.Status.SDK_ERR, "平台支付参数为空"));
         }
     }
-    protected void showAgreementDialog(XiaoMiAgreementDialog.AgreementCallback callback,Activity activity) {
-        if (agreementDialog != null) {
-            if (agreementDialog.isShowing()) {
-                agreementDialog.dismiss();
-            }
-        }
-        agreementDialog = null;
-        agreementDialog = new XiaoMiAgreementDialog(activity, callback);
-        agreementDialog.showAnim(new BounceBottomEnter()).dismissAnim(new ZoomOutExit()).dimEnabled(true).show();
-    }
+
 
 }

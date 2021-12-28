@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messageActivityBottomLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:focusable="true">
+
+    <!--云信demo提供的底部输入控件-->
+    <!--<include layout="@layout/nim_message_activity_text_layout" />-->
+
+    <!--谢宝华2018.11.22重新的底部输入控件-->
+    <include layout="@layout/x7base_bottom_message_edit_ll" />
+
+    <com.smwl.x7market.component_base.emoji.EmoticonPickerView
+        android:id="@+id/emoticon_picker_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

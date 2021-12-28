@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/X7_dialog_open_blessing_bag_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <com.netease.nim.uikit.common.ui.imageview.CircleImageView
+            android:id="@+id/x7_dialog_blessing_bag_sender_avatar_iv"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nim_avatar_group"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/x7_dialog_blessing_bag_description_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="130dp"
+            android:gravity="center_horizontal"
+            android:visibility="invisible"
+            >
+            <TextView
+                android:id="@+id/x7_send_blessing_bag_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff00"
+                android:text=""
+                android:layout_marginRight="3dp"
+                android:textSize="17dp"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/x7_dialog_blessing_bag_description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/base_white"
+                android:textSize="13dp"
+                />
+        </LinearLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/x7_dialog_blessing_bag_open_animation_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp">
+
+            <ImageView
+                android:id="@+id/x7_dialog_blessing_bag_open_animation_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/x7_im_blessing_bag_animation_from_official"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RelativeLayout
+                android:id="@+id/x7_dialog_blessing_bag_open_fl"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="#00ffffff"
+                app:layout_constraintBottom_toBottomOf="@+id/x7_dialog_blessing_bag_open_animation_iv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/x7_dialog_blessing_bag_open_animation_iv"
+                app:layout_constraintVertical_bias="0.85">
+
+                <ImageView
+                    android:id="@+id/x7_dialog_blessing_bag_open_water_ripple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/x7_im_open_blessing_bag_water_ripple"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/x7_dialog_blessing_bag_open_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/x7_blessing_bag_open" />
+            </RelativeLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

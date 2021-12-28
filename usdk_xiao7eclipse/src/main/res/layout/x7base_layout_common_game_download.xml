@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout_common_downLoad_ll"
+        android:layout_width="49dip"
+        android:layout_height="49dip">
+
+        <TextView
+            android:id="@+id/layout_common_downLoad_state"
+            android:layout_width="49dip"
+            android:layout_height="49dip"
+            android:clickable="true"
+            android:background="@drawable/x7base_quan"
+            android:gravity="center"
+            android:text="@string/x7base_ordinary_downLoad"
+            android:textColor="@color/x7base_download_green"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

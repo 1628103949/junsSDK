@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下的颜色-->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="8dp" android:bottomRightRadius="8dp" />
+            <solid android:color="@color/wy_line_bg" />
+        </shape>
+    </item>
+    <!-- 未按下的颜色-->
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="8dp" android:bottomRightRadius="8dp" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/m4399_ope_id_ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ViewStub
+        android:id="@+id/m4399_webview_stub_outside_nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_activity_title_height"
+        android:layout="@layout/m4399_ope_support_webview_nav_outside" />
+
+    <LinearLayout
+        android:id="@+id/m4399_ope_id_ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <cn.m4399.operate.support.component.webview.AlWebView
+            android:id="@+id/m4399_webview_parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/m4399_color_line" />
+
+        <LinearLayout
+            android:id="@+id/m4399_ope_ll_question"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/m4399_ope_id_edt_question"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/m4399_ope_customer_service_input_bg"
+                android:hint="@string/m4399_ope_index_customer_service_input_hint"
+                android:paddingLeft="22dp"
+                android:paddingTop="7dp"
+                android:paddingRight="22dp"
+                android:paddingBottom="7dp"
+                android:textColor="#333333"
+                android:textColorHint="#aaaaaa"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/m4399_ope_id_tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/m4399_ope_customer_service_btn_bg"
+                android:enabled="false"
+                android:paddingLeft="16dp"
+                android:paddingTop="9dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="9dp"
+                android:text="@string/m4399_ope_verify_sms_send"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <ViewStub
+            android:id="@+id/m4399_webview_stub_error_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/m4399_ope_support_webview_layout_abnormal" />
+    </LinearLayout>
+
+</LinearLayout>

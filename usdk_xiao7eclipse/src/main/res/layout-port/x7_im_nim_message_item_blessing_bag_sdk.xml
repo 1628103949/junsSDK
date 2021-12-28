@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="61dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/x7_im_blessing_bag_cl"
+        android:layout_width="162dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_solid_red_fc958e_corner_left_top_bottom__8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/x7_im_blessing_bag_type_iv"
+            android:layout_width="35dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/x7_im_blessing_blag_from_user_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="17dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/x7_im_blessing_bag_sender_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="收到小7官方福袋"
+                android:textColor="@color/x7base_white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/x7_im_blessing_bag_description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/x7_im_blessing_bag"
+                android:textColor="@color/x7base_white"
+                android:textSize="8dp"
+                app:layout_goneMarginTop="5dp" />
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/x7_im_blessing_bag_state_ll"
+        android:layout_width="24dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_solid_red_ff6969_corner_right_top_bottom__8"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/x7_im_blessing_bag_cl"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/x7_im_blessing_bag_state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="-2dp"
+            android:maxEms="1"
+            android:text="@string/x7_im_open_now"
+            android:textColor="@color/x7base_white"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

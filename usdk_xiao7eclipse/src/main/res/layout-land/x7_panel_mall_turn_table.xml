@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/mall_turn_table_title_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="19dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="13dp"
+            android:background="@color/x7_orange_fbcc55"
+            android:layout_marginBottom="1dp"/>
+        <!-- 特殊字体 -->
+        <TextView
+            android:id="@+id/mall_turn_table_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_black_333333"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mall_turn_table_explain_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="6dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/x7_black_644f31"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mall_turn_table_title_ll" />
+
+    <TextView
+        android:id="@+id/mall_turn_table_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/x7_black_644f31"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mall_turn_table_explain_tv" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/x7_bg_mall_turn_table_page_land"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mall_turn_table_time_tv">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/mall_turn_table_guide_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.97" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/mall_turn_table_guide_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.645" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/mall_turn_table_guide_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/mall_turn_table_guide_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.94" />
+
+        <include
+            layout="@layout/x7_layout_mall_turn_table"
+            android:layout_width="242dp"
+            android:layout_height="194dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mall_turn_table_guide_one"
+            app:layout_constraintEnd_toEndOf="@+id/mall_turn_table_guide_two"
+            app:layout_constraintStart_toStartOf="@+id/mall_turn_table_guide_three"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="2dp"/>
+
+        <include
+            layout="@layout/x7_layout_mall_turntable_rule_and_record"
+            android:layout_width="16dp"
+            android:layout_height="153dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/x7_layout_mall_turntable_guaranteed_rewards_land"
+            app:layout_constraintStart_toEndOf="@id/mall_turn_table_guide_two"
+            app:layout_constraintEnd_toEndOf="@id/mall_turn_table_guide_four"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/mall_turn_table_guide_one"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
+

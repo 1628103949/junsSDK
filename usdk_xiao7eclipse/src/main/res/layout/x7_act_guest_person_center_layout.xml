@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <ImageView
+        android:id="@+id/guest_portrait_iv"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:src="@drawable/x7_bg_header" />
+
+    <TextView
+        android:id="@+id/guest_nick_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/x7_guest_account_name"
+        android:textColor="@color/x7base_gray_66"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/contact_service_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:clipToPadding="false"
+        android:paddingStart="3dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="3dp">
+
+        <TextView
+            android:id="@+id/contact_service_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/x7_solid_gray_f2_corner_5"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="@string/x7_chat_customer"
+            android:textColor="@color/x7base_gray_99"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/service_unread_red_iv"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_alignTop="@+id/contact_service_tv"
+            android:layout_alignEnd="@+id/contact_service_tv"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="-1dp"
+            android:src="@drawable/x7_un_read_msg"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/x7_tv_account_note_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/complete_guest_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="22dp"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/x7_complete_guest_account_tip"
+            android:textColor="@color/color_12cdb0"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/complete_guest_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/bg_solid_green_12cdb0_corner_10"
+            android:paddingStart="22dp"
+            android:paddingTop="9dp"
+            android:paddingEnd="22dp"
+            android:paddingBottom="9dp"
+            android:text="@string/x7_complete_immediately"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

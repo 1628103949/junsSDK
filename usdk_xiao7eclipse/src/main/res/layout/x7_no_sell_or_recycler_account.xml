@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="afterDescendants"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/no_sell_or_recycle_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:text="@string/x7_no_sell_account"
+        android:textColor="@color/base_white" />
+
+    <TextView
+        android:id="@+id/how_to_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x7_sell_need_toApp"
+        android:textSize="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginBottom="54dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/base_white" />
+
+    <TextView
+        android:id="@+id/to_x7App_tv"
+        android:layout_width="219dp"
+        android:layout_height="45dp"
+        android:text="@string/x7_to_APP"
+        android:textSize="@dimen/dp_14"
+        android:gravity="center"
+        android:background="@drawable/x7_account_manager_sell2"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/base_white" />
+
+</LinearLayout>

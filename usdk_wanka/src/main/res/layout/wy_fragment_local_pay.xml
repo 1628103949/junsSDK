@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/wy_pay_ll"
+    android:layout_width="@dimen/wy_pay_dialog_common_width"
+    android:layout_height="@dimen/wy_pay_dialog_common_height"
+    android:layout_gravity="center"
+    android:background="@drawable/wy_shape_corner">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/wy_local_pay_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/wy_please_select_the_pay_method"
+                android:textColor="@color/wy_black_text_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@id/wy_close_pay_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:padding="3dp"
+                android:src="@drawable/wy_iv_close_ball"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/wy_local_pay_title"
+            android:layout_marginBottom="40dp"
+            android:background="@color/wy_pay_bg"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@id/wy_pay_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:divider="#00000000"
+                android:dividerHeight="7dp"
+                android:drawSelectorOnTop="false"
+                android:scrollbars="none"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@id/wy_continue_pay_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/wy_selector_pay_btn_deep_green"
+            android:text="@string/wy_pay_continue"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</LinearLayout>

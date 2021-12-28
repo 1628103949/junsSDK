@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_pay_num"
+    android:layout_width="73dp"
+    android:layout_height="37dp"
+    android:background="@drawable/x7_selector_pay_num_item_bg"
+    android:gravity="center"
+    android:layout_marginBottom="12dp"
+    android:textColor="@color/white"
+    android:textSize="16dp" />

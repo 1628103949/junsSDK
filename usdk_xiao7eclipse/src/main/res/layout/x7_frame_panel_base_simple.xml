@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:layout_marginTop="50dp"
+    android:background="#A0C7AB"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/panel_name_tv"
+        android:layout_margin="10dp"
+        android:background="#55ffffff">
+
+        <FrameLayout
+            android:id="@+id/sub_panel_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_ll" />
+
+        <LinearLayout
+            android:id="@+id/tv_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="#333333"
+                android:gravity="center"
+                android:text="SubPanel1"
+                android:textColor="@color/white_fffeff" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="#333333"
+                android:gravity="center"
+                android:text="SubPanel2"
+                android:textColor="@color/white_fffeff" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/panel_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#333333"
+        android:gravity="center"
+        android:text="Panel"
+        android:textColor="@color/white_fffeff" />
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/top_cl"
+        android:layout_width="140dp"
+        android:layout_height="66dp"
+        android:background="@drawable/x7_bg_black_000000_corner_10_alpha_80"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/x7_screen_shot_success"
+            android:textColor="@color/x7base_white"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:padding="10dp"
+            android:src="@drawable/x7_notice_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="10dp"
+            android:background="#22ffffff"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/service_ll"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="11dp"
+                android:src="@drawable/x7_customer_service_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/x7_contact_kf"
+                android:textColor="@color/x7base_white"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_ll"
+        android:layout_width="140dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/x7_bg_black_000000_corner_10_alpha_80"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_cl">
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="11dp"
+            android:src="@drawable/x7_icon_edit_post" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/x7_share_to_friend"
+            android:textColor="@color/x7base_white"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

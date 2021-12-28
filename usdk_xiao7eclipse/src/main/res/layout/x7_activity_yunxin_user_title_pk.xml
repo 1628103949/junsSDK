@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    >
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/x7_activity_title_pk_rootView_cl"
+        android:visibility="invisible"
+        >
+        <!--顶部的搜索样式-->
+        <ImageView
+            android:id="@+id/x7_activity_title_pk_vs_iv"
+            android:layout_width="52dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/x7_im_vs_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/x7_activity_title_pk_cl" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/x7_activity_title_pk_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/bg_solid_gray_f9f9f9_corner_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/act_YunXinUserTitlePKAct_topTitle">
+
+
+            <TextView
+                android:id="@+id/x7_activity_title_pk_integral_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/color_black_ff999999"
+                app:layout_constraintBottom_toBottomOf="@+id/x7_activity_title_pk_avatar_iv"
+                app:layout_constraintStart_toStartOf="@+id/x7_activity_title_pk_title_tv"
+                app:layout_constraintTop_toBottomOf="@+id/x7_activity_title_pk_title_tv" />
+
+            <TextView
+                android:id="@+id/x7_activity_title_pk_user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black_6"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="@+id/x7_activity_title_pk_title_tv"
+                app:layout_constraintTop_toTopOf="@+id/x7_activity_title_pk_avatar_iv" />
+
+            <com.netease.nim.uikit.x7.myview.X7TextViewBorder
+                android:id="@+id/x7_activity_title_pk_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="9dp"
+                android:paddingLeft="5dip"
+                android:paddingTop="1dip"
+                android:paddingRight="5dip"
+                android:paddingBottom="1dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/x7_activity_title_pk_avatar_iv"
+                app:layout_constraintTop_toBottomOf="@+id/x7_activity_title_pk_user_name_tv" />
+
+            <ImageView
+                android:id="@+id/x7_activity_title_pk_avatar_iv"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginBottom="21dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/x7_activity_title_pk_crown_1_iv"
+                android:layout_width="43dp"
+                android:layout_height="48dp"
+                android:src="@drawable/x7_im_crown_left"
+                android:visibility="invisible"
+                app:layout_constraintCircle="@id/x7_activity_title_pk_avatar_iv"
+                app:layout_constraintCircleAngle="320"
+                app:layout_constraintCircleRadius="50dp"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="13dp" />
+
+            <TextView
+                android:id="@+id/x7_activity_title_pk_draw_1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_solid_ffba0f_corner_7"
+                android:includeFontPadding="false"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="2dp"
+                android:text="@string/x7_im_user_title_pk_draw"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/x7_activity_title_pk_avatar_iv"
+                app:layout_constraintStart_toStartOf="@+id/x7_activity_title_pk_avatar_iv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/bg_solid_gray_f9f9f9_corner_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/x7_activity_title_pk_vs_iv">
+
+
+            <TextView
+                android:id="@+id/x7_activity_title_pk_opponent_user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="@color/black_6"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/x7_activity_title_pk_opponent_title_tv"
+                app:layout_constraintTop_toTopOf="@+id/x7_activity_title_pk_opponent_avatar_iv" />
+
+            <TextView
+                android:id="@+id/x7_activity_title_pk_opponent_integral_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text=""
+                android:textColor="@color/color_black_ff999999"
+                app:layout_constraintBottom_toBottomOf="@+id/x7_activity_title_pk_opponent_avatar_iv"
+                app:layout_constraintEnd_toEndOf="@+id/x7_activity_title_pk_opponent_title_tv"
+                app:layout_constraintTop_toBottomOf="@+id/x7_activity_title_pk_opponent_title_tv" />
+
+            <com.netease.nim.uikit.x7.myview.X7TextViewBorder
+                android:id="@+id/x7_activity_title_pk_opponent_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:paddingLeft="5dip"
+                android:paddingTop="1dip"
+                android:paddingRight="5dip"
+                android:paddingBottom="1dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/x7_activity_title_pk_opponent_avatar_iv"
+                app:layout_constraintTop_toBottomOf="@+id/x7_activity_title_pk_opponent_user_name_tv" />
+
+            <ImageView
+                android:id="@+id/x7_activity_title_pk_opponent_avatar_iv"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginRight="43dp"
+                android:layout_marginBottom="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/x7_activity_title_pk_crown_2_iv"
+                android:layout_width="46dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/x7_im_crown_right"
+                android:visibility="invisible"
+                app:layout_constraintCircle="@id/x7_activity_title_pk_opponent_avatar_iv"
+                app:layout_constraintCircleAngle="40"
+                app:layout_constraintCircleRadius="50dp" />
+
+            <TextView
+                android:id="@+id/x7_activity_title_pk_draw_2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_solid_ffba0f_corner_7"
+                android:includeFontPadding="false"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="2dp"
+                android:text="@string/x7_im_user_title_pk_draw"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/x7_activity_title_pk_opponent_avatar_iv"
+                app:layout_constraintStart_toStartOf="@+id/x7_activity_title_pk_opponent_avatar_iv"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <com.netease.nim.uikit.x7.myview.X7Title
+            android:id="@+id/act_YunXinUserTitlePKAct_topTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
+

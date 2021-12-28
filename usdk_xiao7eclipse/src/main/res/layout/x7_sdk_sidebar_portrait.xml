@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/sidebar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_toEndOf="@+id/float_window_content_hint_tv_left"
+        android:background="@drawable/x7_solid_gray_bf000000_corner_10_top_right"
+        android:gravity="right"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp">
+
+        <LinearLayout
+            android:id="@+id/team_bell_mute_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/notice_line"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp">
+
+            <ImageView
+                android:id="@+id/bell_mute_iv"
+                android:layout_width="15dp"
+                android:layout_height="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/x7_icon_bell_no_mute" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:paddingStart="3dp"
+                android:text="@string/x7_no_disturbing"
+                android:textColor="@color/color_12cdb0"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/notice_line"
+            android:layout_width="0.33dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@+id/team_im_notice_layout"
+            android:background="@color/x7_color_33c8f9f1" />
+
+        <RelativeLayout
+            android:id="@+id/team_im_notice_layout"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/line1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/notice_iv"
+                    android:layout_width="15dp"
+                    android:layout_height="12dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/x7_icon_message" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/notice_iv"
+                    android:includeFontPadding="false"
+                    android:paddingStart="3dp"
+                    android:text="@string/x7_im_notice"
+                    android:textColor="@color/color_12cdb0"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/notice_unread_red_dot"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/x7_un_read_msg"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                android:textSize="6dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="0.33dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@+id/team_message_layout"
+            android:background="@color/x7_color_33c8f9f1" />
+
+        <RelativeLayout
+            android:id="@+id/team_message_layout"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/line2"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/message_iv"
+                    android:layout_width="15dp"
+                    android:layout_height="12dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/x7_icon_event" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/message_iv"
+                    android:includeFontPadding="false"
+                    android:paddingStart="3dp"
+                    android:text="@string/x7_activity"
+                    android:textColor="@color/color_12cdb0"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/message_unread_red_dot"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/x7_un_read_msg"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                android:textSize="6dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="0.33dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@+id/customer_service_layout"
+            android:background="@color/x7_color_33c8f9f1" />
+
+        <RelativeLayout
+            android:id="@+id/customer_service_layout"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/line3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/customer_service_iv"
+                    android:layout_width="15dp"
+                    android:layout_height="12dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/x7_icon_custuomer_service" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/customer_service_iv"
+                    android:includeFontPadding="false"
+                    android:paddingStart="3dp"
+                    android:text="@string/x7_kefu"
+                    android:textColor="@color/color_12cdb0"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/customer_service_unread_red_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/x7_un_read_msg"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="10dp"
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="6dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="0.33dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@+id/float_window_layout"
+            android:background="@color/x7_color_33c8f9f1"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/float_window_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/line4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/float_window_iv"
+                android:layout_width="15dp"
+                android:layout_height="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/x7_icon_float_window" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:paddingStart="3dp"
+                android:text="@string/x7_float_window"
+                android:textColor="@color/color_12cdb0"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="0.33dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@+id/sdk_invite_layout"
+            android:background="@color/x7_color_33c8f9f1"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/sdk_invite_layout"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/sdk_invite_iv"
+                android:layout_width="15dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/x7_icon_sdk_invite_iv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/sdk_invite_iv"
+                android:includeFontPadding="false"
+                android:paddingStart="3dp"
+                android:text="@string/x7_sdk_invite"
+                android:textColor="@color/color_12cdb0"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/sdk_invite_red_dot"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/x7_un_read_msg"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                android:textSize="6dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/float_window_content_hint_tv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sidebar_ll"
+        android:background="@drawable/x7_flat_left"
+        android:gravity="center_vertical"
+        android:maxEms="10"
+        android:padding="6dp"
+        android:text="@string/x7_open_game_float_window_mode_notice"
+        android:textColor="@color/base_black_3"
+        android:textSize="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/float_window_content_hint_tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sidebar_ll"
+        android:layout_toEndOf="@+id/sidebar_ll"
+        android:background="@drawable/x7_flat_right"
+        android:gravity="center_vertical"
+        android:maxEms="10"
+        android:padding="6dp"
+        android:text="@string/x7_open_game_float_window_mode_notice"
+        android:textColor="@color/base_black_3"
+        android:textSize="10dp"
+        android:visibility="gone" />
+</RelativeLayout>

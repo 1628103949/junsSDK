@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 通用颜色 -->
+    <color name="m4399_ope_color_333333">#333333</color>
+    <color name="m4399_ope_color_666666">#666666</color>
+    <color name="m4399_ope_color_888888">#888888</color>
+    <color name="m4399_ope_color_999999">#999999</color>
+    <color name="m4399_ope_color_bbbbbb">#bbbbbb</color>
+    <color name="m4399_ope_color_cccccc">#cccccc</color>
+    <color name="m4399_ope_color_eeeeee">#eeeeee</color>
+    <color name="m4399_ope_color_e5e5e5">#e5e5e5</color>
+    <color name="m4399_ope_color_ffffff">#ffffff</color>
+    <color name="m4399_ope_color_f1f1f1">#f1f1f1</color>
+    <color name="m4399_ope_color_primary">#54ba3d</color>
+    <color name="m4399_ope_color_primary_dark">#4ca733</color>
+    <color name="m4399_ope_color_f5f5f5">#f5f5f5</color>
+
+    <!-- 短信验证, 标题字体颜色 -->
+    <color name="m4399_ope_color_ffa92d">#ffa92d</color>
+    <color name="m4399_ope_verify_sms_code_disable_color">#8054ba3d</color>
+
+    <!--common coupon-->
+    <color name="m4399_ope_color_ff6868">#ff6868</color>
+    <color name="m4399_ope_color_ff5b45">#FF5B45</color>
+
+    <!-- vip and perfect info -->
+    <color name="m4399_ope_perfect_line">#d8d8d8</color>
+
+    <!-- 游戏公告界面 -->
+    <color name="m4399_ope_announcement_dialog_scroll_bg">#4deeeeee</color>
+    <color name="m4399_ope_announcement_dialog_not_tip">#66ffffff</color>
+
+    <!-- 获取优惠卷界面 -->
+    <color name="m4399_ope_coupon_dialog_title">#ffe6ba</color>
+    <color name="m4399_ope_coupon_dialog_bg_end">#ff6840</color>
+    <color name="m4399_ope_coupon_dialog_bg_start">#f8504a</color>
+    <color name="m4399_ope_coupon_dialog_money">#ff2c2c</color>
+    <color name="m4399_ope_coupon_dialog_content_get_bg">#ffcc6a</color>
+    <color name="m4399_ope_coupon_dialog_content_get">#644b1e</color>
+    <color name="m4399_ope_coupon_dialog_btn_cancel">#FFC860</color>
+
+    <color name="m4399_ope_quit_color_fe5136">#fe5136</color>
+
+    <color name="m4399_pay_status_success_color">#36c100</color>
+    <color name="m4399_pay_status_processing_color">#ff9515</color>
+    <color name="m4399_pay_status_failed_color">#ff2c2c</color>
+    <color name="m4399_rec_color_disabled">#aaaaaa</color>
+    <color name="m4399_rec_color_blue_33bdfc">#33bdfc</color>
+</resources>

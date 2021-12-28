@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/myView_title_rootView"
+    android:background="@color/x7base_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/myView_title_back_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:paddingLeft="16dip"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/x7base_title_back_green_iv" />
+
+        <TextView
+            android:id="@+id/myView_title_leftTitle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="6dip"
+            android:text="@string/x7base_MessageCenterActivity1_cancel"
+            android:textColor="@color/x7base_green_12cdb0"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/myView_title_topTitle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/x7base_black_3"
+            android:textSize="17dp" />
+
+        <com.smwl.x7market.component_base.myview.indicator.TabSlidingIndicator
+            android:id="@+id/myView_title_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:pstsDividerColor="#00000000"
+            app:pstsIndicatorColor="@color/x7base_text_green"
+            app:pstsIndicatorHeight="3dp"
+            app:pstsLineMove="6dip"
+            app:pstsTabPaddingLeftRight="12dp"
+            app:pstsUnderlineColor="@color/x7base_transparent"
+            app:pstsUnderlineHeight="1dp" />
+
+        <ImageView
+            android:id="@+id/myView_title_downLoad_iv"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:layout_toLeftOf="@+id/myView_title_share_iv"
+            android:paddingLeft="6dip"
+            android:paddingTop="2dip"
+            android:paddingRight="10dip"
+            android:src="@drawable/x7base_title_download"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/myView_title_share_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:clickable="true"
+            android:paddingTop="10dp"
+            android:paddingRight="16dip"
+            android:paddingBottom="10dp"
+            android:src="@drawable/x7base_icon_share_green"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/myView_title_notice_iv"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/myView_title_rightTitle_tv"
+            android:paddingVertical="10dp"
+            android:paddingLeft="20dp"
+            android:clickable="true"
+            android:src="@drawable/x7_title_notice_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/myView_title_rightTitle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingTop="10dp"
+            android:paddingRight="16dip"
+            android:paddingBottom="10dp"
+            android:text="编辑"
+            android:textColor="@color/x7base_text_green"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/myView_title_right_skip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:background="@drawable/x7base_shape_skip_phone_register"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:text="@string/x7base_skip"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="11dp"
+            android:paddingEnd="11dp"
+            android:textSize="12dp"
+            android:textColor="@color/x7base_gray_cc"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</RelativeLayout>

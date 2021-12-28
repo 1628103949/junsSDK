@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- <item android:state_selected="false" android:drawable="@drawable/X7_helpcenter_clear_normal" />
+     <item android:state_pressed="true" android:drawable="@drawable/helpcenter_clear_seleted"/>-->
+    <item android:state_checked="true" android:drawable="@drawable/x7_shape_more_choose_bg" />
+    <item android:state_selected="true" android:drawable="@drawable/x7_shape_more_choose_bg" />
+    <item android:drawable="@drawable/x7_bg_black_solid_52000000_corner_9" />
+</selector>

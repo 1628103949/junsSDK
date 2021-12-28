@@ -1,0 +1,257 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/live_fullscreen_foreground_cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/live_fullscreen_title_cl"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_gradient_black_angle_270"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/live_fullscreen_back_iv"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:padding="10dp"
+            android:src="@drawable/x7_x7title_back_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/live_fullscreen_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/live_fullscreen_back_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/live_fullscreen_back_iv" />
+
+        <ImageView
+            android:id="@+id/live_fullscreen_volume_iv"
+            android:layout_width="40dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_volume_open_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/live_fullscreen_bottom_contral_cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_gradient_black_angle_90"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <View
+            android:id="@+id/live_fullscreen_detail_bg"
+            android:layout_width="124dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="68dp"
+            android:background="@drawable/bg_solid_green_12cdb0_corner_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/live_fullscreen_message_edit_et" />
+
+        <com.netease.nim.uikit.x7.myview.RoundBorderImageView
+            android:id="@+id/live_fullscreen_detail_game_logo_iv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="@+id/live_fullscreen_detail_bg"
+            app:layout_constraintTop_toTopOf="@+id/live_fullscreen_detail_bg" />
+
+        <FrameLayout
+            android:id="@+id/live_fullscreen_detail_game_name_container_fl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/live_fullscreen_detail_game_logo_iv"
+            app:layout_constraintEnd_toStartOf="@+id/live_fullscreen_detail_arrow_iv"
+            app:layout_constraintStart_toEndOf="@+id/live_fullscreen_detail_game_logo_iv"
+            app:layout_constraintTop_toTopOf="@+id/live_fullscreen_detail_game_logo_iv">
+
+            <com.smwl.x7market.component_base.myview.textview.MarqueeTextView
+                android:id="@+id/live_fullscreen_detail_game_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/live_fullscreen_detail_game_name_no_scroll_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/live_fullscreen_detail_arrow_iv"
+            android:layout_width="6dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/x7_title_right_arrow_port"
+            app:layout_constraintEnd_toEndOf="@+id/live_fullscreen_detail_bg"
+            app:layout_constraintTop_toTopOf="@+id/live_fullscreen_detail_bg" />
+
+        <EditText
+            android:id="@+id/live_fullscreen_message_edit_et"
+            android:layout_width="200dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/bg_solid_99000000_corner_19_stroke_99999999"
+            android:gravity="center|start"
+            android:hint="@string/x7_live_chat_room_hint"
+            android:imeOptions="flagNoExtractUi"
+            android:paddingStart="14dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/live_fullscreen_message_send_iv"
+            android:layout_width="58dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="7dp"
+            android:background="@drawable/bg_solid_99000000_corner_19"
+            app:layout_constraintStart_toEndOf="@+id/live_fullscreen_message_edit_et"
+            app:layout_constraintTop_toTopOf="@+id/live_fullscreen_message_edit_et" />
+
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="@+id/live_fullscreen_message_send_iv"
+            app:layout_constraintTop_toTopOf="@+id/live_fullscreen_message_send_iv" />
+
+        <ImageView
+            android:id="@+id/live_fullscreen_barrage_status_iv"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="7dp"
+            android:background="@drawable/bg_solid_99000000_corner_19"
+            android:padding="6dp"
+            android:src="@drawable/icon_barrage_open_white"
+            app:layout_constraintStart_toEndOf="@+id/live_fullscreen_message_send_iv"
+            app:layout_constraintTop_toTopOf="@+id/live_fullscreen_message_send_iv" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/blessingBagTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/live_blessing_bag_countdown_cl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/live_blessing_countdown_tv"
+                android:layout_width="43dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/x7_blessing_bag_tips_icon"
+                android:gravity="center_horizontal"
+                android:paddingTop="23dp"
+                android:text="120s"
+                android:textColor="@color/base_white"
+                android:textSize="10dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/live_blessing_bag_countdown_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/x7_im_blessing_bag_count_down_number"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="6dp"
+                android:paddingTop="2dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="×"
+                    android:textColor="@color/base_white"
+                    android:textSize="7dp" />
+
+                <TextView
+                    android:id="@+id/live_blessing_bag_countdown_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/base_white"
+                    android:textSize="7dp" />
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/live_message_have_no_send_blessing_bag_iv"
+        android:layout_width="53dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="22dp"
+        android:src="@drawable/x7_im_have_no_send_blessing_bag"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

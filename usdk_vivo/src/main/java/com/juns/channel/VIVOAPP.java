@@ -44,7 +44,6 @@ public class VIVOAPP extends OPlatformAPP {
     public void onCreate(Application application) {
         super.onCreate(application);
 
-
         VivoUnionSDK.initSdk(application, SDKApplication.getPlatformConfig().getExt1(), false);
 
     }

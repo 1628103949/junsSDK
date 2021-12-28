@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x7_addSmallAccount_width"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/x7_bg_white_corners_20"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_month_card_guid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/x7_month_card_guid_title"
+        android:textColor="#333333"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/x7_month_card_icon"
+        android:layout_marginTop="23dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_main_coupon_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#d0a223"
+        android:textSize="14dp"
+        android:text="2000.00元满1000.00元可用代金券天天送"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_main_coupon_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="只需30元，自开卡日起，每天送2张2000.00元满1000.00元可用代金券（有效期为1天，绝大多数游戏有效）"
+        android:textSize="11dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/color_grey_999999"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_vice_coupon_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="额外赠送热门游戏券，更多详情请前往app查看"
+        android:textColor="@color/color_grey_999999"
+        android:textSize="9dp"/>
+
+    <TextView
+        android:id="@+id/tv_know"
+        android:layout_width="115dp"
+        android:layout_height="37dp"
+        android:background="@drawable/x7_btn_back_selected_2"
+        android:gravity="center"
+        android:layout_marginTop="14dp"
+        android:text="@string/x7_know"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        />
+
+</LinearLayout>

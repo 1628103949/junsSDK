@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/x7_half_transparent"
+    android:orientation="vertical">
+
+    <include layout="@layout/x7_activity_title_5" />
+
+    <GridView
+        android:id="@+id/gv_purchase_history"
+        style="@style/X7ScrollBarStyle.Gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:verticalSpacing="8dp"
+        tools:listitem="@layout/x7_item_purchase_history" />
+
+    <com.smwl.smsdk.myview.MyWebView
+        android:id="@+id/purchase_history_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <include
+        layout="@layout/x7_money_record_notsell_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp" />
+
+</LinearLayout>
+

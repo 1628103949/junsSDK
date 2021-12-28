@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="13dp">
+
+    <!--专属活动列表-->
+    <ListView
+        android:id="@+id/x7_exclusive_activity_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:cacheColorHint="@color/x7_list_view_color"
+        android:divider="@null"
+        android:dividerHeight="8dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        tools:listitem="@layout/item_exclusive_activity_rl" />
+
+    <!--没有活动的提示-->
+    <LinearLayout
+        android:id="@+id/x7_exclusive_activity_noDataView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/x7_exclusive_activity_listview"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/x7_do_fail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/x7_exclusive_no_activity" />
+    </LinearLayout>
+
+</RelativeLayout>

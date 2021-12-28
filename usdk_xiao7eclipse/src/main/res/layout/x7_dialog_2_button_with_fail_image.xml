@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/x7_dialog_width"
+    android:layout_height="wrap_content"
+    tools:ignore="ContentDescription, spUsage">
+
+    <ImageView
+        android:id="@+id/fail_iv"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/do_fail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hint_for_fail_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="@color/gray_66"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/sure_tv"
+        app:layout_constraintStart_toStartOf="@+id/cancel_tv"
+        app:layout_constraintTop_toBottomOf="@id/fail_iv" />
+
+    <TextView
+        android:id="@+id/cancel_tv"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_solid_dddddd_corner_7"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_dialog_2_button_with_fail_image"
+        app:layout_constraintTop_toBottomOf="@id/hint_for_fail_tv" />
+
+    <TextView
+        android:id="@+id/sure_tv"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/x7base_bg_green_12cdb0_7"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_14"
+        app:layout_constraintStart_toEndOf="@id/guideline_dialog_2_button_with_fail_image"
+        app:layout_constraintTop_toTopOf="@id/cancel_tv" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_dialog_2_button_with_fail_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/x7_bg_black_solid_52000000_corner_9"
+        android:paddingStart="16dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="13dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_purchase_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_purchase_plat_money"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:src="@drawable/x7_bi_small"
+            android:visibility="gone"
+            android:layout_marginStart="3dp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_purchase_price"
+            app:layout_constraintStart_toEndOf="@+id/tv_purchase_price" />
+
+        <TextView
+            android:id="@+id/tv_purchase_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/x7_text_gray"
+            android:textSize="10dp"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintBottom_toTopOf="@+id/tv_purchase_goods"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_purchase_price"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_purchase_goods"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="right"
+            android:textColor="@color/x7_text_gray"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_purchase_time"
+            app:layout_constraintTop_toBottomOf="@+id/tv_purchase_time" />
+
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>

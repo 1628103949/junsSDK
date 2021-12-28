@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/x7_dialog_receive_blessing_bag_cl"
+        android:layout_width="180dp"
+        android:layout_height="260dp"
+        android:background="@drawable/bg_solid_white_corner_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/x7_dialog_receive_blessing_bag_record_cl"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/x7_im_receive_super_blessing_bag_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/x7_dialog_receive_blessing_bag_desc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="31dp"
+                android:textColor="#ffff00"
+                android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/x7_dialog_send_blessing_bag_tv"
+                app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+            <TextView
+                android:id="@+id/x7_dialog_send_blessing_bag_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="@string/x7_im_send"
+                android:textColor="@color/base_white"
+                android:textSize="8dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/x7_dialog_receive_blessing_bag_desc_tv"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintStart_toEndOf="@+id/x7_dialog_receive_blessing_bag_desc_tv"
+                app:layout_constraintTop_toTopOf="@+id/x7_dialog_receive_blessing_bag_desc_tv" />
+
+            <ImageView
+                android:id="@+id/x7_dialog_receive_blessing_bag_rule_iv"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:padding="3dp"
+                android:visibility="gone"
+                android:src="@drawable/x7_dialog_receive_blessing_bag_rule"
+                app:layout_constraintBottom_toBottomOf="@+id/x7_dialog_send_blessing_bag_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/x7_dialog_send_blessing_bag_tv" />
+
+            <ImageView
+                android:layout_width="51dp"
+                android:layout_height="12dp"
+                android:layout_marginBottom="14dp"
+                android:src="@drawable/x7_im_super_blessing_bag_words"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="90dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/x7_dialog_receive_blessing_bag_record_cl">
+
+            <TextView
+                android:id="@+id/x7_dialog_blessing_bag_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_marginTop="10dp"
+                android:text="@string/x7_im_blessing_bag_content"
+                android:textColor="@color/base_black_3"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/x7_dialog_receive_blessing_bag_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/base_black_3"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/x7_dialog_receive_blessing_bag_review_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:includeFontPadding="false"
+                android:textColor="#8f8e8e"
+                android:textSize="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="25dp"
+                android:includeFontPadding="false"
+                android:text="@string/x7_im_quick_reply"
+                android:textColor="@color/x7base_gray_33"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <com.netease.nim.uikit.x7.myview.FlowLayout
+                android:id="@+id/x7_dialog_receive_blessing_bag_thanks_fl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="27dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="22dp"
+                android:includeFontPadding="false"
+                android:text="@string/x7_im_receive_record"
+                android:textColor="@color/x7base_gray_33"
+                android:textSize="6dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp" />
+
+            <include
+                android:id="@+id/best_luck_king_cl"
+                layout="@layout/x7_im_super_blessing_bag_receive_record_sdk_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/x7_dialog_receive_blessing_bag_recording_rc"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="10dp" />
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.netease.nim.uikit.common.ui.imageview.CircleImageView
+        android:id="@+id/x7_dialog_receive_blessing_bag_avatar_iv"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nim_avatar_group"
+        app:layout_constraintBottom_toTopOf="@+id/x7_dialog_receive_blessing_bag_cl"
+        app:layout_constraintEnd_toEndOf="@+id/x7_dialog_receive_blessing_bag_cl"
+        app:layout_constraintStart_toStartOf="@+id/x7_dialog_receive_blessing_bag_cl"
+        app:layout_constraintTop_toTopOf="@+id/x7_dialog_receive_blessing_bag_cl" />
+
+    <TextView
+        android:id="@+id/x7_dialog_receive_blessing_bag_know_tv"
+        android:layout_width="85dp"
+        android:layout_height="28dp"
+        android:background="@drawable/x7_im_bg_solid_dc4949_corner_50"
+        android:gravity="center"
+        android:text="@string/x7_im_thanks_and_close"
+        android:textColor="@color/base_white"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/x7_dialog_receive_blessing_bag_cl"
+        app:layout_constraintEnd_toEndOf="@+id/x7_dialog_receive_blessing_bag_cl"
+        app:layout_constraintStart_toStartOf="@+id/x7_dialog_receive_blessing_bag_cl"
+        app:layout_constraintTop_toBottomOf="@+id/x7_dialog_receive_blessing_bag_cl" />
+
+</android.support.constraint.ConstraintLayout>

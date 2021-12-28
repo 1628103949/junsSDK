@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/notice_list_root_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/bg_solid_66000000_corner_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="15dp">
+
+                <com.netease.nim.uikit.x7.myview.X7TextViewBorder
+                    android:id="@+id/x7_item_notice_type_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textSize="9dp"
+                    android:visibility="visible"
+                    app:styleIndex="1" />
+
+                <TextView
+                    android:id="@+id/x7_item_new_notice_content_title_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/color_12cdb0"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/x7_item_new_notice_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingExtra="4dp"
+                android:text=""
+                android:textColor="@color/gray_ee"
+                android:textIsSelectable="true"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/x7_item_notice_push_time_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="13dp"
+                android:gravity="right"
+                android:lineSpacingExtra="4dp"
+                android:text=""
+                android:textColor="@color/gray_ee"
+                android:textIsSelectable="true"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/x7_item_new_notice_click_goto_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:drawableRight="@drawable/x7_notice_list_sdk_arrow_icon"
+                android:drawablePadding="6dp"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:padding="5dp"
+                android:text="@string/x7_TeamMessageFragment_clickGoTo"
+                android:textColor="@color/color_12cdb0"
+                android:textSize="11dp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/unread_notice_tip_tv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/red_yuan_bj"
+            android:gravity="center"
+            android:textSize="8dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/blessing_bag_count_down_detail_rc"
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:overScrollMode="never"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/blessing_bag_count_down_close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:src="@drawable/x7_close_blessing_bag_count_down" />
+</RelativeLayout>

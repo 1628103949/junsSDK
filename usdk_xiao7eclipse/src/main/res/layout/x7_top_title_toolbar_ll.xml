@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:gravity="center"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetStartWithNavigation="0dp"
+    app:subtitleTextAppearance="@style/Toolbar.SubTitleText"
+    app:titleTextAppearance="@style/Toolbar.TitleText">
+
+    <RelativeLayout
+        android:id="@+id/common_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--1.左边部分-->
+        <LinearLayout
+            android:id="@+id/toolbar_left_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/toolbar_back_iv"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dip"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/x7_x7title_back" />
+
+            <TextView
+                android:id="@+id/toolbar_left_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="@color/color_12cdb0"
+                android:textSize="11dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/toolbar_left_blank_view"
+            android:layout_width="32dp"
+            android:layout_height="0dp"
+            android:layout_toRightOf="@id/toolbar_left_ll"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/toolbar_left_live_title_blank_view"
+            android:layout_width="32dp"
+            android:layout_height="0dp"
+            android:layout_toRightOf="@id/toolbar_left_ll"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+
+        <!--2.中间部分-->
+        <RelativeLayout
+            android:id="@+id/toolbar_title_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/toolbar_right_ll"
+            android:layout_toRightOf="@+id/toolbar_left_blank_view"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/toolbar_center_noDisturbing_iv"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_toRightOf="@+id/toolbar_title"
+                android:paddingTop="6dip"
+                android:paddingBottom="6dp"
+                android:src="@drawable/x7_nodisturbing_switch_off"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/toolbar_live_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/toolbar_left_live_title_blank_view"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toLeftOf="@+id/toolbar_right_ll"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:visibility="gone" />
+
+        <!--3.toolbar右边部分-->
+        <LinearLayout
+            android:id="@+id/toolbar_right_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:minWidth="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/toolbar_right_clickGoTo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:drawableRight="@drawable/x7_jiantou_green_right11"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="@string/x7_TeamMessageFragment_clickGoTo"
+                android:textColor="@color/color_12cdb0"
+                android:textSize="@dimen/text_size_11"
+                android:visibility="gone" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/toolbar_team_notice_iv"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="3dp"
+                    android:paddingStart="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/x7_top_notice_blue_icon"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/toolbar_unread_notice_tip_tv"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/red_yuan_bj"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:gravity="center"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+            </android.support.constraint.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/toolbar_right_iv"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="13dp"
+                android:src="@drawable/x7_x7title_more"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/toolbar_right_operate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="15dip"
+                android:paddingTop="12dp"
+                android:paddingRight="10dip"
+                android:paddingBottom="12dp"
+                android:text="@string/commit_content"
+                android:textColor="@color/color_black_ff666666"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/action_bar_right_clickable_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nim_message_button_bottom_send_selector"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:textColor="@color/color_green_text_view_selector"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/picker_image_preview_photos_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/nim_picker_preview_unselected"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/actionbar_menu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/nim_ic_menu_selector"
+                android:gravity="center_vertical"
+                android:visibility="gone" />
+        </LinearLayout>
+        <!--积分礼包提示-->
+        <ImageView
+            android:id="@+id/toolbar_credit_gift_notice_iv"
+            android:layout_width="11dp"
+            android:layout_height="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/x7_x7title_gift_notice"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

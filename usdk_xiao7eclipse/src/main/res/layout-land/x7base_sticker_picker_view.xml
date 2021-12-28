@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginBottom="7dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <ImageView
+            android:id="@+id/sticker_thumb_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/x7base_icon_foregin"
+            android:layout_above="@+id/sticker_desc_label"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/sticker_desc_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="12sp"
+            android:textColor="@color/x7base_black_9"
+            android:maxLines="1"
+            android:text=""
+            android:ellipsize="end"
+            android:layout_centerHorizontal="true"
+            android:scrollHorizontally="false" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

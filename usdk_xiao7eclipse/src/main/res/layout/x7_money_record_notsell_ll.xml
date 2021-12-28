@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/money_record_notsell_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/x7_do_fail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dip"
+            android:text="@string/x7_MoneyRecordActivity_noRecord"
+            android:textColor="#cccccc" />
+    </LinearLayout>
+
+</RelativeLayout>

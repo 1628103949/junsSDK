@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_stroke_eeeeee_corner_10">
+
+    <View
+        android:id="@+id/vertical_line_gray_view"
+        android:layout_width="0.7dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:background="#eeeeee"
+        app:layout_constraintBottom_toBottomOf="@+id/replied_message_ll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/replied_message_ll" />
+
+    <LinearLayout
+        android:id="@+id/replied_message_ll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="19dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vertical_line_gray_view"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/message_sender_nick_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color_grey_999999"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/replied_message_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/color_grey_999999"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/replied_message_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="5dp" />
+
+            <ImageView
+                android:id="@+id/replied_share_message_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/horizontal_line_gray_view"
+        android:layout_width="0dp"
+        android:layout_height="0.7dp"
+        android:layout_marginTop="10dp"
+        android:background="#eeeeee"
+        app:layout_constraintEnd_toEndOf="@+id/replied_message_ll"
+        app:layout_constraintStart_toStartOf="@+id/vertical_line_gray_view"
+        app:layout_constraintTop_toBottomOf="@+id/replied_message_ll" />
+
+    <TextView
+        android:id="@+id/reply_content_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="17dp"
+        android:text=""
+        android:textColor="@color/x7base_gray_33"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/replied_message_ll"
+        app:layout_constraintStart_toStartOf="@+id/replied_message_ll"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_line_gray_view" />
+
+</android.support.constraint.ConstraintLayout>

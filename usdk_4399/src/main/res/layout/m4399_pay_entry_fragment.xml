@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/m4399.Pay.Page"
+    android:baselineAligned="false">
+
+    <include layout="@layout/m4399_ope_support_nav_bar_layout" />
+
+    <ScrollView style="@style/m4399.Pay.Body">
+
+        <LinearLayout
+            android:id="@+id/money_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/m4399_pay_order_container" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m4399_pay_spacing_v"
+                android:layout_marginBottom="@dimen/m4399_pay_spacing_v_half"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/m4399.Pay.Label"
+                    android:text="@string/m4399_pay_user_name" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    style="@style/m4399.Pay.Label.Value"
+                    tools:text="sdk-test001" />
+
+            </LinearLayout>
+
+            <include layout="@layout/m4399_pay_coupon_entry" />
+
+            <LinearLayout
+                style="@style/m4399.Pay.Channel.Container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingTop="@dimen/m4399_pay_spacing_v_half">
+
+                <TextView
+                    style="@style/m4399.Pay.Label"
+                    android:layout_height="@dimen/m4399_pay_channel_chip_height"
+                    android:layout_marginBottom="@dimen/m4399_pay_spacing_v_half"
+                    android:gravity="center_vertical"
+                    android:text="@string/m4399_pay_channel" />
+
+                <cn.m4399.operate.recharge.channel.inflate.ChipGroup
+                    android:id="@+id/m4399_pay_chip_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true">
+
+                    <include layout="@layout/m4399_pay_channel_chip_item" />
+
+                    <TextView
+                        android:id="@+id/m4399_pay_chip_select_entry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/m4399_pay_channel_chip_height"
+                        android:background="@drawable/m4399_ope_ripple_r4_gray"
+                        android:drawableEnd="@drawable/m4399_ope_arrow_right_grey"
+                        android:drawableRight="@drawable/m4399_ope_arrow_right_grey"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="12dp"
+                        android:paddingBottom="6dp"
+                        android:text="@string/m4399_pay_chip_select_other"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/m4399_font_14" />
+                </cn.m4399.operate.recharge.channel.inflate.ChipGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/m4399_pay_tv_confirm" />
+</LinearLayout>

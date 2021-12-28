@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wy_full_transparent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@id/wy_fragment_fist_login_ly"
+        android:layout_width="@dimen/wy_fragment_common_width"
+        android:layout_height="@dimen/wy_fragment_common_nologo_height"
+        android:background="@drawable/wy_shape_corner">
+
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="19dp">
+
+            <ImageView
+                android:id="@id/wy_back_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/wy_iv_back"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@id/wy_please_select_the_login_method_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+
+            <include layout="@layout/wy_include_wy_icon" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@id/wy_pb"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/wy_shape_progress_bar"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wy_please_select_the_login_method_ll"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="20dp"
+            android:paddingRight="25dp">
+
+            <LinearLayout
+                android:id="@id/wk_account_rigiest_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@id/wk_account_login_iv"
+                    android:layout_width="@dimen/wy_iv_wk_account_login_width"
+                    android:layout_height="@dimen/wy_iv_wk_account_login_height" />
+
+                <TextView
+                    android:id="@id/wk_account_register_Tv"
+                    style="@style/wy_tv_login_method"
+                    android:maxLines="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/wy_visitor_login_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@id/wy_visitor_login_iv"
+                    android:layout_width="@dimen/wy_iv_visitor_login_width"
+                    android:layout_height="@dimen/wy_iv_visitor_login_height"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@id/wk_guest_login_Tv"
+                    style="@style/wy_tv_login_method"
+                    android:maxLines="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/wy_mobile_login_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@id/wy_mobile_login_iv"
+                    android:layout_width="@dimen/wy_iv_visitor_login_width"
+                    android:layout_height="@dimen/wy_iv_visitor_login_height"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@id/wy_mobile_login_Tv"
+                    style="@style/wy_tv_login_method"
+                    android:maxLines="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/wy_wx_login_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@id/wy_wx_login_iv"
+                    android:layout_width="@dimen/wy_iv_visitor_login_width"
+                    android:layout_height="@dimen/wy_iv_visitor_login_height"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@id/wy_wx_login_Tv"
+                    style="@style/wy_tv_login_method"
+                    android:maxLines="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/wy_fast_login_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@id/wy_fast_login_iv"
+                    android:layout_width="@dimen/wy_iv_visitor_login_width"
+                    android:layout_height="@dimen/wy_iv_visitor_login_height"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@id/wy_fast_login_tv"
+                    style="@style/wy_tv_login_method"
+                    android:maxLines="2" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/wy_right_common_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="20dp">
+
+
+            <LinearLayout
+                android:id="@id/wy_account_login_again_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@id/wy_have_account_login_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:gravity="center"
+                    android:text="@string/wk_account_login_again"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/wy_contact_customer_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@id/wy_forget_pwd_contact_customer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:gravity="center"
+                    android:text="@string/wy_contact_customer"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

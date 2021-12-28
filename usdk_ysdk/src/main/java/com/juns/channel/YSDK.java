@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.PopupWindow;
 
 import com.juns.sdk.core.api.JunSConstants;
+import com.juns.sdk.core.own.common.JunSWebDialog;
 import com.juns.sdk.core.platform.OPlatformBean;
 import com.juns.sdk.core.platform.OPlatformSDK;
 import com.juns.sdk.core.platform.OPlatformUtils;
@@ -32,13 +33,16 @@ import com.juns.sdk.framework.log.LogFactory;
 import com.juns.sdk.framework.log.TNLog;
 import com.juns.sdk.framework.safe.JunSEncrypt;
 import com.juns.sdk.framework.view.common.ViewUtils;
+import com.juns.sdk.framework.view.dialog.BounceEnter.BounceBottomEnter;
 import com.juns.sdk.framework.view.dialog.FadeEnter.FadeEnter;
 import com.juns.sdk.framework.view.dialog.FadeExit.FadeExit;
+import com.juns.sdk.framework.view.dialog.ZoomExit.ZoomOutExit;
 import com.juns.sdk.framework.xbus.Bus;
 import com.juns.sdk.framework.xutils.common.Callback;
 import com.juns.sdk.framework.xutils.http.RequestParams;
 import com.juns.sdk.framework.xutils.x;
 import com.tencent.ysdk.api.YSDKApi;
+import com.tencent.ysdk.framework.common.BaseRet;
 import com.tencent.ysdk.framework.common.eFlag;
 import com.tencent.ysdk.framework.common.ePlatform;
 import com.tencent.ysdk.module.antiaddiction.listener.AntiAddictListener;
@@ -65,6 +69,7 @@ import java.util.TimerTask;
 
 public class YSDK extends OPlatformSDK {
     private static final String TAG = "YYB";
+    private JunSWebDialog junSWebDialog;
     // 防沉迷指令执行状态
     public static boolean mAntiAddictExecuteState = false;
     private static TNLog logger = LogFactory.getLog(TAG, true);
@@ -75,13 +80,13 @@ public class YSDK extends OPlatformSDK {
     private YSDKLoginDialog.LoginViewCallback loginViewCallback = new YSDKLoginDialog.LoginViewCallback() {
         @Override
         public void onQQ() {
-            YSDKApi.logout();
+            //YSDKApi.logout();
             YSDKApi.login(ePlatform.QQ);
         }
 
         @Override
         public void onWX() {
-            YSDKApi.logout();
+            //YSDKApi.logout();
             YSDKApi.login(ePlatform.WX);
         }
     };
@@ -93,6 +98,7 @@ public class YSDK extends OPlatformSDK {
     @Override
     public void init(Activity activity) {
         mContext = activity;
+        //YSDKApi.init();
         Bus.getDefault().post(OInitEv.getSucc());
     }
 
@@ -104,7 +110,6 @@ public class YSDK extends OPlatformSDK {
     @Override
     public void logout(Activity mainAct) {
         YSDKApi.logout();
-        dismissLoginView();
     }
 
     @Override
@@ -133,31 +138,33 @@ public class YSDK extends OPlatformSDK {
         final UserLoginRet userLoginRet = new UserLoginRet();
         YSDKApi.getLoginRecord(userLoginRet);
         //Log.e("YSDKTEST",userLoginRet.toString());
+        //showLoginView();
         if(userLoginRet.flag!=0){
             showLoginView();
         }else{
-            ysdkAutoLoginDialog = new YSDKAutoLoginDialog(activity, new YSDKAutoLoginDialog.AutoCallback() {
-                @Override
-                public void onSwitchAccount() {
-                    showLoginView();
-                }
-            });
-            ysdkAutoLoginDialog.showAnim(new FadeEnter()).dismissAnim(new FadeExit()).dimEnabled(true).show();
-            TimerTask task = new TimerTask(){
-                public void run(){
-                    //execute the task
-                    activity.runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            ysdkAutoLoginDialog.dismiss();
-                            loginToSever(userLoginRet);
-                        }
-                    });
-
-                }
-            };
-            Timer timer = new Timer();
-            timer.schedule(task, 2000);
+            YSDKApi.autoLogin();
+//            ysdkAutoLoginDialog = new YSDKAutoLoginDialog(activity, new YSDKAutoLoginDialog.AutoCallback() {
+//                @Override
+//                public void onSwitchAccount() {
+//                    showLoginView();
+//                }
+//            });
+//            ysdkAutoLoginDialog.showAnim(new FadeEnter()).dismissAnim(new FadeExit()).dimEnabled(true).show();
+//            TimerTask task = new TimerTask(){
+//                public void run(){
+//                    //execute the task
+//                    activity.runOnUiThread(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            ysdkAutoLoginDialog.dismiss();
+//                            loginToSever(userLoginRet);
+//                        }
+//                    });
+//
+//                }
+//            };
+//            Timer timer = new Timer();
+//            timer.schedule(task, 2000);
 
         }
 
@@ -332,7 +339,7 @@ public class YSDK extends OPlatformSDK {
     @Override
     public void onCreate(Activity mainAct) {
         //YSDKApi.onCreate(mainAct);
-        YSDKApi.init(true);
+        YSDKApi.init(false);
         YSDKApi.setUserListener(mYSDKCallback);
         YSDKApi.setBuglyListener(mYSDKCallback);
         YSDKApi.setAntiAddictListener(mYSDKCallback);
@@ -343,7 +350,7 @@ public class YSDK extends OPlatformSDK {
     @Override
     public void onResume(Activity mainAct) {
         //YSDKApi.onResume(mainAct);
-        //YSDKApi.showDebugIcon(mainAct);
+        YSDKApi.showDebugIcon(mainAct);
     }
 
     @Override
@@ -440,79 +447,79 @@ public class YSDK extends OPlatformSDK {
         }
     }
 
-    public void executeInstruction(AntiAddictRet ret) {
-        final int modal = ret.modal;
-        switch (ret.type) {
-            case AntiAddictRet.TYPE_TIPS:
-            case AntiAddictRet.TYPE_LOGOUT:
-                if (!mAntiAddictExecuteState) {
-                    mAntiAddictExecuteState = true;
-                    AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-                    builder.setTitle(ret.title);
-                    builder.setMessage(ret.content);
-                    builder.setPositiveButton("知道了",
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog,
-                                                    int whichButton) {
-                                    if (modal == 1) {
-                                        // 强制用户下线
-                                        YSDKApi.logout();
-                                        //回到游戏登录界面
-                                        Bus.getDefault().post(new OLogoutEv());
-                                    }
-                                    changeExecuteState(false);
-                                }
-                            });
-                    builder.setCancelable(false);
-                    builder.show();
-                    // 已执行指令
-                    YSDKApi.reportAntiAddictExecute(ret, System.currentTimeMillis());
-                }
+//    public void executeInstruction(AntiAddictRet ret) {
+//        final int modal = ret.modal;
+//        switch (ret.type) {
+//            case AntiAddictRet.TYPE_TIPS:
+//            case AntiAddictRet.TYPE_LOGOUT:
+//                if (!mAntiAddictExecuteState) {
+//                    mAntiAddictExecuteState = true;
+//                    AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+//                    builder.setTitle(ret.title);
+//                    builder.setMessage(ret.content);
+//                    builder.setPositiveButton("知道了",
+//                            new DialogInterface.OnClickListener() {
+//                                public void onClick(DialogInterface dialog,
+//                                                    int whichButton) {
+//                                    if (modal == 1) {
+//                                        // 强制用户下线
+//                                        YSDKApi.logout();
+//                                        //回到游戏登录界面
+//                                        Bus.getDefault().post(new OLogoutEv());
+//                                    }
+//                                    changeExecuteState(false);
+//                                }
+//                            });
+//                    builder.setCancelable(false);
+//                    builder.show();
+//                    // 已执行指令
+//                    YSDKApi.reportAntiAddictExecute(ret, System.currentTimeMillis());
+//                }
+//
+//                break;
+//
+//            case AntiAddictRet.TYPE_OPEN_URL:
+//                if (!mAntiAddictExecuteState) {
+//                    mAntiAddictExecuteState = true;
+//                    View popwindowView = View.inflate(mContext, ResUtil.getLayoutID("pop_window_web_layout", mContext), null);
+//                    WebView webView = popwindowView.findViewById(ResUtil.getID("pop_window_webview", mContext));
+//                    Button closeButton = popwindowView.findViewById(ResUtil.getID("pop_window_close", mContext));
+//
+//                    WebSettings settings = webView.getSettings();
+//                    settings.setJavaScriptEnabled(true);
+//                    webView.setWebViewClient(new WebViewClient());
+//                    webView.loadUrl(ret.url);
+//
+//                    final PopupWindow popupWindow = new PopupWindow(popwindowView, 1000, 1000);
+//                    popupWindow.setTouchable(true);
+//                    popupWindow.setOutsideTouchable(false);
+//                    popupWindow.setBackgroundDrawable(new BitmapDrawable());
+//
+//                    closeButton.setOnClickListener(new View.OnClickListener() {
+//                        @Override
+//                        public void onClick(View v) {
+//                            if (modal == 1) {
+//                                YSDKApi.logout();
+//                                //回到游戏登录界面
+//                                Bus.getDefault().post(new OLogoutEv());
+//                            }
+//                            popupWindow.dismiss();
+//                            changeExecuteState(false);
+//                        }
+//                    });
+//
+//                    popupWindow.showAtLocation(popwindowView, Gravity.CENTER, 0, 0);
+//                    // 已执行指令
+//                    YSDKApi.reportAntiAddictExecute(ret, System.currentTimeMillis());
+//                }
+//                break;
+//
+//        }
+//    }
 
-                break;
-
-            case AntiAddictRet.TYPE_OPEN_URL:
-                if (!mAntiAddictExecuteState) {
-                    mAntiAddictExecuteState = true;
-                    View popwindowView = View.inflate(mContext, ResUtil.getLayoutID("pop_window_web_layout", mContext), null);
-                    WebView webView = popwindowView.findViewById(ResUtil.getID("pop_window_webview", mContext));
-                    Button closeButton = popwindowView.findViewById(ResUtil.getID("pop_window_close", mContext));
-
-                    WebSettings settings = webView.getSettings();
-                    settings.setJavaScriptEnabled(true);
-                    webView.setWebViewClient(new WebViewClient());
-                    webView.loadUrl(ret.url);
-
-                    final PopupWindow popupWindow = new PopupWindow(popwindowView, 1000, 1000);
-                    popupWindow.setTouchable(true);
-                    popupWindow.setOutsideTouchable(false);
-                    popupWindow.setBackgroundDrawable(new BitmapDrawable());
-
-                    closeButton.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            if (modal == 1) {
-                                YSDKApi.logout();
-                                //回到游戏登录界面
-                                Bus.getDefault().post(new OLogoutEv());
-                            }
-                            popupWindow.dismiss();
-                            changeExecuteState(false);
-                        }
-                    });
-
-                    popupWindow.showAtLocation(popwindowView, Gravity.CENTER, 0, 0);
-                    // 已执行指令
-                    YSDKApi.reportAntiAddictExecute(ret, System.currentTimeMillis());
-                }
-                break;
-
-        }
-    }
-
-    private void changeExecuteState(boolean state) {
-        mAntiAddictExecuteState = state;
-    }
+//    private void changeExecuteState(boolean state) {
+//        mAntiAddictExecuteState = state;
+//    }
 
     /**
      * YSDK通过UserListener抽象类中的方法将授权或查询结果回调给游戏。
@@ -527,16 +534,22 @@ public class YSDK extends OPlatformSDK {
             YSDK.logger.print(ret.getAccessToken());
             YSDK.logger.print(ret.getPayToken());
             YSDK.logger.print("ret.flag" + ret.flag);
+//            YSDKApi.reportGameRoleInfo("zoneId", "zoneName", "roleId",
+//                    "roleName", 9, 9, 9, null);
             switch (ret.flag) {
                 case eFlag.Succ:
-                    Log.e("guoinfo","success");
+                    //开始登录
+                    UserLoginRet userLoginRet = new UserLoginRet();
+                    YSDKApi.getLoginRecord(userLoginRet);
+                    if (userLoginRet.ret != BaseRet.RET_SUCC) {
+                        YSDK.logger.print("UserLogin error!!!");
+                        YSDKApi.logout();
+                        return;
+                    }
+                    loginToSever(userLoginRet);
                     if (ret.getLoginType() != UserLoginRet.LOGIN_TYPE_TIMER) {
                         // 定时登录，不需要设置防沉迷统计开始，自动登录情况，不需上报
                         YSDKApi.setAntiAddictGameStart();
-                        //开始登录
-                        UserLoginRet userLoginRet = new UserLoginRet();
-                        YSDKApi.getLoginRecord(userLoginRet);
-                        loginToSever(userLoginRet);
                     }
                     break;
                 // 游戏逻辑，对登录失败情况分别进行处理
@@ -601,21 +614,32 @@ public class YSDK extends OPlatformSDK {
 
                 case eFlag.Login_NotRegisterRealName:
                     YSDK.logger.print("您的账号没有进行实名认证，请实名认证后重试");
-                    //Bus.getDefault().post(OLoginEv.getFail(JunSConstants.Status.CHANNEL_ERR, "您的账号没有进行实名认证，请实名认证后重试"));
+                    Bus.getDefault().post(OLoginEv.getFail(JunSConstants.Status.CHANNEL_ERR, "您的账号没有进行实名认证，请实名认证后重试"));
+                    showLoginView();
                     break;
 
                 case eFlag.Login_NeedRegisterRealName:
                     YSDK.logger.print("您的账号没有进行实名认证，请完成实名认证后重试");
-                    //Bus.getDefault().post(OLoginEv.getFail(JunSConstants.Status.CHANNEL_ERR, "您的账号没有进行实名认证，请完成实名认证后重试"));
+                    Bus.getDefault().post(OLoginEv.getFail(JunSConstants.Status.CHANNEL_ERR, "您的账号没有进行实名认证，请完成实名认证后重试"));
+                    showLoginView();
                     break;
 
                 case eFlag.Login_Free_Login_Auth_Failed:
                     YSDK.logger.print("免登录校验失败，请重启重试");
+                    YSDKApi.logout();
+                    Bus.getDefault().post(OLoginEv.getFail(JunSConstants.Status.CHANNEL_ERR, "免登录校验失败，请重启重试"));
+                    break;
+
+                case eFlag.Login_User_Logout:
+                    // 用户手动退出登录（用于用户游客体验模式下，提醒用户退出登录完成实名认证）
+//                    YSDKDemoApi.sShowView.showToastTips("您已退出登录，请重新登录");
+                    YSDKApi.logout();
                     Bus.getDefault().post(OLoginEv.getFail(JunSConstants.Status.CHANNEL_ERR, "免登录校验失败，请重启重试"));
                     break;
 
                 default:
                     YSDK.logger.print("登录失败，请重启重试");
+                    YSDKApi.logout();
                     Bus.getDefault().post(OLoginEv.getFail(JunSConstants.Status.CHANNEL_ERR, "登录失败，请重启重试"));
                     break;
             }
@@ -719,7 +743,7 @@ public class YSDK extends OPlatformSDK {
                     case eFlag.Pay_User_Cancle:
                         //用户取消支付
                         YSDK.logger.print("用户取消支付：" + ret.toString());
-                        Bus.getDefault().post(OPayEv.getFail(JunSConstants.Status.CHANNEL_ERR, "用户取消支付：" + ret.toString()));
+                        Bus.getDefault().post(OPayEv.getFail(JunSConstants.Status.CHANNEL_ERR, "用户取消支付：" + "user cancel"));
                         break;
 
                     case eFlag.Pay_Param_Error:
@@ -740,24 +764,19 @@ public class YSDK extends OPlatformSDK {
         public void onTimeLimitNotify(AntiAddictRet ret) {
             if (AntiAddictRet.RET_SUCC == ret.ret) {
                 // 防沉迷指令
-                switch (ret.ruleFamily) {
-                    case AntiAddictRet.RULE_WORK_TIP:
+                switch (ret.type) {
+                    case AntiAddictRet.TYPE_TIPS:
                         YSDKNotiDialog.showNoti((Activity) mContext,ret.content,true);
+                        YSDKApi.reportAntiAddictExecute(ret, System.currentTimeMillis());
                         break;
-                    case AntiAddictRet.RULE_WORK_NO_PLAY:
+                    case AntiAddictRet.TYPE_LOGOUT:
                         YSDKNotiDialog.showNoti((Activity) mContext,ret.content,false);
+                        YSDKApi.reportAntiAddictExecute(ret, System.currentTimeMillis());
                         break;
-                    case AntiAddictRet.RULE_HOLIDAY_TIP:
-                        YSDKNotiDialog.showNoti((Activity) mContext,ret.content,true);
-                        break;
-                    case AntiAddictRet.RULE_HOLIDAY_NO_PLAY:
-                        YSDKNotiDialog.showNoti((Activity) mContext,ret.content,false);
-                        break;
-                    case AntiAddictRet.RULE_GUEST:
-                        YSDKNotiDialog.showNoti((Activity) mContext,ret.content,false);
-                        break;
-                    case AntiAddictRet.RULE_NIGHT_NO_PLAY:
-                        YSDKNotiDialog.showNoti((Activity) mContext,ret.content,false);
+                    case AntiAddictRet.TYPE_OPEN_URL:
+                        showJunsWebDialog("信息",ret.url);
+                        // 已执行指令
+                        YSDKApi.reportAntiAddictExecute(ret, System.currentTimeMillis());
                         break;
                     default:
                         YSDK.logger.print("onTimeLimitNotify " + ret.toString());
@@ -770,30 +789,24 @@ public class YSDK extends OPlatformSDK {
         public void onLoginLimitNotify(AntiAddictRet ret) {
             if (AntiAddictRet.RET_SUCC == ret.ret) {
                 // 防沉迷指令
-                switch (ret.ruleFamily) {
-                    case AntiAddictRet.RULE_WORK_TIP:
+                switch (ret.type) {
+                    case AntiAddictRet.TYPE_TIPS:
                         YSDKNotiDialog.showNoti((Activity) mContext,ret.content,true);
+                        YSDKApi.reportAntiAddictExecute(ret, System.currentTimeMillis());
                         break;
-                    case AntiAddictRet.RULE_WORK_NO_PLAY:
+                    case AntiAddictRet.TYPE_LOGOUT:
                         YSDKNotiDialog.showNoti((Activity) mContext,ret.content,false);
+                        YSDKApi.reportAntiAddictExecute(ret, System.currentTimeMillis());
                         break;
-                    case AntiAddictRet.RULE_HOLIDAY_TIP:
-                        YSDKNotiDialog.showNoti((Activity) mContext,ret.content,true);
-                        break;
-                    case AntiAddictRet.RULE_HOLIDAY_NO_PLAY:
-                        YSDKNotiDialog.showNoti((Activity) mContext,ret.content,false);
-                        break;
-                    case AntiAddictRet.RULE_GUEST:
-                        YSDKNotiDialog.showNoti((Activity) mContext,ret.content,false);
-                        break;
-                    case AntiAddictRet.RULE_NIGHT_NO_PLAY:
-                        YSDKNotiDialog.showNoti((Activity) mContext,ret.content,false);
+                    case AntiAddictRet.TYPE_OPEN_URL:
+                        showJunsWebDialog("信息",ret.url);
+                        // 已执行指令
+                        YSDKApi.reportAntiAddictExecute(ret, System.currentTimeMillis());
                         break;
                     default:
-                        YSDK.logger.print("onLoginLimitNotify " + ret.toString());
+                        YSDK.logger.print("onTimeLimitNotify " + ret.toString());
                         break;
                 }
-
             }
         }
 
@@ -805,4 +818,17 @@ public class YSDK extends OPlatformSDK {
         }
     }
 
+    private void showJunsWebDialog(String title, String url) {
+        if (junSWebDialog != null) {
+            if (junSWebDialog.isShowing()) {
+                junSWebDialog.dismiss();
+            }
+            junSWebDialog = null;
+        }
+        junSWebDialog = new JunSWebDialog((Activity) mContext, title, url);
+        junSWebDialog.showAnim(new BounceBottomEnter())
+                .dismissAnim(new ZoomOutExit()).
+                dimEnabled(true)
+                .show();
+    }
 }

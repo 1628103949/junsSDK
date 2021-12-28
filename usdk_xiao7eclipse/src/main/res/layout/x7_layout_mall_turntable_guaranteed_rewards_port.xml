@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.smwl.smsdk.myview.mall.MallTurntableLevelRewardView
+        android:id="@+id/first_guaranteed_rewards_item"
+        android:layout_width="31dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:is_land="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/first_divide_line"
+        android:layout_width="22dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="@id/second_guaranteed_rewards_item"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.smwl.smsdk.myview.mall.MallTurntableLevelRewardView
+        android:id="@+id/second_guaranteed_rewards_item"
+        android:layout_width="31dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:visibility="gone"
+        app:is_land="false"
+        app:layout_constraintStart_toEndOf="@id/first_guaranteed_rewards_item"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/second_divide_line"
+        android:layout_width="22dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="@id/third_guaranteed_rewards_item"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.smwl.smsdk.myview.mall.MallTurntableLevelRewardView
+        android:id="@+id/third_guaranteed_rewards_item"
+        android:layout_width="31dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:visibility="gone"
+        app:is_land="false"
+        app:layout_constraintStart_toEndOf="@id/second_guaranteed_rewards_item"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/third_divide_line"
+        android:layout_width="22dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="@id/fourth_guaranteed_rewards_item"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.smwl.smsdk.myview.mall.MallTurntableLevelRewardView
+        android:id="@+id/fourth_guaranteed_rewards_item"
+        android:layout_width="31dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:visibility="gone"
+        app:is_land="false"
+        app:layout_constraintStart_toEndOf="@id/third_guaranteed_rewards_item"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/fourth_divide_line"
+        android:layout_width="22dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="@id/fifth_guaranteed_rewards_item"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.smwl.smsdk.myview.mall.MallTurntableLevelRewardView
+        android:id="@+id/fifth_guaranteed_rewards_item"
+        android:layout_width="31dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:visibility="gone"
+        app:is_land="false"
+        app:layout_constraintStart_toEndOf="@id/fourth_guaranteed_rewards_item"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

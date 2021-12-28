@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/reward_item_title_cl"
+        android:layout_width="31dp"
+        android:layout_height="15dp"
+        android:background="@drawable/x7_mall_turntable_guaranteed_reward_unreached_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/reward_item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="8dp"
+            android:textColor="@color/x7_white_FFF7DF"/>
+
+        <ImageView
+            android:id="@+id/reward_item_title_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/x7_mall_turntable_reward_received_icon"
+            android:visibility="gone"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/turntable_reward_line"
+        android:layout_width="1dp"
+        android:layout_height="5dp"
+        android:background="@color/x7_brown_B8983E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reward_item_title_cl" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/reward_item_content_cl"
+        android:layout_width="31dp"
+        android:layout_height="76dp"
+        android:background="@drawable/x7_mall_turntable_guaranteed_reward_unreached_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/turntable_reward_line">
+
+        <View
+            android:id="@+id/reward_item_red_dot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/nim_icon_reddot"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            app:layout_constraintTop_toTopOf="@id/reward_item_reward_icon_content_iv"
+            app:layout_constraintBottom_toBottomOf="@id/reward_item_reward_icon_content_iv"
+            app:layout_constraintStart_toStartOf="@id/reward_item_reward_icon_content_iv"
+            app:layout_constraintEnd_toEndOf="@id/reward_item_reward_icon_content_iv"
+            android:src="@drawable/bg_mall_gift" />
+
+        <ImageView
+            android:id="@+id/reward_item_reward_icon_content_iv"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            app:layout_constraintTop_toTopOf="@id/reward_item_reward_icon_border_iv"
+            app:layout_constraintBottom_toBottomOf="@id/reward_item_reward_icon_border_iv"
+            app:layout_constraintStart_toStartOf="@id/reward_item_reward_icon_border_iv"
+            app:layout_constraintEnd_toEndOf="@id/reward_item_reward_icon_border_iv"/>
+
+        <com.smwl.smsdk.myview.StrokeTextView
+            android:id="@+id/reward_item_content_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="5dp"
+            android:textColor="@color/x7_white"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintEnd_toEndOf="@id/reward_item_reward_icon_border_iv"
+            app:layout_constraintBottom_toBottomOf="@id/reward_item_reward_icon_border_iv"/>
+
+        <ImageView
+            android:id="@+id/reward_item_reward_icon_border_iv"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/mall_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.smwl.smsdk.myview.StrokeTextView
+                android:id="@+id/reward_item_reward_name_stroke_tv"
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:textColor="@color/base_white"
+                android:textSize="7dp"
+                android:letterSpacing="0.2"
+                app:stroke_width="1.5dp"/>
+
+            <TextView
+                android:id="@+id/reward_item_reward_name_tv"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:textColor="@color/x7_brown_8E6800"
+                android:textSize="7dp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

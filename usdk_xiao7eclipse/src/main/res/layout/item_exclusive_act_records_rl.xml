@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/exclusive_act_records_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/x7_bg_ff000000_corner_7"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp">
+
+        <TextView
+            android:id="@+id/records_unread_tv"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginTop="6dp"
+            android:visibility="gone"
+            android:background="@drawable/x7_coner_90_solid_ff0000" />
+
+        <TextView
+            android:id="@+id/act_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/records_unread_tv"
+            android:layout_toLeftOf="@+id/act_commit_state_tv"
+            android:singleLine="true"
+            android:textColor="@color/gray_ee"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/act_commit_state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/color_ff9900"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.33dp"
+            android:layout_below="@+id/act_commit_state_tv"
+            android:layout_marginVertical="7dp"
+            android:background="@color/base_black_4" />
+
+        <TextView
+            android:id="@+id/act_require_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:textColor="@color/gray_ee"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/act_gain_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/act_require_tv"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/x7base_gray_aa"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/act_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/act_gain_time_tv"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:textColor="@color/x7_color_ddd"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/act_send_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/act_content_tv"
+            android:layout_marginTop="7dp"
+            android:textColor="#7ac51f"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/act_gift_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/act_content_tv"
+            android:layout_marginTop="7dp"
+            android:textColor="#7ac51f"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/act_copy_code_tv"
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/act_content_tv"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/x7_bg_7ac620_corner_12"
+            android:text="@string/x7_copy"
+            android:gravity="center"
+            android:textColor="@color/base_white"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

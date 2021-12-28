@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/emojiLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <!--<View
+        android:id="@+id/top_divider_line"
+        android:layout_height="2px"
+        android:layout_width="match_parent"
+        android:background="@color/color_gray_d9d9d9"
+        android:visibility="gone" />-->
+
+    <LinearLayout
+        android:id="@+id/scrPlugin_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/x7base_gray_f5"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/scrPlugin"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:paddingTop="13dp"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+
+    <!--<View style="@style/horizontal_light_thin_divider" />-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <HorizontalScrollView
+            android:id="@+id/emoj_tab_view_container"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/emoj_tab_view"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <ImageView
+            android:id="@+id/iv_delete_emoji"
+            android:src="@drawable/x7base_emoji_del"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

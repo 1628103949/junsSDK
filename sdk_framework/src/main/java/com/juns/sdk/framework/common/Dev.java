@@ -8,6 +8,7 @@ import android.support.v4.app.ActivityCompat;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 
+import com.juns.sdk.framework.permission.PermissionUtils;
 import com.juns.sdk.framework.safe.JunSEncrypt;
 import com.juns.sdk.framework.utils.DeviceUtils;
 import com.juns.sdk.framework.utils.EncryptUtils;
@@ -200,7 +201,12 @@ public class Dev {
     public static TelephonyManager telephonyManager;
 
     public static String getSimNumber(Context ctx) {
-        telephonyManager = (TelephonyManager) ctx.getSystemService(Context.TELEPHONY_SERVICE);
-        return telephonyManager.getLine1Number();
+        //if(Pe)
+        if(PermissionUtils.isGranted(Manifest.permission.READ_PHONE_STATE)){
+            telephonyManager = (TelephonyManager) ctx.getSystemService(Context.TELEPHONY_SERVICE);
+            return telephonyManager.getLine1Number();
+        }else {
+            return "";
+        }
     }
 }

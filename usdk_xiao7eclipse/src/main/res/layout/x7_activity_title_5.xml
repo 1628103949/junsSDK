@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/x7title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:drawableLeft="@drawable/x7_act_title_back" />
+
+    <TextView
+        android:id="@+id/x7title_center"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:text="@string/x7_find_login_password"
+        android:textColor="#12cdb0"
+        android:textSize="14dp"/>
+
+    <!-- 钱包记录-隐藏记录按钮-->
+    <TextView
+        android:id="@+id/hide_deal_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#9f9f9f"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

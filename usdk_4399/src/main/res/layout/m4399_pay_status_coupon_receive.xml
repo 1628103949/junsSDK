@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:showIn="@layout/m4399_pay_status_fragment_success">
+
+    <include layout="@layout/m4399_pay_status_coupon_info" />
+
+    <TextView
+        android:id="@+id/m4399_pay_coupon_receive_tv"
+        android:layout_width="180dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/m4399_ope_ripple_r4_green"
+        android:gravity="center"
+        android:text="@string/m4399_ope_coupon_receive"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        tools:visibility="visible" />
+</LinearLayout>

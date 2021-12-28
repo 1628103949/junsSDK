@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#e5e5e5">
+    <item>
+        <selector>
+            <item
+                android:drawable="@drawable/m4399_ope_shape_r4_green_dark"
+                android:state_pressed="true" />
+
+            <item
+                android:drawable="@drawable/m4399_ope_shape_r4_green"
+                android:state_enabled="true" />
+
+            <item
+                android:drawable="@drawable/m4399_ope_shape_r4_gray"
+                android:state_enabled="false" />
+        </selector>
+    </item>
+</ripple>

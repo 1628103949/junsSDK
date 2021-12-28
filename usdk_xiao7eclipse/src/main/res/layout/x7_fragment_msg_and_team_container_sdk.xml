@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/msg_container_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/msg_title_float_window_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="10dp"
+            android:clipToPadding="false"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/msg_title_float_window_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/x7_tv_account_note_bg"
+                android:drawableStart="@drawable/x7_icon_float_window"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:paddingLeft="13dp"
+                android:paddingTop="7dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="7dp"
+                android:text="@string/x7_float_window"
+                android:textColor="#12cdb0"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/msg_title_contact_customer_service_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/msg_title_float_window_rl"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="13dp"
+            android:layout_toStartOf="@+id/msg_title_float_window_rl"
+            android:background="@drawable/x7_tv_account_note_bg"
+            android:drawableStart="@drawable/x7_chat"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:paddingLeft="13dp"
+            android:paddingTop="7dp"
+            android:paddingRight="13dp"
+            android:paddingBottom="7dp"
+            android:text="@string/x7_kefu"
+            android:textColor="#12cdb0"
+            android:textSize="10dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/msg_title_open_message_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/msg_title_contact_customer_service_tv"
+            android:layout_toStartOf="@+id/msg_title_contact_customer_service_tv"
+            android:clipToPadding="false"
+            android:paddingTop="1dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/msg_title_open_message_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/x7_tv_account_note_bg"
+                android:drawableStart="@drawable/x7_chat"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:paddingLeft="13dp"
+                android:paddingTop="7dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="7dp"
+                android:text="@string/x7_message"
+                android:textColor="#12cdb0"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/message_unread_red_dot"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignTop="@+id/msg_title_open_message_tv"
+                android:layout_alignEnd="@+id/msg_title_open_message_tv"
+                android:layout_marginTop="-1dp"
+                android:layout_marginEnd="-1dp"
+                android:src="@drawable/x7_un_read_msg"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/team_msg_bell_iv"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/msg_title_contact_customer_service_tv"
+            android:layout_alignBottom="@+id/msg_title_contact_customer_service_tv"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/msg_title_open_message_rl"
+            android:background="@drawable/x7_tv_account_note_bg"
+            android:padding="7dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/x7_icon_bell_no_mute"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/msg_title_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/x7_act_title_back"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/msg_title_join_team_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msg_container_title_rl"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="35dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/msg_title_join_team"
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/join_team_iv_holder"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="-40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@id/join_team_iv_holder"
+            android:background="@drawable/x7_bg_solid_green_12cdb0_corner_100"
+            android:gravity="center"
+            android:text="@string/x7_join_im"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/msg_title_join_team"
+            android:layout_alignEnd="@id/msg_title_join_team"
+            android:layout_alignBottom="@id/msg_title_join_team"
+            android:layout_marginEnd="17dp"
+            android:src="@drawable/x7base_jiantou_white" />
+
+        <View
+            android:id="@+id/join_team_iv_holder"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/join_team_iv" />
+
+        <ImageView
+            android:id="@+id/join_team_iv"
+            android:layout_width="85dp"
+            android:layout_height="77dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/x7_join_team_new_activity"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/msg_and_team_container_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/join_im_group_tv"
+        android:layout_below="@+id/msg_title_join_team_layout" />
+
+    <TextView
+        android:id="@+id/join_im_group_tv"
+        android:layout_width="100dp"
+        android:layout_height="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_solid_green_12cdb0_corner_15"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/x7_join_im_group_to_chat_freely"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:visibility="gone" />
+
+    <!--新增悬浮窗口的提示框-->
+    <RelativeLayout
+        android:id="@+id/float_window_hint_rl"
+        android:layout_width="132dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/msg_container_title_rl"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-6dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/float_window_content_hint_tv"
+            android:layout_width="124dp"
+            android:layout_height="62dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/x7_float_window_notice"
+            android:lineSpacingExtra="7dp"
+            android:paddingStart="12dp"
+            android:paddingTop="18dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="11dp"
+            android:text="@string/x7_open_game_float_window_mode_notice"
+            android:textColor="@color/base_black_3"
+            android:textSize="10dp" />
+
+
+        <ImageView
+            android:id="@+id/float_window_cancel_hint_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:padding="4dp"
+            android:src="@drawable/x7_icon_green_delete" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

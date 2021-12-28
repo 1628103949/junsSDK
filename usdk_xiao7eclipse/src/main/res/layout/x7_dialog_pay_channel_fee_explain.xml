@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/x7_dialog_pay_channel_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/x7_channel_fee_explain"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <com.smwl.smsdk.myview.MyWebView
+        android:id="@+id/pay_channel_fee_explain_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/cancel_fl"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="#4d4d4d">
+
+        <TextView
+            android:id="@+id/select_cancel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="@string/x7_cancel"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </FrameLayout>
+</LinearLayout>

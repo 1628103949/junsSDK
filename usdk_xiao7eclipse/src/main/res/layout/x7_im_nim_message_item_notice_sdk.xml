@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/x7_im_nim_message_item_notice_rootView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingStart="9dp"
+    android:paddingTop="9dp"
+    android:paddingEnd="9dp"
+    android:background="@drawable/x7_im_receive_message_bg_cc666666_6"
+    android:paddingBottom="0dp">
+
+    <TextView
+        android:id="@+id/x7_im_nim_message_item_notice_noticeTitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxWidth="@dimen/max_text_bubble_width"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/x7_im_nim_message_item_notice_noticeContent_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="3.5dp"
+        android:maxWidth="@dimen/max_text_bubble_width"
+        android:textColor="@color/gray_c"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/x7_im_nim_message_item_notice_clickNotice_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:includeFontPadding="false"
+        android:padding="9dp"
+        android:text="@string/im_x7_xml_details"
+        android:textColor="@color/text_green"
+        android:textSize="10dp" />
+</LinearLayout>

@@ -13,6 +13,7 @@ import com.juns.sdk.core.platform.event.OExitEv;
 import com.juns.sdk.core.platform.event.OInitEv;
 import com.juns.sdk.core.platform.event.OLoginEv;
 import com.juns.sdk.core.platform.event.OPayEv;
+import com.juns.sdk.core.sdk.SDKApplication;
 import com.juns.sdk.core.sdk.SDKData;
 import com.juns.sdk.framework.log.LogFactory;
 import com.juns.sdk.framework.log.TNLog;
@@ -44,6 +45,7 @@ public class  OPPO extends OPlatformSDK {
     @Override
     public void init(Activity activity) {
         mContext = activity;
+        GameCenterSDK.init(SDKApplication.getPlatformConfig().getExt2(), activity);
         Bus.getDefault().post(OInitEv.getSucc());
     }
 

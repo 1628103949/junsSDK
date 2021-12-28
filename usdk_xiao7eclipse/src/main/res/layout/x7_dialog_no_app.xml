@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_no_app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x7_no_install_x7market"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/x7_text_orange"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_no_app_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_no_app_title"
+        android:layout_centerHorizontal="true"
+        android:text="@string/x7_no_x7market_reason"
+        android:textColor="@color/x7_text_gray" />
+
+    <ImageView
+        android:id="@+id/iv_no_app"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_no_app_hint"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="TODO" android:src="@drawable/x7_relax_header_hui_bg" />
+
+    <Button
+        android:id="@+id/btn_no_app"
+        android:layout_below="@+id/iv_no_app"
+        android:text="@string/x7_install_x7market"
+        android:textColor="@color/x7_white"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/x7_radius_90_solid_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

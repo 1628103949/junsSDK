@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:background="@drawable/x7_ffffff_16_bg">
+
+    <TextView
+        android:id="@+id/im_x7_unify_topTitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/color_12cdb0"
+        android:textSize="22dp"/>
+
+    <EditText
+        android:id="@+id/im_x7_unify_et"
+        android:layout_width="match_parent"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:layout_marginTop="37dp"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:background="@null"
+        android:textColorHint="@color/color_split_line_cccccc"
+        android:textColor="@color/black_6"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#f3f3f3"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:id="@+id/im_x7_unify_ok_tv"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textSize="17dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/x7base_im_bg_solid_green_12cdb0_corner_50"
+        android:textColor="@color/white"
+        android:layout_height="58dp" />
+
+    <TextView
+        android:id="@+id/im_x7_unify_cancel_tv"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="17dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black_6"
+        android:layout_height="58dp" />
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="21.6dp"
+    android:paddingTop="20.3dp"
+    android:paddingRight="21.6dp"
+    android:paddingBottom="20.6dp"
+    android:background="@drawable/bg_stroke_d7f3fa_corner_10"
+    android:id="@+id/x7_im_nim_message_item_deal_share_rootView"
+    >
+
+    <LinearLayout
+        android:id="@+id/x7_im_nim_message_item_deal_share_os_type_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/x7_os_type_ios_bg"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/x7_im_nim_message_item_deal_share_os_icon_iv"
+            android:layout_width="7.3dp"
+            android:layout_height="9dp"
+            android:layout_marginRight="4.7dp"
+            android:src="@drawable/x7_ios_icon" />
+
+        <TextView
+            android:id="@+id/x7_im_nim_message_item_deal_share_os_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/x7_ios"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/x7_im_nim_message_item_deal_share_one_desc_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6.7dp"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:minWidth="150dp"
+        android:singleLine="true"
+        android:text="小号出售-369服"
+        android:textColor="@color/black_3"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/x7_im_nim_message_item_deal_share_os_type_ll"
+        app:layout_constraintEnd_toStartOf="@+id/x7_im_nim_message_item_deal_share_arrow_iv"
+        app:layout_constraintStart_toEndOf="@+id/x7_im_nim_message_item_deal_share_os_type_ll"
+        app:layout_constraintTop_toTopOf="@+id/x7_im_nim_message_item_deal_share_os_type_ll" />
+
+    <ImageView
+        android:id="@+id/x7_im_nim_message_item_deal_share_arrow_iv"
+        android:layout_width="6dp"
+        android:layout_height="10dp"
+        android:background="@drawable/x7_deal_share_ios_arrow"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/x7_im_nim_message_item_deal_share_one_desc_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/x7_im_nim_message_item_deal_share_one_desc_tv"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <ImageView
+        android:id="@+id/x7_im_nim_message_item_deal_share_game_avatar__iv"
+        android:layout_width="52.33dp"
+        android:layout_height="54.33dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/do_fail"
+        app:layout_constraintTop_toBottomOf="@+id/x7_im_nim_message_item_deal_share_os_type_ll"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.33dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/x7_im_nim_message_item_deal_share_game_avatar__iv"
+        app:layout_constraintEnd_toStartOf="@+id/x7_im_nim_message_item_deal_share_arrow_iv"
+        app:layout_constraintStart_toEndOf="@+id/x7_im_nim_message_item_deal_share_game_avatar__iv"
+        app:layout_constraintTop_toTopOf="@+id/x7_im_nim_message_item_deal_share_game_avatar__iv">
+
+        <TextView
+            android:id="@+id/x7_im_nim_message_item_deal_share_game_name__tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="射雕英雄传"
+            android:textColor="@color/black_9"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/x7_im_nim_message_item_deal_share_price__tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="55.00"
+            android:textColor="#ff0055"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/x7_im_nim_message_item_deal_share_lien__view"
+        android:layout_width="0dp"
+        android:layout_height="0.67dp"
+        android:visibility="visible"
+        android:layout_marginTop="18dp"
+        android:background="@color/color_gray_f2f2f2"
+        app:layout_constraintEnd_toEndOf="@+id/x7_im_nim_message_item_deal_share_arrow_iv"
+        app:layout_constraintStart_toStartOf="@+id/x7_im_nim_message_item_deal_share_game_avatar__iv"
+        app:layout_constraintTop_toBottomOf="@+id/x7_im_nim_message_item_deal_share_game_avatar__iv" />
+
+    <TextView
+        android:id="@+id/x7_im_nim_message_item_deal_share_info__tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="5dp"
+        android:maxWidth="200dp"
+        android:minWidth="190dp"
+        android:text="1111111111111111"
+        android:textColor="@color/black_3"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/x7_im_nim_message_item_deal_share_arrow_iv"
+        app:layout_constraintStart_toStartOf="@+id/x7_im_nim_message_item_deal_share_lien__view"
+        app:layout_constraintTop_toBottomOf="@+id/x7_im_nim_message_item_deal_share_lien__view" />
+
+
+</android.support.constraint.ConstraintLayout>

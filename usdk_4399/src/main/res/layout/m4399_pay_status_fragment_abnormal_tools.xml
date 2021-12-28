@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/m4399.Nav.Text.Tool"
+    android:drawableStart="@drawable/m4399_pay_ic_faq_grey"
+    android:drawableLeft="@drawable/m4399_pay_ic_faq_grey"
+    android:drawablePadding="8dp"
+    android:text="@string/m4399_pay_history_title"
+    tools:layout_gravity="center" />

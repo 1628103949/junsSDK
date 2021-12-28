@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:ignore="MissingDefaultResource">
+
+    <include layout="@layout/x7_sdk_title_common" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp">
+
+            <RelativeLayout
+                android:id="@+id/wallet_info_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/x7_bg_black_solid_52000000_corner_9"
+                android:paddingBottom="9dp">
+
+                <RelativeLayout
+                    android:id="@+id/wallet_balance_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/wallet_balance_text_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/wallet_balance_tv"
+                        android:text="@string/x7_wallet_balance"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/wallet_balance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="2dp"
+                        android:layout_toEndOf="@+id/wallet_balance_text_tv"
+                        android:gravity="bottom"
+                        android:includeFontPadding="false"
+                        android:textColor="#ffff00"
+                        android:textSize="27dp" />
+
+                    <ImageView
+                        android:id="@+id/platform_unit_icon_iv"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignBottom="@id/wallet_balance_text_tv"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_toEndOf="@id/wallet_balance_tv"
+                        android:src="@drawable/x7_bi_small" />
+
+                    <TextView
+                        android:id="@+id/wallet_for_give"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/wallet_balance_text_tv"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@id/platform_unit_icon_iv"
+                        android:src="@drawable/x7_bi_small"
+                        android:text="@string/x7_include_present"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/recharge_exchange_rate_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wallet_balance_ll"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="9dp"
+                    android:textColor="@color/white"
+                    android:textSize="9dp" />
+            </RelativeLayout>
+
+            <com.smwl.smsdk.pay.widget.PayWayChooseView
+                android:id="@+id/recharge_pay_way_choose_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                app:canScroll="false"
+                app:confirmVisible="false"
+                app:payAvailableTextColor="@color/white"
+                app:paySelectedTextColor="@color/color_12cdb0"
+                app:subTitle="@string/x7_xml_payHint1"
+                app:title="@string/x7_choose_recharge_pay_way" />
+
+            <RelativeLayout
+                android:id="@+id/recharge_pay_num_choose_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/recharge_pay_num_choose_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/x7_choose_sum"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/recharge_pay_num_choose_subtitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/recharge_pay_num_choose_title_tv"
+                    android:layout_marginStart="3dp"
+                    android:layout_toEndOf="@id/recharge_pay_num_choose_title_tv"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recharge_pay_num_choose_rv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recharge_pay_num_choose_title_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center"
+                    tools:listitem="@layout/x7_item_pay_choose_num" />
+
+                <EditText
+                    android:id="@+id/recharge_pay_num_input_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/recharge_pay_num_choose_rv"
+                    android:layout_alignStart="@id/recharge_pay_num_choose_rv"
+                    android:layout_alignEnd="@id/recharge_pay_num_choose_rv"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/x7_bg_black_solid_52000000_corner_9"
+                    android:gravity="center_vertical"
+                    android:hint="@string/x7_xml_payHint3"
+                    android:imeOptions="flagNoFullscreen"
+                    android:inputType="number"
+                    android:layerType="hardware"
+                    android:paddingStart="18dp"
+                    android:focusable="true"
+                    android:paddingEnd="18dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/color_black_ff999999"
+                    android:textSize="14dp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/recharge_confirm_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#4d4d4d"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="17dp"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/recharge_get_money_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:includeFontPadding="false"
+                android:text="@string/x7_get_money"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/recharge_get_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/recharge_get_money_text"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="-3dp"
+                android:layout_toEndOf="@id/recharge_get_money_text"
+                android:includeFontPadding="false"
+                android:textColor="#ffff00"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/pay_unit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/recharge_get_money_tv"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/recharge_get_money_tv"
+                android:text="@string/x7_flat"
+                android:textColor="#ffff00"
+                android:textSize="11dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/recharge_fee_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recharge_get_money_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/recharge_confirm_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/bg_solid_green_12cdb0_corner_10"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/x7_confirm_recharge"
+            android:textColor="@color/base_white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+</LinearLayout>

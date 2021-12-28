@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:gravity="left"
+            android:src="@drawable/x7_arrow_up_green_left"/>
+    </item>
+    <item android:left="6dp">
+        <shape>
+            <size android:width="115dp"
+                android:height="90dp"/>
+            <solid android:color="#bf03ddbb"/>
+        </shape>
+
+    </item>
+</layer-list>

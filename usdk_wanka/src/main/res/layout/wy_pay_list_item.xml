@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/wy_pay_main_ry"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="7dp"
+    android:minHeight="65dp"
+    android:background="@drawable/wy_coupon_un_select_list_bg">
+
+    <ImageView
+        android:id="@id/wy_pay_left_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/wy_pay_left_icon"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@id/wy_pay_info_type_title"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/wy_pay_name"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@id/wy_pay_info_type_extend_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@id/wy_pay_info_type_extend1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/wy_pay_extend"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@id/wy_pay_info_type_extend2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/wy_rad_text_color"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@id/wy_pay_info_type_extend3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/wy_pay_extend"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/wy_pay_right_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

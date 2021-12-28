@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:clipChildren="false"
+        android:orientation="horizontal"
+        android:paddingBottom="3dip">
+
+        <RadioButton
+            android:id="@+id/main_selete"
+            style="@style/radio_button_style"
+            android:layout_gravity="center_horizontal"
+            android:checked="true"
+            android:drawableTop="@drawable/main_radiobutton_selector_bg"
+            android:gravity="center_horizontal"
+            android:text="@string/x7_MainActivity_tabName1" />
+
+        <RadioButton
+            android:id="@+id/main_kaifu"
+            style="@style/radio_button_style"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/main_radiobutton_kaifu_bg"
+            android:gravity="center_horizontal"
+            android:text="@string/x7_MainActivity_tabName2"
+            android:textColor="@drawable/wordcolor_main_radio_bg" />
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/main_deal"
+            style="@style/radio_button_style"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/main_radiobutton_deal_bg"
+            android:gravity="center_horizontal"
+            android:text="@string/x7_MainActivity_tabName3" />
+
+        <RadioButton
+            android:id="@+id/main_help"
+            style="@style/radio_button_style"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/main_radiobutton_help_bg"
+            android:gravity="center_horizontal"
+            android:text="@string/x7_MainActivity_tabName4" />
+    </RadioGroup>
+
+    <com.netease.nim.uikit.yunxin.myview.NoHorizonScollViewpager
+        android:id="@+id/mPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_rg" />
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginBottom="-13dp"
+        android:layout_above="@+id/main_bottom_adPic_iv"
+        android:background="@color/background_gray" />
+
+    <ImageView
+        android:id="@+id/main_bottom_adPic_iv"
+        android:layout_width="56dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:src="@drawable/main_bottom_ad_iv" />
+
+
+    <!--我的群组未读消息数-->
+    <TextView
+        android:id="@+id/main_groupUnRead_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="33dip"
+        android:background="@drawable/red_yuan_bj"
+        android:gravity="center"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:paddingBottom="1dip"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="8dp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/main_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="33dip"
+        android:background="@drawable/red_yuan_bj"
+        android:gravity="center"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:paddingBottom="1dip"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="8dp"
+        android:visibility="gone" />
+</RelativeLayout>

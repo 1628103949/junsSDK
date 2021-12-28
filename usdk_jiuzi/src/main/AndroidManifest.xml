@@ -107,5 +107,6 @@
             </intent-filter>
         </activity>
         <receiver android:enabled="true" android:exported="false" android:name="com.bytedance.applog.collector.Collector"/>
+        <meta-data android:name="mainAct" android:value="com.juns.sdk.demo.DemoActivity" />
     </application>
 </manifest>

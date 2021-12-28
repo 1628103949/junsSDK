@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="295dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="92dp"
+    android:layout_marginRight="92dp"
+    android:background="@drawable/x7_bg_white_corners_20"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/permission_button_ll"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/permission_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:paddingLeft="58dp"
+            android:paddingTop="27dp"
+            android:paddingRight="58dp"
+            android:paddingBottom="20dp"
+            android:text="@string/x7_game_personal_protocol"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/permission_privacy_explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:textColor="#333333"
+            android:textSize="13dp" />
+
+
+        <com.smwl.smsdk.permission.PermissionRecyclerView
+            android:id="@+id/permission_content_rv"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="26dp"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="2dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@drawable/x7_scrollbar_e5e5e5_1"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/permission_button_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/permission_exit_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/x7_bg_solid_f0f0f0_corner_7"
+            android:paddingLeft="26dp"
+            android:paddingTop="14dp"
+            android:paddingRight="26dp"
+            android:paddingBottom="14dp"
+            android:text="@string/x7_permission_exit"
+            android:textColor="@color/color_black_ff999999"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/permission_declare_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/x7_bg_solid_12cdb0_corner_7"
+            android:paddingLeft="28dp"
+            android:paddingTop="14dp"
+            android:paddingRight="28dp"
+            android:paddingBottom="14dp"
+            android:text="@string/x7_agree"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

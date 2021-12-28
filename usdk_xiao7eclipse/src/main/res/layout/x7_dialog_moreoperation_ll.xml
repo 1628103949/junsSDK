@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="match_parent"
+    android:background="@drawable/x7_ffffff_16_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/moreOperation_dialog_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="20dip"
+        android:gravity="center_vertical"
+        android:text="@string/x7_IM_xml_moreOperate"
+        android:textColor="@color/color_12cdb0"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/color_12cdb0" />
+
+    <LinearLayout
+        android:id="@+id/moreOperation_dialog_first_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/moreOperation_dialog_first_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_black_333333"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/color_gray_f2f2f2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moreOperation_dialog_second_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:clickable="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/moreOperation_dialog_second_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_black_333333"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/color_gray_f2f2f2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moreOperation_dialog_third_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:clickable="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/moreOperation_dialog_third_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_black_333333"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/color_gray_f2f2f2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moreOperation_dialog_fourth_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/moreOperation_dialog_fourth_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_black_333333"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/color_gray_f2f2f2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moreOperation_dialog_cancel_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/moreOperation_dialog_cancel_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/cancel"
+            android:textColor="@color/color_black_333333"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

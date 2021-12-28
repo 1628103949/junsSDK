@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/gift_panel_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.smwl.smsdk.myview.MyIndicator
+            android:id="@+id/gift_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="24dp"
+            android:fillViewport="true"></com.smwl.smsdk.myview.MyIndicator>
+
+        <TextView
+            android:id="@+id/exclusiveAct_explain_tv"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:text="@string/x7_exclusive_acts_explain"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="12dp"
+            android:textSize="10dp"
+            android:visibility="gone"
+            android:textColor="@color/color_12cdb0"
+            android:background="@drawable/x7_bg_ff000000_corner_7" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/gift_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gift_panel_title_ll"
+        android:layout_marginTop="10dp">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
+

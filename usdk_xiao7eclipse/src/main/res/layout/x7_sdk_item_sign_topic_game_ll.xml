@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <RelativeLayout
+        android:id="@+id/item_topicList_gameInfo_titleTop_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!--只有使用默认标题样式时才显示-->
+            <ImageView
+                android:id="@+id/title_default_icon"
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/x7_sdk_relaxa_collection_gametitle_iv"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/title_head_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_topicList_gameInfo_titleName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dip"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/title_foot_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:scaleType="fitStart"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/x7_text_black3"
+            android:textSize="16sp" />
+    </LinearLayout>-->
+
+    <com.smwl.smsdk.myview.FlowLayout
+        android:id="@+id/item_comment_FlowLayout_titleName_tv"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="27dp"
+        android:visibility="gone" />
+
+    <!-- 以下这个LinearLayout是显示文字，图片或视频三种样式 -->
+
+    <LinearLayout
+        android:id="@+id/item_topicList_gameInfo_dataPlate_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</LinearLayout>

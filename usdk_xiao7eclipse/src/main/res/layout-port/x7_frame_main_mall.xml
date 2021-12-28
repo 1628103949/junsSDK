@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a0000000"
+    tools:ignore="MissingDefaultResource">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_mall_tab_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_mall_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="12dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide_mall_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="20dp" />
+
+        <ImageView
+            android:id="@+id/x7_mall_close_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/x7_mall_close_icon"
+            app:layout_constraintStart_toStartOf="@id/guide_mall_start"
+            app:layout_constraintBottom_toBottomOf="@id/mall_tabLayout"
+            app:layout_constraintTop_toTopOf="@id/mall_tabLayout" />
+
+        <com.smwl.smsdk.myview.mall.MallTabLayout
+            android:id="@+id/mall_tabLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:tab_orientation="horizontal"
+            android:layout_marginStart="16dp"
+            app:tabContentRightPadding="2dp"
+            app:layout_constraintStart_toEndOf="@id/x7_mall_close_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guide_mall_tab_top"/>
+
+        <FrameLayout
+            android:id="@+id/mall_frame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="21dp"
+            app:layout_constraintBottom_toBottomOf="@+id/guide_mall_bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/x7_mall_close_iv"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/x7_bg_cabcb4_pink_corner_10"
+                android:layout_marginStart="26dp"
+                android:layout_marginBottom="60dp"
+                android:transformPivotX="0dp"
+                android:transformPivotY="100dp"
+                android:rotation="6.5" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/x7_mall_hint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:text="@string/x7_mall_pay_hint"
+            android:textColor="#FF644F31"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="21dp"
+            app:layout_constraintTop_toTopOf="@+id/mall_frame"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/x7_mall_view_pager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/x7_bg_f3efe8_orange_corner_10"
+            app:layout_constraintBottom_toBottomOf="@id/guide_mall_bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/guide_mall_start"
+            app:layout_constraintTop_toBottomOf="@id/x7_mall_hint_tv" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

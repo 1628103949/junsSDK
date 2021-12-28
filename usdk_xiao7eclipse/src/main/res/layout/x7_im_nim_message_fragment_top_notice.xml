@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fef8d3">
+
+    <!--已弃用可删除，4.19使用了新布局: x7_im_nim_message_fragment_top_notice_window.xml-->
+
+    <!--1.应用市场的特殊公告消息样式     android:background="@drawable/x7base_edit_gray_round_kuang"-->
+    <RelativeLayout
+        android:id="@+id/fragment_specialNotice_noticeBackground_ll"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/fragment_specialNotice_noticeTitle_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/fragment_specialNotice_close_tv"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/download_cheng"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/fragment_specialNotice_close_tv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/x7_im_icon_close_orange_tv" />
+    </RelativeLayout>
+</RelativeLayout>

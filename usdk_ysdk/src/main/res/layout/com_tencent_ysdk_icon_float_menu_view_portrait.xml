@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#59000000"
+        android:fitsSystemWindows="true">
+    <!-- 由于要适配刘海屏，因此，为了风格统一，原先relativeLayout设置背景颜色的地方移动到floatMenuView中进行动态设置 -->
+    <RelativeLayout
+            android:id="@+id/com_tencent_ysdk_icon_floatwindow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:id="@+id/com_tencent_ysdk_icon_sidebar"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_above="@+id/com_tencent_ysdk_icon_web_browser_view">
+
+            <RelativeLayout
+                    android:id="@+id/com_tencent_ysdk_float_window_sidebar_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true">
+
+                <Button
+                        android:id="@+id/com_tencent_ysdk_float_window_close_button"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/com_tencent_ysdk_icon_h5_xx"
+                        android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/com_tencent_ysdk_float_window_person_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical">
+
+                <com.tencent.ysdk.shell.framework.floatingwindow.RoundCornerImageView
+                        android:id="@+id/com_tencent_ysdk_icon_xiaoxi_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:src="@drawable/com_tencent_ysdk_icon_xiaoxi_icon" />
+
+                <TextView
+                        android:id="@+id/com_tencent_ysdk_float_window_nick_name"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/com_tencent_ysdk_icon_xiaoxi_icon"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="游戏玩家"
+                        android:textColor="#A6000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="1dp"/>
+
+                <ImageView
+                        android:id="@+id/com_tencent_ysdk_float_window_bafu_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/com_tencent_ysdk_float_window_nick_name"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/com_tencent_ysdk_icon_xiaoxi_icon"
+                        android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+            <!--横的Item-->
+            <HorizontalScrollView
+                    android:id="@+id/com_tencent_ysdk_float_window_tab_scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/com_tencent_ysdk_float_window_person_info"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal">
+
+                <LinearLayout
+                        android:id="@+id/com_tencent_ysdk_icon_float_view_vertical_Item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <com.tencent.ysdk.shell.framework.web.browser.FloatWindowWebView
+                android:id="@+id/com_tencent_ysdk_icon_web_browser_view"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentBottom="true" />
+
+        <LinearLayout
+                android:id="@+id/com_tencent_ysdk_float_window_empty_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/com_tencent_ysdk_icon_sidebar"
+                android:orientation="horizontal" />
+    </RelativeLayout>
+</RelativeLayout>

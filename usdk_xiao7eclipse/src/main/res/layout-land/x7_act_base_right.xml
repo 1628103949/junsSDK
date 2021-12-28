@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <!-- 4.22新增 SDK横屏浮窗侧边栏，可根据每个界面的需要动态添加各自的侧边栏控件 -->
+    <LinearLayout
+        android:id="@+id/sidebar_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/base_ll"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/base_ll"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        >
+
+        <FrameLayout
+            android:id="@+id/base_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/x7_color_cc333333" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/x7_right_arrow"
+        android:layout_width="67dp"
+        android:layout_height="46dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginRight="36dp"
+        android:visibility="invisible"
+        android:src="@drawable/x7_right_arrow_port" />
+
+
+    <ImageView
+        android:id="@+id/x7_left_arrow"
+        android:layout_width="67dp"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="36dp"
+        android:src="@drawable/x7_left_arrow_port" />
+
+    <!--有公告的时候并且横屏的左侧关闭按钮-->
+    <ImageView
+        android:id="@+id/x7_left_close"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/x7_left_arrow"
+        android:clickable="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        android:src="@drawable/x7_gonggao_cancell" />
+
+    <View
+        android:id="@+id/line_center"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+    <View
+        android:id="@+id/line_left_350"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_marginStart="350dp" />
+    <View
+        android:id="@+id/line_right_350"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="350dp" />
+    <TextView
+        android:id="@+id/closeHint_top_tv"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/sidebar_ll"
+        android:gravity="center"
+        android:text="@string/x7_closeHintLand"
+        android:textColor="@color/x7_white"
+        android:textSize="17dp" />
+
+</RelativeLayout>

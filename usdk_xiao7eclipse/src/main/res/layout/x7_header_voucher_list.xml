@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp">
+    <!--4.36新增限制类代金券-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/header_game_coupon_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/header_game_coupon_hint_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_game_coupon_rv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/header_game_coupon_hint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/x7_limited_voucher_hint"
+            android:textColor="@color/x7_voucher_month_card_push"
+            android:textSize="11dp" />
+
+        <ImageView
+            android:id="@+id/header_game_coupon_rule_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="1dp"
+            android:padding="5dp"
+            android:src="@drawable/x7_question" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/header_game_coupon_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_game_coupon_hint_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-2dp"
+        android:textColor="@color/x7_voucher_month_card_push"
+        android:textSize="10dp" />
+</RelativeLayout>

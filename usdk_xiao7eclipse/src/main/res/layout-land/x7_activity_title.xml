@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/iv_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:src="@drawable/x7_act_title_back"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:lines="1"
+        android:text="账号"
+        android:textColor="@color/x7_green_12cdb0"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/iv_title_centre"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_weight="2.4"
+        android:contentDescription="TODO"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/x7_middium_logo"
+        android:textColor="@color/x7_white"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_title_right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:gravity="center"
+        android:minHeight="31dp"
+        android:paddingRight="4dp">
+
+        <Button
+            android:id="@+id/btn_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableRight="@drawable/x7_title_right_arrow_land"
+            android:textColor="@color/x7_white"
+            android:textSize="14sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title_right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:textColor="@color/x7_text_green"
+        android:textSize="8sp"
+        android:visibility="gone" />
+</RelativeLayout>

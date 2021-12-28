@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+        <include
+            layout="@layout/x7_top_title_toolbar_ll" />
+    </android.support.design.widget.AppBarLayout>
+
+    <!--底部删除-->
+    <GridView
+        android:id="@+id/act_x7FaceManage_gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/app_bar_layout"
+        android:layout_marginTop="0dp"
+        android:background="@color/color_gray_f5"
+        android:horizontalSpacing="8dip"
+        android:listSelector="@null"
+        android:numColumns="4"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:verticalSpacing="20dip" />
+
+    <RelativeLayout
+        android:id="@+id/act_x7FaceManage_bottomDelete_rl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_e5e5e5" />
+
+        <RelativeLayout
+            android:id="@+id/act_x7FaceManage_allSelect_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip">
+
+            <CheckBox
+                android:id="@+id/act_x7FaceManage_all_cb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/message_delete_select_bg"
+                android:button="@null"
+                android:clickable="false"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/select_all_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/act_x7FaceManage_all_cb"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="@string/x7_X7FaceManageActivity_checkAll"
+                android:textColor="@color/black_3"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/act_x7FaceManage_delete_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:src="@drawable/messagecenter_delete_pic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/x7_MyYunXinGroupFrag_delete"
+                android:textColor="@color/text_green"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

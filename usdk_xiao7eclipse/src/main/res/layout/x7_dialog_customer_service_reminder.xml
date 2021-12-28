@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/reminder_dialog_ll"
+        android:layout_width="327dp"
+        android:layout_height="51dp"
+        android:background="@drawable/x7_dialog_white_bg_16"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/reminder_dialog_hint_tv"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:text="@string/x7_problem_solved"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/x7_icon_green_background_arrow_right" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

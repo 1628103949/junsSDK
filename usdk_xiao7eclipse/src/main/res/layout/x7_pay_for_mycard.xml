@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:src="@drawable/x7_icon_selected_mark_50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/x7_pay_success"
+        android:textColor="@color/x7_text_green" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/x7_pay_for_my_card_success"
+        android:textColor="@color/x7_text_black6" />
+
+    <Button
+        android:id="@+id/btn_know_for_pay"
+        style="@style/X7BtnClickStyle"
+        android:layout_marginTop="50dp"
+        android:text="@string/x7_know" />
+</LinearLayout>

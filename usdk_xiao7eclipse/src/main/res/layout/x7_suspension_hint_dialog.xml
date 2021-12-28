@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/x7_bg_cc000000_corner_7">
+
+    <ImageView
+        android:layout_width="44dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/x7_shake_phone" />
+
+    <TextView
+        android:id="@+id/hint_dialog_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="@string/x7_hide_of_floating"
+        android:textColor="@color/x7_text_green"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/hint_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hint_dialog_title_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/hint_dialog_checkbox_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <CheckBox
+                android:id="@+id/cb_suspension_hint"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignBottom="@+id/tv_suspension_hint"
+                android:background="@null"
+                android:button="@drawable/x7_checkbox_circle_button_new" />
+
+            <TextView
+                android:id="@+id/tv_suspension_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/cb_suspension_hint"
+                android:text="@string/x7_no_longer_show_hint"
+                android:textColor="@color/x7_color_b0b0b0"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <!--【CloudGameSDK-4.62-LMC】增加低版本APP不支持提示-->
+        <TextView
+            android:id="@+id/cloud_game_low_version_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/x7_low_version_not_support"
+            android:textColor="@color/x7_color_b0b0b0"
+            android:textSize="15dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hint_rl"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="48dp">
+
+        <TextView
+            android:id="@+id/tv_suspension_hint_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/x7_change_float_cancel"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingStart="25dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="7dp"
+            android:text="@string/x7_cancel"
+            android:textColor="@color/x7_white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_suspension_hint_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dip"
+            android:background="@drawable/x7_change_xuanfu_ok"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingStart="25dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="7dp"
+            android:text="@string/x7_sure"
+            android:textColor="@color/x7_white"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

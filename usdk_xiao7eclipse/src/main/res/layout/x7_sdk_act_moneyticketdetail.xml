@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/x7_activity_title_5" />
+
+    <com.smwl.smsdk.myview.XListView
+        android:id="@+id/lv_money_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_no_use_voucher"
+        android:layout_below="@+id/layout_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:divider="@null"
+        android:horizontalSpacing="15dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:verticalSpacing="13dp"
+        tools:listitem="@layout/x7_sdk_item_new_money_ticket_ll_2" />
+
+    <Button
+        android:id="@+id/btn_no_use_voucher"
+        style="@style/X7BtnClickStyleNew"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/x7_no_use_voucher" />
+
+    <include layout="@layout/x7_money_voucher_notsell_ll"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

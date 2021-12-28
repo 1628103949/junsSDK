@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/wy_test_env_ll"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wy_shape_corner"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/wy_rad_text_color"
+        android:textSize="12sp"
+        android:text="@string/wy_test_evn_hide">
+
+    </TextView>
+
+</LinearLayout>

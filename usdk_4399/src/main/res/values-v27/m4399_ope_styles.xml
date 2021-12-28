@@ -1,0 +1,5 @@
+<resources>
+
+    <style name="m4399TranslucentFullscreenActivityTheme" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+</resources>

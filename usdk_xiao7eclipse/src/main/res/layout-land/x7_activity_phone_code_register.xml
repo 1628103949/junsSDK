@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_login_password"
+        style="@style/X7CommonInputStyle_1"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_login_password"
+            style="@style/X7EditTextNoBackCommonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:hint="@string/x7_hint_of_password"
+            android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/x7_userLogin_passwordEyeSwitch_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/x7_icon_eye_close_iv"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/login_password_delete_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:padding="6dp"
+            android:src="@drawable/x7_activity_login_delete"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/login_password_line_view"
+        android:layout_width="230dp"
+        android:layout_height="0.7dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:background="@color/x7_horizontal_divider_line" />
+
+    <TextView
+        android:id="@+id/password_tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="25dp"
+        android:text="@string/password_requirement"
+        android:textColor="#ffcccccc"
+        android:textSize="9dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/user_agreement_iv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/x7_unselected_box"
+            android:padding="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="@string/x7_register_agreement"
+            android:textColor="@color/x7_white"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_user_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/x7_user_agreement"
+            android:textColor="@color/x7_text_green"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/x7_with"
+            android:textColor="@color/x7_white"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_private_policy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/x7_user_agreement"
+            android:textColor="@color/x7_text_green"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

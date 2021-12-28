@@ -28,16 +28,14 @@
         android:supportsRtl="true"
         tools:ignore="GoogleAppIndexingWarning">
 
+
+
         <activity
             android:name="com.juns.sdk.demo.DemoActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
             android:launchMode="standard"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <!-- JunS sdk components start -->
         <provider
@@ -52,6 +50,15 @@
         </provider>
         <!-- JunS sdk components end -->
 
+        <activity android:name="com.juns.channel.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout|smallestScreenSize|fontScale|touchscreen|uiMode|layoutDirection"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="mainAct" android:value="com.juns.sdk.demo.DemoActivity" />
         <activity
             android:name="com.nearme.game.sdk.component.proxy.JumpToProxyActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -118,22 +125,23 @@
             </intent-filter>
         </receiver>
 
-        <meta-data
-            android:name="debug_mode"
-            android:value="false" />
-        <!-- 调试开关，发布时候设置false -->
-        <meta-data
-            android:name="is_offline_game"
-            android:value="false" />
-        <!-- true:单机游戏 false:网游 -->
-        <meta-data
-            android:name="app_key"
-            android:value="9696cc7e22da49b3b3d58507f8932f6d" />
-        <!--appKey,务必换成游戏自己的参数 -->
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" />
-        <!--9.0及以上设备可能需要 -->
+        <service
+            android:name="com.nearme.game.sdk.common.serice.OutPutFileService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="gusdk.children.discern.data" />
+            </intent-filter>
+        </service>
+
+        <meta-data android:name="debug_mode"
+            android:value="false" /> <!-- 调试开关，发布时候设置false -->
+        <meta-data android:name="is_offline_game"
+            android:value="false" /> <!-- true:单机游戏 false:网游 -->
+        <meta-data android:name="app_key"
+            android:value="9696cc7e22da49b3b3d58507f8932f6d" /> <!--appKey,务必换成
+游戏自己的参数 -->
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
 
 
     </application>

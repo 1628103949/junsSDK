@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wy_ll_input_field_common"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@id/wy_account_type_icon_iv"
+        style="@style/wy_iv_input_field_common"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/wy_iv_whale"/>
+
+
+    <TextView
+        android:id="@id/wk_account_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/wy_account_type_icon_iv"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="WK_HELLO_WORLD"
+        android:textColor="@color/wy_grey_text_color"
+        android:textSize="@dimen/wy_et_input_field_text_size"/>
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@id/wy_change_pwd_ll"
+        android:layout_width="@dimen/wy_fragment_common_width"
+        android:layout_height="@dimen/wy_fragment_common_nologo_height"
+        android:background="@drawable/wy_shape_corner"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/wy_include_title" />
+
+                <ImageView
+                    android:id="@id/wy_close_change_pwd_iv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:padding="3dp"
+                    android:src="@drawable/wy_iv_close_ball" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@id/wy_account_ll"
+                style="@style/wy_ll_input_field_common"
+                android:layout_marginTop="15dp"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:id="@id/wy_account_tv"
+                    style="@style/wy_et_input_field_common"
+                    android:paddingRight="@dimen/wy_cet_right_padding" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@id/wy_enter_pwd_ll"
+                style="@style/wy_ll_input_field_common"
+                android:layout_marginTop="8dp"
+                android:visibility="visible">
+
+                <!--<ImageView-->
+                <!--style="@style/wy_iv_input_field_common"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:src="@drawable/wy_iv_enter_pwd" />-->
+
+                <com.wanyugame.wygamesdk.view.ClearableEditText
+                    android:id="@id/wy_old_pwd_tv"
+                    style="@style/wy_et_input_field_common"
+                    android:hint="@string/wy_please_enter_old_pwd"
+                    android:inputType="textPassword"
+                    android:paddingRight="@dimen/wy_cet_right_padding" />
+
+                <ImageView
+                    android:id="@id/wy_iv_old_psd_un_look"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="7dp"
+                    android:src="@drawable/wy_iv_psd_unlook" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/wy_enter_pwd_ll"
+                style="@style/wy_ll_input_field_common"
+                android:layout_marginTop="8dp"
+                android:visibility="visible">
+
+                <!--<ImageView-->
+                <!--style="@style/wy_iv_input_field_common"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:src="@drawable/wy_iv_enter_pwd" />-->
+
+                <com.wanyugame.wygamesdk.view.ClearableEditText
+                    android:id="@id/wy_new_pwd_tv"
+                    style="@style/wy_et_input_field_common"
+                    android:hint="@string/wy_please_enter_new_pwd"
+                    android:inputType="textPassword"
+                    android:paddingRight="@dimen/wy_cet_right_padding" />
+
+                <ImageView
+                    android:id="@id/wy_iv_psd_un_look"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="7dp"
+                    android:src="@drawable/wy_iv_psd_unlook" />
+            </LinearLayout>
+
+            <Button
+                android:id="@id/wy_finish_btn"
+                style="@style/wy_btn_common"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/wy_selector_btn_deep_green"
+                android:text="@string/wy_finish" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

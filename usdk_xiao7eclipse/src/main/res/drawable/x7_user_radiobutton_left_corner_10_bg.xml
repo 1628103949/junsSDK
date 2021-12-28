@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_checked="false" android:drawable="@drawable/x7_solid_73000000_corner_10_bottom_left"/>
+    <item android:state_checked="true"  android:state_enabled="true" android:drawable="@drawable/x7_solid_12cdb0_corner_10_bottom_left"/>
+    <item android:state_selected="false" android:drawable="@drawable/x7_solid_73000000_corner_10_bottom_left"/>
+    <item android:state_selected="true"  android:drawable="@drawable/x7_solid_12cdb0_corner_10_bottom_left"/>
+</selector>

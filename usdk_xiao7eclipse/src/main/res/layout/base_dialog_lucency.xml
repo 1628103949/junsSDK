@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_dialog_root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:background="#00000000" >
+
+
+    <ImageView
+        android:id="@+id/iv_dialoglucency"
+        android:layout_width="110dip"
+        android:layout_height="110dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_dialoglucency"
+        android:layout_width="wrap_content"
+        android:layout_height="90dip"
+        android:layout_below="@+id/iv_dialoglucency"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dip"
+        android:text=""
+        android:textColor="@color/base_black_6"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

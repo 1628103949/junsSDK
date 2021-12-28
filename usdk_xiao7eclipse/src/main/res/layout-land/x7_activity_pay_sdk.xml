@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/tv_purse_balance"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="23.00"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ff0055"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_pay_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/x7_text_gray"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_choose_pay_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/x7_choose_pay_way"
+        android:textColor="@color/x7_text_black3" />
+
+    <RadioGroup
+        android:id="@+id/rg_purse_pay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal|bottom"
+        android:text="@string/x7_xml_payHint1"
+        android:textColor="@color/gray_66"
+        android:textSize="12sp" />
+</LinearLayout>

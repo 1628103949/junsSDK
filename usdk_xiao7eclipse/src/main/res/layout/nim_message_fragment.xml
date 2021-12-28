@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/messageActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray_f5">
+
+    <FrameLayout
+        android:id="@+id/message_activity_list_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_all_bottom_ll"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.netease.nim.uikit.business.session.helper.MsgBkImageView
+            android:id="@+id/message_activity_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/team_notify_bar_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/messageListView"
+                style="@style/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/layoutPlayAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/nim_dialog_toast_bg"
+            android:visibility="gone">
+
+            <Chronometer
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/timer_default"
+                android:textColor="@color/white"
+                android:textSize="45dp" />
+
+            <LinearLayout
+                android:id="@+id/timer_tip_container"
+                android:layout_width="188dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/timer_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/recording_cancel"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/x7_icon_sdk_jump_to_living_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/x7_icon_sdk_jump_to_living"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="20dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/team_live_iv"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:src="@drawable/group_live"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="18dp"
+                android:visibility="gone"/>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/team_live_time_cl"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="18dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/team_live_time_iv"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/group_live_time" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/team_live_time_iv"
+                    app:layout_constraintStart_toStartOf="@+id/team_live_time_iv"
+                    app:layout_constraintEnd_toEndOf="@+id/team_live_time_iv"
+                    android:layout_marginBottom="4dp">
+
+                    <TextView
+                        android:id="@+id/team_live_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:textSize="8dp"
+                        android:textColor="@color/x7base_white"
+                        android:text="10:00"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:textSize="6dp"
+                        android:textColor="@color/x7base_white"
+                        android:text="@string/x7_live"/>
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/blessingBagTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="17dp">
+
+                <ImageView
+                    android:id="@+id/fragment_message_have_blessing_bag_iv"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/x7_im_open_blessing_bag_tips"
+                    android:visibility="gone" />
+
+                <com.netease.nim.uikit.business.session.view.BlessingConstraintLayout
+                    android:id="@+id/blessingBagCountDownCl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:visibility="gone">
+
+                    <com.netease.nim.uikit.business.session.view.BlessingTextView
+                        android:id="@+id/fragmentBlessingCountDownTv"
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/x7_blessing_bag_tips_icon"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="18dp"
+                        android:text="120s"
+                        android:textColor="@color/base_white"
+                        android:textSize="10dp"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.netease.nim.uikit.business.session.view.BlessingLinearLayout
+                        android:id="@+id/blessingbagCountDownLl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/x7_im_blessing_bag_count_down_number"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="6dp"
+                        android:paddingBottom="2dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="×"
+                            android:textColor="@color/base_white"
+                            android:textSize="7dp" />
+
+                        <com.netease.nim.uikit.business.session.view.BlessingTextView
+                            android:id="@+id/blessingBagCountDownNumberTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/base_white"
+                            android:textSize="7dp" />
+                    </com.netease.nim.uikit.business.session.view.BlessingLinearLayout>
+
+                </com.netease.nim.uikit.business.session.view.BlessingConstraintLayout>
+
+            </RelativeLayout>
+
+            <com.netease.nim.uikit.business.session.view.BlessingImageView
+                android:id="@+id/fragment_message_have_no_send_blessing_bag_iv"
+                android:layout_width="33dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="17dp"
+                android:src="@drawable/x7_im_have_no_send_blessing_bag"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/fragment_messageAit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/x7_half_round_fffff_50_bg"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/x7_IM_xml_aitMe"
+                android:textColor="@color/color_12cdb0"
+                android:textSize="13dp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/message_reply_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            />
+
+    </FrameLayout>
+
+    <!--SDK群公告和免打扰的悬浮按钮-->
+    <include
+        android:id="@+id/fragment_top_floating_btn_rl"
+        layout="@layout/x7_im_nim_message_fragment_top_floating_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!--顶部活动消息2019.11.1-->
+    <include
+        android:id="@+id/fragment_top_notice_ll"
+        layout="@layout/x7_im_nim_message_fragment_top_notice_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--底部表情和输入框-->
+    <include
+        android:id="@+id/fragment_all_bottom_ll"
+        layout="@layout/x7base_message_activity_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_bottom_currentChatFinish_tv"
+        app:layout_constraintTop_toBottomOf="@+id/message_activity_list_view_container" />
+
+    <TextView
+        android:id="@+id/fragment_bottom_currentChatFinish_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/x7_P2PMessageActivity_closeCurrentChat"
+        android:textColor="@color/color_black_ff999999"
+        android:textSize="13dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!--新的通用提示-->
+    <com.smwl.x7market.component_base.myview.BaseNormalBlackNotice
+        android:id="@+id/nim_message_kefu_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="45dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_bottom_currentChatFinish_tv"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/x7_corner_8_solid_transparent"
+    android:minWidth="360dp"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/iv_shock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/x7_phone_shock" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_shock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/x7_shock_hint"
+        android:textColor="@color/x7_green_12cdb0" />
+
+    <CheckBox
+        android:id="@+id/ck_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:button="@drawable/x7_selection_for_agreement"
+        android:drawablePadding="18dp"
+        android:text="@string/x7_no_display_this_tip"
+        android:textColor="@color/x7_white"
+        android:textSize="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ck_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/X7BtnClickStyleNew"
+            android:layout_width="80dp"
+            android:layout_height="36dp"
+            android:text="@string/x7_cancel" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="80dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/x7_corner_7_solid_orange"
+            android:text="@string/x7_sure"
+            android:textColor="@color/x7_white"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

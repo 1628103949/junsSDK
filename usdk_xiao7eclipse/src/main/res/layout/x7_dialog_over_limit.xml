@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_over_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_over_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="TODO"
+            android:src="@drawable/x7_logo_cry" />
+
+        <TextView
+            android:id="@+id/tv_over_limit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/iv_over_limit"
+            android:text="@string/x7_game_on_fail"
+            android:textColor="@color/x7_text_orange"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_over_limit_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_over_limit_title"
+            android:layout_alignLeft="@+id/tv_over_limit_title"
+            android:text="@string/x7_game_on_fail_reason"
+            android:textColor="@color/x7_text_gray" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_switch_account"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_over_limit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/x7_radius_90_solid_green"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="@string/x7_switch_account"
+        android:textColor="@color/x7_white" />
+
+</RelativeLayout>

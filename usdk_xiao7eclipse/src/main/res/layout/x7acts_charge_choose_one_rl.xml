@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--独家活动类型一：累充多选一item-->
+    <RelativeLayout
+        android:id="@+id/charge_choose_one_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/recharge_number_ll"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/top_line_tv"
+                android:layout_width="0.6dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@color/base_black_6" />
+
+            <TextView
+                android:id="@+id/recharge_number_tv"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1000"
+                android:textColor="#eeeeee"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/bottom_line_tv"
+                android:layout_width="0.6dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/base_black_6" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/arrow_iv"
+            android:layout_width="4dp"
+            android:layout_height="9dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/recharge_number_ll"
+            android:src="@drawable/x7_arrow_left_000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/arrow_iv"
+            android:background="@drawable/x7_bg_000000"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/recharge_multiple_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_ee"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/recharge_multiple_state_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_12cdb0"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

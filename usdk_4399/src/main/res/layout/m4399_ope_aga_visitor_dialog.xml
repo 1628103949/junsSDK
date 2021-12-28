@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <cn.m4399.operate.component.AlignTextView
+        android:id="@+id/m4399_ope_id_atv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="26dp" />
+
+    <cn.m4399.operate.component.AlignTextView
+        android:id="@+id/m4399_ope_id_atv_destroy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="26dp" />
+
+    <cn.m4399.operate.component.AlignTextView
+        android:id="@+id/m4399_ope_id_atv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="26dp" />
+
+    <include layout="@layout/m4399_ope_support_dialog_couple_actions" />
+
+</LinearLayout>

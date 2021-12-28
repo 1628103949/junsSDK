@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/floating_btn_team_notice_rl"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toLeftOf="@id/floating_btn_no_disturbing_rl"
+        android:background="@drawable/x7_bg_cc000000_corner_7">
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/x7_icon_team_notice" />
+
+        <ImageView
+            android:id="@+id/floating_btn_team_notice_red_point_iv"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/bg_solid_red_ff0055_corner_round"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/floating_btn_no_disturbing_rl"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/x7_bg_cc000000_corner_7"
+        android:paddingStart="6dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="6dp"
+        android:paddingBottom="7dp">
+
+        <ImageView
+            android:id="@+id/floating_btn_no_disturbing_iv"
+            android:layout_width="13dp"
+            android:layout_height="12dp"
+            android:src="@drawable/x7_nodisturbing_switch_on" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

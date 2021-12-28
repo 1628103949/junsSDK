@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relaxa_collection_root"
+    android:orientation="vertical" >
+
+    <include layout="@layout/x7_sdk_topic_title" /><!--android:paddingTop="12dp"-->
+    <include layout="@layout/x7_sdk_topic_replay" />
+
+    <!--&lt;!&ndash;4.20新增富文本显示&ndash;&gt;
+    <com.smwl.smsdk.myview.MyWebView
+        android:id="@+id/item_relaxa_collection_richtext_wv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="17dp">
+
+        <include layout="@layout/x7_sdk_topic_big_iv" />
+
+    </RelativeLayout>
+
+</LinearLayout>

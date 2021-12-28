@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_choose_num"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.ChoosePayNumActivity">
+
+    <include
+        android:id="@+id/x7_accountManager_title"
+        layout="@layout/x7_activity_title_6" />
+
+    <TextView
+        android:id="@+id/tv_pay_num_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/x7_text_gray"
+        android:textSize="12dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_sum"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_pay_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="35dp"
+        android:gravity="bottom|center_horizontal"
+        android:textColor="@color/x7_text_gray"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/btn_to_pay"
+        style="@style/X7BtnClickStyleNew"
+        android:layout_marginBottom="30dp"
+        android:text="@string/x7_recharge" />
+</LinearLayout>

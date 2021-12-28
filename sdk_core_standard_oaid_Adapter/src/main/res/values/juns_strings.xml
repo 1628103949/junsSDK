@@ -3,9 +3,9 @@
     <string name="juns_request_permission">权限申请</string>
     <string name="juns_sdcard_permission_rationale_message">游戏需要获取读写手机存储是必要的权限，用于游戏数据读取和写入。没有该权限将无法进行游戏！请放心，我们保证权限仅用于必要功能。</string>
     <string name="juns_device_permission_rationale_message">获取手机设备信息是必要的权限，如不授予该权限游戏将无法正常运行哦。请放心，我们保证权限仅用于必要功能。</string>
-    <string name="juns_game">DS游戏</string>
-    <string name="juns_name">DS</string>
-    <string name="juns_account_store_tips">您的DS手游帐号已注册成功\n点击进入游戏按钮将截图保存到手机相册</string>
+    <string name="juns_game">君尚游戏</string>
+    <string name="juns_name">君尚</string>
+    <string name="juns_account_store_tips">您的手游帐号已注册成功\n点击进入游戏按钮将截图保存到手机相册</string>
     <string name="juns_user_login">用户登录</string>
     <string name="juns_please_input_user_name">请输入您的用户名</string>
     <string name="juns_please_input_pwd">请输入您的密码</string>
@@ -34,7 +34,6 @@
     <string name="juns_accept">接受</string>
     <string name="juns_change_account">切换帐号</string>
     <string name="juns_get_phone_code">获取验证码</string>
-    <string name="juns_show_realname_info">查看规则</string>
     <string name="juns_logging">正在登录中&#8230;</string>
     <string name="juns_enter_game">进入游戏</string>
     <string name="juns_user_name_success">帐号：</string>
@@ -60,20 +59,23 @@
     <string name="juns_update_to_retry">游戏包下载异常，请重试！</string>
     <!-- update end -->
     <string name="juns_network_error">网络环境异常，请检查！</string>
+
     <string name="juns_init_info_title">个人信息保护指引</string>
     <string name="juns_init_info_first">欢迎您下载本游戏！我们非常重视保护您的个人信息和隐私。您可以通过隐私政策了解我们收集、使用、存储用户个人信息的情况，以及您所享有的相关权利。请您仔细阅读《用户协议》和《隐私政策》并充分理解相关内容：</string>
     <string name="juns_init_info_confirm_first">如不授权同意《用户协议》和《隐私政策》将无法进行游戏！</string>
     <string name="juns_init_info_confirm_second">是否确认拒绝授权并退出游戏？</string>
     <string name="juns_init_info_second">为了提供完整的游戏体验，我们会向您申请必要的权限信息。您可以选择同意或拒绝权限申请，如果拒绝可能会导致部分游戏体验异常。权限包括：</string>
-    <string name="juns_init_info_storage">存储权限：实现游戏数据的读取和写入，账号、图片的缓存和使用等(游戏必须权限)</string>
+    <string name="juns_init_info_storage">存储权限：实现游戏数据的读取和写入，账号、图片的缓存和使用等</string>
     <string name="juns_init_info_phone">设备信息：读取设备唯一标识用于保护账号安全</string>
+    <string name="juns_agree">同意</string>
+    <string name="juns_disagree">不同意</string>
+    <string name="juns_show_realname_info">查看规则</string>
+
     <string name="juns_setting_network">设置网络</string>
     <string name="juns_ops">公告</string>
     <string name="juns_confirm_exit_game">你确定要退出游戏吗？</string>
     <string name="juns_yes">是的</string>
     <string name="juns_cancel">取消</string>
-    <string name="juns_agree">同意</string>
-    <string name="juns_disagree">不同意</string>
     <string name="juns_exit_game">退出游戏</string>
     <string name="juns_continue_game">确定</string>
     <string name="juns_drag_to_hide">拖动到此隐藏</string>

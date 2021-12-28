@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/sv_trust"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/x7_findPassword_title"
+                layout="@layout/x7_activity_title_5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_trust_device_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/black_9"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_input_verify_code_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="43dp"
+                android:text="@string/x7_input_verify_code_word"
+                android:textColor="@color/black_9"
+                android:textSize="20dp" />
+
+            <com.smwl.smsdk.myview.MyInputVerifyCodeView
+                android:id="@+id/input_verify_code"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:ems="6"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/x7_text_green" />
+
+            <TextView
+                android:id="@+id/tv_count_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/x7base_green_12cdb0"
+                android:textSize="22dp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_get_verify_code"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/x7_btn_verify_code_back"
+                android:gravity="center"
+                android:paddingStart="29dp"
+                android:paddingEnd="29dp"
+                android:text="@string/x7_get_verify_code"
+                android:textColor="@color/x7_white"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

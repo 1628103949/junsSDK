@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/x7_mall_custom_gift_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:background="@drawable/x7_mall_custom_gift_title_content_bg_tv"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:textColor="@color/x7base_gray_33"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:background="@drawable/x7_mall_custom_gift_title_splice_bg_tv"
+            android:gravity="center_vertical"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--往里面add道具-->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/x7_mall_custom_gift_get_btn_tv"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/x7_mall_custom_gift_prop_root_ll"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="2dp">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/x7_mall_custom_gift_item_get_times_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/x7_mall_custom_gift_get_btn_tv"
+            android:layout_alignEnd="@+id/x7_mall_custom_gift_get_btn_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/x7_black_644f31"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/x7_mall_custom_gift_get_btn_tv"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/x7_mall_custom_gift_had_btn_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="11dp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/m4399.Pay.Page">
+
+    <include layout="@layout/m4399_ope_support_nav_bar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/m4399_ope_pay_success_margin"
+            android:src="@drawable/m4399_pay_status_success_ic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/m4399_pay_status_success_subject"
+            android:textColor="@color/m4399_ope_color_primary"
+            android:textSize="20sp" />
+
+        <ViewStub
+            android:id="@+id/m4399_pay_status_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/m4399_pay_status_coupon_receive"
+            tools:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

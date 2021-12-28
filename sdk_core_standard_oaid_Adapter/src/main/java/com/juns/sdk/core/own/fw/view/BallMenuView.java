@@ -1,14 +1,18 @@
 package com.juns.sdk.core.own.fw.view;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 import com.juns.sdk.core.own.account.JunSAccount;
 import com.juns.sdk.core.own.common.JunSWebDialog;
+import com.juns.sdk.core.own.common.JunSWebServiceActivity;
 import com.juns.sdk.core.own.event.JSLogoutEv;
 import com.juns.sdk.core.own.fw.account.AccountDialog;
 import com.juns.sdk.core.own.fw.service.ServiceDialog;
@@ -125,9 +129,6 @@ public class BallMenuView extends FrameLayout {
                                 String userName = itemObj.getString("uname");
                                 String userPhone = itemObj.getString("phone");
                                 String userRealName = itemObj.getString("name");
-                                if(!TextUtils.isEmpty(SDKData.getUserRealName())){
-                                    userRealName = SDKData.getUserRealName().substring(0, 1) + "**";
-                                }
                                 if (accountDialog != null && accountDialog.isShowing()) {
                                     accountDialog.dismiss();
                                 }
@@ -141,26 +142,26 @@ public class BallMenuView extends FrameLayout {
                     });
                     break;
 
-                case "libaoo":
-                    //处理礼包
-                    itemView = new BallItemView(mActivity);
-                    isRed = itemObj.optBoolean("red");
-                    itemView.buildView(title, iconUrl, isRed, new OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            //处理礼包点击事件
-                            //直接打开url附带url
-                            try {
-                                if (itemObj.has("url")) {
-                                    String itemUrl = itemObj.getString("url");
-                                    showJunsWebDialog(title, JunSUtils.buildCommonWebUrl(itemUrl, true));
-                                }
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    });
-                    break;
+//                case "libaoo":
+//                    //处理礼包
+//                    itemView = new BallItemView(mActivity);
+//                    isRed = itemObj.optBoolean("red");
+//                    itemView.buildView(title, iconUrl, isRed, new OnClickListener() {
+//                        @Override
+//                        public void onClick(View view) {
+//                            //处理礼包点击事件
+//                            //直接打开url附带url
+//                            try {
+//                                if (itemObj.has("url")) {
+//                                    String itemUrl = itemObj.getString("url");
+//                                    showJunsWebDialog(title, JunSUtils.buildCommonWebUrl(itemUrl, true));
+//                                }
+//                            } catch (Exception e) {
+//                                e.printStackTrace();
+//                            }
+//                        }
+//                    });
+//                    break;
                 case "hongbao":
                     //处理红包
                     isRed = itemObj.optBoolean("red");
@@ -173,6 +174,8 @@ public class BallMenuView extends FrameLayout {
                             try {
                                 if (itemObj.has("url")) {
                                     String itemUrl = itemObj.getString("url");
+                                    //Log.e("guoinfo",itemUrl);
+                                    //Log.e("guoinfo",JunSUtils.buildCommonWebUrl(itemUrl, true));
                                     NoticeDialog hongbaoDialog = new NoticeDialog(mActivity, JunSUtils.buildCommonWebUrl(itemUrl, true), new NoticeDialog.NoticeCallback() {
                                         @Override
                                         public void onFinish() {
@@ -181,6 +184,27 @@ public class BallMenuView extends FrameLayout {
                                     });
                                     hongbaoDialog.show();
                                     //showJunsWebDialog(title, JunSUtils.buildCommonWebUrl(itemUrl, true));
+                                }
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    });
+                    break;
+                case "kefu602":
+                    //处理在线客服
+                    isRed = itemObj.optBoolean("red");
+                    itemView = new BallItemView(mActivity);
+                    itemView.buildView(title, iconUrl, isRed, new OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+
+                            try {
+                                if (itemObj.has("url")) {
+                                    String itemUrl = itemObj.getString("url");
+                                    //showJunsWebDialog(title, JunSUtils.buildCommonWebUrl(itemUrl, true));
+                                    //hongbaoDialog.show();
+                                    showJunsWebService(title, JunSUtils.buildCommonWebUrl(itemUrl, true));
                                 }
                             } catch (Exception e) {
                                 e.printStackTrace();
@@ -227,6 +251,22 @@ public class BallMenuView extends FrameLayout {
                 .dismissAnim(new ZoomOutExit()).
                 dimEnabled(true)
                 .show();
+    }
+
+    private void showJunsWebService(String title, String url) {
+        if (junSWebDialog != null) {
+            if (junSWebDialog.isShowing()) {
+                junSWebDialog.dismiss();
+            }
+            junSWebDialog = null;
+        }
+        Intent intent = new Intent(mActivity,JunSWebServiceActivity.class);
+        //intent.setb("");
+        Bundle newBundle = new Bundle();
+        newBundle.putString("title", title);
+        newBundle.putString("url", url);
+        intent.putExtras(newBundle);
+        mActivity.startActivity(intent);
     }
 
 }

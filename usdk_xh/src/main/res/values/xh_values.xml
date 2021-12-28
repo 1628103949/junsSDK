@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="xh_code_text_color">#DF1111</color>
+    <color name="xh_ed_color">#000000</color>
+    <color name="xh_ed_color1">#00FFFFFF</color>
+    <color name="xh_edittetx_border_color">#E3E3E3</color>
+    <color name="xh_error_text_color">#EE2A2A</color>
+    <color name="xh_line_color">#D0D2D5</color>
+    <color name="xh_main_button_deep_bg_color">#EA4E65</color>
+    <color name="xh_popwindow_bg_color">#FFFFFF</color>
+    <color name="xh_realname_bg_color">#28333d</color>
+    <color name="xh_realname_title_bg_color">#1e2831</color>
+    <color name="xh_title_pay_color">#dece96</color>
+    <color name="xh_title_text_color">#393D40</color>
+    <dimen name="margin_left_and_Right">20dp</dimen>
+    <string name="xh_hint_edit_account">请输入账号(6~16位 含英文字符)</string>
+    <string name="xh_hint_edit_code">请输入您的验证码</string>
+    <string name="xh_hint_edit_phone">请输入您的手机号码</string>
+    <string name="xh_hint_edit_pwd">请输入密码(6~16位 含英文字符)</string>
+    <string name="xh_network_connection_failed">网络连接失败，请重新尝试~</string>
+    <string name="xh_password_digits">
+        abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@.~!#$%^*()_-+=`
+    </string>
+    <style name="Sj_MyButton">
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="Transparent_test">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+    <style name="Transparent_test2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@style/xh_ThemeAppDialogAnimation</item>
+    </style>
+    <style name="xh_DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+
+    </style>
+    <style name="xh_StyleInputIcon">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="xh_ThemeAppDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@style/xh_ThemeAppDialogAnimation</item>
+    </style>
+    <style name="xh_ThemeAppDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <style name="xh_ThemeCustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x7_addSmallAccount_width"
+    android:layout_height="133dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/x7_join_im_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="@string/x7_join_im_group"
+        android:textColor="@color/base_black_3"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sure_cancel"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/x7_join_im_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip">
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="83dp"
+            android:layout_height="34dp"
+            android:background="@drawable/x7_edt_back_2"
+            android:gravity="center"
+            android:text="@string/x7_cancel"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/sure_tv"
+            android:layout_width="83dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/x7_btn_back_selected_2"
+            android:gravity="center"
+            android:text="@string/x7_sure_to_add"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

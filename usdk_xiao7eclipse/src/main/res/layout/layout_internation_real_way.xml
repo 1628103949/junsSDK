@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_real_name_way_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_real_name_way_title"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="@string/x7_real_name_authentication"
+            android:textColor="@color/x7base_green_12cdb0"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_act_real_name_way_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/x7_act_title_back" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_real_name_way_header">
+
+        <TextView
+            android:id="@+id/tv_real_name_way_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="37dp"
+            android:background="@drawable/x7_bg_ff000000_corner_7"
+            android:paddingStart="17dp"
+            android:paddingTop="17dp"
+            android:paddingBottom="17dp"
+            android:text="@string/x7_normal_real_name_way"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_real_name_way_Appendix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="37dp"
+            android:background="@drawable/x7_bg_ff000000_corner_7"
+            android:paddingStart="17dp"
+            android:paddingTop="17dp"
+            android:paddingBottom="17dp"
+            android:text="@string/x7_special_real_name_way"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

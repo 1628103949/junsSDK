@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/x7_ffffff_16_bg">
+
+    <LinearLayout
+        android:id="@+id/replied_message_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/im_x7_muteDialog_noMuteTimeHint"
+            android:textColor="@color/x7base_gray_33"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mute_time_level_1"
+                style="@style/mute_time_tv_style"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/mute_time_level_2"
+                style="@style/mute_time_tv_style"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp" />
+
+            <TextView
+                android:id="@+id/mute_time_level_3"
+                style="@style/mute_time_tv_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mute_time_level_4"
+                style="@style/mute_time_tv_style"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/mute_time_level_5"
+                style="@style/mute_time_tv_style"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="11dp" />
+
+            <TextView
+                android:id="@+id/mute_time_level_6"
+                style="@style/mute_time_tv_style" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/select_mute_time_confirm_tv"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/x7base_im_bg_solid_green_12cdb0_corner_50"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mute_remaining_time_count_down_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/im_x7_muteDialog_muteRemainingTime"
+            android:textColor="@color/x7base_gray_33"
+            android:textSize="17dp" />
+
+        <RelativeLayout
+            android:id="@+id/mute_remaining_time_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/baseline_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mute_remaining_time_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:text="0"
+                android:textColor="@color/color_12cdb0"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mute_remaining_time_day_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/baseline_tv"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/mute_remaining_time_day"
+                android:layout_toRightOf="@+id/mute_remaining_time_day"
+                android:text="@string/im_x7_muteDialog_mute_day"
+                android:textColor="@color/color_12cdb0"
+                android:textSize="25dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/mute_remaining_time_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/baseline_tv"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/mute_remaining_time_day_text"
+                android:layout_toRightOf="@+id/mute_remaining_time_day_text"
+                android:text="0"
+                android:textColor="@color/color_12cdb0"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mute_remaining_time_hour_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/baseline_tv"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/mute_remaining_time_hour"
+                android:layout_toRightOf="@+id/mute_remaining_time_hour"
+                android:text="@string/im_x7_muteDialog_mute_hour"
+                android:textColor="@color/color_12cdb0"
+                android:textSize="25dp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/cancel_mute_tv"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/x7base_im_bg_solid_green_12cdb0_corner_50"
+            android:gravity="center"
+            android:text="@string/im_x7_muteDialog_cancelMute2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17" />
+
+        <TextView
+            android:id="@+id/close_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/x7_close"
+            android:textColor="@color/color_12cdb0"
+            android:textSize="@dimen/text_size_17" />
+    </LinearLayout>
+</FrameLayout>

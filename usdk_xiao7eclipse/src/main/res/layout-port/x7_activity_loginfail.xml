@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/login_fail_iv"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/x7_do_fail" />
+
+    <TextView
+        android:id="@+id/login_fail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_fail_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/loginFail"
+        android:textColor="#999999"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/login_fail_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/switch_account_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:maxEms="5"
+        android:text="@string/login_fail_reason"
+        android:textColor="#999"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:id="@+id/switch_account_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="72dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/x7_bg_333333_corner_8"
+            android:text="@string/x7_exit"
+            android:textColor="@color/x7_white"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_switch_account"
+            style="@style/X7BtnClickStyleNew"
+            android:padding="10dp"
+            android:text="@string/x7_switch_account" />
+    </LinearLayout>
+
+</RelativeLayout>

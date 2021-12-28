@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:id="@+id/ll_small_account_login"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/x7_bg_solid_000000_corner_7_alpha_50"
+        android:minWidth="260dp"
+        android:orientation="horizontal"
+        android:paddingStart="18dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/small_account_os_type_iv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/account_os_type_andorid" />
+
+        <TextView
+            android:id="@+id/tv_small_account_login_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/small_account_os_type_iv"
+            android:singleLine="true"
+            android:textColor="@color/x7_white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_is_last_logon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/tv_small_account_login_name"
+            android:gravity="center_vertical"
+            android:text="@string/x7_last_login_guid"
+            android:textColor="#12cdb0"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/tv_switch_account_login"
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="15dp"
+            android:scaleType="center"
+            android:src="@drawable/x7_account_arrow" />
+
+    </RelativeLayout>
+
+    <!--4.21新增默认登入-->
+    <TextView
+        android:id="@+id/tv_default_login"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:drawableStart="@drawable/x7_choose_default_login_cb_bg"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

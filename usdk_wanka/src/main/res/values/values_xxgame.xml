@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#10000000</color>
+    <color name="white">#ffffff</color>
+    <color name="wk_clr_normal">#ff6501</color>
+    <color name="wk_clr_pressed">#a44100</color>
+    <color name="wy_all_theme_bg">#1296db</color>
+    <color name="wy_black_text_color">#000000</color>
+    <color name="wy_bottom_pay_bg">#036edc</color>
+    <color name="wy_center_layout_click_bg">#e89f1f</color>
+    <color name="wy_common_background">#f3f3f3</color>
+    <color name="wy_coupon_bg">#EFEFEF</color>
+    <color name="wy_coupon_unable_bg">#F4F3F3</color>
+    <color name="wy_font_blue">#42369a</color>
+    <color name="wy_font_common_1">#424242</color>
+    <color name="wy_font_common_2">#a1a1a1</color>
+    <color name="wy_full_transparent">#00000000</color>
+    <color name="wy_green_text_color">#56BB55</color>
+    <color name="wy_grey_text_color">#727272</color>
+    <color name="wy_light_black_text_color">#444444</color>
+    <color name="wy_line_bg">#A1A1A1</color>
+    <color name="wy_pay_bg">#F5EEEB</color>
+    <color name="wy_pay_extend">#9E9896</color>
+    <color name="wy_pay_name">#6B635F</color>
+    <color name="wy_rad_text_color">#FF0000</color>
+    <color name="wy_user_agreement_bg">#f5f5f5</color>
+    <dimen name="wy_btn_common_margin_top">6dp</dimen>
+    <dimen name="wy_btn_count_down_width">46dp</dimen>
+    <dimen name="wy_btn_text_size">13sp</dimen>
+    <dimen name="wy_cet_right_padding">8dp</dimen>
+    <dimen name="wy_dialog_common_height">125dp</dimen>
+    <dimen name="wy_dialog_common_width">280dp</dimen>
+    <dimen name="wy_et_input_field_margin_Left">10dp</dimen>
+    <dimen name="wy_et_input_field_text_size">13sp</dimen>
+    <dimen name="wy_float_ball_hide_height">50dp</dimen>
+    <dimen name="wy_float_ball_hide_other_height">50dp</dimen>
+    <dimen name="wy_float_ball_hide_other_width">50dp</dimen>
+    <dimen name="wy_float_ball_hide_width">50dp</dimen>
+    <dimen name="wy_float_ball_normal_height">50dp</dimen>
+    <dimen name="wy_float_ball_normal_width">50dp</dimen>
+    <dimen name="wy_fragment_common_height">300dp</dimen>
+    <dimen name="wy_fragment_common_nologo_height">240dp</dimen>
+    <dimen name="wy_fragment_common_width">350dp</dimen>
+    <dimen name="wy_iv_input_field_icon_height">15dp</dimen>
+    <dimen name="wy_iv_input_field_icon_padding_left">13dp</dimen>
+    <dimen name="wy_iv_input_field_icon_padding_right">13dp</dimen>
+    <dimen name="wy_iv_input_field_icon_width">41dp</dimen>
+    <dimen name="wy_iv_pay_logo_height">50dp</dimen>
+    <dimen name="wy_iv_pay_logo_width">50dp</dimen>
+    <dimen name="wy_iv_visitor_login_height">55dp</dimen>
+    <dimen name="wy_iv_visitor_login_width">55dp</dimen>
+    <dimen name="wy_iv_wk_account_login_height">55dp</dimen>
+    <dimen name="wy_iv_wk_account_login_width">55dp</dimen>
+    <dimen name="wy_iv_wk_game_height">50dp</dimen>
+    <dimen name="wy_iv_wk_game_margin_top">7dp</dimen>
+    <dimen name="wy_iv_wk_game_width">230dp</dimen>
+    <dimen name="wy_login_method_text_size">13sp</dimen>
+    <dimen name="wy_pay_dialog_common_height">310dp</dimen>
+    <dimen name="wy_pay_dialog_common_width">300dp</dimen>
+    <dimen name="wy_popup_window_drop_distance">1dp</dimen>
+    <dimen name="wy_right_common_btn_height">40dp</dimen>
+    <dimen name="wy_right_common_btn_width">300dp</dimen>
+    <dimen name="wy_right_common_height">36dp</dimen>
+    <dimen name="wy_right_common_width">300dp</dimen>
+    <dimen name="wy_rv_padding">1dp</dimen>
+    <dimen name="wy_tv_login_method_margin_top">12dp</dimen>
+    <item name="wk_account_et" type="id"/>
+    <item name="wk_account_login_iv" type="id"/>
+    <item name="wk_account_register_Tv" type="id"/>
+    <item name="wk_account_rigiest_ll" type="id"/>
+    <item name="wk_account_tv" type="id"/>
+    <item name="wk_game_iv" type="id"/>
+    <item name="wk_guest_login_Tv" type="id"/>
+    <item name="wy_account_ll" type="id"/>
+    <item name="wy_account_login_again_ll" type="id"/>
+    <item name="wy_account_tv" type="id"/>
+    <item name="wy_account_type_icon_iv" type="id"/>
+    <item name="wy_adk_pay_ly" type="id"/>
+    <item name="wy_ali_pay_im" type="id"/>
+    <item name="wy_ali_pay_tx" type="id"/>
+    <item name="wy_alipay_ll" type="id"/>
+    <item name="wy_already_cancel_pay_tv" type="id"/>
+    <item name="wy_already_complete_pay_tv" type="id"/>
+    <item name="wy_back_iv" type="id"/>
+    <item name="wy_back_login_btn" type="id"/>
+    <item name="wy_bind_phone_btn" type="id"/>
+    <item name="wy_bind_phone_rl" type="id"/>
+    <item name="wy_change_pwd_close" type="id"/>
+    <item name="wy_change_pwd_ll" type="id"/>
+    <item name="wy_check_info_tv" type="id"/>
+    <item name="wy_clear_btn" type="id"/>
+    <item name="wy_close_bing_phone_iv" type="id"/>
+    <item name="wy_close_btn" type="id"/>
+    <item name="wy_close_change_pwd_iv" type="id"/>
+    <item name="wy_close_check_info_tv" type="id"/>
+    <item name="wy_close_pay_iv" type="id"/>
+    <item name="wy_close_real_name_btn" type="id"/>
+    <item name="wy_common_dialog_cancel" type="id"/>
+    <item name="wy_common_dialog_msg" type="id"/>
+    <item name="wy_common_dialog_sure" type="id"/>
+    <item name="wy_common_dialog_title" type="id"/>
+    <item name="wy_common_dialog_view" type="id"/>
+    <item name="wy_contact_customer" type="id"/>
+    <item name="wy_contact_customer_ll" type="id"/>
+    <item name="wy_content_fl" type="id"/>
+    <item name="wy_continue_login_btn" type="id"/>
+    <item name="wy_continue_pay_btn" type="id"/>
+    <item name="wy_count_down_pb" type="id"/>
+    <item name="wy_count_down_pb_ly" type="id"/>
+    <item name="wy_count_down_tv" type="id"/>
+    <item name="wy_customer_icon_iv" type="id"/>
+    <item name="wy_customer_service_ll" type="id"/>
+    <item name="wy_customer_service_phone_tv" type="id"/>
+    <item name="wy_drawer_layout" type="id"/>
+    <item name="wy_drop_down_iv" type="id"/>
+    <item name="wy_enter_phone_num_ll" type="id"/>
+    <item name="wy_enter_pwd_ll" type="id"/>
+    <item name="wy_enter_verification_code_ll" type="id"/>
+    <item name="wy_fast_login_iv" type="id"/>
+    <item name="wy_fast_login_ll" type="id"/>
+    <item name="wy_fast_login_tv" type="id"/>
+    <item name="wy_finish_btn" type="id"/>
+    <item name="wy_float_ball_close_iv" type="id"/>
+    <item name="wy_float_ball_display_iv" type="id"/>
+    <item name="wy_float_ball_error_Iv" type="id"/>
+    <item name="wy_float_ball_progress" type="id"/>
+    <item name="wy_float_ball_wv" type="id"/>
+    <item name="wy_float_ball_wx_login_progress_ll" type="id"/>
+    <item name="wy_float_menu_dot_tv" type="id"/>
+    <item name="wy_float_menu_left_tv" type="id"/>
+    <item name="wy_float_menu_main_ll" type="id"/>
+    <item name="wy_float_menu_right_tv" type="id"/>
+    <item name="wy_float_web_view_ly" type="id"/>
+    <item name="wy_floating_icon_iv" type="id"/>
+    <item name="wy_forget_pwd_contact_customer" type="id"/>
+    <item name="wy_forget_pwd_iv" type="id"/>
+    <item name="wy_forget_pwd_tv" type="id"/>
+    <item name="wy_fragment_bind_phone_ly" type="id"/>
+    <item name="wy_fragment_fist_login_ly" type="id"/>
+    <item name="wy_fragment_other_login_method_ly" type="id"/>
+    <item name="wy_fragment_phone_login_ly" type="id"/>
+    <item name="wy_fragment_switch_loggedin_account_ly" type="id"/>
+    <item name="wy_fragment_wk_account_register_or_login_ly" type="id"/>
+    <item name="wy_get_verification_code_btn" type="id"/>
+    <item name="wy_h5_pay_ll" type="id"/>
+    <item name="wy_have_account_login_tv" type="id"/>
+    <item name="wy_hide_float_ball_context" type="id"/>
+    <item name="wy_hide_float_ball_title" type="id"/>
+    <item name="wy_iv_old_psd_un_look" type="id"/>
+    <item name="wy_iv_psd_un_look" type="id"/>
+    <item name="wy_loading_circle_iv" type="id"/>
+    <item name="wy_loading_tips_tx" type="id"/>
+    <item name="wy_loading_tx" type="id"/>
+    <item name="wy_local_pay_title" type="id"/>
+    <item name="wy_logged_in_account_tv" type="id"/>
+    <item name="wy_login_btn" type="id"/>
+    <item name="wy_ly_float_ball" type="id"/>
+    <item name="wy_ly_float_ball_close" type="id"/>
+    <item name="wy_ly_shark_show" type="id"/>
+    <item name="wy_ly_shark_show_close_iv" type="id"/>
+    <item name="wy_mobile_login_Tv" type="id"/>
+    <item name="wy_mobile_login_iv" type="id"/>
+    <item name="wy_mobile_login_ll" type="id"/>
+    <item name="wy_mqtt_marquee_ll" type="id"/>
+    <item name="wy_mqtt_marquee_mv" type="id"/>
+    <item name="wy_mqtt_web_close" type="id"/>
+    <item name="wy_mqtt_web_ly" type="id"/>
+    <item name="wy_mqtt_web_outside_view" type="id"/>
+    <item name="wy_mqtt_web_view_ly" type="id"/>
+    <item name="wy_mqtt_web_wv" type="id"/>
+    <item name="wy_my_dialog_button1_tx" type="id"/>
+    <item name="wy_my_dialog_button1_view" type="id"/>
+    <item name="wy_my_dialog_button2_back_tx" type="id"/>
+    <item name="wy_my_dialog_button2_tx" type="id"/>
+    <item name="wy_my_dialog_button2_view" type="id"/>
+    <item name="wy_my_dialog_button3_tx" type="id"/>
+    <item name="wy_my_dialog_button3_view" type="id"/>
+    <item name="wy_my_dialog_content_tv" type="id"/>
+    <item name="wy_my_dialog_title_tv" type="id"/>
+    <item name="wy_new_pwd_tv" type="id"/>
+    <item name="wy_no_account_tv" type="id"/>
+    <item name="wy_no_bind_phone_tv" type="id"/>
+    <item name="wy_no_remind_again_iv" type="id"/>
+    <item name="wy_no_remind_again_ll" type="id"/>
+    <item name="wy_old_pwd_tv" type="id"/>
+    <item name="wy_other_login_way_iv" type="id"/>
+    <item name="wy_other_pay_im" type="id"/>
+    <item name="wy_other_pay_ll" type="id"/>
+    <item name="wy_other_pay_tx" type="id"/>
+    <item name="wy_password_tv" type="id"/>
+    <item name="wy_pay_info_type_extend1" type="id"/>
+    <item name="wy_pay_info_type_extend2" type="id"/>
+    <item name="wy_pay_info_type_extend3" type="id"/>
+    <item name="wy_pay_info_type_extend_ly" type="id"/>
+    <item name="wy_pay_info_type_title" type="id"/>
+    <item name="wy_pay_left_icon" type="id"/>
+    <item name="wy_pay_list_view" type="id"/>
+    <item name="wy_pay_ll" type="id"/>
+    <item name="wy_pay_main_ry" type="id"/>
+    <item name="wy_pay_right_icon" type="id"/>
+    <item name="wy_pay_status_ly" type="id"/>
+    <item name="wy_pay_type_ll" type="id"/>
+    <item name="wy_pay_wv" type="id"/>
+    <item name="wy_pb" type="id"/>
+    <item name="wy_phone_num_et" type="id"/>
+    <item name="wy_phone_num_tv" type="id"/>
+    <item name="wy_platfrom_currency_ll" type="id"/>
+    <item name="wy_please_call_customer_phone_iv" type="id"/>
+    <item name="wy_please_call_customer_phone_ll" type="id"/>
+    <item name="wy_please_call_customer_phone_tv" type="id"/>
+    <item name="wy_please_call_customer_q_iv" type="id"/>
+    <item name="wy_please_call_customer_q_ll" type="id"/>
+    <item name="wy_please_call_customer_q_tv" type="id"/>
+    <item name="wy_please_call_customer_service_iv" type="id"/>
+    <item name="wy_please_call_customer_service_tv" type="id"/>
+    <item name="wy_please_select_the_login_method_ll" type="id"/>
+    <item name="wy_pwd_et" type="id"/>
+    <item name="wy_pwd_login_tv" type="id"/>
+    <item name="wy_pwd_tv" type="id"/>
+    <item name="wy_read_left_view" type="id"/>
+    <item name="wy_read_right_view" type="id"/>
+    <item name="wy_real_id_card_et" type="id"/>
+    <item name="wy_real_name_et" type="id"/>
+    <item name="wy_real_name_ll" type="id"/>
+    <item name="wy_register_account_tv" type="id"/>
+    <item name="wy_register_hint_tv" type="id"/>
+    <item name="wy_register_hint_user_agreement_tv" type="id"/>
+    <item name="wy_register_or_login_btn" type="id"/>
+    <item name="wy_repeat_new_pwd_tv" type="id"/>
+    <item name="wy_return_login_btn" type="id"/>
+    <item name="wy_revocer_pwd_ll" type="id"/>
+    <item name="wy_root_ll" type="id"/>
+    <item name="wy_server_version_info_ll" type="id"/>
+    <item name="wy_show_status_iv" type="id"/>
+    <item name="wy_split_line_view" type="id"/>
+    <item name="wy_switch_account_btn" type="id"/>
+    <item name="wy_switch_account_ll" type="id"/>
+    <item name="wy_test_env_ll" type="id"/>
+    <item name="wy_tips_tv" type="id"/>
+    <item name="wy_title_rl" type="id"/>
+    <item name="wy_title_tv" type="id"/>
+    <item name="wy_user_agreement_title_tv" type="id"/>
+    <item name="wy_user_agreement_tv" type="id"/>
+    <item name="wy_verification_code_et" type="id"/>
+    <item name="wy_verification_code_login_tv" type="id"/>
+    <item name="wy_visitor_login_iv" type="id"/>
+    <item name="wy_visitor_login_ll" type="id"/>
+    <item name="wy_wechat_ll" type="id"/>
+    <item name="wy_wx_login_Tv" type="id"/>
+    <item name="wy_wx_login_iv" type="id"/>
+    <item name="wy_wx_login_ll" type="id"/>
+    <item name="wy_wx_pay_im" type="id"/>
+    <item name="wy_wx_pay_tx" type="id"/>
+    <item name="wy_wy_password_ll" type="id"/>
+    <item name="wy_wy_platfrom_currency_pay_im" type="id"/>
+    <item name="wy_wy_platfrom_currency_tx" type="id"/>
+    <item name="xx_account_tv" type="id"/>
+    <integer name="wy_check_order_count_down">10</integer>
+    <integer name="wy_click_again_delay_duration">1000</integer>
+    <integer name="wy_delayed_login_duration">0</integer>
+    <integer name="wy_delayed_pay_duration">8000</integer>
+    <integer name="wy_hide_float_ball_delay">3000</integer>
+    <integer name="wy_pwd_min_length">6</integer>
+    <integer name="wy_show_log_level">1</integer>
+    <integer name="wy_sms_count_down">60</integer>
+    <integer name="wy_visitor_count_down">3</integer>
+    <string name="wk_account_login_again">已有账号</string>
+    <string name="wk_account_register_hit">注册即阅读并同意</string>
+    <string name="wk_no_account">没有账号?</string>
+    <string name="wk_now_register_account">立即注册</string>
+    <string name="wk_user_privacy">《隐私协议》</string>
+    <string name="wy_account">账 号:</string>
+    <string name="wy_account_pwd">密 码:</string>
+    <string name="wy_account_risk">建议您尽快绑定手机号，以防数据丢失</string>
+    <string name="wy_already_cancel_pay">已取消支付</string>
+    <string name="wy_already_complete_pay">已完成支付</string>
+    <string name="wy_amount_unit">元</string>
+    <string name="wy_app_back">app://back</string>
+    <string name="wy_app_close">app://close</string>
+    <string name="wy_app_id">AppId</string>
+    <string name="wy_app_wx_login">app://wxLogin?appid=</string>
+    <string name="wy_app_wx_share">app://wxShare</string>
+    <string name="wy_are_you_sure_pay_complete">是否完成支付？</string>
+    <string name="wy_are_you_sure_quit_game">确定要退出游戏吗?</string>
+    <string name="wy_back_login">返回登录</string>
+    <string name="wy_bd_app_id">BD_APP_ID</string>
+    <string name="wy_bd_app_key">BD_KEY</string>
+    <string name="wy_bind_phone">绑定手机</string>
+    <string name="wy_bind_phone_faild">绑定手机号码失败 请检查网络</string>
+    <string name="wy_bind_phone_next_time">下次再说</string>
+    <string name="wy_bind_phone_now">马上绑定</string>
+    <string name="wy_bind_phone_parameter_error">绑定手机参数异常，请重启游戏</string>
+    <string name="wy_bind_phone_succcess">恭喜您 账号绑定成功</string>
+    <string name="wy_bind_phone_url">app://bindMobile</string>
+    <string name="wy_call_phone_url">tel:</string>
+    <string name="wy_cancel">残忍拒绝</string>
+    <string name="wy_capture_saved">账号信息截图已经保存到本地</string>
+    <string name="wy_center_parameters_error">个人中心参数异常,检测到空值参数</string>
+    <string name="wy_change_password_url">app://changePassword</string>
+    <string name="wy_change_pwd_parameter_error">修改密码参数异常，请重启游戏</string>
+    <string name="wy_change_pwd_title">修改密码</string>
+    <string name="wy_channel_info_separator">\\^</string>
+    <string name="wy_check_client_install">请检查是否安装客户端</string>
+    <string name="wy_check_order_fail_parameter_error">查询订单参数异常，请重启游戏</string>
+    <string name="wy_check_order_status">查询订单中</string>
+    <string name="wy_click_close_center">app://closeUserCenter</string>
+    <string name="wy_click_open_center">app://ucenter</string>
+    <string name="wy_click_open_real_name">app://openRealName</string>
+    <string name="wy_click_open_xxbox">app://openActivity</string>
+    <string name="wy_click_pay_cancel">app://cancelOrder</string>
+    <string name="wy_click_pay_continue">app://continueOrder</string>
+    <string name="wy_click_popup_web_view">app://popup</string>
+    <string name="wy_client_server_error">无法连接到服务器</string>
+    <string name="wy_close_splash">app://closeSplash</string>
+    <string name="wy_config">config</string>
+    <string name="wy_config_default_value">0999999999</string>
+    <string name="wy_confirm_exit">确定退出</string>
+    <string name="wy_contact_customer">联系客服</string>
+    <string name="wy_contact_customer_q"> 客服 QQ：</string>
+    <string name="wy_contact_customer_service"> 客服电话：</string>
+    <string name="wy_contact_customer_time"> 服务时间：09:30 – 18:30 (工作日)</string>
+    <string name="wy_copy_success">复制成功</string>
+    <string name="wy_copy_text">app://textCopy?text=</string>
+    <string name="wy_coupon_default_hide">张优惠券可用</string>
+    <string name="wy_coupon_enable">可用优惠券</string>
+    <string name="wy_coupon_no_more">没有更多优惠券了</string>
+    <string name="wy_coupon_title">优惠券</string>
+    <string name="wy_coupon_un_enable">不可用优惠券</string>
+    <string name="wy_create_center_fail">创建个人中心失败，请退出游戏重新进入后再试！</string>
+    <string name="wy_create_order_parameter_error">创建订单参数异常，请重启游戏</string>
+    <string name="wy_customer_service_phone">客服电话:%1$s</string>
+    <string name="wy_default_subject">元宝</string>
+    <string name="wy_download_start">开始下载。。。</string>
+    <string name="wy_entering_game">正在进入游戏   %1$s</string>
+    <string name="wy_env_test">当前为测试环境，请在发布时修改为正式环境</string>
+    <string name="wy_fast_login_btn_tv">一键登录</string>
+    <string name="wy_fast_login_fail_hide">请检查移动网络连接或使用其他方式登录</string>
+    <string name="wy_fast_login_hit">提示：点击一键登录并登录表示您已阅读并同意</string>
+    <string name="wy_fast_login_loading_hide">正在唤起授权页</string>
+    <string name="wy_file_name">wankagame</string>
+    <string name="wy_fill_in_completely">请填写完整必填字段</string>
+    <string name="wy_finish">完成</string>
+    <string name="wy_forget_pwd">忘记密码</string>
+    <string name="wy_game_cancel">取消</string>
+    <string name="wy_game_confirm">确定</string>
+    <string name="wy_gdt_app_key">GDT_KEY</string>
+    <string name="wy_gdt_uid">GDT_UID</string>
+    <string name="wy_get_code_parameter_error">获取验证码参数异常，请重启游戏</string>
+    <string name="wy_get_verification_code">发送</string>
+    <string name="wy_have">有</string>
+    <string name="wy_init_fail">初始化失败 请重试</string>
+    <string name="wy_init_fail_check_config_parameter">初始化失败，配置文件参数为默认参数，请检查</string>
+    <string name="wy_init_fail_check_config_version_parameter">初始化失败，sdk版本号配置错误，请检查</string>
+    <string name="wy_init_fail_check_parameter">初始化失败，初始化传入参数为默认参数，请检查</string>
+    <string name="wy_init_fail_gdt_parameter_error">初始化失败，GDT参数异常，请检查</string>
+    <string name="wy_init_fail_other_parameter_error">初始化失败，第三方参数异常，请检查</string>
+    <string name="wy_init_fail_tt_parameter_error">初始化失败，TT参数异常，请检查</string>
+    <string name="wy_init_parameter_error">初始化参数异常，请重启游戏</string>
+    <string name="wy_init_success">初始化成功</string>
+    <string name="wy_insufficient_permissions">无法保存账号截图到图库,请授予访问权限…</string>
+    <string name="wy_is_coerce">isCoerce</string>
+    <string name="wy_is_open_notify">是否开启通知权限?</string>
+    <string name="wy_is_switch_account">确定切换账号？</string>
+    <string name="wy_key_account_info">accontInfo</string>
+    <string name="wy_key_campaign_id">campaignId</string>
+    <string name="wy_key_channel_info_file_name">wy.properties</string>
+    <string name="wy_key_download_url">downloadUrl</string>
+    <string name="wy_key_is_login_view">isLoginView</string>
+    <string name="wy_key_no_remind_again">no_remind_again</string>
+    <string name="wy_key_package_id">packageId</string>
+    <string name="wy_key_pay_url">payUrl</string>
+    <string name="wy_key_phone_num">phoneNum</string>
+    <string name="wy_key_sdk_version">sdkVersion</string>
+    <string name="wy_key_version_id">versionId</string>
+    <string name="wy_key_wk_account">wkAccount</string>
+    <string name="wy_loading_dialog_loading">加载中…</string>
+    <string name="wy_logging_in_please_later">正在登录请稍后…</string>
+    <string name="wy_logging_please_retry">正在登录中</string>
+    <string name="wy_login">登录</string>
+    <string name="wy_login_fail">登录失败</string>
+    <string name="wy_login_fail_please_check_network">登录失败 请检查网络</string>
+    <string name="wy_login_parameter_error">登录参数异常，请重启游戏</string>
+    <string name="wy_login_success">登录成功</string>
+    <string name="wy_login_type_check_token">4</string>
+    <string name="wy_login_type_fast">6</string>
+    <string name="wy_login_type_phone_verification_code">3</string>
+    <string name="wy_login_type_visitor">0</string>
+    <string name="wy_login_type_wk_account">1</string>
+    <string name="wy_login_type_wx">5</string>
+    <string name="wy_net_work_error">网络连接错误，请重试</string>
+    <string name="wy_no_install_wx">您的设备未安装微信客户端</string>
+    <string name="wy_no_remind_again">今日不再提示</string>
+    <string name="wy_open_other_url">app://openURL?url=</string>
+    <string name="wy_order_extra_parameter_error">订单预处理参数异常，请重启游戏</string>
+    <string name="wy_order_id">wanyuOrderId</string>
+    <string name="wy_order_info">wanyuOrderInfo</string>
+    <string name="wy_other_ad_parameter_five">OTHER_AD_PARAMETER_FIVE</string>
+    <string name="wy_other_ad_parameter_four">OTHER_AD_PARAMETER_FOUR</string>
+    <string name="wy_other_ad_parameter_one">OTHER_AD_PARAMETER_ONE</string>
+    <string name="wy_other_ad_parameter_three">OTHER_AD_PARAMETER_THREE</string>
+    <string name="wy_other_ad_parameter_two">OTHER_AD_PARAMETER_TWO</string>
+    <string name="wy_other_login_type">其他登录方式</string>
+    <string name="wy_pay_continue">立即支付</string>
+    <string name="wy_pay_fail">支付失败</string>
+    <string name="wy_pay_parameter_error">支付参数异常，请重试！</string>
+    <string name="wy_pay_playform_wk">0</string>
+    <string name="wy_pay_request_fail">支付请求失败 请重新发起支付请求</string>
+    <string name="wy_pay_success">支付成功</string>
+    <string name="wy_paying_please_retry">支付中，请稍后再试，如多次尝试后无效，请重进游戏</string>
+    <string name="wy_phone_number_can_not_be_empty">手机号码不能为空</string>
+    <string name="wy_please_enter_correct_account">请输入正确的账号,长度为6到24个字符,不包含中文</string>
+    <string name="wy_please_enter_new_pwd">请输入新密码</string>
+    <string name="wy_please_enter_old_pwd">请输入旧密码</string>
+    <string name="wy_please_enter_the_correct_id_card_number">请输入正确的身份信息</string>
+    <string name="wy_please_enter_the_correct_phone_number">请输入正确手机号码</string>
+    <string name="wy_please_enter_the_id_card_number">请填入身份证号</string>
+    <string name="wy_please_enter_the_name">请填入真实姓名</string>
+    <string name="wy_please_enter_the_phone_number">请输入手机号码</string>
+    <string name="wy_please_enter_the_pwd">请输入密码</string>
+    <string name="wy_please_enter_the_wk_account">请输入账号</string>
+    <string name="wy_please_enter_verification_code">请输入验证码</string>
+    <string name="wy_please_login_exit">用户已退出</string>
+    <string name="wy_please_login_first">请先登录</string>
+    <string name="wy_please_select_the_login_method">请选择登录方式</string>
+    <string name="wy_please_select_the_pay_method">支付方式</string>
+    <string name="wy_pwd_length">密码长度必须大于6位</string>
+    <string name="wy_pwd_login">密码登录</string>
+    <string name="wy_re_get_verification_code">重发</string>
+    <string name="wy_re_login_url">app://relogin</string>
+    <string name="wy_real_name_action">action</string>
+    <string name="wy_real_name_continue">立即认证</string>
+    <string name="wy_real_name_fail_parameter_error">实名认证参数异常，请重启游戏</string>
+    <string name="wy_real_name_hint">您好，根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》，游戏用户需要登记如下信息：</string>
+    <string name="wy_real_name_parameter_error">修改密码参数异常，请重启游戏</string>
+    <string name="wy_real_name_success">实名认证成功</string>
+    <string name="wy_recharge_game">2</string>
+    <string name="wy_recover_pwd_btn">找回</string>
+    <string name="wy_recover_pwd_fail">重置密码失败 请检查网络</string>
+    <string name="wy_recover_pwd_successs">重置密码成功 请返回重新登录</string>
+    <string name="wy_regex">^[a-zA-Z0-9]{1}([a-zA-Z0-9]|[._]){5,23}$</string>
+    <string name="wy_register">注册</string>
+    <string name="wy_register_exception">注册异常</string>
+    <string name="wy_register_fail">注册失败 请检查网络</string>
+    <string name="wy_register_fail_parameter_error">注册参数异常，请重启游戏</string>
+    <string name="wy_reset_pwd_parameter_error">重置密码参数异常，请重启游戏</string>
+    <string name="wy_return_game">app://returnGame</string>
+    <string name="wy_return_login_btn">同意</string>
+    <string name="wy_safe_pay_center">安全支付中心</string>
+    <string name="wy_sdk_id">10002</string>
+    <string name="wy_sdk_type">app</string>
+    <string name="wy_separator">=</string>
+    <string name="wy_shark_phone_show_float">摇一摇，显示小助手</string>
+    <string name="wy_switch_account">切换账号</string>
+    <string name="wy_switch_account_hint">切换账号将退出当前角色，回到登录界面</string>
+    <string name="wy_switch_account_url">app://switchAccount</string>
+    <string name="wy_test_evn_hide">当前为测试环境，仅供测试人员使用，非测试人员请立即卸载游戏并联系官方客服，谢谢您的配合！</string>
+    <string name="wy_tt_app_id">TT_APP_ID</string>
+    <string name="wy_tt_channel_id">TT_CHANNEL_ID</string>
+    <string name="wy_uc_app_id">UC_APP_ID</string>
+    <string name="wy_uc_app_name">UC_APP_NAME</string>
+    <string name="wy_uc_channel_id">UC_CHANNEL_ID</string>
+    <string name="wy_un_init">未初始化，请重新打开游戏</string>
+    <string name="wy_update">立即更新</string>
+    <string name="wy_update_title">发现新版本 请及时更新</string>
+    <string name="wy_user_agreement">《用户协议》</string>
+    <string name="wy_user_info_imei">randomIMEI</string>
+    <string name="wy_user_info_screenshot_name">wy_user_info.png</string>
+    <string name="wy_user_privacy">《隐私条款》</string>
+    <string name="wy_verification_code_bind_phone">bind</string>
+    <string name="wy_verification_code_error">验证码错误 请输入正确验证码</string>
+    <string name="wy_verification_code_exist">验证码已经存在 请查看短信</string>
+    <string name="wy_verification_code_forget_pwd">password</string>
+    <string name="wy_verification_code_login">login</string>
+    <string name="wy_verification_code_send_error">验证码发送失败 请重新获取</string>
+    <string name="wy_verification_code_sent">验证码已经发送 请留意短信</string>
+    <string name="wy_verify_type_error">验证短信类型错误</string>
+    <string name="wy_visitor_register_info">亲爱的用户，以下是您的账号信息：</string>
+    <string name="wy_warm_prompt">温馨提示</string>
+    <string name="wy_wx_bind_error">微信绑定错误，请检查</string>
+    <string name="wy_wx_bind_fail_parameter_error">微信绑定参数异常，请重启游戏</string>
+    <string name="wy_wx_bind_success">绑定成功</string>
+    <string name="wy_wx_login_parameter_error">微信参数异常</string>
+    <string name="wy_wx_no_authorization">未授权</string>
+    <string name="xx_check_order_fail">未查询到订单</string>
+    <style name="WyBaseTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="colorPrimary">@color/wy_black_text_color</item>
+        <item name="colorPrimaryDark">@color/wy_black_text_color</item>
+        <item name="colorAccent">@color/wy_black_text_color</item>
+    </style>
+    <style name="wy_btn_common">
+        <item name="android:layout_width">@dimen/wy_right_common_btn_width</item>
+        <item name="android:layout_height">@dimen/wy_right_common_btn_height</item>
+        <item name="android:layout_marginTop">@dimen/wy_btn_common_margin_top</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/wy_btn_text_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="wy_btn_get_notification_code">
+        <item name="android:layout_width">67dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/wy_selector_btn_deep_green</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="wy_et_input_field_common">
+        <item name="android:textColorHint">@color/wy_grey_text_color</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/wy_et_input_field_text_size</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">@dimen/wy_et_input_field_margin_Left</item>
+        <item name="android:textColor">@color/wy_black_text_color</item>
+    </style>
+    <style name="wy_float_item_style">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">45.0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">50.0dip</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="wy_fragment_dialog_animation">
+        <item name="android:windowEnterAnimation">@animator/wy_push_right_in</item>
+        <item name="android:windowExitAnimation">@animator/wy_push_left_out</item>
+    </style>
+    <style name="wy_fragment_dialog_down_up_animation">
+        <item name="android:windowEnterAnimation">@animator/wy_push_down_in</item>
+        <item name="android:windowExitAnimation">@animator/wy_push_down_out</item>
+    </style>
+    <style name="wy_full_screen_theme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowNoTitle">true</item> <!-- 设置无标题 -->
+        <item name="android:windowFullscreen">?android:windowNoTitle
+        </item> <!-- 是否填充满屏幕，引用android:windowNoTitle 的值 ?android:windowNoTitle，取决于android:windowNoTitle的值-->
+        <item name="android:windowBackground">@color/transparent</item><!--设置透明的样式-->
+        <item name="android:windowIsTranslucent">true</item><!--设置透明的样式-->
+        <item name="android:textColor">@color/wy_grey_text_color</item>
+    </style>
+    <style name="wy_iv_input_field_common">
+        <item name="android:layout_width">@dimen/wy_iv_input_field_icon_width</item>
+        <item name="android:layout_height">@dimen/wy_iv_input_field_icon_height</item>
+        <item name="android:paddingLeft">@dimen/wy_iv_input_field_icon_padding_left</item>
+        <item name="android:paddingRight">@dimen/wy_iv_input_field_icon_padding_right</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="wy_ll_input_field_common">
+        <item name="android:layout_width">@dimen/wy_right_common_width</item>
+        <item name="android:layout_height">@dimen/wy_right_common_height</item>
+        <item name="android:background">@drawable/wy_ll_input_field_bg_grey</item>
+    </style>
+    <style name="wy_loading_no_black_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/wy_full_transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="wy_loading_theme" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@color/wy_full_transparent</item>
+    </style>
+    <style name="wy_my_dialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="wy_transparent_theme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowNoTitle">true</item> <!-- 设置无标题 -->
+        <item name="android:windowFullscreen">?android:windowNoTitle
+        </item> <!-- 是否填充满屏幕，引用android:windowNoTitle 的值 ?android:windowNoTitle，取决于android:windowNoTitle的值-->
+        <item name="android:windowBackground">@color/wy_full_transparent</item><!--设置透明的样式-->
+        <item name="android:windowIsTranslucent">true</item><!--设置透明的样式-->
+        <item name="android:textColor">@color/wy_grey_text_color</item>
+    </style>
+    <style name="wy_tv_login_method">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/wy_tv_login_method_margin_top</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">#494949</item>
+        <item name="android:textSize">@dimen/wy_login_method_text_size</item>
+    </style>
+    <style name="wy_tv_pay_method">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">#494949</item>
+        <item name="android:textSize">@dimen/wy_login_method_text_size</item>
+    </style>
+</resources>

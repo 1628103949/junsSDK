@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/receive_gift_title"
+        layout="@layout/x7_activity_title_5" />
+
+    <ListView
+        android:id="@+id/lv_gifts_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/x7_list_view_color"
+        android:cacheColorHint="@color/x7_list_view_color"
+        android:divider="@null"
+        android:dividerHeight="8dp"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="8dp"
+        android:scrollbars="none"
+        tools:listitem="@layout/x7_item_gift_fragment_rl" />
+
+    <include
+        android:id="@+id/no_data_view"
+        layout="@layout/x7_money_voucher_notsell_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -36,6 +36,8 @@
 
 -keep class com.juns.sdk.core.api.JunSSdkApplication{*;}
 -keep class com.juns.sdk.core.api.JunSSdkApi{*;}
+-keep class com.juns.sdk.core.sdk.common.InitInfoCallBack{*;}
+-keep class com.juns.sdk.core.sdk.common.InitInfoDialog{*;}
 -keep class com.juns.sdk.core.api.**{*;}
 -keep class com.juns.sdk.core.sdk.ads.**{*;}
 -keep class com.juns.sdk.core.sdk.SDKData{*;}

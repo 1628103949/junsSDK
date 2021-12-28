@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp">
+    <!--4.30新增月卡推送-->
+    <!--4.36独立成一个头部-->
+    <RelativeLayout
+        android:id="@+id/month_card_push_rl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/voucher_title_ll"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/shape_voucher_month_push"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/voucher_month_card_push" />
+
+        <TextView
+            android:id="@+id/month_card_push_receive_tv"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_voucher_month_card_push"
+            android:gravity="center"
+            android:text="@string/x7_get"
+            android:textColor="@color/x7_text_black3"
+            android:textSize="11dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/money_sign_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/money_tv"
+                    android:layout_marginRight="3dp"
+                    android:text="¥"
+                    android:textColor="@color/x7_voucher_month_card_push"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/money_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/money_sign_tv"
+                    android:includeFontPadding="false"
+                    android:text="6"
+                    android:textColor="@color/x7_voucher_month_card_push"
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/month_card_push_iv"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_toRightOf="@+id/money_tv"
+                    android:src="@drawable/x7_bi_small" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/month_card_voucher_describe_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/x7_voucher_month_card_push"
+                android:textSize="10dp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

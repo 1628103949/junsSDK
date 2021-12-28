@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp">
+
+    <cn.m4399.operate.support.network.NetworkImageView
+        android:id="@+id/m4399_pay_channel_ico"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/m4399_ope_avatar_default"
+        tools:background="@drawable/m4399_ope_avatar_default" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/m4399_pay_channel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/m4399_ope_color_333333"
+            android:textSize="16sp"
+            tools:text="游币兑换（余额：10游币）" />
+
+        <TextView
+            android:id="@+id/m4399_pay_channel_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:paddingTop="2dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="2dp"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            tools:background="@drawable/m4399_ope_pay_shape_channel_state_discount"
+            tools:ignore="SmallSp"
+            tools:text="渠道维护中" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:src="@drawable/m4399_ope_arrow_right_grey" />
+</LinearLayout>

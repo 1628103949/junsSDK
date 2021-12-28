@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp">
+
+    <RelativeLayout
+        android:id="@+id/float_window_game_view_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <ImageView
+        android:id="@+id/float_window_delete_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/x7_icon_green_delete" />
+
+    <TextView
+        android:id="@+id/float_window_zoom_tv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/float_window_game_view_rl"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/x7_bg_zoom_multiple"
+        android:gravity="center"
+        android:text="x7"
+        android:textColor="@color/base_theme_color"
+        android:textSize="15dp" />
+</RelativeLayout>

@@ -1,0 +1,756 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ks.bswhl.x7sy">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO"
+        tools:node="remove" />
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:node="remove" /> <!-- android 9.0上使用前台服务，需要添加权限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+
+    <application
+        android:name="com.juns.sdk.core.api.JunSSdkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/demo_ic_launcher"
+        android:label="JunS Demo"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.juns.sdk.demo.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- JunS sdk components start -->
+        <provider
+            android:name="com.juns.sdk.core.sdk.update.JunSFileProvider"
+            android:authorities="${applicationId}.JunSFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/juns_update_path" />
+        </provider>
+        <!-- JunS sdk components end -->
+
+        <activity android:name="com.smwl.smsdk.activity.CharacterInfoActivity" />
+
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait" />
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.2" />
+
+        <activity
+            android:name="com.smwl.smsdk.activity.MoneyTicketUseScopeActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.BaseActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7ActivityTheme" />
+        <activity
+            android:name="com.smwl.smsdk.activity.PersonalCenterPayPsdActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.UsernameRegisterActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.ResetLoginPassWordActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.PayActivitySDK"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.smwl.smsdk.activity.PayRecordActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.LoginActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.smwl.smsdk.activity.MoneyTicketDetailActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.X7sdkOfflineActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <service android:name="com.smwl.smsdk.service.AppServer" />
+        <service android:name="com.smwl.smsdk.service.UpdateVersionService" />
+
+        <activity
+            android:name="com.smwl.smsdk.activity.AutoLoginActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" >
+
+            <!-- 神策测试站环境scheme -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sa70e769f8" />
+            </intent-filter>
+            <!-- 神策正式站环境scheme -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sa060fd2fe" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.smwl.smsdk.activity.PhoneRegisterActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.AreaSelectActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.PhonePasswordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.CountryCodeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.PurchaseHistoryActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.TrustDeviceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.smwl.smsdk.activity.PermissionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.smwl.smsdk.activity.PhoneCodeLoginActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.smwl.smsdk.activity.LoginFailActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.ForgetPasswordActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.EmailBoundActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.NoticeActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.ChooseSmallAccountLoginActSDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.OfficialWebsiteActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.PrivacyProvisionsActSDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.SmallAccountManagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.ChoosePayNumActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" /> <!-- 银联的配置 -->
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" /> <!-- 银联的界面 -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/UPPay" /> <!-- 银联的界面 -->
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/UPPay"
+            android:windowSoftInputMode="adjustResize" /> <!-- 签到话题详情界面2019.11.4 -->
+        <activity
+            android:name="com.smwl.smsdk.activity.topic.SignTopicDetailActX7SDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" /> <!-- 游戏公告详情界面2019.11.8 -->
+        <activity
+            android:name="com.smwl.smsdk.activity.topic.GameNoticeDetailActX7SDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.NoNeedRealNameActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.ChooseVisitorLoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" /> <!-- 选择游客登录或账号登录界面 -->
+        <activity
+            android:name="com.smwl.smsdk.activity.SpeedSuggestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" /> <!-- SDK Required -->
+        <provider
+            android:name="com.smwl.smsdk.X7Provider"
+            android:authorities="${applicationId}.x7provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/x7_provider_paths" />
+        </provider>
+        <provider
+            android:name="com.smwl.smsdk.permission.PermissionDeclareInitProvider"
+            android:authorities="${applicationId}.PermissionDeclareInitProvider"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <activity
+            android:name="com.smwl.smsdk.activity.im.YunXinToX7ActX7SDK"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation|screenLayout"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="${applicationId}.yunXin_jumpTo_YunXinToX7Act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- SDK Required End -->
+        <!-- IM Required -->
+        <meta-data
+            android:name="com.netease.nim.appKey"
+            android:value="874b601f1575fe162cc53f2a83c2db6c" /> <!-- IM Required End -->
+        <activity
+            android:name="com.smwl.smsdk.framekit.FrameForResultActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation|screenLayout"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.pay.PayChannelChooseActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation|screenLayout"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.pay.ConsumePayActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation|screenLayout"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.pay.RechargeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation|screenLayout"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.pay.RechargeIntlActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation|screenLayout"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.SdkShareToOtherAppActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation|screenLayout"
+            android:exported="true"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.InviteActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation|screenLayout"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.NoticeListActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.NoticeDetailActivitySDK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/X7BaseActivityStyle" />
+        <activity
+            android:name="com.smwl.smsdk.activity.im.YunXinToX7ActIM"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation|screenLayout"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="${applicationId}.yunXin_jumpTo_YunXinToX7ActIM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 会话窗口 -->
+        <!--
+             UI组件中包含了语音选文字功能，该界面是全屏显示，为了视觉上的美观，该界面主题ActionBar使用Overlay模式。
+             如果开发者不需要该功能或效果，使用普通主题即可。 同时，还需要将message_activity.xml这个layout中的根节点的paddingTop去掉。
+        -->
+        <!-- 私聊窗口，已定制顶部title样式2018.11.23 -->
+        <activity
+            android:name="com.netease.nim.uikit.business.session.activity.P2PMessageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 群聊窗口，已定制顶部title样式2018.11.23 -->
+        <activity
+            android:name="com.netease.nim.uikit.business.session.activity.TeamMessageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 讨论组，已定制顶部title样式2018.11.23 -->
+        <activity
+            android:name="com.netease.nim.uikit.business.team.activity.NormalTeamInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 查看高级群信息，已定制顶部title样式2018.11.23 -->
+        <activity
+            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 群成员，已定制顶部title样式2018.11.23 -->
+        <activity
+            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamMemberActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" /> <!-- 群公告列表，已定制顶部title样式2018.11.23 -->
+        <activity
+            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamAnnounceActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 成员信息，已定制顶部title样式2018.11.23 -->
+        <activity
+            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamMemberInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 群昵称，已定制顶部title样式2018.11.23 -->
+        <activity
+            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamNicknameActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 群公告新增，已定制顶部title样式2018.11.23 -->
+        <activity
+            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamCreateAnnounceActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 群属性，包括设置名称，群介绍，扩展示例界面公用，已定制顶部title样式2018.11.23 -->
+        <activity
+            android:name="com.netease.nim.uikit.business.team.activity.TeamPropertySettingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 联系人选择器 -->
+        <activity
+            android:name="com.netease.nim.uikit.business.contact.selector.activity.ContactSelectActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/contact_selector"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" /> <!-- 消息@ 选择器 -->
+        <activity
+            android:name="com.netease.nim.uikit.business.ait.selector.AitContactSelectorActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation|screenLayout"
+            android:screenOrientation="behind"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" /> <!-- 照片选择 -->
+        <activity
+            android:name="com.netease.nim.uikit.common.media.picker.activity.PickImageActivity"
+            android:screenOrientation="behind"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- 图片裁剪 -->
+        <activity
+            android:name="com.netease.nim.uikit.common.media.picker.activity.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- 相册 -->
+        <activity
+            android:name="com.netease.nim.uikit.common.media.picker.activity.PickerAlbumActivity"
+            android:screenOrientation="behind"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.netease.nim.uikit.common.media.picker.activity.PickerAlbumPreviewActivity"
+            android:screenOrientation="behind"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.netease.nim.uikit.common.media.picker.activity.PreviewImageFromLocalActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.netease.nim.uikit.common.media.picker.activity.PreviewImageFromCameraActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/input_panel_take"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 视频 -->
+        <activity
+            android:name="com.netease.nim.uikit.business.session.activity.CaptureVideoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.netease.nim.uikit.business.session.activity.WatchVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/video_play"
+            android:theme="@style/DarkTheme" /> <!-- 查看大图 -->
+        <activity
+            android:name="com.netease.nim.uikit.business.session.activity.WatchMessagePictureActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation|screenLayout"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.Translucent.NoActionBar.FullScreen" >
+
+            <!-- 允许绘制到oppo、vivo刘海屏机型的刘海区域 -->
+            <meta-data
+                android:name="android.max_aspect"
+                android:value="2.2" />
+            <!-- 允许绘制到华为刘海屏机型的刘海区域 -->
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+            <!-- 允许绘制到小米刘海屏机型的刘海区域 -->
+            <meta-data
+                android:name="notch.config"
+                android:value="portrait" />
+        </activity>
+        <activity
+            android:name="com.netease.nim.uikit.business.session.activity.WatchPicAndVideoMenuActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- 系统消息列表，已定制顶部title样式2018.11.30 -->
+        <activity
+            android:name="com.netease.nim.uikit.x7.activity.X7SystemMessageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 群聊天记录 -->
+        <activity
+            android:name="com.netease.nim.uikit.x7.activity.X7MessageHistoryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 群表情管理界面 -->
+        <activity
+            android:name="com.netease.nim.uikit.x7.activity.X7FaceManageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="behind"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 群PK界面 -->
+        <activity
+            android:name="com.netease.nim.uikit.x7.activity.YunXinUserTitlePKAct"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity> <!-- 群广告列表界面 -->
+        <activity
+            android:name="com.netease.nim.uikit.x7.activity.X7NoticeListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity> <!-- 头衔和积分界面 -->
+        <activity
+            android:name="com.netease.nim.uikit.x7.activity.YunXinUserTitleAndIntegralActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity> <!-- 福袋规则 -->
+        <activity
+            android:name="com.netease.nim.uikit.x7.activity.X7LuckyBagRuleActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 进群验证界面 -->
+        <activity
+            android:name="com.netease.nim.uikit.x7.activity.JoinIMVerifyAct"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="behind"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.netease.nim.uikit.x7.pic.ImgFileListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="behind"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.netease.nim.uikit.x7.pic.MyImgsActivity2"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="behind"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity> <!-- 修改群昵称 -->
+        <activity
+            android:name="com.netease.nim.uikit.x7.activity.ModifyUserTeamNickNameAct"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="behind"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- sdk平台公告详情界面 -->
+        <activity
+            android:name="com.netease.nim.uikit.x7.activity.X7sdkNoticeAct"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="behind"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 搜索文字历史记录 -->
+        <activity
+            android:name="com.netease.nim.uikit.x7.activity.X7SearchTextMsgHistoryActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" /> <!-- IM Required -->
+        <!--
+             APP key, 可以在这里设置，也可以在 SDKOptions 中提供。
+             如果 SDKOptions 中提供了，取 SDKOptions 中的值。
+             IM 正式站key：874b601f1575fe162cc53f2a83c2db6c
+             IM 测试站key：77bced853bf2a0f133a35dd01c5822d8
+        -->
+        <!--
+            <meta-data
+            android:name="com.netease.nim.appKey"
+            android:value="${yunXin_app_key}" />
+        -->
+        <service
+            android:name="com.netease.nimlib.service.NimService"
+            android:process=":core" /> <!-- 云信后台辅助服务 -->
+        <service
+            android:name="com.netease.nimlib.service.NimService$Aux"
+            android:process=":core" /> <!-- 云信后台辅助服务 -->
+        <service
+            android:name="com.netease.nimlib.job.NIMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":core" /> <!-- 云信监视系统启动和网络变化的广播接收器，保持和 NimService 同一进程 -->
+        <receiver
+            android:name="com.netease.nimlib.service.NimReceiver"
+            android:exported="false"
+            android:process=":core" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver> <!-- 云信进程间通信 Receiver -->
+        <receiver android:name="com.netease.nimlib.service.ResponseReceiver" /> <!-- 云信进程间通信service -->
+        <service android:name="com.netease.nimlib.service.ResponseService" /> <!-- 云信进程间通信provider -->
+        <!-- android:authorities="{包名}.ipc.provider", 请将com.netease.nim.demo替换为自己的包名 -->
+        <provider
+            android:name="com.netease.nimlib.ipc.NIMContentProvider"
+            android:authorities="${applicationId}.ipc.provider"
+            android:exported="false"
+            android:process=":core" /> <!-- ComponentBase中已有FileProvider -->
+        <!-- <provider -->
+        <!-- android:name="android.support.v4.content.FileProvider" -->
+        <!-- android:authorities="${applicationId}.provider" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="@xml/xim_file_provider_paths" /> -->
+        <!-- </provider> -->
+        <provider
+            android:name="com.netease.nim.uikit.common.media.picker.model.GenericFileProvider"
+            android:authorities="${applicationId}.generic.file.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/generic_file_provider_paths" />
+        </provider> <!-- 自定义的云信后台进程初始化服务，和云信后台服务在同一进程 -->
+        <service
+            android:name="com.netease.nim.uikit.x7.XIM$NIMCoreInitService"
+            android:process=":core" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/component_base_file_provider_paths" />
+        </provider>
+        <provider
+            android:name="com.billy.cc.core.component.remote.RemoteProvider"
+            android:authorities="${applicationId}.com.billy.cc.core.remote"
+            android:exported="true" />
+
+        <activity
+            android:name="com.billy.cc.core.component.remote.RemoteConnectionActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:taskAffinity="com.billy.cc.connection"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="action.com.billy.cc.connection" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bytedance.applog.util.SimulateLaunchActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 表示该页面可以被隐式调用，必须加上该项 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 协议部分 -->
+                <data
+                    android:host="rangersapplog"
+                    android:path="/picker"
+                    android:scheme="rangersapplog.byax6uyt" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.bytedance.applog.collector.Collector"
+            android:enabled="true"
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.PayResultActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.AlipayResultActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5OpenAuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+    </application>
+</manifest>

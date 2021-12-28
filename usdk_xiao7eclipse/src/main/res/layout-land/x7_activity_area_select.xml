@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_area_select_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:id="@+id/tv_area_select_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/x7_confirm_area_select"
+            android:textColor="@color/x7base_green_12cdb0"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_area_select_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/x7_act_title_back" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dialog_areaSelect_rc"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_sure"
+        android:layout_below="@id/rl_area_select_header"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:horizontalSpacing="13dp"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"/>
+
+   <!-- <Button
+        android:id="@+id/btn_sure"
+        style="@style/X7BtnClickStyleNew"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="22dp"
+        android:padding="13dp"
+        android:text="@string/x7_sure" />-->
+</RelativeLayout>

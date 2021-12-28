@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="7dp">
+
+    <RelativeLayout
+        android:id="@+id/x7_mall_custom_gift_prop_item_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <!--道具图标，-->
+        <RelativeLayout
+            android:id="@+id/x7_mall_custom_gift_prop_icon_rl"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/x7_mall_custom_gift_prop_item_add_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/bg_mall_gift"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mall_border" />
+
+            <ImageView
+                android:id="@+id/x7_mall_custom_gift_prop_shadow_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_margin="2dp"
+                android:background="@drawable/mall_ash_layer"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/x7_mall_custom_gift_prop_item_explain_iv"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:padding="4dp"
+            android:src="@drawable/x7_mall_custom_gift_explain_bg"
+            android:visibility="visible" />
+
+        <com.smwl.smsdk.myview.StrokeTextView
+            android:id="@+id/x7_mall_custom_gift_prop_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/x7_mall_custom_gift_prop_icon_rl"
+            android:layout_alignBottom="@+id/x7_mall_custom_gift_prop_icon_rl"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:stroke_color="@color/x7_orange_9d7227"
+            app:stroke_width="1dp"
+            android:textSize="9dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/x7_mall_custom_gift_prop_item_describe_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/x7_mall_custom_gift_prop_icon_rl"
+            android:layout_alignStart="@+id/x7_mall_custom_gift_prop_icon_rl"
+            android:layout_alignEnd="@+id/x7_mall_custom_gift_prop_icon_rl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/x7_black_644f31"
+            android:textSize="8dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+</LinearLayout>

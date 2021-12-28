@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--类型二：累充全选item -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="11dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_marginHorizontal="17dp"
+            android:background="@color/base_black_4" />
+
+        <TextView
+            android:id="@+id/recharge_choose_all_number_tv"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="17dp"
+            android:gravity="center"
+            android:text="2000"
+            android:textColor="@color/x7base_gray_cc"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/recharge_choose_all_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="23dp"
+            android:layout_toRightOf="@+id/recharge_choose_all_number_tv"
+            android:text="ddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            android:textColor="@color/x7base_gray_cc"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/recharge_choose_all_state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recharge_choose_all_content_tv"
+            android:layout_alignLeft="@+id/recharge_choose_all_content_tv"
+            android:layout_marginTop="6dp"
+            android:text="sssss"
+            android:textColor="@color/color_12cdb0"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

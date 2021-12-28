@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/x7_transparent"
+    android:gravity="center"
+    android:id="@+id/rl_popu"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/popu_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:scaleType="fitStart" />
+
+    <TextView
+        android:id="@+id/tv_popu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_below="@+id/popu_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="@string/x7_float_hint"
+        android:textSize="12dp" />
+
+</RelativeLayout>

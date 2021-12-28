@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="50dp"
+    android:layout_height="50dp">
+
+    <View
+        android:id="@+id/x7_mall_turn_table_special_bg_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/x7_bg_mall_trun_table_special_layer"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bg_mall_gift" />
+
+    <ImageView
+        android:id="@+id/x7_mall_turn_table_reward_content_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/x7_mall_turn_table_reward_border_iv"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_centerInParent="true" />
+
+    <com.smwl.smsdk.myview.StrokeTextView
+        android:id="@+id/x7_mall_turn_table_reward_num_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="bottom|end"
+        android:paddingEnd="13dp"
+        android:paddingBottom="12dp"
+        android:textColor="@color/x7base_white"
+        android:textSize="8dp"
+        android:textStyle="bold"
+        app:stroke_color="@color/x7_orange_9d7227"
+        app:stroke_width="2dp" />
+</RelativeLayout>

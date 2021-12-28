@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+        <include
+            layout="@layout/x7_top_title_toolbar_ll" />
+    </android.support.design.widget.AppBarLayout>
+
+    <!--顶部的搜索样式-->
+    <LinearLayout
+        android:id="@+id/act_aitMember_search_first_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar_layout"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/act_aitMember_search_rl"
+            layout="@layout/x7_top_search_rl"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/member_list"
+        android:layout_below="@+id/act_aitMember_search_first_ll"
+        android:layout_width="match_parent"
+        android:paddingRight="30dp"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.netease.nim.uikit.x7.myview.SideBar
+        android:id="@+id/act_aitMember_sideBar"
+        android:layout_width="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/act_aitMember_search_first_ll"
+        android:layout_height="match_parent" />
+</RelativeLayout>

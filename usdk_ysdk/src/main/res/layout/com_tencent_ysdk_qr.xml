@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/white"
     tools:context="com.tencent.ysdk.module.user.impl.wx.qrcode.QRActivity">
 
     <com.tencent.ysdk.module.user.impl.wx.qrcode.SquareImageView
@@ -28,7 +28,7 @@
         android:layout_below="@+id/com_tencent_ysdk_qrCodeIm"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-40dp"
-        android:textColor="#3997ee"
+        android:textColor="@color/com_tencent_ysdk_real_name_title_color"
         android:textSize="18dp" />
 
 </RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x7_addSmallAccount_width"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="afterDescendants"
+    android:paddingBottom="20dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_gift_dialog_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/x7_smallAccountnote"
+        android:textColor="#12cdb0"
+        android:textSize="18dp"  />
+
+    <TextView
+        android:id="@+id/tv_gift_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_gift_dialog_copy"
+        android:layout_centerHorizontal="true"
+        android:lines="1"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/x7_text_gray"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sure_cancel"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_gift_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/iv_knowFor_copy"
+            android:layout_width="83dp"
+            android:layout_height="34dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@drawable/x7_btn_back_selected_2"
+            android:text="@string/x7_know"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

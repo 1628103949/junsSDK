@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="265dp"
+    android:layout_height="280dp"
+    android:orientation="vertical"
+    android:padding="21dp">
+
+    <ImageView
+        android:layout_width="2dp"
+        android:layout_height="14dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:background="@color/x7_orange_fbcc55" />
+
+    <TextView
+        android:id="@+id/x7_mall_choose_prop_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:textColor="@color/x7_black_644f31" />
+
+    <ScrollView
+        android:id="@+id/x7_mall_choose_prop_root_sl"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_below="@+id/x7_mall_choose_prop_count_tv"
+        android:layout_marginTop="15dp"
+        android:scrollbars="none">
+
+        <GridLayout
+            android:id="@+id/x7_mall_choose_prop_root_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:columnCount="4">
+
+        </GridLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/x7_mall_choose_prop_get_tv"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/x7_mall_custom_gift_get_btn_bg"
+        android:gravity="center"
+        android:text="@string/x7_mall_custom_gift_commit"
+        android:textColor="@color/white"
+        android:textSize="11dp" />
+
+
+</RelativeLayout>

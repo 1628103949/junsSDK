@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/mall_pass_root_cl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mall_pass_deal_cl"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/bg_mall_gift"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mall_pass_deal_border_iv"
+            app:layout_constraintBottom_toBottomOf="@+id/mall_pass_deal_border_iv"/>
+
+        <ImageView
+            android:id="@+id/mall_pass_deal_iv"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mall_pass_deal_border_iv"
+            app:layout_constraintBottom_toBottomOf="@+id/mall_pass_deal_border_iv"/>
+
+
+        <ImageView
+            android:id="@+id/mall_pass_deal_border_iv"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/mall_border"/>
+
+        <TextView
+            android:id="@+id/mall_pass_deal_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:includeFontPadding="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mall_pass_deal_border_iv"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/x7_black_644f31"
+            android:textSize="8dp" />
+
+        <com.smwl.smsdk.myview.StrokeTextView
+            android:id="@+id/mall_pass_deal_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textStyle="bold"
+            android:textSize="8dp"
+            android:textColor="@color/x7_white"
+            app:stroke_color="@color/x7_orange_9d7227"
+            app:stroke_width="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mall_pass_deal_iv"
+            app:layout_constraintEnd_toEndOf="@+id/mall_pass_deal_iv"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"/>
+
+        <ImageView
+            android:id="@+id/mall_pass_deal_ash_layer_iv"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:layout_constraintStart_toStartOf="@+id/mall_pass_deal_iv"
+            app:layout_constraintEnd_toEndOf="@+id/mall_pass_deal_iv"
+            app:layout_constraintTop_toTopOf="@+id/mall_pass_deal_iv"
+            app:layout_constraintBottom_toBottomOf="@+id/mall_pass_deal_iv"
+            android:background="@drawable/mall_ash_layer"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/mall_pass_deal_lock_iv"
+            android:layout_width="13dp"
+            android:layout_height="16dp"
+            app:layout_constraintStart_toStartOf="@+id/mall_pass_deal_iv"
+            app:layout_constraintEnd_toEndOf="@+id/mall_pass_deal_iv"
+            app:layout_constraintTop_toTopOf="@+id/mall_pass_deal_iv"
+            app:layout_constraintBottom_toBottomOf="@+id/mall_pass_deal_iv"
+            android:src="@drawable/mall_lock"
+            android:visibility="gone"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/mall_pass_deal_ll"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/mall_pass_deal_cl"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/mall_pass_deal_box_iv"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/x7_mall_custom_gift_explain_bg"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/mall_pass_deal_box_ash_iv"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/x7_mall_pass_ash_tip"
+        android:visibility="gone"/>
+
+
+</android.support.constraint.ConstraintLayout>

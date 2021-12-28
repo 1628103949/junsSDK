@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--我的角色信息-->
+    <RelativeLayout
+        android:id="@+id/x7_exclusive_activity_change_bind_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/x7_bg_ff000000_corner_7"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="19dp"
+        android:paddingTop="9dp"
+        android:paddingBottom="12dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/role_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/x7_exclusive_acts_my_info"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/base_white"
+            android:textSize="9dp" />
+
+
+        <LinearLayout
+            android:id="@+id/role_info_explain_ll"
+            android:layout_width="30dp"
+            android:layout_height="17dp"
+            android:layout_toEndOf="@+id/role_info_tv">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/role_info_tv"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/role_info_question_iv"
+                android:text="@string/x7_exclusive_acts_explain"
+                android:textColor="@color/color_12cdb0"
+                android:textSize="9dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:baseline="8dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/x7_question" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/role_info_line_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_below="@+id/role_info_tv"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/base_black_4" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/role_info_line_tv"
+            android:layout_toStartOf="@+id/portrait_line_tv"
+            android:layout_alignParentStart="true"
+            android:text="@string/x7_exclusive_activity_unbind"
+            android:singleLine="true"
+            android:visibility="visible"
+            android:textColor="@color/base_white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_tv"
+            android:layout_toStartOf="@+id/portrait_line_tv"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:text="@string/x7_exclusive_activity_bind"
+            android:visibility="visible"
+            android:textColor="@color/x7_color_ddd"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/area_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_tv"
+            android:layout_marginTop="3dp"
+            android:visibility="visible"
+            android:layout_toStartOf="@+id/switch_role_info_tv"
+            android:layout_alignParentStart="true"
+            android:singleLine="true"
+            android:text="@string/x7_exclusive_activity_bind"
+            android:textColor="@color/x7_color_ddd"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/switch_role_info_tv"
+            android:layout_width="46dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="58dp"
+            android:paddingTop="5dp"
+            android:paddingStart="10dp"
+            android:layout_marginStart="6dp"
+            android:layout_toStartOf="@+id/portrait_line_tv"
+            android:text="@string/x7_switch"
+            android:gravity="center"
+            android:textColor="@color/color_12cdb0"
+            android:textSize="10dp"
+            android:visibility="gone"/>
+
+        <!--未綁定角色信息时的样式-->
+        <TextView
+            android:id="@+id/no_role_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/role_info_line_tv"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/portrait_line_tv"
+            android:layout_marginTop="9dp"
+            android:gravity="center_horizontal"
+            android:text="@string/x7_exclusive_acts_no_role"
+            android:textColor="@color/gray_ee"
+            android:textSize="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/portrait_line_tv"
+            android:layout_width="0.7dp"
+            android:layout_height="44dp"
+            android:background="@color/base_black_4"
+            android:layout_toStartOf="@+id/x7_exclusive_activity_records_role_null_ll"
+            android:layout_marginTop="30dp"/>
+
+        <!--绑定角色时的领取记录记录模块-->
+        <LinearLayout
+            android:id="@+id/x7_exclusive_activity_records_role_null_ll"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_alignTop="@+id/portrait_line_tv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/x7_exclusive_act_username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/x7_exclusive_activity_records"
+                android:textColor="@color/color_12cdb0"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/x7_exclusive_activity_unread_role_null_tv"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="@drawable/x7_bg_solid_green_12cdb0_corner_100"
+                android:textColor="@color/base_white"
+                android:gravity="center"
+                android:textSize="9dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/acts_list_head_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/x7_exclusive_activity_change_bind_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/x7_exclusive_acts_list"
+        android:textColor="@color/color_ff9900"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/join_act_hint_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acts_list_head_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/x7_exclusive_acts_list_hint"
+        android:textColor="@color/x7base_gray_cc"
+        android:textSize="10dp" />
+
+</RelativeLayout>

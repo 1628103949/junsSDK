@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/act_signTopicDetail_title"
+        layout="@layout/x7_activity_title_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.smwl.smsdk.myview.XListView
+        android:id="@+id/act_signTopicDetail_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/act_signTopicDetail_title"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000" />
+
+    <LinearLayout
+        android:id="@+id/act_signTopicDetail_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/act_signTopicDetail_goToX7Market_tv"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/x7_solid_green_12cdb0_corner_90"
+            android:gravity="center"
+            android:text="@string/x7_sdk_goTo_x7Market"
+            android:textColor="@color/x7_white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

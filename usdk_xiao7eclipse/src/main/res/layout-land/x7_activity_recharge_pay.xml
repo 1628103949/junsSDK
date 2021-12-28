@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/charge_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <include layout="@layout/x7_sdk_title_common" />
+
+    <ScrollView
+        android:id="@+id/charge_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/pay_num_root_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/pay_amount_text_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:gravity="center"
+                        android:text="@string/x7_recharge_amount"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/pay_amount_text_tv"
+                        android:layout_marginStart="4dp"
+                        android:layout_toEndOf="@+id/pay_amount_text_tv"
+                        android:text="@string/x7_xml_payHint1"
+                        android:textColor="@color/color_grey_eaeaea"
+                        android:textSize="9dp" />
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/pay_amount_cl_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pay_amount_text_tv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pay_amount_tv_10"
+                            android:layout_width="73dp"
+                            android:layout_height="37dp"
+                            android:background="@drawable/x7_selector_pay_num_item_bg"
+                            android:gravity="center"
+                            android:text="10"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            app:layout_constraintEnd_toStartOf="@id/pay_amount_tv_50"
+                            app:layout_constraintHorizontal_chainStyle="spread_inside"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/pay_amount_tv_50"
+                            android:layout_width="73dp"
+                            android:layout_height="37dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@drawable/x7_selector_pay_num_item_bg"
+                            android:gravity="center"
+                            android:text="50"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            app:layout_constraintEnd_toStartOf="@id/pay_amount_tv_100"
+                            app:layout_constraintStart_toEndOf="@id/pay_amount_tv_10"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/pay_amount_tv_100"
+                            android:layout_width="73dp"
+                            android:layout_height="37dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/x7_selector_pay_num_item_bg"
+                            android:gravity="center"
+                            android:text="100"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/pay_amount_tv_50"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/pay_amount_cl_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pay_amount_cl_1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="9dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/pay_amount_tv_500"
+                            android:layout_width="73dp"
+                            android:layout_height="37dp"
+                            android:background="@drawable/x7_selector_pay_num_item_bg"
+                            android:gravity="center"
+                            android:text="500"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            app:layout_constraintEnd_toStartOf="@id/pay_amount_tv_1000"
+                            app:layout_constraintHorizontal_chainStyle="spread_inside"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/pay_amount_tv_1000"
+                            android:layout_width="73dp"
+                            android:layout_height="37dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@drawable/x7_selector_pay_num_item_bg"
+                            android:gravity="center"
+                            android:text="1000"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            app:layout_constraintEnd_toStartOf="@id/pay_amount_tv_2000"
+                            app:layout_constraintStart_toEndOf="@id/pay_amount_tv_500"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/pay_amount_tv_2000"
+                            android:layout_width="73dp"
+                            android:layout_height="37dp"
+                            android:background="@drawable/x7_selector_pay_num_item_bg"
+                            android:gravity="center"
+                            android:text="2000"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/pay_amount_tv_1000"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <EditText
+                        android:id="@+id/pay_input_amount_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:layout_below="@+id/pay_amount_cl_2"
+                        android:layout_alignStart="@+id/pay_amount_cl_2"
+                        android:layout_alignEnd="@+id/pay_amount_cl_2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/x7_bg_black_solid_52000000_corner_9"
+                        android:hint="@string/x7_xml_payHint3"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:paddingLeft="18dip"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/color_black_ff999999"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/balance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pay_input_amount_et"
+                        android:layout_alignEnd="@id/pay_input_amount_et"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="15dp"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+                </RelativeLayout>
+
+                <com.smwl.smsdk.pay.widget.PayWayChooseView
+                    android:id="@+id/recharge_pay_way_choose_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="1"
+                    app:canScroll="false"
+                    app:confirmVisible="false"
+                    app:payAvailableTextColor="@color/white"
+                    app:paySelectedTextColor="@color/color_12cdb0"
+                    app:title="@string/x7_choose_recharge_pay_way" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/recharge_confirm_pay_tv"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="10"
+            android:background="@drawable/bg_solid_green_12cdb0_corner_10"
+            android:gravity="center"
+            android:text="@string/x7_recharge_immediately"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

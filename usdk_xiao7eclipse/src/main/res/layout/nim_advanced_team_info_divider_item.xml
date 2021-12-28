@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="3dp"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="TITLE"
+            android:layout_centerVertical="true"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/item_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/x7_jiantou_green_right15"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="@color/color_12cdb0"
+            android:textColorHint="@color/color_12cdb0"
+            android:textSize="@dimen/text_size_13" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="1dp"
+        android:hint="@string/click_set"
+        android:textColor="@color/color_grey_999999"
+        android:textColorHint="@color/color_grey_999999"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/item_Modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:drawablePadding="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:visibility="gone"
+        android:drawableRight="@drawable/x7_jiantou_orange15"
+        android:text="@string/x7_IM_xml_modify"
+        android:textColor="@color/color_ff9900"
+        android:textColorHint="@color/color_ff9900"
+        android:textSize="@dimen/text_size_13" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_split_line_d9d9d9" />
+
+</LinearLayout>

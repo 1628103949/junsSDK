@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_title_kaifu"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/ll_kaifu"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/x7_solid_white_corner_20"
+        android:gravity="center_horizontal|top"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:text="@string/x7_open_service_info" />
+
+    <LinearLayout
+        android:id="@+id/ll_kaifu"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/x7_kaifu_back"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/x7_can_join_group"
+            android:textColor="@color/x7_white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="一起侃大山  领福利"
+            android:textColor="@color/x7_white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_join_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/x7_btn_join_im"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="@string/x7_join_im"
+            android:textColor="@color/x7_red_cf4851"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>

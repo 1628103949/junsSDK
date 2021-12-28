@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xrefreshview_footer_content"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/white"
+    android:padding="10dp">
+
+    <ProgressBar
+        android:id="@+id/xrefreshview_footer_progressbar"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/custom_progressbar"/>
+
+    <TextView
+        android:id="@+id/xrefreshview_footer_hint_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/xrefreshview_header_hint_loaded" />
+
+    <TextView
+        android:id="@+id/xrefreshview_footer_click_textview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/xrefreshview_footer_hint_ready" />
+</RelativeLayout>

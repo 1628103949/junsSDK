@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_codes">
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+    <string name="account_copy">賬號：</string>
+    <string name="action_settings">Settings</string>
+    <string name="again_input_password">再輸入一次密碼</string>
+    <string name="agin_input_password">再輸入一次密碼</string>
+    <string name="confirm_modify">確認修改</string>
+    <string name="copy_account_success" translatable="false">複製賬號成功</string>
+    <string name="dialog_hide_record" translatable="false">確定要隱藏消費記錄嗎？</string>
+    <string name="ensure_hide" translatable="false">確定隱藏</string>
+    <string name="facebook_login">用facebook登入</string>
+    <string name="game_unsupport_coupon">暫不支持代金券</string>
+    <string name="gift_package_name_xml">禮包名稱</string>
+    <string name="hide_deal_record" translatable="false">隱藏記錄</string>
+    <string name="input_newPassword">輸入新密碼</string>
+    <string name="input_old_password">輸入舊密碼</string>
+    <string name="kaifu_hint2">開服</string>
+    <string name="kaifu_hint_1">遊戲將於</string>
+    <string name="limite_receice_xml">限量領取</string>
+    <string name="loginFail">登入失敗</string>
+    <string name="login_account">輸入賬號或手機號</string>
+    <string name="login_account_locate_1">輸入賬號或手機號或郵箱</string>
+    <string name="login_fail_reason">請檢查網絡或</string>
+    <string name="login_tv">登錄小7手遊</string>
+    <string name="long_press_wallet_record" translatable="false"><![CDATA[隱藏后如需恢復顯示請長按界面頂部<font color=\'#12ceb0\'><big>\"錢包記錄\"</big></font>]]></string>
+    <string name="no_game_zone_info">暫無相關遊戲區服信息</string>
+    <string name="no_money_voucher">暫無代金券</string>
+    <string name="no_money_voucher_info">暫無</string>
+    <string name="password_requirement">*密碼由6–16位大小寫字母、數字、字符中兩種及以上組成</string>
+    <string name="recycler_tag">recycler_tag</string>
+    <string name="registerAccount">註冊賬號</string>
+    <string name="test">測試</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="total">共</string>
+    <string name="use_time">使用時間:</string>
+    <string name="userLogin">用戶名登錄</string>
+    <string name="user_name_digits">1234567890-abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="username_regist">用戶名註冊</string>
+    <string name="x7_BaseActivity_hintTitle">小7溫馨提示</string>
+    <string name="x7_CheckUpdateUtils_download_failure">下載失敗：網路異常</string>
+    <string name="x7_CheckUpdateUtils_download_succeed">下載成功</string>
+    <string name="x7_CheckUpdateUtils_downloading">親，程式正在後臺下載中哦</string>
+    <string name="x7_CheckUpdateUtils_noNetWork">親，當前處於無網路狀態耶</string>
+    <string name="x7_CheckUpdateUtils_noNetWork_title">親,當前網路處於非WIFI狀態,確定下載嗎?</string>
+    <string name="x7_CheckUpdateUtils_query_failure">查詢失敗,網絡異常</string>
+    <string name="x7_China_code">+86 中國</string>
+    <string name="x7_DownUtils_hint1">遊戲的中文包名為空</string>
+    <string name="x7_DownUtils_hint2">請打開:允許安裝未知來源許可權</string>
+    <string name="x7_IMGroup_absence">當前群聊已解散</string>
+    <string name="x7_IMGroup_gameNoIM">當前遊戲沒有群聊</string>
+    <string name="x7_IMGroup_giftAward">參與群聊\n領取獨家禮包</string>
+    <string name="x7_ModifyEmailBoundAct_titleName_hint2">爲了賬號安全，需要驗證您的郵箱</string>
+    <string name="x7_MoneyRecordActivity_noRecord">親，您的錢包記錄是空的哦~</string>
+    <string name="x7_PasswordManageAct_findPasswordHint1">需要綁定手機才可以使用手機找回密碼</string>
+    <string name="x7_Permission_prompt">親,請同意稍後的設備獲取許可權申請哦☺(僅作為資料統計之用)</string>
+    <string name="x7_RMB_symbol">¥</string>
+    <string name="x7_UserInfoEditAct_email">郵箱</string>
+    <string name="x7_about">關於</string>
+    <string name="x7_accelerator">加速器</string>
+    <string name="x7_account">賬戶</string>
+    <string name="x7_account_regist">賬號註冊</string>
+    <string name="x7_actNotice">活動公告</string>
+    <string name="x7_act_send_time">發放時間：</string>
+    <string name="x7_action_settings">Settings</string>
+    <string name="x7_activity">活動</string>
+    <string name="x7_actual_price">實際價格：</string>
+    <string name="x7_ad_download_without_wifi">當前非WiFi狀態，是否下載？</string>
+    <string name="x7_add_smallAccount">+ 增加小號</string>
+    <string name="x7_add_small_account">增加小號</string>
+    <string name="x7_add_small_account_hint">輸入小號名</string>
+    <string name="x7_add_small_account_hint_1">請輸入要添加的小號名稱</string>
+    <string name="x7_add_small_account_succeed">添加小號成功</string>
+    <string name="x7_affirm">確認</string>
+    <string name="x7_again_input_password">重新輸入密碼</string>
+    <string name="x7_again_input_pw">再輸入一次密碼</string>
+    <string name="x7_agree">同意</string>
+    <string name="x7_agreement_hint">同意《小7手游用戶協議》</string>
+    <string name="x7_agreenment_clause">同意並接受此条款</string>
+    <string name="x7_agreenment_clause_ed">已阅並接受此条款</string>
+    <string name="x7_alipay">支付寶</string>
+    <string name="x7_already_get_gift">已領取</string>
+    <string name="x7_already_hold_draw_times">已擁有:%1$s</string>
+    <string name="x7_anti_hint">禁止使用三方工具重新打包</string>
+    <string name="x7_anti_privacy">防沉迷條款</string>
+    <string name="x7_anti_privacy_2">防沉迷政策</string>
+    <string name="x7_area_change_notice1">檢測到您在小7手遊中切換地區到:</string>
+    <string name="x7_area_change_notice2">是否將本遊戲切換到同地區?</string>
+    <string name="x7_area_text">地區。</string>
+    <string name="x7_auto_loading">自動登錄中</string>
+    <string name="x7_auto_loading_over_time_hint">自動登錄超時，請手動完成登錄</string>
+    <string name="x7_available_balance">可用餘額:</string>
+    <string name="x7_balance">餘額</string>
+    <string name="x7_balance_inquiry">正在查詢餘額...</string>
+    <string name="x7_balance_rest_after_pay">支付後錢包餘額</string>
+    <string name="x7_best_speed_hint">最佳加速為</string>
+    <string name="x7_bind">綁定</string>
+    <string name="x7_bindEmail">郵箱綁定</string>
+    <string name="x7_bind_account">賬號綁定</string>
+    <string name="x7_bind_existing_account">綁定已有賬號</string>
+    <string name="x7_bing_phone_hint">爲了賬號安全請綁定手機</string>
+    <string name="x7_blessing_bag_group_full">對應群聊人數已滿</string>
+    <string name="x7_brought_up">已領完</string>
+    <string name="x7_buy_game_hint">請前往小7内購買</string>
+    <string name="x7_buy_goods">購買道具：</string>
+    <string name="x7_buy_month_card_gift">一次購買連送30天，總計送券</string>
+    <string name="x7_buy_month_card_reduce">本單可減</string>
+    <string name="x7_buy_month_card_text">購買月卡，</string>
+    <string name="x7_buy_month_card_tip">您還不是小7月卡用戶，購買小7月卡即可 享受福利特權~</string>
+    <string name="x7_buy_war_makes_tip">購買戰令即可領取豐厚獎勵~</string>
+    <string name="x7_cancel">取消</string>
+    <string name="x7_changeEmail">換綁郵箱</string>
+    <string name="x7_changeEmail2">郵箱換綁</string>
+    <string name="x7_change_account">更換賬號</string>
+    <string name="x7_change_bind">手機換綁</string>
+    <string name="x7_change_bind_phone">換綁手機</string>
+    <string name="x7_change_to_other_pay_way">更換其他支付方式</string>
+    <string name="x7_channel_fee">渠道費</string>
+    <string name="x7_channel_fee_explain">渠道費說明</string>
+    <string name="x7_character_info_dialog_tip">確認跳轉到角色信息頁面嗎\n\n</string>
+    <string name="x7_chat_customer">聯系客服</string>
+    <string name="x7_chooseArea">選擇地區</string>
+    <string name="x7_choose_account">選擇以下賬號登錄</string>
+    <string name="x7_choose_country">選擇國家或地區</string>
+    <string name="x7_choose_locate">選擇所在地</string>
+    <string name="x7_choose_pay_way">選擇支付方式</string>
+    <string name="x7_choose_pay_way_hint">請選擇支付方式</string>
+    <string name="x7_choose_recharge_pay_way">選擇充值方式</string>
+    <string name="x7_choose_sum">選擇儲值金額</string>
+    <string name="x7_ck_agree_hint"><![CDATA[\t 同意並已閱讀 <font color=\'#ff9900\'>用戶須知</font>]]></string>
+    <string name="x7_clear_account">是否清除賬號</string>
+    <string name="x7_clear_cash">清緩存</string>
+    <string name="x7_clear_pay_psd">清除支付密碼</string>
+    <string name="x7_click_center_small_account">點擊懸浮球-個人中心-小號管理</string>
+    <string name="x7_closeHint">點擊空白處關閉</string>
+    <string name="x7_closeHintLand">點\n擊\n空\n白\n處\n關\n閉</string>
+    <string name="x7_cloud_game_cant_download">,無法在下載游戲后繼續使用</string>
+    <string name="x7_cloud_game_introduction">雲游戲體驗説明</string>
+    <string name="x7_cloud_game_limit">因游戲限制,當前游戲的雲游戲角色僅限</string>
+    <string name="x7_cloud_game_online_play">在綫玩</string>
+    <string name="x7_commit_register_info">提交綁定</string>
+    <string name="x7_company">—小7手游運營團隊</string>
+    <string name="x7_complete_account_info">完善賬號信息</string>
+    <string name="x7_complete_guest_account_tip">完善賬號信息即可&lt;font color=\'#ff9a00\'>免費領取首充&lt;/font>，還有領取禮包、代金券等豐厚福利！</string>
+    <string name="x7_complete_immediately">立即完善</string>
+    <string name="x7_confirm_area_select">確認您所在的地區</string>
+    <string name="x7_confirm_modify">確認修改</string>
+    <string name="x7_confirm_pay">確認支付</string>
+    <string name="x7_confirm_recharge">確認儲值</string>
+    <string name="x7_confirm_settings">確認設置</string>
+    <string name="x7_consumption_record">消費記錄</string>
+    <string name="x7_contact_customer_Sv">聯繫客服</string>
+    <string name="x7_contact_kf">聯系客服</string>
+    <string name="x7_contact_service"><![CDATA[聯係客服 >]]></string>
+    <string name="x7_contact_service1">聯係客服</string>
+    <string name="x7_continue_real_name">繼續實名</string>
+    <string name="x7_continue_receive">繼續領取</string>
+    <string name="x7_conversion">兌換方法</string>
+    <string name="x7_copy">複製</string>
+    <string name="x7_copy_succeed">複製成功</string>
+    <string name="x7_coupon_get_data">領取期限：</string>
+    <string name="x7_credit_card">信用卡</string>
+    <string name="x7_default_login">默認登入</string>
+    <string name="x7_default_login_explain">默認登錄</string>
+    <string name="x7_delete_account">確認後將該賬號從所有遊戲中列表刪除</string>
+    <string name="x7_disagree_use_email">您還無法使用郵箱找回密碼，請使用手機找回密碼</string>
+    <string name="x7_discount">折</string>
+    <string name="x7_discount_title">折扣：</string>
+    <string name="x7_domestic_version">國內版</string>
+    <string name="x7_download_ad">是否立即下載</string>
+    <string name="x7_download_app">下載app</string>
+    <string name="x7_duration_game_limited_time">·遊戲時長不超過</string>
+    <string name="x7_email_register">郵箱註冊</string>
+    <string name="x7_empty_parameter">有空參數</string>
+    <string name="x7_empty_parameter_hint">親，有為空的數據參數哦</string>
+    <string name="x7_empty_phone_hint">手機號碼不能為空</string>
+    <string name="x7_empty_psd_hint">密碼或者確認密碼存在空格！</string>
+    <string name="x7_empty_verify_code">驗證碼不能為空</string>
+    <string name="x7_enter_emai_address">請輸入郵箱地址</string>
+    <string name="x7_enter_im">進入群聊</string>
+    <string name="x7_error_for_net">親，網絡環境很差哦</string>
+    <string name="x7_error_warning">錯誤警告</string>
+    <string name="x7_exclusive_act_first_join">第一次參與獨家活動需要彈出説明彈窗</string>
+    <string name="x7_exclusive_act_rule_first_show">第一次打開獨家活動需要彈出倒計時彈窗</string>
+    <string name="x7_exclusive_act_rule_top">小7專屬活動説明</string>
+    <string name="x7_exclusive_activity_bind">立即綁定  ></string>
+    <string name="x7_exclusive_activity_bind_hint">綁定角色信息有誤，請重新綁定修改并保存后提示消失</string>
+    <string name="x7_exclusive_activity_change_bind">修改  ></string>
+    <string name="x7_exclusive_activity_dialog_area">請輸入區服信息</string>
+    <string name="x7_exclusive_activity_dialog_hint">角色信息在游戲設置頂部的ID，點擊角色頭像即可看到</string>
+    <string name="x7_exclusive_activity_dialog_id">請輸入角色ID</string>
+    <string name="x7_exclusive_activity_dialog_name">請輸入名稱</string>
+    <string name="x7_exclusive_activity_dialog_top">請填寫您參與活動所充值的角色信息</string>
+    <string name="x7_exclusive_activity_join">已參加  ></string>
+    <string name="x7_exclusive_activity_not_join">未參與  ></string>
+    <string name="x7_exclusive_activity_records">領取記錄</string>
+    <string name="x7_exclusive_activity_unbind">未綁定領取角色</string>
+    <string name="x7_exclusive_acts">獨家活動</string>
+    <string name="x7_exclusive_acts_can_get">可提交</string>
+    <string name="x7_exclusive_acts_can_get_require">已達要求，參與活動即可領取</string>
+    <string name="x7_exclusive_acts_commited">已提交，請前往領取記錄中查看</string>
+    <string name="x7_exclusive_acts_explain">説明</string>
+    <string name="x7_exclusive_acts_get_all">已領完，請前往領取記錄中查看</string>
+    <string name="x7_exclusive_acts_join">已參加</string>
+    <string name="x7_exclusive_acts_join_tip">參與須知</string>
+    <string name="x7_exclusive_acts_joined">已參與</string>
+    <string name="x7_exclusive_acts_list">- 活動列表 -</string>
+    <string name="x7_exclusive_acts_list_hint">活動區分角色進行參與，有多角色請切換角色參與活動</string>
+    <string name="x7_exclusive_acts_my_info">我的角色信息</string>
+    <string name="x7_exclusive_acts_need_recharge">您的小號還需充值%d元可領取</string>
+    <string name="x7_exclusive_acts_new">當前可領取%d次，參與活動后即可領取</string>
+    <string name="x7_exclusive_acts_no_get">不可領取</string>
+    <string name="x7_exclusive_acts_no_join">未參加</string>
+    <string name="x7_exclusive_acts_no_role">未檢測到您的充值信息\n請充值后再參與活動</string>
+    <string name="x7_exclusive_acts_no_start">活動尚未開始</string>
+    <string name="x7_exclusive_acts_not_joined">參與活動</string>
+    <string name="x7_exclusive_acts_one_charge">單筆充值</string>
+    <string name="x7_exclusive_acts_received">已領取，請前往領取記錄中查看</string>
+    <string name="x7_exclusive_acts_role_ensure">確認是否領取到此角色</string>
+    <string name="x7_exclusive_acts_role_explain">角色説明</string>
+    <string name="x7_exclusive_acts_send">已發放，請前往領取記錄中查看</string>
+    <string name="x7_exclusive_acts_switch_role">點擊切換查看的角色</string>
+    <string name="x7_exclusive_award_content">獎勵内容</string>
+    <string name="x7_exclusive_charge">纍計充值</string>
+    <string name="x7_exclusive_no_activity">暫時沒有任何活動哦~</string>
+    <string name="x7_exclusive_no_records">這裏一條記錄都沒有~</string>
+    <string name="x7_exclusive_today_charge">今日纍計充值</string>
+    <string name="x7_exit">退出</string>
+    <string name="x7_exit_app">退出app</string>
+    <string name="x7_face_book_fail_hint">facebook 登錄失敗</string>
+    <string name="x7_find_login_password">忘記密碼</string>
+    <string name="x7_find_password_by_email">使用郵箱找回</string>
+    <string name="x7_find_password_by_phone">使用手機號碼找回</string>
+    <string name="x7_find_pay_psd">找回支付密碼</string>
+    <string name="x7_find_psd">忘記密碼</string>
+    <string name="x7_finish_pay">完成支付</string>
+    <string name="x7_flat">平台幣</string>
+    <string name="x7_float_ad_check_more_details">查看詳情</string>
+    <string name="x7_float_hint">拖動到這隱藏</string>
+    <string name="x7_float_speed_up_hint">點擊小球可設置遊戲加速</string>
+    <string name="x7_float_window">懸浮窗</string>
+    <string name="x7_float_window_mode_setting_title">遊戲懸浮窗設置</string>
+    <string name="x7_forgetPassword">忘記密碼</string>
+    <string name="x7_forget_password">忘記密碼</string>
+    <string name="x7_forget_pay_password">找回支付密碼</string>
+    <string name="x7_forget_pw">忘記密碼</string>
+    <string name="x7_fund_gift_activated">已激活</string>
+    <string name="x7_fund_gift_inactivated">未激活</string>
+    <string name="x7_fund_gift_not_get">還沒到時間領取哦</string>
+    <string name="x7_fund_price">¥ %1$s  豪華基金</string>
+    <string name="x7_game_card">遊戲卡</string>
+    <string name="x7_game_card_pay_choose_num">選擇儲值卡點數</string>
+    <string name="x7_game_gifts">游戲禮包</string>
+    <string name="x7_game_gifts_get_record">已領取記錄</string>
+    <string name="x7_game_on_fail">游戲啓動失敗</string>
+    <string name="x7_game_on_fail_reason">超過最大登錄設備次數，您可以切換賬號或換回老設備登錄用</string>
+    <string name="x7_game_personal_protocol">小7手游個人信息保護協議</string>
+    <string name="x7_game_privacy_policy">遊戲隱私政策</string>
+    <string name="x7_game_update_hint">檢測到遊戲版本更新</string>
+    <string name="x7_get">領取</string>
+    <string name="x7_get_cloudgame_user_token_failed">獲取不到登錄信息，請退出重試</string>
+    <string name="x7_get_gift">獲取禮包</string>
+    <string name="x7_get_gift_code_succeed">領取成功</string>
+    <string name="x7_get_gift_error_hint">請綁定手機後再領取禮包</string>
+    <string name="x7_get_gift_fail_hint">領取失敗，請稍後再試</string>
+    <string name="x7_get_money">將到賬:</string>
+    <string name="x7_get_permission_exception">【存儲】權限為正常遊戲的必須權限，請繼續完成授權哦~</string>
+    <string name="x7_get_recycle_voucher_text">可獲得以下代金券</string>
+    <string name="x7_get_small_account_fail">獲取小號數據失敗</string>
+    <string name="x7_get_verify_code">獲取驗證碼</string>
+    <string name="x7_get_verify_code_fail_hint">獲取驗證碼失敗</string>
+    <string name="x7_get_verify_code_succeed">獲取驗證碼成功</string>
+    <string name="x7_get_voucher">已領取</string>
+    <string name="x7_gift">禮包</string>
+    <string name="x7_gift_code">禮包碼:</string>
+    <string name="x7_gift_code_copy">禮包碼已複製</string>
+    <string name="x7_gift_content">禮包内容:</string>
+    <string name="x7_gift_copy">複製禮包</string>
+    <string name="x7_gift_detail">禮包詳情</string>
+    <string name="x7_gift_for_limit_time">- 限時禮包 -</string>
+    <string name="x7_gift_for_recharge">- 充值禮包 -</string>
+    <string name="x7_gift_for_usual">- 普通禮包 -</string>
+    <string name="x7_gift_get">立即領取</string>
+    <string name="x7_gift_get_succeed_hint">領取成功，請到已領取中查看</string>
+    <string name="x7_gift_re_of_get">領取内容</string>
+    <string name="x7_gift_receive">禮包領取</string>
+    <string name="x7_gift_receive_by_email">獎勵已通過遊戲內郵件發放</string>
+    <string name="x7_gift_received_hint">這裡空空如也</string>
+    <string name="x7_gift_taohao">我要淘號</string>
+    <string name="x7_gift_taohao1">淘號</string>
+    <string name="x7_gift_taohao_hint"><![CDATA[淘到的禮包可能已經使用過了哦 <font color=\'#ff9900\'>]]></string>
+    <string name="x7_gift_use_order">打開大廳-兌換激活碼-粘貼禮包碼</string>
+    <string name="x7_go_buy">前往購買</string>
+    <string name="x7_go_purse">前往錢包</string>
+    <string name="x7_goto_bind">前去綁定</string>
+    <string name="x7_guest_account_name">遊客賬號</string>
+    <string name="x7_guest_complete_for_format">需要完善賬號信息后才可%s哦~</string>
+    <string name="x7_guest_complete_for_pay_safely">為保障您的賬號安全，請先完善賬號信息后再進行充值</string>
+    <string name="x7_guest_complete_for_welfare">完善賬號信息即可領取遊戲禮包、代金券等各種福利~</string>
+    <string name="x7_guest_get_voucher">獲取代金券</string>
+    <string name="x7_guest_time_run_out_need_complete">您當前的遊戲時間已用完，完善賬號信息可更深度體驗遊戲，還可領取禮包、代金券等福利哦~</string>
+    <string name="x7_has_buy_gift">已購買</string>
+    <string name="x7_have_newAnnouncement">新公告</string>
+    <string name="x7_have_new_app">檢測到新版本</string>
+    <string name="x7_have_receive">已領取</string>
+    <string name="x7_have_used">已使用</string>
+    <string name="x7_have_used_limit_coupon">已使用限量活動代金券</string>
+    <string name="x7_health_game">健康遊戲提醒</string>
+    <string name="x7_hide_of_floating">搖一搖手機可恢復顯示懸浮球</string>
+    <string name="x7_hint">提示</string>
+    <string name="x7_hint_for_install_x7market">當前造作需前往小7APP進行，是否下載并安裝小7手游？</string>
+    <string name="x7_hint_for_install_x7market_to_get_more_welfare">下載小7手遊APP領取更多福利</string>
+    <string name="x7_hint_for_jump_x7market">是否打開APP參與討論？</string>
+    <string name="x7_hint_of_input_phone">請輸入手機號碼</string>
+    <string name="x7_hint_of_login_password">請輸入密碼</string>
+    <string name="x7_hint_of_login_user_name">輸入手機號或用戶名</string>
+    <string name="x7_hint_of_password">請輸入密碼</string>
+    <string name="x7_hint_of_password2">請輸入6–16位登錄密碼</string>
+    <string name="x7_hot">熱門</string>
+    <string name="x7_hot_city">熱門</string>
+    <string name="x7_hours">小時</string>
+    <string name="x7_huabei">花呗</string>
+    <string name="x7_im_notice">公告</string>
+    <string name="x7_im_send_blessing_bag">發發發(%ds)</string>
+    <string name="x7_imie_permission_hint">親，請同意稍後的設備獲取權限申請哦☺</string>
+    <string name="x7_include_present">含贈送:</string>
+    <string name="x7_init_error_hint">请拷入assets 文件件夹中的appConfig.properties 文件</string>
+    <string name="x7_input_again_pw">再輸入一次新密碼</string>
+    <string name="x7_input_emial">請輸入郵箱</string>
+    <string name="x7_input_newPassword">請輸入新密碼</string>
+    <string name="x7_input_new_nickName">輸入新的暱稱</string>
+    <string name="x7_input_num_of_sum">輸入自定義金額</string>
+    <string name="x7_input_old_password">輸入舊密碼</string>
+    <string name="x7_input_old_pw">輸入手機號</string>
+    <string name="x7_input_oldpassword">請輸入原密碼</string>
+    <string name="x7_input_pay_psd">輸入支付密碼(6~16位字符)</string>
+    <string name="x7_input_pay_psd_hint">請輸入支付密碼</string>
+    <string name="x7_input_verify_code_word">請輸入驗證碼</string>
+    <string name="x7_install">安裝</string>
+    <string name="x7_install_qq_hint">親，請先安裝QQ客戶端哦</string>
+    <string name="x7_install_x7market">安裝小7app</string>
+    <string name="x7_international_version">國際版</string>
+    <string name="x7_invite_friend_text">邀请好友可获得:</string>
+    <string name="x7_is_bind_account_to_facebook">是否將Facebook綁定以下賬號</string>
+    <string name="x7_is_can_replace_splash_image">是否可替換閃屏：</string>
+    <string name="x7_join_im">加入群聊</string>
+    <string name="x7_join_im_group">加入群聊？</string>
+    <string name="x7_join_im_group_to_chat_freely">加入群聊暢聊</string>
+    <string name="x7_join_im_success">加群成功</string>
+    <string name="x7_jump_to_app_recycle">更多代金券請前往小7APP進行回收</string>
+    <string name="x7_kefu">客服</string>
+    <string name="x7_know">我知道了</string>
+    <string name="x7_last_login_guid">(上次登錄)</string>
+    <string name="x7_later_deal">以後再說</string>
+    <string name="x7_less_than_1">小於1</string>
+    <string name="x7_limited_purchase">限量秒杀</string>
+    <string name="x7_limited_voucher_hint">以上代金券在充值時直接使用，先充先得</string>
+    <string name="x7_login">登錄</string>
+    <string name="x7_login_again">重新登陸</string>
+    <string name="x7_login_code">請輸入密碼</string>
+    <string name="x7_login_error_hint">登錄賬號或密碼為空</string>
+    <string name="x7_login_immediately">立即登錄</string>
+    <string name="x7_login_out">退出游戲</string>
+    <string name="x7_login_password">登錄密碼</string>
+    <string name="x7_logout_cancel">登出取消</string>
+    <string name="x7_logout_fail">登出失敗</string>
+    <string name="x7_logout_success">登出成功</string>
+    <string name="x7_low_version_not_support">（低版本暫不支持搖一搖重新顯示）</string>
+    <string name="x7_mall_buy">購買</string>
+    <string name="x7_mall_ce">戰力</string>
+    <string name="x7_mall_custom_gift_buy_time">購買時間：%1$s-%2$s</string>
+    <string name="x7_mall_custom_gift_choose_count">可以從下面獎勵中選擇%1$s種</string>
+    <string name="x7_mall_custom_gift_choose_count_enough">已達最大選擇數量啦~</string>
+    <string name="x7_mall_custom_gift_choose_count_zero">您還有道具未選哦</string>
+    <string name="x7_mall_custom_gift_commit">確認提交</string>
+    <string name="x7_mall_custom_gift_get_time">領取時間：請于%1$s前領完</string>
+    <string name="x7_mall_custom_gift_get_times">領取次數%1$s/%2$s</string>
+    <string name="x7_mall_custom_gift_recharge_get">充值領取</string>
+    <string name="x7_mall_custom_gift_sending">道具將稍後發送至郵箱，如有問題請聯係客服</string>
+    <string name="x7_mall_custom_gift_time">活動時間：%1$s-%2$s</string>
+    <string name="x7_mall_custom_gift_title">%1$s元定制禮包</string>
+    <string name="x7_mall_day_num">天數</string>
+    <string name="x7_mall_draw_one_time">抽1次</string>
+    <string name="x7_mall_draw_ten_time">抽10次</string>
+    <string name="x7_mall_fund_gift_buy_time">限時購買：%1$s-%2$s</string>
+    <string name="x7_mall_get_data">獲取商城數據</string>
+    <string name="x7_mall_go_to_draw">前往抽獎</string>
+    <string name="x7_mall_level">等級</string>
+    <string name="x7_mall_pass_chapter">章節</string>
+    <string name="x7_mall_pass_normal_warMakes">普通戰令</string>
+    <string name="x7_mall_pass_receive_state">領取狀態</string>
+    <string name="x7_mall_pass_supreme_warMakes">至尊戰令</string>
+    <string name="x7_mall_pay_hint">注：小7商城的充值不計入遊戲內活動</string>
+    <string name="x7_mall_props_receive_hint">道具將稍後發送至郵箱，如有問題請聯繫客服</string>
+    <string name="x7_mall_rechargeAmount">角色充值</string>
+    <string name="x7_mall_stage">關卡</string>
+    <string name="x7_mall_tab_four">通行證</string>
+    <string name="x7_mall_tab_one">定制禮包</string>
+    <string name="x7_mall_tab_three">月卡禮包</string>
+    <string name="x7_mall_tab_two">基金禮包</string>
+    <string name="x7_mall_turn_table_voucher">抽獎券</string>
+    <string name="x7_mall_turntable_record_dialog_known">知道了</string>
+    <string name="x7_mall_turntable_record_dialog_title"> 中獎記錄 </string>
+    <string name="x7_mall_turntable_record_name_and_numb">%1$s*%2$s</string>
+    <string name="x7_mall_turntable_record_result"> 抽獎結果 </string>
+    <string name="x7_mall_turntable_rule_dialog_title"> 規則説明 </string>
+    <string name="x7_manager_small_account">點擊懸浮球可以管理小號</string>
+    <string name="x7_manual_lying_on">手動開啟</string>
+    <string name="x7_message">消息</string>
+    <string name="x7_message_center">消息中心</string>
+    <string name="x7_message_content">消息內容</string>
+    <string name="x7_message_detail">消息詳情</string>
+    <string name="x7_modify">修改</string>
+    <string name="x7_modify_account_fail">修改小號失敗</string>
+    <string name="x7_modify_login_psd">修改登錄密碼</string>
+    <string name="x7_modify_nickName">修改暱稱</string>
+    <string name="x7_modify_nickName_fail">修改暱稱失敗</string>
+    <string name="x7_modify_nickName_succeed">暱稱修改成功</string>
+    <string name="x7_modify_pay_psd">修改支付密碼</string>
+    <string name="x7_modify_small_account">修改小號名稱</string>
+    <string name="x7_modify_small_account_hint">請輸入新的小號名稱</string>
+    <string name="x7_modify_small_account_succeed">小號修改成功</string>
+    <string name="x7_modify_succeed">修改成功</string>
+    <string name="x7_money_ticket_pile_num_format">%s張</string>
+    <string name="x7_month_card">月卡</string>
+    <string name="x7_month_card_guid_title">小7月卡說明</string>
+    <string name="x7_month_card_price">價格:</string>
+    <string name="x7_month_card_privilege">- 小7月卡特權 -</string>
+    <string name="x7_month_card_text">小7月卡</string>
+    <string name="x7_month_card_voucher">代金券,本次可用</string>
+    <string name="x7_more_pay_way">更多支付渠道請前往錢包充值</string>
+    <string name="x7_more_settings">更多設置</string>
+    <string name="x7_more_voucher">更多代金券</string>
+    <string name="x7_mycard_pay_way_hint">MyCard支付可能會出現延遲，請稍作等待</string>
+    <string name="x7_mycard_title">MyCard儲值</string>
+    <string name="x7_need_change_small_account">如需切換小號登錄:</string>
+    <string name="x7_need_channel_fee_rate">收取費率</string>
+    <string name="x7_need_pay">需支付</string>
+    <string name="x7_need_to_choose_an_account">需要選擇一個賬號再進行綁定操作</string>
+    <string name="x7_new_an_account">新建賬號</string>
+    <string name="x7_new_nickname">輸入新暱稱</string>
+    <string name="x7_new_small_account_hint">輸入新的名字</string>
+    <string name="x7_new_user_task">新任務</string>
+    <string name="x7_new_user_task_hint">點擊進入小7任務</string>
+    <string name="x7_next">下一步</string>
+    <string name="x7_no_dialog_adk_ad">  近3日不再彈出</string>
+    <string name="x7_no_disturbing">免打擾</string>
+    <string name="x7_no_gift_data_hint">當前遊戲沒有禮包數據</string>
+    <string name="x7_no_gift_hint">暫無禮包可領取</string>
+    <string name="x7_no_install_x7market">系統未檢測到小7app</string>
+    <string name="x7_no_longer_show_hint">不再顯示此提示</string>
+    <string name="x7_no_longger_remind">\t今日不再提醒</string>
+    <string name="x7_no_meet_receive_conditions">您還未達到領取要求</string>
+    <string name="x7_no_more_data">親，沒有更多數據了哦</string>
+    <string name="x7_no_more_hint"> " 不再提示"</string>
+    <string name="x7_no_net_hint">親，沒有網絡哦</string>
+    <string name="x7_no_realname_content">暫不實名模式下，您可直接進入遊戲進行體驗無須實名，但也有一些限制：</string>
+    <string name="x7_no_realname_into_game">暫不實名進入遊戲</string>
+    <string name="x7_no_realname_tips3">爲提供更好的遊戲體驗，建議您進行實名認證</string>
+    <string name="x7_no_recycler_account">您暫時沒有符合回收的小號</string>
+    <string name="x7_no_sell_account">您暫時沒有符合出售的小號</string>
+    <string name="x7_no_use">不可用</string>
+    <string name="x7_no_use_vouche">無可用代金券</string>
+    <string name="x7_no_use_voucher">不使用代金券</string>
+    <string name="x7_no_x7market_reason">可能已被您卸載，請重新下載后購買</string>
+    <string name="x7_normal_real_name_way">中國居民第二代身份證</string>
+    <string name="x7_notReceive">未領取</string>
+    <string name="x7_not_buy_game_hint">您尚未購買此游戲</string>
+    <string name="x7_not_have">無</string>
+    <string name="x7_not_recharge_fund_gift">您還未激活基金</string>
+    <string name="x7_not_support_function">暫不支持此功能</string>
+    <string name="x7_not_yet_time_to_pick">還沒到領取時間哦~</string>
+    <string name="x7_now_login_account">當前登錄</string>
+    <string name="x7_old_password_hint">輸入原密碼</string>
+    <string name="x7_open_app">打開APP</string>
+    <string name="x7_open_game_float_window_mode">開啟懸浮窗遊戲窗口</string>
+    <string name="x7_open_game_float_window_mode_description">新增遊戲懸浮窗口功能，邊刷手機邊玩遊戲，雙倍快樂喲~點擊在系統中手動開啟系統權限，在設置中可取消遊戲窗口懸浮功能。</string>
+    <string name="x7_open_game_float_window_mode_notice">可開啟懸浮窗功能，玩遊戲刷手機雙倍快樂</string>
+    <string name="x7_open_game_float_window_mode_off">暫不開啟</string>
+    <string name="x7_open_game_float_window_mode_on">開啟</string>
+    <string name="x7_open_gift_link">前往兌換網址</string>
+    <string name="x7_other">其他</string>
+    <string name="x7_other_account">其他賬號</string>
+    <string name="x7_other_pay_way">其他储值</string>
+    <string name="x7_other_smallAccount">其他小號</string>
+    <string name="x7_out_of_date">已过期</string>
+    <string name="x7_over_refresh_hint">哼，再一直連續刷新我也不理你了</string>
+    <string name="x7_password_login">密碼登錄</string>
+    <string name="x7_pay">支付</string>
+    <string name="x7_pay_card_hint">*MyCard 支付可能會出現延遲，請稍作等待</string>
+    <string name="x7_pay_for_channel">含渠道費</string>
+    <string name="x7_pay_for_last_wx">親，請先下載最新的微信客戶端哦</string>
+    <string name="x7_pay_for_my_card_success">點卡剩餘金額已自動轉成平台幣 \n 可在餘額中查看</string>
+    <string name="x7_pay_for_purse_html">錢包支付</string>
+    <string name="x7_pay_from_purse">購買費用從錢包扣除</string>
+    <string name="x7_pay_hint">支付參數或金額為空</string>
+    <string name="x7_pay_nounce"><![CDATA[渠道費説明 >]]></string>
+    <string name="x7_pay_password">支付密碼</string>
+    <string name="x7_pay_price_limit">支付價格要大於0</string>
+    <string name="x7_pay_psd_empty_hint">支付密碼為空</string>
+    <string name="x7_pay_psd_hint">請輸入當前支付密碼</string>
+    <string name="x7_pay_purse">平台幣儲值</string>
+    <string name="x7_pay_purse_num">平台幣餘額</string>
+    <string name="x7_pay_result">支付結果</string>
+    <string name="x7_pay_result_hint">溫馨提示：到賬可能有幾分鐘延時 客服：9：00-18：00(週一至週五)</string>
+    <string name="x7_pay_return_hint">平台幣(支付後返至錢包)</string>
+    <string name="x7_pay_succeed">支付成功</string>
+    <string name="x7_pay_success">充值成功</string>
+    <string name="x7_pay_unit">平台幣</string>
+    <string name="x7_pay_unit_rmb">人民幣</string>
+    <string name="x7_pay_unit_usd">美元</string>
+    <string name="x7_pay_way_not_dredge">当前支付方式未开通</string>
+    <string name="x7_pay_wrong_num_hint">請輸入正確的儲值金額</string>
+    <string name="x7_paypal">Paypal儲值</string>
+    <string name="x7_period_validity">有效期：</string>
+    <string name="x7_permission_announcement">權限聲明</string>
+    <string name="x7_permission_calendar">日曆:</string>
+    <string name="x7_permission_calendar_declaration">進行日曆提醒需使用</string>
+    <string name="x7_permission_camera">相機:</string>
+    <string name="x7_permission_camera_declaration">上傳照片可直接拍照上傳</string>
+    <string name="x7_permission_contacts">聯繫人:</string>
+    <string name="x7_permission_contacts_declaration">以便獲取您的聯繫人信息進行好友推薦，分享</string>
+    <string name="x7_permission_exit">拒絕並退出</string>
+    <string name="x7_permission_hint">小7溫馨提示</string>
+    <string name="x7_permission_location">位置:</string>
+    <string name="x7_permission_location_declaration">獲取您的位置信息用於個人信息展示</string>
+    <string name="x7_permission_microphone">麥克風:</string>
+    <string name="x7_permission_microphone_declaration">語音錄製上傳與語音通信時需使用</string>
+    <string name="x7_permission_phone">手機:</string>
+    <string name="x7_permission_phone_declaration">獲取你的設備信息用於保證您的賬號安全</string>
+    <string name="x7_permission_sensors">傳感器:</string>
+    <string name="x7_permission_sensors_declaration">部分遊戲需獲取設備傳感器信息保證特殊功能使用</string>
+    <string name="x7_permission_sms">短信:</string>
+    <string name="x7_permission_sms_declaration">短信相關認證功能可自動驗證短信內容</string>
+    <string name="x7_permission_storage">存儲卡:</string>
+    <string name="x7_permission_storage_declaration">存儲緩存數據，提高應用流暢度</string>
+    <string name="x7_permission_tips">為確保正常遊戲，遊戲將申請以下權限：\n 1. 儲存權限 </string>
+    <string name="x7_phoneLogin">驗證碼登錄</string>
+    <string name="x7_phone_bind">綁定手機</string>
+    <string name="x7_phone_binding">手機綁定</string>
+    <string name="x7_phone_bingding">手機綁定</string>
+    <string name="x7_phone_change_bind_suceed">手機號碼換綁成功</string>
+    <string name="x7_phone_code_login">驗證碼登錄</string>
+    <string name="x7_phone_fast_register">手機快速註冊</string>
+    <string name="x7_phone_lose_efficacy">親，該手機號碼無效哦</string>
+    <string name="x7_phone_no_register">手機未註冊</string>
+    <string name="x7_phone_number_regist">"手機號碼註冊 "</string>
+    <string name="x7_phone_number_register">手機註冊</string>
+    <string name="x7_phone_registered_notice">該手機號碼已經註冊，是否使用此賬號進行綁定</string>
+    <string name="x7_phone_unbind">手機解綁</string>
+    <string name="x7_plate_money">平臺幣</string>
+    <string name="x7_please_enter_password">請填寫登陸密碼</string>
+    <string name="x7_please_enter_username">請填寫用戶名或手機或郵箱</string>
+    <string name="x7_please_install_alipay">請先安裝支付寶再進行支付</string>
+    <string name="x7_policy_provisons_title">隱私政策條款</string>
+    <string name="x7_price">價錢</string>
+    <string name="x7_price_1">價格</string>
+    <string name="x7_privacy_explain">歡迎下載小7遊戲，我們非常重視個人信息和隱私保護。在使用小7遊戲前，請詳細閱讀並同意《小7手游用戶協議》、《小7手游隱私政策》和《遊戲隱私政策》。 \n為了給您提供良好的遊戲體驗，我們會向您申請部分必要的敏感權限。您可選擇同意或拒絕本相應權限的申請，如果您選擇拒絕可能會導致遊戲中部分功能體驗異常。敏感權限包括：</string>
+    <string name="x7_psd_clear_success">支付密碼已清除成功</string>
+    <string name="x7_psd_empty_hint">密碼不能為空</string>
+    <string name="x7_psd_length_error_hint">密碼長度不符合要求,最少6位,最多16位</string>
+    <string name="x7_psd_no_fit">親,兩次密碼不一致</string>
+    <string name="x7_psd_wrong_format_error">親，密碼格式錯誤</string>
+    <string name="x7_purse">錢包</string>
+    <string name="x7_purse_history">錢包記錄</string>
+    <string name="x7_purse_pay">餘額充值</string>
+    <string name="x7_purse_pay_unit">單位:</string>
+    <string name="x7_purse_recharge">儲值</string>
+    <string name="x7_pw_fault">密碼錯誤,請重新輸入</string>
+    <string name="x7_qq"><![CDATA[QQ 群 >]]></string>
+    <string name="x7_qq_1">QQ群</string>
+    <string name="x7_quick_unlock">立即解鎖</string>
+    <string name="x7_re_get_code">重新獲取</string>
+    <string name="x7_re_send">重新發送</string>
+    <string name="x7_re_tao">重新淘</string>
+    <string name="x7_read_content">請耐心看完條款內容</string>
+    <string name="x7_read_protocol">請閲讀小7手游用戶協議</string>
+    <string name="x7_ready_for_union_pay">正在唤起银联支付，请等待...</string>
+    <string name="x7_ready_for_wx_pay">正在喚起微信支付，請等待...</string>
+    <string name="x7_ready_pay_for_alipay">正在喚起支付寶支付，請等待...</string>
+    <string name="x7_real_name_authentication">實名認證</string>
+    <string name="x7_rebate">反平台幣：</string>
+    <string name="x7_receive">領取</string>
+    <string name="x7_receive_normal_and_supreme_reward">已領取普通檔和至尊檔獎勵</string>
+    <string name="x7_receive_normal_reward">已領取普通檔獎勵</string>
+    <string name="x7_received">已領取</string>
+    <string name="x7_received_reward_tip">您已經領過獎勵啦</string>
+    <string name="x7_recharge">立即充值</string>
+    <string name="x7_recharge_amount">充值金額</string>
+    <string name="x7_recharge_desc_faster_and_safer">充值到賬速度更快、更安全</string>
+    <string name="x7_recharge_immediately">立即充值</string>
+    <string name="x7_recharge_limit">充值滿</string>
+    <string name="x7_recharge_rate_rmb">1平臺幣=1人民幣</string>
+    <string name="x7_recharge_tips">·不能充值和付費消費</string>
+    <string name="x7_recycle_voucher_area_hint">您要回收的賬號在小7應用當前地區不存在，需要切換到小7APP到</string>
+    <string name="x7_recycle_voucher_more_title">更多</string>
+    <string name="x7_recycle_voucher_text">此代金券大部分游戲可使用</string>
+    <string name="x7_recycler_need_toApp">如何回收進入小7APP查看</string>
+    <string name="x7_refresh_smallAccountList">刷新小號列表失敗</string>
+    <string name="x7_regist_psd_dif">兩次輸入密碼不相同</string>
+    <string name="x7_register_continue">繼續註冊</string>
+    <string name="x7_register_fail_hint">註冊失敗，請稍後再試</string>
+    <string name="x7_register_fast">快速註冊</string>
+    <string name="x7_register_immediately">立即注冊</string>
+    <string name="x7_register_new_account_hint">您的手機號碼未註冊，是否直接註冊新賬號？</string>
+    <string name="x7_register_psd_hint">請輸入註冊密碼</string>
+    <string name="x7_register_succeed">註冊成功</string>
+    <string name="x7_register_tip">*未註冊的手機驗證後自動登錄</string>
+    <string name="x7_remain_hold_draw_times">剩餘%1$s/%2$s次</string>
+    <string name="x7_remeber_user_name">請記住用戶名：</string>
+    <string name="x7_replacement_get_gift">補領</string>
+    <string name="x7_residue_sum">錢包餘額：</string>
+    <string name="x7_resiter_agreement">註冊即同意 《小7服務協議》</string>
+    <string name="x7_return">返回</string>
+    <string name="x7_reward_content">獎勵內容</string>
+    <string name="x7_right_email_hint">請輸入正確的郵箱</string>
+    <string name="x7_right_money">親，請輸入正確的金額</string>
+    <string name="x7_right_phone_hint">請輸入正確的手機號</string>
+    <string name="x7_rmb">元</string>
+    <string name="x7_rmb_use">元可用</string>
+    <string name="x7_save">保存</string>
+    <string name="x7_screen_shot_success">截圖成功,你可以</string>
+    <string name="x7_sdk_GameTopicDetailAct_hotDiscuss">熱門討論</string>
+    <string name="x7_sdk_GameTopicDetailAct_lookAll">查看全部</string>
+    <string name="x7_sdk_GameTopicDetailAct_oneself">只看自己</string>
+    <string name="x7_sdk_GameTopicDetailAct_packUp">收起</string>
+    <string name="x7_sdk_GameTopicDetailAct_participateDiscuss">參與討論</string>
+    <string name="x7_sdk_GameTopicDetailAct_readAll">顯示更多</string>
+    <string name="x7_sdk_SignTopicDetailActX7SDK_dailyWelfare">每日福利</string>
+    <string name="x7_sdk_SignTopicDetailActX7SDK_gameNotice">公告</string>
+    <string name="x7_sdk_comment_no_visible">此評論內容暫時不可見</string>
+    <string name="x7_sdk_delay">稍後領取</string>
+    <string name="x7_sdk_game_privacy_policy">小7手游隱私政策</string>
+    <string name="x7_sdk_goTo_x7Market">打開APP參與</string>
+    <string name="x7_sdk_immediately_go">立即前往</string>
+    <string name="x7_sdk_insider_login">登入成功（00）</string>
+    <string name="x7_sdk_invite">邀請</string>
+    <string name="x7_sdk_invite_and_get_award">邀請好友領獎勵</string>
+    <string name="x7_sdk_update_hint">檢測到SDK版本更新</string>
+    <string name="x7_sdk_user_agreement">小7手游用戶協議</string>
+    <string name="x7_sdk_write_invite_code">填寫邀請碼</string>
+    <string name="x7_sell">出售中</string>
+    <string name="x7_sell_need_toApp">如何出售進入小7APP查看</string>
+    <string name="x7_send_blessing_bag_in_blacklist">抱歉，當前賬號或設備被拉入黑名單了！</string>
+    <string name="x7_sending_fund_gift">發放中</string>
+    <string name="x7_sending_fund_gift_text">獎勵正在發放中</string>
+    <string name="x7_set_area">地區設置</string>
+    <string name="x7_set_default_login">選擇默認登錄后，以後將直接登錄</string>
+    <string name="x7_set_login_psd">請設置登錄密碼</string>
+    <string name="x7_set_pay_psd">設置支付密碼</string>
+    <string name="x7_share_to_friend">去發帖</string>
+    <string name="x7_shock_hint">搖一搖顯示懸浮球</string>
+    <string name="x7_show_notice_hint">左右滑動查看其它公告</string>
+    <string name="x7_show_voucher_panel">显示代金券列表</string>
+    <string name="x7_sign_in_ensure">確認登錄</string>
+    <string name="x7_sign_in_now">立即登錄</string>
+    <string name="x7_skip">跳過</string>
+    <string name="x7_smallAccountNote1">你可以在一個遊戲里創建最多10個小號</string>
+    <string name="x7_smallAccountNote2">各小號相對獨立,等同於一個平台賬號在每個遊戲裡可以創建多個子賬號</string>
+    <string name="x7_smallAccountNote3">在小7app交易中心,可以將小號出售,同時不影響其他小號正常</string>
+    <string name="x7_smallAccountnote">小號說明</string>
+    <string name="x7_small_account">選擇以下小號登入</string>
+    <string name="x7_small_account_name_rule">親，小號的名稱不能大於4個字符！</string>
+    <string name="x7_small_account_note">小號說明</string>
+    <string name="x7_small_account_num_limit">小號數量不能超過10個</string>
+    <string name="x7_smallaccountLoginfail">小號登錄失敗</string>
+    <string name="x7_smsdk_contact_custom_service">聯係客服</string>
+    <string name="x7_smsdk_version">版本號:</string>
+    <string name="x7_special_real_name_way">海外上傳附件認證</string>
+    <string name="x7_speed_cut">—</string>
+    <string name="x7_speed_pause">暫停</string>
+    <string name="x7_speed_up">+</string>
+    <string name="x7_storage_permission_hint">請允許稍後的文件存儲權限</string>
+    <string name="x7_suggestion">建議</string>
+    <string name="x7_sure">確定</string>
+    <string name="x7_sure_can_replace">是</string>
+    <string name="x7_sure_for_switch_account">確定切換賬號</string>
+    <string name="x7_sure_for_switch_small_account">確定切換到小號\"</string>
+    <string name="x7_sure_for_switch_small_account_1">\"登錄嗎？</string>
+    <string name="x7_sure_not_can_replace">否</string>
+    <string name="x7_sure_of_buy_game">確認購買</string>
+    <string name="x7_sure_of_modify">確定修改</string>
+    <string name="x7_sure_of_submit">確定提交</string>
+    <string name="x7_sure_to_add">確定</string>
+    <string name="x7_sure_to_bind_this_account">確認綁定此賬號嗎</string>
+    <string name="x7_surplus">剩餘:</string>
+    <string name="x7_suspension_hint_for_web">退出游戲后重新進入可恢復顯示</string>
+    <string name="x7_switch">切換</string>
+    <string name="x7_switch_account">切換賬號</string>
+    <string name="x7_switch_account1"><![CDATA[切換 >]]></string>
+    <string name="x7_switch_domain_name_tip_one">再點擊2下打開角色信息界面</string>
+    <string name="x7_switch_domain_name_tip_two">再點擊1下打開角色信息界面</string>
+    <string name="x7_switch_small_account_fail">切換失敗，請稍候再試...</string>
+    <string name="x7_switch_small_account_succeed">小號切換成功</string>
+    <string name="x7_taiwan">台 灣</string>
+    <string name="x7_temp_no_need_realname">暫不實名</string>
+    <string name="x7_temp_not_real_name">暫不實名</string>
+    <string name="x7_temporary_no_need">暫時不用</string>
+    <string name="x7_text_password">密 码</string>
+    <string name="x7_this_accout_has_used_this_voucher">該小號已使用過此代金券</string>
+    <string name="x7_tip_check_agreement">请阅读并勾选同意用户协议和隐私政策</string>
+    <string name="x7_tip_received">您已經領取過獎勵啦~</string>
+    <string name="x7_to_APP">進入小7APP</string>
+    <string name="x7_to_APP_sell_or_recycler">即將前往小7APP繼續操作，請在小7APP中登錄同一賬號完成回收/出售操作</string>
+    <string name="x7_to_get_permission">一鍵獲取</string>
+    <string name="x7_to_pay">立即支付</string>
+    <string name="x7_to_real_name">進行實名認證</string>
+    <string name="x7_to_x7market_read">去小7查看</string>
+    <string name="x7_today_already_receive">今日已領取</string>
+    <string name="x7_trust_device">信任設備</string>
+    <string name="x7_turn_off">關閉</string>
+    <string name="x7_tw">台灣</string>
+    <string name="x7_tw_1">中國台灣</string>
+    <string name="x7_unbind">解綁</string>
+    <string name="x7_unbind_login_hint">解綁後將只能通過用戶名登錄</string>
+    <string name="x7_unclaimed">待領取</string>
+    <string name="x7_union_online">银联在线</string>
+    <string name="x7_update">立即升級</string>
+    <string name="x7_use">使用</string>
+    <string name="x7_use_for_imei">(僅作為數據統計之用)</string>
+    <string name="x7_use_range">使用範圍</string>
+    <string name="x7_use_voucher">使用代金券</string>
+    <string name="x7_use_voucher_scope">代金券適用範圍</string>
+    <string name="x7_user_account_manager">小號管理</string>
+    <string name="x7_user_agree">用戶須知</string>
+    <string name="x7_user_agreement">用戶協議</string>
+    <string name="x7_user_agreement_1">註冊即同意</string>
+    <string name="x7_user_agreement_2">《小7服務協議》</string>
+    <string name="x7_user_centre">用戶中心</string>
+    <string name="x7_user_login">用戶登錄</string>
+    <string name="x7_user_name">用户名</string>
+    <string name="x7_user_name_login">用戶名登錄</string>
+    <string name="x7_user_name_register">賬號註冊</string>
+    <string name="x7_user_name_rg">4–16位，小寫字母開頭</string>
+    <string name="x7_user_name_rg_land">請輸入4–16位用戶名，小寫字母開頭</string>
+    <string name="x7_user_name_wrong_format">親，用戶名格式錯誤</string>
+    <string name="x7_user_register">用戶名註冊</string>
+    <string name="x7_user_register_1">用戶名註冊(不推薦)</string>
+    <string name="x7_username_login">賬號登錄</string>
+    <string name="x7_username_regist">用戶名註冊</string>
+    <string name="x7_verify_code_input_hint">請輸入驗證碼</string>
+    <string name="x7_verify_phone">為了賬號安全，需要驗證您的手機</string>
+    <string name="x7_view_details">查看詳情</string>
+    <string name="x7_view_purse_history">查看記錄</string>
+    <string name="x7_vip_gift">VIP禮包</string>
+    <string name="x7_voucher">代金券：</string>
+    <string name="x7_voucher_1">代金券</string>
+    <string name="x7_voucher_collection">代金券領取</string>
+    <string name="x7_voucher_hint">張可用</string>
+    <string name="x7_voucher_price_hint">使用代金券後的支付價格要大於0</string>
+    <string name="x7_wallet_balance">錢包餘額</string>
+    <string name="x7_warm_prompt">溫馨提示</string>
+    <string name="x7_week_card">周卡</string>
+    <string name="x7_write_external_hint">請允許稍後的文件存儲權限哦 \n 否則不能進入遊戲呢</string>
+    <string name="x7_wx_pay">微信支付</string>
+    <string name="x7_wx_write_permission">請允許微信支付插件的寫入和安裝權限0</string>
+    <string name="x7_wx_write_permission_1">請允許微信支付插件的寫入安裝權限1</string>
+    <string name="x7_xlistview_footer_hint_loaderror">親,網路不給力,請再給次機會</string>
+    <string name="x7_xlistview_footer_hint_loadover">- 全部加載完畢 -</string>
+    <string name="x7_xlistview_footer_hint_normal">查看更多</string>
+    <string name="x7_xlistview_footer_hint_ready">鬆開載入更多</string>
+    <string name="x7_xlistview_header_hint_loading">正在加載...</string>
+    <string name="x7_xlistview_header_hint_normal">下拉刷新</string>
+    <string name="x7_xlistview_header_hint_ready">鬆開刷新數據</string>
+    <string name="x7_xlistview_header_last_time">上次更新時間：</string>
+    <string name="x7_xml_payHint1">充值平台幣後不支持退款</string>
+    <string name="x7_xml_payHint3">請輸入自定義金額</string>
+    <string name="x7_yunceng_sdk_app_key">27af97df6c8f2bad47a79377a350bc42</string>
+    <string name="x7base_active_gift_fund">禮包基金已激活，記得每天來領禮包呦</string>
+    <string name="x7base_all_gift_fund">全部禮包</string>
+    <string name="x7base_commit_now">立即提交</string>
+    <string name="x7base_email_and_code_null">請完整填寫後再提交</string>
+    <string name="x7base_email_bind_success">郵箱換綁成功</string>
+    <string name="x7base_email_bind_success2">郵箱綁定成功</string>
+    <string name="x7base_email_code_null">驗證碼爲空哦</string>
+    <string name="x7base_email_null">請先填寫郵箱</string>
+    <string name="x7base_gift_content_text">可以從以下選項中任選</string>
+    <string name="x7base_gift_content_text2">項作爲獎勵：</string>
+    <string name="x7base_gift_fund_copy">複製</string>
+    <string name="x7base_gift_fund_get">領取</string>
+    <string name="x7base_h5_default_Login_click">點擊</string>
+    <string name="x7base_h5_default_Login_hint"><![CDATA[為<font color="#ff9900">默認登錄</font>此小號]]></string>
+    <string name="x7base_inactive_gift_fund">活動期間激活基金，即可每天領取禮包</string>
+    <string name="x7base_not_to_buy_monthcard" translatable="false">暂不领取</string>
+    <string name="x7base_recycle_account">回收</string>
+    <string name="x7base_selfselectgift_commit_info">信息已提交，請耐心等待獎勵發放，如有問題請聯係客服</string>
+    <string name="x7base_selfselectgift_finish_info">請完善信息後再提交</string>
+    <string name="x7base_selfselectgift_hint">選取獎勵提交后，運營將直接發放到您的角色郵箱</string>
+    <string name="x7base_selfselectgift_not_enough_check">請選擇足夠數量的選項</string>
+    <string name="x7base_selfselectgift_send">獎勵已發放，如有問題請聯係客服</string>
+    <string name="x7base_selfselectgift_sendby_email">獎勵已通過游戲内郵件發放</string>
+    <string name="x7base_selfselectgift_wait">獎勵將通過游戲内郵件發放，請耐心等待</string>
+    <string name="x7base_selfselection_gift_dialog_area">請填寫區服</string>
+    <string name="x7base_selfselection_gift_dialog_commit">提交</string>
+    <string name="x7base_selfselection_gift_dialog_id">請填寫角色ID/角色編號</string>
+    <string name="x7base_selfselection_gift_dialog_name">請填寫角色名稱</string>
+    <string name="x7base_selfselection_gift_dialog_word">如果有特別説明，請留言</string>
+    <string name="x7base_selfselection_gift_finish_commit">已提交</string>
+    <string name="x7base_selfselection_gift_finish_send">已發放</string>
+    <string name="x7base_selfselection_gift_get_all">已領完</string>
+    <string name="x7base_selfselection_gift_not_num">滿足領取條件且選擇足夠數量的選項，點擊將彈窗要求填寫相關信息</string>
+    <string name="x7base_selfselection_gift_num">已經到達上限啦</string>
+    <string name="x7base_selfselection_gift_past">禮包已過期</string>
+    <string name="x7base_sell_account">出售</string>
+    <string name="x7base_sure_bind">確認綁定</string>
+    <string name="x7base_to_buy_monthcard" translatable="false">购买月卡</string>
+    <string name="x7confirm_modify">確認修改</string>
+</resources>

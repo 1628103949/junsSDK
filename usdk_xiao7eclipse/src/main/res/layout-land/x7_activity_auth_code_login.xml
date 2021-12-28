@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phone_code_login_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/phone_code_login_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/x7_logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="43dp"
+                android:src="@drawable/x7_icon" />
+
+            <LinearLayout
+                android:id="@+id/rl_phone_register_phone"
+                style="@style/X7CommonInputStyle_1"
+                android:layout_below="@+id/x7_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_phone_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:paddingStart="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/x7_China_code"
+                    android:textColor="@color/x7_text_green"
+                    android:textSize="11dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/x7_vertical_divider_line" />
+
+                <EditText
+                    android:id="@+id/ed_register_phone"
+                    style="@style/X7EditTextNoBackCommonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789+ "
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/x7_hint_of_input_phone"
+                    android:imeOptions="actionNext|flagNoExtractUi|flagNoFullscreen"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/iv_delete_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="TODO"
+                    android:padding="6dp"
+                    android:src="@drawable/x7_activity_login_delete"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="230dp"
+                android:layout_height="0.7dp"
+                android:layout_below="@+id/rl_phone_register_phone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/x7_horizontal_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_verify_code"
+                style="@style/X7CommonInputStyle_1"
+                android:layout_below="@+id/rl_phone_register_phone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_register_get_verify_code"
+                    android:layout_width="70dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/x7_btn_auto_back"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/x7_get_verify_code"
+                    android:textColor="@color/x7_white"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/ed_register_code"
+                    style="@style/X7EditTextNoBackCommonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/x7_verify_code_input_hint"
+                    android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+                    android:inputType="number"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/iv_delete_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="TODO"
+                    android:padding="6dp"
+                    android:src="@drawable/x7_activity_login_delete"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/authCodeView"
+                android:layout_width="230dp"
+                android:layout_height="0.7dp"
+                android:layout_below="@+id/ll_verify_code"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/x7_horizontal_divider_line" />
+
+            <!--国内注册设置密码的layout-->
+            <include
+                android:id="@+id/register_ll"
+                layout="@layout/x7_activity_phone_code_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/authCodeView"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/login_btn_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/register_ll"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/register_tip_tv"
+                    android:layout_width="230dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:text="@string/x7_register_tip"
+                    android:textColor="#CCCCCC"
+                    android:textSize="9dp" />
+
+                <Button
+                    android:id="@+id/btn_switch_account"
+                    style="@style/X7BtnClickStyleNew"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/x7_login_immediately" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/ssss1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/login_btn_ll"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/register_forget"
+                layout="@layout/x7_act_register_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ssss1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:includeFontPadding="false"
+        android:text="version"
+        android:textColor="@color/color_grey_999999"
+        android:textSize="11dp" />
+
+    <RelativeLayout
+        android:id="@+id/contact_custom_service_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="14dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="10dp">
+
+        <ImageView
+            android:id="@+id/contact_custom_service_iv"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/x7_icon_kf2" />
+
+        <TextView
+            android:id="@+id/contact_custom_service_tv"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/contact_custom_service_iv"
+            android:includeFontPadding="false"
+            android:text="@string/x7_smsdk_contact_custom_service"
+            android:textColor="@color/color_12cdb0"
+            android:textSize="11dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

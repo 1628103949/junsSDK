@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@id/wy_revocer_pwd_ll"
+        android:layout_width="@dimen/wy_fragment_common_width"
+        android:layout_height="@dimen/wy_fragment_common_nologo_height"
+        android:background="@drawable/wy_shape_corner"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <include layout="@layout/wy_include_title" />
+
+            <LinearLayout
+                android:id="@id/wy_enter_phone_num_ll"
+                style="@style/wy_ll_input_field_common"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <com.wanyugame.wygamesdk.view.ClearableEditText
+                    android:id="@id/wy_phone_num_et"
+                    style="@style/wy_et_input_field_common"
+                    android:hint="@string/wy_please_enter_the_phone_number"
+                    android:inputType="number"
+                    android:paddingRight="@dimen/wy_cet_right_padding" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/wy_enter_verification_code_ll"
+                style="@style/wy_ll_input_field_common"
+                android:layout_marginTop="8dp"
+                android:visibility="visible">
+
+                <com.wanyugame.wygamesdk.view.ClearableEditText
+                    android:id="@id/wy_verification_code_et"
+                    style="@style/wy_et_input_field_common"
+                    android:hint="@string/wy_please_enter_verification_code"
+                    android:inputType="number" />
+
+                <View
+                    android:id="@id/wy_split_line_view"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#777879"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/wy_get_verification_code_btn"
+                    style="@style/wy_btn_get_notification_code"
+                    android:layout_margin="1dp"
+                    android:text="@string/wy_get_verification_code" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/wy_enter_pwd_ll"
+                style="@style/wy_ll_input_field_common"
+                android:layout_marginTop="8dp"
+                android:visibility="visible">
+
+                <!--<ImageView-->
+                <!--style="@style/wy_iv_input_field_common"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:src="@drawable/wy_iv_enter_pwd" />-->
+
+                <com.wanyugame.wygamesdk.view.ClearableEditText
+                    android:id="@id/wy_pwd_et"
+                    style="@style/wy_et_input_field_common"
+                    android:hint="@string/wy_please_enter_the_pwd"
+                    android:inputType="textPassword"
+                    android:paddingRight="@dimen/wy_cet_right_padding" />
+
+                <ImageView
+                    android:id="@id/wy_iv_psd_un_look"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="7dp"
+                    android:src="@drawable/wy_iv_psd_unlook" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/wy_account_ll"
+                style="@style/wy_ll_input_field_common"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/wy_iv_input_field_common"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/wy_iv_whale" />
+
+                <TextView
+                    android:id="@id/wy_account_tv"
+                    style="@style/wy_et_input_field_common"
+                    android:layout_marginLeft="0dp"
+                    android:paddingRight="@dimen/wy_cet_right_padding" />
+
+                <ImageView
+                    android:id="@id/wy_drop_down_iv"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="14dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="14dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/wy_btn_drop_down"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/wy_wy_password_ll"
+                style="@style/wy_ll_input_field_common"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/wy_iv_input_field_common"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/wy_iv_enter_pwd" />
+
+                <TextView
+                    android:id="@id/wy_password_tv"
+                    style="@style/wy_et_input_field_common"
+                    android:layout_marginLeft="0dp"
+                    android:paddingRight="@dimen/wy_cet_right_padding" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@id/wy_finish_btn"
+                style="@style/wy_btn_common"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/wy_selector_btn_deep_green"
+                android:text="@string/wy_recover_pwd_btn"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@id/wy_return_login_btn"
+                style="@style/wy_btn_common"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/wy_selector_btn_deep_green"
+                android:text="@string/wy_back_login"
+                android:visibility="gone" />
+            <!--<TextView-->
+            <!--android:id="@id/wy_no_bind_phone_tv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="26dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:text="账号未绑定手机，请联系QQ客服 >"-->
+            <!--android:textSize="11sp"/>-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

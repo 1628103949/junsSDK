@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xh_sdk_shape_pay_list_bg"
+    android:orientation="vertical">
+
+
+
+
+
+    <include layout="@layout/xh_dialog_head" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="测试1分钱" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="¥ 0.01元" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_Alipay"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/margin_left_and_Right"
+        android:layout_marginRight="@dimen/margin_left_and_Right"
+        android:background="@drawable/xh_sdk_shape_bt_alipay_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/kr_ic_pay_alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="支付宝支付"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_wxPay"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="@dimen/margin_left_and_Right"
+        android:layout_marginRight="@dimen/margin_left_and_Right"
+        android:background="@drawable/xh_sdk_shape_bt_wx_bg"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/kr_ic_pay_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="微信支付"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

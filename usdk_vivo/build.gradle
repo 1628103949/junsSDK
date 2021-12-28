@@ -12,10 +12,6 @@ android {
         applicationId "com.ksyq.bswhl.vivo"
         versionCode 1
         versionName '1.0.0'
-        ndk {
-            // 设置支持的SO库架构
-            abiFilters 'armeabi-v7a','x86' //, 'x86', 'armeabi', 'x86_64', 'arm64-v8a'
-        }
     }
 
     // 配置结构
@@ -77,23 +73,7 @@ android {
                 }
             }
         }
-
-        debug {
-            v2SigningEnabled false
-            File propFile = file('../config/build-system/signing.properties');
-            if (propFile.exists()) {
-                def Properties props = new Properties()
-                props.load(new FileInputStream(propFile))
-                if (props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') &&
-                        props.containsKey('KEY_ALIAS') &&
-                        props.containsKey('KEY_PASSWORD')) {
-                    storeFile file(props['STORE_FILE'])
-                    storePassword props['STORE_PASSWORD']
-                    keyAlias props['KEY_ALIAS']
-                    keyPassword props['KEY_PASSWORD']
-                }
-            }
-        }
+        
     }
 
     /**
@@ -112,16 +92,6 @@ android {
             signingConfig signingConfigs.release
         }
 
-        debug {
-            //不执行proguard
-            minifyEnabled false
-            //Zipalign优化
-            zipAlignEnabled false
-            // 移除无用的resource文件
-            shrinkResources false
-            //签名
-            signingConfig signingConfigs.debug
-        }
     }
 }
 
@@ -130,7 +100,8 @@ dependencies {
     implementation 'com.android.support:support-core-utils:28.0.0'
     implementation 'com.android.support:support-core-ui:28.0.0'
     implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
-    implementation fileTree(dir: 'aar', include: ['*.aar', '*.jar'], exclude: [])
+    implementation project(path: ':mid_oaid1.0.25')
+
 }
 
 repositories {

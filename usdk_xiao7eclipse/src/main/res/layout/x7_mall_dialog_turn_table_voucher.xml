@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="345dp"
+    android:layout_height="227dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="209dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="42dp"
+                android:layout_height="42dp">
+
+                <View
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_centerInParent="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/mall_border" />
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="28dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/x7_mall_turn_table_voucher" />
+
+                <com.smwl.smsdk.myview.StrokeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="12"
+                    android:textColor="@color/x7base_white"
+                    android:textSize="9dp"
+                    android:textStyle="bold"
+                    app:stroke_color="@color/x7_orange_9d7227"
+                    app:stroke_width="2dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/x7_mall_dialog_prop_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/x7_mall_turn_table_voucher"
+                android:textColor="@color/x7_black_644f31"
+                android:textSize="8dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="37dp"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_height="13dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/x7_orange_fbcc55" />
+
+                    <TextView
+                        android:id="@+id/x7_mall_dialog_prop_explain_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/x7_black_644f31"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/x7_mall_sure_tv"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/x7_mall_custom_gift_get_btn_bg"
+            android:gravity="center"
+            android:text="@string/x7_mall_go_to_draw"
+            android:textColor="@color/white"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/x7_mall_voucher_dialog_close_iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/x7_mall_close_icon" />
+
+</RelativeLayout>

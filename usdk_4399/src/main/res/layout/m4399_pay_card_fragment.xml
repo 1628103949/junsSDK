@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/m4399.Pay.Page">
+
+    <include layout="@layout/m4399_ope_support_nav_bar_layout" />
+
+    <ScrollView style="@style/m4399.Pay.Body">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/m4399_pay_order_container_card" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m4399_pay_spacing_v"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/m4399.Pay.Label.Card"
+                    android:text="@string/m4399_pay_card_denomination" />
+
+                <cn.m4399.operate.support.component.ExpandedGridView
+                    android:id="@+id/m4399_pay_handy_money_grid"
+                    style="@style/m4399.Pay.Handy.Money.Table"
+                    tools:listitem="@layout/m4399_pay_handy_money_item" />
+            </LinearLayout>
+
+            <include layout="@layout/m4399_pay_card_editor" />
+
+            <include layout="@layout/m4399_pay_coupon_entry_card" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/m4399_pay_tv_confirm" />
+</LinearLayout>

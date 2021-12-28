@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/m4399_activity_spacing_h"
+    android:paddingTop="@dimen/m4399_activity_spacing_v"
+    android:paddingRight="@dimen/m4399_activity_spacing_h"
+    android:paddingBottom="@dimen/m4399_activity_spacing_v">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/m4399_pay_help_tel_name"
+            android:textColor="@color/m4399_ope_color_333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/m4399_pay_help_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/m4399_pay_spacing_v_half"
+            android:paddingBottom="@dimen/m4399_pay_spacing_v_half"
+            android:textColor="@color/m4399_ope_color_primary"
+            android:textSize="15sp"
+            tools:text="400-633-4399转3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:text="@string/m4399_pay_help_qq_name"
+            android:textColor="@color/m4399_ope_color_333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/m4399_pay_help_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/m4399_pay_spacing_v_half"
+            android:paddingBottom="@dimen/m4399_pay_spacing_v_half"
+            android:text="@string/m4399_pay_help_qq_value"
+            android:textColor="@color/m4399_ope_color_primary"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

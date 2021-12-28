@@ -32,7 +32,7 @@ import org.json.JSONObject;
  * Author: ranger
  */
 public class DemoActivity extends Activity implements View.OnClickListener {
-    private String appkey = "AppkeyHaiHang";
+    private String appkey = "20200606sanceQILINGShi";
     private Toast mToast;
     private Handler mHandler = new Handler(Looper.getMainLooper());
 

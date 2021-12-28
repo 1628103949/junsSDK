@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/m4399_activity_spacing_v">
+
+    <TextView
+        android:id="@+id/m4399_pay_help_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/m4399_ope_color_primary"
+        android:textSize="15sp"
+        tools:text="4399一卡通" />
+
+    <TextView
+        android:id="@+id/m4399_rec_help_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="@dimen/m4399_activity_spacing_v"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        tools:text="请核对卡面值与选择的面值是否一致，当卡面值大于选择的面值时，您将损失差额。" />
+
+    <include layout="@layout/m4399_ope_support_divider_h" />
+
+</LinearLayout>

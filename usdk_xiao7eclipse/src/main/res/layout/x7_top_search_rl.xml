@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/x7base_f2f2f2_round_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/x7_icon_search_hui" />
+
+        <EditText
+            android:id="@+id/x7_search_content_et"
+            android:textSize="@dimen/sp_12"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:background="@null"
+            android:ellipsize="end"
+            android:paddingLeft="36dp"
+            android:hint="@string/x7_IM_xml_inputUserNickName"
+            android:imeOptions="actionSearch|flagNoExtractUi"
+            android:singleLine="true"
+            android:textColor="@color/color_grey_555555" />
+
+        <ImageView
+            android:id="@+id/x7_search_clear_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingLeft="5dip"
+            android:paddingRight="10dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/x7_icon_search_delete"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

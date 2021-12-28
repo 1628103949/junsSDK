@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/ed_user_phone"
+        style="@style/X7EditTextWithBackStyle"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:enabled="false"
+        android:imeOptions="flagNoExtractUi"/>
+
+    <LinearLayout
+        android:id="@+id/ll_new_password"
+        style="@style/X7CommonInputStyle"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ed_user_phone"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_new_password"
+            style="@style/X7EditTextNoBackCommonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/x7_hint_of_password"
+            android:imeOptions="flagNoExtractUi"
+
+            />
+
+        <ImageView
+            android:id="@+id/iv_delete_new_password"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true" android:contentDescription="TODO" android:padding="10dip"
+            android:src="@drawable/x7_activity_login_delete"
+            android:visibility="invisible" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_submit_password"
+        style="@style/X7BtnClickStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_new_password"
+        android:layout_marginTop="20dp"
+        android:text="@string/x7_sure_of_submit" />
+</RelativeLayout>

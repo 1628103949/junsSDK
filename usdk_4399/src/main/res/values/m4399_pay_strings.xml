@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m4399_pay_action">充值</string>
+    <string name="m4399_pay_confirm">确认充值</string>
+    <string name="m4399_pay_next_step">下一步</string>
+
+    <string name="m4399_ope_yuan">元</string>
+    <string name="m4399_ope_copy_qq_success">QQ号码复制成功</string>
+    <string name="m4399_ope_remain_time_check_detail">查看详情</string>
+    <string name="m4399_ope_message_pay_success_condition">满%s元可用</string>
+    <string name="m4399_ope_message_pay_success_period">有效期至 %s</string>
+
+    <!-- ApiRecharge -->
+    <string name="m4399_pay_error_repeat_call">当前已有充值流程，忽略此次调用</string>
+    <string name="m4399_pay_error_money_exceed_limit">充值金额只能是(1~50000)之间的整数</string>
+    <string name="m4399_pay_error_mark_length_exceed">mark长度不能超过32位</string>
+    <string name="m4399_pay_error_mark_contains_illegal_char">mark包含了不支持的字符：‘%c’</string>
+    <string name="m4399_pay_error_commodity_length_exceed">商品名过长，超过了20个中文文字长度</string>
+    <string name="m4399_pay_error_no_available_channel">没有可用的充值渠道</string>
+    <!-- PayImpl -->
+    <string name="m4399_pay_impl_ali_pay_network_error">当前网络不给力，请检查您的网络</string>
+    <string name="m4399_pay_impl_ali_pay_system_abnormal">系统繁忙，请稍后再试</string>
+    <string name="m4399_pay_impl_youbi_not_affordable">当前帐号游币不足</string>
+    <string name="m4399_pay_impl_card_empty_input">卡号或密码不能为空，请输入正确卡号和密码</string>
+    <string name="m4399_pay_impl_card_error_serial">卡号长度有误，请仔细核对：\n%1$s卡号为%2$d位, 密码%3$d位</string>
+    <string name="m4399_pay_impl_card_error_cipher">密码长度有误，请仔细核对：\n%1$s卡号为%2$d位, 密码%3$d位</string>
+    <string name="m4399_pay_impl_card_failed_details_card">充值卡支付失败</string>
+    <string name="m4399_pay_impl_wechat_error_launch_wechat">启动微信失败，请确保安装最新微信客户端或用其他方式充值</string>
+    <string name="m4399_pay_impl_wechat_error_not_installed">您尚未安装微信，请先安装或选择其他支付方式</string>
+    <string name="m4399_pay_impl_wechat_error_miss_protocol">获取微信支付链接失败，无法启动微信</string>
+    <string name="m4399_pay_impl_qq_error_app_not_installed">您尚未安装QQ客户端，请先安装或选择其他支付方式</string>
+    <string name="m4399_pay_impl_qq_error_app_not_launched">启动QQ失败，请确保安装最新qq或用其他方式充值</string>
+    <string name="m4399_pay_impl_web_pay_failed">网页支付失败</string>
+    <string name="m4399_pay_impl_web_retain_title">提示</string>
+    <string name="m4399_pay_impl_web_retain_message">您即将离开充值页面，可以在游戏内查看充值结果。请确认？</string>
+    <!-- OrderCaptcha -->
+    <string name="m4399_pay_captcha_dialog_title">请输入验证码</string>
+    <string name="m4399_pay_captcha_msg_requesting">正在获取验证码</string>
+    <string name="m4399_pay_captcha_msg_request_failed">获取验证码出错</string>
+    <string name="m4399_pay_captcha_msg_validating">正在为您验证，请稍候</string>
+    <string name="m4399_pay_captcha_msg_evaded">取消验证，充值无法继续</string>
+    <string name="m4399_pay_captcha_error_length">验证码长度不对，请重新输入</string>
+    <string name="m4399_pay_captcha_error_network">不能通过验证，请检查网络状况</string>
+
+    <!-- OrderNotification -->
+    <string name="m4399_pay_ntf_ticker_text_success">您在《%1$s》中充值购买成功，可在游戏内查看详情</string>
+    <string name="m4399_pay_ntf_ticker_text_failed">您在《%1$s》中充值购买失败，可在游戏内查看详情</string>
+    <string name="m4399_pay_ntf_content_title_success">充值购买成功</string>
+    <string name="m4399_pay_ntf_content_title_failed">充值购买失败</string>
+    <string name="m4399_pay_ntf_content_success_text">您购买“%1$s”成功</string>
+    <string name="m4399_pay_ntf_content_failed_text">您购买“%1$s”失败</string>
+    <string name="m4399_pay_ntf_content_and">和</string>
+
+    <!-- ChannelFragment -->
+    <string name="m4399_pay_order_payable">支付金额</string>
+    <string name="m4399_pay_order_origin_money">原价%s元</string>
+    <string name="m4399_pay_order_commodity_name">商品名称</string>
+    <string name="m4399_pay_coupon_equal_currency">%1$d元优惠券(已为您转换为%2$d%3$s)</string>
+    <string name="m4399_pay_coupon_available_fmt">有%d张可用优惠券</string>
+    <string name="m4399_pay_coupon_selected">%d元优惠券</string>
+    <string name="m4399_pay_coupon_none_available">暂无可用优惠券</string>
+    <string name="m4399_pay_coupon_money_unavailable">暂不支持使用优惠券</string>
+    <string name="m4399_pay_coupon">优惠券&#8195;</string>
+    <string name="m4399_pay_coupon_card">优惠券&#8195;&#8195;</string>
+    <string name="m4399_pay_channel_tool_text">帮助</string>
+    <string name="m4399_pay_channel_create_error">创建渠道页面错误</string>
+    <string name="m4399_pay_channel">充值方式</string>
+    <string name="m4399_pay_chip_select_other">其他</string>
+    <!-- ChannelSelector -->
+    <string name="m4399_pay_channel_select_title">选择充值方式</string>
+    <string name="m4399_pay_channel_state_maintained">维护中</string>
+    <string name="m4399_pay_channel_state_money_inapplicable">不支持该金额充值</string>
+    <string name="m4399_pay_channel_state_coupon_inapplicable">不支持使用优惠券</string>
+    <string name="m4399_pay_channel_state_coupon_applicable">优惠券将转换为等值货币</string>
+    <string name="m4399_pay_channel_youbi_name_fmt" formatted="false"><![CDATA[
+        <font color="#333333">%1$s</font><font color="#666666">（余额：</font><font color="#FD9615">%2$d游币</font><font color="#666666">）</font>
+    ]]></string>
+    <string name="m4399_pay_channel_youbi_name_fmt_refresh" formatted="false"><![CDATA[
+        <font color="#333333">%1$s</font><font color="#999999"> 点击刷新游币</font>
+    ]]></string>
+    <!-- CardFragment -->
+    <string name="m4399_pay_user_name">充值帐号</string>
+    <string name="m4399_pay_card_denomination">充值卡面额</string>
+    <string name="m4399_pay_card_serial">充值卡卡号</string>
+    <string name="m4399_pay_card_code">充值卡密码</string>
+    <string name="m4399_pay_card_operator">手机运营商</string>
+    <string name="m4399_pay_card_YiDong">移动</string>
+    <string name="m4399_pay_card_LianTong">联通</string>
+    <string name="m4399_pay_card_DianXin">电信</string>
+    <string name="m4399_pay_card_confirm_message">请核对卡面值与选择的面值是否一致，当卡面值大于选择的面值时，您将损失差额。</string>
+    <string name="m4399_pay_card_input_serial">请输入充值卡号</string>
+    <string name="m4399_pay_card_input_code">请输入充值密码</string>
+    <string name="m4399_pay_card_phone_state_maintained">充值渠道维护中</string>
+
+    <!-- InquiryFragment -->
+    <string name="m4399_pay_inquiring_order_state">查询订单状态</string>
+    <string name="m4399_pay_inquiry_tips_fmt" formatted="false"><![CDATA[
+      正在查询订单状态，请耐心等候（<font color="#54ba3d">%ds</font>）
+    ]]></string>
+
+
+    <!-- PayStatusFragment -->
+    <string name="m4399_pay_status">订单状态</string>
+    <string name="m4399_pay_status_abnormal_commodity_label">物品名：</string>
+    <string name="m4399_pay_status_abnormal_pid_label">订单号：</string>
+    <string name="m4399_pay_status_hotline_label">客服热线：</string>
+    <!-- status -->
+    <string name="m4399_pay_status_success_subject">充值成功</string>
+    <string name="m4399_pay_status_success_details">充值成功，商品将于几分钟内发放到您的帐号，请稍候</string>
+    <string name="m4399_pay_status_cancelled_subject">取消充值</string>
+    <string name="m4399_pay_status_cancelled_details">当前充值已经取消</string>
+    <string name="m4399_pay_status_processing_subject">充值中</string>
+    <string name="m4399_pay_status_processing_details">充值处理中，可能因为网络延迟等原因延迟到账，请关注您的余额变化</string>
+    <string name="m4399_pay_status_processing_tips">温馨提示：若未及时到账，请重新尝试充值或联系客服咨询</string>
+    <string name="m4399_pay_status_failed_subject">充值失败</string>
+    <string name="m4399_pay_status_failed_details_unknown">系统异常，请检查网络和帐号是否受限</string>
+    <string name="m4399_pay_status_failed_details_aga">由于防沉迷政策，您的充值受到限制</string>
+    <string name="m4399_pay_status_failed_details_e_data">服务端数据格式不正确</string>
+    <string name="m4399_pay_status_timeout_subject">取消充值</string>
+    <string name="m4399_pay_status_timeout_details">当前充值已经取消</string>
+
+
+    <!-- HelpFragment -->
+    <string name="m4399_pay_help_fragment_title">常见问题解决</string>
+    <string name="m4399_pay_help_tel_name">客服电话：</string>
+    <string name="m4399_pay_help_tel_forwarding">转</string>
+    <string name="m4399_pay_help_qq_name">客服ＱＱ：</string>
+    <string name="m4399_pay_help_qq_value">800801500</string>
+
+    <!-- HistoryFragment -->
+    <string name="m4399_pay_history_title">未完成订单</string>
+    <string name="m4399_pay_history_refresh">刷新</string>
+    <string name="m4399_pay_history_refresh_process">正在刷新订单</string>
+    <string name="m4399_pay_history_refresh_no_record">没有订单可刷新！</string>
+    <string name="m4399_pay_history_refresh_result_fmt">本次更新%1d条订单(刷新时保证请保证网络畅通，刷新后仍有未完成订单，请重新尝试)</string>
+    <string name="m4399_pay_history_refresh_remain_time">%1d 秒</string>
+    <string name="m4399_pay_history_status_success">成功</string>
+    <string name="m4399_pay_history_status_failed">失败</string>
+    <string name="m4399_pay_history_status_unfinished">未完成</string>
+    <string name="m4399_pay_history_hint_empty_content">近期无异常订单</string>
+    <string name="m4399_pay_history_hint_order_time">小贴士：这里只会显示近期的异常订单记录哦~</string>
+    <string name="m4399_pay_history_create">时间</string>
+    <string name="m4399_pay_history_pid">订单号</string>
+    <string name="m4399_pay_history_payable">金额</string>
+    <string name="m4399_pay_history_status">状态</string>
+    <string name="m4399_pay_history_time_fmt_after_today">MM月dd日\nHH:mm</string>
+    <string name="m4399_pay_history_time_fmt_today">HH:mm</string>
+    <string name="m4399_pay_history_time_fmt_yesterday">昨天HH:mm</string>
+    <string name="m4399_pay_history_editor_paste_toast">订单号已复制</string>
+
+</resources>

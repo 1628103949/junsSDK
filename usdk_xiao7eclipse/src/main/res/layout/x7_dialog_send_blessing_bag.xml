@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/x7_ffffff_16_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/x7_dialog_send_blessing_bag_iv"
+                android:layout_width="46dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="48dp"
+                android:src="@drawable/x7_im_secret_blessing_bag" />
+
+            <TextView
+                android:id="@+id/x7_dialog_send_blessing_bag_des_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/x7_dialog_send_blessing_bag_iv"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/x7base_gray_33"
+                android:textSize="17dp" />
+
+            <CheckBox
+                android:id="@+id/x7_im_send_blessing_bag_no_prompt_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/x7_dialog_send_blessing_bag_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:button="@drawable/x7_checkbox_circle_button"
+                android:text="@string/x7_im_no_longer_prompt_today"
+                android:textColor="@color/x7base_gray_99"
+                android:paddingLeft="5dp"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:id="@+id/x7_im_send_blessing_bag_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/x7_im_send_blessing_bag_no_prompt_cb"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/x7_im_send_blessing_bag_ensure_cl"
+                    android:layout_width="225dp"
+                    android:layout_height="53dp"
+                    android:background="@drawable/x7base_im_bg_solid_green_12cdb0_corner_50"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/x7_im_send_blessing_bag_ensure_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/x7_im_send_send_blessing_bags"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/x7_im_send_blessing_bag_shutdown_tv"
+                        app:layout_constraintStart_toStartOf="@+id/guideline3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/x7_im_send_blessing_bag_shutdown_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="(20s)"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/x7_im_send_blessing_bag_ensure_tv"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                        app:layout_constraintStart_toEndOf="@+id/x7_im_send_blessing_bag_ensure_tv" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guideline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="112dp" />
+                </android.support.constraint.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/x7_im_send_blessing_bag_cancle_tv"
+                    android:layout_width="267dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textColor="@color/x7base_green_12cdb0"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

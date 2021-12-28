@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+    android:orientation="horizontal"
+    tools:ignore="MissingDefaultResource">
+
+
+    <ImageView
+        android:id="@+id/iv_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:src="@drawable/x7_act_title_back" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:lines="1"
+        android:text="账号"
+        android:textColor="@color/x7_green_12cdb0"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_title_right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="@drawable/x7_activity_right_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableRight="@drawable/x7_title_right_arrow_port"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:minHeight="31dp"
+            android:textColor="@color/x7_white"
+            android:textSize="12sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title_right"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:textColor="@color/x7_text_green"
+        android:textSize="10sp"
+        android:visibility="gone" />
+</RelativeLayout>

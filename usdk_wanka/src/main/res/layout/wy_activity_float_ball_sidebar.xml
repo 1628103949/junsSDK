@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/wy_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/wy_ly_float_ball"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@id/wy_float_web_view_ly"
+            android:layout_width="420dp"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@id/wy_float_ball_wv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@id/wy_float_ball_error_Iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/wy_iv_float_ball_error"
+                android:visibility="gone"/>
+
+            <ProgressBar
+                android:id="@id/wy_float_ball_progress"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/wy_float_ball_pro"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="22dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@id/wy_float_ball_display_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/wy_iv_shark_display"
+                android:visibility="gone"/>
+            <View
+                android:layout_width="7dp"
+                android:layout_height="match_parent"
+                android:background="#FAF6F5"/>
+
+            <ImageView
+                android:id="@id/wy_float_ball_close_iv"
+                android:layout_width="22dp"
+                android:layout_height="74.5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/wy_iv_float_right" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#F0E9E6"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/wy_ly_float_ball_close"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@id/wy_ly_shark_show"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/wy_shape_corner"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@id/wy_ly_shark_show_close_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/wy_iv_close_ball"
+            android:layout_gravity="right"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/wy_iv_shark_show"
+            />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="摇一摇显示悬浮窗"/>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/wy_float_ball_wx_login_progress_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:indeterminateDrawable="@drawable/wy_float_ball_pro"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_weight="0.7"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--</LinearLayout>-->
+</RelativeLayout>

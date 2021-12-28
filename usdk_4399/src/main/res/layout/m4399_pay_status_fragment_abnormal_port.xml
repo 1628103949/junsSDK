@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/m4399.Pay.Page"
+    android:baselineAligned="false">
+
+    <include layout="@layout/m4399_ope_support_nav_bar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="@dimen/m4399_activity_spacing_h"
+        android:layout_marginTop="@dimen/m4399_activity_title_height"
+        android:layout_marginRight="@dimen/m4399_activity_spacing_h"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="37dp"
+            android:paddingBottom="23dp"
+            tools:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/m4399_pay_status_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                tools:src="@drawable/m4399_pay_status_processing_ic" />
+
+            <TextView
+                android:id="@+id/m4399_pay_status_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                tools:text="订单处理中"
+                tools:textColor="@color/m4399_pay_status_processing_color" />
+
+            <TextView
+                android:id="@+id/m4399_pay_status_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1"
+                android:textColor="@color/m4399_pay_status_processing_color"
+                android:textSize="13sp"
+                tools:text="由于网络原因，订单或有延迟，稍候将游戏中通知" />
+        </LinearLayout>
+
+        <include layout="@layout/m4399_ope_support_divider_h" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m4399_pay_status_abnormal_commodity_label"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/m4399_pay_status_order_commodity"
+                style="@style/m4399.Pay.Label.Value"
+                tools:text="圣诞大礼包" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/m4399_pay_pid_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m4399_pay_status_abnormal_pid_label"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/m4399_pay_status_order_pid"
+                style="@style/m4399.Pay.Label.Value"
+                tools:text="2021 123123 3007" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/m4399_pay_status_warm_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/m4399_pay_status_processing_details"
+            android:textColor="#bbbbbb"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#f2f2f6"
+        android:paddingLeft="@dimen/m4399_activity_spacing_h"
+        android:paddingRight="@dimen/m4399_activity_spacing_h">
+
+        <TextView
+            android:id="@+id/m4399_pay_status_tool_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableStart="@drawable/m4399_pay_ic_faq_blue"
+            android:drawableLeft="@drawable/m4399_pay_ic_faq_blue"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="@string/m4399_ope_common_problems"
+            android:textColor="@color/m4399_rec_color_blue_33bdfc"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m4399_pay_status_hotline_label"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/m4399_pay_status_tool_hotline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:textColor="@color/m4399_rec_color_blue_33bdfc"
+                android:textSize="13sp"
+                tools:text="400-633-4399转3" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

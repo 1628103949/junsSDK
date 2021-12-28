@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/tv_gift_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/x7_gift_for_limit_time"
+        android:textColor="#999999"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_gift_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x7_gift_item_height"
+        android:layout_below="@+id/iv_gift_vip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/x7_bg_black_solid_52000000_corner_9"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_gift_click"
+            android:layout_centerVertical="true"
+            >
+            <TextView
+                android:id="@+id/tv_gift_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tv_gift_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_gift_name"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#999"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_gift_gift_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_gift_name"
+                android:layout_alignTop="@+id/tv_gift_state"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/tv_gift_state"
+                android:textColor="#999"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_gift_click"
+            android:layout_width="52dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:focusable="false"
+            android:gravity="center"
+            android:textColor="#ff0700"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/iv_gift_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_gift_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="-6dp"
+        android:background="@drawable/x7_gift_vip"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:text="@string/x7_vip_gift"
+        android:textColor="#fff"
+        android:textSize="7dp"
+        android:visibility="visible" />
+</RelativeLayout>
+

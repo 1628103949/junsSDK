@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/wy_mqtt_marquee_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@id/wy_mqtt_web_view_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@id/wy_mqtt_web_outside_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:id="@id/wy_mqtt_web_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            tools:ignore="WebViewLayout">
+            <WebView
+                android:id="@id/wy_mqtt_web_wv"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/wy_full_transparent"/>
+
+            <ImageView
+                android:id="@id/wy_mqtt_web_close"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|top"
+                android:layout_margin="20dp"
+                android:src="@drawable/wy_iv_close_ball" />
+        </FrameLayout>
+
+
+
+        <ProgressBar
+            android:id="@id/wy_float_ball_progress"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/wy_float_ball_pro"/>
+    </FrameLayout>
+
+</FrameLayout>

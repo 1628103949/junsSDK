@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/com_tencent_ysdk_float_window_tab_layout"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp">
+
+    <ImageView
+            android:id="@+id/com_tencent_ysdk_icon_item_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp" />
+
+    <TextView
+            android:id="@+id/com_tencent_ysdk_icon_item_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/com_tencent_ysdk_icon_item_icon"
+            android:layout_centerVertical="true"
+            android:textColor="#A6000000"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+</RelativeLayout>

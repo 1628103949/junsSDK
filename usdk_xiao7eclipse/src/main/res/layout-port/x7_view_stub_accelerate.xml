@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/speed_cs"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_suggestion"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/x7_theme_back_drawable"
+        android:drawableTop="@drawable/x7_suggestion"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/x7_suggestion"
+        android:textColor="@color/x7_theme_text_color"
+        android:textSize="9dp"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/tv_suggest_speed_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_suggest_speed_left"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/x7_flat_left"
+        android:gravity="center"
+        android:textColor="@color/base_black_3"
+        android:textSize="10dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/iv_close_suggest_left"
+        app:layout_constraintTop_toTopOf="@+id/ll_speed" />
+
+    <ImageView
+        android:id="@+id/iv_close_suggest_left"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="19dp"
+        android:padding="2dp"
+        android:src="@drawable/x7_close_icon"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_suggest_speed_left"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_speed"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/x7_theme_back_drawable"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/tv_suggestion"
+        app:layout_constraintStart_toStartOf="@+id/tv_suggestion"
+        app:layout_constraintTop_toBottomOf="@+id/tv_suggestion"
+        app:layout_goneMarginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/speed_up_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/x7_icon_speed_up" />
+
+        <com.smwl.smsdk.myview.progress.VerticalRangeSeekBar
+            android:id="@+id/seek_bar_speed"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            app:rsb_gravity="center"
+            app:rsb_indicator_padding_bottom="0dp"
+            app:rsb_indicator_padding_top="0dp"
+            app:rsb_indicator_text_orientation="horizontal"
+            app:rsb_max="10"
+            app:rsb_mode="single"
+            app:rsb_progress_color="@color/x7_theme_text_color"
+            app:rsb_progress_default_color="@color/white"
+            app:rsb_progress_height="5dp"
+            app:rsb_thumb_drawable="@drawable/x7_speed_ball"
+            app:rsb_thumb_height="30dp"
+            app:rsb_thumb_width="30dp"
+            app:rsb_tick_mark_mode="one_tick"
+            app:rsb_tick_mark_text_size="10dp" />
+
+        <ImageView
+            android:id="@+id/speed_cut_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="18dp"
+            android:src="@drawable/x7_icon_speed_cut" />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="@dimen/x7_line_dimen"
+            android:background="@color/x7_horizontal_divider_line" />
+
+        <TextView
+            android:id="@+id/tv_pause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/x7_pause"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/x7_speed_pause"
+            android:textColor="@color/x7_theme_text_color"
+            android:textSize="9dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_suggest_speed_right"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/x7_flat_right"
+        android:gravity="center"
+        android:textColor="@color/base_black_3"
+        android:textSize="10dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/ll_speed"
+        app:layout_constraintTop_toTopOf="@id/ll_speed" />
+
+    <ImageView
+        android:id="@+id/iv_close_suggest_right"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="19dp"
+        android:padding="2dp"
+        android:src="@drawable/x7_close_icon"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_suggest_speed_right"
+        app:layout_constraintEnd_toEndOf="@+id/tv_suggest_speed_right"
+        app:layout_constraintStart_toEndOf="@+id/tv_suggest_speed_right" />
+
+</android.support.constraint.ConstraintLayout>

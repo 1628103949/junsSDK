@@ -26,6 +26,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class LongYue extends OPlatformSDK {
     private static final String TAG = "LongYue";
@@ -105,6 +106,31 @@ public class LongYue extends OPlatformSDK {
                 }
             }
         });
+    }
+
+    @Override
+    public void submitInfo(Activity mainAct, HashMap<String, String> submitInfo) {
+        super.submitInfo(mainAct, submitInfo);
+        if(submitInfo.get(JunSConstants.SUBMIT_TYPE).equals(JunSConstants.SUBMIT_TYPE_CREATE)){
+            Map<String, Object> params = new HashMap<>();
+            params.put("server_id", submitInfo.get(JunSConstants.SUBMIT_SERVER_ID));                // 服务器ID String
+            params.put("server_name", submitInfo.get(JunSConstants.SUBMIT_SERVER_NAME));            // 服务器名 String
+            params.put("role_id", submitInfo.get(JunSConstants.SUBMIT_ROLE_ID));                    // 角色ID String
+            params.put("role_name", submitInfo.get(JunSConstants.SUBMIT_ROLE_NAME));                // 角色名 String
+            params.put("role_level", submitInfo.get(JunSConstants.SUBMIT_ROLE_LEVEL));              // 角色等级 String
+            params.put("balance", submitInfo.get(JunSConstants.SUBMIT_BALANCE));                    // 货币数量 String
+            LrSmallApi.postEvent(mainAct, "createRole", params);
+        }else if(submitInfo.get(JunSConstants.SUBMIT_TYPE).equals(JunSConstants.SUBMIT_TYPE_ENTER)){
+            Map<String, Object> params = new HashMap<>();
+            params.put("server_id", submitInfo.get(JunSConstants.SUBMIT_SERVER_ID));                // 服务器ID String
+            params.put("server_name", submitInfo.get(JunSConstants.SUBMIT_SERVER_NAME));            // 服务器名 String
+            params.put("role_id", submitInfo.get(JunSConstants.SUBMIT_ROLE_ID));                    // 角色ID String
+            params.put("role_name", submitInfo.get(JunSConstants.SUBMIT_ROLE_NAME));                // 角色名 String
+            params.put("role_level", submitInfo.get(JunSConstants.SUBMIT_ROLE_LEVEL));              // 角色等级 String
+            params.put("balance", submitInfo.get(JunSConstants.SUBMIT_BALANCE));                    // 货币数量 String
+            LrSmallApi.postEvent(mainAct, "enterServer", params);
+        }
+
     }
 
     @Override

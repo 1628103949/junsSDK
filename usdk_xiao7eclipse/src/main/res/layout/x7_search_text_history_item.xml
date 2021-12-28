@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/head_portrait_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/sender_info_ll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toRightOf="@+id/head_portrait_iv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/head_portrait_iv">
+
+        <com.netease.nim.uikit.x7.myview.X7TextViewBorder
+            android:id="@+id/x7_user_flag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="5dip"
+            android:paddingTop="1dip"
+            android:paddingRight="5dip"
+            android:paddingBottom="1dip"
+            android:textColor="@color/white"
+            android:textSize="9dp"
+            app:styleIndex="1" />
+
+        <TextView
+            android:id="@+id/nickname_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/x7base_gray_99"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/send_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="2020-10-24"
+            android:textColor="@color/base_black_9"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/history_message_content_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="26dp"
+        android:textColor="@color/base_black_3"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/sender_info_ll"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sender_info_ll" />
+
+    <View
+        android:id="@+id/gray_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/im_bg_solid_gray_f9f9f9_corner_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/history_message_content_tv"
+        app:layout_constraintRight_toRightOf="@+id/sender_info_ll"
+        app:layout_constraintTop_toBottomOf="@+id/history_message_content_tv"
+        app:layout_goneMarginTop="16dp" />
+</android.support.constraint.ConstraintLayout>

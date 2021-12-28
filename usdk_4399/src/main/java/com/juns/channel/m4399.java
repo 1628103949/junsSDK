@@ -13,9 +13,7 @@ import com.juns.sdk.core.platform.OPlatformUtils;
 import com.juns.sdk.core.platform.event.OExitEv;
 import com.juns.sdk.core.platform.event.OInitEv;
 import cn.m4399.operate.OperateCenter;
-import cn.m4399.operate.OperateCenter.OnCheckFinishedListener;
-import cn.m4399.operate.OperateCenter.OnCheckPhoneBindStateListener;
-import cn.m4399.operate.OperateCenter.OnDownloadListener;
+
 import cn.m4399.operate.OperateCenter.OnLoginFinishedListener;
 import cn.m4399.operate.OperateCenter.OnQuitGameListener;
 import cn.m4399.operate.OperateCenter.OnRechargeFinishedListener;
@@ -187,7 +185,7 @@ public class m4399 extends OPlatformSDK {
 
         try {
             data = new JSONObject(mData);
-            mOpeCenter.recharge(context,
+            mOpeCenter.recharge((Activity) context,
                     (int)Float.parseFloat(payParams.get(JunSConstants.PAY_MONEY)),             //充值金额（元）
                     moid,           //游戏方订单号
                     data.getString("productname"),    //商品名称

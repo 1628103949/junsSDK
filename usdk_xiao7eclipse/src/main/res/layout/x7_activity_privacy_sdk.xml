@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_privacy_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="17dp"
+        android:text="@string/x7_anti_privacy"
+        android:textSize="20dp"
+        android:textColor="#12cdb0"
+        />
+    <!--<include
+        android:id="@+id/register_title"
+        x7_layout="@x7_layout/x7_activity_title_2"
+        />-->
+    <!--com.smwl.smsdk.myview.My-->
+    <WebView
+        android:id="@+id/webview"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/ck_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_user_register"
+            android:button="@drawable/x7_selection_for_agreement"
+            android:checked="false" />
+
+        <TextView
+            android:id="@+id/tv_user_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/x7_agreenment_clause"
+            android:textColor="#a9a9a9"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/tv_count_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:textColor="#12cdb0"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:layout_width="@dimen/m4399_dialog_width_normal">
+
+    <TextView
+        style="@style/m4399.Dialog.Title"
+        android:text="@string/m4399_pay_captcha_dialog_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/m4399_dialog_spacing_h"
+        android:paddingRight="@dimen/m4399_dialog_spacing_h">
+
+        <EditText
+            android:id="@+id/m4399_pay_captcha_edt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/m4399_ope_verify_shape_editor"
+            android:hint="@string/m4399_pay_captcha_dialog_title"
+            android:inputType="text"
+            android:paddingStart="@dimen/m4399_spacing_8"
+            android:paddingLeft="@dimen/m4399_spacing_8"
+            android:textColor="@color/m4399_ope_color_333333"
+            android:textColorHint="#666666"
+            android:textSize="@dimen/m4399_font_14"
+            tools:ignore="Autofill,RtlHardcoded,RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/m4399_pay_captcha_iv"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/m4399_spacing_8"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="@dimen/m4399_spacing_8"
+            android:layout_marginBottom="4dp"
+            android:adjustViewBounds="true"
+            android:background="#f5f5f5"
+            android:scaleType="fitXY"
+            tools:ignore="contentDescription" />
+
+        <ImageView
+            android:id="@+id/m4399_pay_refresh_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@drawable/m4399_ope_support_nav_icon_bg"
+            android:src="@drawable/m4399_ope_ic_refresh"
+            tools:ignore="contentDescription" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/m4399_pay_captcha_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/m4399_spacing_8"
+        android:paddingLeft="@dimen/m4399_dialog_spacing_h"
+        android:paddingRight="@dimen/m4399_dialog_spacing_h"
+        android:text="@string/m4399_pay_captcha_error_length"
+        android:textColor="#ffad2d"
+        android:textSize="@dimen/m4399_font_12" />
+
+    <include layout="@layout/m4399_ope_support_dialog_couple_actions" />
+
+</LinearLayout>

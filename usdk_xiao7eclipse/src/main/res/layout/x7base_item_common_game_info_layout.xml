@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/item_common_gameInfo_gameIcon_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/icon_iv"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/downing_iv_delete"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/x7base_download_delete"
+            android:visibility="gone" />
+
+
+        <include
+            android:id="@+id/live_ll"
+            layout="@layout/x7base_live_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/icon_iv"
+            android:layout_alignBottom="@+id/icon_iv"
+            android:layout_marginBottom="14dp"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/live_time_ll"
+            layout="@layout/x7base_live_time_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/icon_iv"
+            android:layout_alignBottom="@+id/icon_iv"
+            android:layout_marginBottom="14dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gameFlag_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/gameName_tv"
+        app:layout_constraintLeft_toRightOf="@+id/item_common_gameInfo_gameIcon_rl"
+        app:layout_constraintTop_toTopOf="@+id/gameName_tv">
+
+        <com.smwl.x7market.component_base.myview.TextViewBorder
+            android:id="@+id/gameFlag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingLeft="5dip"
+            android:paddingTop="1.5dip"
+            android:paddingRight="5dip"
+            android:paddingBottom="1.5dip"
+            android:text="H5"
+            android:textColor="@color/x7base_text_white"
+            android:textSize="10dp"
+            android:visibility="gone"
+            app:borderColor="@color/x7base_download_orange"
+            app:styleIndex="1" />
+
+        <ImageView
+            android:id="@+id/cloud_game_flag_iv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/x7base_icon_cloud_game_logo"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/gameName_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="17dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/x7base_black_3"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toRightOf="@+id/gameFlag_rl"
+        app:layout_constraintRight_toLeftOf="@+id/item_common_gameInfo_right_rl"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginLeft="13dp" />
+
+    <TextView
+        android:id="@+id/playNum_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/x7base_black_9"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/item_common_gameInfo_gameIcon_rl"
+        app:layout_constraintTop_toBottomOf="@+id/gameName_tv" />
+
+    <TextView
+        android:id="@+id/game_attribute_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/x7base_black_9"
+        android:textSize="10dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@+id/playNum_tv"
+        app:layout_constraintRight_toLeftOf="@+id/item_common_gameInfo_right_rl"
+        app:layout_constraintTop_toBottomOf="@+id/gameName_tv"
+        app:layout_goneMarginRight="90dp"
+        app:layout_goneMarginTop="23dp" />
+
+    <LinearLayout
+        android:id="@+id/game_second_line_label_ll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@id/playNum_tv"
+        app:layout_constraintTop_toBottomOf="@+id/playNum_tv">
+
+
+        <TextView
+            android:id="@+id/fuTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/x7base_black_9"
+            android:textSize="10dp"
+            app:layout_goneMarginTop="23dp" />
+
+        <TextView
+            android:id="@+id/fuName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/x7base_black_9"
+            android:textSize="10dp"
+            app:layout_goneMarginTop="23dp" />
+
+        <LinearLayout
+            android:id="@+id/item_commonGameInfo_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_goneMarginLeft="13dp">
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/x7base_gray_f5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/item_common_gameInfo_gameIcon_rl"
+        app:layout_constraintTop_toBottomOf="@+id/game_second_line_label_ll" />
+
+    <!---右侧的所有控件，主要是中间部分的宽度要最大，且不能遮住右边的控件-->
+    <RelativeLayout
+        android:id="@+id/item_common_gameInfo_right_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_common_gameInfo_gameIcon_rl">
+
+        <!--BT游戏的标签-->
+        <TextView
+            android:id="@+id/bt_game_label_tv"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_solid_orange_ff9900_corner_50"
+            android:gravity="center"
+            android:maxLength="3"
+            android:text=""
+            android:textColor="@color/base_white"
+            android:textSize="10dp"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/discount_cl"
+            layout="@layout/x7base_item_new_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/rightArrows"
+            android:layout_width="10dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/x7base_right_arrows"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_show_game_foreign"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="9dp"
+            android:src="@drawable/x7base_icon_foregin"
+            android:visibility="gone" />
+        <!---下载按钮-->
+        <include
+            android:id="@+id/right_downLoad_rl"
+            layout="@layout/x7base_layout_common_game_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
+

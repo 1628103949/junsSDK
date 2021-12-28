@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@android:color/white" />
+            <corners
+                android:bottomRightRadius="5dp"
+                android:topRightRadius="5dp" />
+            <size
+                android:width="79dp"
+                android:height="65dp" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="60dp"
+        android:right="187dp">
+        <shape>
+            <size
+                android:width="4.5dp"
+                android:height="4.5dp" />
+            <solid android:color="@color/m4399_ope_coupon_dialog_bg_end" />
+            <corners android:bottomRightRadius="60dp" />
+        </shape>
+    </item>
+
+    <item
+        android:right="187dp"
+        android:top="60dp">
+        <shape>
+            <size
+                android:width="4.5dp"
+                android:height="4.5dp" />
+            <solid android:color="@color/m4399_ope_coupon_dialog_bg_end" />
+            <corners android:topRightRadius="60dp" />
+        </shape>
+    </item>
+</layer-list>

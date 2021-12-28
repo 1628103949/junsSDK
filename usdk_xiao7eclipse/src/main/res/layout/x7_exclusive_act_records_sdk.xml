@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/x7_exclusive_act_records_title"
+        layout="@layout/x7_activity_title_5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <com.smwl.smsdk.myview.XListView
+        android:id="@+id/x7_exclusive_act_records_xlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/recycle_game_voucher_explain_tv" />
+
+
+    <!--没有记录的提示-->
+    <LinearLayout
+        android:id="@+id/x7_exclusive_activity_no_records_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/x7_exclusive_activity_records_ll"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/x7_do_fail"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="@string/x7_exclusive_no_records"/>
+    </LinearLayout>
+</LinearLayout>

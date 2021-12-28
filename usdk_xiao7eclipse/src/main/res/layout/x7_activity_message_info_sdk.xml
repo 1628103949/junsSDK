@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_webview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/webView_message_title"
+        layout="@layout/x7_activity_title_2"
+        />
+
+    <com.smwl.smsdk.myview.MyWebView
+        android:id="@+id/wv_message_info_details"
+        android:layout_below="@+id/webView_message_title"
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:scrollbars="none"
+        />
+</RelativeLayout>

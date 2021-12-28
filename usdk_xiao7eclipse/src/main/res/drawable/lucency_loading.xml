@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/jiazai1"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/jiazai2"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/jiazai3"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/jiazai4"
+        android:duration="100"/>
+<!--     <item
+        android:drawable="@drawable/jiazai5"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/jiazai6"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/jiazai7"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/jiazai8"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/jiazai9"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/jiazai10"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/jiazai11"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/jiazai12"
+        android:duration="100"/> -->
+       
+
+</animation-list>

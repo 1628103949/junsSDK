@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl_user_centre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/tab_container"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/tab_message"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:duplicateParentState="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/tab_message_bg_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/x7_user_radiobutton_bg" />
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/x7_selector_tab_message" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_gift"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:duplicateParentState="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/x7_user_radiobutton_bg" />
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/x7_selector_tab_gift" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_voucher"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:duplicateParentState="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/x7_user_radiobutton_bg" />
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/x7_selector_tab_coupon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_user_center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:duplicateParentState="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/tab_user_center_bg_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/x7_user_radiobutton_corner_10_bg" />
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/x7_selector_tab_user" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/mpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tab_container" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_centre_unread"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_message_unread"
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="6dp"
+                android:scaleType="center"
+                android:src="@drawable/x7_red_dot"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_gift_unread"
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="6dp"
+                android:scaleType="center"
+                android:src="@drawable/x7_red_dot"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_voucher_unread"
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="6dp"
+                android:scaleType="center"
+                android:src="@drawable/x7_red_dot"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_user_unread"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="6dp"
+                android:scaleType="center"
+                android:src="@drawable/x7_red_dot"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

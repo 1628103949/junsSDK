@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical">
+
+    <!--2.纯文本展示的公告-->
+    <TextView
+        android:id="@+id/item_noticeDetailList_textType_tv"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:layout_height="wrap_content" />
+
+    <!--3，html样式展示的公告-->
+
+    <com.smwl.smsdk.myview.MyWebView
+        android:id="@+id/item_noticeDetailList_htmlType_webView"
+        android:layout_marginTop="15dp"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

@@ -18,6 +18,8 @@ import com.juns.sdk.core.sdk.ads.JunsAds;
 import com.juns.sdk.core.sdk.common.HeartBeat;
 import com.juns.sdk.core.sdk.common.InitInfoCallBack;
 import com.juns.sdk.core.sdk.common.InitInfoDialog;
+import com.juns.sdk.core.sdk.config.SDKConfig;
+import com.juns.sdk.core.sdk.event.EvExit;
 import com.juns.sdk.core.sdk.event.EvInit;
 import com.juns.sdk.core.sdk.event.EvLogin;
 import com.juns.sdk.core.sdk.event.EvPay;
@@ -111,60 +113,30 @@ public class SDKCore implements IJunSSdk {
         mMainAct = mainAct;
         gCallback.setInitCallback(callback);
         SDKData.setSdkAppKey(appKey);
-
-//        if (SDKData.getSdkFirstActive()) {
-//            //发起请求获取oaid
-//            try {
-//                if (TextUtils.isEmpty(SDKData.getSdkOaid())) {
-//                    OaidHelper.start(mainAct);
-////                    MiIdHelper miIdHelper = new MiIdHelper();
-////                    miIdHelper.startGetOaid(mainAct);
-//                }
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//            //获取 Android ID
-//            if (TextUtils.isEmpty(SDKData.getSdkAndroidId())) {
-//                String androidId = Settings.System.getString(getMainAct().getContentResolver(), Settings.System.ANDROID_ID);
-//                SDKData.setSdkAndroidId(androidId);
-//            }
-//        }
-
-//        try {
-//            if (!TextUtils.isEmpty(SDKData.getUpdateApkVersion())) {
-//                String currentApkVersion = AppUtils.getAppVersionName(mainAct.getPackageName());
-//                if (!SDKData.getUpdateApkVersion().equals(currentApkVersion)) {
-//                    //删除旧安装文件
-//                    FileUtils.deleteFile(SDKData.getUpdateApkPath());
-//                }
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-
-
         NetCheck.checkNet(mainAct, new NetCheck.NetFlowCallback() {
             @Override
             public void onSuccess() {
 
-                if(!SDKData.getSdkAgree()){
-                    InitInfoDialog.show(mainAct, new InitInfoCallBack() {
-                        @Override
-                        public void toContinue() {
-                            SDKData.setSdkAgree(true);
-                            requestPhonePermission();
-                        }
+                if(SDKApplication.getSdkConfig().isAgreement()){
+                    if(!SDKData.getSdkAgree()){
+                        InitInfoDialog.show(mainAct, new InitInfoCallBack() {
+                            @Override
+                            public void toContinue() {
+                                SDKData.setSdkAgree(true);
+                                requestPhonePermission();
+                            }
 
-                        @Override
-                        public void toExit() {
-
-                        }
-                    });
+                            @Override
+                            public void toExit() {
+                                Bus.getDefault().post(EvExit.getSucc());
+                            }
+                        });
+                    }else {
+                        requestPhonePermission();
+                    }
                 }else {
-                    requestSDCardPermission();
+                    requestPhonePermission();
                 }
-
-                //requestSDCardPermission();
             }
 
             @Override
@@ -202,7 +174,8 @@ public class SDKCore implements IJunSSdk {
 //                                        shouldRequest.again(true);
 //                                    }
 //                                });
-                        requestSDCardPermission();
+                        shouldRequest.again(false);
+                        //requestSDCardPermission();
                     }
                 })
                 .callback(new PermissionUtils.FullCallback() {
@@ -214,26 +187,10 @@ public class SDKCore implements IJunSSdk {
                     @Override
                     public void onDenied(List<String> permissionsDeniedForever,
                                          List<String> permissionsDenied) {
-                        if (permissionsDeniedForever != null && !permissionsDeniedForever.isEmpty()) {
-//                            ViewUtils.showConfirmDialog(mMainAct,
-//                                    mMainAct.getString(ResUtil.getStringID("juns_request_permission", mMainAct)),
-//                                    mMainAct.getString(ResUtil.getStringID("juns_device_permission_rationale_message", mMainAct)),
-//                                    false,
-//                                    new ConfirmDialog.ConfirmCallback() {
-//                                        @Override
-//                                        public void onCancel() {
-//                                            mMainAct.finish();
-//                                        }
-//
-//                                        @Override
-//                                        public void onConfirm() {
-//                                            PermissionUtils.launchAppDetailsSettings(mMainAct, JUNS_PHONE_PERMISSION);
-//                                        }
-//                                    });
-                            requestSDCardPermission();
-                        } else {
-                            requestPhonePermission();
-                        }
+                        requestSDCardPermission();
+//                        if (permissionsDeniedForever != null && !permissionsDeniedForever.isEmpty()) {
+//                            requestSDCardPermission();
+//                        }
                     }
                 })
                 .request();
@@ -244,21 +201,24 @@ public class SDKCore implements IJunSSdk {
                 .rationale(new PermissionUtils.OnRationaleListener() {
                     @Override
                     public void rationale(final ShouldRequest shouldRequest) {
-                        ViewUtils.showConfirmDialog(mMainAct,
-                                mMainAct.getString(ResUtil.getStringID("juns_request_permission", mMainAct)),
-                                mMainAct.getString(ResUtil.getStringID("juns_sdcard_permission_rationale_message", mMainAct)),
-                                false,
-                                new ConfirmDialog.ConfirmCallback() {
-                                    @Override
-                                    public void onCancel() {
-                                        shouldRequest.again(true);
-                                    }
-
-                                    @Override
-                                    public void onConfirm() {
-                                        shouldRequest.again(true);
-                                    }
-                                });
+//                        ViewUtils.showConfirmDialog(mMainAct,
+//                                mMainAct.getString(ResUtil.getStringID("juns_request_permission", mMainAct)),
+//                                mMainAct.getString(ResUtil.getStringID("juns_sdcard_permission_rationale_message", mMainAct)),
+//                                false,
+//                                new ConfirmDialog.ConfirmCallback() {
+//                                    @Override
+//                                    public void onCancel() {
+//                                        shouldRequest.again(true);
+//                                    }
+//
+//                                    @Override
+//                                    public void onConfirm() {
+//                                        shouldRequest.again(true);
+//                                    }
+//                                });
+                        //ToastUtil.showLong(mMainAct,"没有获取到读写手机存储权限，如无法正常游戏，请手动进入设置开启。");
+                        //doInitFlow();
+                        shouldRequest.again(false);
                     }
                 })
                 .callback(new PermissionUtils.FullCallback() {
@@ -270,25 +230,28 @@ public class SDKCore implements IJunSSdk {
                     @Override
                     public void onDenied(List<String> permissionsDeniedForever,
                                          List<String> permissionsDenied) {
-                        if (permissionsDeniedForever != null && !permissionsDeniedForever.isEmpty()) {
-                            ViewUtils.showConfirmDialog(mMainAct,
-                                    mMainAct.getString(ResUtil.getStringID("juns_request_permission", mMainAct)),
-                                    mMainAct.getString(ResUtil.getStringID("juns_sdcard_permission_rationale_message", mMainAct)),
-                                    false,
-                                    new ConfirmDialog.ConfirmCallback() {
-                                        @Override
-                                        public void onCancel() {
-                                            mMainAct.finish();
-                                        }
-
-                                        @Override
-                                        public void onConfirm() {
-                                            PermissionUtils.launchAppDetailsSettings(mMainAct, JUNS_SDCARD_PERMISSION);
-                                        }
-                                    });
-                        } else {
-                            requestSDCardPermission();
-                        }
+                        doInitFlow();
+//                        if (permissionsDeniedForever != null && !permissionsDeniedForever.isEmpty()) {
+////                            ViewUtils.showConfirmDialog(mMainAct,
+////                                    mMainAct.getString(ResUtil.getStringID("juns_request_permission", mMainAct)),
+////                                    mMainAct.getString(ResUtil.getStringID("juns_sdcard_permission_rationale_message", mMainAct)),
+////                                    false,
+////                                    new ConfirmDialog.ConfirmCallback() {
+////                                        @Override
+////                                        public void onCancel() {
+////                                            mMainAct.finish();
+////                                        }
+////
+////                                        @Override
+////                                        public void onConfirm() {
+////                                            PermissionUtils.launchAppDetailsSettings(mMainAct, JUNS_SDCARD_PERMISSION);
+////                                        }
+////                                    });
+//                            //ToastUtil.showLong(mMainAct,"没有获取到读写手机存储权限，如无法正常游戏，请手动进入设置开启。");
+//                            doInitFlow();
+//                        } else {
+//                            requestSDCardPermission();
+//                        }
                     }
                 })
                 .request();
@@ -301,8 +264,6 @@ public class SDKCore implements IJunSSdk {
                 if (TextUtils.isEmpty(SDKData.getSdkOaid())) {
                     OaidHelper.init(mMainAct);
                     OaidHelper.start(mMainAct);
-//                    MiIdHelper miIdHelper = new MiIdHelper();
-//                    miIdHelper.startGetOaid(mainAct);
                 }
             } catch (Exception e) {
                 e.printStackTrace();

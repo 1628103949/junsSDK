@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_activity_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:background="@drawable/x7_bg_ff000000_corner_7"
+    android:paddingHorizontal="19dp"
+    android:paddingVertical="13dp">
+
+    <TextView
+        android:id="@+id/item_activity_name_tv"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/gray_ee"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/item_activity_require_tv"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_activity_name_tv"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#bcbcbc"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/item_join_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:textColor="@color/color_12cdb0"
+        android:layout_toLeftOf="@+id/item_join_iv"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:id="@+id/item_join_iv"
+        android:layout_width="7dp"
+        android:layout_height="11dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"/>
+
+</RelativeLayout>

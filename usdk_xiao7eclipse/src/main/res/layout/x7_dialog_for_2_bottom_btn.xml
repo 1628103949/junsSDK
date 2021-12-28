@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_sure_cancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tv_switch_account_hint"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_cancel_for_switch_account"
+        android:layout_width="83dp"
+        android:layout_height="34dp"
+        android:background="@drawable/x7_edt_back_2"
+        android:gravity="center"
+        android:text="@string/x7_cancel"
+        android:textColor="#fff"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btn_sure_for_switch_account"
+        android:layout_width="83dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/x7_btn_back_selected_2"
+        android:gravity="center"
+        android:text="@string/x7_sure_to_add"
+        android:textColor="#fff"
+        android:textSize="16dp" />
+
+</LinearLayout>

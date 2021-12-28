@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="188dp"
+        android:layout_height="77dp"
+        android:background="@drawable/x7_bg_im_gift_award">
+
+        <TextView
+            android:text="@string/x7_IMGroup_giftAward"
+            android:textColor="@color/x7_white"
+            android:textSize="15sp"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="75dp"
+            android:lineSpacingExtra="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/layout_x7_yunXinGift_close_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:padding="8dp"
+            android:src="@drawable/x7_iv_im_gift_award_close"/>
+    </RelativeLayout>
+
+</LinearLayout>

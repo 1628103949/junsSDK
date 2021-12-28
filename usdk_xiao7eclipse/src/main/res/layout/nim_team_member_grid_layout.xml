@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+        <include
+            layout="@layout/x7_top_title_toolbar_ll"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <!--顶部的搜索样式-->
+    <include
+        android:id="@+id/act_teamMember_search_rl"
+        layout="@layout/x7_top_search_rl"
+        android:layout_below="@+id/app_bar_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- style="@style/recycler_view"-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/teamMemberRecyclerView"
+        android:layout_below="@+id/act_teamMember_search_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<com.netease.nim.uikit.x7.myview.SideBar
+        android:id="@+id/act_teamMember_sideBar"
+        android:layout_width="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        android:layout_below="@+id/act_teamMember_search_rl"
+        android:layout_height="match_parent" />-->
+
+
+    <!--<ScrollView
+        style="@style/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_background"
+        android:fillViewport="true"
+        android:visibility="gone"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+    </ScrollView>-->
+</RelativeLayout>

@@ -46,6 +46,8 @@
     <activity android:include="false"
               android:name="com.vivo.unionsdk.ui.PermissionAlertActivity"/>
     <activity android:include="false"
+              android:name="com.vivo.unionsdk.ui.NonVivoPermissionActivity"/>
+    <activity android:include="false"
               android:name="com.alipay.sdk.auth.AuthActivity"/>
 
     <!--SDK含有功能时期声明 start-->
@@ -240,5 +242,17 @@
     <receiver android:include="false"
               android:name="com.vivo.account.base.accounts.VivoApkInstallRecevier"/>
     <!-- 更老版本声明 end -->
+    <!--    鉴权sdk start-->
+    <drawable android:include="false"
+        android:name="vivo_game_dialog_bg"/>
+    <drawable android:include="false"
+        android:name="vivo_game_dialog_cancel"/>
+    <drawable android:include="false"
+        android:name="vivo_game_dialog_ok"/>
+    <layout android:include="false"
+        android:name="vivo_game_common_dialog"/>
+    <style android:include="false"
+        android:name="vivo_game_common_dialog"/>
+    <!--    鉴权sdk end-->
 
 </tests>

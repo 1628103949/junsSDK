@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/frag_msg_first_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="13dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/x7_message_center"
+            android:textColor="#12cdb0"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/tv_user_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="@string/x7_enter_im"
+            android:drawableLeft="@drawable/x7_im"
+            android:background="@drawable/x7_tv_account_note_bg"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:drawablePadding="8dp"
+            android:textColor="#12cdb0"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <com.smwl.smsdk.myview.MyWebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frag_msg_first_ll"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        android:layout_marginTop="19dp"
+        android:scrollbarThumbVertical="@color/x7_background_gray"
+        android:scrollbarSize="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_un_read_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/x7_un_read_msg"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:textColor="@color/x7_white"
+        android:textSize="8sp"
+        android:visibility="gone"
+        />
+
+    <!--群聊礼包提醒布局-->
+    <include
+        android:id="@+id/fragment_msg_yunXinGift_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layout_below="@+id/frag_msg_first_ll"
+        layout="@layout/x7_layout_yunxin_gift_hint_ll" />
+</RelativeLayout>

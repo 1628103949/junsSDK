@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/x7_activity_title_5" />
+
+    <GridView
+        android:id="@+id/gv_voucher_scope"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:horizontalSpacing="15dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="14dp"
+        android:visibility="visible"
+        tools:listitem="@layout/x7_sdk_item_district_service_ll" />
+
+    <include layout="@layout/x7_money_voucher_notsell_ll"
+        android:visibility="gone"
+        />
+</RelativeLayout>

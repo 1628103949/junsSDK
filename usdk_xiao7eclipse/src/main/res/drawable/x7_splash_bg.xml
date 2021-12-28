@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/x7base_white" />
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/x7_splash"
+            android:gravity="center" />
+    </item>
+</layer-list>
+
+
+

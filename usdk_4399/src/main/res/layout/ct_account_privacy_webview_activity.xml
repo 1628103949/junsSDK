@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!-- 头部导航栏布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_activity_title_height"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@id/ct_account_webview_return"
+            style="@style/m4399.Nav.Icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/m4399_ope_support_nav_icon_bg"
+            android:src="@drawable/m4399_ope_support_ic_left_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/ct_account_title_privacy_activity"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@id/ct_account_progressbar_gradient"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:indeterminate="false"
+        android:interpolator="@android:interpolator/accelerate_cubic"
+        android:max="100"
+        android:progress="10"
+        android:progressDrawable="@drawable/m4399_ope_support_progress_bar_h_drawable" />
+
+    <!-- WebView 用于展示《服务与隐私协议》的内容-->
+    <WebView
+        android:id="@id/ct_account_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/m4399_activity_spacing_h"
+        android:paddingRight="@dimen/m4399_activity_spacing_h"
+        android:scrollbars="none" />
+</LinearLayout>

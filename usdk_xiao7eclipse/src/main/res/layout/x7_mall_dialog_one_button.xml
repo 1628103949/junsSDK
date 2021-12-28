@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="327dp"
+    android:layout_height="222dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/x7_mall_dialog_prop_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:id="@+id/x7_mall_dialog_prop_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:maxLines="2"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/x7_black_644f31"
+            android:textSize="8dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_height="13dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/x7_orange_fbcc55" />
+
+                <TextView
+                    android:id="@+id/x7_mall_dialog_prop_explain_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/x7_black_644f31" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/x7_mall_sure_tv"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/x7_mall_custom_gift_get_btn_bg"
+        android:gravity="center"
+        android:text="@string/x7_know"
+        android:textColor="@color/white"
+        android:textSize="11dp" />
+
+</LinearLayout>

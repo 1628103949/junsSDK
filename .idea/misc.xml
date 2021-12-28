@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable-v21/juns_cancel_btn.xml" value="0.1" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable-v21/juns_confirm_btn.xml" value="0.1" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/btn_init_agree.xml" value="0.1" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/btn_init_disagree.xml" value="0.1" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_check.xml" value="0.1" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_float_bg.xml" value="0.1" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_pay_bg.xml" value="0.1" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_switch_account_bg.xml" value="0.1648148148148148" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_update_process_bg.xml" value="0.1648148148148148" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_web_bg.xml" value="0.1648148148148148" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_web_title_bg.xml" value="0.1648148148148148" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_agree_dialog.xml" value="0.1984375" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_auto_login_dialog.xml" value="0.1984375" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_exit_dialog.xml" value="0.1984375" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_float_account_dialog.xml" value="0.1984375" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_float_ball_view.xml" value="0.1984375" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_float_hide_view.xml" value="0.1984375" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_float_item_view.xml" value="0.1984375" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_float_menu.xml" value="0.1984375" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_float_tips_dialog.xml" value="0.1984375" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_forget_pwd_view.xml" value="0.1984375" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_init_agree_dialog.xml" value="0.1984375" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_init_info.xml" value="0.1984375" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_init_info_confirm.xml" value="0.1984375" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_login_base_layout.xml" value="0.23802083333333332" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_login_main_dialog.xml" value="0.1984375" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_login_view.xml" value="0.23802083333333332" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_noti_dialog.xml" value="0.29483695652173914" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_notice_dialog.xml" value="0.29483695652173914" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_web_dialog.xml" value="0.271286231884058" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_web_service.xml" value="0.2427536231884058" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter_ads/src/main/res/drawable-v21/juns_cancel_btn.xml" value="0.30104166666666665" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter_ads/src/main/res/drawable-v21/juns_confirm_btn.xml" value="0.30104166666666665" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter_ads/src/main/res/drawable/btn_init_agree.xml" value="0.30104166666666665" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter_ads/src/main/res/drawable/btn_init_disagree.xml" value="0.30104166666666665" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_delete/src/main/res/drawable/btn_init_agree.xml" value="0.21944444444444444" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_delete/src/main/res/drawable/btn_init_disagree.xml" value="0.21944444444444444" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_develop_Adapter/src/main/res/layout/juns_float_ball_view.xml" value="0.25625" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/drawable/juns_fw_btn_bg_gray.xml" value="0.16944444444444445" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/layout/juns_fw_album_widget_zoom_iamge.xml" value="0.2427536231884058" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_test/src/main/res/layout/juns_demo_act.xml" value="0.20208333333333334" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_uc/src/main/res/drawable/bg_loading_view.xml" value="0.22708333333333333" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_xiao7eclipse/src/main/res/drawable/x7_waxpay_selection_selector.xml" value="0.25462962962962965" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_xiao7eclipse/src/main/res/layout/activity_demo_main.xml" value="0.17604166666666668" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_xiao7eclipse/src/main/res/layout/juns_demo_act.xml" value="0.17604166666666668" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_xiao7eclipse/src/main/res/menu/nim_contacts_search_menu.xml" value="0.2791666666666667" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_xiao7eclipse/src/main/res/mipmap-anydpi-v26/base_ic_launcher.xml" value="0.25462962962962965" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_xiao7eclipse/src/main/res/mipmap-anydpi-v26/base_ic_launcher_round.xml" value="0.25462962962962965" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_ysdk/src/main/res/layout/juns_demo_act.xml" value="0.29483695652173914" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.29483695652173914" />
+      </ProjectState>
+    </option>
   </component>
 </project>

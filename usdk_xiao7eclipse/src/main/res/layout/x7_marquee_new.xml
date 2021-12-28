@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/x7_marquee_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="6dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/x7_marquee_cl"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/x7_k2"
+            android:paddingEnd="20dp"
+            android:paddingStart="28dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_marquee"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/x7_marquee_arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:id="@+id/marquee_tv"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/rc_marquee"
+                app:layout_constraintLeft_toLeftOf="@id/rc_marquee"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/rc_marquee" />
+
+            <ImageView
+                android:id="@+id/x7_marquee_arrow"
+                android:layout_width="6dp"
+                android:layout_height="8dp"
+                android:src="@drawable/x7_account_arrow"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/x7_marquee_iv"
+            android:layout_width="56dp"
+            android:layout_height="52dp"
+            android:src="@drawable/x7_marquee_default_new"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_close_marquee_notice"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/x7_close_cha"
+        android:layout_gravity="top|end"/>
+
+</FrameLayout>

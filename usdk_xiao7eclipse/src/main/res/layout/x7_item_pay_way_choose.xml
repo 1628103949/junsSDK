@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_pay_way"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_last_pay_way_hint"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/x7_solid_gray_f2_corner_5"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_pay_way_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_pay_way_channel_num"
+                android:layout_alignRight="@+id/tv_pay_way_channel_num"
+                android:gravity="center_vertical|right"
+                android:textColor="#ff0055" />
+
+            <TextView
+                android:id="@+id/tv_pay_way_channel_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_pay_way_num"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/iv_pay_way_arrow"
+                android:gravity="center_vertical|right"
+                android:minWidth="100dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/x7_text_gray"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_pay_way"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_pay_way_channel_num"
+                android:textColor="@color/x7_text_black0"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:id="@+id/iv_pay_way_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/x7_rightjiantou" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_last_pay_way_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_pay_way"
+            android:layout_marginLeft="-6dp"
+            android:layout_marginBottom="-5dp"
+            android:background="@drawable/x7_coner_90_solid_ff0000"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/x7_last_use"
+            android:visibility="invisible"
+            android:textColor="@color/x7_white"
+            android:textSize="10dp" />
+    </RelativeLayout>
+</LinearLayout>

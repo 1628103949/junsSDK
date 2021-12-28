@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/x7_ffffff_16_bg"
+        android:paddingLeft="48dp"
+        android:paddingRight="50dp">
+
+        <TextView
+            android:id="@+id/x7_dialog_credit_gift_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/x7_im_credit_gift_content"
+            android:textColor="@color/x7base_green_12cdb0"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/x7_dialog_credit_gift_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/x7_dialog_credit_gift_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="18dp"
+            android:textSize="15dp"
+            android:lineSpacingExtra="8dp"
+            android:textColor="@color/x7base_gray_33"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/x7_dialog_credit_gift_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="@color/x7base_green_12cdb0"
+            android:text=""
+            app:layout_constraintTop_toBottomOf="@id/x7_dialog_credit_gift_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="34dp"/>
+
+        <TextView
+            android:id="@+id/x7_dialog_credit_gift_copy"
+            android:layout_width="215dp"
+            android:layout_height="48dp"
+            android:background="@drawable/x7base_im_bg_solid_green_12cdb0_corner_50"
+            android:text="@string/x7_copy"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/x7_dialog_credit_gift_code"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="9dp" />
+        <TextView
+            android:id="@+id/x7_dialog_credit_gift_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textSize="16dp"
+            android:textColor="@color/color_grey_999999"
+            app:layout_constraintTop_toBottomOf="@id/x7_dialog_credit_gift_copy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="19dp"
+            />
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

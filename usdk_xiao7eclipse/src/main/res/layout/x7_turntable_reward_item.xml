@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp"
+    android:paddingBottom="3dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="@id/x7_normal_reward_dialog_icon_content_iv"
+        app:layout_constraintBottom_toBottomOf="@id/x7_normal_reward_dialog_icon_content_iv"
+        app:layout_constraintStart_toStartOf="@id/x7_normal_reward_dialog_icon_content_iv"
+        app:layout_constraintEnd_toEndOf="@id/x7_normal_reward_dialog_icon_content_iv"
+        android:src="@drawable/bg_mall_gift" />
+
+
+    <ImageView
+        android:id="@+id/x7_normal_reward_dialog_icon_content_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@id/x7_normal_reward_dialog_icon_border_iv"
+        app:layout_constraintBottom_toBottomOf="@id/x7_normal_reward_dialog_icon_border_iv"
+        app:layout_constraintTop_toTopOf="@id/x7_normal_reward_dialog_icon_border_iv"
+        app:layout_constraintStart_toStartOf="@id/x7_normal_reward_dialog_icon_border_iv"/>
+
+    <com.smwl.smsdk.myview.StrokeTextView
+        android:id="@+id/turntable_normal_reward_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8dp"
+        android:textColor="@color/x7_white"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toEndOf="@id/x7_normal_reward_dialog_icon_content_iv"
+        app:layout_constraintBottom_toBottomOf="@+id/x7_normal_reward_dialog_icon_content_iv"
+        />
+    <ImageView
+        android:id="@+id/x7_normal_reward_dialog_icon_border_iv"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:src="@drawable/mall_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/x7_normal_reward_dialog_special_reward_tag"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:visibility="gone"
+        android:src="@drawable/x7_mall_turntable_dialog_item_special_prop_tag"
+        app:layout_constraintTop_toTopOf="@id/x7_normal_reward_dialog_icon_border_iv"
+        app:layout_constraintStart_toStartOf="@id/x7_normal_reward_dialog_icon_border_iv"/>
+    
+    <TextView
+        android:id="@+id/x7_normal_reward_dialog_reward_name_tv"
+        android:layout_width="31dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="-1dp"
+        android:textSize="8dp"
+        android:textColor="@color/x7_black_644f31"
+        app:layout_constraintTop_toBottomOf="@id/x7_normal_reward_dialog_icon_border_iv"
+        app:layout_constraintStart_toStartOf="@id/x7_normal_reward_dialog_icon_border_iv"
+        app:layout_constraintEnd_toEndOf="@id/x7_normal_reward_dialog_icon_border_iv"
+        />
+
+</android.support.constraint.ConstraintLayout>

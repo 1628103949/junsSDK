@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@id/m4399_item_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/m4399_pay_card_state"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:duplicateParentState="true"
+            android:src="@drawable/m4399_ope_pay_selector_card_radio" />
+
+        <TextView
+            android:id="@+id/m4399_pay_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toEndOf="@id/m4399_pay_card_state"
+            android:layout_toRightOf="@id/m4399_pay_card_state"
+            android:duplicateParentState="true"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded"
+            tools:text="移动" />
+    </RelativeLayout>
+</FrameLayout>

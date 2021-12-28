@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/x7_im_blessing_bag_rootView_cl"
+        layout="@layout/x7_im_nim_message_item_blessing_bag"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/x7_im_super_blessing_bag_rootView_cl"
+        layout="@layout/x7_im_nim_message_item_super_blessing_bag"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!--注意：以下的写法是为了解决状态栏沉浸和fitsSystemWindows的冲突问题，
+        避免了去重写fitSystemWindows/onApplyWindowInsets以及API21适配-->
+
+    <FrameLayout
+        android:id="@+id/status_and_app_bar_height_stub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="45dp" />
+
+    </FrameLayout>
+
+    <!--bg对齐AppBarLayout的底部-->
+    <ImageView
+        android:id="@+id/app_bar_bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignTop="@id/status_and_app_bar_height_stub"
+        android:layout_alignBottom="@id/status_and_app_bar_height_stub"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:visibility="invisible">
+
+        <FrameLayout
+            android:id="@+id/app_bar_bg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                app:elevation="0dp">
+
+                <include layout="@layout/x7_top_title_toolbar_ll" />
+            </android.support.design.widget.AppBarLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/invalid_team_tip"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_below="@id/live_container_layout"
+            android:background="@drawable/nim_message_activity_top_tip"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/invalid_team_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/team_invalid_tip"
+                android:textColor="@color/color_yellow_796413"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/message_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/invalid_team_tip"
+            android:layout_alignParentBottom="true"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical" />
+
+        <com.netease.nim.uikit.live.LiveContainerLayout
+            android:id="@+id/live_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_bar_bg_layout"
+            android:layout_marginBottom="-19dp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/live_fullscreen_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/live_fullscreen_content_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/layout_live_fullscreen_foreground" />
+
+    </FrameLayout>
+
+</RelativeLayout>

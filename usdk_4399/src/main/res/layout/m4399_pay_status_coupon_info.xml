@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:showIn="@layout/m4399_pay_status_fragment_success">
+
+    <TextView
+        android:id="@+id/m4399_ope_id_tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:lineSpacingMultiplier="1"
+        android:textColor="@color/m4399_ope_color_333333"
+        android:textSize="13sp"
+        tools:text="温馨提示：您有一张30优惠券即将过期，请及时领取～～～"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:layout_width="272dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/m4399_ope_coupon_share_pay_coupon"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="bottom|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:includeFontPadding="false"
+                android:text="@string/m4399_ope_account_coupon_dialog_yuan"
+                android:textColor="@color/m4399_pay_status_failed_color"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/m4399_ope_id_tv_quota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:textColor="@color/m4399_pay_status_failed_color"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                tools:text="100">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="96dp"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:id="@+id/m4399_ope_id_tv_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/m4399_ope_color_666666"
+                android:textSize="12sp"
+                tools:text="满60元可用" />
+
+            <TextView
+                android:id="@+id/m4399_ope_coupon_expired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#aaaaaa"
+                android:textSize="12sp"
+                tools:text="有效期：2010-12-11 11：90" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="71dp"
+            android:layout_marginTop="-9dp"
+            android:background="@drawable/m4399_ope_coupon_layout_oval"
+            tools:ignore="RtlHardcoded" />
+
+        <View
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="71dp"
+            android:layout_marginBottom="-9dp"
+            android:background="@drawable/m4399_ope_coupon_layout_oval"
+            tools:ignore="RtlHardcoded" />
+
+        <cn.m4399.operate.component.DashLineView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="79dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:tag="v,#ffd6a4,4,4"
+            tools:ignore="RtlHardcoded" />
+    </FrameLayout>
+</LinearLayout>

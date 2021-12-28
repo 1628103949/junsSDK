@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 图层1(oval) -->
+    <!-- left,top,right,bottom定义为-10，是为了扩大oval，达到覆盖四角的效果 -->
+    <item android:left="-20dp" android:top="-20dp" android:right="-20dp" android:bottom="-20dp">
+        <shape
+            android:shape="oval">
+            <!-- oval_inner[内部] -->
+            <!--<solid android:color="#ffffff" />-->
+            <!-- oval_outer[边线] ，使用时改成父控件颜色即可-->
+            <stroke
+                android:width="20dp"
+                android:color="#f9f9f9" />
+            <!-- oval_inner_size[大小(除去边线)] ，也是最终裸露出来的圆形图像区域-->
+            <size
+                android:height="99dp"
+                android:width="99dp" />
+            <!--和stroke以及size的大小有关，设置成这样时才能把边上的去掉。同时如果size变大，那么item的left和top那些也要变大-->
+            <!-- 使oval_inner透明，裸露出将来设置的背景图片 -->
+            <gradient android:centerColor="#0000" />
+        </shape>
+    </item>
+    <item >
+        <shape
+            android:shape="oval">
+            <!-- oval_inner[内部] -->
+            <!--<solid android:color="#ffffff" />-->
+            <!-- oval_outer[边线] ，使用时改成父控件颜色即可-->
+            <stroke
+                android:width="1.5dp"
+                android:color="#999999" />
+            <!-- oval_inner_size[大小(除去边线)] ，也是最终裸露出来的圆形图像区域-->
+            <size
+                android:height="99dp"
+                android:width="99dp" />
+            <!--和stroke以及size的大小有关，设置成这样时才能把边上的去掉。同时如果size变大，那么item的left和top那些也要变大-->
+            <!-- 使oval_inner透明，裸露出将来设置的背景图片 -->
+            <gradient android:centerColor="#0000" />
+        </shape>
+    </item>
+
+</layer-list>

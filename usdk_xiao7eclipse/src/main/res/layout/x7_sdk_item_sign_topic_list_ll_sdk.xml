@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/x7_sdk_item_signTopic_hotDiscuss_rl"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+
+android:background="@color/x7_horizontal_divider_line"
+            android:layout_height="0.5dp"/>
+
+        <TextView
+            android:id="@+id/x7_sdk_item_signTopic_discussType_tv"
+            android:text="热门讨论"
+            android:textColor="@color/x7_white"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            android:includeFontPadding="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/x7_sdk_item_signTopic_seeOneself_tv"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/x7_gift_vip"
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:text="@string/x7_sdk_GameTopicDetailAct_oneself"
+            android:textColor="@color/x7_white"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/x7_sdk_item_signTopic_allBottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="18dp"
+        android:orientation="horizontal">
+
+        <com.smwl.smsdk.myview.MyRoundImageView
+            android:id="@+id/x7_sdk_item_signTopic_roundIcon_iv"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/x7_sdk_item_signTopic_userName_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/x7_color_0c7cb0"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/x7_sdk_item_signTopic_replyTime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:includeFontPadding="false"
+                    android:textColor="#999999"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+            <!--话题回复内容以及展开与收起-->
+            <include layout="@layout/x7_sdk_myview_openall_rl"
+                android:layout_marginTop="13dip"
+                android:layout_marginBottom="13dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <ImageView
+                android:id="@+id/x7_sdk_item_signTopic_replyPicture_iv"
+                android:layout_width="1dip"
+                android:layout_height="1dip"
+                android:layout_marginTop="8dip"
+                android:layout_marginBottom="15dp" />
+
+            <!--回复、点踩、点赞-->
+            <include layout="@layout/x7_sdk_item_user_evaluate_ll"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <View
+                android:layout_width="match_parent"
+
+android:background="@color/x7_horizontal_divider_line"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="0.5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

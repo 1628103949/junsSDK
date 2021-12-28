@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="afterDescendants"
+    tools:ignore="MissingDefaultResource">
+
+    <include
+        android:id="@+id/x7_accountManager_title"
+        layout="@layout/x7_activity_title_6" />
+
+    <RelativeLayout
+        android:id="@+id/have_account_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/x7_accountManager_title"
+        android:visibility="visible">
+
+    <TextView
+        android:id="@+id/tv_pay_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/x7_accountManager_title"
+        android:gravity="center"
+        android:padding="6dp"
+        android:visibility="gone"
+        android:text="@string/x7_pay_card_hint"
+        android:textColor="@color/x7_text_gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_login_small_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pay_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/x7_smallaccount_item_back_gradient"
+        android:gravity="center"
+        android:paddingLeft="11dp"
+        android:paddingTop="10dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/small_account_os_type_iv"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@drawable/account_os_type_andorid"/>
+
+        <TextView
+            android:id="@+id/tv_logining_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:gravity="center_vertical"
+            android:text="小号1"
+            android:textColor="@color/x7_white" />
+
+        <TextView
+            android:id="@+id/iv_sell_account"
+            android:layout_width="35dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/x7_account_manager_sell2"
+            android:gravity="center"
+            android:text="@string/x7base_sell_account"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/iv_recycle_account"
+            android:layout_width="35dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/x7_account_manager_sell2"
+            android:gravity="center"
+            android:text="@string/x7base_recycle_account"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/current_login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/x7_now_login_account"
+            android:textColor="#ff0"
+            android:layout_marginEnd="6dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_modify_small_account_now"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/x7_switch_account"
+            android:textColor="@color/x7_white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_other_small_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_login_small_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/x7_other_smallAccount"
+        android:textColor="@color/x7_text_black3"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/gv_small_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_other_small_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="65dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="1"
+        android:scrollbars="none"
+        tools:listitem="@layout/x7_item_small_account" />
+
+    <!--4.24开始增加小号显示在列表下面-->
+    <TextView
+        android:id="@+id/tv_add_account_portrait"
+        android:layout_width="124dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/x7_tv_account_note_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/x7_add_smallAccount"
+        android:textColor="#12cdb0"
+        android:textSize="15dp"
+        android:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <!--<ViewStub
+        android:id="@+id/no_sell_or_recycler_account_viewstub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/x7_accountManager_title"
+        android:x7_layout="@x7_layout/x7_no_sell_or_recycler_account" />-->
+    <!--没有可出售或可回收时的样式，原本用了viewstub加载，但是东西不多-->
+    <LinearLayout
+        android:id="@+id/no_sell_or_recycler_account_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/x7_accountManager_title"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/no_sell_or_recycle_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="106dp"
+            android:text="@string/x7_no_sell_account"
+            android:textColor="@color/base_white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/how_to_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_14"
+            android:layout_marginBottom="54dp"
+            android:text="@string/x7_sell_need_toApp"
+            android:textColor="@color/base_white"
+            android:textSize="@dimen/dp_14" />
+
+        <TextView
+            android:id="@+id/to_x7App_tv"
+            android:layout_width="219dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/x7_account_manager_sell2"
+            android:gravity="center"
+            android:text="@string/x7_to_APP"
+            android:textColor="@color/base_white"
+            android:textSize="@dimen/dp_14" />
+    </LinearLayout>
+</RelativeLayout>

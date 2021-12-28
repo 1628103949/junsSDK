@@ -1,0 +1,451 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/x7_text_orange"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:id="@+id/sc_1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/x7_text_orange"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#6600ee00"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/x7_user_login_success"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#668800ff"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/x7_jump_sdk_personal"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/xiaofei"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#66ff0000"
+                    android:padding="5dp"
+                    android:text="@string/x7_consume_interface"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/xiaofei_et"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:inputType=""
+                    android:text="100"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/base_black_9"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#66ff0000"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/x7_call_out_interface_after_success_login"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_gid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#668800ff"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/game_area"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="@string/x7_game_area_name"
+                    android:inputType=""
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/base_black_9"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/game_area_id"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="@string/x7_game_area_id"
+                    android:inputType=""
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/base_black_9"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/role_name"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="@string/x7_fill_character_name"
+                    android:inputType=""
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/base_black_9"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/role_id"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="@string/x7_fill_character_id"
+                    android:inputType=""
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/base_black_9"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/role_level"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="@string/x7_role_level"
+                    android:inputType=""
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/base_black_9"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/role_ce"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="@string/x7_role_ce"
+                    android:inputType=""
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/base_black_9"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/role_stage"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="@string/x7_role_stage"
+                    android:inputType=""
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/base_black_9"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/role_recharge"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:hint="@string/x7_role_rechargeAmount"
+                    android:inputType=""
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/base_black_9"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/tv_submit_role_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#cccccc"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/x7_commit_character_info"
+                    android:textColor="#12cdb0"
+                    android:textSize="15dp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/tv_exit_current_role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="#cccccc"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/x7_out_now_character"
+                    android:textColor="#12cdb0"
+                    android:textSize="15dp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/tv_jump_to_voucher_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="#cccccc"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/x7_show_voucher_panel"
+                android:textColor="#12cdb0"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/idfa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/x7base_green_12cdb0"
+                android:textSize="20dp"
+                android:text="显示idfa"
+                android:background="@color/white"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@id/sc_1"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tv_show_marquee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#cccccc"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/x7_display_marquee"
+            android:textColor="#12cdb0"
+            android:textSize="15dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/frame_kit_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/x7base_green_12cdb0"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/x7_test_framekit"
+            android:textColor="@color/white_fffeff" />
+
+        <TextView
+            android:id="@+id/frame_user_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/x7base_green_12cdb0"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/x7_framekit_suspension_main_page"
+            android:textColor="@color/white_fffeff" />
+
+        <TextView
+            android:id="@+id/tv_ad_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/x7base_green_12cdb0"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="SDK广告测试"
+            android:textColor="@color/white_fffeff"/>
+
+        <TextView
+            android:id="@+id/tv_send_blessing_bag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/x7base_green_12cdb0"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="显示发送福袋"
+            android:textColor="@color/white_fffeff"/>
+        <TextView
+            android:id="@+id/tv_no_show_toast"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/x7base_green_12cdb0"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="是否显示mqtt的Toast"
+            android:textColor="@color/white_fffeff"/>
+        <TextView
+            android:id="@+id/mall_tv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/x7base_green_12cdb0"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:onClick="getMallStatus"
+            android:text="获取小7 角色商城状态"
+            android:textColor="@color/white_fffeff"/>
+        <TextView
+            android:id="@+id/app_switch_test"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/x7base_green_12cdb0"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:onClick="getMallStatus"
+            android:text="app 后门"
+            android:textColor="@color/white_fffeff"/>
+
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_weight="0">
+
+    </LinearLayout>
+</LinearLayout>

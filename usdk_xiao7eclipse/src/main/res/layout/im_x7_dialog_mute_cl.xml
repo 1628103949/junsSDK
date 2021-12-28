@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/x7_ffffff_16_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbars="vertical"
+        android:scrollbarSize="2dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="23dp"
+            android:paddingBottom="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="23dp">
+
+            <TextView
+                android:id="@+id/im_x7MuteDialog_timeTitle_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black_3"
+                android:textSize="19dp"
+                android:includeFontPadding="false"
+                android:text="@string/im_x7_muteDialog_muteTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/im_x7MuteDialog_first_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/im_x7MuteDialog_timeTitle_tv"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/im_x7MuteDialog_time1_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/im_bg_solid_gray_f9f9f9_corner_50"
+                    android:gravity="center"
+                    android:textColor="@color/black_9"
+                    android:textSize="@dimen/text_size_15"/>
+
+                <TextView
+                    android:id="@+id/im_x7MuteDialog_time2_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="43dp"
+                    android:background="@drawable/im_bg_solid_gray_f9f9f9_corner_50"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/black_9"
+                    android:textSize="@dimen/text_size_15"/>
+
+                <TextView
+                    android:id="@+id/im_x7MuteDialog_time3_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="43dp"
+                    android:background="@drawable/im_bg_solid_gray_f9f9f9_corner_50"
+                    android:gravity="center"
+                    android:textColor="@color/black_9"
+                    android:textSize="@dimen/text_size_15"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/im_x7MuteDialog_second_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/im_x7MuteDialog_first_ll"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/im_x7MuteDialog_time4_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/im_bg_solid_gray_f9f9f9_corner_50"
+                    android:gravity="center"
+                    android:textColor="@color/black_9"
+                    android:textSize="@dimen/text_size_15"/>
+
+                <TextView
+                    android:id="@+id/im_x7MuteDialog_time5_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="43dp"
+                    android:background="@drawable/im_bg_solid_gray_f9f9f9_corner_50"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/black_9"
+                    android:textSize="@dimen/text_size_15"/>
+
+                <TextView
+                    android:id="@+id/im_x7MuteDialog_time6_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="43dp"
+                    android:background="@drawable/im_bg_solid_gray_f9f9f9_corner_50"
+                    android:gravity="center"
+                    android:textColor="@color/black_9"
+                    android:textSize="@dimen/text_size_15"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/im_x7MuteDialog_muteTime_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                app:layout_constraintTop_toBottomOf="@+id/im_x7MuteDialog_second_ll"
+                android:background="@null"
+                android:hint="@string/im_x7_muteDialog_inputTime"
+                android:inputType="number"
+                android:maxLength="30"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black_9"
+                android:textColorHint="#cccccc"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/im_x7MuteDialog_line1_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                app:layout_constraintTop_toBottomOf="@+id/im_x7MuteDialog_muteTime_et"
+                android:background="@color/line_e5e5e5"/>
+
+            <TextView
+                android:id="@+id/im_x7MuteDialog_reasonTitle_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="37dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black_3"
+                android:textSize="19dp"
+                android:includeFontPadding="false"
+                android:text="@string/im_x7_muteDialog_muteReason"
+                app:layout_constraintTop_toBottomOf="@+id/im_x7MuteDialog_line1_tv" />
+
+            <LinearLayout
+                android:id="@+id/im_x7MuteDialog_third_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintTop_toBottomOf="@+id/im_x7MuteDialog_reasonTitle_tv1"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/im_x7MuteDialog_reason1_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/im_bg_solid_gray_f9f9f9_corner_50"
+                    android:gravity="center"
+                    android:text="@string/im_x7_muteDialog_muteSpecificReason1"
+                    android:textColor="@color/black_9"
+                    android:textSize="@dimen/text_size_15"/>
+
+                <TextView
+                    android:id="@+id/im_x7MuteDialog_reason2_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="43dp"
+                    android:background="@drawable/im_bg_solid_gray_f9f9f9_corner_50"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/im_x7_muteDialog_muteSpecificReason2"
+                    android:textColor="@color/black_9"
+                    android:textSize="@dimen/text_size_15"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/im_x7MuteDialog_fourth_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/im_x7MuteDialog_third_ll"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/im_x7MuteDialog_reason3_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/im_bg_solid_gray_f9f9f9_corner_50"
+                    android:gravity="center"
+                    android:text="@string/im_x7_muteDialog_muteSpecificReason3"
+                    android:textColor="@color/black_9"
+                    android:textSize="@dimen/text_size_15"/>
+
+                <TextView
+                    android:id="@+id/im_x7MuteDialog_reason4_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="43dp"
+                    android:background="@drawable/im_bg_solid_gray_f9f9f9_corner_50"
+                    android:gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/im_x7_muteDialog_muteSpecificReason4"
+                    android:textColor="@color/black_9"
+                    android:textSize="@dimen/text_size_15"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/im_x7MuteDialog_muteReason_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                app:layout_constraintTop_toBottomOf="@+id/im_x7MuteDialog_fourth_ll"
+                android:background="@null"
+                android:hint="@string/im_x7_muteDialog_inputReason"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black_9"
+                android:textColorHint="#cccccc"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/im_x7MuteDialog_line2_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                app:layout_constraintTop_toBottomOf="@+id/im_x7MuteDialog_muteReason_et"
+                android:background="@color/line_e5e5e5"/>
+
+
+            <TextView
+                android:id="@+id/im_x7MuteDialog_commit_tv"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/x7base_im_bg_solid_green_12cdb0_corner_50"
+                android:gravity="center"
+                android:text="@string/commit_content"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/im_x7MuteDialog_line2_tv"
+                android:textSize="@dimen/text_size_20"/>
+
+            <TextView
+                android:id="@+id/im_x7MuteDialog_close_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/x7_close"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_grey_999999"
+                app:layout_constraintTop_toBottomOf="@+id/im_x7MuteDialog_commit_tv"
+                android:textSize="@dimen/text_size_14"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

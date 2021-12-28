@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/X7CommonInputStyle"
+        android:id="@+id/ll_find_password_phone"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/ed_phone_number"
+        style="@style/X7EditTextNoBackCommonStyle"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="@string/x7_hint_of_input_phone"
+        android:digits="01234567890 +"
+        android:ems="8"
+        android:inputType="number"
+        android:imeOptions="flagNoExtractUi"/>
+
+        <ImageView
+            android:id="@+id/iv_delete_find_password_phone"
+            android:src="@drawable/x7_activity_login_delete"
+            android:contentDescription="TODO" android:padding="8dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#11ccb1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_phone_country"
+            android:text="中国 +86"
+            android:textColor="#11ccb1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:lines="1"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_verify_code"
+        style="@style/X7CommonInputStyle"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_find_password_phone"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_verify_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/x7_verify_code_input_hint"
+            android:ems="8"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="number"
+            style="@style/X7EditTextNoBackCommonStyle" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#10d1a5" />
+
+        <TextView
+            android:id="@+id/tv_get_verify_code"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/x7_get_verify_code"
+            android:textColor="#1bd4b5"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_phone_unbuding_hint"
+        android:layout_width="wrap_content"
+        android:textColor="@color/x7_text_orange"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:text="* 确定解绑后不能再通过手机登录及找回密码"
+        android:layout_below="@+id/ll_verify_code"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_next_for_find_password"
+        style="@style/X7BtnClickStyle"
+        android:layout_below="@+id/tv_phone_unbuding_hint"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/x7_next" />
+
+    <TextView
+        android:id="@+id/tv_bind_phone_hint"
+        android:layout_width="wrap_content"
+        android:text="@string/x7_bing_phone_hint"
+        android:layout_below="@+id/btn_next_for_find_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:visibility="gone"
+        android:textColor="@color/x7_text_orange"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="0dp"
+    android:layout_margin="0dp">
+
+   <!-- @dimen/x7_activity_horizontal_width-->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="@string/x7_detect_new_version"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:background="@drawable/x7_bg_green_2corner" />
+
+    <ImageView
+        android:layout_alignLeft="@+id/title"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/x7_updata_icon" />
+
+    <ScrollView
+        android:id="@+id/content_sv"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:minHeight="100dp"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:lineSpacingExtra="7dp"
+        android:background="#ffffff"
+        android:padding="20dp" />
+    </ScrollView>
+    <View
+        android:id="@+id/kong"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/x7_bg_white_2corners_10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp" />
+
+    <!--这里是非强制升级的按钮-->
+    <LinearLayout
+        android:id="@+id/normalUpdate_ll"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="226dp"
+            android:layout_height="40dp"
+            android:background="@drawable/x7_bg_gradient_updata1"
+            android:gravity="center"
+            android:text="@string/x7_update"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:id="@+id/clearAndCancel_noMust_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/clear_noMust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+
+                android:gravity="center"
+                android:text="@string/x7_clear_cash"
+                android:clickable="true"
+                android:textColor="#666666"
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="@string/x7_do_not_upgrade"
+                android:textColor="#12cdb0"
+                android:textSize="16sp"
+                 />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--升级的进度显示条-->
+    <RelativeLayout
+        android:id="@+id/mustUpdate_rl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/kong"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/progress_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3%"
+            android:gravity="right"
+            android:textColor="#12cdb0"
+
+            android:textSize="15sp"
+            android:layout_alignRight="@+id/progress_real_v" />
+
+        <View
+            android:id="@+id/progress_bg_v"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@drawable/x7_mustupdataprogress_bg"
+            android:layout_below="@+id/progress_content_tv" />
+
+        <View
+            android:id="@+id/progress_real_v"
+            android:layout_width="50dp"
+            android:layout_height="12dp"
+            android:layout_below="@+id/progress_content_tv"
+            android:background="@drawable/x7_bg_gradient_updata1" />
+    </RelativeLayout>
+
+     <!--强制更新的确认和取消按钮-->
+    <LinearLayout
+        android:id="@+id/clearAndCancel_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@+id/kong"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:text="@string/x7_clear_cash"
+            android:clickable="true"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/must_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            android:gravity="center"
+            android:text="@string/x7_exit_app"
+            android:clickable="true"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/must_ok"
+        android:layout_width="226dp"
+        android:layout_height="40dp"
+        android:background="@drawable/x7_bg_gradient_updata1"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/x7_update"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/clearAndCancel_ll"
+        android:layout_marginBottom="50dp"
+         />
+
+   <!-- <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center"
+        android:text="(当前为wifi环境可放心下载)"
+        android:clickable="true"
+        android:textColor="#666666"
+        android:textSize="15sp"
+        android:layout_below="@+id/must_cancel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />-->
+
+
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x7_addSmallAccount_width"
+    android:layout_height="@dimen/x7_addSmallAccount_height"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_add_account_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/x7_add_small_account"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#12cdb0"
+        />
+    <LinearLayout
+        android:id="@+id/ll_account_name"
+        android:layout_width="204dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_add_account_word"
+        android:layout_marginTop="11dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/x7_sdk_shape_samll_bg"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_add_account_name"
+            style="@style/X7EditTextNoBackCommonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/x7_exclusive_activity_dialog_name"
+            android:textColor="@color/black"
+            android:textColorHint="@color/x7base_gray_cc"
+            android:paddingStart="12dp"
+            android:textSize="13dp"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            />
+
+        <ImageView
+            android:id="@+id/clear_new_account_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/sdk_clear_edit"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/name_num_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp">
+
+            <TextView
+                android:id="@+id/name_length_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="0"
+                android:textSize="13dp"
+                android:textColor="@color/x7base_gray_cc"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="/4"
+                android:textSize="13dp"
+                android:textColor="@color/x7base_text_green"
+                android:layout_marginEnd="13dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_sure_cancel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_account_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        >
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="90dp"
+            android:layout_height="34dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/x7_cancel"
+            android:textColor="@color/x7base_gray_99"
+            android:textSize="16dp"
+            />
+
+        <Button
+            android:id="@+id/btn_add_account"
+            android:layout_width="90dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_small_bg"
+            android:gravity="center"
+            android:text="@string/x7_sure_to_add"
+            android:textColor="@color/x7base_white"
+            android:textSize="16dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

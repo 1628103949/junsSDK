@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/m4399_dialog_width_large"
+    android:layout_height="@dimen/m4399_pay_channel_selector_height"
+    android:orientation="vertical"
+    tools:layout_gravity="center"
+    tools:layout_width="@dimen/m4399_dialog_width_large">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <ImageView
+            android:id="@id/m4399_nav_return"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/m4399_ope_support_nav_icon_bg"
+            android:padding="10dp"
+            android:src="@drawable/m4399_ope_ic_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/m4399_pay_channel_select_title"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/m4399_ope_support_divider_h" />
+
+    <ListView
+        android:id="@+id/m4399_pay_channel_rank_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/m4399_ope_dialog_radius"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#e0e0e0"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/m4399_ope_ripple_rectangle_white"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@drawable/m4399_ope_shape_scroll_thumb_v"
+        android:scrollbarTrackVertical="@drawable/m4399_ope_shape_scroll_track_v"
+        tools:listitem="@layout/m4399_pay_channel_rank_item" />
+</LinearLayout>

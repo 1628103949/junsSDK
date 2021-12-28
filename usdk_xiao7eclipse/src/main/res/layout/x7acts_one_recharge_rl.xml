@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--独家活动类型三或者类型四：单笔充值item  类型四只多了一个发放形式和“已领取”个数-->
+    <RelativeLayout
+        android:id="@+id/one_recharge_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/x7_bg_ff000000_corner_7"
+        android:visibility="visible"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/one_recharge_today_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/x7_today_activity_icon" />
+
+        <TextView
+            android:id="@+id/one_recharge_hint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/x7_exclusive_acts_one_charge"
+            android:textColor="#13cdb0"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/one_recharge_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one_recharge_hint_tv"
+            android:layout_alignLeft="@+id/one_recharge_hint_tv"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/color_12cdb0"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/line_tv"
+            android:layout_width="0.4dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginVertical="8dp"
+            android:layout_marginRight="13dp"
+            android:layout_toRightOf="@+id/one_recharge_hint_tv"
+            android:layout_alignParentTop="true"
+            android:background="@color/base_black_4" />
+
+        <LinearLayout
+            android:id="@+id/one_recharge_content_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="13dp"
+            android:layout_marginRight="19dp"
+            android:layout_toRightOf="@+id/line_tv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/one_recharge_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_ee"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/one_recharge_state_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#13cdb0"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/one_recharge_get_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/orange_ff9a00"
+                android:textSize="10dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

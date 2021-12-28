@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a0000000"
+    tools:ignore="MissingDefaultResource">
+
+
+    <FrameLayout
+        android:layout_width="@dimen/x7_land_content_back_frame_width"
+        android:layout_height="0dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toBottomOf="@id/x7_mall_view_pager"
+        app:layout_constraintStart_toStartOf="@id/x7_mall_view_pager"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/x7_bg_cabcb4_pink_corner_10"
+            android:rotation="5"
+            android:transformPivotX="10dp"
+            android:transformPivotY="0dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/x7_mall_hint_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/x7_mall_pay_hint"
+        android:textColor="#FF644F31"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/x7_mall_view_pager"
+        app:layout_constraintStart_toStartOf="@+id/x7_mall_view_pager" />
+
+    <FrameLayout
+        android:id="@+id/x7_mall_view_pager"
+        android:layout_width="@dimen/x7_land_content_frame_width"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/x7_mall_back_to_tab"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/x7_bg_f3efe8_orange_top_corner_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/x7_mall_close_iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginRight="41dp"
+        android:src="@drawable/x7_mall_close_icon"
+        app:layout_constraintBottom_toTopOf="@+id/x7_mall_view_pager"
+        app:layout_constraintEnd_toEndOf="@+id/x7_mall_view_pager"
+        app:layout_constraintTop_toTopOf="@+id/x7_mall_view_pager" />
+
+    <com.smwl.smsdk.myview.mall.MallTabLayout
+        android:id="@+id/mall_tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="78dp"
+        app:tab_orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/x7_mall_view_pager"
+        app:layout_constraintEnd_toStartOf="@+id/guide_tab"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Space
+        android:id="@+id/guide_tab"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/x7_mall_view_pager"
+        android:layout_marginStart="@dimen/x7_mall_tab_hide"
+        />
+</android.support.constraint.ConstraintLayout>

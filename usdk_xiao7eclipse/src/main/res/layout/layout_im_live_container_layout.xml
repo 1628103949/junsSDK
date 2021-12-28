@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.support.constraint.ConstraintLayout">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/im_live_container_collapse_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintDimensionRatio="W,1:16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.smwl.base.myview.RatioFrameLayout
+            android:id="@+id/im_live_container_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="pin"
+            app:ratioBaseOn="width"
+            app:ratioHeight="9"
+            app:ratioWidth="16">
+
+        </com.smwl.base.myview.RatioFrameLayout>
+
+        <com.smwl.base.myview.RatioFrameLayout
+            android:id="@+id/im_live_foreground_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="pin"
+            app:ratioBaseOn="width"
+            app:ratioHeight="9"
+            app:ratioWidth="16">
+
+            <ImageView
+                android:id="@+id/im_live_transform_fullscreen_iv"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="10dp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/icon_transform_fullscreen_live" />
+        </com.smwl.base.myview.RatioFrameLayout>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+    <!--底部的颜色条，布局顺序不可随意更改-->
+    <View
+        android:id="@+id/im_live_container_bottom_color_view"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/im_live_bottom_toggle_top_barrier" />
+
+    <LinearLayout
+        android:id="@+id/im_live_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_im_live" />
+
+        <TextView
+            android:id="@+id/im_live_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/im_live_title_visible_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/im_live_title_layout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/im_live_bottom_toggle_top_barrier"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="im_live_container_collapse_layout, im_live_title_visible_placeholder" />
+
+    <FrameLayout
+        android:id="@+id/im_live_toggle_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/im_live_bottom_toggle_top_barrier">
+
+        <FrameLayout
+            android:id="@+id/im_live_toggle_color_layout"
+            android:layout_width="56dp"
+            android:layout_height="19dp"
+            android:background="@drawable/bg_live_toggle">
+
+            <ImageView
+                android:id="@+id/im_live_toggle_iv"
+                android:layout_width="10dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_arrow_expend_live" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</merge>

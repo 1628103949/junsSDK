@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="144dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_mall_month_privilege"
+    android:paddingTop="18dp"
+    android:paddingBottom="18dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+        <ImageView
+            android:id="@+id/month_card_privilege_iv"
+            android:layout_width="110dp"
+            android:layout_height="29dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/month_card_privilege_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/month_card_privilege_iv"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:textColor="@color/x7_black_644f31"
+            android:textSize="10dp" />
+
+
+</android.support.constraint.ConstraintLayout>

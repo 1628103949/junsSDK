@@ -1,0 +1,1827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_codes">
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+    <string name="X7UserReportDialog_choice_reportReason">请选择举报内容</string>
+    <string name="X7UserReportDialog_input_reportReason">请输入举报内容</string>
+    <string name="account_copy">账号：</string>
+    <string name="action_settings">Settings</string>
+    <string name="add">添加</string>
+    <string name="advanced_team">高级群</string>
+    <string name="again_input_password">再输入一次密码</string>
+    <string name="agin_input_password">再输入一次密码</string>
+    <string name="black_list_send_tip">消息已发送，但对方拒收</string>
+    <string name="call_service">在这里联系客服</string>
+    <string name="cancel">取消</string>
+    <string name="cancel_team_admin">取消管理员</string>
+    <string name="capture_video_size_in_kb">视频文件大小为: %1$dKB,</string>
+    <string name="capture_video_size_in_mb">视频文件大小为: %1$.2fMB,</string>
+    <string name="character_info_failure">角色信息调用失败：角色信息</string>
+    <string name="chat_setting">聊天信息</string>
+    <string name="choose">选取</string>
+    <string name="choose_from_photo_album">从手机相册选择</string>
+    <string name="clear_empty">清空</string>
+    <string name="click_set">点击设置</string>
+    <string name="client_aos" translatable="false">Android</string>
+    <string name="client_ios" translatable="false">iOS</string>
+    <string name="commit_content">提交</string>
+    <string name="commit_success">提交成功</string>
+    <string name="confirm_modify">确认修改</string>
+    <string name="connect_vedio_device_fail">无法连接视频设备 ，请稍候再试</string>
+    <string name="contact_selector">联系人选择器</string>
+    <string name="copy_account_success">复制账号成功</string>
+    <string name="copy_has_blank">复 制</string>
+    <string name="coupon">代金券</string>
+    <string name="create">新建</string>
+    <string name="create_advanced_team">创建高级群</string>
+    <string name="create_team">创建群</string>
+    <string name="create_team_failed">创建失败</string>
+    <string name="create_team_success">创建成功</string>
+    <string name="crop">裁剪</string>
+    <string name="delete_has_blank">删 除</string>
+    <string name="dialog_hide_record">确定要隐藏消费记录吗？</string>
+    <string name="dismiss_team">解散本群</string>
+    <string name="dismiss_team_failed">解散群失败</string>
+    <string name="dismiss_team_success">群已解散</string>
+    <string name="download_picture_fail">图片下载失败</string>
+    <string name="download_progress_description">%1$s（%2$s/%3$s）</string>
+    <string name="download_video">正在下载视频</string>
+    <string name="download_video_fail">视频下载失败,请重试</string>
+    <string name="edit">编辑</string>
+    <string name="empty"/>
+    <string name="empty_team_notice">暂无群公告</string>
+    <string name="ensure_hide">确定隐藏</string>
+    <string name="facebook_login">用facebook登入</string>
+    <string name="file_transfer_state_downloaded">已下载</string>
+    <string name="file_transfer_state_undownload">未下载</string>
+    <string name="forward_to_person">转发到个人</string>
+    <string name="forward_to_team">转发到群组</string>
+    <string name="fts_enable">全文检索(FTS4)</string>
+    <string name="fts_prefix_hit">前缀匹配高亮检索结果</string>
+    <string name="gallery_invalid">你的手机没有图库程序</string>
+    <string name="game_unsupport_coupon">暂不支持代金券</string>
+    <string name="gift_package_name_xml">礼包名称</string>
+    <string name="hide_deal_record">隐藏记录</string>
+    <string name="iknow">知道了</string>
+    <string name="im_AdvancedTeamInfoActivity_check">查看</string>
+    <string name="im_AdvancedTeamInfoActivity_dissolveTeam">解散群聊</string>
+    <string name="im_AdvancedTeamInfoActivity_dissolveTeam_content">解散后将无法恢复~</string>
+    <string name="im_AdvancedTeamInfoActivity_dissolveTeam_title">是否确认解散群聊？</string>
+    <string name="im_AdvancedTeamInfoActivity_quitTeam_content">退出群聊群积分将会清零，同时您还将无法收到群内消息和参与活动喔~</string>
+    <string name="im_AdvancedTeamInfoActivity_quitTeam_title">是否确认退出群聊？</string>
+    <string name="im_AdvancedTeamInfoActivity_settingError">设置异常</string>
+    <string name="im_AdvancedTeamInfoActivity_settingFailure">设置失败</string>
+    <string name="im_AdvancedTeamInfoActivity_settingSucceed">设置成功</string>
+    <string name="im_AitContactSelectorActivity_allPeople">所有人</string>
+    <string name="im_MessageFragment_disableSendMsg">禁言</string>
+    <string name="im_MessageFragment_he">他</string>
+    <string name="im_MessageFragment_messageNoSend">该消息无法发送</string>
+    <string name="im_MessageFragment_muteError">禁言异常</string>
+    <string name="im_MessageFragment_muteFailure">禁言失败</string>
+    <string name="im_MessageFragment_muteSucceed">禁言成功</string>
+    <string name="im_MessageFragment_newMessage">以下为新消息</string>
+    <string name="im_MessageFragment_newMessage2">新消息</string>
+    <string name="im_MessageFragment_newMessage3">条新消息</string>
+    <string name="im_MessageFragment_thisMemberAlreadyMute">当前用户已被禁言</string>
+    <string name="im_MessageRevokeTip_cancelMessage">撤回了一条消息</string>
+    <string name="im_MessageRevokeTip_cancelMessage2">撤回了一条成员消息</string>
+    <string name="im_MessageRevokeTip_he">对方</string>
+    <string name="im_MessageRevokeTip_you">你</string>
+    <string name="im_TeamMessageActivity_teamMessageFailure">获取群组信息失败</string>
+    <string name="im_TeamPropertySettingActivity_hint1">请填写群公告</string>
+    <string name="im_TeamPropertySettingActivity_hint2">请填写入群验证信息</string>
+    <string name="im_WatchMessagePictureActivity_hint1">图片发送于</string>
+    <string name="im_X7InputPanel_youMute">您已被禁言</string>
+    <string name="im_X7SystemMessageAdapter_hint1">未有申请验证信息</string>
+    <string name="im_X7SystemMessageAdapter_operateError">操作异常</string>
+    <string name="im_app_name">小7群聊</string>
+    <string name="im_choose_pic">请选择JPG PNG BMP GIF格式的图片文件</string>
+    <string name="im_choose_video">请选择3GP MP4格式的视频文件</string>
+    <string name="im_choose_video_file_size_too_large">视频文件过大，系统限制为20MB</string>
+    <string name="im_x7_AdvancedTeamInfoActivity_myTeamNickName">我的群昵称</string>
+    <string name="im_x7_AdvancedTeamInfoActivity_noSetting">未设置</string>
+    <string name="im_x7_ImgFileListActivity_title">图片集合</string>
+    <string name="im_x7_ModifyUserTeamNickNameAct_especiallyModifyHint">一天最多修改2次</string>
+    <string name="im_x7_ModifyUserTeamNickNameAct_hint">昵称长度2-16个字符</string>
+    <string name="im_x7_ModifyUserTeamNickNameAct_hint2">仅允许汉字、字母、数字和下划线的组合</string>
+    <string name="im_x7_ModifyUserTeamNickNameAct_hint3">请输入昵称</string>
+    <string name="im_x7_ModifyUserTeamNickNameAct_modify">修改昵称</string>
+    <string name="im_x7_ModifyUserTeamNickNameAct_newNickName">请输入新昵称</string>
+    <string name="im_x7_MyImgsActivity2_hint1">亲，请选择图片噢</string>
+    <string name="im_x7_MyImgsActivity2_hint3">)张</string>
+    <string name="im_x7_MyImgsActivity2_hint4">/9)张</string>
+    <string name="im_x7_MyImgsActivity2_hint5">张图噢</string>
+    <string name="im_x7_MyImgsActivity2_hint6">亲，最多只能选择9张图噢</string>
+    <string name="im_x7_MyImgsActivity2_hint7">亲，最多只能选择</string>
+    <string name="im_x7_MyImgsActivity2_title">选择图片</string>
+    <string name="im_x7_TeamMessageActivity_levitatedSphere">悬浮窗</string>
+    <string name="im_x7_TeamMessageActivity_x7Hint">友情提示</string>
+    <string name="im_x7_TeamMessageActivity_x7InstallHint">亲，你还未安装小7手游，确定安装?</string>
+    <string name="im_x7_muteDialog_cancelMute">恢复</string>
+    <string name="im_x7_muteDialog_hint1">您已经填写了禁言时间</string>
+    <string name="im_x7_muteDialog_hint2">您已经选择了禁言时间</string>
+    <string name="im_x7_muteDialog_hint3">您已经填写了禁言理由</string>
+    <string name="im_x7_muteDialog_hint4">您已经选择了禁言理由</string>
+    <string name="im_x7_muteDialog_hint5">禁言时间必须大于0</string>
+    <string name="im_x7_muteDialog_inputReason">填写自定义理由</string>
+    <string name="im_x7_muteDialog_inputTime">填写时间（小时）</string>
+    <string name="im_x7_muteDialog_muteReason">选择禁言理由</string>
+    <string name="im_x7_muteDialog_muteSpecificReason1">刷屏</string>
+    <string name="im_x7_muteDialog_muteSpecificReason2">辱骂谩骂</string>
+    <string name="im_x7_muteDialog_muteSpecificReason3">发广告</string>
+    <string name="im_x7_muteDialog_muteSpecificReason4">发表违禁言论</string>
+    <string name="im_x7_muteDialog_muteTime">选择禁言时间</string>
+    <string name="im_x7_muteDialog_mute_day">天</string>
+    <string name="im_x7_muteDialog_mute_forever">永久</string>
+    <string name="im_x7_muteDialog_mute_hour">小时</string>
+    <string name="im_x7_muteDialog_mute_minute">分钟</string>
+    <string name="im_x7_muteDialog_noMuteReasonHint">请选择禁言理由</string>
+    <string name="im_x7_muteDialog_noMuteTimeHint">请选择禁言时间</string>
+    <string name="im_x7_xml_details">详情</string>
+    <string name="image_compressed_size">该原始图片大小为: %1$s,</string>
+    <string name="image_show_error">图片显示异常</string>
+    <string name="input_newPassword">输入新密码</string>
+    <string name="input_old_password">输入旧密码</string>
+    <string name="input_panel_RTS" translatable="false">白 板</string>
+    <string name="input_panel_ack_msg" translatable="false">已读回执</string>
+    <string name="input_panel_audio_call" translatable="false">语音通话</string>
+    <string name="input_panel_file" translatable="false">发送文件</string>
+    <string name="input_panel_guess" translatable="false">猜 拳</string>
+    <string name="input_panel_location">位 置</string>
+    <string name="input_panel_photo">图 片</string>
+    <string name="input_panel_snapchat" translatable="false">阅后即焚</string>
+    <string name="input_panel_take">拍 摄</string>
+    <string name="input_panel_tip" translatable="false">Tip</string>
+    <string name="input_panel_video">视 频</string>
+    <string name="input_panel_video_call" translatable="false">视频通话</string>
+    <string name="invite_member">邀请成员</string>
+    <string name="invite_member_failed">邀请成员失败</string>
+    <string name="invite_member_success">邀请成员成功</string>
+    <string name="is_send_image">是否发送该原始图片？</string>
+    <string name="is_send_multi_image">是否发送这些原始图片？</string>
+    <string name="is_send_video">是否发送该视频？</string>
+    <string name="kaifu_hint2">开服</string>
+    <string name="kaifu_hint_1">游戏将于</string>
+    <string name="limite_receice_xml">限量领取</string>
+    <string name="loginFail">登入失败</string>
+    <string name="login_account">输入账号或手机号</string>
+    <string name="login_account_locate_1">输入账号或手机号或邮箱</string>
+    <string name="login_fail_reason">请检查网络或</string>
+    <string name="login_tv">登录小7手游</string>
+    <string name="long_press_wallet_record"><![CDATA[隐藏后如需恢复显示请长按界面顶部<font color=\'#12ceb0\'><big>\"钱包记录\"</big></font>]]></string>
+    <string name="look_up_original_photo_format">查看原图（%s）</string>
+    <string name="look_video_fail">无法播放该视频</string>
+    <string name="look_video_fail_try_again">暂时无法播放视频，请重试</string>
+    <string name="main_msg_list_clear_sticky_on_top">取消置顶</string>
+    <string name="main_msg_list_delete_chatting">删除该聊天</string>
+    <string name="main_msg_list_sticky_on_top">置顶该聊天</string>
+    <string name="memory_out">内存不足</string>
+    <string name="menu">菜单</string>
+    <string name="message_clear" translatable="false">清空本地消息记录</string>
+    <string name="message_history_query" translatable="false">群聊记录</string>
+    <string name="message_info" translatable="false">聊天信息</string>
+    <string name="message_search_no_result">无结果</string>
+    <string name="message_search_title">查看聊天内容</string>
+    <string name="money_ticket_have_used">已使用</string>
+    <string name="msg_search">全文检索</string>
+    <string name="msg_search_limit">全文检索显示条数</string>
+    <string name="msg_type_audio">语音</string>
+    <string name="msg_type_image">图片</string>
+    <string name="multi_image_compressed_size">原始图片总大小为: %1$s,</string>
+    <string name="mute_msg">设置禁言</string>
+    <string name="my_team_card">我的群名片</string>
+    <string name="net_broken">当前网络不可用</string>
+    <string name="network_is_not_available">网络连接失败，请检查你的网络设置</string>
+    <string name="nim_status_bar_audio_message" translatable="false">%1$s发来一条语音消息</string>
+    <string name="nim_status_bar_custom_message" translatable="false">%1$s: 表情</string>
+    <string name="nim_status_bar_file_message" translatable="false">%1$s发来一条文件消息</string>
+    <string name="nim_status_bar_hidden_msg_content" translatable="false">你收到一条新消息</string>
+    <string name="nim_status_bar_image_message" translatable="false">%1$s发来一条图片消息</string>
+    <string name="nim_status_bar_location_message" translatable="false">%1$s分享了一个地理位置</string>
+    <string name="nim_status_bar_multi_messages_incoming" translatable="false">%1$d位联系人有新消息</string>
+    <string name="nim_status_bar_notification_message" translatable="false">%1$s: 通知消息</string>
+    <string name="nim_status_bar_ticker_text" translatable="false">%1$s有新消息</string>
+    <string name="nim_status_bar_unsupported_message" translatable="false">%1$s: 无法显示该内容</string>
+    <string name="nim_status_bar_video_message" translatable="false">%1$s发来一条视频消息</string>
+    <string name="no_game_zone_info">暂无相关游戏区服信息</string>
+    <string name="no_money_voucher">暂无代金券</string>
+    <string name="no_money_voucher_info">暂无</string>
+    <string name="no_permission">没有权限</string>
+    <string name="normal_team">讨论组</string>
+    <string name="normal_team_invalid_tip">您已退出该讨论组</string>
+    <string name="normal_team_name">讨论组名称</string>
+    <string name="normal_team_not_exist">该讨论组不存在</string>
+    <string name="not_allow_empty">不能为空</string>
+    <string name="now_allow_space">不能含有空格</string>
+    <string name="off_line" translatable="false">离线</string>
+    <string name="ok">确定</string>
+    <string name="on_line" translatable="false">在线</string>
+    <string name="on_line_busy" translatable="false">忙碌</string>
+    <string name="on_line_mac" translatable="false">Mac在线</string>
+    <string name="on_line_pc" translatable="false">PC在线</string>
+    <string name="on_line_web" translatable="false">web在线</string>
+    <string name="open">开启</string>
+    <string name="over_team_capacity">创建失败，创建群数量达到限制</string>
+    <string name="over_team_member_capacity">邀请失败，成员人数上限为%1$d人</string>
+    <string name="password_requirement">*密码由6–16位大小写字母、数字、字符中两种及以上组成</string>
+    <string name="pic_and_video">图片和视频</string>
+    <string name="picker_image_album_empty">相册中没有图片！</string>
+    <string name="picker_image_album_loading">相册加载中…</string>
+    <string name="picker_image_error">获取图片出错</string>
+    <string name="picker_image_exceed_max_image_select">最多选择%d张图片！</string>
+    <string name="picker_image_folder">相册</string>
+    <string name="picker_image_folder_info">共%d张</string>
+    <string name="picker_image_preview">预览</string>
+    <string name="picker_image_preview_original">发送原图</string>
+    <string name="picker_image_preview_original_select">发送原图（%s）</string>
+    <string name="picker_image_send">发送</string>
+    <string name="picker_image_send_select">完成（%d）</string>
+    <string name="picture_save_fail">图片保存失败</string>
+    <string name="picture_save_to">图片已保存到相册</string>
+    <string name="playtogether_game_os_type_notice">当前群聊关联游戏为ios端，请使用ios端设备进入。</string>
+    <string name="playtogether_noticebar_content_text1">分钟后开服</string>
+    <string name="playtogether_noticebar_content_text2"><![CDATA[分钟后开服，下载游戏 >]]></string>
+    <string name="playtogether_noticebar_opened_service"><![CDATA[新服已开启 进入游戏 >]]></string>
+    <string name="quit_normal_team">退出讨论组</string>
+    <string name="quit_normal_team_failed">退出讨论组失败</string>
+    <string name="quit_normal_team_success">您已经退出讨论组</string>
+    <string name="quit_team">退出群</string>
+    <string name="quit_team_failed">退群失败</string>
+    <string name="quit_team_success">您已退群</string>
+    <string name="reach_capacity">人数已达上限</string>
+    <string name="reach_team_member_capacity">成员数量不能超过%1$d</string>
+    <string name="readed">已读</string>
+    <string name="recapture">重拍</string>
+    <string name="receive">立即领取</string>
+    <string name="receive_coupon_failure">领取失败，请咨询客服为您处理。</string>
+    <string name="receive_coupon_success">代金券已领取成功，请尽快在有效期内使用</string>
+    <string name="record_audio">按住 说话</string>
+    <string name="record_audio_end">松开  结束</string>
+    <string name="recording_cancel">手指上滑，取消发送</string>
+    <string name="recording_cancel_tip">松开手指，取消发送</string>
+    <string name="recording_error">录音失败，请重试</string>
+    <string name="recording_init_failed">初始化录音失败</string>
+    <string name="recording_max_time">录音达到最大时间，是否发送？</string>
+    <string name="recycler_tag">recycler_tag</string>
+    <string name="registerAccount">注册账号</string>
+    <string name="remove">移除</string>
+    <string name="remove_member">移出本群</string>
+    <string name="remove_member_failed">移除成员失败</string>
+    <string name="remove_member_success">移除成员成功</string>
+    <string name="repeat_download_message">重新下载?</string>
+    <string name="repeat_send_has_blank">重 发</string>
+    <string name="repeat_send_message">重发消息?</string>
+    <string name="revoke_failed">发送时间超过24小时的消息，不能被撤回</string>
+    <string name="save">保存</string>
+    <string name="save_to_device">保存到相册</string>
+    <string name="sdcard_not_enough_error">存储空间不足，无法保存此次多媒体消息</string>
+    <string name="sdcard_not_enough_head_error">SD卡被拔出或存储空间不足，无法保存头像</string>
+    <string name="sdcard_not_exist_error">请插入SD卡</string>
+    <string name="search">搜索</string>
+    <string name="search_join_team">搜索加入群组</string>
+    <string name="send">发送</string>
+    <string name="service_entrance">客服入口</string>
+    <string name="set_head_image">设置头像</string>
+    <string name="set_team_admin">设为管理员</string>
+    <string name="start_camera_to_record_failed">启动摄像头录制视频失败</string>
+    <string name="stop_fail_maybe_stopped">停止失败，可能已经停止</string>
+    <string name="system_message">验证消息</string>
+    <string name="teamMessage_record">查找群聊记录</string>
+    <string name="team_admin">管理员</string>
+    <string name="team_admin_invite">管理员邀请</string>
+    <string name="team_admin_update">管理员修改</string>
+    <string name="team_allow_anyone_join">允许任何人加入</string>
+    <string name="team_announce_content">公告内容</string>
+    <string name="team_announce_hint">点击填写群公告</string>
+    <string name="team_announce_notice">请输入群公告标题</string>
+    <string name="team_announce_title">标题</string>
+    <string name="team_annourcement">群公告</string>
+    <string name="team_apply_to_join">申请加入</string>
+    <string name="team_apply_verify">入群验证</string>
+    <string name="team_assistant">群助理</string>
+    <string name="team_authentication">身份验证</string>
+    <string name="team_create_notice">请添加群成员</string>
+    <string name="team_creator">群主</string>
+    <string name="team_everyone_invite">所有人邀请</string>
+    <string name="team_everyone_update">所有人修改</string>
+    <string name="team_extension">扩展示例</string>
+    <string name="team_extension_hint">点击修改扩展内容</string>
+    <string name="team_identity">身份</string>
+    <string name="team_info_update">群资料修改权限</string>
+    <string name="team_introduce">群介绍</string>
+    <string name="team_introduce_hint">点击填写群介绍</string>
+    <string name="team_invalid_tip">您已退出该群</string>
+    <string name="team_invite">邀请他人权限</string>
+    <string name="team_invite_members_failed">群成员邀请失败</string>
+    <string name="team_invite_members_success">群成员邀请已发出</string>
+    <string name="team_invitee_authentication">被邀请人身份验证</string>
+    <string name="team_invitee_need_authen">需要验证</string>
+    <string name="team_invitee_not_need_authen">不需要验证</string>
+    <string name="team_member">群成员</string>
+    <string name="team_member_info">成员信息</string>
+    <string name="team_member_remove_confirm">确定要将其移出群组么?</string>
+    <string name="team_name">群名称</string>
+    <string name="team_name_toast">群名称不能为空</string>
+    <string name="team_need_authentication">需要身份验证</string>
+    <string name="team_nickname">群昵称</string>
+    <string name="team_nickname_none">未填写</string>
+    <string name="team_not_allow_anyone_join">不允许任何人申请加入</string>
+    <string name="team_not_exist">该群不存在</string>
+    <string name="team_notification_config">消息提醒</string>
+    <string name="team_notify_all">提醒所有消息</string>
+    <string name="team_notify_manager">只提醒管理员消息</string>
+    <string name="team_notify_mute">不提醒任何消息</string>
+    <string name="team_send_message_not_allow">您已不在该群，不能发送消息</string>
+    <string name="team_send_message_not_in_team">您已不在该群聊</string>
+    <string name="team_settings_name">设置名称</string>
+    <string name="team_settings_set_name">取个名字吧</string>
+    <string name="team_transfer_failed">群转移失败</string>
+    <string name="team_transfer_success">群转移成功</string>
+    <string name="team_transfer_without_member">没有可转移的群成员</string>
+    <string name="team_update_cancel">取消更新</string>
+    <string name="team_update_failed">群头像设置失败</string>
+    <string name="test">测试</string>
+    <string name="timer_default">00:00</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="total">共</string>
+    <string name="trans_voice_failed">语音转化失败</string>
+    <string name="transfer_team">转让群</string>
+    <string name="unsupport_desc">客户端版本不支持该内容</string>
+    <string name="unsupport_title">无法显示该内容</string>
+    <string name="update_failed">保存失败, code:%d</string>
+    <string name="update_success">保存成功</string>
+    <string name="use_time">使用时间:</string>
+    <string name="userLogin">用户名登录</string>
+    <string name="user_name_digits">1234567890-abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="username_regist">用户名注册</string>
+    <string name="video_exception">视频文件异常</string>
+    <string name="video_play">视频播放</string>
+    <string name="video_record">视频录制</string>
+    <string name="video_record_begin">开始录制</string>
+    <string name="video_record_short">录制视频太短</string>
+    <string name="video_record_symbol">REC</string>
+    <string name="voice_to_text">转文字</string>
+    <string name="waitfor_image_local">正在打开相册，请稍候\u2026</string>
+    <string name="withdrawn_msg">撤 回</string>
+    <string name="without_content">暂无</string>
+    <string name="x7_AdvancedTeamInfoActivity_luckyBagRule">福袋规则</string>
+    <string name="x7_AdvancedTeamInfoActivity_no_dissolveGroupInApp">不能在app上解散群聊</string>
+    <string name="x7_AdvancedTeamInfoActivity_teamRule">群规则</string>
+    <string name="x7_AdvancedTeamInfoActivity_teamRule2">群聊规则</string>
+    <string name="x7_AdvancedTeamInfoActivity_teamRuleHint">请填写群规则</string>
+    <string name="x7_AdvancedTeamMemberActivity_from">从</string>
+    <string name="x7_AdvancedTeamMemberActivity_hint1">发起私聊</string>
+    <string name="x7_AdvancedTeamMemberActivity_privateChat">私聊</string>
+    <string name="x7_BaseActivity_hintTitle">小7温馨提示</string>
+    <string name="x7_CheckUpdateUtils_download_failure">下载失败：网络异常</string>
+    <string name="x7_CheckUpdateUtils_download_succeed">下载成功</string>
+    <string name="x7_CheckUpdateUtils_downloading">亲，程序正在后台下载中哦</string>
+    <string name="x7_CheckUpdateUtils_noNetWork">亲，当前处于无网络状态耶</string>
+    <string name="x7_CheckUpdateUtils_noNetWork_title">亲,当前网络处于非WIFI状态,确定下载吗?</string>
+    <string name="x7_CheckUpdateUtils_query_failure">查询失败,网络异常</string>
+    <string name="x7_China_code">+86  中国</string>
+    <string name="x7_CommonRequestUtils_hint">亲，请先安装QQ客户端哦</string>
+    <string name="x7_CommonRequestUtils_hintTitle">加入QQ群一起玩</string>
+    <string name="x7_CommonRequestUtils_qqNumber">群号：</string>
+    <string name="x7_DownUtils_hint1">游戏的中文包名为空</string>
+    <string name="x7_DownUtils_hint2">请打开:允许安装未知来源权限</string>
+    <string name="x7_IMGroup_absence">当前群聊已解散</string>
+    <string name="x7_IMGroup_gameNoIM">当前游戏没有群聊</string>
+    <string name="x7_IMGroup_giftAward">参与群聊\n领取独家礼包</string>
+    <string name="x7_IM_AdvancedTeamInfoActivity_createDate">创建时间：</string>
+    <string name="x7_IM_xml_IKnow">我知道了</string>
+    <string name="x7_IM_xml_agree">同意</string>
+    <string name="x7_IM_xml_aitMe">有人@我</string>
+    <string name="x7_IM_xml_alreadyAgree">已同意</string>
+    <string name="x7_IM_xml_continueChat">继续对话</string>
+    <string name="x7_IM_xml_ensure">确定(0)</string>
+    <string name="x7_IM_xml_hint1">允许任何人</string>
+    <string name="x7_IM_xml_hint2">拒绝任何人</string>
+    <string name="x7_IM_xml_hint3">自定义设置</string>
+    <string name="x7_IM_xml_inputUserNickName">请输入用户昵称</string>
+    <string name="x7_IM_xml_loading">加载中...</string>
+    <string name="x7_IM_xml_lookInfo">查看详情</string>
+    <string name="x7_IM_xml_messageFree">消息免打扰</string>
+    <string name="x7_IM_xml_modify">修改</string>
+    <string name="x7_IM_xml_moreOperate">更多操作</string>
+    <string name="x7_IM_xml_newMemberJoin">有新人加群，快去看看吧  ></string>
+    <string name="x7_IM_xml_quitTeam">退出群聊</string>
+    <string name="x7_IM_xml_refuse">拒绝</string>
+    <string name="x7_IM_xml_setTop">设为置顶</string>
+    <string name="x7_IM_xml_teamNotice">群公告</string>
+    <string name="x7_MainActivity_tabName1" translatable="false">游戏</string>
+    <string name="x7_MainActivity_tabName2" translatable="false">群聊</string>
+    <string name="x7_MainActivity_tabName3" translatable="false">交易</string>
+    <string name="x7_MainActivity_tabName4" translatable="false">我的</string>
+    <string name="x7_MessageCenterActivity1_cancel">取消</string>
+    <string name="x7_MessageListPanelEx_add_face">添加到表情</string>
+    <string name="x7_MessageListPanelEx_report">举报</string>
+    <string name="x7_MessageListPanelEx_report_hint1">垃圾信息、广告信息</string>
+    <string name="x7_MessageListPanelEx_report_hint2">色情、暴力、血腥等违反法律法规</string>
+    <string name="x7_MessageListPanelEx_report_hint3">政治敏感</string>
+    <string name="x7_MessageListPanelEx_report_hint4">辱骂、人身攻击</string>
+    <string name="x7_MessageListPanelEx_report_hint5">其他</string>
+    <string name="x7_MessageListPanelEx_report_inputReason">请填写原因</string>
+    <string name="x7_ModifiNickNameAct_modifyNickNameRule">仅允许汉字、字母、数字和下划线的组合</string>
+    <string name="x7_ModifiNickNameAct_modifyNickNameRule1">长度错误，昵称长度2-16个字符</string>
+    <string name="x7_ModifyEmailBoundAct_titleName_hint2">为了账号安全，需要验证您的邮箱</string>
+    <string name="x7_Modify_success">修改成功，15天只能修改一次</string>
+    <string name="x7_MoneyRecordActivity_noRecord">亲，您的钱包记录是空的哦~</string>
+    <string name="x7_MyYunXinGroupFrag_IMLoginError">云信登录异常，请重试</string>
+    <string name="x7_MyYunXinGroupFrag_MessageFree">免打扰</string>
+    <string name="x7_MyYunXinGroupFrag_Top">置顶</string>
+    <string name="x7_MyYunXinGroupFrag_cancelMessageFree">取消\n免打扰</string>
+    <string name="x7_MyYunXinGroupFrag_cancelTop">取消\n置顶</string>
+    <string name="x7_MyYunXinGroupFrag_delete">删除</string>
+    <string name="x7_MyYunXinGroupFrag_hint1">您的群聊账户已被挤下线，点击可重新登录>></string>
+    <string name="x7_MyYunXinGroupFrag_hint2">登录小7账号后可查看群聊 >></string>
+    <string name="x7_MyYunXinGroupFrag_hint3">您还没有群组，快加几个玩玩吧</string>
+    <string name="x7_MyYunXinGroupFrag_hint4">云信登录异常，请重试</string>
+    <string name="x7_MyYunXinGroupFrag_hint5">当前群组未有聊天记录</string>
+    <string name="x7_MyYunXinGroupFrag_yunXinLoginError">您的群聊账户登录异常，点击可重新登录>></string>
+    <string name="x7_MyYunXinGroupFrag_yunxinDataSync">请稍等，群聊消息正在同步...</string>
+    <string name="x7_P2PMessageActivity_closeCurrentChat">当前对话已结束</string>
+    <string name="x7_P2PMessageActivity_finishChat">是否结束当前对话</string>
+    <string name="x7_P2PMessageActivity_no">取消</string>
+    <string name="x7_P2PMessageActivity_openChat">是否开启当前对话</string>
+    <string name="x7_P2PMessageActivity_yes">确定</string>
+    <string name="x7_PasswordManageAct_findPasswordHint1">需要绑定手机才可以使用手机找回密码</string>
+    <string name="x7_Permission_prompt">亲,请同意稍后的设备获取权限申请哦☺r (仅作为数据统计之用)</string>
+    <string name="x7_PrePay_not_data">PrePay没有获取到数据</string>
+    <string name="x7_RMB_symbol">¥</string>
+    <string name="x7_TeamMessageFragment_clickGoTo">点击前往</string>
+    <string name="x7_TeamNotificationHelper_changedTo">修改了</string>
+    <string name="x7_TeamNotificationHelper_joinVerifyInfo">进群验证信息</string>
+    <string name="x7_TeamNotificationHelper_teamInfo">群信息</string>
+    <string name="x7_TeamNotificationHelper_teamUpdate">更新了</string>
+    <string name="x7_UserInfoEditAct_email">邮箱</string>
+    <string name="x7_X7FaceManageActivity_checkAll">全选</string>
+    <string name="x7_X7FaceManageActivity_clearUp">整理</string>
+    <string name="x7_YunXinManger_hint1">亲，你已经不在群里哦!</string>
+    <string name="x7_YunXinManger_hint2">亲，群不存在</string>
+    <string name="x7_YunXinManger_hint3">亲，进入群聊异常，请重试</string>
+    <string name="x7_YunXinUserTitlePKAct_draw">平</string>
+    <string name="x7_YunXinUserTitlePKAct_integral">积分</string>
+    <string name="x7_YunXinUserTitlePKAct_lose">败</string>
+    <string name="x7_YunXinUserTitlePKAct_maxLevel">已达到最高等级</string>
+    <string name="x7_YunXinUserTitlePKAct_minute">分</string>
+    <string name="x7_YunXinUserTitlePKAct_myTitle">我的头衔</string>
+    <string name="x7_YunXinUserTitlePKAct_need">还需</string>
+    <string name="x7_YunXinUserTitlePKAct_title">头衔PK</string>
+    <string name="x7_YunXinUserTitlePKAct_win">胜</string>
+    <string name="x7_abnormal">异常</string>
+    <string name="x7_about">关于</string>
+    <string name="x7_accelerator">加速器</string>
+    <string name="x7_account">账户</string>
+    <string name="x7_account_bind_success_and_can_login">绑定成功，后续可通过此账号进行登陆</string>
+    <string name="x7_account_regist">账号注册</string>
+    <string name="x7_actNotice">活动公告</string>
+    <string name="x7_act_send_time">发放时间：</string>
+    <string name="x7_action_settings">Settings</string>
+    <string name="x7_activity">活动</string>
+    <string name="x7_actual_price">实际价格：</string>
+    <string name="x7_ad_download_without_wifi">当前非WiFi状态，是否下载？</string>
+    <string name="x7_add_smallAccount">+ 增加小号</string>
+    <string name="x7_add_small_account">增加小号</string>
+    <string name="x7_add_small_account_error">CreateSmallHaoActivitySDK增加小号出错</string>
+    <string name="x7_add_small_account_hint">输入小号名</string>
+    <string name="x7_add_small_account_hint_1">请输入要添加的小号名称</string>
+    <string name="x7_add_small_account_succeed">添加小号成功</string>
+    <string name="x7_affirm">确认</string>
+    <string name="x7_after_get">后开抢</string>
+    <string name="x7_again_input_password">重新输入密码</string>
+    <string name="x7_again_input_pw">再输入一次密码</string>
+    <string name="x7_agree">同意</string>
+    <string name="x7_agree_agreement_failure">同意协议条款失败</string>
+    <string name="x7_agreement_hint">同意《小7手游用户协议》</string>
+    <string name="x7_agreenment_clause">同意并接受此条款</string>
+    <string name="x7_agreenment_clause_ed">已阅并接受此条款</string>
+    <string name="x7_alipay">支付宝</string>
+    <string name="x7_all_history_message">全部</string>
+    <string name="x7_already_get_gift">已领取</string>
+    <string name="x7_already_hold_draw_times">已拥有:%1$s</string>
+    <string name="x7_already_in_group">已经在群内</string>
+    <string name="x7_andi_addiction_tip">防沉迷提示</string>
+    <string name="x7_android">安卓</string>
+    <string name="x7_anti_hint">禁止使用三方工具重新打包</string>
+    <string name="x7_anti_privacy">防沉迷条款</string>
+    <string name="x7_anti_privacy_2">防沉迷政策</string>
+    <string name="x7_appear_suspension_after_login_success">登录成功后，方可出现悬浮窗体哦</string>
+    <string name="x7_area_change_notice1">检测到您在小7手游中切换地区到:</string>
+    <string name="x7_area_change_notice2">是否将本游戏切换到同地区?</string>
+    <string name="x7_area_code">地区码</string>
+    <string name="x7_area_id">地区ID,用于请求头信息 i18n</string>
+    <string name="x7_area_switch">是否提示地区切换</string>
+    <string name="x7_area_text">地区。</string>
+    <string name="x7_auto_loading">自动登录中</string>
+    <string name="x7_auto_loading_over_time_hint">自动登录超时，请手动完成登录</string>
+    <string name="x7_auto_rotation">自动旋转</string>
+    <string name="x7_available_balance">可用余额:</string>
+    <string name="x7_balance">余额</string>
+    <string name="x7_balance_inquiry">正在查询余额...</string>
+    <string name="x7_balance_rest_after_pay">支付后钱包余额</string>
+    <string name="x7_ban_net_request_before">没有获取读写权限之前 不能做网络请求!!!</string>
+    <string name="x7_best_speed_hint">最佳加速为</string>
+    <string name="x7_bind">绑定</string>
+    <string name="x7_bindEmail">邮箱绑定</string>
+    <string name="x7_bind_account">账号绑定</string>
+    <string name="x7_bind_existing_account">绑定已有账号</string>
+    <string name="x7_bind_success">绑定成功</string>
+    <string name="x7_bing_phone_hint">为了账户安全请绑定手机</string>
+    <string name="x7_blessing_bag_group_full">对应群聊人数已满</string>
+    <string name="x7_blessing_bag_has_received">已领取</string>
+    <string name="x7_blessing_bag_receive_success">成功领取</string>
+    <string name="x7_brought_up">已领完</string>
+    <string name="x7_buy_game_hint">请前往小7app内购买</string>
+    <string name="x7_buy_goods">购买道具：</string>
+    <string name="x7_buy_month_card_gift">一次购买连送30天，总计送券</string>
+    <string name="x7_buy_month_card_reduce">本单可减</string>
+    <string name="x7_buy_month_card_text">购买月卡，</string>
+    <string name="x7_buy_month_card_tip">您还不是小7月卡用户，购买小7月卡即可 享受福利特权~</string>
+    <string name="x7_buy_war_makes_tip">购买战令即可领取丰厚奖励~</string>
+    <string name="x7_call_out_interface_after_success_login">请在游戏登录成功之后，在调登出接口</string>
+    <string name="x7_callback_null">回调为空</string>
+    <string name="x7_can_join_group">您可以加入群聊</string>
+    <string name="x7_cancel">取消</string>
+    <string name="x7_cancel_no_disturbing">取消成功</string>
+    <string name="x7_changeEmail">换绑邮箱</string>
+    <string name="x7_changeEmail2">邮箱换绑</string>
+    <string name="x7_change_account">更换账号</string>
+    <string name="x7_change_bind">手机换绑</string>
+    <string name="x7_change_bind_phone">换绑手机</string>
+    <string name="x7_change_to_other_pay_way">更换其他支付方式</string>
+    <string name="x7_channel_fee">渠道费</string>
+    <string name="x7_channel_fee_explain">渠道费说明</string>
+    <string name="x7_character_commited">角色已提交</string>
+    <string name="x7_character_info_dialog_tip">确认跳转到角色信息页面吗\n\n</string>
+    <string name="x7_character_info_interface_failure">角色信息接口调用失败：roleInfo对象为空</string>
+    <string name="x7_character_out">角色已退出</string>
+    <string name="x7_chat_customer">联系客服</string>
+    <string name="x7_chat_room_have_new_message">有新消息啦</string>
+    <string name="x7_chat_room_in_blacklist">你已被拉入黑名单，不能再进入</string>
+    <string name="x7_chat_room_not_exist">聊天室不存在</string>
+    <string name="x7_chinese">中国</string>
+    <string name="x7_chooseArea">选择地区</string>
+    <string name="x7_choose_account">选择以下账号登录</string>
+    <string name="x7_choose_country">选择国家或地区</string>
+    <string name="x7_choose_locate">选择所在地</string>
+    <string name="x7_choose_pay_way">选择支付方式</string>
+    <string name="x7_choose_pay_way_hint">请选择支付方式</string>
+    <string name="x7_choose_recharge_pay_way">选择充值方式</string>
+    <string name="x7_choose_sum">选择储值金额</string>
+    <string name="x7_city_name">城市名</string>
+    <string name="x7_ck_agree_hint"><![CDATA[\t同意并已阅读 <font color=\'#12cdb0\'>《用户须知》</font>]]></string>
+    <string name="x7_classify_abnormal">类型异常</string>
+    <string name="x7_clear_account">是否清除账号</string>
+    <string name="x7_clear_cash">清缓存</string>
+    <string name="x7_clear_pay_psd">清除支付密码</string>
+    <string name="x7_click_center_small_account">点击悬浮球-个人中心-小号管理</string>
+    <string name="x7_close">关闭</string>
+    <string name="x7_closeHint">点击空白处关闭</string>
+    <string name="x7_closeHintLand">点\n击\n空\n白\n处\n关\n闭</string>
+    <string name="x7_close_teamMute">免打扰已关闭</string>
+    <string name="x7_cloud_game_cant_download">,无法在下载游戏后继续使用</string>
+    <string name="x7_cloud_game_introduction">云游戏体验说明</string>
+    <string name="x7_cloud_game_limit">因游戏限制,当前游戏的云游戏角色仅限</string>
+    <string name="x7_cloud_game_online_play">在线玩</string>
+    <string name="x7_commit_character_info">提交角色信息</string>
+    <string name="x7_commit_register_info">提交绑定</string>
+    <string name="x7_common_sdk">常规SDK</string>
+    <string name="x7_company">—小7手游运营团队</string>
+    <string name="x7_complete_account_info">完善账号信息</string>
+    <string name="x7_complete_guest_account_tip">完善账号信息即可&lt;font color=\'#ff9a00\'>免费领取首充&lt;/font>，还有游戏礼包、代金券等丰厚福利！</string>
+    <string name="x7_complete_immediately">立即完善</string>
+    <string name="x7_confirm_area_select">确认您所在的地区</string>
+    <string name="x7_confirm_modify">确认修改</string>
+    <string name="x7_confirm_pay">确认支付</string>
+    <string name="x7_confirm_recharge">确认储值</string>
+    <string name="x7_confirm_settings">确认设置</string>
+    <string name="x7_consume_interface">玩家购买道具，调sdk的消费接口,动态填写价格便于测试</string>
+    <string name="x7_consumption_record">消费记录</string>
+    <string name="x7_contact_customer_Sv">联系客服</string>
+    <string name="x7_contact_kf">联系客服</string>
+    <string name="x7_contact_service"><![CDATA[联系客服 >]]></string>
+    <string name="x7_contact_service1">联系客服</string>
+    <string name="x7_continue_real_name">继续实名</string>
+    <string name="x7_continue_receive">继续领取</string>
+    <string name="x7_conversion">兑换方法</string>
+    <string name="x7_copy">复制</string>
+    <string name="x7_copy_cancel">取消复制，后续可前往游戏礼包下查看</string>
+    <string name="x7_copy_succeed">复制成功</string>
+    <string name="x7_copy_successed">复制成功</string>
+    <string name="x7_coupon_get_data">领取期限：</string>
+    <string name="x7_create_small_account">创建小号有空参数</string>
+    <string name="x7_credit_card">信用卡</string>
+    <string name="x7_current_group_integral_rank">当前等级</string>
+    <string name="x7_current_vouchers_expired">当前代金券已过期</string>
+    <string name="x7_current_vouchers_used">当前代金券已使用</string>
+    <string name="x7_data_abnormal_please_retry">数据异常，请关闭页面后重试</string>
+    <string name="x7_data_back_null">后台返回数据为空</string>
+    <string name="x7_day">天</string>
+    <string name="x7_default_login">默认登入</string>
+    <string name="x7_default_login_explain">默认登录</string>
+    <string name="x7_delete_account">确认后将该账号从所有游戏中列表删除</string>
+    <string name="x7_delete_account_info">删除账号信息</string>
+    <string name="x7_delete_local_account_success">删除本地账号成功，可进行游客测试</string>
+    <string name="x7_detect_new_version">检测到新版</string>
+    <string name="x7_dev_station">dev站点</string>
+    <string name="x7_di">第</string>
+    <string name="x7_disagree_use_email">您还无法使用邮箱找回密码，请使用手机找回密码</string>
+    <string name="x7_discount">折</string>
+    <string name="x7_discount_title">折扣：</string>
+    <string name="x7_display_marquee">显示跑马灯</string>
+    <string name="x7_do_not_upgrade">就不升级</string>
+    <string name="x7_domestic_version">国内版</string>
+    <string name="x7_done_repeat_send_message">请勿多次刷屏</string>
+    <string name="x7_download_ad">是否立即下载</string>
+    <string name="x7_download_app">下载app</string>
+    <string name="x7_download_app_tip">下载小7手游app\n每天福利都很多</string>
+    <string name="x7_download_failure_with_net_abnormal">下载失败,网络异常</string>
+    <string name="x7_duration_game_limited_time">·游戏时长不超过</string>
+    <string name="x7_email_address_invalid">亲，邮箱地址无效，请再次输入！</string>
+    <string name="x7_email_register">邮箱注册</string>
+    <string name="x7_empty_parameter">有空参数</string>
+    <string name="x7_empty_parameter_hint">亲，有为空的数据参数哦</string>
+    <string name="x7_empty_phone_hint">手机号码不能为空</string>
+    <string name="x7_empty_psd_hint">密码或者确认密码存在空格！</string>
+    <string name="x7_empty_verify_code">验证码不能为空</string>
+    <string name="x7_enter_chat_room_exception">进入聊天室异常：</string>
+    <string name="x7_enter_emai_address">请输入邮箱地址</string>
+    <string name="x7_enter_im">进入群聊</string>
+    <string name="x7_enter_live">进入直播间</string>
+    <string name="x7_equipment_no_exist_bluetooth">设备不存在蓝牙</string>
+    <string name="x7_error_for_net">亲，网络环境很差哦</string>
+    <string name="x7_error_warning">错误警告</string>
+    <string name="x7_exclusive_act_first_join">第一次参与独家活动需要弹出说明弹窗</string>
+    <string name="x7_exclusive_act_rule_first_show">第一次打开独家活动需要弹出倒计时弹窗</string>
+    <string name="x7_exclusive_act_rule_top">小7专属活动说明</string>
+    <string name="x7_exclusive_activity_bind">立即绑定  ></string>
+    <string name="x7_exclusive_activity_bind_hint">绑定角色信息有误，请重新绑定修改并保存后提示消失</string>
+    <string name="x7_exclusive_activity_change_bind">修改  ></string>
+    <string name="x7_exclusive_activity_dialog_area">请输入区服信息</string>
+    <string name="x7_exclusive_activity_dialog_hint">角色信息在游戏设置设置顶部的ID，点击角色头像即可看到</string>
+    <string name="x7_exclusive_activity_dialog_id">请输入角色ID</string>
+    <string name="x7_exclusive_activity_dialog_name">请输入名称</string>
+    <string name="x7_exclusive_activity_dialog_top">·请填写您参与活动所充值的角色信息</string>
+    <string name="x7_exclusive_activity_join">已参加  ></string>
+    <string name="x7_exclusive_activity_not_join">未参与  ></string>
+    <string name="x7_exclusive_activity_records">领取记录</string>
+    <string name="x7_exclusive_activity_unbind">未绑定领取角色</string>
+    <string name="x7_exclusive_acts">独家活动</string>
+    <string name="x7_exclusive_acts_area">区服:</string>
+    <string name="x7_exclusive_acts_can_get">可提交</string>
+    <string name="x7_exclusive_acts_can_get_require">已达要求，参与活动即可领取</string>
+    <string name="x7_exclusive_acts_code_not_enough">礼包码已被领完，请等待补充</string>
+    <string name="x7_exclusive_acts_commited">已提交，请前往领取记录中查看</string>
+    <string name="x7_exclusive_acts_explain">说明</string>
+    <string name="x7_exclusive_acts_get_all">已领完，请前往领取记录中查看</string>
+    <string name="x7_exclusive_acts_id">ID:</string>
+    <string name="x7_exclusive_acts_join">已参加</string>
+    <string name="x7_exclusive_acts_join_tip">参与须知</string>
+    <string name="x7_exclusive_acts_joined">已参与</string>
+    <string name="x7_exclusive_acts_list">- 活动列表 -</string>
+    <string name="x7_exclusive_acts_list_hint">活动区分角色进行参与，有多角色请切换角色参与活动</string>
+    <string name="x7_exclusive_acts_more_get">单笔充值多次领取</string>
+    <string name="x7_exclusive_acts_more_one">累充多档选一</string>
+    <string name="x7_exclusive_acts_my_info">我的角色信息</string>
+    <string name="x7_exclusive_acts_need_recharge">您的小号还需充值%d元可领取</string>
+    <string name="x7_exclusive_acts_new">当前可领取%d次，参与活动后即可领取</string>
+    <string name="x7_exclusive_acts_no_get">不可领取</string>
+    <string name="x7_exclusive_acts_no_join">未参加</string>
+    <string name="x7_exclusive_acts_no_role">未检测到您的充值信息\n请充值后再参与活动</string>
+    <string name="x7_exclusive_acts_no_start">活动尚未开始</string>
+    <string name="x7_exclusive_acts_not_joined">参与活动</string>
+    <string name="x7_exclusive_acts_one">单笔充值</string>
+    <string name="x7_exclusive_acts_one_charge">单笔充值</string>
+    <string name="x7_exclusive_acts_received">已领取，请前往领取记录中查看</string>
+    <string name="x7_exclusive_acts_receivedTime">领取时间：</string>
+    <string name="x7_exclusive_acts_role_ensure">确认是否领取到此角色</string>
+    <string name="x7_exclusive_acts_role_explain">角色说明</string>
+    <string name="x7_exclusive_acts_send">已发放，请前往领取记录中查看</string>
+    <string name="x7_exclusive_acts_send_format">发放形式：</string>
+    <string name="x7_exclusive_acts_send_format_auto">活动结束或已达最高档位时，自动提交可领取的最高档位</string>
+    <string name="x7_exclusive_acts_send_format_commited">已提交可领取的最高档位，可在领取记录中查看</string>
+    <string name="x7_exclusive_acts_send_format_daily">每日将自动为您提交可领取的档位，可在领取记录中查看</string>
+    <string name="x7_exclusive_acts_send_format_not_daily">自动为您提交可领取的档位，可在领取记录中查看</string>
+    <string name="x7_exclusive_acts_send_hint">已通过游戏内发放，请注意查收</string>
+    <string name="x7_exclusive_acts_still_recharge">累充</string>
+    <string name="x7_exclusive_acts_switch_role">点击切换查看的角色</string>
+    <string name="x7_exclusive_acts_who_records">的领取记录</string>
+    <string name="x7_exclusive_award_content">奖励内容</string>
+    <string name="x7_exclusive_charge">累计充值</string>
+    <string name="x7_exclusive_no_activity">暂时没有任何活动哦~</string>
+    <string name="x7_exclusive_no_records">这里一条记录都没有~</string>
+    <string name="x7_exclusive_today_charge">今日累计充值</string>
+    <string name="x7_exit">退出</string>
+    <string name="x7_exit_app">退出app</string>
+    <string name="x7_face_book_fail_hint">facebook 登录失败</string>
+    <string name="x7_face_history_message">表情</string>
+    <string name="x7_failure">失败</string>
+    <string name="x7_fever">热</string>
+    <string name="x7_fill_character_id">填写角色id</string>
+    <string name="x7_fill_character_name">填写角色名称</string>
+    <string name="x7_fill_price_in_rigth">请先填写右边的价格</string>
+    <string name="x7_find_chat_logs">查找聊天记录</string>
+    <string name="x7_find_login_password">忘记密码</string>
+    <string name="x7_find_password_by_email">使用邮箱找回</string>
+    <string name="x7_find_password_by_phone">使用手机号码找回</string>
+    <string name="x7_find_pay_psd">找回支付密码</string>
+    <string name="x7_find_psd">忘记密码</string>
+    <string name="x7_finish_pay">完成支付</string>
+    <string name="x7_first_page_after_open_game">打开游戏的的第一个界面</string>
+    <string name="x7_fixed_horizon_screen">固定横屏</string>
+    <string name="x7_fixed_vertical_screen">固定竖屏</string>
+    <string name="x7_flat">平台币</string>
+    <string name="x7_float_ad_check_more_details">查看详情</string>
+    <string name="x7_float_hint">拖动到这隐藏</string>
+    <string name="x7_float_speed_up_hint">点击小球可设置游戏加速</string>
+    <string name="x7_float_window">悬浮窗</string>
+    <string name="x7_float_window_mode_setting_title">游戏悬浮窗设置</string>
+    <string name="x7_forgetPassword">忘记密码</string>
+    <string name="x7_forget_password">忘记密码</string>
+    <string name="x7_forget_pay_password">找回支付密码</string>
+    <string name="x7_forget_pw">忘记密码</string>
+    <string name="x7_formal_station">正式站</string>
+    <string name="x7_framekit_suspension_main_page">FrameKit\n悬浮窗主界面</string>
+    <string name="x7_fund_gift_activated">已激活</string>
+    <string name="x7_fund_gift_inactivated">未激活</string>
+    <string name="x7_fund_gift_not_get">还没到时间领取哦</string>
+    <string name="x7_fund_price">¥ %1$s  豪华基金</string>
+    <string name="x7_game">游戏</string>
+    <string name="x7_game_area_id">游戏区服id</string>
+    <string name="x7_game_area_name">游戏区服名称</string>
+    <string name="x7_game_card">游戏卡</string>
+    <string name="x7_game_card_pay_choose_num">选择储值卡点数</string>
+    <string name="x7_game_gifts">游戏礼包</string>
+    <string name="x7_game_gifts_get_record">已领取记录</string>
+    <string name="x7_game_on_fail">游戏启动失败</string>
+    <string name="x7_game_on_fail_reason">超过最大登录设备次数 您可以切换账号或换回老设备登录</string>
+    <string name="x7_game_personal_protocol">小7手游个人信息保护协议</string>
+    <string name="x7_game_privacy_policy">游戏隐私政策</string>
+    <string name="x7_game_update_hint">检测到游戏版本更新</string>
+    <string name="x7_game_update_service">游戏更新检测服务</string>
+    <string name="x7_get">领取</string>
+    <string name="x7_get_child_chennel_please_specified_pay">获取子渠道请先指定支付方式</string>
+    <string name="x7_get_gift">获取礼包</string>
+    <string name="x7_get_gift_code_error">获取礼包码出错</string>
+    <string name="x7_get_gift_code_succeed">领取成功</string>
+    <string name="x7_get_gift_error_hint">请绑定手机后再领取礼包</string>
+    <string name="x7_get_gift_fail_hint">领取失败，请稍后再试</string>
+    <string name="x7_get_global_context_failure">通过activity.getApplicationContext()获取全局的上下文失败，请检查传递的activity</string>
+    <string name="x7_get_money">将到账:</string>
+    <string name="x7_get_permission_exception">【存储】权限为正常游戏的必须权限，请继续完成授权哦~</string>
+    <string name="x7_get_pre_image_erro">获取图片数据异常</string>
+    <string name="x7_get_recycle_voucher_text">可获得以下代金券</string>
+    <string name="x7_get_small_account_fail">获取小号数据失败</string>
+    <string name="x7_get_verify_code">获取验证码</string>
+    <string name="x7_get_verify_code_fail_hint">获取验证码失败</string>
+    <string name="x7_get_verify_code_succeed">获取验证码成功</string>
+    <string name="x7_get_voucher">已领取</string>
+    <string name="x7_gift">礼包</string>
+    <string name="x7_gift_code">礼包码:</string>
+    <string name="x7_gift_code_copy">礼包码已复制</string>
+    <string name="x7_gift_content">礼包内容:</string>
+    <string name="x7_gift_copy">复制礼包</string>
+    <string name="x7_gift_detail">礼包详情</string>
+    <string name="x7_gift_for_limit_time">- 限时礼包 -</string>
+    <string name="x7_gift_for_recharge">- 充值礼包 -</string>
+    <string name="x7_gift_for_usual">- 普通礼包 -</string>
+    <string name="x7_gift_get">立即领取</string>
+    <string name="x7_gift_get_succeed_hint">领取成功，请到已领取中查看</string>
+    <string name="x7_gift_over_time">礼包过期时间</string>
+    <string name="x7_gift_re_of_get">领取要求</string>
+    <string name="x7_gift_receive">礼包领取</string>
+    <string name="x7_gift_receive_by_email">獎勵已通過遊戲內郵件發放</string>
+    <string name="x7_gift_received_hint">这里空空如也</string>
+    <string name="x7_gift_residue_number">礼包剩余数量</string>
+    <string name="x7_gift_taohao">我要淘号</string>
+    <string name="x7_gift_taohao1">淘号</string>
+    <string name="x7_gift_taohao_hint"><![CDATA[淘到的礼包可能已经使用过了哦 <font color=\'#ff9900\'>]]></string>
+    <string name="x7_gift_use_order">打开大厅-兑换激活码-粘贴礼包码</string>
+    <string name="x7_go_buy">前往购买</string>
+    <string name="x7_go_purse">前往钱包</string>
+    <string name="x7_goto_bind">前去绑定</string>
+    <string name="x7_grab">抢</string>
+    <string name="x7_group_Integral_score">积分</string>
+    <string name="x7_group_Integral_title">头衔</string>
+    <string name="x7_group_full">该群聊已满，请联系客服处理</string>
+    <string name="x7_group_integral_rank">等级</string>
+    <string name="x7_group_no_exist">群不存在</string>
+    <string name="x7_group_system_busy">系统繁忙，请再次尝试</string>
+    <string name="x7_guest_account_name">游客账号</string>
+    <string name="x7_guest_complete_for_format">需要完善账号信息后才可%s哦~</string>
+    <string name="x7_guest_complete_for_pay_safely">为保障您的账号安全，请先完善账号信息后再进行充值</string>
+    <string name="x7_guest_complete_for_welfare">完善账号信息即可领取游戏礼包、代金券等各种福利~</string>
+    <string name="x7_guest_get_voucher">获取代金券</string>
+    <string name="x7_guest_time_run_out_need_complete">您当前的游戏时间已用完，完善账号信息可更深度体验游戏，还可领取礼包、代金券等福利哦~</string>
+    <string name="x7_h5">H5</string>
+    <string name="x7_has_buy_gift">已购买</string>
+    <string name="x7_have_all_received">已领完</string>
+    <string name="x7_have_newAnnouncement">新公告</string>
+    <string name="x7_have_new_app">检测到新版本</string>
+    <string name="x7_have_receive">已领取</string>
+    <string name="x7_have_used">已使用</string>
+    <string name="x7_have_used_limit_coupon">已使用限量活动代金券</string>
+    <string name="x7_health_game">健康游戏提醒</string>
+    <string name="x7_hide_of_floating">摇一摇手机可恢复显示悬浮球</string>
+    <string name="x7_high">高度</string>
+    <string name="x7_hint">提示</string>
+    <string name="x7_hint_for_install_x7market">当前操作需前往小7APP进行，是否下载并安装小7手游？</string>
+    <string name="x7_hint_for_install_x7market_to_get_more_welfare">下载小7手游APP领取更多福利</string>
+    <string name="x7_hint_for_jump_x7market">是否打开APP参与讨论？</string>
+    <string name="x7_hint_of_input_phone">请输入手机号码</string>
+    <string name="x7_hint_of_login_password">请输入密码</string>
+    <string name="x7_hint_of_login_user_name">输入手机号或用户名</string>
+    <string name="x7_hint_of_password">请输入密码</string>
+    <string name="x7_hint_of_password2">请输入6–16位登录密码</string>
+    <string name="x7_hot">热门</string>
+    <string name="x7_hot_city">热门</string>
+    <string name="x7_hours">小时</string>
+    <string name="x7_huabei">花呗</string>
+    <string name="x7_im_blessing_bag">送来福袋惊喜大礼包！</string>
+    <string name="x7_im_blessing_bag_content">福袋内容</string>
+    <string name="x7_im_blessing_bag_rule">福袋规则</string>
+    <string name="x7_im_bubble_effects">气泡特效</string>
+    <string name="x7_im_condition_text">条件:</string>
+    <string name="x7_im_content_text">内容:</string>
+    <string name="x7_im_copy_gift_code">複製禮包碼</string>
+    <string name="x7_im_credit_gift_content">礼包内容</string>
+    <string name="x7_im_credit_gift_no_surplus">礼包已被领取完!</string>
+    <string name="x7_im_credit_gift_notice">礼</string>
+    <string name="x7_im_dialog_integral_history_no_log_records_tv">暂无相关记录~</string>
+    <string name="x7_im_get_blessing_bag_number">送来%d个福袋</string>
+    <string name="x7_im_gift_code">礼包码：</string>
+    <string name="x7_im_have_blessing_bag">有福袋</string>
+    <string name="x7_im_my_integral">我的积分</string>
+    <string name="x7_im_my_integral_detail">积分详情</string>
+    <string name="x7_im_need_write_write_external_storage_permission_to_look">小7手游群聊需要(存储)权限，方能正常选择图片哦</string>
+    <string name="x7_im_need_write_write_external_storage_permission_to_save">小7手游群聊需要(存储)权限，方能正常保存图片哦</string>
+    <string name="x7_im_no_longer_prompt_today">今日不再提示</string>
+    <string name="x7_im_not_met_condition">未满足条件或已过期</string>
+    <string name="x7_im_notice">公告</string>
+    <string name="x7_im_official">小7官方</string>
+    <string name="x7_im_official_blessing_bag">小7官方福袋</string>
+    <string name="x7_im_only_show_one_month_logs">仅显示一个月内的积分记录</string>
+    <string name="x7_im_open_now">立即打开</string>
+    <string name="x7_im_open_x7app_receive">打开小7app领取</string>
+    <string name="x7_im_pk_title_grade">头衔和等级</string>
+    <string name="x7_im_quick_reply">快捷回复：</string>
+    <string name="x7_im_receive">获得</string>
+    <string name="x7_im_receive_new">领取</string>
+    <string name="x7_im_receive_record">领取记录：</string>
+    <string name="x7_im_receive_send_blessing_bag">送的福袋</string>
+    <string name="x7_im_receive_success">领取成功</string>
+    <string name="x7_im_send">送来</string>
+    <string name="x7_im_send_blessing_bag">(%ds)</string>
+    <string name="x7_im_send_now">立即发送</string>
+    <string name="x7_im_send_send_blessing_bags">发发发</string>
+    <string name="x7_im_sender_blessing_bag">给你送来神秘福袋!</string>
+    <string name="x7_im_sender_blessing_bag_tips">发送了一个福袋</string>
+    <string name="x7_im_sender_reply_tips">回复了一条消息</string>
+    <string name="x7_im_surplus_text">剩余:</string>
+    <string name="x7_im_thanks_and_close">感谢并关闭</string>
+    <string name="x7_im_time_text">时间:</string>
+    <string name="x7_im_title_integral">头衔和积分</string>
+    <string name="x7_im_title_integral_history">积分历史</string>
+    <string name="x7_im_user_center_review">（可在个人中心查看）</string>
+    <string name="x7_im_user_title_pk_draw">平局</string>
+    <string name="x7_im_word_blessing_bag">发送口令可领取福袋</string>
+    <string name="x7_imie_permission_hint">亲，请同意稍后的设备获取权限申请哦☺</string>
+    <string name="x7_include_present">含赠送:</string>
+    <string name="x7_init_error_hint">请拷入assets 文件件夹中的appConfig.properties 文件</string>
+    <string name="x7_init_interface_failure_with_appkey">初始化接口调用失败：appkey为空</string>
+    <string name="x7_init_interface_failure_with_sminitlistener">初始化接口调用失败：SMInitListener对象为空</string>
+    <string name="x7_input_again_pw">再输入一次新密码</string>
+    <string name="x7_input_emial">请输入邮箱</string>
+    <string name="x7_input_newPassword">请输入新密码</string>
+    <string name="x7_input_new_nickName">输入新的昵称</string>
+    <string name="x7_input_num_of_sum">输入自定义金额</string>
+    <string name="x7_input_old_password">输入旧密码</string>
+    <string name="x7_input_old_pw">输入手机号</string>
+    <string name="x7_input_oldpassword">请输入原密码</string>
+    <string name="x7_input_pay_psd">输入支付密码(6~16位字符)</string>
+    <string name="x7_input_pay_psd_hint">请输入支付密码</string>
+    <string name="x7_input_reached_up_limit">输入已至上限</string>
+    <string name="x7_input_verify_code_word">请输入验证码</string>
+    <string name="x7_install">安装</string>
+    <string name="x7_install_qq_hint">亲，请先安装QQ客户端哦</string>
+    <string name="x7_install_x7market">安装小7app</string>
+    <string name="x7_international_version">国际版</string>
+    <string name="x7_invite_friend_text">邀请好友可获得:</string>
+    <string name="x7_ios">ios</string>
+    <string name="x7_is_bind_account_to_facebook">是否将Facebook绑定以下账号</string>
+    <string name="x7_is_can_replace_splash_image">是否可替换闪屏：</string>
+    <string name="x7_item_has_open">已打开</string>
+    <string name="x7_join_abnormal_please_retry">加入异常，请重试</string>
+    <string name="x7_join_apply_commited_please_wait">你的入群申请已发出，请耐心等待</string>
+    <string name="x7_join_failure_please_retry">加入失败，请重试</string>
+    <string name="x7_join_im">加入群聊</string>
+    <string name="x7_join_im_group">加入群聊？</string>
+    <string name="x7_join_im_group_to_chat_freely">加入群聊畅聊</string>
+    <string name="x7_join_im_success">加群成功</string>
+    <string name="x7_jump_sdk_personal">跳到sdk的个人中心|重新连接</string>
+    <string name="x7_jump_to_app_recycle">更多代金券请前往小7APP进行回收</string>
+    <string name="x7_kefu">客服</string>
+    <string name="x7_kicked_out_chat_room">被踢出聊天室，原因:</string>
+    <string name="x7_know">我知道了</string>
+    <string name="x7_last_login_guid">(上次登录)</string>
+    <string name="x7_last_use">上次使用</string>
+    <string name="x7_later_deal">以后再说</string>
+    <string name="x7_less_than_1">小于1</string>
+    <string name="x7_limit_char_hint">请输入昵称</string>
+    <string name="x7_limited_purchase">限量秒杀</string>
+    <string name="x7_limited_voucher_hint">以上代金券在充值时直接使用，先充先得</string>
+    <string name="x7_live">直播</string>
+    <string name="x7_live_begin_state_title">【正在直播】%s</string>
+    <string name="x7_live_chat_room_hint">说点什么吧~</string>
+    <string name="x7_live_leave_halfway_state_title">【中途离开】%s回来</string>
+    <string name="x7_live_ready_state_title">【直播预告】%s 开始直播</string>
+    <string name="x7_live_system">系统</string>
+    <string name="x7_live_welcome">欢迎</string>
+    <string name="x7_load_complete">全部加载完毕</string>
+    <string name="x7_login">登录</string>
+    <string name="x7_login_abnormal_and_listener_null">登录异常：登录监听为空</string>
+    <string name="x7_login_again">重新登录</string>
+    <string name="x7_login_callback_null">登录回调为空</string>
+    <string name="x7_login_code">请输入密码</string>
+    <string name="x7_login_error_hint">登录账号或密码为空</string>
+    <string name="x7_login_immediately">立即登录</string>
+    <string name="x7_login_interface_failure_with_sminitlistener">登入接口调用失败：SMLoginListener对象为空</string>
+    <string name="x7_login_invalid">登录会话失效</string>
+    <string name="x7_login_listener">登录的监听为空</string>
+    <string name="x7_login_must_after_init">亲，初始化成功后才可以登录哦</string>
+    <string name="x7_login_out">退出游戏</string>
+    <string name="x7_login_out_abnormal">登出异常</string>
+    <string name="x7_login_out_failure_after_retry">登出失败，请稍后再试</string>
+    <string name="x7_login_out_feedback_no_null">登出回调不能为空</string>
+    <string name="x7_login_password">登录密码</string>
+    <string name="x7_login_success_and_small_account_translated">登陆成功，已将您的游客小号转移至到此账号下</string>
+    <string name="x7_logout_cancel">登出取消</string>
+    <string name="x7_logout_fail">登出失败</string>
+    <string name="x7_logout_success">登出成功</string>
+    <string name="x7_low_version_not_support">（低版本暂不支持摇一摇重新显示）</string>
+    <string name="x7_lucky_bag_tips_all">%s 获得%d个福袋祝福</string>
+    <string name="x7_mall_buy">购买</string>
+    <string name="x7_mall_ce">战力</string>
+    <string name="x7_mall_custom_gift_buy_time">活动时间：%1$s-%2$s</string>
+    <string name="x7_mall_custom_gift_choose_count">可以从下面奖励中选择%1$s种</string>
+    <string name="x7_mall_custom_gift_choose_count_enough">已达最大选择数量啦~</string>
+    <string name="x7_mall_custom_gift_choose_count_zero">您还有道具未选哦</string>
+    <string name="x7_mall_custom_gift_commit">确认提交</string>
+    <string name="x7_mall_custom_gift_get_time">领取时间：请于%1$s前领完</string>
+    <string name="x7_mall_custom_gift_get_times">领取次数%1$s/%2$s</string>
+    <string name="x7_mall_custom_gift_recharge_get">充值领取</string>
+    <string name="x7_mall_custom_gift_sending">道具将稍后发送至邮箱，如有问题请联系客服</string>
+    <string name="x7_mall_custom_gift_time">活动时间：%1$s-%2$s</string>
+    <string name="x7_mall_custom_gift_title">%1$s元定制礼包</string>
+    <string name="x7_mall_day_num">天数</string>
+    <string name="x7_mall_draw_one_time">抽1次</string>
+    <string name="x7_mall_draw_ten_time">抽10次</string>
+    <string name="x7_mall_fund_gift_buy_time">限时购买：%1$s-%2$s</string>
+    <string name="x7_mall_get_data">获取商城数据</string>
+    <string name="x7_mall_go_to_draw">前往抽奖</string>
+    <string name="x7_mall_level">等级</string>
+    <string name="x7_mall_pass_chapter">章节</string>
+    <string name="x7_mall_pass_normal_warMakes">普通战令</string>
+    <string name="x7_mall_pass_receive_state">领取状态</string>
+    <string name="x7_mall_pass_supreme_warMakes">至尊战令</string>
+    <string name="x7_mall_pay_hint">注：小7商城的充值不计入游戏内活动</string>
+    <string name="x7_mall_props_receive_hint">道具将稍后发送至邮箱，如有问题请联系客服</string>
+    <string name="x7_mall_rechargeAmount">角色充值</string>
+    <string name="x7_mall_stage">关卡</string>
+    <string name="x7_mall_tab_four">通行证</string>
+    <string name="x7_mall_tab_one">定制礼包</string>
+    <string name="x7_mall_tab_three">月卡礼包</string>
+    <string name="x7_mall_tab_two">基金礼包</string>
+    <string name="x7_mall_turn_table_voucher">抽奖券</string>
+    <string name="x7_mall_turntable_record_dialog_known">知道了</string>
+    <string name="x7_mall_turntable_record_dialog_title"> 中奖记录 </string>
+    <string name="x7_mall_turntable_record_name_and_numb">%1$s*%2$s</string>
+    <string name="x7_mall_turntable_record_result"> 抽奖结果 </string>
+    <string name="x7_mall_turntable_rule_dialog_title"> 规则说明 </string>
+    <string name="x7_manager_small_account">点击悬浮球可以管理小号</string>
+    <string name="x7_manual_lying_on">手动开启</string>
+    <string name="x7_market_area_update_prompt">是否提示用户应用市场area信息改变</string>
+    <string name="x7_message">消息</string>
+    <string name="x7_message_center">消息中心</string>
+    <string name="x7_message_content">消息内容</string>
+    <string name="x7_message_detail">消息详情</string>
+    <string name="x7_modify">修改</string>
+    <string name="x7_modify_account_fail">修改小号失败</string>
+    <string name="x7_modify_avatar_tip">每15天可修改一次头像，禁止提交涉嫌脏话、色情、政治、广告、人名、或冒充工作人员的头像</string>
+    <string name="x7_modify_login_psd">修改登录密码</string>
+    <string name="x7_modify_nickName">修改昵称</string>
+    <string name="x7_modify_nickName_fail">修改昵称失败</string>
+    <string name="x7_modify_nickName_succeed">昵称修改成功</string>
+    <string name="x7_modify_pay_psd">修改支付密码</string>
+    <string name="x7_modify_small_account">修改小号名称</string>
+    <string name="x7_modify_small_account_hint">请输入新的小号名称</string>
+    <string name="x7_modify_small_account_succeed">小号修改成功</string>
+    <string name="x7_modify_succeed">修改成功</string>
+    <string name="x7_money_ticket_pile_num_format">%s张</string>
+    <string name="x7_month_card">月卡</string>
+    <string name="x7_month_card_guid_title">小7月卡说明</string>
+    <string name="x7_month_card_price">价格:</string>
+    <string name="x7_month_card_privilege">- 小7月卡特权 -</string>
+    <string name="x7_month_card_text">小7月卡</string>
+    <string name="x7_month_card_voucher">代金券,本次可用</string>
+    <string name="x7_more_pay_way">更多支付渠道请前往钱包充值</string>
+    <string name="x7_more_settings">更多设置</string>
+    <string name="x7_more_voucher">更多代金券</string>
+    <string name="x7_mycard_pay_way_hint">MyCard支付可能会出现延迟，请稍作等待</string>
+    <string name="x7_mycard_title">MyCard儲值</string>
+    <string name="x7_need_bind_phone">需要绑定手机</string>
+    <string name="x7_need_change_small_account">如需切换小号登录:</string>
+    <string name="x7_need_channel_fee_rate">收取费率</string>
+    <string name="x7_need_pay">需支付</string>
+    <string name="x7_need_to_choose_an_account">需要选择一个账号再进行绑定操作</string>
+    <string name="x7_net_abnormal">亲，网络异常，请重试</string>
+    <string name="x7_net_abnormity">网络异常，请重试</string>
+    <string name="x7_net_time_out">网络超时</string>
+    <string name="x7_new_an_account">新建账号</string>
+    <string name="x7_new_nickname">输入新昵称</string>
+    <string name="x7_new_small_account_hint">输入新的名字</string>
+    <string name="x7_new_user_task">新任务</string>
+    <string name="x7_new_user_task_hint">点击进入小7任务</string>
+    <string name="x7_next">下一步</string>
+    <string name="x7_nim_act_my_group_title">我的群聊</string>
+    <string name="x7_nim_close_notification_sucess">关闭状态栏通知成功</string>
+    <string name="x7_nim_need_notification_permission">开启通知权限后才会在顶部提醒哦</string>
+    <string name="x7_nim_open_notification_sucess">开启状态栏通知成功</string>
+    <string name="x7_no_dialog_adk_ad">  近3日不再弹出</string>
+    <string name="x7_no_display_this_tip">    不再显示此提示</string>
+    <string name="x7_no_disturbing">免打扰</string>
+    <string name="x7_no_face_history">暂无表情</string>
+    <string name="x7_no_gift_data_hint">当前游戏没有礼包数据</string>
+    <string name="x7_no_gift_hint">暂无礼包可领取</string>
+    <string name="x7_no_install_x7market">系统未检测到小7app</string>
+    <string name="x7_no_know_message_type">未知消息类型</string>
+    <string name="x7_no_longer_show_hint">不再显示此提示</string>
+    <string name="x7_no_longger_remind">\t今日不再提醒</string>
+    <string name="x7_no_meet_receive_conditions">您还未达到领取要求</string>
+    <string name="x7_no_more_data">亲，没有更多数据了哦</string>
+    <string name="x7_no_more_hint"> " 不再提示"</string>
+    <string name="x7_no_net_hint">亲，没有网络哦</string>
+    <string name="x7_no_net_please_check_setting">无网络，请检查网络连接设置</string>
+    <string name="x7_no_net_please_open_net">无网络,请打开网络连接</string>
+    <string name="x7_no_network">(无网络)</string>
+    <string name="x7_no_permission">当前无权限，请授权</string>
+    <string name="x7_no_picture_video_history">暂无图片/视频</string>
+    <string name="x7_no_realname_content">暂不实名模式下，您可直接进入游戏进行体验无须实名，但也有一些限制：</string>
+    <string name="x7_no_realname_into_game">暂不实名进入游戏</string>
+    <string name="x7_no_realname_tips3">为提供更好的游戏体验，建议您进行实名认证</string>
+    <string name="x7_no_recycler_account">您暂时没有符合回收的小号</string>
+    <string name="x7_no_search_history">啥都没找到，换个词试试呗！</string>
+    <string name="x7_no_sell_account">您暂时没有符合出售的小号</string>
+    <string name="x7_no_support_current_area">不支持当前区服</string>
+    <string name="x7_no_support_current_vouchers">不支持当前类型代金券</string>
+    <string name="x7_no_use">不可用</string>
+    <string name="x7_no_use_vouche">无可用代金券</string>
+    <string name="x7_no_use_voucher">不使用代金券</string>
+    <string name="x7_no_x7market_reason">可能已被您卸载，请重新下载后购买</string>
+    <string name="x7_normal_real_name_way">中国居民第二代身份证</string>
+    <string name="x7_notReceive">未领取</string>
+    <string name="x7_not_buy_game_hint">您尚未购买此游戏</string>
+    <string name="x7_not_have">无</string>
+    <string name="x7_not_recharge_fund_gift">您还未激活基金</string>
+    <string name="x7_not_support_function">暂不支持此功能</string>
+    <string name="x7_not_support_share_deal_message">暂不支持该出售小号信息，请下载最新版APP后查看</string>
+    <string name="x7_not_support_share_video_message">暂不支持该视频分享信息，请下载最新版APP后查看</string>
+    <string name="x7_not_yet_time_to_pick">还没到领取时间哦~</string>
+    <string name="x7_notice_all_read">全部已读√</string>
+    <string name="x7_now_login_account">当前登录</string>
+    <string name="x7_null">为空</string>
+    <string name="x7_old_password_hint">输入原密码</string>
+    <string name="x7_open_app">打开APP</string>
+    <string name="x7_open_deepLink">打开了deepLink页</string>
+    <string name="x7_open_game_float_window_mode">开启悬浮窗游戏窗口</string>
+    <string name="x7_open_game_float_window_mode_description">新增游戏悬浮窗口功能，边刷手机边玩游戏，双倍快乐哟~点击在系统中手动开启系统权限，在设置中可取消游戏窗口悬浮功能。</string>
+    <string name="x7_open_game_float_window_mode_notice">可开启悬浮窗功能，玩游戏刷手机双倍快乐</string>
+    <string name="x7_open_game_float_window_mode_off">暂不开启</string>
+    <string name="x7_open_game_float_window_mode_on">开启</string>
+    <string name="x7_open_gift_link">前往兑换网址</string>
+    <string name="x7_open_service_info">开服信息</string>
+    <string name="x7_open_suspension_permission">请开启悬浮窗权限</string>
+    <string name="x7_open_suspension_permission_and_alert">请开启悬浮窗权限和后台弹出界面权限</string>
+    <string name="x7_open_teamMute">免打扰已开启</string>
+    <string name="x7_other">其他</string>
+    <string name="x7_other_account">其他账号</string>
+    <string name="x7_other_pay_way">其他储值</string>
+    <string name="x7_other_smallAccount">其他小号</string>
+    <string name="x7_out_now_character">退出当前角色</string>
+    <string name="x7_out_of_date">已过期</string>
+    <string name="x7_over_refresh_hint">哼，再一直连续刷新我也不理你了</string>
+    <string name="x7_paramter_is_null">所对应的参数为空</string>
+    <string name="x7_parms_exist_blank_space">所对应的参数前后有空格存在，请去掉</string>
+    <string name="x7_password_login">密码登录</string>
+    <string name="x7_password_low_complex">您设置的密码复杂度较低，有账号安全方面的风险，确定要使用吗</string>
+    <string name="x7_password_risk">密码风险</string>
+    <string name="x7_pay">支付</string>
+    <string name="x7_pay_abnormal">支付异常</string>
+    <string name="x7_pay_cancel">支付取消</string>
+    <string name="x7_pay_cancel_callback">支付取消回调</string>
+    <string name="x7_pay_card_hint">*MyCard 支付可能会出现延迟，请稍作等待</string>
+    <string name="x7_pay_data_null">支付数据为空</string>
+    <string name="x7_pay_data_parsing_abnormal">支付数据解析异常</string>
+    <string name="x7_pay_failure">支付失败，有参数为空</string>
+    <string name="x7_pay_for_channel">含渠道费</string>
+    <string name="x7_pay_for_last_wx">亲，请先下载最新的微信客户端哦</string>
+    <string name="x7_pay_for_my_card_success">点卡剩余金额已自动转成平台币 \n 可在余额中查看</string>
+    <string name="x7_pay_for_purse_html">钱包支付</string>
+    <string name="x7_pay_from_purse">购买费用从钱包扣除</string>
+    <string name="x7_pay_hint">支付参数或金额为空</string>
+    <string name="x7_pay_interface_failure_with_pay_parms">支付接口调用失败：支付参数</string>
+    <string name="x7_pay_interface_failure_with_payinfo">支付接口调用失败：PayInfo对象为空</string>
+    <string name="x7_pay_interface_failure_with_smpaylistener">支付接口调用失败：SMPayListener对象为空</string>
+    <string name="x7_pay_method_null">支付方式为空</string>
+    <string name="x7_pay_nounce"><![CDATA[渠道费说明 >]]></string>
+    <string name="x7_pay_parameter_error">支付参数有误</string>
+    <string name="x7_pay_password">支付密码</string>
+    <string name="x7_pay_price_limit">支付价格要大于0</string>
+    <string name="x7_pay_psd_empty_hint">支付密码为空</string>
+    <string name="x7_pay_psd_hint">请输入当前支付密码</string>
+    <string name="x7_pay_purse">平台币储值</string>
+    <string name="x7_pay_purse_num">平台币余额</string>
+    <string name="x7_pay_result">支付结果</string>
+    <string name="x7_pay_result_hint">温馨提示：到账可能有几分钟延时 客服：9：00-18：00(周一至周五)</string>
+    <string name="x7_pay_return_hint">平台币(支付后返至钱包)</string>
+    <string name="x7_pay_succeed">支付成功</string>
+    <string name="x7_pay_success">充值成功</string>
+    <string name="x7_pay_unit">平台币</string>
+    <string name="x7_pay_unit_rmb">人民币</string>
+    <string name="x7_pay_unit_usd">美元</string>
+    <string name="x7_pay_way_not_dredge">当前支付方式未开通</string>
+    <string name="x7_pay_wrong_num_hint">请输入正确的储值金额</string>
+    <string name="x7_payment_failure">支付失败</string>
+    <string name="x7_paypal">Paypal儲值</string>
+    <string name="x7_period_validity">有效期：</string>
+    <string name="x7_permission_announcement">权限声明</string>
+    <string name="x7_permission_calendar">日历:</string>
+    <string name="x7_permission_calendar_declaration">进行日历提醒需使用</string>
+    <string name="x7_permission_camera">相机:</string>
+    <string name="x7_permission_camera_declaration">上传照片可直接拍照上传</string>
+    <string name="x7_permission_contacts">联系人:</string>
+    <string name="x7_permission_contacts_declaration">以便获取您的联系人信息进行好友推荐，分享</string>
+    <string name="x7_permission_exit">拒绝并退出</string>
+    <string name="x7_permission_get_failure">权限获取失败</string>
+    <string name="x7_permission_get_success">权限获取成功</string>
+    <string name="x7_permission_hint">小7温馨提示</string>
+    <string name="x7_permission_location">位置:</string>
+    <string name="x7_permission_location_declaration">获取您的位置信息用于个人信息展示</string>
+    <string name="x7_permission_microphone">麦克风:</string>
+    <string name="x7_permission_microphone_declaration">语音录制上传与语音通信时需使用</string>
+    <string name="x7_permission_phone">手机:</string>
+    <string name="x7_permission_phone_declaration">获取你的设备信息用于保证您的账号安全</string>
+    <string name="x7_permission_sensors">传感器:</string>
+    <string name="x7_permission_sensors_declaration">部分游戏需获取设备传感器信息保证特殊功能使用</string>
+    <string name="x7_permission_sms">短信:</string>
+    <string name="x7_permission_sms_declaration">短信相关认证功能可自动验证短信内容</string>
+    <string name="x7_permission_storage">存储卡:</string>
+    <string name="x7_permission_storage_declaration">存储缓存数据，提高应用流畅度</string>
+    <string name="x7_permission_tips">为确保正常游戏，游戏将申请以下权限：\n 1. 存储权限 </string>
+    <string name="x7_phoneLogin">验证码登录</string>
+    <string name="x7_phone_bind">绑定手机</string>
+    <string name="x7_phone_binding">手机绑定</string>
+    <string name="x7_phone_bingding">手机绑定</string>
+    <string name="x7_phone_change_bind_suceed">手机号码换绑成功</string>
+    <string name="x7_phone_code_login">验证码登录</string>
+    <string name="x7_phone_fast_register">手机快速注册</string>
+    <string name="x7_phone_lose_efficacy">亲，该手机号码无效哦</string>
+    <string name="x7_phone_no_register">手机未注册</string>
+    <string name="x7_phone_number_invalid">亲，手机号码无效，请再次输入！</string>
+    <string name="x7_phone_number_regist">手机号码注册</string>
+    <string name="x7_phone_number_register">手机注册</string>
+    <string name="x7_phone_registered_notice">该手机号码已经注册，是否使用此账号进行绑定</string>
+    <string name="x7_phone_unbind">手机解绑</string>
+    <string name="x7_picture_video_history_message">图片/视频</string>
+    <string name="x7_plate_money">平台币</string>
+    <string name="x7_please_agree_group_and_weite_permission">请允许小7群聊的写入和安装权限0</string>
+    <string name="x7_please_enter_password">请填写登录密码</string>
+    <string name="x7_please_enter_username">请填写用户名或手机或邮箱</string>
+    <string name="x7_please_install_alipay">请先安装支付宝再进行支付</string>
+    <string name="x7_policy_provisons_title">隐私政策条款</string>
+    <string name="x7_price">价钱</string>
+    <string name="x7_price_1">价格</string>
+    <string name="x7_privacy_explain">欢迎下载小7游戏，我们非常重视个人信息和隐私保护。在使用小7游戏前，请详细阅读并同意《小7手游用户协议》、《小7手游隐私政策》和《游戏隐私政策》。\n为了给您提供良好的游戏体验，我们会向您申请部分必要的敏感权限。您可选择同意或拒绝本相应权限的申请，如果您选择拒绝可能会导致游戏中部分功能体验异常。敏感权限包括：</string>
+    <string name="x7_private_policy">隐私政策</string>
+    <string name="x7_problem_solved">您咨询的问题已解决，请点击查看详情</string>
+    <string name="x7_psd_clear_success">支付密码已清除成功</string>
+    <string name="x7_psd_empty_hint">密码不能为空</string>
+    <string name="x7_psd_length_error_hint">密码长度不符合要求,最少6位,最多16位</string>
+    <string name="x7_psd_no_fit">亲,两次密码不一致</string>
+    <string name="x7_psd_wrong_format_error">亲，密码格式错误</string>
+    <string name="x7_purse">钱包</string>
+    <string name="x7_purse_history">钱包记录</string>
+    <string name="x7_purse_pay">余额充值</string>
+    <string name="x7_purse_pay_unit">单位:</string>
+    <string name="x7_purse_recharge">充值</string>
+    <string name="x7_pw_fault">密码错误,请重新输入</string>
+    <string name="x7_qq"><![CDATA[QQ 群 >]]></string>
+    <string name="x7_qq_1">QQ群</string>
+    <string name="x7_quick_unlock">立即解锁</string>
+    <string name="x7_range_of_application">适用范围</string>
+    <string name="x7_re_get_code">重新获取</string>
+    <string name="x7_re_send">重新发送</string>
+    <string name="x7_re_tao">重新淘</string>
+    <string name="x7_read_content">请耐心看完条款内容</string>
+    <string name="x7_read_protocol">请阅读小7手游用户协议</string>
+    <string name="x7_ready_for_union_pay">正在唤起银联支付，请等待...</string>
+    <string name="x7_ready_for_wx_pay">正在唤起微信支付，请等待...</string>
+    <string name="x7_ready_pay_for_alipay">正在唤起支付宝支付，请等待...</string>
+    <string name="x7_real_name">实名</string>
+    <string name="x7_real_name_authentication">实名认证</string>
+    <string name="x7_rebate">返平台币：</string>
+    <string name="x7_receive">领取</string>
+    <string name="x7_receive_normal_and_supreme_reward">已领取普通档和至尊档奖励</string>
+    <string name="x7_receive_normal_reward">已领取普通档奖励</string>
+    <string name="x7_received">已领取</string>
+    <string name="x7_received_reward_tip">您已经领过奖励啦</string>
+    <string name="x7_recharge">立即充值</string>
+    <string name="x7_recharge_amount">充值金额</string>
+    <string name="x7_recharge_desc_faster_and_safer">充值到账速度更快、更安全</string>
+    <string name="x7_recharge_immediately">立即充值</string>
+    <string name="x7_recharge_limit">充值满</string>
+    <string name="x7_recharge_rate_rmb">1平台币=1人民币</string>
+    <string name="x7_recharge_tips">·不能充值和付费消费</string>
+    <string name="x7_recycle_voucher_area_hint">您要回收的账号在小7应用当前地区不存在，需要切换到小7APP到</string>
+    <string name="x7_recycle_voucher_more_title">更多</string>
+    <string name="x7_recycle_voucher_text">此代金券大部分游戏可使用</string>
+    <string name="x7_recycler_need_toApp">如何回收进入小7APP查看</string>
+    <string name="x7_refresh_smallAccountList">刷新小号列表失败</string>
+    <string name="x7_refresh_small_account_commit_error">CreateSmallHaoActivitySDK刷新小号信息提交错误</string>
+    <string name="x7_regist_psd_dif">两次输入密码不相同</string>
+    <string name="x7_register_agreement">登陆注册即代表同意</string>
+    <string name="x7_register_continue">继续注册</string>
+    <string name="x7_register_fail_hint">注册失败，请稍后再试</string>
+    <string name="x7_register_fast">快速注册</string>
+    <string name="x7_register_immediately">立即注册</string>
+    <string name="x7_register_new_account_hint">您的手机号码未注册，是否直接注册新账号？</string>
+    <string name="x7_register_psd_hint">请输入注册密码</string>
+    <string name="x7_register_succeed">注册成功</string>
+    <string name="x7_register_tip">*未注册的手机验证后自动登录</string>
+    <string name="x7_remain_hold_draw_times">剩余%1$s/%2$s次</string>
+    <string name="x7_remeber_user_name">请记住用户名：</string>
+    <string name="x7_replacement_get_gift">补领</string>
+    <string name="x7_reply_picture">[图片]</string>
+    <string name="x7_residue_sum">钱包余额：</string>
+    <string name="x7_resiter_agreement">注册即同意 《小7服务协议》</string>
+    <string name="x7_return">返回</string>
+    <string name="x7_reward_content">奖励内容</string>
+    <string name="x7_right_email_hint">请输入正确的邮箱</string>
+    <string name="x7_right_money">亲，请输入正确的金额</string>
+    <string name="x7_right_phone_hint">请输入正确的手机号</string>
+    <string name="x7_rmb">元</string>
+    <string name="x7_rmb_use">元可用</string>
+    <string name="x7_role_ce">填写角色战力</string>
+    <string name="x7_role_level">填写角色等级</string>
+    <string name="x7_role_rechargeAmount">填写角色充值</string>
+    <string name="x7_role_stage">填写角色关卡</string>
+    <string name="x7_save">保存</string>
+    <string name="x7_screen_shot_success">截图成功,你可以</string>
+    <string name="x7_sdk_GameTopicDetailAct_hotDiscuss">热门讨论</string>
+    <string name="x7_sdk_GameTopicDetailAct_lookAll">查看全部</string>
+    <string name="x7_sdk_GameTopicDetailAct_oneself">只看自己</string>
+    <string name="x7_sdk_GameTopicDetailAct_packUp">收起</string>
+    <string name="x7_sdk_GameTopicDetailAct_participateDiscuss">参与讨论</string>
+    <string name="x7_sdk_GameTopicDetailAct_readAll">显示更多</string>
+    <string name="x7_sdk_SignTopicDetailActX7SDK_dailyWelfare">每日福利</string>
+    <string name="x7_sdk_SignTopicDetailActX7SDK_gameNotice">公告</string>
+    <string name="x7_sdk_comment_no_visible">此评论内容暂时不可见</string>
+    <string name="x7_sdk_delay">稍后领取</string>
+    <string name="x7_sdk_game_privacy_policy">小7手游隐私政策</string>
+    <string name="x7_sdk_goTo_x7Market">打开APP参与</string>
+    <string name="x7_sdk_immediately_go">立即前往</string>
+    <string name="x7_sdk_insider_login">登入成功（00）</string>
+    <string name="x7_sdk_invite">邀请</string>
+    <string name="x7_sdk_invite_and_get_award">邀请好友领奖励</string>
+    <string name="x7_sdk_update_hint">检测到SDK版本更新</string>
+    <string name="x7_sdk_user_agreement">小7手游用户协议</string>
+    <string name="x7_sdk_write_invite_code">填写邀请码</string>
+    <string name="x7_sell">出售中</string>
+    <string name="x7_sell_need_toApp">如何出售进入小7APP查看</string>
+    <string name="x7_send_blessing_bag_in_blacklist">抱歉，当前账号或设备被拉入黑名单了！</string>
+    <string name="x7_sending_fund_gift">发放中</string>
+    <string name="x7_sending_fund_gift_text">奖励正在发放中</string>
+    <string name="x7_set_area">地区设置</string>
+    <string name="x7_set_default_login">选择默认登录后,以后将直接登录</string>
+    <string name="x7_set_login_psd">请设置登录密码</string>
+    <string name="x7_set_pay_psd">设置支付密码</string>
+    <string name="x7_share_deal_account">分享了一个游戏小号</string>
+    <string name="x7_share_deal_to_chat_room">分享了小号交易</string>
+    <string name="x7_share_pic_to_chat_room">分享了图片</string>
+    <string name="x7_share_to_friend">去发帖</string>
+    <string name="x7_share_video">分享了一条视频点评</string>
+    <string name="x7_share_video_to_chat_room">分享了视频</string>
+    <string name="x7_shock_hint">摇一摇显示悬浮球</string>
+    <string name="x7_show_notice_hint">左右滑动查看其它公告</string>
+    <string name="x7_show_voucher_panel">显示代金券列表</string>
+    <string name="x7_shut_down_game">关闭游戏</string>
+    <string name="x7_sign_in_ensure">确认登录</string>
+    <string name="x7_sign_in_now">立即登录</string>
+    <string name="x7_skip">跳过</string>
+    <string name="x7_smallAccountNote1">你可以在一个游戏里创建最多10个小号</string>
+    <string name="x7_smallAccountNote2">各小号相对独立，等同于一个平台账号在每个游戏里可以创建多个子账号</string>
+    <string name="x7_smallAccountNote3">在小7app交易中心，可以将小号出售，同时不影响其他小号正常</string>
+    <string name="x7_smallAccountnote">小号说明</string>
+    <string name="x7_small_account">选择以下小号登录</string>
+    <string name="x7_small_account_commit_error">CreateSmallHaoActivitySDK小号信息提交错误</string>
+    <string name="x7_small_account_guid_error">小号guid信息有误，请重新登录</string>
+    <string name="x7_small_account_name_rule">亲，小号的名称不能大于4个字符！</string>
+    <string name="x7_small_account_note">小号说明</string>
+    <string name="x7_small_account_num_limit">小号数量不能超过10个</string>
+    <string name="x7_small_account_switch">小号切换</string>
+    <string name="x7_smallaccountLoginfail">小号登录失败</string>
+    <string name="x7_smsdk_contact_custom_service">联系客服</string>
+    <string name="x7_smsdk_version">版本号:</string>
+    <string name="x7_special_real_name_way">海外上传附件认证</string>
+    <string name="x7_speed_cut">—</string>
+    <string name="x7_speed_pause">暂停</string>
+    <string name="x7_speed_up">+</string>
+    <string name="x7_station">站点</string>
+    <string name="x7_storage_permission_hint">请允许稍后的文件存储权限</string>
+    <string name="x7_subscribe_game_online">预约游戏上线</string>
+    <string name="x7_subscribe_game_start">%1$s游戏15分钟后首发</string>
+    <string name="x7_suggestion">建议</string>
+    <string name="x7_sure">确定</string>
+    <string name="x7_sure_can_replace">是</string>
+    <string name="x7_sure_for_switch_account">确定切换账号</string>
+    <string name="x7_sure_for_switch_small_account">确定切换到小号\"</string>
+    <string name="x7_sure_for_switch_small_account_1">\"登录吗？</string>
+    <string name="x7_sure_not_can_replace">否</string>
+    <string name="x7_sure_of_buy_game">确认购买</string>
+    <string name="x7_sure_of_modify">确定修改</string>
+    <string name="x7_sure_of_submit">确定提交</string>
+    <string name="x7_sure_to_add">确定</string>
+    <string name="x7_sure_to_bind_this_account">确认绑定此账号吗</string>
+    <string name="x7_sure_unbind">确定解绑</string>
+    <string name="x7_surplus">剩余:</string>
+    <string name="x7_suspension_hint_for_web">退出游戏后重新进入可恢复显示</string>
+    <string name="x7_switch">切换</string>
+    <string name="x7_switch_account">切换账号</string>
+    <string name="x7_switch_account1"><![CDATA[切换 >]]></string>
+    <string name="x7_switch_domain_name_tip_one">再点击2下打开角色信息界面</string>
+    <string name="x7_switch_domain_name_tip_two">再点击1下打开角色信息界面</string>
+    <string name="x7_switch_small_account_fail">切换失败，请稍候再试...</string>
+    <string name="x7_switch_small_account_succeed">小号切换成功</string>
+    <string name="x7_taiwan">台 湾</string>
+    <string name="x7_temp_no_need_realname">暂不实名</string>
+    <string name="x7_temp_not_real_name">暂不实名</string>
+    <string name="x7_temporary_no_need">暂时不用</string>
+    <string name="x7_test_framekit">FrameKit测试</string>
+    <string name="x7_test_gift">测试礼包</string>
+    <string name="x7_test_no_real_pay_page">用于测试FrameKit框架\n！！不代表实际支付界面！！</string>
+    <string name="x7_test_page">测试界面</string>
+    <string name="x7_test_station">测试站</string>
+    <string name="x7_text_password">密 码</string>
+    <string name="x7_this_accout_has_used_this_voucher">该小号已使用过此代金券</string>
+    <string name="x7_tip_check_agreement">请阅读并勾选同意用户协议和隐私政策</string>
+    <string name="x7_tip_received">您已经领取过奖励啦~</string>
+    <string name="x7_to">至</string>
+    <string name="x7_to_APP">进入小7APP</string>
+    <string name="x7_to_APP_sell_or_recycler">即将前往小7APP继续操作，请在小7App中登录同一账号完成回收/出售操作</string>
+    <string name="x7_to_get_permission">一键获取</string>
+    <string name="x7_to_login">去登陆</string>
+    <string name="x7_to_pay">立即支付</string>
+    <string name="x7_to_real_name">进行实名认证</string>
+    <string name="x7_to_replay">回复</string>
+    <string name="x7_to_top_success">置顶成功</string>
+    <string name="x7_to_x7market_read">去小7查看</string>
+    <string name="x7_today_already_receive">今日已领取</string>
+    <string name="x7_tourist_login">游客登录</string>
+    <string name="x7_tourist_sdk">游客SDK</string>
+    <string name="x7_traffic">(流量)</string>
+    <string name="x7_trust_device">信任设备</string>
+    <string name="x7_turn_off">关闭</string>
+    <string name="x7_tw">台湾</string>
+    <string name="x7_tw_1">中国台湾</string>
+    <string name="x7_unbind">解绑</string>
+    <string name="x7_unbind_login_hint">解绑后将只能通过用户名登录</string>
+    <string name="x7_unbind_success">解除绑定成功</string>
+    <string name="x7_unclaimed">待领取</string>
+    <string name="x7_union_online">银联在线</string>
+    <string name="x7_unionpay_payment_anomaly">银联支付异常</string>
+    <string name="x7_update">立即升级</string>
+    <string name="x7_update_package_download_failure">更新包下载失败：网络异常</string>
+    <string name="x7_update_package_downloading">更新包下载中...</string>
+    <string name="x7_updated">更新</string>
+    <string name="x7_uploading">上传中...</string>
+    <string name="x7_use">使用</string>
+    <string name="x7_use_for_imei">(仅作为数据统计之用)</string>
+    <string name="x7_use_range">使用范围</string>
+    <string name="x7_use_rules">使用规则 ></string>
+    <string name="x7_use_voucher">使用代金券</string>
+    <string name="x7_use_voucher_scope">代金券适用范围</string>
+    <string name="x7_user_account_manager">小号管理</string>
+    <string name="x7_user_agree">用户须知</string>
+    <string name="x7_user_agreement">用户协议</string>
+    <string name="x7_user_agreement_1">注册即同意</string>
+    <string name="x7_user_agreement_2">《小7服务协议》</string>
+    <string name="x7_user_cancel_login">用户取消了登录</string>
+    <string name="x7_user_cancel_pay">用户取消了支付</string>
+    <string name="x7_user_cancel_payment">用户取消支付</string>
+    <string name="x7_user_centre">用户中心</string>
+    <string name="x7_user_click_back">用户点击了物理返回键</string>
+    <string name="x7_user_click_back_with_cancel_pay">用户点击了手机的物理返回键，取消了支付</string>
+    <string name="x7_user_login">用户登录</string>
+    <string name="x7_user_login_success">用户登录成功跳到模拟游戏的主页面|断开连接</string>
+    <string name="x7_user_name">用户名</string>
+    <string name="x7_user_name_login">用户名登录</string>
+    <string name="x7_user_name_register">账号注册</string>
+    <string name="x7_user_name_rg">4–16位，小写字母开头</string>
+    <string name="x7_user_name_rg_land">请输入4–16位用户名，小写字母开头</string>
+    <string name="x7_user_name_wrong_format">亲，用户名格式错误</string>
+    <string name="x7_user_pay_channel_error">支付渠道选择出错</string>
+    <string name="x7_user_recharge_success">用户充值成功</string>
+    <string name="x7_user_register">用户名注册</string>
+    <string name="x7_user_register_1">用户名注册(不推荐)</string>
+    <string name="x7_username_login">账号登录</string>
+    <string name="x7_username_regist">用户名注册</string>
+    <string name="x7_valid">有效期</string>
+    <string name="x7_verify_code_input_hint">请输入验证码</string>
+    <string name="x7_verify_phone">为了账号安全，需要验证您的手机</string>
+    <string name="x7_video_path_list_title">所有视频</string>
+    <string name="x7_view_details">查看详情</string>
+    <string name="x7_view_purse_history">查看记录</string>
+    <string name="x7_vip_gift">VIP礼包</string>
+    <string name="x7_visit_net_abnormal">访问网络异常</string>
+    <string name="x7_voucher">代金券：</string>
+    <string name="x7_voucher_1">代金券</string>
+    <string name="x7_voucher_code">代金券码为空</string>
+    <string name="x7_voucher_collection">代金券领取</string>
+    <string name="x7_voucher_hint">张可用</string>
+    <string name="x7_voucher_price_hint">使用代金券后的支付价格要大于0</string>
+    <string name="x7_wallet_balance">钱包余额</string>
+    <string name="x7_warm_prompt">温馨提示</string>
+    <string name="x7_week_card">周卡</string>
+    <string name="x7_with">和</string>
+    <string name="x7_write_external_hint">请允许稍后的文件存储权限哦 \n 否则不能进入游戏呢</string>
+    <string name="x7_wx_pay">微信支付</string>
+    <string name="x7_wx_write_permission">请允许微信支付插件的写入和安装权限0</string>
+    <string name="x7_wx_write_permission_1">请允许微信支付插件的写入安装权限1</string>
+    <string name="x7_xlistview_footer_hint_loaderror">亲,网络不给力,请再给次机会</string>
+    <string name="x7_xlistview_footer_hint_loadover">- 全部加载完毕 -</string>
+    <string name="x7_xlistview_footer_hint_normal">查看更多</string>
+    <string name="x7_xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="x7_xlistview_header_hint_loading">正在加载...</string>
+    <string name="x7_xlistview_header_hint_normal">下拉刷新</string>
+    <string name="x7_xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="x7_xlistview_header_last_time">上次更新时间：</string>
+    <string name="x7_xml_Enter">立即进入</string>
+    <string name="x7_xml_goToExplain">入群说明：</string>
+    <string name="x7_xml_groupInfo">群组介绍：</string>
+    <string name="x7_xml_hint18">加入QQ群一起玩</string>
+    <string name="x7_xml_hint19">加群</string>
+    <string name="x7_xml_payHint1">充值平台币后不支持退款</string>
+    <string name="x7_xml_payHint3">请输入自定义金额</string>
+    <string name="x7_yunXin_common_networkError">网络异常，请重试</string>
+    <string name="x7_yunXin_common_networkError1">网络异常，请重试1</string>
+    <string name="x7_yunXin_common_networkError2">网络异常，请重试2</string>
+    <string name="x7_yunXin_common_networkError3">网络异常，请重试3</string>
+    <string name="x7_yunXin_common_uploading">上传中</string>
+    <string name="x7_yunXin_newMesage_hint">发来一条新消息</string>
+    <string name="x7_yunXin_newMesage_image_hint">发来一条图片消息</string>
+    <string name="x7_yunceng_sdk_app_key">27af97df6c8f2bad47a79377a350bc42</string>
+    <string name="x7base_AccountBuyBackAct_paySucceed">支付成功</string>
+    <string name="x7base_AccountBuyBackAct_userAliPay_wait">正在唤起支付宝支付，请等待...</string>
+    <string name="x7base_AccountBuyBackAct_userUnionPay_wait">正在唤起银联支付，请等待...</string>
+    <string name="x7base_AccountBuyBackAct_userWeChat_wait">正在唤起微信支付，请等待...</string>
+    <string name="x7base_BaseActivity_hint1">请允许微信支付插件的写入安装权限005</string>
+    <string name="x7base_BaseActivity_hintContent">小7手游需要<font color="#12cdb0">(存储)</font>权限，方能正常进行游戏下载哦</string>
+    <string name="x7base_BaseActivity_hintTitle">小7温馨提示</string>
+    <string name="x7base_CheckUpdateUtils_noNetWork">亲，当前处于无网络状态耶</string>
+    <string name="x7base_CheckUpdateUtils_noNetWork_title">亲,当前网络处于非WIFI状态,确定下载吗?</string>
+    <string name="x7base_CheckUpdateUtils_x7Market">小7手游</string>
+    <string name="x7base_H5GameReadyPayActivity_payCancel">支付取消</string>
+    <string name="x7base_H5GameReadyPayActivity_payFailure">支付失败</string>
+    <string name="x7base_H5PayCouponActivity_payError">支付异常：</string>
+    <string name="x7base_HelpFragment_alreadyLogin_edit" translatable="false">编辑</string>
+    <string name="x7base_IM_xml_saySomething">和大家说点什么吧</string>
+    <string name="x7base_JsInterface_hint10">亲，购买游戏请先登录哦</string>
+    <string name="x7base_JsInterface_hint8">正在查询余额，请稍等...</string>
+    <string name="x7base_MessageCenterActivity1_cancel">取消</string>
+    <string name="x7base_PhoneInfo_bluetooth">设备不存在蓝牙</string>
+    <string name="x7base_UploadUtil_hint1">上传中：</string>
+    <string name="x7base_UserCenterGameFrag_relaxation">休闲</string>
+    <string name="x7base_UserLoginActivity_networkError">网络异常，请重试!</string>
+    <string name="x7base_UserLoginActivity_networkError1">网络异常，请重试1!</string>
+    <string name="x7base_UserLoginActivity_networkError2">网络异常，请重试2!</string>
+    <string name="x7base_UserLoginActivity_networkError3">网络异常，请重试3!</string>
+    <string name="x7base_UserLoginActivity_networkError4">亲，网络不给力，请重试</string>
+    <string name="x7base_UsernameRegisterActivity_hint3">获取sessionId失败,请重新验证</string>
+    <string name="x7base_X7InputPanel_inputContent">请输入聊天内容</string>
+    <string name="x7base_X7InputPanel_sendError">发送异常，请重试</string>
+    <string name="x7base_active_gift_fund">礼包基金已激活，记得每天来领礼包呦</string>
+    <string name="x7base_add_setting_register_return_xml">这一过程来添加设置进去的,当为设置一个的时候，就在这个中注册了一个回调</string>
+    <string name="x7base_alipay_erro">银联支付异常：</string>
+    <string name="x7base_all_emoji">全部</string>
+    <string name="x7base_all_gift_fund">全部礼包</string>
+    <string name="x7base_appkey" translatable="false">P67IjMMtHkrWYWM2972jZqowIDkoFTI0gFMYrWTfeDHgVtDJaYXoZfj1wpPD4K_s_udF40+spePCA1TtngyLB2J3Fq5Ew6f0CwEMefkvzcBLJULzMNj61la2lFBVCqjsANdHTQRp-i6H2AtjPGACLQVA8ru9afDc5jInGd-nXfRAsv2U3326h-_WFBsgDfXagMOHMBVbRqH6a2SRExRoepmEI8-juyzP42QopmmA9heH96n7btz1jywGZmP5_VH9P5uh8T1Ex7smsg12DN5OwUrAkp7UJ5nXeO-adbuCqEDpaFXB9aVko6W3tb5ml5tEoyL7Ri2LAn8LPkUGIRlGzrcLFztIzp-WmgNWrANazqH2d4auQL_XVx09Z4E2fEjyEPKoVoGyFu_V454dmxM6sR0Y-pCANZZV6B</string>
+    <string name="x7base_cancel">取消</string>
+    <string name="x7base_commit_now">立即提交</string>
+    <string name="x7base_download_WeChat_latest">亲，请先下载最新的微信客户端哦</string>
+    <string name="x7base_email_and_code_null">请完整填写后再提交</string>
+    <string name="x7base_email_bind_success">邮箱换绑成功</string>
+    <string name="x7base_email_bind_success2">邮箱绑定成功</string>
+    <string name="x7base_email_code_null">验证码为空哦</string>
+    <string name="x7base_email_null">请先填写邮箱</string>
+    <string name="x7base_erro6">异常6</string>
+    <string name="x7base_erro62">异常62：</string>
+    <string name="x7base_erro7">异常7</string>
+    <string name="x7base_erro8">异常8</string>
+    <string name="x7base_exchange_xml">兑换</string>
+    <string name="x7base_gain_certify_code_fail">获取验证码失败</string>
+    <string name="x7base_getPermission_exception">"&lt;font color='#12cdb0'>【存储权限】&lt;/font>"与"&lt;font color='#12cdb0'>【获取设备信息权限】&lt;/font>"为下载游戏必须的权限，需要您授权后才能正常使用小7APP"</string>
+    <string name="x7base_getPermission_exception_vest">"&lt;font color='#12cdb0'>【存储权限】&lt;/font>"与"&lt;font color='#12cdb0'>【获取设备信息权限】&lt;/font>"为正常游戏必须的权限，请继续完成授权哦"</string>
+    <string name="x7base_gift_content_text">可以从以下选项中任选</string>
+    <string name="x7base_gift_content_text2">项作为奖励：</string>
+    <string name="x7base_gift_fund_copy">复制</string>
+    <string name="x7base_gift_fund_get">领取</string>
+    <string name="x7base_h5_default_Login_click">点击</string>
+    <string name="x7base_h5_default_Login_hint"><![CDATA[为<font color="#ff9900">默认登录</font>此小号]]></string>
+    <string name="x7base_http_uploading_failure">上传图片失败</string>
+    <string name="x7base_im_lateast">最近使用</string>
+    <string name="x7base_im_x7_MyImgsActivity2_hint2">完成</string>
+    <string name="x7base_inactive_gift_fund">活动期间激活基金，即可每天领取礼包</string>
+    <string name="x7base_install_payment_plug">请先安装支付插件</string>
+    <string name="x7base_java_network_abnormal">服务器异常请稍后再试，错误码：%1$d</string>
+    <string name="x7base_jpush" translatable="false">JPush</string>
+    <string name="x7base_link_overtime">链接超时：</string>
+    <string name="x7base_live_ing">直播中</string>
+    <string name="x7base_load_fail013">亲，请求加载失败哦013</string>
+    <string name="x7base_need_credit_xml">所需积分:</string>
+    <string name="x7base_network_abnormal">网络异常，请检查网络连接状态后重试</string>
+    <string name="x7base_network_erro_msg3">亲，网络异常，请重试</string>
+    <string name="x7base_no_read_write_document_power">没有读写存储文件的权限</string>
+    <string name="x7base_not_to_buy_monthcard" translatable="false">暂不领取</string>
+    <string name="x7base_ordinary_comment">点评</string>
+    <string name="x7base_ordinary_continue">继续</string>
+    <string name="x7base_ordinary_downLoad">下载</string>
+    <string name="x7base_ordinary_install">安装</string>
+    <string name="x7base_ordinary_open">打开</string>
+    <string name="x7base_ordinary_retry">重试</string>
+    <string name="x7base_ordinary_start">开始</string>
+    <string name="x7base_ordinary_update">更新</string>
+    <string name="x7base_ordinary_wait">等待</string>
+    <string name="x7base_patient_not_repeatedly_click">亲,请不要重复点击按钮,请耐心等待</string>
+    <string name="x7base_pay_data_explain_erro">支付数据解析异常</string>
+    <string name="x7base_pay_fail">支付失败:</string>
+    <string name="x7base_pay_fail_status_code">支付失败：状态码</string>
+    <string name="x7base_pay_fail_wechat_uninstall">支付失败:微信未安装或版本低</string>
+    <string name="x7base_pay_write_install">请允许微信支付插件的写入和安装权限01</string>
+    <string name="x7base_phone_number_null">手机号码为空哦</string>
+    <string name="x7base_recycle_account">回收</string>
+    <string name="x7base_remain_credit_xml">剩余积分:</string>
+    <string name="x7base_remain_exchenge_xml">剩余可兑换</string>
+    <string name="x7base_remain_quantity">剩余数量:</string>
+    <string name="x7base_request_failed_to_load">亲，请求加载失败哦</string>
+    <string name="x7base_return_data_null01">后台返回数据为空01</string>
+    <string name="x7base_return_data_null03">后台返回数据为空03</string>
+    <string name="x7base_select_info_fail">查询信息失败：mid为空</string>
+    <string name="x7base_selfselectgift_commit_info">信息已提交，请耐心等待奖励发放，如有问题请联系客服</string>
+    <string name="x7base_selfselectgift_finish_info">请完善信息后再提交</string>
+    <string name="x7base_selfselectgift_hint">选取奖励提交后，运营将直接发放到您的邮箱</string>
+    <string name="x7base_selfselectgift_not_enough_check">请选择足够数量的选项</string>
+    <string name="x7base_selfselectgift_send">奖励已发放，如有问题请联系客服</string>
+    <string name="x7base_selfselectgift_sendby_email">奖励已通过游戏内邮件发放</string>
+    <string name="x7base_selfselectgift_wait">奖励将通过游戏内邮件发放，请耐心等待</string>
+    <string name="x7base_selfselection_gift_dialog_area">请填写区服</string>
+    <string name="x7base_selfselection_gift_dialog_commit">提交</string>
+    <string name="x7base_selfselection_gift_dialog_id">请填写角色ID/角色编号</string>
+    <string name="x7base_selfselection_gift_dialog_name">请填写角色名称</string>
+    <string name="x7base_selfselection_gift_dialog_word">如果有特别说明，请留言</string>
+    <string name="x7base_selfselection_gift_finish_commit">已提交</string>
+    <string name="x7base_selfselection_gift_finish_send">已发放</string>
+    <string name="x7base_selfselection_gift_get_all">已领完</string>
+    <string name="x7base_selfselection_gift_not_num">满足领取条件且选择足够数量的选项，点击将弹窗要求填写相关的信息</string>
+    <string name="x7base_selfselection_gift_num">已经到达上限啦</string>
+    <string name="x7base_selfselection_gift_past">礼包已过期</string>
+    <string name="x7base_sell_account">出售</string>
+    <string name="x7base_skip">跳过</string>
+    <string name="x7base_stop_compensate_gift_xml">停运补偿礼包</string>
+    <string name="x7base_sure">确定</string>
+    <string name="x7base_sure_bind">确认绑定</string>
+    <string name="x7base_time_xml">次</string>
+    <string name="x7base_to_buy_monthcard" translatable="false">购买月卡</string>
+    <string name="x7base_unknow_size">未知大小</string>
+    <string name="x7base_useful_life_xml">有效期</string>
+    <string name="x7base_xml_discount">折</string>
+    <string name="x7base_yunXin_common_uploading">下载中</string>
+    <string name="x7confirm_modify">确认修改</string>
+    <string name="xrefreshview_footer_hint_click">点击加载更多</string>
+    <string name="xrefreshview_footer_hint_complete">全部加载完毕</string>
+    <string name="xrefreshview_footer_hint_fail">加载失败，请重试</string>
+    <string name="xrefreshview_footer_hint_ready">松开载入更多</string>
+    <string name="xrefreshview_footer_hint_release">松开加载更多</string>
+    <string name="xrefreshview_header_hint_loaded">加载完成</string>
+    <string name="xrefreshview_never_refresh">从未刷新</string>
+    <string name="xrefreshview_refresh_days_ago">%1s天之前刷新</string>
+    <string name="xrefreshview_refresh_hours_ago">%1s小时之前刷新</string>
+    <string name="xrefreshview_refresh_justnow">刚刚刷新</string>
+    <string name="xrefreshview_refresh_minutes_ago">%1s分钟之前刷新</string>
+</resources>

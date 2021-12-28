@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="232dp"
+    android:layout_height="163dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.smwl.smsdk.myview.StrokeTextView
+        android:id="@+id/turntable_normal_reward_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x7_mall_turntable_record_result"
+        android:textSize="14dp"
+        android:textColor="@color/base_white"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:stroke_width="3dp"
+        app:stroke_color="@color/x7_brown_745427"
+        android:textStyle="bold"/>
+
+    <include
+        app:layout_constraintTop_toBottomOf="@id/turntable_normal_reward_title_tv"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/x7_turntable_reward_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <com.smwl.smsdk.myview.StrokeTextView
+        android:id="@+id/turntable_normal_reward_know_tv"
+        android:layout_width="72dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:background="@drawable/x7_mall_turntable_dialog_button_bg"
+        android:text="@string/x7_mall_turntable_record_dialog_known"
+        android:textColor="@color/base_white"
+        android:textSize="11dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:stroke_width="1dp"
+        app:stroke_color="@color/x7_orange_9d7227"
+        android:textStyle="bold"
+        />
+
+</android.support.constraint.ConstraintLayout>

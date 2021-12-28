@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/wy_pay_status_ly"
+    android:layout_width="@dimen/wy_dialog_common_width"
+    android:layout_height="@dimen/wy_dialog_common_height"
+    android:layout_gravity="center"
+    android:background="@drawable/wy_shape_corner">
+
+
+    <LinearLayout
+        android:id="@id/wy_adk_pay_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="@string/wy_are_you_sure_pay_complete"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@id/wy_please_call_customer_q_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/wy_contact_customer_q"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/wy_line_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/wy_already_cancel_pay_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/wy_already_cancel_pay"
+                    android:textColor="@color/wy_bottom_pay_bg"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/wy_line_bg" />
+
+                <TextView
+                    android:id="@id/wy_already_complete_pay_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/wy_already_complete_pay"
+                    android:textColor="@color/wy_bottom_pay_bg"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/wy_count_down_pb_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wy_shape_corner"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/wy_check_order_status"
+                android:textColor="@color/wy_grey_text_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@id/wy_count_down_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textSize="15sp" />
+
+            <ProgressBar
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

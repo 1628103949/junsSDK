@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phone_register_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smwl.smsdk.activity.PhoneRegisterActivitySDK">
+
+    <ScrollView
+        android:id="@+id/phone_register_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/register_title"
+                layout="@layout/x7_activity_title_2" />
+
+            <LinearLayout
+                android:id="@+id/rl_phone_register_phone"
+                style="@style/X7CommonInputStyle_2"
+                android:layout_below="@+id/register_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_phone_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/x7_China_code"
+                    android:textColor="@color/x7_text_green"
+                    android:textSize="11dp" />
+
+                <View
+                    android:id="@+id/show_line_view"
+                    android:layout_width="1dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/x7_vertical_divider_line" />
+
+                <EditText
+                    android:id="@+id/ed_register_phone"
+                    style="@style/X7EditTextNoBackCommonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:digits="0123456789+ "
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/x7_hint_of_input_phone"
+                    android:imeOptions="actionNext|flagNoExtractUi|flagNoFullscreen"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/iv_delete_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="TODO"
+                    android:padding="6dp"
+                    android:src="@drawable/x7_activity_login_delete"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_verify_code"
+                style="@style/X7CommonInputStyle_2"
+                android:layout_below="@+id/rl_phone_register_phone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_register_get_verify_code"
+                    android:layout_width="70dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/x7_btn_auto_back"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/x7_get_verify_code"
+                    android:textColor="@color/x7_white"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/ed_register_code"
+                    style="@style/X7EditTextNoBackCommonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/x7_verify_code_input_hint"
+                    android:imeOptions="actionNext|flagNoExtractUi|flagNoFullscreen"
+                    android:inputType="number"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/iv_delete_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="TODO"
+                    android:padding="6dp"
+                    android:src="@drawable/x7_activity_login_delete"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_set_password"
+                style="@style/X7CommonInputStyleNew"
+                android:layout_width="@dimen/x7_activity_horizontal_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_verify_code"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp">
+
+                <EditText
+                    android:id="@+id/et_login_password"
+                    style="@style/X7EditTextNoBackCommonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/x7_hint_of_password"
+                    android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/iv_delete_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="TODO"
+                    android:padding="10dp"
+                    android:src="@drawable/x7_activity_login_delete"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/password_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_set_password"
+                android:layout_alignStart="@+id/ll_set_password"
+                android:layout_marginTop="8dp"
+                android:text="@string/password_requirement"
+                android:textColor="#ffcccccc"
+                android:textSize="9dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_set_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="33dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <CheckBox
+                    android:id="@+id/ck_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/x7_selection_for_agreement"
+                    android:checked="false" />
+
+                <TextView
+                    android:id="@+id/tv_user_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:text="@string/x7_agreement_hint"
+                    android:textColor="@color/x7_text_green"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register_next"
+                style="@style/X7BtnClickStyleNew"
+                android:layout_below="@+id/ll_agreement"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="@string/x7_register_immediately" />
+
+            <LinearLayout
+                android:id="@+id/other_register_type_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_register_next"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!--4.59取消用户名注册-->
+                <TextView
+                    android:id="@+id/userName_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:gravity="left"
+                    android:text="@string/x7_username_regist"
+                    android:textColor="@color/x7_text_green"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/x7_userLogin_view"
+                    android:layout_width="1dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="11dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/x7_vertical_divider_line"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/phoneNumber_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:text="@string/x7_phone_number_register"
+                    android:textColor="@color/x7_text_green"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

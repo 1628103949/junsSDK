@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x7_addSmallAccount_width"
+    android:layout_height="@dimen/x7_clear_password_Dialog_height"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_pay_psd_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/x7_small_account_switch"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#12cdb0"
+        />
+    <LinearLayout
+        android:id="@+id/ll_account_name"
+        android:layout_width="178dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/tv_pay_psd_title"
+        android:layout_marginTop="11dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/x7_smallaccount_item_back"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_pay_psd"
+            style="@style/X7EditTextNoBackCommonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#999"
+            android:hint="@string/x7_input_pay_psd_hint"
+            android:imeOptions="flagNoExtractUi"
+            />
+
+        <ImageView
+            android:id="@+id/iv_delete_pay_psd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:padding="10dip"
+            android:src="@drawable/x7_activity_login_delete"
+            android:visibility="gone" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_pw_fault"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:text="@string/x7_pw_fault"
+        android:textColor="@color/x7_text_orange"
+        android:layout_marginTop="7dp"
+        android:textSize="8dp"
+        android:layout_below="@+id/ll_account_name"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_sure_cancel"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pw_fault"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        >
+
+        <Button
+            android:id="@+id/btn_cancel_for_pay_psd"
+            android:layout_width="83dp"
+            android:layout_height="34dp"
+            android:background="@drawable/x7_edt_back_2"
+            android:text="@string/x7_cancel"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            />
+
+        <Button
+            android:id="@+id/btn_sure_for_pay_psd"
+            android:layout_width="83dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/x7_btn_back_selected_2"
+            android:text="@string/x7_sure_to_add"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

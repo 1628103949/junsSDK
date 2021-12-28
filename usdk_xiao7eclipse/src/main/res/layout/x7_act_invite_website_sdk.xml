@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+    
+    <com.smwl.x7market.component_base.myview.indicator.TabSlidingIndicator
+        android:id="@+id/invite_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        app:pstsDividerColor="#00000000"
+        app:pstsIndicatorColor="@color/x7base_text_green"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsLineMove="50dip"
+        app:pstsTabPaddingLeftRight="12dp"
+        app:pstsUnderlineColor="@color/x7base_transparent"
+        app:pstsUnderlineHeight="1dp"
+        />
+
+    <ImageView
+        android:id="@+id/invite_back_iv"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="11dp"
+        android:src="@drawable/x7_act_title_back"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/invite_viewpager"
+        android:layout_below="@+id/invite_back_iv"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
+

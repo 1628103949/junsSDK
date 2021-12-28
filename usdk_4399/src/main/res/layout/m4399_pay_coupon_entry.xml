@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/m4399_pay_coupon_entry"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/m4399.Pay.Label"
+        android:text="@string/m4399_pay_coupon" />
+
+    <TextView
+        android:id="@+id/m4399_pay_coupon_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/m4399_pay_spacing_v_half"
+        android:paddingBottom="@dimen/m4399_pay_spacing_v_half"
+        android:textColor="@color/m4399_pay_coupon_text"
+        android:textSize="14sp"
+        tools:text="10优惠券" />
+
+    <ImageView
+        android:id="@+id/m4399_pay_coupon_arrow"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/m4399_ope_pay_selector_obtain_coupon" />
+
+    <TextView
+        android:id="@+id/m4399_pay_coupon_obtain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/m4399_ope_shape_coupon_obtain_bg"
+        android:text="@string/m4399_ope_coupon_empty_receive"
+        android:textColor="@color/m4399_ope_color_ffa92d"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</LinearLayout>
+

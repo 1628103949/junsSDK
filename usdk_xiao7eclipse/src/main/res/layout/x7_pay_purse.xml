@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <include
+        android:id="@+id/x7_suggest_title"
+        layout="@layout/x7_activity_title_6" />
+
+    <RelativeLayout
+        android:id="@+id/rl_purse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/x7_suggest_title"
+        android:gravity="center" />
+</RelativeLayout>

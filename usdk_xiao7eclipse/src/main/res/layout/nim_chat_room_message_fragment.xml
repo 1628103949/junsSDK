@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/messageActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:id="@+id/messageActivityBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include layout="@layout/nim_chat_room_message_text_layout" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/message_activity_list_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@+id/messageActivityBottomLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/message_container_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="72dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/messageListView"
+                style="@style/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/notification_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/x7_im_chatroom_receive_message_single_line_bg_99000000_20"
+                android:gravity="center_vertical|left"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="3dip"
+                android:maxWidth="280dp"
+                android:minHeight="28dp"
+                android:paddingStart="14dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="14dp"
+                android:paddingRight="14dp"
+                android:paddingBottom="8dp"
+                android:visibility="gone"
+                android:textColor="@color/gray_ee"
+                android:textSize="@dimen/text_size_13" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/layoutPlayAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/nim_dialog_toast_bg"
+            android:visibility="gone">
+
+            <Chronometer
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/timer_default"
+                android:textColor="@color/white"
+                android:textSize="45dp" />
+
+            <LinearLayout
+                android:id="@+id/timer_tip_container"
+                android:layout_width="188dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/timer_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/recording_cancel"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="20dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/liveLuckyBagCl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/x7_im_chatroom_lucky_bag_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/liveLuckyBagCountDownTv"
+                    android:layout_width="40dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/x7_im_live_lucky_bag_count_down_bg_ffcc00_20"
+                    android:gravity="center_horizontal|bottom"
+                    android:paddingBottom="2dp"
+                    android:text="@string/x7_grab"
+                    android:textColor="#f31022"
+                    android:textSize="8dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/view"
+                    app:layout_constraintStart_toStartOf="@+id/view" />
+
+                <ImageView
+                    android:id="@+id/liveLuckyBagIv"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="13dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/x7_live_lucky_bag"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintEnd_toEndOf="@+id/liveLuckyBagCountDownTv"
+                    app:layout_constraintStart_toStartOf="@+id/liveLuckyBagCountDownTv" />
+
+                <LinearLayout
+                    android:id="@+id/liveLuckyBagNumberLl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/x7_im_live_lucky_bag_count_down_bg_ffcc00_20"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="1dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="1dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="×"
+                        android:textColor="@color/base_white"
+                        android:textSize="8dp" />
+
+                    <TextView
+                        android:id="@+id/liveLuckyBagNumberTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text=""
+                        android:textColor="@color/base_white"
+                        android:textSize="8dp" />
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

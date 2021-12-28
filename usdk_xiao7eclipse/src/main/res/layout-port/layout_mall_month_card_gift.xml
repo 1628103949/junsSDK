@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="17dp">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="13dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/x7_orange_fbcc55"/>
+
+        <TextView
+            android:id="@+id/mall_month_card_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:includeFontPadding="false"
+            android:textSize="16dp"
+            android:textColor="@color/color_black_333333"/>
+
+        <TextView
+            android:id="@+id/mall_month_card_title_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textColor="@color/x7_black_644f31"
+            android:textSize="9dp"
+            android:layout_marginStart="8dp"
+            android:includeFontPadding="false"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mall_month_card_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_mall_month_card_port"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp">
+
+            <TextView
+                android:id="@+id/mall_month_card_gift_deal_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textColor="@color/color_black_333333"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:text="@string/x7_reward_content" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mall_month_card_gift_deal_rc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:overScrollMode="never"
+                android:layout_below="@+id/mall_month_card_gift_deal_tv"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/mall_month_card_reward_get_tv"
+                android:layout_width="76dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="18dp"
+                android:textColor="@color/x7_white"
+                android:textStyle="bold"
+                android:textSize="11dp"
+                android:layout_below="@+id/mall_month_card_gift_deal_rc"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/receive_port"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:text="@string/x7_month_card_privilege"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/x7_black_644f31"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mall_month_card_privilege_rc"
+            android:layout_marginTop="23dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

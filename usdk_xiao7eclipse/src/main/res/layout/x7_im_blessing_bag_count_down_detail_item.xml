@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/blessingBagCountDownTopLl"
+        android:layout_width="269dp"
+        android:layout_height="204dp"
+        android:background="@drawable/x7_im_count_down_blessing_bag_item_top_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.netease.nim.uikit.x7.myview.RoundBorderImageView
+            android:id="@+id/luckyBagOwnerAvatarIv"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginRight="80dp"
+            android:src="@drawable/x7base_nim_avatar_default" />
+
+        <TextView
+            android:id="@+id/luckyBagOwnerNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="发红包的是什么人"
+            android:textColor="#ffff00"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/luckyBagCountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/x7_im_get_blessing_bag_number"
+            android:textColor="@color/base_white"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:background="@drawable/x7_im_count_down_blessing_bag_item_bottom_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/blessingBagCountDownTopLl"
+        app:layout_constraintStart_toStartOf="@+id/blessingBagCountDownTopLl"
+        app:layout_constraintTop_toBottomOf="@+id/blessingBagCountDownTopLl">
+
+        <LinearLayout
+            android:id="@+id/countdownLl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/countdownTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120s"
+            android:textColor="#ff9900"
+            android:textSize="35dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="47dp"
+            android:text="@string/x7_after_get"
+            android:textColor="#8f8f8e"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

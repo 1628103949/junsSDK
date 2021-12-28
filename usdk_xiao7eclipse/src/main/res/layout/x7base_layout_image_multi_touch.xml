@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <com.smwl.x7market.component_base.myview.image.ZoomImageView
+        android:id="@+id/anim_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <com.smwl.x7market.component_base.myview.image.ZoomImageView
+        android:id="@+id/watch_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.smwl.x7market.component_base.myview.image.RingProgressView
+        android:id="@+id/ring_progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        app:progress_color="#12cdb0"
+        app:progress_width="4dp" />
+
+    <com.smwl.x7market.component_base.myview.image.CircleProgressView
+        android:id="@+id/circle_progress"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:scaleType="center" />
+
+    <ImageView
+        android:id="@+id/gif_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

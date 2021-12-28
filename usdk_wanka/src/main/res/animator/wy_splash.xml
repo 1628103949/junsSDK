@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:ordering="sequentially">
+
+    <!-- 在此界面添加动画的效果 -->
+    <!--<set xmlns:android="http://schemas.android.com/apk/res/android"-->
+         <!--android:ordering="together">-->
+
+        <!--&lt;!&ndash;透明度&ndash;&gt;-->
+        <!--<objectAnimator-->
+            <!--android:duration="1000"-->
+            <!--android:propertyName="alpha"-->
+            <!--android:valueFrom="0"-->
+            <!--android:valueTo="1"-->
+            <!--android:valueType="floatType"/>-->
+        <!--&lt;!&ndash;旋转&ndash;&gt;-->
+        <!--<objectAnimator-->
+            <!--android:duration="1000"-->
+            <!--android:propertyName="rotation"-->
+            <!--android:valueFrom="0"-->
+            <!--android:valueTo="360"-->
+            <!--android:valueType="floatType"/>-->
+        <!--&lt;!&ndash;X轴缩放&ndash;&gt;-->
+        <!--<objectAnimator-->
+            <!--android:duration="1000"-->
+            <!--android:propertyName="scaleY"-->
+            <!--android:valueFrom="3"-->
+            <!--android:valueTo="1"-->
+            <!--android:valueType="floatType"/>-->
+        <!--&lt;!&ndash;Y轴缩放&ndash;&gt;-->
+        <!--<objectAnimator-->
+            <!--android:duration="1000"-->
+            <!--android:propertyName="scaleX"-->
+            <!--android:valueFrom="3"-->
+            <!--android:valueTo="1"-->
+            <!--android:valueType="floatType"/>-->
+    <!--</set>-->
+
+    <!--透明度-->
+    <objectAnimator
+        android:duration="1000"
+        android:propertyName="alpha"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType"/>
+</set>

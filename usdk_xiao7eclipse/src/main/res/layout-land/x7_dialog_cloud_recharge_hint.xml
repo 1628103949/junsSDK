@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x7_addSmallAccount_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/x7_smallhao_alertdialog_top_bg"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/x7_cloud_game_introduction"
+        android:textColor="@color/x7base_green_12cdb0"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/x7base_gray_66"
+        android:textSize="13dp" />
+
+
+    <TextView
+        android:id="@+id/sure_tv"
+        android:layout_width="132dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/content_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/x7_btn_back_selected_2"
+        android:gravity="center"
+        android:text="@string/x7_know"
+        android:textColor="@color/x7base_white"
+        android:textSize="14dp" />
+
+</RelativeLayout>

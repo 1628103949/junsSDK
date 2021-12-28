@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--单选礼包的item样式-->
+    <RelativeLayout
+        android:id="@+id/rl_one_optional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_one_check_optional"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:drawableLeft="@drawable/x7_choose_default_login_cb_bg"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_one_optional_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_one_check_optional"
+            android:layout_toEndOf="@+id/tv_one_check_optional"
+            android:lineSpacingExtra="2dp"
+            android:text=""
+            android:textColor="@color/gray_ee"
+            android:textSize="10dp" />
+    </RelativeLayout>
+    <!--多选礼包的item样式-->
+    <TextView
+        android:id="@+id/tv_more_optional_content"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/x7_selfselectionitem_more_bg"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text=""
+        android:textColor="@color/color_grey_999999"
+        android:textSize="10dp"
+        android:visibility="gone" />
+
+    <!--礼包基金的item样式-->
+    <LinearLayout
+        android:id="@+id/gift_fund_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gift_fund_item_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/gray_ee"
+                android:textSize="@dimen/dp_10" />
+
+            <TextView
+                android:id="@+id/gift_fund_item_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text=""
+                android:textColor="@color/gray_ee"
+                android:textSize="@dimen/dp_10" />
+        </LinearLayout>
+
+        <!--礼包基金每一项的领取、复制按钮   有三种颜色-->
+        <TextView
+            android:id="@+id/gift_fund_item_click_tv"
+            android:layout_width="37dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@drawable/x7_gift_fund_item_f90_bg"
+            android:gravity="center"
+            android:text="@string/x7base_gift_fund_get"
+            android:textColor="@color/gray_ee"
+            android:textSize="8dp"
+            android:visibility="visible" />
+    </LinearLayout>
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#1aeeeeee"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        />
+
+    <!--礼包基金显示“全部礼包”收起-->
+    <TextView
+        android:id="@+id/gift_fund_item_all_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingVertical="5dp"
+        android:text="@string/x7base_all_gift_fund"
+        android:textColor="@color/color_split_line_cccccc"
+        android:textSize="8dp"
+        android:visibility="gone" />
+</LinearLayout>

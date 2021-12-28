@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/x7_exclusive_act_rule_dialog_cl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_solid_white_corner_10">
+
+        <TextView
+            android:id="@+id/dialog_exclusive_event_rule_sure_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/x7_act_reward_top"
+            android:gravity="center"
+            android:text="@string/x7_exclusive_act_rule_top"
+            android:textColor="@color/base_white"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/dialog_exclusive_event_rule_sure_reward_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/x7_event_reward"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_exclusive_event_rule_sure_title_tv" />
+
+        <TextView
+            android:id="@+id/dialog_exclusive_event_rule_tv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="49dp"
+            android:text=""
+            android:textColor="@color/black_3"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/dialog_exclusive_event_rule_sure_reward_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dialog_exclusive_event_rule_sure_reward_iv"
+            app:layout_constraintTop_toTopOf="@+id/dialog_exclusive_event_rule_sure_reward_iv" />
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/color_12cdb0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_exclusive_event_rule_sure_reward_iv" />
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_12cdb0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_exclusive_event_rule_sure_reward_iv" />
+
+        <ImageView
+            android:id="@+id/dialog_exclusive_event_rule_sure_record_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/x7_event_record_dialog"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_exclusive_event_rule_sure_reward_iv" />
+
+        <TextView
+            android:id="@+id/dialog_exclusive_event_rule_tv2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="49dp"
+            android:text=""
+            android:textColor="@color/black_3"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/dialog_exclusive_event_rule_sure_record_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dialog_exclusive_event_rule_sure_info_iv"
+            app:layout_constraintTop_toTopOf="@+id/dialog_exclusive_event_rule_sure_record_iv" />
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/color_12cdb0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_exclusive_event_rule_sure_record_iv" />
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_12cdb0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_exclusive_event_rule_sure_record_iv" />
+
+        <ImageView
+            android:id="@+id/dialog_exclusive_event_rule_sure_info_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/x7_event_role_info"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_exclusive_event_rule_sure_record_iv" />
+
+        <TextView
+            android:id="@+id/dialog_exclusive_event_rule_tv3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="49dp"
+            android:text=""
+            android:textColor="@color/black_3"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/dialog_exclusive_event_rule_sure_info_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dialog_exclusive_event_rule_sure_info_iv"
+            app:layout_constraintTop_toTopOf="@+id/dialog_exclusive_event_rule_sure_info_iv" />
+
+        <TextView
+            android:id="@+id/dialog_exclusive_event_rule_tv4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="29dp"
+            android:text=""
+            android:textColor="@color/x7base_gray_99"
+            android:textSize="11dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_exclusive_event_rule_sure_info_iv" />
+
+        <TextView
+            android:id="@+id/dialog_exclusive_event_rule_sure_tv"
+            android:layout_width="225dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="@string/x7_know"
+            android:textColor="@color/color_12cdb0"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_exclusive_event_rule_tv4" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

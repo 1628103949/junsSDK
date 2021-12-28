@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/m4399_pay_history_item_height"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="1dp"
+    android:paddingBottom="1dp"
+    android:paddingRight="1dp">
+
+    <TextView
+        android:id="@+id/m4399_pay_history_tv_create"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/m4399_pay_history_item_height"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_weight="2"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="@color/m4399_ope_color_666666"
+        android:textSize="13sp"
+        tools:text="@string/m4399_pay_history_create" />
+
+    <TextView
+        android:id="@+id/m4399_pay_history_tv_pid"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/m4399_pay_history_item_height"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_weight="4.6"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="@color/m4399_ope_color_666666"
+        android:textSize="13sp"
+        tools:text="@string/m4399_pay_history_pid" />
+
+    <TextView
+        android:id="@+id/m4399_pay_history_tv_payable"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/m4399_pay_history_item_height"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_weight="1.8"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:textColor="@color/m4399_ope_color_666666"
+        android:textSize="13sp"
+        tools:text="@string/m4399_pay_history_payable" />
+
+    <TextView
+        android:id="@+id/m4399_pay_history_tv_state"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/m4399_pay_history_item_height"
+        android:layout_weight="1.8"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:textColor="@color/m4399_ope_color_666666"
+        android:textSize="13sp"
+        tools:text="@string/m4399_pay_history_status" />
+
+</LinearLayout>

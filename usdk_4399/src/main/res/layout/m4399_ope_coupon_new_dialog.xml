@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/m4399_ope_dialog_width_304"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/m4399_ope_coupon_dialog_shape_bg"
+        android:minHeight="161dp"
+        android:orientation="vertical"
+        android:paddingBottom="18dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="17dp">
+
+            <TextView
+                android:id="@+id/m4399_ope_id_tv_coupon_dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/m4399_ope_account_notice_dialog_title"
+                android:textColor="@color/m4399_ope_coupon_dialog_title"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="45dp"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@id/m4399_ope_id_tv_coupon_dialog_title"
+                android:layout_toLeftOf="@id/m4399_ope_id_tv_coupon_dialog_title"
+                android:background="@color/m4399_ope_coupon_dialog_title">
+
+            </View>
+
+            <View
+                android:layout_width="45dp"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@id/m4399_ope_id_tv_coupon_dialog_title"
+                android:layout_toRightOf="@id/m4399_ope_id_tv_coupon_dialog_title"
+                android:background="@color/m4399_ope_coupon_dialog_title" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/m4399_ope_id_ll_coupon_quota_bg"
+                android:layout_width="79dp"
+                android:layout_height="65dp"
+                android:background="@drawable/m4399_ope_coupon_shape_content_bg_left_white"
+                android:gravity="center"
+                android:layerType="software">
+
+                <TextView
+                    android:id="@+id/m4399_ope_id_tv_coupon_yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6.5dp"
+                    android:text="@string/m4399_ope_account_coupon_dialog_yuan"
+                    android:textColor="@color/m4399_ope_coupon_dialog_money"
+                    android:textSize="@dimen/m4399_font_12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/m4399_ope_id_tv_coupon_quota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/m4399_ope_account_coupon_dialog_money"
+                    android:textColor="@color/m4399_ope_coupon_dialog_money"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="193dp"
+                android:layout_height="65dp"
+                android:background="@drawable/m4399_ope_coupon_shape_content_bg_right"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="17dp">
+
+                <TextView
+                    android:id="@+id/m4399_ope_id_tv_coupon_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/m4399_ope_account_coupon_dialog_condition"
+                    android:textColor="@color/m4399_ope_color_666666"
+                    android:textSize="@dimen/m4399_font_12" />
+
+                <TextView
+                    android:id="@+id/m4399_ope_id_tv_coupon_validity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/m4399_ope_account_coupon_dialog_validity"
+                    android:textColor="@color/m4399_ope_color_bbbbbb"
+                    android:textSize="@dimen/m4399_font_12" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/m4399_ope_id_btn_coupon_get"
+            android:layout_width="160dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/m4399_ope_ripple_coupon_dialog_btn"
+            android:text="@string/m4399_ope_account_coupon_dialog_get"
+            android:textColor="@color/m4399_ope_coupon_dialog_content_get"
+            android:textSize="16sp"
+            android:visibility="gone">
+
+        </Button>
+
+        <RelativeLayout
+            android:id="@+id/m4399_ope_id_rl_coupon_btn_parent"
+            android:layout_width="272dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/m4399_ope_id_btn_coupon_cancel"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/m4399_ope_ripple_coupon_dialog_btn_cancel_bg"
+                android:text="@string/m4399_ope_account_coupon_dialog_cancel"
+                android:textColor="@color/m4399_ope_coupon_dialog_btn_cancel"
+                android:textSize="@dimen/m4399_font_14">
+
+            </Button>
+
+            <Button
+                android:id="@+id/m4399_ope_id_btn_coupon_box"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/m4399_ope_ripple_coupon_dialog_btn"
+                android:text="@string/m4399_ope_account_coupon_dialog_get_box"
+                android:textColor="@color/m4399_ope_coupon_dialog_content_get"
+                android:textSize="@dimen/m4399_font_14" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/m4399_ope_id_iv_coupon_close"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/m4399_ope_support_nav_icon_bg"
+        android:src="@drawable/m4399_ope_coupon_tip_ic_close" />
+
+</LinearLayout>

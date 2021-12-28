@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/m4399_ope_support_nav_bar_layout" />
+
+    <LinearLayout
+        android:id="@+id/m4399_pay_history_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/ct_activity_title_height"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/m4399_activity_spacing_h"
+        android:paddingRight="@dimen/m4399_activity_spacing_h">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m4399_pay_spacing_v"
+            android:layout_marginBottom="@dimen/m4399_pay_spacing_v"
+            android:text="@string/m4399_pay_history_hint_order_time"
+            android:textColor="@color/m4399_ope_color_999999"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m4399_pay_history_item_height"
+            android:background="#e5e5e5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/m4399_pay_history_item_height"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="2"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="@string/m4399_pay_history_create"
+                android:textColor="@color/m4399_ope_color_666666"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/m4399_pay_history_item_height"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="4.6"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="@string/m4399_pay_history_pid"
+                android:textColor="@color/m4399_ope_color_666666"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/m4399_pay_history_item_height"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1.8"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="@string/m4399_pay_history_payable"
+                android:textColor="@color/m4399_ope_color_666666"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/m4399_pay_history_item_height"
+                android:layout_weight="1.8"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="@string/m4399_pay_history_status"
+                android:textColor="@color/m4399_ope_color_666666"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/m4399_pay_history_record_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/m4399_pay_spacing_v"
+            android:background="#e5e5e5"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            tools:listitem="@layout/m4399_pay_history_record_item" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/m4399_pay_history_empty_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/m4399_pay_history_empty_ic"
+        android:drawablePadding="12dp"
+        android:gravity="center_horizontal"
+        android:text="@string/m4399_pay_history_hint_empty_content"
+        android:textColor="@color/m4399_ope_color_999999"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</FrameLayout>

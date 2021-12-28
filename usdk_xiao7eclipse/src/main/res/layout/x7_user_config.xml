@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cs_uer_config"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp">
+
+    <ViewStub
+        android:id="@+id/view_stub_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout="@layout/x7_view_stub_accelerate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <!--4.25新增小7新人任务   加速球展开后不显示-->
+
+    <TextView
+        android:id="@+id/tv_new_user_task"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/x7_theme_back_drawable"
+        android:drawableTop="@drawable/x7_sdk_task_alert_icon"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/x7_hint"
+        android:textColor="@color/x7_theme_text_color"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintBottom_toTopOf="@id/tv_speed_flow"
+        app:layout_constraintStart_toEndOf="@+id/tv_new_user_task_left"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_new_user_task_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/x7_flat_right"
+        android:gravity="center"
+        android:paddingHorizontal="12dp"
+        android:text="@string/x7_new_user_task_hint"
+        android:textColor="@color/base_black_3"
+        android:textSize="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tv_new_user_task_left"
+        app:layout_constraintStart_toEndOf="@id/tv_new_user_task"
+        app:layout_constraintTop_toTopOf="@id/tv_new_user_task_left" />
+    <ImageView
+        android:id="@+id/iv_new_user_task_right"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="6dp"
+        android:padding="6dp"
+        android:visibility="gone"
+        android:src="@drawable/x7_close_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_new_user_task_right"
+        app:layout_constraintEnd_toEndOf="@+id/tv_new_user_task_right"
+        app:layout_constraintStart_toEndOf="@+id/tv_new_user_task_right" />
+
+
+    <TextView
+        android:id="@+id/tv_new_user_task_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/x7_flat_left"
+        android:gravity="center"
+        android:paddingHorizontal="12dp"
+        android:text="@string/x7_new_user_task_hint"
+        android:textColor="@color/base_black_3"
+        android:textSize="10dp"
+        android:visibility="gone"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toStartOf="@id/iv_new_user_task_left"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_new_user_task"
+        app:layout_constraintTop_toTopOf="@+id/tv_new_user_task"/>
+    <ImageView
+        android:id="@+id/iv_new_user_task_left"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:padding="6dp"
+        android:visibility="gone"
+        android:src="@drawable/x7_close_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_new_user_task_left"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_speed_flow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@drawable/x7_theme_back_drawable"
+        android:drawableTop="@drawable/x7_arrow"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="5dp"
+        android:text="@string/x7_accelerator"
+        android:visibility="gone"
+        android:textSize="9dp"
+        android:textColor="@color/x7_theme_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tv_new_user_task"
+        app:layout_constraintStart_toStartOf="@id/tv_new_user_task"/>
+
+</android.support.constraint.ConstraintLayout>

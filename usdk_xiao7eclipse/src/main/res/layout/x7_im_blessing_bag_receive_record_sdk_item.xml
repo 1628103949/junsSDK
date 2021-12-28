@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/x7_im_blessing_bag_rootView_cl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6dp"
+    >
+
+    <TextView
+        android:id="@+id/x7_im_blessing_bag_receive_record_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text=""
+        android:textColor="#ff9900"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:includeFontPadding="false"
+        android:text="@string/x7_im_receive"
+        android:textColor="@color/x7base_gray_99"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/x7_im_blessing_bag_receive_record_name"
+        app:layout_constraintStart_toEndOf="@+id/x7_im_blessing_bag_receive_record_name"
+        app:layout_constraintTop_toTopOf="@+id/x7_im_blessing_bag_receive_record_name" />
+
+    <LinearLayout
+        android:id="@+id/x7_im_blessing_bag_receive_reward_ll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/x7_im_blessing_bag_receive_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/base_black_9"
+                android:textSize="8dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/x7_im_blessing_bag_receive_record_best_luck_king_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:src="@drawable/x7_icon_best_luck_king"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="90dp" />
+
+</android.support.constraint.ConstraintLayout>

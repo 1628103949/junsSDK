@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--类话题样式【】后的文字需要左对齐   2020/2/27liyichan-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_relaxa_collection_title_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:visibility="gone"
+    tools:showIn="@layout/x7_sdk_myview_relaxacolleciton_ll">
+
+    <TextView
+        android:id="@+id/item_relaxa_collection_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:textSize="14sp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/item_relaxa_collection_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="7dp"
+        android:textSize="14sp"
+        android:text="" />
+</LinearLayout>
+
+    

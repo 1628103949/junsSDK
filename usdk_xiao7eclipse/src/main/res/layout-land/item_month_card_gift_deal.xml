@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/month_card_gift_root_cl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/month_card_gift_deal_cl"
+        android:layout_width="39dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/bg_mall_gift"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/month_card_gift_deal_border_iv"
+            app:layout_constraintBottom_toBottomOf="@+id/month_card_gift_deal_border_iv"/>
+
+        <ImageView
+            android:id="@+id/month_card_gift_deal_iv"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/month_card_gift_deal_border_iv"
+            app:layout_constraintBottom_toBottomOf="@+id/month_card_gift_deal_border_iv"/>
+
+        <ImageView
+            android:id="@+id/month_card_gift_deal_border_iv"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/mall_border"/>
+
+        <TextView
+            android:id="@+id/month_card_gift_deal_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/month_card_gift_deal_border_iv"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/x7_black_644f31"
+            android:textSize="8dp" />
+
+        <com.smwl.smsdk.myview.StrokeTextView
+            android:id="@+id/month_card_gift_deal_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textStyle="bold"
+            android:textSize="9dp"
+            android:textColor="@color/x7_white"
+            app:stroke_color="@color/x7_orange_9d7227"
+            app:stroke_width="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/month_card_gift_deal_iv"
+            app:layout_constraintEnd_toEndOf="@+id/month_card_gift_deal_iv"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="0dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/month_card_gift_deal_ll"
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/month_card_gift_deal_cl"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/month_card_gift_deal_box_iv"
+        android:layout_width="13dp"
+        android:layout_height="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/x7_mall_custom_gift_explain_bg"
+        android:visibility="visible"/>
+
+
+</android.support.constraint.ConstraintLayout>

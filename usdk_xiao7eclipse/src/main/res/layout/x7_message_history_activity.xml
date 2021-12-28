@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/messageActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <include layout="@layout/x7_top_title_toolbar_ll" />
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/message_activity_list_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/message_type_select_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/all_message_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/x7base_im_bg_solid_green_12cdb0_corner_50"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="13dp"
+                    android:paddingBottom="7dp"
+                    android:text="@string/x7_all_history_message"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/picture_video_message_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/x7base_f2f2f2_round_bg"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="13dp"
+                    android:paddingBottom="7dp"
+                    android:text="@string/x7_picture_video_history_message"
+                    android:textColor="@color/base_black_9"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/face_message_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/x7base_f2f2f2_round_bg"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="13dp"
+                    android:paddingBottom="7dp"
+                    android:text="@string/x7_face_history_message"
+                    android:textColor="@color/base_black_9"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/x7_history_search_iv"
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+                    android:layout_marginRight="7dp"
+                    android:paddingLeft="13dp"
+                    android:scaleType="centerCrop"
+                    android:paddingTop="2dp"
+                    android:paddingRight="13dp"
+                    android:paddingBottom="9dp"
+                    android:src="@drawable/x7_search" />
+            </LinearLayout>
+
+            <com.netease.nim.uikit.yunxin.myview.NoHorizonScollViewpager
+                android:id="@+id/history_message_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

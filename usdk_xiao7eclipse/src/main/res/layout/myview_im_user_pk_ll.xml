@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/myView_im_userPK_top_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.netease.nim.uikit.x7.myview.iv.RoundImageView
+            android:id="@+id/myView_im_userPK_icon_iv"
+            android:layout_width="96dip"
+            android:layout_height="96dip"
+            android:background="@color/white"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/myView_im_userPK_userName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lines="1"
+            android:textColor="#333333"
+            android:textSize="12dp" />
+
+        <com.netease.nim.uikit.x7.myview.X7TextViewBorder
+            android:id="@+id/myView_im_userPK_rankName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:paddingBottom="1dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="1dip"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            app:styleIndex="1" />
+
+        <TextView
+            android:id="@+id/myView_im_userPK_userIntegral_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lines="1"
+            android:textColor="#12cdb0"
+            android:textSize="12dp" />
+
+        <!--用来显示一个阴影三角的背景-->
+        <View
+            android:id="@+id/myView_im_userPK_sanJiao_view"
+            android:layout_width="28dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="15dp"
+            android:background="@drawable/bg_triangle_f9f9f9" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/myView_im_userPK_pkState_tv"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_stroke_fff_solid_12cdbf_corner_50"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="19dp"
+        android:visibility="gone" />
+</RelativeLayout>

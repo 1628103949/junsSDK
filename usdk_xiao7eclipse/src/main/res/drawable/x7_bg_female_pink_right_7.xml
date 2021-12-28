@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="rectangle"
+            android:useLevel="true">
+            <corners android:radius="7dp" />
+            <solid android:color="#fde7ed" />
+        </shape>
+    </item>
+    <item
+        android:width="25dp"
+        android:height="15dp"
+        android:gravity="top|right">
+        <bitmap
+            android:gravity="top|right"
+            android:src="@drawable/x7_icon_female_pink" />
+    </item>
+</layer-list>

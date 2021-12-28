@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netease.nim.uikit.x7.myview.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/yunxin_horizontalScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:clickToClose="false"
+    app:dragExtraOffset="50dp"
+    app:drag_edge="right"
+    app:show_mode="pull_out">
+    <!--右侧隐藏的滑动删除,置顶等功能-->
+    <LinearLayout
+        android:id="@+id/hint_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:id="@+id/no_disturbing"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_solid_gray_cccccc_corner_10"
+            android:clickable="true"
+            android:gravity="center"
+            android:minWidth="70dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/to_Top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/bg_solid_green_12cdb0_corner_10"
+            android:clickable="true"
+            android:gravity="center"
+            android:minWidth="52dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/to_del"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_solid_red_ff0055_corner_10"
+            android:clickable="true"
+            android:gravity="center"
+            android:minWidth="52dp"
+            android:text="@string/x7_MyYunXinGroupFrag_delete"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/ll_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gray_f9_10_bg"
+            android:paddingBottom="15dp">
+
+            <RelativeLayout
+                android:id="@+id/item_myJoinTeam_left_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp">
+
+                <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                    android:id="@+id/item_myJoinTeam_teamIcon_iv"
+                    android:layout_width="@dimen/avatar_size_default"
+                    android:layout_height="@dimen/avatar_size_default"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/item_myJoinTeam_message_tips_ll"
+                    android:layout_toRightOf="@+id/item_myJoinTeam_teamIcon_iv"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/item_myJoinTeam_teamName_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/black_3"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/item_playtogether_teamName_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/text_green"
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/item_myJoinTeam_p2pChat_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/download_cheng"
+                            android:textSize="11dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/item_myJoinTeam_messageContent_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black_8"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_myJoinTeam_message_tips_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/itemHaveCountDownBlessingBagsTv"
+                        android:layout_width="28dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/x7_blessing_bag_tips_icon"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="15dp"
+                        android:textColor="@color/base_white"
+                        android:textSize="9dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/item_myJoinTeam_message_have_blessing_bags_iv"
+                        android:layout_width="28dp"
+                        android:layout_height="32dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/x7_im_secret_blessing_bag"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/item_myJoinTeam_messageUnNumber_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/red_yuan_bj"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:paddingBottom="1dip"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_myJoinTeam_teamApply_tv"
+                android:layout_width="220dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/item_myJoinTeam_left_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_gradient_updata1"
+                android:gravity="center"
+                android:text="@string/x7_IM_xml_newMemberJoin"
+                android:textColor="@color/text_white"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/item_myJoinTeam_isTopFlag_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/to_top"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</com.netease.nim.uikit.x7.myview.swipe.SwipeLayout>
+

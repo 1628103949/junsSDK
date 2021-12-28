@@ -1,0 +1,209 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <!--【CloudGameSDK-4.52-ZB】隐藏除钱包和支付密码以外所有按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <!-- 小号管理 -->
+            <Button
+                android:id="@+id/btn_person_center_small_account_manager"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/x7_shape_color_blue_46a1e8_corner_7"
+                android:clickable="true"
+                android:drawableTop="@drawable/x7_icon_user_manage_account01"
+                android:focusable="true"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:paddingTop="18dp"
+                android:text="@string/x7_user_account_manager"
+                android:textColor="@color/x7_white"
+                android:visibility="gone" />
+
+            <!-- 登录密码 -->
+
+            <Button
+                android:id="@+id/btn_person_center_contact_customer_service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0"
+                android:background="@drawable/x7_shape_color_blue_46a1e8_corner_7"
+                android:clickable="true"
+                android:drawableTop="@drawable/x7_icon_user_password_un01"
+                android:focusable="true"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:paddingTop="18dp"
+                android:text="@string/x7_login_password"
+                android:textColor="@color/x7_white"
+                android:visibility="gone" />
+
+            <!-- 支付密码 -->
+
+            <!--<Button
+                android:id="@+id/fragment_personcenter_paypassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/x7_user_centre_mode_back_paypw"
+                android:clickable="true"
+                android:drawableTop="@drawable/x7_icon_user_pay_password_un01"
+                android:focusable="true"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:paddingTop="18dp"
+                android:text="@string/x7_pay_password"
+                android:textColor="@color/x7_white" />-->
+
+            <!-- 【CloudGameSDK-4.41-LMC】钱包 lmc云游戏SDK屏蔽-->
+            <!-- 【CloudGameSDK-4.56-LMC】合并云游戏分支 对应的是普通SDK的钱包-->
+            <LinearLayout
+                android:id="@+id/btn_person_center_purse"
+                android:layout_width="0dp"
+                android:layout_height="86dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/x7_shape_color_green_12cdb0_corne_7"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="17dp"
+                    android:src="@drawable/x7_icon_user_wallet_un01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/x7_purse"
+                    android:textColor="@color/x7_white"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+
+            <!-- 手机号 -->
+            <Button
+                android:id="@+id/btn_person_center_open_app"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/x7_shape_color_blue_46a1e8_corner_7"
+                android:clickable="true"
+                android:drawableTop="@drawable/x7_icon_user_phone_binding_selected01"
+                android:focusable="true"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:paddingTop="18dp"
+                android:text="@string/x7_phone_unbind"
+                android:textColor="@color/x7_white"
+                android:visibility="gone" />
+
+            <!-- 邮箱 -->
+            <Button
+                android:id="@+id/btn_person_center_set_area"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="0"
+                android:background="@drawable/x7_user_centre_mode_back_email"
+                android:clickable="true"
+                android:drawableTop="@drawable/x7_email_icon"
+                android:focusable="true"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:paddingTop="18dp"
+                android:text="@string/x7_bindEmail"
+                android:textColor="@color/x7_white"
+                android:visibility="gone" />
+
+            <!-- 钱包 -->
+
+            <!--<Button
+                android:id="@+id/btn_person_center_purse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/x7_user_centre_mode_back_wallet"
+                android:clickable="true"
+                android:drawableTop="@drawable/x7_icon_user_wallet_un01"
+                android:focusable="true"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:paddingTop="18dp"
+                android:text="@string/x7_purse"
+                android:textColor="@color/x7_white" />-->
+
+            <!-- 【CloudGameSDK-4.41-LMC】支付密码 lmc云游戏SDK屏蔽-->
+            <!-- 【CloudGameSDK-4.56-LMC】合并云游戏分支 对应的是普通SDK的更换账号-->
+            <LinearLayout
+                android:id="@+id/btn_person_center_change_account"
+                android:layout_width="0dp"
+                android:layout_height="86dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/x7_shape_color_blue_46a1e8_corner_7"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:minHeight="80dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="17dp"
+                    android:src="@drawable/x7_icon_user_pay_password_un01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/x7_pay_password"
+                    android:textColor="@color/x7_white"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

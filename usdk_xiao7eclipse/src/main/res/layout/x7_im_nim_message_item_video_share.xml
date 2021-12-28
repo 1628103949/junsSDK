@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="17dp"
+    android:paddingTop="11dp"
+    android:paddingRight="18dp"
+    android:paddingBottom="12dp"
+    android:background="@drawable/bg_stroke_eeeeee_corner_10"
+    android:id="@+id/x7_im_nim_message_item_video_share_rootView"
+    >
+
+    <ImageView
+        android:id="@+id/x7_im_nim_message_item_video_share_game_avatar_iv"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/x7_im_nim_message_item_video_share_game_name__tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:text="少年西游记"
+        android:textColor="@color/black_9"
+        android:textSize="10dp"
+        android:layout_marginLeft="6.33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/x7_im_nim_message_item_video_share_game_avatar_iv"
+        app:layout_constraintStart_toEndOf="@+id/x7_im_nim_message_item_video_share_game_avatar_iv"
+        app:layout_constraintTop_toTopOf="@+id/x7_im_nim_message_item_video_share_game_avatar_iv" />
+
+    <TextView
+        android:id="@+id/x7_im_nim_message_item_video_share_info__tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="这个游戏 视频大家都来看一看，可是废话好看的我绝对没有骗你"
+        android:textColor="@color/black_3"
+        android:textSize="12dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintEnd_toEndOf="@+id/x7_im_nim_message_item_video_share_Cover__tv"
+        app:layout_constraintTop_toBottomOf="@+id/x7_im_nim_message_item_video_share_game_avatar_iv"
+        app:layout_constraintStart_toStartOf="@+id/x7_im_nim_message_item_video_share_Cover__tv"
+        />
+
+    <ImageView
+        android:id="@+id/x7_im_nim_message_item_video_share_Cover__tv"
+        android:layout_width="210.67dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintDimensionRatio="H,16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/x7_im_nim_message_item_video_share_info__tv" />
+
+    <LinearLayout
+        android:id="@+id/x7_im_nim_message_item_video_share_Author__ll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="@+id/x7_im_nim_message_item_video_share_Cover__tv"
+        app:layout_constraintTop_toBottomOf="@+id/x7_im_nim_message_item_video_share_Cover__tv">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="by"
+            android:textColor="@color/black_9"
+            android:textSize="10dp"
+            android:layout_marginRight="4dp"
+            />
+
+        <ImageView
+            android:id="@+id/x7_im_nim_message_item_video_share_Author_avatar_iv"
+            android:layout_width="17dp"
+            android:layout_height="17.33dp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="4dp"
+            />
+
+        <TextView
+            android:id="@+id/x7_im_nim_message_item_video_share_Author_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="就不写昵称"
+            android:textColor="@color/black_9"
+            android:textSize="10dp"
+            />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

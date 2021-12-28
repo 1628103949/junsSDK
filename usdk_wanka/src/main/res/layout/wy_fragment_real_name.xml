@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@id/wy_real_name_ll"
+        android:layout_width="@dimen/wy_fragment_common_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wy_shape_corner"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@id/wy_close_real_name_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="3dp"
+                    android:src="@drawable/wy_iv_close_ball" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/wy_real_name_hint"
+                    android:textSize="13sp" />
+
+                <!--<ImageView-->
+                <!--android:id="@id/close_real_name_iv"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:padding="3dp"-->
+                <!--android:src="@drawable/wy_iv_close_pay" />-->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@id/wy_enter_phone_num_ll"
+                style="@style/wy_ll_input_field_common">
+
+                <com.wanyugame.wygamesdk.view.ClearableEditText
+                    android:id="@id/wy_real_name_et"
+                    style="@style/wy_et_input_field_common"
+                    android:hint="@string/wy_please_enter_the_name"
+                    android:inputType="textPersonName"
+                    android:paddingRight="@dimen/wy_cet_right_padding" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/wy_ll_input_field_common"
+                android:layout_marginTop="15dp">
+
+                <com.wanyugame.wygamesdk.view.ClearableEditText
+                    android:id="@id/wy_real_id_card_et"
+                    style="@style/wy_et_input_field_common"
+                    android:hint="@string/wy_please_enter_the_id_card_number"
+                    android:inputType="text"
+                    android:paddingRight="@dimen/wy_cet_right_padding" />
+
+                <View
+                    android:id="@id/wy_split_line_view"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#777879"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@id/wy_finish_btn"
+                    style="@style/wy_btn_common"
+                    android:background="@drawable/wy_selector_btn_deep_green"
+                    android:gravity="center"
+                    android:text="@string/wy_real_name_continue" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

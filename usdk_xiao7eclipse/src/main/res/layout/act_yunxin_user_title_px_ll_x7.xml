@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView_ll"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--顶部的搜索样式-->
+    <com.netease.nim.uikit.x7.myview.X7Title
+        android:id="@+id/act_YunXinUserTitlePKAct_topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/act_yunXin_pk_oneself_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--头衔和等级-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="37dp"
+                android:text="@string/x7_im_pk_title_grade"
+                android:textColor="@color/base_black_3"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="33dp"
+                android:orientation="vertical">
+
+                <!--4.75 修改 头衔和等级详情列表 样式-->
+                <LinearLayout
+                    android:id="@+id/activity_title_integral_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical"
+                >
+                <!--2.中间积分部分-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="25dp">
+                    <LinearLayout
+                        android:id="@+id/x7_im_user_title_integral_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/x7_im_my_integral_detail"
+                            android:textColor="@color/color_black_333333"
+                            android:textSize="18dp"
+                            />
+                        <TextView
+                            android:id="@+id/im_user_title_integral_detail_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:drawableRight="@drawable/x7_jiantou_green_right11"
+                            android:drawablePadding="6dp"
+                            android:gravity="center"
+                            android:text="100"
+                            android:textColor="@color/color_12cdb0"
+                            android:textSize="18dp"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/act_yunXin_pk_integralChange_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/x7_im_user_title_integral_ll"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <!--3.积分规则部分-->
+                <TextView
+                    android:id="@+id/act_yunXin_pk_integralRuleTitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="17dp"
+                    android:includeFontPadding="false"
+                    android:textColor="#333333"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:id="@+id/act_yunXin_pk_integralRule_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <cn.m4399.operate.component.AlignTextView
+        android:id="@+id/m4399_ope_id_atv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <cn.m4399.operate.component.AlignTextView
+        android:id="@+id/m4399_ope_id_atv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/m4399_spacing_16" />
+
+    <Button
+        android:id="@+id/m4399_ope_id_btn_positive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/m4399_ope_aga_selector_btn_bg"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/m4399_ope_id_btn_navigate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/m4399_ope_ripple_rectangle_white"
+        android:textColor="@color/m4399_ope_color_bbbbbb" />
+</LinearLayout>

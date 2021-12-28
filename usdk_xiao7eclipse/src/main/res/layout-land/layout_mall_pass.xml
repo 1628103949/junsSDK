@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource"
+    android:paddingLeft="41dp">
+
+
+    <LinearLayout
+        android:id="@+id/mall_pass_buy_luxury_base_ll"
+        android:layout_width="114dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mall_pass_activities_explain_tv"
+        android:layout_marginEnd="26dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/mall_pass_buy_luxury_fund_ll"
+        android:layout_width="114dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mall_pass_activities_explain_tv"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/bg_luxury_fund"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/mall_pass_supreme_warMakes_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/x7_white"
+            android:textSize="11dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:includeFontPadding="false"
+            android:textStyle="bold"
+            android:textSize="11dp"
+            android:textColor="@color/x7_white"
+            android:text="@string/x7_mall_pass_supreme_warMakes"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mall_pass_buy_luxury_fund_tv"
+        android:layout_width="114dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mall_pass_activities_explain_tv"
+        android:layout_marginEnd="26dp"
+        android:textStyle="bold"
+        android:background="@drawable/x7_mall_custom_gift_had_btn_bg"
+        android:gravity="center"
+        android:text="@string/x7_has_buy_gift"
+        android:textSize="9dp"
+        android:textColor="@color/x7_black_644f31"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/mall_pass_title_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginTop="19dp">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="13dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/x7_orange_fbcc55"/>
+        <!-- 特殊字体 -->
+        <TextView
+            android:id="@+id/mall_pass_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:includeFontPadding="false"
+            android:textSize="17dp"
+            android:textColor="@color/color_black_333333"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mall_pass_activities_explain_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mall_pass_title_ll"
+        app:layout_constraintEnd_toStartOf="@+id/mall_pass_buy_luxury_base_ll"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:textSize="12dp"
+        android:textColor="@color/x7_black_644f31"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/mall_pass_activities_time_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mall_pass_activities_explain_tv"
+        app:layout_constraintEnd_toStartOf="@+id/mall_pass_buy_luxury_base_ll"
+        android:layout_marginStart="8dp"
+        android:textSize="12dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/x7_black_644f31"
+        android:includeFontPadding="false"/>
+
+    <LinearLayout
+        android:id="@+id/mall_pass_reward_title_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mall_pass_activities_time_tv"
+        android:layout_marginTop="6dp"
+        android:background="@color/x7_white">
+
+        <!-- 特殊字体 -->
+        <TextView
+            android:id="@+id/mall_pass_chapter_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:gravity="center"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:includeFontPadding="false"
+            android:textSize="10dp"
+            android:text="@string/x7_mall_pass_chapter"
+            android:background="@color/x7_orange_fbcc55"
+            android:textColor="@color/color_black_333333"/>
+
+        <TextView
+            android:id="@+id/mall_pass_normal_warMakes_tv"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textSize="9dp"
+            android:paddingStart="11dp"
+            android:lineSpacingExtra="3dp"
+            android:includeFontPadding="false"
+            android:textStyle="bold"
+            android:paddingEnd="11dp"
+            android:background="@color/x7_orange_fbcc55"
+            android:text="@string/x7_mall_pass_normal_warMakes"
+            android:textColor="@color/x7_black_644f31"/>
+
+        <TextView
+            android:id="@+id/mall_pass_supreme_warMakes_tv"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:paddingStart="11dp"
+            android:paddingEnd="11dp"
+            android:lineSpacingExtra="3dp"
+            android:includeFontPadding="false"
+            android:layout_marginTop="2dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="9dp"
+            android:background="@color/x7_orange_fbcc55"
+            android:text="@string/x7_mall_pass_supreme_warMakes"
+            android:textColor="@color/x7_black_644f31"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mall_pass_warMakes_reward_rc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:overScrollMode="never"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/mall_pass_reward_title_ll"
+        app:layout_constraintTop_toTopOf="@+id/mall_pass_reward_title_ll" />
+
+    <LinearLayout
+        android:id="@+id/mall_pass_end_line_reward"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mall_pass_reward_title_ll"
+        android:layout_marginEnd="27dp"
+        android:background="@color/x7_white"
+        android:visibility="gone">
+        <!--        特殊字体-->
+        <TextView
+            android:id="@+id/mall_pass_bottom_chapter_tv"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:textColor="@color/color_black_333333"
+            android:includeFontPadding="false"
+            android:background="@color/x7_orange_f5de9d"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:background="@color/x7_orange_f5de9d"
+            android:gravity="center">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mall_pass_bottom_normal_warMakes_rc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/mall_pass_bottom_normal_warMakes_tv"
+                android:layout_width="58dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:includeFontPadding="false"
+                android:textSize="8dp"
+                android:textColor="@color/x7_white"
+                android:gravity="center"
+                android:background="@drawable/receive_port"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:background="@color/x7_orange_f5de9d"
+            android:gravity="center">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mall_pass_bottom_supreme_warMakes_rc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/mall_pass_bottom_supreme_warMakes_tv"
+                android:layout_width="58dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:textSize="8dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/x7_white"
+                android:gravity="center"
+                android:background="@drawable/receive_port"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mall_pass_end_line_shadow_ll"
+        android:layout_width="12dp"
+        android:layout_height="213dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/mall_pass_end_line_reward"
+        app:layout_constraintTop_toTopOf="@+id/mall_pass_end_line_reward"
+        app:layout_constraintBottom_toBottomOf="@+id/mall_pass_end_line_reward"
+        android:background="@drawable/shape_mall_land_shadow"
+        android:visibility="visible"/>
+
+</android.support.constraint.ConstraintLayout>

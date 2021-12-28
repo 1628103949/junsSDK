@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="274dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/x7base_gray_33"
+        android:layout_marginTop="23dp"
+        android:text="@string/x7_default_login_explain"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/x7_set_default_login"
+        android:textColor="@color/x7base_gray_66"
+        android:textSize="14dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/x7_need_change_small_account"
+        android:textColor="@color/x7base_gray_66"
+        android:textSize="14dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/x7_click_center_small_account"
+        android:textColor="@color/color_ff9900"
+        android:textSize="14dp"/>
+    <TextView
+        android:id="@+id/x7_dialog_small_account_login_iknow_tv"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:text="@string/x7_know"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:background="@drawable/x7_bg_12cdb0_radius_9_bg"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="26dp"/>
+</LinearLayout>

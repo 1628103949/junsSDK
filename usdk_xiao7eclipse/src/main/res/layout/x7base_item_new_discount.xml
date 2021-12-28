@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/discount_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/x7base_green_round_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="9dp"
+        android:paddingTop="1dp"
+        android:paddingRight="9dp"
+        android:paddingBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/discount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/x7base_white"
+            android:text=""
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/discountNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/x7base_xml_discount"
+            android:textColor="@color/x7base_white"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

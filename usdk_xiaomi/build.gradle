@@ -9,9 +9,10 @@ android {
         minSdkVersion rootProject.ext.androidMinSdkVersion
         targetSdkVersion rootProject.ext.androidTargetSdkVersion
 
+        multiDexEnabled true
         applicationId "com.bswhl.mi"
-        versionCode 14
-        versionName '4.2'
+        versionCode 19
+        versionName '4.7'
         ndk {
             abiFilters 'armeabi-v7a','x86'
         }
@@ -102,6 +103,7 @@ dependencies {
     implementation 'com.android.support:support-compat:28.0.0'
     implementation 'com.android.support:support-core-utils:28.0.0'
     implementation 'com.android.support:support-core-ui:28.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
 
     implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
     implementation project(path: ':mid_oaid1.0.10')

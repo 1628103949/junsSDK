@@ -45,10 +45,10 @@ public class ActiveParam extends CommonParam {
             junSJson.put("ntype", TUitls.getNetWorkTypeName());
             //网络名称
             junSJson.put("nname", NetworkUtils.getNetworkOperatorName());
-//            if (!TextUtils.isEmpty(Dev.getSimNumber(SDKCore.getMainAct()))) {
-//                //Log.e("guoinfo","aaa"+Dev.getSimNumber(SDKCore.getMainAct()));
-//                junSJson.put("phonenum", Dev.getSimNumber(SDKCore.getMainAct()));
-//            }
+            if (!TextUtils.isEmpty(Dev.getSimNumber(SDKCore.getMainAct()))) {
+                //Log.e("guoinfo","aaa"+Dev.getSimNumber(SDKCore.getMainAct()));
+                junSJson.put("phonenum", Dev.getSimNumber(SDKCore.getMainAct()));
+            }
             if (SDKData.getSdkFirstActive()) {
                 junSJson.put("install", "1");
             } else {

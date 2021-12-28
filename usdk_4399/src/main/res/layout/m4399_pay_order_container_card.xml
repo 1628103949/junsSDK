@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:showIn="@layout/m4399_pay_card_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/m4399.Pay.Label"
+                android:text="@string/m4399_pay_order_payable" />
+
+            <TextView
+                android:id="@+id/tv_payable_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:textColor="@color/m4399_ope_color_primary"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:text="10" />
+
+            <TextView
+                android:id="@+id/tv_payable_name"
+                style="@style/m4399.Pay.Label.Value"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/m4399_ope_yuan" />
+
+            <TextView
+                android:id="@+id/tv_origin_fee"
+                style="@style/m4399.Pay.Label.Value"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                tools:text="原价6元" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                tools:text="sdk-test001" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m4399_pay_spacing_v"
+            android:layout_marginBottom="@dimen/m4399_pay_spacing_v"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/m4399.Pay.Label"
+                android:text="@string/m4399_pay_order_commodity_name" />
+
+            <TextView
+                android:id="@+id/m4399_pay_status_order_commodity"
+                style="@style/m4399.Pay.Label.Value"
+                tools:text="VIP礼包一个" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <cn.m4399.operate.component.DashLineView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:tag="h,#bbbbbb, 6, 4" />
+</LinearLayout>

@@ -11,31 +11,26 @@
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
-    <!-- 需要请求的运行时权限 -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-    <!-- Common permission -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 4399 运营SDK：以下是必须的，包括第三方SDK需要的，以 jar+res 方式接入需要打开以下内容，aar则不需 -->
+    <!-- 一般性权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-    <!-- SMS pay permission -->
-    <uses-permission android:name="android.permission.SEND_SMS" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <!-- YouYiFu permission -->
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.RECEIVE_SMS" />
-
     <!-- 一键登录 -->
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <!--suppress DeprecatedClassUsageInspection -->
     <uses-permission android:name="android.permission.GET_TASKS" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- 4399 运营SDK：Android 11兼容，声明所要进行交互的应用包名，主要用于外部授权登录和支付 -->
+    <queries>
+        <package android:name="com.m4399.gamecenter" />
+        <package android:name="com.tencent.mobileqq" />
+        <package android:name="com.sina.weibo" />
+        <package android:name="com.tencent.mm" />
+        <package android:name="com.eg.android.AlipayGphone" />
+    </queries>
     <application
         android:name="com.juns.sdk.core.api.JunSSdkApplication"
         android:allowBackup="true"
@@ -43,7 +38,8 @@
         android:label="JunS_4399"
         android:supportsRtl="true"
         tools:replace="android:allowBackup"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning"
+        android:networkSecurityConfig="@xml/m4399_network_policy">
 
         <activity
             android:name="com.juns.sdk.demo.DemoActivity"
@@ -68,9 +64,6 @@
                 android:resource="@xml/juns_update_path" />
         </provider>
         <!-- JunS sdk components end -->
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" />
         <provider
             android:name="cn.m4399.operate.OpeFileProvider"
             android:authorities="${applicationId}.operate.FileProvider"
@@ -78,112 +71,54 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/m4399_ope_file_paths" />
+                android:resource="@xml/m4399_ope_file_paths"/>
         </provider>
-        <activity
-            android:name="cn.m4399.common.permission.AuthActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:multiprocess="false"
-            android:screenOrientation="behind"
-            android:theme="@style/m4399ActivityTheme" />
 
-        <!-- For 4399 recharging SDK. -->
-        <activity
-            android:name="cn.m4399.recharge.ui.activity.RechargeActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="behind"
-            android:theme="@style/m4399TranslucentFullscreenActivityTheme" />
+        <uses-library android:name="org.apache.http.legacy" android:required="false">
+        </uses-library>
 
-        <!-- For 4399 Operation SDK -->
-        <activity
-            android:name="cn.m4399.operate.ui.activity.LoginActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="behind"
-            android:theme="@style/m4399TranslucentFullscreenActivityTheme" />
-        <activity
-            android:name="cn.m4399.operate.ui.activity.UserCenterActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:hardwareAccelerated="false"
-            android:screenOrientation="behind"
-            android:theme="@style/m4399TranslucentFullscreenActivityTheme">
-            <intent-filter>
-                <action android:name="cn.m4399.sdk.action.USER_CENTER" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="cn.m4399.operate.ui.activity.CustomWebActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="behind"
-            android:theme="@style/m4399TranslucentFullscreenActivityTheme" />
+        <!--
+          4399 运营SDK：
+          以下是 Activity 配置，以jar+res 方式接入需要打开以下内容，aar则不需
+          另外，第三方页面方向有时候需要明确设置，比如支付宝h5页面，可以设置为横屏
 
+          activity的配置不能少于orientation|screenSize|keyboardHidden，这些配置是为了防止Activity被系统或第三方界面强
+          拉成竖屏时，发生重建而加入的。SDK的Activity支持横屏或竖屏，但不支持横竖屏切换，否则会包初始化问题
+        -->
         <activity
-            android:name="cn.m4399.operate.ui.activity.CommonActivity"
+            android:name="cn.m4399.operate.component.OperateActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="behind"
-            android:theme="@style/m4399TranslucentFullscreenActivityTheme" />
+            android:theme="@style/m4399TranslucentFullscreenActivityTheme"/>
         <activity
-            android:name="cn.m4399.operate.ui.activity.GetActivationCodeActivity"
+            android:name="cn.m4399.operate.recharge.RechargeActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="behind"
-            android:theme="@style/m4399TranslucentFullscreenActivityTheme" />
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
 
-        <!-- 注意！ AliPay SDK属于第三方支付SDK，需要根据游戏在此实际横竖屏方向设置方向 -->
-        <!-- For AliPay SDK -->
+        <!-- 4399 运营SDK：以下是支付宝 H5 页面Activity，请游戏方根据游戏的横竖屏要求手工配置landscape|portrait -->
         <activity
             android:name="com.alipay.sdk.app.H5PayActivity"
             android:configChanges="orientation|keyboardHidden|navigation|screenSize"
             android:exported="false"
             android:screenOrientation="behind"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-
-        <!-- 注意！ YouYiFu SDK属于第三方支付SDK，需要根据游戏在此实际横竖屏方向设置方向 -->
-        <!-- For YouYiFu -->
-        <activity
-            android:name="com.arcsoft.hpay100.HPaySdkActivity"
-            android:configChanges="keyboardHidden|screenSize|orientation"
-            android:screenOrientation="behind"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
-        <activity
-            android:name="com.arcsoft.hpay100.web.HPayWebActivity"
-            android:configChanges="keyboardHidden|screenSize|orientation"
-            android:screenOrientation="behind"
-            android:theme="@style/hpay_custom_confim_dialog" />
-        <activity
-            android:name="com.arcsoft.hpay100.web.HPayWebFullActivity"
-            android:configChanges="keyboardHidden|screenSize|orientation"
-            android:screenOrientation="behind" />
-        <activity
-            android:name="cn.m4399.operate.ui.activity.CaptchaActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="behind"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
-
-        <!-- 一键登录 -->
-        <!-- 注意！ 电信/移动一键登录Activity，需要根据游戏在此实际横竖屏方向设置方向 -->
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <!-- 4399 运营SDK：以下是一键登录SDK，请游戏方根据游戏的横竖屏要求手工配置landscape|portrait -->
         <activity
             android:name="cn.com.chinatelecom.account.sdk.ui.AuthActivity"
             android:exported="false"
             android:screenOrientation="behind"
-            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
-
-        <!-- 注意！ 电信/移动一键登录Activity，需要根据游戏在此实际横竖屏方向设置方向 -->
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
         <activity
             android:name="cn.com.chinatelecom.account.sdk.ui.PrivacyWebviewActivity"
             android:exported="false"
             android:screenOrientation="behind"
-            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
-
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
         <activity
-            android:name="cn.m4399.operate.control.onekey.wo.WoLoginActivity"
+            android:name="cn.m4399.operate.account.onekey.wo.WoLoginActivity"
             android:exported="false"
             android:screenOrientation="behind"
-            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
 
-        <activity
-            android:name="cn.m4399.operate.control.onekey.wo.WoPrivacyContentActivity"
-            android:exported="false"
-            android:screenOrientation="behind"
-            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
     </application>
 </manifest>

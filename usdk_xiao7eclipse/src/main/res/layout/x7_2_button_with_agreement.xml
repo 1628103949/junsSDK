@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--带有 标题、提示、用户须知按钮及2个按钮 的弹窗-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x7_addSmallAccount_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <include
+        layout="@layout/x7_layout_dialog_for_title_and_hint"
+        android:id="@+id/layout_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <CheckBox
+        android:id="@+id/ck_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/x7_scroll_for_text"
+        android:textColor="@color/gray_66"
+        android:layout_marginTop="10dp"
+        android:textSize="9dp"
+        android:paddingVertical="5dp"
+        android:button="@drawable/x7_selection_for_agreement"
+        android:checked="false" />
+
+    <include layout="@layout/x7_dialog_for_2_bottom_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ck_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

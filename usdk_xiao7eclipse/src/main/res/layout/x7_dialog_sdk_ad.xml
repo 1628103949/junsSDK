@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/sdk_ad_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constrainedHeight="true"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:maxHeight="266dp"
+        android:maxWidth="266dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sdk_ad_close_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/sdk_ad_iv"
+        app:layout_constraintBottom_toTopOf="@+id/sdk_ad_iv"
+        app:layout_constraintStart_toEndOf="@+id/sdk_ad_iv"
+        app:layout_constraintEnd_toEndOf="@+id/sdk_ad_iv"
+        android:src="@drawable/x7_close_sdk_ad" />
+
+    <CheckBox
+        android:id="@+id/sdk_ad_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:button="@null"
+        android:checked="false"
+        android:drawableStart="@drawable/x7_checkbox_white_square_button"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="@string/x7_no_dialog_adk_ad"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/sdk_ad_iv"
+        app:layout_constraintStart_toStartOf="@+id/sdk_ad_iv"
+        app:layout_constraintTop_toBottomOf="@+id/sdk_ad_iv" />
+
+
+</android.support.constraint.ConstraintLayout>

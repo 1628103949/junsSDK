@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@id/wy_fragment_switch_loggedin_account_ly"
+        android:layout_width="@dimen/wy_fragment_common_width"
+        android:layout_height="@dimen/wy_fragment_common_nologo_height"
+        android:layout_gravity="center"
+        android:background="@drawable/wy_shape_corner"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@id/wy_please_select_the_login_method_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <include layout="@layout/wy_include_wy_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/wy_switch_account_ll"
+                style="@style/wy_ll_input_field_common"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@id/wy_account_type_icon_iv"
+                    style="@style/wy_iv_input_field_common"
+                    android:src="@drawable/wy_iv_visitor_login_large" />
+
+                <TextView
+                    android:id="@id/xx_account_tv"
+                    style="@style/wy_et_input_field_common"
+                    android:layout_marginLeft="0dp"
+                    android:text="WK_0001" />
+
+                <Button
+                    android:layout_width="14dp"
+                    android:layout_height="6dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/wy_btn_drop_down" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@id/wy_login_btn"
+                style="@style/wy_btn_common"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/wy_selector_btn_deep_green"
+                android:text="@string/wy_login" />
+
+            <TextView
+                android:id="@id/wy_other_login_way_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/wy_other_login_type"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

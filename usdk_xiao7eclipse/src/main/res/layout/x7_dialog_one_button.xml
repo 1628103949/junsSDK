@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x7_addSmallAccount_width"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_switch_account_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/x7_smallAccountnote"
+        android:textColor="#12cdb0"
+        android:textSize="18dp" />
+
+    <!--<ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv_switch_account_title"
+        android:layout_height="200dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/x7_dialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_switch_account_title"
+            android:text=""
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"/>
+    </ScrollView>-->
+
+
+    <TextView
+        android:id="@+id/tv_switch_account_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/tv_switch_account_title"
+        android:textColor="@color/x7_text_gray"
+        android:textSize="14dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_sure_cancel"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_switch_account_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:id="@+id/btn_add_account"
+            android:layout_width="83dp"
+            android:layout_height="34dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/x7_btn_back_selected_2"
+            android:text="@string/x7_know"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

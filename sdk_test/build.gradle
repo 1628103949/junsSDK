@@ -106,7 +106,8 @@ dependencies {
     implementation 'com.android.support:support-compat:28.0.0'
     implementation 'com.android.support:support-core-utils:28.0.0'
     implementation 'com.android.support:support-core-ui:28.0.0'
-    implementation project(path: ':mid_oaid1.0.10')
+    implementation project(path: ':mid_oaid1.0.22')
+    //implementation fileTree(dir: 'aar', include: ['*.aar', '*.jar'], exclude: [])
 }
 
 repositories {

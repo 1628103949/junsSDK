@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.smwl.smsdk.myview.mall.MallRadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mall="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rb_one"
+    android:layout_width="@dimen/x7_mall_tab_width"
+    android:layout_height="match_parent"
+    mall:isShowRedPointStyle="true"
+    mall:redPointColor="#FFFF3C00"
+    mall:redPointDirection="top_right"
+    mall:redPointWidth="@dimen/x7_tab_red_point_width"
+    mall:textColor="#FF644F31"
+    android:layout_marginRight="6dp"
+    mall:textSize="11dp"
+    mall:selectedBack="@drawable/x7_mall_page_selected"
+    mall:unSelectedBack="@drawable/x7_mall_page_unselected"
+    mall:shadowDimension="@dimen/x7_mall_tab_shadow"
+    tools:ignore="MissingDefaultResource" />

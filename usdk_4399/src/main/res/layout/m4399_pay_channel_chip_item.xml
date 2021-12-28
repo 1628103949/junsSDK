@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/m4399_pay_channel_chip_height"
+    android:layout_marginEnd="12dp"
+    android:layout_marginRight="12dp"
+    android:background="@drawable/m4399_ope_pay_selector_channel"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="12dp"
+    android:paddingTop="6dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="6dp"
+    tools:layout_gravity="center">
+
+    <cn.m4399.operate.support.network.NetworkImageView
+        android:id="@+id/chip_ico"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/m4399_ope_avatar_default" />
+
+    <TextView
+        android:id="@+id/chip_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="#666666"
+        android:textSize="@dimen/m4399_font_14"
+        tools:text="支付宝钱包" />
+</LinearLayout>

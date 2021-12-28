@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.smwl.smsdk.myview.expand.DisplayTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_relaxa_collection_gameintroduce_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:lineSpacingExtra="7dp"
+    android:textColor="@color/black_7"
+    android:textSize="14sp"
+    tools:showIn="@layout/x7_sdk_myview_relaxacolleciton_ll" />

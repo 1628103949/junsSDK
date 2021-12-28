@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="275dp"
+    android:layout_height="245dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dialog_limit_coupon_rule_know_tv"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="15dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <TextView
+            android:id="@+id/dialog_limit_coupon_rule_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/x7base_gray_66"
+            android:textSize="14dp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/dialog_limit_coupon_rule_know_tv"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/x7base_bg_solid_green_12cdb0_corner_10"
+        android:gravity="center"
+        android:text="@string/x7_know"
+        android:textColor="@color/x7_white"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

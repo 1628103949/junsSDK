@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_voucher_group_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_voucher_group_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_voucher_group_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#999999"
+            android:textSize="9dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_sdk_money_voucher"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_below="@+id/ll_voucher_group_title"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="4dp">
+        <!--android:background="@drawable/bg_solid_gray_f5_corner_7"-->
+        <LinearLayout
+            android:id="@+id/ll_voucher_moneyTicket"
+            android:layout_width="79dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/x7_bg_99000000_left_top_bottom_corner_7"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_voucher_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/x7_RMB_symbol"
+                    android:textColor="@color/text_green"
+                    android:textSize="9dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_voucher_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:includeFontPadding="false"
+                    android:text="666"
+                    android:textColor="@color/text_green"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_voucher_plat_money"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/x7_bi_small"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_voucher_price_ladder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/limite_receice_xml"
+                android:textColor="@color/text_green"
+                android:textSize="7dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_moneyticket_pile_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_moneyticket_live_pile_num"
+            android:includeFontPadding="false"
+            android:paddingStart="4dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:text="6张"
+            android:textColor="@color/white"
+            android:textSize="9dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_voucher_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/ll_voucher_moneyTicket"
+            android:layout_toRightOf="@+id/ll_voucher_moneyTicket"
+            android:background="@drawable/x7_bg_66000000_right_top_bottom_corner_7"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingStart="11dp"
+            android:paddingLeft="11dp">
+
+            <TextView
+                android:id="@+id/tv_voucher_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="55dp"
+                android:layout_marginBottom="6dp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="@string/gift_package_name_xml"
+                android:textColor="@color/x7_white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_voucher_validity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="55dp"
+                android:layout_marginBottom="8dp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/x7_valid"
+                android:textColor="@color/x7_white_b4b4b4"
+                android:textSize="9dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/dot_line"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_above="@+id/rl_voucher_scope"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/ll_voucher_moneyTicket"
+            android:background="@drawable/x7_dot_line"
+            android:layerType="software" />
+
+        <LinearLayout
+            android:id="@+id/rl_voucher_scope"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/ll_voucher_moneyTicket">
+
+            <TextView
+                android:id="@+id/tv_voucher_scope"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="@string/x7_range_of_application"
+                android:textColor="@color/x7_white_b4b4b4"
+                android:textSize="9dp" />
+
+            <TextView
+                android:id="@+id/tv_voucher_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/x7_use_rules"
+                android:textColor="@color/x7_white_b4b4b4"
+                android:textSize="9dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_voucher_click"
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/x7_green_radio_bg"
+            android:gravity="center"
+            android:text="@string/x7_get"
+            android:textColor="@color/text_white"
+            android:textSize="11dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_voucher_notsell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_voucher_group_title"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="70dip"-->
+        <!--            android:layout_height="70dip"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:src="@drawable/x7_do_fail" />-->
+
+        <TextView
+            android:id="@+id/tv_voucher_notsell_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="@string/no_money_voucher"
+            android:textColor="#999"
+            android:textSize="19dp" />
+    </LinearLayout>
+</RelativeLayout>

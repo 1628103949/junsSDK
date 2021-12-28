@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/x7_mall_fund_gift_root_ll"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="1dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/x7_mall_fund_gift_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/x7_orange_fbcc55"
+        android:gravity="center"
+        android:textColor="@color/x7_black_644f31"
+        android:textSize="10dp" />
+
+    <!--add道具-->
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_weight="4"
+        android:paddingStart="5dp"
+        android:paddingEnd="13dp"
+        android:paddingTop="1dp"
+        android:background="@color/x7_orange_f5de9d"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/x7_mall_fund_gift_prop_root_ll"
+            android:layout_width="182dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_weight="1.5"
+        android:background="@color/x7_orange_f5de9d"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/x7_mall_fund_gift_get_tv"
+            android:layout_width="61dp"
+            android:layout_height="25dp"
+            android:background="@drawable/x7_mall_custom_gift_get_btn_bg"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/base_white"
+            android:textSize="9dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -11,21 +11,15 @@ import android.os.Environment;
 import android.os.Parcelable;
 import android.provider.MediaStore;
 import android.text.format.DateFormat;
+import android.util.Log;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.widget.Toast;
-
-import com.juns.sdk.framework.album.AlbumPickActivity;
-
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
-
-import static android.app.Activity.RESULT_CANCELED;
 import static android.app.Activity.RESULT_OK;
-import static com.juns.sdk.framework.album.AlbumPickActivity.TN_ALBUM_RESULT_CODE;
 
 /**
  * User: Ranger
@@ -104,7 +98,8 @@ public class SdkWebChromeClient extends WebChromeClient {
     }
 
     public void handleOnActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == TN_ALBUM_RESULT_CODE) {
+        //Log.e("guoinfo","requestCode:"+requestCode);
+        if (requestCode == IMAGE_CHOOSER_RESULT_CODE) {
             // 经过上边(1)、(2)两个赋值操作，此处即可根据其值是否为空来决定采用哪种处理方法
             if (uploadFile != null) {
                 chooseBelow(resultCode, data);
@@ -199,7 +194,8 @@ public class SdkWebChromeClient extends WebChromeClient {
         Intent chooserIntent = Intent.createChooser(Photo, "Image Chooser");
         chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Parcelable[]{captureIntent});
 
-        ((Activity) mContext).startActivityForResult(chooserIntent, TN_ALBUM_RESULT_CODE);
+        //Log.e("guoinfo","fileSelectrequestCode:"+IMAGE_CHOOSER_RESULT_CODE);
+        ((Activity) mContext).startActivityForResult(chooserIntent, IMAGE_CHOOSER_RESULT_CODE);
     }
 
     private Uri getPathContentUri(Context context, File imageFile) {

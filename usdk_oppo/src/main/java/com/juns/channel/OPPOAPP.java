@@ -20,6 +20,6 @@ public class OPPOAPP extends OPlatformAPP {
     @Override
     public void onCreate(Application application) {
         super.onCreate(application);
-        GameCenterSDK.init(SDKApplication.getPlatformConfig().getExt2(), application);
+        //GameCenterSDK.init(SDKApplication.getPlatformConfig().getExt2(), application);
     }
 }

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/dialog_x7Notice_rootView_cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_notice_sdk">
+
+        <ImageView
+            android:id="@+id/dialog_x7Notice_tiger_iv"
+            android:layout_width="39dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/x7base_notice_title_icon_iv"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dialog_x7Notice_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:text=""
+            android:textColor="@color/download_cheng"
+            android:textSize="17dp"
+            app:layout_constraintLeft_toRightOf="@+id/dialog_x7Notice_tiger_iv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/dialog_x7Notice_top_close_tv"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_close_white_bg"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/dialog_x7Notice_clickGoTo_tv"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_x7Notice_tiger_iv"
+            tools:ignore="MissingConstraints">
+
+
+            <com.netease.nim.uikit.x7.myview.MaxHeightScrollView
+                android:id="@+id/dialog_x7Notice_scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="true"
+                android:scrollbarSize="4dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbarThumbVertical="@drawable/bg_vertical_scrollbar"
+                android:scrollbars="vertical">
+
+                <TextView
+                    android:id="@+id/dialog_x7Notice_teamAnnouncement_content_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:text=""
+                    android:textColor="@color/black_6"
+                    android:textIsSelectable="true"
+                    android:textSize="10dp" />
+
+            </com.netease.nim.uikit.x7.myview.MaxHeightScrollView>
+
+            <LinearLayout
+                android:id="@+id/notice_bottom_alpha_ll"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/dialog_x7Notice_scrollView"
+                android:background="@drawable/shape_notice_alpha"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/dialog_x7Notice_clickGoTo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:drawableRight="@drawable/x7_jiantou_green_right15"
+            android:drawablePadding="7dp"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:padding="5dp"
+            android:text="@string/x7_TeamMessageFragment_clickGoTo"
+            android:textColor="@color/color_12cdb0"
+            android:textSize="@dimen/text_size_15"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/dialog_x7Notice_close_tv"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/dialog_x7Notice_close_tv"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="53dp"
+            android:layout_marginRight="53dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_sdk_notice_know"
+            android:gravity="center"
+            android:text="@string/x7_IM_xml_IKnow"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

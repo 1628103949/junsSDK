@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/act_myGroup_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/act_myGroup_myTitle1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:includeFontPadding="false"
+            android:text="@string/x7_nim_act_my_group_title"
+            android:textColor="@color/black_3"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/act_myGroup_notification_iv"
+            android:layout_width="16dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp" />
+
+    </RelativeLayout>
+
+    <com.netease.nim.uikit.x7.myview.recyclerview.MyNormalRecyclerView
+        android:id="@+id/act_myGroup_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.netease.nim.uikit.x7.myview.NoDataView
+        android:id="@+id/act_myGroup_noDataView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/act_myGroup_recommendScrollView"
+        layout="@layout/layout_yunxin_recommend_im"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

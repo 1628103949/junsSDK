@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/x7base_white"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <!--顶部title-->
+    <com.smwl.x7market.component_base.myview.other.X7Title
+        android:id="@+id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.smwl.x7market.myview.XListView
+        android:id="@+id/act_compensateDetails_listView"
+        android:layout_below="@+id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+
+</RelativeLayout>

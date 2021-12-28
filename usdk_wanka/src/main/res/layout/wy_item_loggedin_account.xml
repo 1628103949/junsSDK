@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wy_ll_input_field_common"
+    android:background="@color/white"
+    android:layout_gravity="center">
+
+
+    <ImageView
+        android:id="@id/wy_account_type_icon_iv"
+        style="@style/wy_iv_input_field_common"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/wy_iv_visitor_login_large"/>
+
+
+    <TextView
+        android:id="@id/wy_logged_in_account_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/wy_account_type_icon_iv"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="WK_HELLO_WORLD"
+        android:background="@color/white"
+        android:textColor="@color/wy_grey_text_color"
+        android:textSize="@dimen/wy_et_input_field_text_size"/>
+
+    <Button
+        android:id="@id/wy_clear_btn"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/wy_clear_input"/>
+</RelativeLayout>

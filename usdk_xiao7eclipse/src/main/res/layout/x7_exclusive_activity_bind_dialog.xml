@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_solid_white_corner_10"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
+    android:paddingTop="26dp"
+    android:id="@+id/choose_role_ll"
+    android:paddingBottom="18dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/x7_exclusive_acts_switch_role"
+        android:textColor="@color/black_3"
+        android:textSize="17dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/choose_role_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="7dp" />
+
+    <TextView
+        android:id="@+id/cancel_tv"
+        android:layout_width="83dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/x7_cancel"
+        android:textColor="@color/color_12cdb0"
+        android:textSize="17dp" />
+
+</LinearLayout>

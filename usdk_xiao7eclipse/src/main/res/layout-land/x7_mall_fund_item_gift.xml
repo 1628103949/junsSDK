@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/x7_mall_fund_gift_root_ll"
+    android:layout_width="match_parent"
+    android:layout_height="127dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/x7_solid_f5de9d_corner_5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/x7_mall_fund_gift_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:background="@drawable/x7_mall_fund_gift_title_bg"
+        android:gravity="center"
+        android:textColor="@color/x7base_gray_33"
+        android:textSize="12dp" />
+
+
+    <!--add道具-->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="5dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/x7_mall_fund_gift_prop_root_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:background="@color/x7_orange_f5de9d"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/x7_mall_fund_gift_get_tv"
+        android:layout_width="76dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/x7_mall_custom_gift_get_btn_bg"
+        android:gravity="center"
+        android:textColor="@color/base_white"
+        android:textStyle="bold"
+        android:textSize="9dp" />
+
+</LinearLayout>

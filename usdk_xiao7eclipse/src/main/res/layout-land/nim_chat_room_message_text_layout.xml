@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textMessageLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingTop="@dimen/bottom_component_margin_vertical">
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:minHeight="37dp"
+        android:layout_marginRight="@dimen/bottom_component_margin_horizontal"
+        android:layout_marginEnd="6dp"
+        android:autoLink="web|email|phone"
+        android:background="@drawable/x7_nim_bg_send_message"
+        android:maxHeight="72dip"
+        android:maxLines="3"
+        android:gravity="center_vertical"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:imeOptions="flagNoExtractUi"
+        android:paddingVertical="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@null"
+        android:textSize="12dp" />
+
+
+    <FrameLayout
+        android:id="@+id/sendLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="6dp">
+
+        <TextView
+            android:id="@+id/buttonSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:background="@drawable/x7_im_chatroom_receive_message_single_line_bg_99000000_20"
+            android:contentDescription="@string/empty"
+            android:gravity="center"
+            android:paddingHorizontal="17dp"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="242dp"
+    android:layout_height="194dp">
+
+
+    <RelativeLayout
+        android:layout_width="146dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true">
+
+        <com.smwl.smsdk.myview.mall.MallTurnTableRewardView
+            android:id="@+id/x7_mall_turn_table_two_v"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="-2dp"
+            android:layout_toStartOf="@id/x7_mall_turn_table_three_v"
+            app:is_special="false" />
+
+        <com.smwl.smsdk.myview.mall.MallTurnTableRewardView
+            android:id="@+id/x7_mall_turn_table_three_v"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            app:is_special="false" />
+
+        <com.smwl.smsdk.myview.mall.MallTurnTableRewardView
+            android:id="@+id/x7_mall_turn_table_four_v"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="-2dp"
+            android:layout_toEndOf="@id/x7_mall_turn_table_three_v"
+            app:is_special="false" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="98dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <com.smwl.smsdk.myview.mall.MallTurnTableRewardView
+            android:id="@+id/x7_mall_turn_table_six_v"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:is_special="false" />
+
+        <com.smwl.smsdk.myview.mall.MallTurnTableRewardView
+            android:id="@+id/x7_mall_turn_table_seven_v"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-2dp"
+            app:is_special="false" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="146dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+
+        <com.smwl.smsdk.myview.mall.MallTurnTableRewardView
+            android:id="@+id/x7_mall_turn_table_eleven_v"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="-2dp"
+            android:layout_toStartOf="@id/x7_mall_turn_table_ten_v"
+            app:is_special="false" />
+
+        <com.smwl.smsdk.myview.mall.MallTurnTableRewardView
+            android:id="@+id/x7_mall_turn_table_ten_v"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            app:is_special="false" />
+
+        <com.smwl.smsdk.myview.mall.MallTurnTableRewardView
+            android:id="@+id/x7_mall_turn_table_nine_v"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="-2dp"
+            android:layout_toEndOf="@id/x7_mall_turn_table_ten_v"
+            app:is_special="false" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="98dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <com.smwl.smsdk.myview.mall.MallTurnTableRewardView
+            android:id="@+id/x7_mall_turn_table_fourteen_v"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:is_special="false" />
+
+        <com.smwl.smsdk.myview.mall.MallTurnTableRewardView
+            android:id="@+id/x7_mall_turn_table_thirdteen_v"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-2dp"
+            app:is_special="false" />
+    </LinearLayout>
+
+    <com.smwl.smsdk.myview.mall.MallTurnTableRewardView
+        android:id="@+id/x7_mall_turn_table_one_v"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:is_special="true" />
+
+    <com.smwl.smsdk.myview.mall.MallTurnTableRewardView
+        android:id="@+id/x7_mall_turn_table_five_v"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:is_special="true" />
+
+    <com.smwl.smsdk.myview.mall.MallTurnTableRewardView
+        android:id="@+id/x7_mall_turn_table_twelve_v"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:is_special="true" />
+
+    <com.smwl.smsdk.myview.mall.MallTurnTableRewardView
+        android:id="@+id/x7_mall_turn_table_eight_v"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:is_special="true" />
+
+    <ImageView
+        android:layout_width="126dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/x7_icon_mall_turn_table" />
+
+    <RelativeLayout
+        android:id="@+id/x7_mall_turn_table_draw_one_rl"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/x7_bg_mall_turn_table_draw_one">
+
+        <com.smwl.smsdk.myview.StrokeTextView
+            android:id="@+id/x7_mall_turn_table_draw_one_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="4dp"
+            android:text="@string/x7_mall_draw_one_time"
+            android:textColor="@color/x7_yellow_fef2d4"
+            android:textSize="8dp"
+            android:textStyle="bold"
+            app:stroke_color="@color/x7_brown_785314"
+            app:stroke_width="2dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/x7_mall_turn_table_draw_ten_rl"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/x7_bg_mall_turn_table_draw_ten">
+
+        <com.smwl.smsdk.myview.StrokeTextView
+
+            android:id="@+id/x7_mall_turn_table_draw_ten_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="4dp"
+            android:text="@string/x7_mall_draw_ten_time"
+            android:textColor="@color/x7_yellow_fef2d4"
+            android:textSize="8dp"
+            android:textStyle="bold"
+            app:stroke_color="@color/x7_brown_785314"
+            app:stroke_width="2dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mall_turn_table_vouchers_rl"
+        android:layout_width="116dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/x7_bg_solid_yellow_edd48d_corner_5">
+
+        <TextView
+            android:id="@+id/mall_turn_table_hold_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/x7_brown_906c27"
+            android:textSize="7dp" />
+
+        <TextView
+            android:id="@+id/mall_turn_table_can_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4dp"
+            android:textColor="@color/x7_brown_906c27"
+            android:textSize="7dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="12dp"
+        android:layout_alignStart="@+id/mall_turn_table_vouchers_rl"
+        android:layout_alignTop="@+id/mall_turn_table_vouchers_rl"
+        android:layout_alignBottom="@+id/mall_turn_table_vouchers_rl"
+        android:layout_marginStart="1dp"
+        android:src="@drawable/x7_icon_mall_turn_table_voucher" />
+
+</RelativeLayout>

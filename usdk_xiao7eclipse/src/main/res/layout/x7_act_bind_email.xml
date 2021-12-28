@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bind_email_rl">
+
+    <include
+        android:id="@+id/x7_forgetPassword_title"
+        layout="@layout/x7_activity_title_4" />
+
+    <LinearLayout
+        android:id="@+id/X7CommonInputStyle"
+        style="@style/X7CommonInputStyle_2"
+        android:layout_below="@+id/x7_forgetPassword_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_email_address"
+            style="@style/X7EditTextNoBackCommonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:hint="@string/x7_enter_emai_address"
+            android:imeOptions="actionNext|flagNoExtractUi|flagNoFullscreen"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:maxLength="30"
+            android:textColor="#999"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_verify_code"
+        style="@style/X7CommonInputStyle_2"
+        android:layout_below="@+id/X7CommonInputStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_verify_code"
+            style="@style/X7EditTextNoBackCommonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="@string/x7_verify_code_input_hint"
+            android:imeOptions="actionDone|flagNoExtractUi|flagNoFullscreen"
+            android:inputType="number"
+            android:textColor="#999"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_get_verify_code"
+            android:layout_width="70dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/x7_btn_auto_back"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/x7_get_verify_code"
+            android:textColor="#ffffff"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next_for_bind_or_change_email"
+        style="@style/X7BtnClickStyleNew"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="34dp"
+        android:text="@string/x7base_sure_bind" />
+</RelativeLayout>

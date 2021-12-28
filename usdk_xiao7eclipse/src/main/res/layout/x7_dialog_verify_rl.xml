@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_x7_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/dialog_x7_items_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/x7_ffffff_16_bg">
+
+        <TextView
+            android:id="@+id/dialog_x7_verify_typeYes"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/x7_IM_xml_hint1"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:background="@drawable/x7_green_change_round_bg" />
+
+        <TextView
+            android:id="@+id/dialog_x7_verify_typeNot"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/x7_IM_xml_hint2"
+            android:textColor="@color/color_black_ff999999"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/x7base_f2f2f2_round_bg" />
+
+        <TextView
+            android:id="@+id/dialog_x7_verify_typeSetting"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/x7_IM_xml_hint3"
+            android:textColor="@color/color_black_ff999999"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:background="@drawable/x7base_f2f2f2_round_bg" />
+
+    </LinearLayout>
+</RelativeLayout>

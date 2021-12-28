@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x7_addSmallAccount_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_psd_Clear_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/x7_mima"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_switch_account_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_psd_Clear_success"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/x7_psd_clear_success"
+        android:textColor="#12cdb0"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sure_cancel"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_switch_account_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+        <Button
+            android:id="@+id/btn_add_account"
+            android:layout_width="83dp"
+            android:layout_height="34dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/x7_btn_back_selected_2"
+            android:text="@string/x7_know"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

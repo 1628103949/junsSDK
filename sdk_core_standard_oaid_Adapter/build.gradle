@@ -1,6 +1,6 @@
-def sdkVersionName = '1.1.5'
-def sdkVersionCode = 16
-def publishVersion = "1.1.5"
+def sdkVersionName = '1.1.6'
+def sdkVersionCode = 17
+def publishVersion = "1.1.6"
 
 def releaseTime() {
     new java.util.Date().format("yyyy-MM-dd", TimeZone.getDefault());

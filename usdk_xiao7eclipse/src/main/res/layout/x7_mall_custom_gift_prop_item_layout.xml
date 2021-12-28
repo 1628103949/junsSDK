@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="7dp">
+
+    <RelativeLayout
+        android:id="@+id/x7_mall_custom_gift_prop_item_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/x7_mall_custom_gift_prop_bg_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="5dp"
+            android:padding="2dp"
+            android:src="@drawable/bg_mall_gift" />
+
+        <!--道具图标-->
+        <ImageView
+            android:id="@+id/x7_mall_custom_gift_prop_item_add_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="5dp"
+            android:padding="2dp"/>
+
+        <ImageView
+            android:id="@+id/x7_mall_custom_gift_prop_icon_border_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/mall_border" />
+
+        <ImageView
+            android:id="@+id/x7_mall_custom_gift_prop_item_explain_iv"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:padding="4dp"
+            android:visibility="gone"
+            android:src="@drawable/x7_mall_custom_gift_explain_bg" />
+
+        <com.smwl.smsdk.myview.StrokeTextView
+            android:id="@+id/x7_mall_custom_gift_prop_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/x7_mall_custom_gift_prop_item_add_iv"
+            android:layout_alignBottom="@+id/x7_mall_custom_gift_prop_item_add_iv"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="7dp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:stroke_color="@color/x7_orange_9d7227"
+            app:stroke_width="1dp"
+            android:textSize="9dp" />
+
+        <ImageView
+            android:id="@+id/x7_mall_custom_gift_prop_item_change_iv"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:padding="3dp"
+            android:layout_marginStart="33dp"
+            android:visibility="gone"
+            android:src="@drawable/x7_mall_custom_gift_other_bg" />
+
+        <!--选择道具-->
+        <ImageView
+            android:id="@+id/x7_mall_custom_gift_choose_prop_iv"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="36dp"
+            android:visibility="gone"
+            android:src="@drawable/x7_mall_not_choose_prop" />
+
+        <TextView
+            android:id="@+id/x7_mall_custom_gift_prop_item_describe_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/x7_mall_custom_gift_prop_item_add_iv"
+            android:layout_alignStart="@+id/x7_mall_custom_gift_prop_item_add_iv"
+            android:layout_alignEnd="@+id/x7_mall_custom_gift_prop_item_add_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="3dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/x7_black_644f31"
+            android:visibility="gone"
+            android:textSize="8dp" />
+    </RelativeLayout>
+
+    <!--加号-->
+    <RelativeLayout
+        android:id="@+id/x7_mall_custom_gift_item_add_rl"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="18dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="6dp"
+            android:background="@color/color_black_333333" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/color_black_333333" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_childRoot"
+    tools:ignore="MissingDefaultResource">
+
+    <RadioGroup
+        android:id="@+id/rg_notice_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rl"
+        android:layout_alignBottom="@+id/rl"/>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@+id/rg_notice_item"
+        >
+        <LinearLayout
+            android:id="@+id/ll_slide_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/x7_corner_10_solid_black_600"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/x7_notice_row1" />
+            <TextView
+                android:id="@+id/tv_hint_for_slide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="10dp"
+                android:text="@string/x7_show_notice_hint"
+                android:textColor="@color/x7_white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/x7_notice_row2" />
+        </LinearLayout>
+
+        <com.smwl.smsdk.myview.MyScrollViewForNotice
+            android:id="@+id/scroll_view"
+            style="@style/X7ScrollBarStyle"
+            android:fadeScrollbars="false"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_show_notice"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginBottom="20dp"
+            >
+            <include layout="@layout/x7_notice_item" />
+        </com.smwl.smsdk.myview.MyScrollViewForNotice>
+
+        <LinearLayout
+            android:id="@+id/ll_show_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="31dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginBottom="20dp"
+            android:descendantFocusability="afterDescendants"
+            android:gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_check_no_notice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="32dp"
+                android:descendantFocusability="afterDescendants"
+                android:orientation="horizontal"
+                android:gravity="left"
+                >
+                <CheckBox
+                    android:id="@+id/check_no_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:drawableLeft="@drawable/x7_selection_for_agreement"
+                    android:background="@null"
+                    android:button="@null"
+                    android:text="@string/x7_no_longger_remind"
+                    android:textColor="#ff9900"
+                    android:textSize="13dp"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_check_details"
+                android:layout_width="wrap_content"
+                android:paddingLeft="7dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/x7_solid_black_000_corner_10"
+                android:text="@string/x7_view_details"
+                android:textColor="#ffffff"
+                android:drawablePadding="7dp"
+                android:textSize="12dp"
+                android:paddingRight="13dp"
+                android:drawableRight="@drawable/x7_arrow_right"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

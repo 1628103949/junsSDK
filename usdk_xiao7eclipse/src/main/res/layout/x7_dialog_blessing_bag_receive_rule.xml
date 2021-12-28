@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/x7_ffffff_16_bg"
+        >
+
+        <ImageView
+            android:id="@+id/bg_iv"
+            android:layout_width="300dip"
+            android:layout_height="66dip"
+            android:background="@drawable/x7_dialog_user_realname_top_bg"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/dialog_user_realname_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="33dp"
+                android:layout_marginLeft="31dp"
+                android:layout_marginRight="31dp"
+                android:text=""
+                android:textColor="@color/color_12cdb0"
+                android:textSize="21dp" />
+            <ScrollView
+                android:id="@+id/dialog_user_real_name_sv"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="31dp"
+                android:layout_marginRight="31dp"
+                android:paddingBottom="2dp"
+                >
+                <TextView
+                    android:id="@+id/dialog_user_realname_content_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="@color/color_black_ff666666"
+                    android:textSize="14dp" />
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/dialog_user_realname_botton_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="31dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dialog_user_realname_ensure_btn"
+                    android:layout_width="267dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/x7base_im_bg_solid_green_12cdb0_corner_50"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/dialog_user_realname_cancel_btn"
+                    android:layout_width="267dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/color_grey_999999"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dialog_user_realname_ikonw_btn"
+                android:layout_width="267dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="31dp"
+                android:background="@drawable/x7base_im_bg_solid_green_12cdb0_corner_50"
+                android:gravity="center"
+                android:text="@string/x7_IM_xml_IKnow"
+                android:textColor="@color/white"
+                android:layout_marginBottom="20dp"
+                android:textSize="14dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!--<ImageView
+            android:id="@+id/dialog_user_realname_botton_bg_iv"
+            android:layout_width="300dip"
+            android:layout_height="19dip"
+            android:background="@drawable/x7_askprice_iv_bottom_bg" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:background="@drawable/x7_corner_10_solid_white_bottom"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

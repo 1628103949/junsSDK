@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dialog_integral_histor_ll"
+        android:layout_width="match_parent"
+        android:layout_height="446dp"
+        android:background="@drawable/x7_ffffff_16_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_integral_history_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/x7_im_title_integral_history"
+            android:textColor="@color/color_12cdb0"
+            android:textSize="20dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dialog_integral_history_logs_rc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/dialog_integral_history_close_tv"
+            android:layout_below="@+id/dialog_integral_history_title_tv"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:id="@+id/dialog_integral_history_no_log_records_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dialog_integral_history_close_tv"
+            android:layout_below="@+id/dialog_integral_history_title_tv"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:src="@drawable/do_fail"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/x7_im_dialog_integral_history_no_log_records_tv"
+                android:textColor="@color/color_black_ff999999"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dialog_integral_history_close_tv"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="53dp"
+            android:layout_marginRight="53dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/x7base_im_bg_solid_green_12cdb0_corner_50"
+            android:gravity="center"
+            android:text="@string/x7_close"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    tools:ignore="MissingDefaultResource"
+    android:background="@color/x7_white"
+    android:paddingTop="2dp">
+
+<!--    特殊字体-->
+    <TextView
+        android:id="@+id/item_mall_pass_chapter_tv"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:textColor="@color/x7_black_644f31"
+        android:includeFontPadding="false"
+        android:background="@color/x7_orange_fbcc55"/>
+
+    <LinearLayout
+        android:layout_width="77dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="7dp"
+        android:layout_marginStart="2dp"
+        android:background="@color/x7_orange_f5de9d"
+        android:gravity="center_horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/item_mall_pass_normal_warMakes_rc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="7dp"
+        android:layout_marginStart="2dp"
+        android:background="@color/x7_orange_f5de9d"
+        android:gravity="center_horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/item_mall_pass_supreme_warMakes_rc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="66dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/x7_orange_f5de9d"
+        android:layout_marginStart="2dp">
+
+        <TextView
+            android:id="@+id/item_mall_pass_receive_tv"
+            android:layout_width="61dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:textSize="9dp"
+            android:textColor="@color/x7_black_644f31"
+            android:textStyle="bold"
+            android:background="@drawable/received_port"/>
+
+    </LinearLayout>
+
+</LinearLayout>

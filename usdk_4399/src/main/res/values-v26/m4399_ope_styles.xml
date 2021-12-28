@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="m4399TranslucentFullscreenActivityTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+</resources>

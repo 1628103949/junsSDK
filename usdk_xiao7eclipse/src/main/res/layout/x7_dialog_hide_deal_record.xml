@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/x7_dialog_white_bg_16"
+    android:layout_marginBottom="20dp"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/dialog_hide_record"
+        android:textColor="#12ceb0"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/long_press_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:text="@string/long_press_wallet_record"
+        android:textColor="#999999"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/btn_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/x7_bg_solid_green_12cdb0_corner_100"
+        android:gravity="center"
+        android:text="@string/ensure_hide"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/btn_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/x7_cancel"
+        android:textColor="#999999"
+        android:textSize="17dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    >
+    <include
+        android:id="@+id/x7_forgetPassword_title"
+        layout="@layout/x7_activity_title_4"
+        />
+    <LinearLayout
+        android:id="@+id/content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/x7_forgetPassword_title"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/x7_temp_no_need_realname"
+            android:textSize="20dp"
+            android:textColor="@color/black_3"
+            />
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:textColor="@color/black_3"
+            android:textSize="12dp"
+            android:text="@string/x7_no_realname_content"
+            />
+        <TextView
+            android:id="@+id/content_tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:textSize="15dp"
+            android:textColor="@color/black_6"
+            android:text="@string/x7_recharge_tips"
+            />
+        <TextView
+            android:id="@+id/content_tip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:textSize="15dp"
+            android:textColor="@color/black_6"
+            android:text="·游戏时长不超过X小时"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/content_tips3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x7_no_realname_tips3"
+        android:layout_above="@+id/btn_to_real_name"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/color_12cdb0"
+        android:textSize="12dp"
+        />
+
+    <Button
+        android:id="@+id/btn_to_real_name"
+        style="@style/X7BtnClickStyleNew"
+        android:layout_above="@+id/tv_no_real_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/x7_to_real_name" />
+
+    <TextView
+        android:id="@+id/tv_no_real_name"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:text="@string/x7_no_realname_into_game"
+        android:textSize="12dp"
+        android:drawablePadding="4dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:textColor="@color/color_12cdb0"
+        android:gravity="center"
+        android:drawableRight="@drawable/x7_row_to_real_name"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>
