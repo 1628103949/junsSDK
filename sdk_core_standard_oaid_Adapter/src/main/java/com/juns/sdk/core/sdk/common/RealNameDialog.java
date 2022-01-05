@@ -12,10 +12,12 @@ import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.juns.sdk.core.api.JunSConstants;
 import com.juns.sdk.core.http.JunSResponse;
 import com.juns.sdk.core.http.exception.JunSServerException;
 import com.juns.sdk.core.http.params.UserRealNameParam;
 import com.juns.sdk.core.own.account.login.JunsNotiDialog;
+import com.juns.sdk.core.own.event.JSLoginEv;
 import com.juns.sdk.core.sdk.SDKCore;
 import com.juns.sdk.core.sdk.SDKData;
 import com.juns.sdk.framework.common.ResUtil;
@@ -24,6 +26,7 @@ import com.juns.sdk.framework.view.common.ViewUtils;
 import com.juns.sdk.framework.view.dialog.BaseDialog;
 import com.juns.sdk.framework.view.dialog.BounceEnter.BounceBottomEnter;
 import com.juns.sdk.framework.view.dialog.ZoomExit.ZoomOutExit;
+import com.juns.sdk.framework.xbus.Bus;
 import com.juns.sdk.framework.xutils.x;
 
 import org.json.JSONException;
@@ -117,12 +120,21 @@ public class RealNameDialog extends BaseDialog<RealNameDialog> implements View.O
 
         }
         else if(view.getId() == showBtn.getId()){
+//            JunsNotiDialog.showNoti(SDKCore.getMainAct(),
+//                    "如果您是未成年人，请在家长监督下填写自己真实的身份证信息，根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》和《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，对您有以下限制：\n" +
+//                    "游戏登陆:\n" +
+//                    "1.将不以任何形式为未成年人提供网络游戏服务。\n" +
+//                    "游戏充值:\n" +
+//                    "1.将不以任何形式为未成年人提供游戏充值服务。\n",true,240);
             JunsNotiDialog.showNoti(SDKCore.getMainAct(),
                     "如果您是未成年人，请在家长监督下填写自己真实的身份证信息，根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》和《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，对您有以下限制：\n" +
-                    "游戏登陆:\n" +
-                    "1.将不以任何形式为未成年人提供网络游戏服务。\n" +
-                    "游戏充值:\n" +
-                    "1.将不以任何形式为未成年人提供游戏充值服务。\n",true,240);
+                            "游戏登陆:\n" +
+                            "1.非周五、周六、周日和法定节假日20时至21时，该游戏将不以任何形式为未成年人提供游戏服务！\n" +
+                            "游戏充值:\n" +
+                            "1.未满8周岁不能付费。\n" +
+                            "2.在8周岁以上未满16周岁的未成年用户，单次充值金额不得超过50元人民币，每月累计重置不得超200人名币。\n" +
+                            "3.在16周岁以上未成年用户，单次充值金额不得超过100元人民币，每月累计充值金额不得超过400元人民币。\n" +
+                            "",true,240);
         }
     }
 
@@ -134,6 +146,25 @@ public class RealNameDialog extends BaseDialog<RealNameDialog> implements View.O
                 try {
                     JSONObject dataJson = new JSONObject(result.data);
                     SDKData.setUserRealName(name);
+                    if (dataJson.has("isadult2")) {
+                        SDKData.setSdkUserIsadult(dataJson.getInt("isadult2"));
+                    }
+                    if(dataJson.has("isaddiction")){
+                        int isaddiction = dataJson.getInt("isaddiction");
+                        if (isaddiction == 1){
+                            JunsNotiDialog.showNoti(SDKCore.getMainAct(),"未成年登陆提示：" +
+                                    "\n\t\t您已被识别为未成年人，根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》，非周五、周六、周日和法定节假日20时至21时,该游戏将不以任何形式为未成年人提供游戏服务！",false,190);
+                            SDKData.setSdkUserIsVerify(true);
+                            ViewUtils.sdkShowTips(mContext, "您已经认证成功！");
+                            dismiss();
+                            //close
+                            Bus.getDefault().post(JSLoginEv.getFail(JunSConstants.Status.SDK_ERR,"未成年非法定时间登录拦截"));
+//                            if (mCallback != null) {
+//                                mCallback.onSuccess();
+//                            }
+                            return;
+                        }
+                    }
                     if(dataJson.has("isadult")){
                         int isadult = dataJson.getInt("isadult");
                         if (isadult == 0){
@@ -143,9 +174,10 @@ public class RealNameDialog extends BaseDialog<RealNameDialog> implements View.O
                             ViewUtils.sdkShowTips(mContext, "您已经认证成功！");
                             dismiss();
                             //close
-                            if (mCallback != null) {
-                                mCallback.onSuccess();
-                            }
+                            Bus.getDefault().post(JSLoginEv.getFail(JunSConstants.Status.SDK_ERR,"未成年登录拦截"));
+//                            if (mCallback != null) {
+//                                mCallback.onSuccess();
+//                            }
                         }else if(isadult == 1){
                             SDKData.setSdkUserIsVerify(true);
                             ViewUtils.sdkShowTips(mContext, "您已经认证成功！");

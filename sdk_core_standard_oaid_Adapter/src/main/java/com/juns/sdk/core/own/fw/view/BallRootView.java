@@ -247,35 +247,7 @@ public class BallRootView extends FrameLayout {
                 currentStatus = BALL_TO_RIGHT;
             }
 
-//            //左，上，右边
-//            if (marginLeft < marginTop) {
-//                if (marginLeft < marginRight) {
-//                    //靠左
-//                    mMoveAnimator.start(0, viewY);
-//                    redLp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-//                    redTipsView.setLayoutParams(redLp);
-//                    currentStatus = BALL_TO_LEFT;
-//                } else {
-//                    //靠右
-//                    mMoveAnimator.start(viewMatchWidth, viewY);
-//                    redLp.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
-//                    redTipsView.setLayoutParams(redLp);
-//                    currentStatus = BALL_TO_RIGHT;
-//                }
-//            } else {
-//                if (marginTop < marginRight) {
-//                    //靠上
-//                    mMoveAnimator.start(viewX, 0);
-//                    redLp.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
-//                    redTipsView.setLayoutParams(redLp);
-//                    currentStatus = BALL_TO_TOP;
-//                } else {
-//                    //靠右
-//                    mMoveAnimator.start(viewMatchWidth, viewY);
-//                    redLp.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
-//                    redTipsView.setLayoutParams(redLp);
-//                    currentStatus = BALL_TO_RIGHT;
-//                }
+//
 //            }
         } else {
             //仅左右
@@ -293,36 +265,7 @@ public class BallRootView extends FrameLayout {
                 currentStatus = BALL_TO_RIGHT;
             }
 
-//            //左，上，下
-//            if (marginLeft < marginTop) {
-//                if (marginLeft < marginBottom) {
-//                    //靠左
-//                    mMoveAnimator.start(0, viewY);
-//                    redLp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-//                    redTipsView.setLayoutParams(redLp);
-//                    currentStatus = BALL_TO_LEFT;
-//                } else {
-//                    //靠下
-//                    mMoveAnimator.start(viewX, viewHeightWidth);
-//                    redLp.addRule(RelativeLayout.ALIGN_PARENT_TOP);
-//                    redTipsView.setLayoutParams(redLp);
-//                    currentStatus = BALL_TO_BOTTOM;
-//                }
-//            } else {
-//                if (marginTop < marginBottom) {
-//                    //靠上
-//                    mMoveAnimator.start(viewX, 0);
-//                    redLp.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
-//                    redTipsView.setLayoutParams(redLp);
-//                    currentStatus = BALL_TO_TOP;
-//                } else {
-//                    //靠下
-//                    mMoveAnimator.start(viewX, viewHeightWidth);
-//                    redLp.addRule(RelativeLayout.ALIGN_PARENT_TOP);
-//                    redTipsView.setLayoutParams(redLp);
-//                    currentStatus = BALL_TO_BOTTOM;
-//                }
-//            }
+
         }
     }
 
@@ -332,6 +275,14 @@ public class BallRootView extends FrameLayout {
     }
 
     public void toGoingHide() {
+        moveToEdge();
+//        if (countTimer != null) {
+//            countTimer.start();
+//        }
+    }
+
+    public void toGoingHide2() {
+        //moveToEdge();
         if (countTimer != null) {
             countTimer.start();
         }
@@ -358,10 +309,13 @@ public class BallRootView extends FrameLayout {
         int halfWidth = getWidth() / 2;
         switch (currentStatus) {
             case BALL_TO_LEFT:
-                move(-halfWidth, 0);
+                setX(-halfWidth+FWUtils.getScreenLeft(mActivity));
+                setY(getY());
                 break;
             case BALL_TO_RIGHT:
-                move(halfWidth, 0);
+//                setX(halfWidth-FWUtils.getScreenRight(mActivity));
+//                setY(getY());
+                move(halfWidth-FWUtils.getScreenRight(mActivity), 0);
                 break;
             case BALL_TO_TOP:
                 move(0, -halfHeight);
@@ -371,7 +325,8 @@ public class BallRootView extends FrameLayout {
                 break;
             default:
                 //默认左边
-                move(-halfWidth, 0);
+                setX(-halfWidth+FWUtils.getScreenLeft(mActivity));
+                setY(getY());
                 break;
         }
         setAlpha(0.5f);
@@ -491,16 +446,7 @@ public class BallRootView extends FrameLayout {
                 return;
             }
             isHide = true;
-//            ObjectAnimator rotationAnim = ObjectAnimator.ofFloat(BallRootView.this, "rotation", 0f, 360f);
-//            rotationAnim.setInterpolator(new LinearInterpolator());
-//            rotationAnim.setDuration(300);
-//            rotationAnim.addListener(new AnimatorListenerAdapter() {
-//                @Override
-//                public void onAnimationEnd(Animator animation) {
-//
-//                }
-//            });
-//            rotationAnim.start();
+
             toHideStatus();
         }
 
@@ -510,36 +456,6 @@ public class BallRootView extends FrameLayout {
                 handler = null;
             }
 
-//            //左，上，下
-//            if (marginLeft < marginTop) {
-//                if (marginLeft < marginBottom) {
-//                    //靠左
-//                    mMoveAnimator.start(0, viewY);
-//                    redLp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-//                    redTipsView.setLayoutParams(redLp);
-//                    currentStatus = BALL_TO_LEFT;
-//                } else {
-//                    //靠下
-//                    mMoveAnimator.start(viewX, viewHeightWidth);
-//                    redLp.addRule(RelativeLayout.ALIGN_PARENT_TOP);
-//                    redTipsView.setLayoutParams(redLp);
-//                    currentStatus = BALL_TO_BOTTOM;
-//                }
-//            } else {
-//                if (marginTop < marginBottom) {
-//                    //靠上
-//                    mMoveAnimator.start(viewX, 0);
-//                    redLp.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
-//                    redTipsView.setLayoutParams(redLp);
-//                    currentStatus = BALL_TO_TOP;
-//                } else {
-//                    //靠下
-//                    mMoveAnimator.start(viewX, viewHeightWidth);
-//                    redLp.addRule(RelativeLayout.ALIGN_PARENT_TOP);
-//                    redTipsView.setLayoutParams(redLp);
-//                    currentStatus = BALL_TO_BOTTOM;
-//                }
-//            }
         }
     }
 

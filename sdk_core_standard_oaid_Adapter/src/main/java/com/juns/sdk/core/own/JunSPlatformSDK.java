@@ -152,16 +152,17 @@ public class JunSPlatformSDK implements IPlatformSDK {
         logger.print("submitInfo called." +
                 "\nsubmitInfo --> " + submitInfo.toString());
         //junSSubmit.doSubmit(submitInfo);
-        if(submitInfo.get(JunSConstants.SUBMIT_TYPE).equals(JunSConstants.SUBMIT_TYPE_ENTER)){
-           // HeartBeat.enterGame = true;
-            if(SDKData.getSdkPeriod()!=9999){
-                if(SDKData.getSdkPeriod()<300){
-                    SDKData.setSdkPeriod(300);
-                }
-                logger.print("heartbeat called.");
-                HeartBeat.getInstance().startHeartBeat(SDKData.getSdkPeriod()*1000);
-            }
-        }
+//        if(submitInfo.get(JunSConstants.SUBMIT_TYPE).equals(JunSConstants.SUBMIT_TYPE_ENTER)){
+//           // HeartBeat.enterGame = true;
+//            if(SDKData.getSdkPeriod()!=9999){
+//                if(SDKData.getSdkPeriod()<300){
+//                    SDKData.setSdkPeriod(300);
+//                }
+//                logger.print("heartbeat called.");
+//                HeartBeat.getInstance().startHeartBeat(SDKData.getSdkPeriod()*1000);
+//            }
+//
+//        }
     }
 
     @Override

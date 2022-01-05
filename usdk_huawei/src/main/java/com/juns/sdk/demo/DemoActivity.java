@@ -14,7 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bswhl.huawei.R;
+import com.gzzh.js.huawei.R;
 import com.juns.sdk.core.api.JunSConstants;
 import com.juns.sdk.core.api.JunSPayInfo;
 import com.juns.sdk.core.api.JunSSdkApi;
@@ -32,7 +32,7 @@ import org.json.JSONObject;
  * Author: ranger
  */
 public class DemoActivity extends Activity implements View.OnClickListener {
-    private String appkey = "20200606sanceQILINGShi";
+    private String appkey = "2021SANGUOZHINUPUTONG";
     private Toast mToast;
     private Handler mHandler = new Handler(Looper.getMainLooper());
 

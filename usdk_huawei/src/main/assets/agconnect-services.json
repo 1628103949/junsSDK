@@ -16,22 +16,22 @@
 		"SG_back":"connect-dra.hispace.hicloud.com"
 	},
 	"client":{
-		"cp_id":"2850086000373045040",
-		"product_id":"736430079244489474",
-		"client_id":"376474857606481088",
-		"client_secret":"818720697DC9546A7667CAF513AF3F37E1FC9C0979000EAFC327F4BF8198D8C5",
-		"project_id":"736430079244489474",
-		"app_id":"102333683",
-		"api_key":"CV8ALQJZRXK0SJNazu6HDWn2LtZxxoTFqQZiKDTRxwcMauOhFKhG3vlhL56v9ingYy/zNzoewQBjZXaY1eTHXK8c2mPi",
-		"package_name":"com.bswhl.huawei"
+		"cp_id":"2850086000372498398",
+		"product_id":"737518067794030415",
+		"client_id":"789035198141451264",
+		"client_secret":"B7D87975C8767537491BBC59978A8BA93C9DEA280A0714A0EC846CF66C5677DB",
+		"project_id":"737518067794030415",
+		"app_id":"105199645",
+		"api_key":"CwEAAAAAP0yzSVXcBCf4Z66fmvZbblukZg6qvU5ZFx0o/UnjI09Es8EtQiAL7xfMZm6OLXa2MoaLLC+E9ahycU0hsWdDleK/zDI=",
+		"package_name":"com.gzzh.js.huawei"
 	},
 	"oauth_client":{
-		"client_id":"102333683",
+		"client_id":"105199645",
 		"client_type":1
 	},
 	"app_info":{
-		"app_id":"102333683",
-		"package_name":"com.bswhl.huawei"
+		"app_id":"105199645",
+		"package_name":"com.gzzh.js.huawei"
 	},
 	"service":{
 		"analytics":{
@@ -57,17 +57,17 @@
 	"configuration_version":"3.0",
 	"appInfos":[
 		{
-			"package_name":"com.bswhl.huawei",
+			"package_name":"com.gzzh.js.huawei",
 			"client":{
-				"app_id":"102333683"
+				"app_id":"105199645"
 			},
 			"app_info":{
-				"package_name":"com.bswhl.huawei",
-				"app_id":"102333683"
+				"package_name":"com.gzzh.js.huawei",
+				"app_id":"105199645"
 			},
 			"oauth_client":{
 				"client_type":1,
-				"client_id":"102333683"
+				"client_id":"105199645"
 			}
 		}
 	]

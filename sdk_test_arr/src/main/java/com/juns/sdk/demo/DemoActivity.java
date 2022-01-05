@@ -38,7 +38,7 @@ import org.json.JSONObject;
  * Author: ranger
  */
 public class DemoActivity extends Activity implements View.OnClickListener {
-    private String appkey = "2020AndroidDemoKeyAppkey";
+    private String appkey = "2021SANGUOZHINUPUTONG";
     private Toast mToast;
     private Handler mHandler = new Handler(Looper.getMainLooper());
 
@@ -82,10 +82,12 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                             JSONObject userJson = new JSONObject(userInfo);
                             String token = userJson.getString("token");
                             String userId = userJson.getString("userId");
+                            int isadult = userJson.getInt("isadult");
                             String userName = userJson.getString("userName");
                             showToast("SDK登录成功：" +
                                     "\ntoken --> " + token +
                                     "\nuserId --> " + userId +
+                                    "\nisadult --> " + isadult +
                                     "\nuserName --> " + userName);
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -243,10 +245,16 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                             JSONObject userJson = new JSONObject(userInfo);
                             String token = userJson.getString("token");
                             String userId = userJson.getString("userId");
+                            //实名信息
+                            //-1:未认证，一般为联运渠道才会返回此值
+                            //0:为未成年
+                            //1:为已成年
+                            int isadult = userJson.getInt("isadult");
                             String userName = userJson.getString("userName");
                             showToast("SDK登录成功成功：" +
                                     "\ntoken --> " + token +
                                     "\nuserId --> " + userId +
+                                    "\nisadult --> " + isadult +
                                     "\nuserName --> " + userName);
                             Log.e("fwinfo", SDKData.getFloatWindowData());
                         } catch (JSONException e) {

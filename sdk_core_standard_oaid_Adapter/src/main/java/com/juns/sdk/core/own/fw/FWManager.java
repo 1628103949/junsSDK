@@ -112,82 +112,6 @@ public class FWManager implements BallClickListener, BallTouchListener {
             ballView.setCurrentStatus(BallRootView.BALL_TO_RIGHT);
         }
 
-
-//        if (ScreenUtils.isPortrait()) {
-//            //竖屏
-//            if (lastX == -1 && lastY == -1) {
-//                //没数据，默认靠左居中
-//                ballLP.gravity = Gravity.CENTER_VERTICAL | Gravity.LEFT;
-//                ballView.setCurrentStatus(BallRootView.BALL_TO_LEFT);
-//            } else if (lastX <= 0) {
-//                //靠左
-//                ballLP.gravity = Gravity.LEFT;
-//                if (lastY < 0 || lastY > drawHeight) {
-//                    ballLP.gravity = Gravity.LEFT | Gravity.CENTER_VERTICAL;
-//                } else {
-//                    ballLP.topMargin = lastY;
-//                }
-//                ballView.setCurrentStatus(BallRootView.BALL_TO_LEFT);
-//            } else if (lastX >= drawWidth) {
-//                //靠右
-//                ballLP.gravity = Gravity.RIGHT;
-//                if (lastY < 0 || lastY > drawHeight) {
-//                    ballLP.gravity = Gravity.RIGHT | Gravity.CENTER_VERTICAL;
-//                } else {
-//                    ballLP.topMargin = lastY;
-//                }
-//                ballView.setCurrentStatus(BallRootView.BALL_TO_RIGHT);
-//            } else if (lastY <= 0) {
-//                //靠上
-//                ballLP.gravity = Gravity.TOP;
-//                ballLP.leftMargin = lastX;
-//                ballView.setCurrentStatus(BallRootView.BALL_TO_TOP);
-//            } else {
-//                //使用默认，靠左居中
-//                ballLP.gravity = Gravity.CENTER_VERTICAL | Gravity.LEFT;
-//                ballView.setCurrentStatus(BallRootView.BALL_TO_LEFT);
-//            }
-//        } else {
-//            //横屏
-//            if (lastX == -1 && lastY == -1) {
-////                //没数据，默认靠上居中
-////                ballLP.gravity = Gravity.TOP | Gravity.CENTER_HORIZONTAL;
-////                ballView.setCurrentStatus(BallRootView.BALL_TO_TOP);
-//
-//                //修改为靠左居中
-//                ballLP.gravity = Gravity.CENTER_VERTICAL | Gravity.LEFT;
-//                ballView.setCurrentStatus(BallRootView.BALL_TO_LEFT);
-//            } else if (lastY <= 0) {
-//                //靠上
-//                ballLP.gravity = Gravity.TOP;
-//                if (lastX < 0 || lastX > drawWidth) {
-//                    ballLP.gravity = Gravity.TOP | Gravity.CENTER_HORIZONTAL;
-//                } else {
-//                    ballLP.leftMargin = lastX;
-//                }
-//                ballView.setCurrentStatus(BallRootView.BALL_TO_TOP);
-//            } else if (lastY >= drawHeight) {
-//                //靠下
-//                ballLP.gravity = Gravity.BOTTOM;
-//                if (lastX < 0 || lastX > drawWidth) {
-//                    ballLP.gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
-//                } else {
-//                    ballLP.leftMargin = lastX;
-//                }
-//                ballView.setCurrentStatus(BallRootView.BALL_TO_BOTTOM);
-//            } else if (lastX <= 0) {
-//                //靠左
-//                ballLP.gravity = Gravity.LEFT;
-//                ballLP.topMargin = lastY;
-//                ballView.setCurrentStatus(BallRootView.BALL_TO_LEFT);
-//            } else {
-//                //使用默认，靠左居中
-//                //没数据，默认靠上居中
-//                ballLP.gravity = Gravity.TOP | Gravity.CENTER_HORIZONTAL;
-//                ballView.setCurrentStatus(BallRootView.BALL_TO_TOP);
-//            }
-//        }
-
         ballView.setBallTouchListener(this);
         ballView.setBallClickListener(this);
         ballView.setLayoutParams(ballLP);
@@ -212,14 +136,6 @@ public class FWManager implements BallClickListener, BallTouchListener {
         }
         try {
             FrameLayout contentView = (FrameLayout) mActivity.getWindow().getDecorView().findViewById(android.R.id.content);
-//            mActivity.getWindow().getDecorView().setSystemUiVisibility(1028);
-//            Rect rect = new Rect();
-//            mActivity.getWindow().getDecorView().getWindowVisibleDisplayFrame(rect);
-//            mActivity.getWindow().getDecorView().buildDrawingCache();
-
-//            int height = mActivity.getWindow().getDecorView().findViewById(android.R.id.content).getHeight();
-//            Log.e("guoinfo top","height:"+mActivity.getWindow().getDecorView().getSystemUiVisibility());
-//            Log.e("guoinfo top","rect:"+rect);
             try {
                 if (mContainer != null && ViewCompat.isAttachedToWindow(mContainer)) {
                     contentView.removeView(mContainer);
@@ -261,38 +177,16 @@ public class FWManager implements BallClickListener, BallTouchListener {
         hide();
     }
 
-//    public void handleOnConfigurationChange(Configuration newConfig) {
-//        boolean isShow = false;
-//        if (ballView != null && mContainer != null && ViewCompat.isAttachedToWindow(ballView)) {
-//            isShow = true;
-//        }
-//        hide();
-//        if (isShow) {
-//            if (newConfig.orientation != currentOrientation) {
-//                currentOrientation = newConfig.orientation;
-//                SDKData.setFwLastX(-1);
-//                SDKData.setFwLastY(-1);
-//            }
-//            show();
-//        }
-//    }
 
     private void show() {
-//        Log.i("FWManager", "root: "+mActivity.isTaskRoot());
-//        Log.i("FWManager", "destroy: "+mActivity.isDestroyed());
-//        Log.i("FWManager", "info: "+mActivity.toString());
-//        mActivity = SDKCore.getMainAct();
-//        Log.i("FWManager", "root: "+mActivity.isTaskRoot());
-//        Log.i("FWManager", "destroy: "+mActivity.isDestroyed());
-//        Log.i("FWManager", "info: "+mActivity.toString());
-        //先hide
+
         hide();
         if (SDKCore.isSdkLogined() && SDKData.getFwSwitchStatus() && SDKData.getFwGameSwitchStatus()) {
             if (mActivity != null) {
                 initial();
                 mContainer.addView(ballView); 
                 dealRed();
-                ballView.toGoingHide();
+                ballView.toGoingHide2();
             }
         }
     }
@@ -402,11 +296,11 @@ public class FWManager implements BallClickListener, BallTouchListener {
         if (ballView.getCurrentStatus() == BallView.BALL_TO_LEFT) {
             //左边
             menuLp.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
-            menuLp.leftMargin = SizeUtils.dp2px(55);
+            menuLp.leftMargin = SizeUtils.dp2px(55)+FWUtils.getScreenLeft(mActivity);
         } else {
             //右边
             menuLp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-            menuLp.rightMargin = SizeUtils.dp2px(55);
+            menuLp.rightMargin = SizeUtils.dp2px(55)+FWUtils.getScreenRight(mActivity);
         }
         ballMenuView = new BallMenuView(mActivity).buildItemView();
         ballMenuFather.addView(ballMenuView, menuLp);

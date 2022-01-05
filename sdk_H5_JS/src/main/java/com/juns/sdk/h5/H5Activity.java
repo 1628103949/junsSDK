@@ -51,7 +51,7 @@ public class H5Activity extends Activity {
     private RelativeLayout contentRl;
     private RelativeLayout headerContentRl;
     private String loadUrl;
-    private SafeInset safeInset = new SafeInset();
+
     private String appkey = "2020AndroidDemoKeyAppkey";
     private PlatformConfig platformConfig;
     private String sdkDeviceId;
@@ -68,12 +68,11 @@ public class H5Activity extends Activity {
                     | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
             getWindow().getDecorView().setSystemUiVisibility(flags);
         }
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P){
-            WindowManager.LayoutParams lp = getWindow().getAttributes();
-            //下面图2
-            lp.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
-            getNotchParams();
-        }
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P){
+                WindowManager.LayoutParams lp = getWindow().getAttributes();
+                lp.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
+                getNotchParams();
+            }
 
         Utils.init(this);
         platformConfig = PlatformConfig.init(this);
@@ -119,6 +118,7 @@ public class H5Activity extends Activity {
             }
         });
     }
+    private SafeInset safeInset = new SafeInset();
     public void getNotchParams() {
         final View decorView = getWindow().getDecorView();
 
@@ -381,7 +381,6 @@ public class H5Activity extends Activity {
                 @Override
                 public void run() {
                     try {
-                        Log.e("guoinfo",submitInfo);
                         JSONObject params = new JSONObject(submitInfo);
                         int type =params.getInt("type");
                         String roleId =params.getString("roleId");

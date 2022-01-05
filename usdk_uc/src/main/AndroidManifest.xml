@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.bswhl.aligames">
+    package="com.gzzh.js.aligames">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -81,6 +81,13 @@
             android:required="false" />
 
         <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <activity
             android:name="com.alipay.sdk.app.H5AuthActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="false"
@@ -110,7 +117,7 @@
             android:exported="true"
             android:label="PullupActivity"
             android:launchMode="singleTop"
-            android:taskAffinity="com.bswhl.aligames.diff"
+            android:taskAffinity="com.gzzh.js.aligames.diff"
             android:theme="@android:style/Theme.Translucent" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -118,7 +125,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="ng1147604" />
+                <data android:scheme="ng792719" />
             </intent-filter>
         </activity>
         <activity

@@ -7,6 +7,7 @@ import android.content.res.Configuration;
 import com.juns.sdk.core.api.callback.JunSCallback;
 import com.juns.sdk.core.api.callback.JunSLogoutCallback;
 import com.juns.sdk.core.api.callback.JunSPayCallback;
+import com.juns.sdk.core.own.account.login.JunsNotiDialog;
 import com.juns.sdk.core.sdk.SDKCore;
 import com.juns.sdk.framework.log.LogFactory;
 import com.juns.sdk.framework.log.TNLog;
@@ -50,6 +51,8 @@ public class JunSSdkApi implements IJunSSdk {
     @Override
     public void sdkLogin(Activity mainAct, JunSCallback callback) {
         logger.print("sdkLogin called.");
+//        JunsNotiDialog.showNoti(SDKCore.getMainAct(),"未成年登陆提示：" +
+//                "\n    您已被识别为未成年人，根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》，非周五、周六、周日和法定节假日20时至21时，该游戏将不以任何形式为未成年人提供游戏服务！",false,190);
         mSDKCore.sdkLogin(mainAct, callback);
     }
 

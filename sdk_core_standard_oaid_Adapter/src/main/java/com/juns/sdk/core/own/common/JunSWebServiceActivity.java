@@ -15,11 +15,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.juns.sdk.core.api.JunSConstants;
-import com.juns.sdk.core.sdk.event.OnActivityResult;
 import com.juns.sdk.framework.common.ResUtil;
 import com.juns.sdk.framework.webview.SdkWebViewHolder;
 import com.juns.sdk.framework.xbus.Bus;
-import com.juns.sdk.framework.xbus.annotation.BusReceiver;
 
 /**
  * Data：07/03/2019-10:39 AM
@@ -47,15 +45,6 @@ public class JunSWebServiceActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-//            int flags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-//                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-//                    | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-//                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-//                    | View.SYSTEM_UI_FLAG_FULLSCREEN
-//                    | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
-//            getWindow().getDecorView().setSystemUiVisibility(flags);
-//        }
         setContentView(ResUtil.getLayoutID("juns_web_service", this));
         //获取到Intent
         Intent intent = getIntent();

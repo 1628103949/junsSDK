@@ -1,5 +1,9 @@
 package com.juns.sdk.core.own.event;
 
+import static com.juns.sdk.core.sdk.SDKCore.logger;
+
+import com.juns.sdk.core.sdk.SDKData;
+import com.juns.sdk.core.sdk.common.HeartBeat;
 import com.juns.sdk.core.sdk.event.EvLogin;
 
 import org.json.JSONException;
@@ -27,6 +31,13 @@ public class JSLoginEv {
     }
 
     public static JSLoginEv getSucc(String userInfo) {
+        if(SDKData.getSdkPeriod()!=9999){
+//            if(SDKData.getSdkPeriod()<300){
+//                SDKData.setSdkPeriod(300);
+//            }
+            logger.print("heartbeat called.");
+            HeartBeat.getInstance().startHeartBeat(SDKData.getSdkPeriod()*1000);
+        }
         return new JSLoginEv(userInfo);
     }
 

@@ -11,6 +11,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,7 +35,7 @@ import org.json.JSONObject;
  * Author: ranger
  */
 public class DemoActivity extends Activity implements View.OnClickListener {
-    private String appkey = "2020AndroidDemoKeyAppkey";
+    private String appkey = "2021SANGUOZHINUPUTONG";
     private Toast mToast;
     private Handler mHandler = new Handler(Looper.getMainLooper());
     private TextView retTv;
@@ -50,6 +51,10 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                     | View.SYSTEM_UI_FLAG_FULLSCREEN
                     | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
             getWindow().getDecorView().setSystemUiVisibility(flags);
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P){
+            WindowManager.LayoutParams lp = getWindow().getAttributes();
+            lp.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
         }
 //        Log.e("testParm","1111"+JunSEncrypt.decryptInfo(
 //                "7tA3xSHT7EjOYx4gIb1lsTlWiM"));

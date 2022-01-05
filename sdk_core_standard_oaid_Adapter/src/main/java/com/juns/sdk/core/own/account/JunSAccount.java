@@ -222,6 +222,9 @@ public class JunSAccount {
 
             //处理登录公告
             //处理实名认证
+//            if (dataJson.has("isadult2")) {
+//                SDKData.setSdkUserIsadult(dataJson.getInt("isadult2"));
+//            }
             dealNotice(dataJson, loginType);
             //防沉迷限制
             if (dataJson.has("code")) {
@@ -288,7 +291,9 @@ public class JunSAccount {
             //0:已经实名认证无需弹窗认证
             //1:未实名要弹非强制实名认证窗口
             //2:未实名要弹强制实名认证窗口，否则不能进行下一步
-            //Log.e("guoinfo",dataJson.toString());
+            if (dataJson.has("isadult")) {
+                SDKData.setSdkUserIsadult(dataJson.getInt("isadult"));
+            }
             if (dataJson.has("isverify")) {
                 String isVerify = dataJson.getString("isverify");
                 if (isVerify.equals("1")) {
@@ -318,28 +323,33 @@ public class JunSAccount {
                             dealCallback();
                         }
                     });
-                    if(SDKData.getSdkPeriod()!=9999){
-                        JunsNotiDialog.showNoti(SDKCore.getMainAct(),
-                                "如果您是未成年人，请在家长监督下填写自己真实的身份证信息，根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》和《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，对您有以下限制：\n" +
-                                "游戏登陆:\n" +
-                                "1.将不以任何形式为未成年人提供网络游戏服务。\n" +
-                                "游戏充值:\n" +
-                                "1.将不以任何形式为未成年人提供游戏充值服务。\n",true,240);
-                    }
+//                    if(SDKData.getSdkPeriod()!=9999){
+//                        JunsNotiDialog.showNoti(SDKCore.getMainAct(),
+//                                "如果您是未成年人，请在家长监督下填写自己真实的身份证信息，根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》和《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，对您有以下限制：\n" +
+//                                "游戏登陆:\n" +
+//                                "1.将不以任何形式为未成年人提供网络游戏服务。\n" +
+//                                "游戏充值:\n" +
+//                                "1.将不以任何形式为未成年人提供游戏充值服务。\n",true,240);
+//                    }
                     return;
-                } else {
-                    if(SDKData.getSdkPeriod()!=9999){
-                        if(dataJson.has("isadult")){
-                            int isadult = dataJson.getInt("isadult");
-                            if (isadult == 0){
-                                JunsNotiDialog.showNoti(SDKCore.getMainAct(),"\n未成年登陆提示：\n" +
-                                        "\n您已被识别为未成年人，根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》和《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，该游戏将不以任何形式为未成年人提供游戏服务。",false,190);
-                            }
-                        }
-                    }
-                    SDKData.setSdkUserIsVerify(true);
                 }
+//                else {
+//                    if(SDKData.getSdkPeriod()!=9999){
+//                        if(dataJson.has("isadult")){
+//                            int isadult = dataJson.getInt("isadult");
+//                            if (isadult == 0){
+//                                JunsNotiDialog.showNoti(SDKCore.getMainAct(),"\n未成年登陆提示：\n" +
+//                                        "\n您已被识别为未成年人，根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》和《关于进一步严格管理切实防止未成年人沉迷网络游戏的通知》，该游戏将不以任何形式为未成年人提供游戏服务。",false,190);
+//                            }
+//                        }
+//                    }
+//                    SDKData.setSdkUserIsVerify(true);
+//                    return;
+//                }
             }
+//            else {
+//                dealCallback();
+//            }
         } catch (JSONException e) {
             e.printStackTrace();
         }

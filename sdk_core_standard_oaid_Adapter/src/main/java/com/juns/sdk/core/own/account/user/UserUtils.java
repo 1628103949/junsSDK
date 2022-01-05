@@ -215,6 +215,7 @@ public class UserUtils {
             JSONObject userJson = new JSONObject();
             userJson.put("userId", user.getUserId());
             userJson.put("userName", user.getUserName());
+            userJson.put("isadult", SDKData.getSdkUserIsadult());
             userJson.put("token", user.getUserToken());
             return userJson.toString();
         } catch (JSONException e) {

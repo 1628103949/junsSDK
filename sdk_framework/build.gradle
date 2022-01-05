@@ -38,7 +38,7 @@ android {
 
         release {
             //执行proguard混淆
-            minifyEnabled true
+            minifyEnabled false
             //Zipalign优化
             zipAlignEnabled false
             // 移除无用的resource文件

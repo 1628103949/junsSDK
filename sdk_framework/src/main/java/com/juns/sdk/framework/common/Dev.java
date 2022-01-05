@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.juns.sdk.framework.permission.PermissionUtils;
 import com.juns.sdk.framework.safe.JunSEncrypt;
@@ -201,12 +202,10 @@ public class Dev {
     public static TelephonyManager telephonyManager;
 
     public static String getSimNumber(Context ctx) {
-        //if(Pe)
-        if(PermissionUtils.isGranted(Manifest.permission.READ_PHONE_STATE)){
-            telephonyManager = (TelephonyManager) ctx.getSystemService(Context.TELEPHONY_SERVICE);
-            return telephonyManager.getLine1Number();
-        }else {
+        telephonyManager = (TelephonyManager) ctx.getSystemService(Context.TELEPHONY_SERVICE);
+        if (ActivityCompat.checkSelfPermission(ctx, Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(ctx, Manifest.permission.READ_PHONE_NUMBERS) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(ctx, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
             return "";
         }
+        return telephonyManager.getLine1Number();
     }
 }

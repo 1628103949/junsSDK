@@ -53,6 +53,16 @@ public class SDKData {
 
     private static boolean SDK_IS_REFER = true;
 
+    private static int SDK_USER_ISADULT = -1;
+
+    public static int getSdkUserIsadult() {
+        return SDK_USER_ISADULT;
+    }
+
+    public static void setSdkUserIsadult(int sdkUserIsadult) {
+        SDK_USER_ISADULT = sdkUserIsadult;
+    }
+
     public static String getUserRealName() {
         return USER_REAL_NAME;
     }
