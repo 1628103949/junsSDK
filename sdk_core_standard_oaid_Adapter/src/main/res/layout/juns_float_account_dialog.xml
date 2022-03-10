@@ -319,7 +319,7 @@
                     android:textColor="#333333"
                     android:textColorHint="#747474"
                     android:textCursorDrawable="@null"
-                    android:textSize="16sp" />
+                    android:textSize="16dp" />
 
             </RelativeLayout>
 
@@ -355,7 +355,7 @@
                     android:textColor="#f7633b"
                     android:textColorHint="#747474"
                     android:textCursorDrawable="@null"
-                    android:textSize="16sp" />
+                    android:textSize="16dp" />
 
                 <FrameLayout
                     android:id="@+id/reset_null_view"
@@ -373,7 +373,7 @@
                     android:background="@drawable/juns_fw_btn_bg_tran"
                     android:text="@string/juns_get_phone_code"
                     android:textColor="#f7633b"
-                    android:textSize="12sp" />
+                    android:textSize="12dp" />
 
             </RelativeLayout>
 
@@ -427,7 +427,7 @@
                     android:textColor="#333333"
                     android:textColorHint="#747474"
                     android:textCursorDrawable="@null"
-                    android:textSize="16sp" />
+                    android:textSize="16dp" />
 
             </RelativeLayout>
 
@@ -463,7 +463,7 @@
                     android:textColor="#333333"
                     android:textColorHint="#747474"
                     android:textCursorDrawable="@null"
-                    android:textSize="16sp" />
+                    android:textSize="16dp" />
 
                 <FrameLayout
                     android:id="@+id/null_view"
@@ -481,7 +481,7 @@
                     android:background="@drawable/juns_fw_btn_bg_tran"
                     android:text="@string/juns_get_phone_code"
                     android:textColor="#f7633b"
-                    android:textSize="12sp" />
+                    android:textSize="12dp" />
 
             </RelativeLayout>
 
@@ -511,7 +511,7 @@
                 android:layout_centerHorizontal="true"
                 android:text="@string/juns_certification_tips"
                 android:textColor="#747474"
-                android:textSize="11sp" />
+                android:textSize="11dp" />
 
             <RelativeLayout
                 android:id="@+id/user_rl"
@@ -546,7 +546,7 @@
                     android:textColor="#333333"
                     android:textColorHint="#747474"
                     android:textCursorDrawable="@null"
-                    android:textSize="16sp" />
+                    android:textSize="16dp" />
 
             </RelativeLayout>
 
@@ -583,7 +583,7 @@
                     android:textColor="#333333"
                     android:textColorHint="#747474"
                     android:textCursorDrawable="@null"
-                    android:textSize="16sp" />
+                    android:textSize="16dp" />
             </RelativeLayout>
 
             <Button

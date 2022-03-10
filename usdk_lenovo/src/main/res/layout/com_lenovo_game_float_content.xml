@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lenovo_game_ll_content_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:id="@+id/lenovo_game_iv_drag_float"
+        android:layout_width="54dp"
+        android:layout_height="15dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/com_lenovo_game_float_next_ic" />
+
+    <FrameLayout
+        android:id="@+id/lenovo_game_fl_load_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/corner_half_balck_3_bg"
+        >
+        <WebView
+            android:id="@+id/lenovo_game_wv_drag_float"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            />
+        <ProgressBar
+            android:id="@+id/lenovo_game_tv_load_loading"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateDrawable="@drawable/com_lenovo_pay_progress_pb_circle"
+            android:indeterminate="false"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+</LinearLayout>

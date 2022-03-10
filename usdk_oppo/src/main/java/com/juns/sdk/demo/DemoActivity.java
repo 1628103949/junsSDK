@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.text.TextUtils;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -36,6 +35,29 @@ public class DemoActivity extends Activity implements View.OnClickListener {
     private Handler mHandler = new Handler(Looper.getMainLooper());
 
     private TextView retTv;
+
+
+
+    @Override
+    public void onBackPressed() {
+        JunSSdkApi.getInstance().sdkGameExit(DemoActivity.this, new JunSCallback() {
+            @Override
+            public void onSuccess(String info) {
+                //退出游戏成功，游戏在此进行退出游戏，销毁游戏资源相关操作。
+                showToast("SDK退出成功！");
+                DemoActivity.this.finish();
+                System.exit(1);
+            }
+
+            @Override
+            public void onFail(int code, String msg) {
+                //游戏无需处理，继续游戏。
+                showToast("SDK退出失败！" +
+                        "\ncode --> " + code +
+                        "\nmsg --> " + msg);
+            }
+        });
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -502,31 +524,8 @@ public class DemoActivity extends Activity implements View.OnClickListener {
         }
     }
 
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
 
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            JunSSdkApi.getInstance().sdkGameExit(DemoActivity.this, new JunSCallback() {
-                @Override
-                public void onSuccess(String info) {
-                    //退出游戏成功，游戏在此进行退出游戏，销毁游戏资源相关操作。
-                    showToast("SDK退出成功！");
-                    DemoActivity.this.finish();
-                    System.exit(1);
-                }
 
-                @Override
-                public void onFail(int code, String msg) {
-                    //游戏无需处理，继续游戏。
-                    showToast("SDK退出失败！" +
-                            "\ncode --> " + code +
-                            "\nmsg --> " + msg);
-                }
-            });
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {

@@ -25,15 +25,13 @@ public class XHAPP extends OPlatformAPP {
     @Override
     public void onCreate(Application application) {
         super.onCreate(application);
-        LoadConfig.loadConfig();
-        PluginUtils.getInstance().preparePlugin(LoadConfig.getXh_sdk_plugin());
-        XhImp.getInstance().onApplicationCreate(application);
+
 
     }
 
     @Override
     public void attachBaseContext(Context base) {
         super.attachBaseContext(base);
-        MultiDex.install(base);
+
     }
 }

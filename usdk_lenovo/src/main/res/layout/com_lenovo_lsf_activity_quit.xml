@@ -64,8 +64,8 @@
                 android:layout_gravity="center_horizontal|bottom"
                 android:layout_marginBottom="6dp"
                 android:background="@drawable/com_lenovo_lsf_ad_button_bg"
-                android:textSize="@dimen/com_lenovo_lsf_ad_btn_text_size"
-                android:textColor="@color/com_lenovo_lsf_list_item_white"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
                 android:visibility="visible" />
         </FrameLayout>
         <!-- @drawable/com_lenovo_lsf_ad_button_bg -->
@@ -89,7 +89,7 @@
         <View
             android:id="@+id/common_list_item_real_dash_other0"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/common_list_dash_height"
+            android:layout_height="1dp"
             android:background="#eaeaea" />
 
         <TextView

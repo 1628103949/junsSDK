@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="312dp"
+    android:layout_height="240dp"
+    android:background="@drawable/com_lenovo_lsf_pay_dialog_corner"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="@string/com_lenovo_game_activate_title"
+            android:textColor="@color/color_text_black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/com_lenovo_game_activate_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:padding="6dp"
+            android:layout_marginEnd="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/com_lenovo_realname_close" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/com_lenovo_game_activate_text"
+        android:textColor="@color/color_text_register"
+        android:textSize="11sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        >
+        <TextView
+            android:id="@+id/tv_lenovo_game_activate_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/com_lenovo_lsf_pay_button_corner"
+            android:gravity="center"
+            android:text="@string/com_lenovo_game_cancel"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_lenovo_game_activate_do"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/com_lenovo_lsf_pay_button_corner"
+            android:gravity="center"
+            android:text="@string/com_lenovo_game_activate_account"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_lenovo_game_account_appeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="30dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/com_lenovo_game_account_appeal"
+        android:textColor="@color/com_lenovo_game_blue"
+        android:textSize="16sp" />
+</LinearLayout>

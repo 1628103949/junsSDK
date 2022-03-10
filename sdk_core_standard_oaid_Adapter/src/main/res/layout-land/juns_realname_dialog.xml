@@ -22,11 +22,13 @@
                 android:layout_marginTop="45dp"
                 android:text="@string/juns_certification_tips"
                 android:textColor="#747474"
-                android:textSize="12sp" />
+                android:textSize="12dp" />
+
             <LinearLayout
                 android:layout_width="285dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal">
+
                 <TextView
                     android:id="@+id/show_realname_info"
                     android:layout_width="wrap_content"
@@ -34,8 +36,8 @@
                     android:background="@drawable/juns_fw_btn_bg_tran"
                     android:text="@string/juns_show_realname_info"
                     android:textColor="#f7633b"
-                    android:textSize="12sp"
-                    android:visibility="gone"/>
+                    android:textSize="12dp"
+                    android:visibility="gone" />
             </LinearLayout>
 
             <RelativeLayout
@@ -47,8 +49,8 @@
                     android:id="@+id/name_rl"
                     android:layout_width="285dp"
                     android:layout_height="40dp"
-                    android:layout_marginTop="5dp"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
                     android:background="@drawable/juns_edit_bg">
 
                     <ImageView
@@ -56,8 +58,8 @@
                         android:layout_width="43dp"
                         android:layout_height="16dp"
                         android:layout_centerVertical="true"
-                        android:scaleType="fitCenter"
                         android:layout_marginLeft="10dp"
+                        android:scaleType="fitCenter"
                         android:src="@drawable/juns_realname_icon" />
 
                     <com.juns.sdk.framework.view.EditText.ClearEditText
@@ -76,7 +78,7 @@
                         android:textColor="#333333"
                         android:textColorHint="#747474"
                         android:textCursorDrawable="@null"
-                        android:textSize="14sp" />
+                        android:textSize="14dp" />
 
                 </RelativeLayout>
 
@@ -85,8 +87,8 @@
                     android:layout_width="285dp"
                     android:layout_height="40dp"
                     android:layout_below="@id/name_rl"
-                    android:layout_marginTop="15dp"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
                     android:background="@drawable/juns_edit_bg">
 
                     <ImageView
@@ -112,7 +114,7 @@
                         android:textColor="#333333"
                         android:textColorHint="#747474"
                         android:textCursorDrawable="@null"
-                        android:textSize="14sp" />
+                        android:textSize="14dp" />
                 </RelativeLayout>
 
             </RelativeLayout>
@@ -121,8 +123,8 @@
                 android:id="@+id/commit_btn"
                 android:layout_width="285dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="15dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/juns_verify_txt"
                 android:scaleType="centerCrop" />
         </LinearLayout>

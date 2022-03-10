@@ -1,0 +1,16 @@
+{
+       "show_oversea_style"        :           false,
+       "login_coo_phone"           :           true,
+       "login_coo_mail"            :           true,
+       "login_coo_sina"            :           false,
+       "login_coo_qq"              :           false,
+       "login_coo_wechat"          :           false,
+       "login_coo_google"          :           false,
+       "login_coo_facebook"        :           false,
+       "hide_firstpage_backimg"    :           true,
+       "is_contact_apk"            :           false,
+       "show_uki"                  :           true,
+       "half_contact_apk"          :           true,
+       "close_mail_regist"         :           true,
+       "show_privacy"              :           true
+ }

@@ -35,7 +35,7 @@
                 android:layout_centerInParent="true"
                 android:text="在线客服"
                 android:textColor="#555555"
-                android:textSize="18sp" />
+                android:textSize="18dp" />
 
             <ImageButton
                 android:id="@+id/close_btn"

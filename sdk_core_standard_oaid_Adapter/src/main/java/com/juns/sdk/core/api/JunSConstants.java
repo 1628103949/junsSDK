@@ -6,7 +6,7 @@ package com.juns.sdk.core.api;
  */
 public class JunSConstants {
 
-    public static final String SDK_VERSION = "1.1.7";
+    public static final String SDK_VERSION = "1.1.8";
     public static final String OS_NAME = "1";
     public static final String OS_VER = android.os.Build.VERSION.RELEASE;
     public static final String JUNS_WEB_OBJ = "JunS";

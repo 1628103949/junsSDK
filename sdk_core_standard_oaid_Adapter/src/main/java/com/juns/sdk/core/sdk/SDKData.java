@@ -114,7 +114,7 @@ public class SDKData {
     }
 
     //悬浮窗内容
-    public static String floatWindowData = null;
+    public static String floatWindowData = "";
     //SDK基础配置
     private static String sdkGID = null;
     private static String sdkAppKey = null;

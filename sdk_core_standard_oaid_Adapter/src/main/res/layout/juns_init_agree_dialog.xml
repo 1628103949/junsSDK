@@ -18,7 +18,7 @@
                     android:gravity="center"
                     android:text="@string/juns_user_service_agreement_title"
                     android:textColor="#3C3939"
-                    android:textSize="15sp"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
             <RelativeLayout
                 android:id="@+id/init_agree_ll"
@@ -38,7 +38,7 @@
                 android:background="@drawable/btn_init_agree"
                 android:text="确认"
                 android:textColor="#ffffff"
-                android:textSize="15sp" />
+                android:textSize="15dp" />
 
 
 

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/com_lenovo_lsf_appcolor"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/com_lenovo_lsf_appcolor"
+            android:fitsSystemWindows="true">
+
+            <TextView
+                android:id="@+id/iv_qrocde_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/com_lenovo_lsf_vb_center_title_back_selector" />
+
+            <ImageView
+                android:id="@+id/img_weblogin"
+                android:layout_width="78dp"
+                android:layout_height="64dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="96dp"
+                android:contentDescription="@null"
+                android:src="@drawable/com_lenovo_lsf_weblogin" />
+
+            <TextView
+                android:id="@+id/tv_weblogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_weblogin"
+                android:layout_centerHorizontal="true"
+                android:text="@string/com_lenovo_lsf_weblogin_confirm"
+                android:textColor="#FF333333"
+                android:textSize="16sp"
+                android:layout_marginTop="22dp"
+               />
+
+            <Button
+                android:id="@+id/btn_weblogin_confirm"
+
+                android:layout_width="193dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/tv_weblogin"
+                android:layout_marginTop="25dp"
+                android:text="@string/com_lenovo_lsf_weblogin"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/com_lenovo_lsf_btn_inter_onekey_selector_up"
+                android:textColor="#fff"
+                />
+
+            <!--
+            <TextView
+                android:id="@+id/tv_weblogin_error_tip"
+                style="@style/com_lenovo_lsf_text_error"
+                android:layout_below="@id/btn_weblogin_confirm" />
+            -->
+
+            <TextView
+                android:id="@+id/tv_weblogin_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/btn_weblogin_confirm"
+                android:layout_marginTop="22dp"
+                android:text="@string/com_lenovo_lsf_weblogin_cancel"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="#FF333333"
+
+
+                />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

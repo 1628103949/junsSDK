@@ -3,6 +3,7 @@ package com.juns.channel;
 import android.app.Activity;
 import android.util.Log;
 
+import com.game.chijun.UniversalID;
 import com.juns.sdk.core.api.JunSConstants;
 import com.juns.sdk.core.api.JunSSdkApi;
 import com.juns.sdk.core.platform.OPlatformBean;
@@ -44,6 +45,8 @@ public class X7 extends OPlatformSDK {
 
     @Override
     public void init(Activity activity) {
+
+        //Log.e("guoinfo","uuid:"+UniversalID.getUniversalID(activity));
         SMPlatformManager.getInstance().init(activity, SDKApplication.getPlatformConfig().getExt1(), new SMInitListener() {
             @Override
             public void onSuccess() {

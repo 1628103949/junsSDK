@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F2F2F2"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/com_lenovo_lsf_vb_center_title_back_selector"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/custom_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/base_title_imb"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/com_lenovo_lsf_info_title"
+                android:textColor="@color/com_lenovo_lsf_content_text_color"
+                android:textSize="20sp"
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sc_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_layout"
+        android:background="#F2F2F2"
+        android:fillViewport="false"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <!--标题和logo-->
+            <RelativeLayout
+                android:id="@+id/rl_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/com_lenovo_lsf_login_tilt_textview"
+                    android:text="@string/com_lenovo_lsf_idauth_title"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_title"
+                    android:layout_marginTop="35dp"
+                    android:textSize="@dimen/com_lenovo_lsf_content_text_font_size"
+                    android:text="@string/com_lenovo_lsf_idauth_subtitle"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/com_lenovo_lsf_idauth_subtitle_tip"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="35dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="35dp"
+                />
+
+            <!--安全手机-->
+            <RelativeLayout
+                android:id="@+id/rl_info_safephone"
+                style="@style/com_lenovo_lsf_setting_item"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/com_lenovo_lsf_deputy_account_icon_phone" />
+
+                <TextView
+                    android:id="@+id/tv_safephone_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="10dp"
+                    android:duplicateParentState="true"
+                    android:text="@string/com_lenovo_lsf_info_safephone"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_toLeftOf="@+id/tv_safephone_state"
+                    />
+                <TextView
+                    android:id="@+id/tv_safephone_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_safephone_title"
+                    android:layout_marginLeft="56dp"
+                    android:duplicateParentState="true"
+                    android:text="@string/com_lenovo_lsf_idauth_auth_phone"
+                    android:textColor="@drawable/com_lenovo_lsf_list_item_text_field_selector"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_toLeftOf="@+id/tv_safephone_state"
+                    />
+                <TextView
+                    android:id="@+id/tv_safephone_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:duplicateParentState="true"
+                    android:textColor="@drawable/com_lenovo_lsf_list_item_text_field_selector"
+                    android:textSize="12sp"
+                    android:drawableRight="@drawable/com_lenovo_lsf_go"
+                    android:drawablePadding="8dp"
+                    />
+
+            </RelativeLayout>
+            <!--安全邮箱-->
+            <RelativeLayout
+                android:id="@+id/rl_info_safemail"
+                style="@style/com_lenovo_lsf_setting_item"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/com_lenovo_lsf_deputy_account_icon_email" />
+
+                <TextView
+                    android:id="@+id/tv_safemail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="10dp"
+                    android:duplicateParentState="true"
+                    android:text="@string/com_lenovo_lsf_info_safemail"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_toLeftOf="@+id/tv_safemail_state"
+                    />
+                <TextView
+                    android:id="@+id/tv_safemail_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_safemail_title"
+                    android:layout_marginLeft="56dp"
+                    android:duplicateParentState="true"
+                    android:text="@string/com_lenovo_lsf_idauth_auth_mail"
+                    android:textColor="@drawable/com_lenovo_lsf_list_item_text_field_selector"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_toLeftOf="@+id/tv_safemail_state"
+                    />
+                <TextView
+                    android:id="@+id/tv_safemail_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:duplicateParentState="true"
+                    android:textColor="@drawable/com_lenovo_lsf_list_item_text_field_selector"
+                    android:textSize="12sp"
+                    android:drawableRight="@drawable/com_lenovo_lsf_go"
+                    android:drawablePadding="8dp"
+                    />
+
+            </RelativeLayout>
+
+
+            <!--<Button
+                android:id="@+id/bt_logout"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/com_lenovo_lsf_btn_inter_onekey_selector_up"
+                android:stateListAnimator="@anim/button_anim"
+                android:text="@string/com_lenovo_lsf_myaccount_string_logout"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />-->
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

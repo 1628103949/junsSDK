@@ -19,8 +19,8 @@
             android:paddingEnd="8dp"
             android:scrollbars="vertical"
             android:text="游戏时间达上线，您已被游戏防沉迷限制！"
-            android:textColor="#747474"
-            android:textSize="19sp" />
+            android:textColor="#000000"
+            android:textSize="19dp" />
 
         <View
             android:layout_width="match_parent"
@@ -45,8 +45,8 @@
                 android:background="#FFFFFF"
                 android:paddingLeft="-13dp"
                 android:text="退出账号"
-                android:textColor="#B03B3A"
-                android:textSize="16sp"
+
+                android:textSize="16dp"
                 android:textStyle="bold" />
 
             <View
@@ -63,8 +63,8 @@
                 android:background="#FFFFFF"
                 android:paddingRight="-13dp"
                 android:text="结束游戏"
-                android:textColor="#B88730"
-                android:textSize="16sp"
+                android:textColor="#f7633b"
+                android:textSize="16dp"
                 android:textStyle="bold" />
 
         </LinearLayout>

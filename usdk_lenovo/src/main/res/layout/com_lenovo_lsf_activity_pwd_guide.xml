@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center_vertical"
+       >
+
+        <ImageButton
+            android:id="@+id/base_title_imb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/com_lenovo_lsf_vb_center_title_back_selector"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/custom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/base_title_imb"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_layout"
+        android:background="@color/com_lenovo_lsf_appcolor">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <!--标题和logo-->
+            <RelativeLayout
+                android:id="@+id/rl_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/com_lenovo_lsf_login_tilt_textview"
+                    android:text="@string/com_lenovo_lsf_idauth_auth_guide"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_title"
+                    android:layout_marginTop="60dp"
+                    android:textSize="@dimen/com_lenovo_lsf_content_text_font_size"
+                    android:text="@string/com_lenovo_lsf_idauth_auth_subguide"
+                    android:layout_marginRight="36dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/com_lenovo_lsf_btn_inter_onekey_selector_up"
+                android:stateListAnimator="@anim/button_anim"
+                android:layout_below="@id/rl_subtitle"
+                android:text="@string/com_lenovo_lsf_info_set"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

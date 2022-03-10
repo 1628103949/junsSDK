@@ -32,12 +32,12 @@ public class FWUtils {
             View decorView = act.getWindow().getDecorView();
             WindowInsets rootWindowInsets = decorView.getRootWindowInsets();
             if (rootWindowInsets == null) {
-                Log.e("JunS-sdk", "rootWindowInsets为空了");
+                //Log.e("JunS-sdk", "rootWindowInsets为空了");
                 return 0;
             }
             DisplayCutout displayCutout = rootWindowInsets.getDisplayCutout();
             if(displayCutout == null){
-                Log.e("JunS-sdk" , "displayCutout为空了");
+                //Log.e("JunS-sdk" , "displayCutout为空了");
                 return 0;
             }
 
@@ -52,12 +52,12 @@ public class FWUtils {
             View decorView = act.getWindow().getDecorView();
             WindowInsets rootWindowInsets = decorView.getRootWindowInsets();
             if (rootWindowInsets == null) {
-                Log.e("JunS-sdk", "rootWindowInsets为空了");
+                //Log.e("JunS-sdk", "rootWindowInsets为空了");
                 return 0;
             }
             DisplayCutout displayCutout = rootWindowInsets.getDisplayCutout();
             if(displayCutout == null){
-                Log.e("JunS-sdk" , "displayCutout为空了");
+                //Log.e("JunS-sdk" , "displayCutout为空了");
                 return 0;
             }
 

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+   >
+
+    <FrameLayout
+        android:id="@+id/capture_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+
+            />
+
+        <com.lenovo.lsf.account.qrcode.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+<!--
+        <ImageView
+            android:id="@+id/img_qrocde_back"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/com_lenovo_lsf_button_back_selector"
+            android:contentDescription="@null"
+            android:paddingLeft="6dp"
+            android:scaleType="fitStart" />  -->
+
+        <!--<TextView
+            android:id="@+id/img_qrocde_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/com_lenovo_lsf_vb_center_title_back_selector"
+           />-->
+
+        <TextView
+            android:id="@+id/img_qrocde_back"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="4dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="25dp"
+            android:text="@string/com_lenovo_lsf_qr_scanner_scan_scan"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/com_lenovo_lsf_vb_center_title_back_selector"
+            />
+
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

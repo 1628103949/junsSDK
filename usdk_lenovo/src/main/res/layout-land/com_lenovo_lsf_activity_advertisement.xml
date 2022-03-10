@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="@dimen/com_lenovo_lsf_view_width_portrait"
-    android:layout_height="@dimen/com_lenovo_lsf_view_adv_height"
+    android:layout_width="304dp"
+    android:layout_height="294dp"
     android:layout_gravity="center"
-    android:layout_marginLeft="@dimen/com_lenovo_lsf_view_margin_left"
-    android:layout_marginRight="@dimen/com_lenovo_lsf_view_margin_left"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
     android:background="@drawable/com_lenovo_lsf_activity_bg"
     android:orientation="vertical" >
     
@@ -47,7 +47,7 @@
         android:layout_below="@+id/common_title_layout"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@color/com_lenovo_lsf_white"
+        android:background="@color/com_lenovo_game_white"
         android:orientation="horizontal" >
 
         <View
@@ -62,7 +62,7 @@
         android:layout_width="fill_parent"
         android:layout_height="17dp"
         android:layout_below="@+id/edit_center_line"
-        android:background="@color/com_lenovo_lsf_white"
+        android:background="@color/com_lenovo_game_white"
         android:orientation="horizontal" >
 
     </LinearLayout>
@@ -107,7 +107,7 @@
             android:layout_height="14dp"
             android:layout_above="@+id/layout_start_game"
             android:layout_weight="1"
-            android:background="@color/com_lenovo_lsf_white"
+            android:background="@color/com_lenovo_game_white"
             android:orientation="horizontal" >
 
         </LinearLayout>
@@ -145,7 +145,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="13dp"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="@dimen/com_lenovo_lsf_content_padding_left_right"
+            android:layout_marginRight="16dp"
             android:gravity="center" >
 
             <CheckBox

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.webkit.CookieManager;
@@ -174,7 +175,10 @@ public class SdkWebViewHolder {
 
             @Override
             public void onReceivedError(WebView view, String description, String url) {
+                //去掉检测方式某个引用404使整个页面无法访问
                 //这里处理一般web界面
+               // Log.e("onReceivedError: " , description + "url"+url);
+
                 if (url.contains("http") || url.contains("https") || url.contains("www")) {
                     netErrorRl.setVisibility(View.VISIBLE);
                     view.setVisibility(View.GONE);

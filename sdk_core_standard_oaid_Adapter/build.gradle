@@ -1,6 +1,6 @@
-def sdkVersionName = '1.1.7'
-def sdkVersionCode = 18
-def publishVersion = "1.1.7"
+def sdkVersionName = '1.1.8'
+def sdkVersionCode = 19
+def publishVersion = "1.1.8"
 
 def releaseTime() {
     new java.util.Date().format("yyyy-MM-dd", TimeZone.getDefault());
@@ -104,6 +104,8 @@ android {
     }
 }
 dependencies {
-    api fileTree(include: ['*.jar'], dir: 'libs')
+
+    api fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
+
     api project(':sdk_framework')
 }

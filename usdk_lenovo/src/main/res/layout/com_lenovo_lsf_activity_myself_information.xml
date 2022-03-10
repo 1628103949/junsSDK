@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center_vertical"
+        >
+
+        <ImageButton
+            android:id="@+id/base_title_imb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/com_lenovo_lsf_vb_center_title_back_selector"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/custom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/base_title_imb"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_layout"
+        android:background="@color/com_lenovo_lsf_appcolor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/blank_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="8dp" />
+
+            <RelativeLayout
+                android:id="@+id/avatar_info"
+                style="@style/com_lenovo_lsf_setting_item"
+                android:layout_height="48dp"
+                android:layout_below="@id/blank_tv">
+
+                <TextView
+                    android:id="@android:id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:duplicateParentState="true"
+                    android:text="@string/com_lenovo_lsf_lenovo_avatar"
+                    android:textColor="@drawable/com_lenovo_lsf_list_item_text_field_selector"
+                    android:textSize="@dimen/com_lenovo_lsf_account_setting_item_font_size_left" />
+
+                <ImageView
+                    android:id="@+id/avatar_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:gravity="right"
+                    android:src="@drawable/com_lenovo_lsf_default_avatar" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/alias_info"
+                style="@style/com_lenovo_lsf_setting_item"
+                android:layout_height="48dp"
+                android:layout_below="@id/avatar_info">
+
+                <TextView
+                    android:id="@android:id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:duplicateParentState="true"
+                    android:text="@string/com_lenovo_lsf_lenovo_alias"
+                    android:textColor="@drawable/com_lenovo_lsf_list_item_text_field_selector"
+                    android:textSize="@dimen/com_lenovo_lsf_account_setting_item_font_size_left" />
+
+                <TextView
+                    android:id="@android:id/hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxWidth="140dp"
+                    android:singleLine="true"
+                    android:text="@string/com_lenovo_lsf_lenovo_alias"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/birthday_info"
+                style="@style/com_lenovo_lsf_setting_item"
+                android:layout_height="48dp"
+                android:layout_below="@id/alias_info">
+
+                <TextView
+                    android:id="@android:id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:duplicateParentState="true"
+                    android:text="@string/com_lenovo_lsf_lenovo_birthday"
+                    android:textColor="@drawable/com_lenovo_lsf_list_item_text_field_selector"
+                    android:textSize="@dimen/com_lenovo_lsf_account_setting_item_font_size_left" />
+
+                <TextView
+                    android:id="@android:id/hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gender_info"
+                style="@style/com_lenovo_lsf_setting_item"
+                android:layout_height="48dp"
+                android:layout_below="@id/birthday_info">
+
+                <TextView
+                    android:id="@android:id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:duplicateParentState="true"
+                    android:text="@string/com_lenovo_lsf_lenovo_gender"
+                    android:textColor="@drawable/com_lenovo_lsf_list_item_text_field_selector"
+                    android:textSize="@dimen/com_lenovo_lsf_account_setting_item_font_size_left" />
+
+                <TextView
+                    android:id="@android:id/hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/address_info"
+                style="@style/com_lenovo_lsf_setting_item"
+                android:layout_height="48dp"
+                android:layout_below="@id/gender_info">
+
+                <TextView
+                    android:id="@android:id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:duplicateParentState="true"
+                    android:text="@string/com_lenovo_lsf_lenovo_address"
+                    android:textColor="@drawable/com_lenovo_lsf_list_item_text_field_selector"
+                    android:textSize="@dimen/com_lenovo_lsf_account_setting_item_font_size_left" />
+
+                <TextView
+                    android:id="@android:id/hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:maxWidth="180dp"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_uid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address_info"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="226dp"
+                android:gravity="center"
+                android:textColor="#a3a3a3"
+                android:visibility="gone"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

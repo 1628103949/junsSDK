@@ -36,7 +36,7 @@
             android:ellipsize="end"
             android:maxLines="2"
             android:textColor="#333"
-            android:textSize="16sp" />
+            android:textSize="16dp" />
 
         <TextView
             android:id="@+id/tv_directory_nums"
@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="11dp"
             android:textColor="#aaaaaa"
-            android:textSize="14sp" />
+            android:textSize="14dp" />
     </LinearLayout>
 
     <ImageView

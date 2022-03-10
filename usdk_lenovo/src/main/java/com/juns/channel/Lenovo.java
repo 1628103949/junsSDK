@@ -3,7 +3,6 @@ package com.juns.channel;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
-import android.util.Log;
 
 
 import com.juns.sdk.core.api.JunSConstants;

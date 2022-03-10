@@ -3,17 +3,35 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_H5_JS/src/main/res/layout/juns_exit_dialog.xml" value="0.23802083333333332" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_H5_JS/src/main/res/layout/juns_h5_act.xml" value="0.23802083333333332" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_H5_Link/src/main/res/layout/juns_h5_act.xml" value="0.1" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable-v21/juns_cancel_btn.xml" value="0.1" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable-v21/juns_confirm_btn.xml" value="0.1" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/btn_init_agree.xml" value="0.1" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/btn_init_disagree.xml" value="0.1" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_cancel_btn.xml" value="0.25885416666666666" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_check.xml" value="0.1" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_confirm_btn.xml" value="0.25885416666666666" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_float_bg.xml" value="0.1" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_float_red_bg.xml" value="0.25885416666666666" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_pay_bg.xml" value="0.1" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_pop_bg.xml" value="0.25885416666666666" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_switch_account_bg.xml" value="0.1648148148148148" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_update_process_bg.xml" value="0.1648148148148148" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_web_bg.xml" value="0.1648148148148148" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/drawable/juns_web_title_bg.xml" value="0.1648148148148148" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout-land/juns_agree_dialog.xml" value="0.2054673721340388" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout-land/juns_auto_login_dialog.xml" value="0.2054673721340388" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout-land/juns_float_account_dialog.xml" value="0.23589065255731922" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout-land/juns_login_main_dialog.xml" value="0.2054673721340388" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout-land/juns_login_view.xml" value="0.23589065255731922" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout-land/juns_phone_reg_view.xml" value="0.23589065255731922" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout-land/juns_realname_dialog.xml" value="0.1" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout-land/juns_reg_success_dialog.xml" value="0.2054673721340388" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout-land/juns_reg_view.xml" value="0.23589065255731922" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout-land/juns_service_dialog.xml" value="0.2054673721340388" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout-land/juns_web_dialog.xml" value="0.2054673721340388" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_agree_dialog.xml" value="0.1984375" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_auto_login_dialog.xml" value="0.1984375" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_exit_dialog.xml" value="0.1984375" />
@@ -37,6 +55,10 @@
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_phone_reg_view.xml" value="0.2803442028985507" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_pop_item_view.xml" value="0.2803442028985507" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_realname_dialog.xml" value="0.2803442028985507" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_reg_success_dialog.xml" value="0.24270833333333333" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_reg_view.xml" value="0.264945652173913" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_service_dialog.xml" value="0.24270833333333333" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_update_dialog.xml" value="0.24270833333333333" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_web_dialog.xml" value="0.271286231884058" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter/src/main/res/layout/juns_web_service.xml" value="0.2427536231884058" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_Adapter_ads/src/main/res/drawable-v21/juns_cancel_btn.xml" value="0.30104166666666665" />
@@ -46,11 +68,43 @@
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_delete/src/main/res/drawable/btn_init_agree.xml" value="0.21944444444444444" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_delete/src/main/res/drawable/btn_init_disagree.xml" value="0.21944444444444444" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_core_standard_oaid_develop_Adapter/src/main/res/layout/juns_float_ball_view.xml" value="0.25625" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/drawable-v21/juns_fw_btn_bg_gray.xml" value="0.25885416666666666" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/drawable-v21/juns_fw_btn_bg_red.xml" value="0.25885416666666666" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/drawable-v21/juns_fw_btn_bg_tran.xml" value="0.25885416666666666" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/drawable/juns_fw_album_choose_directory_bar_bg.xml" value="0.25885416666666666" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/drawable/juns_fw_album_choose_directory_bg.xml" value="0.25885416666666666" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/drawable/juns_fw_btn_bg_gray.xml" value="0.16944444444444445" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/drawable/juns_fw_btn_bg_red.xml" value="0.25885416666666666" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/drawable/juns_fw_btn_bg_tran.xml" value="0.25885416666666666" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/drawable/juns_fw_dialog_bg.xml" value="0.25885416666666666" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/drawable/juns_fw_dialog_tran_bg.xml" value="0.25885416666666666" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/layout/juns_fw_album_activity_pick_big_images.xml" value="0.24270833333333333" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/layout/juns_fw_album_activity_pick_or_take_image_activity.xml" value="0.24270833333333333" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/layout/juns_fw_album_item_list_view_album_directory.xml" value="0.24270833333333333" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/layout/juns_fw_album_item_pick_up_image.xml" value="0.24270833333333333" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/layout/juns_fw_album_item_titlebar.xml" value="0.24270833333333333" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/layout/juns_fw_album_widget_zoom_iamge.xml" value="0.2427536231884058" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/layout/juns_fw_clean_exit_text_layout.xml" value="0.24270833333333333" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/layout/juns_fw_common_confirm_layout.xml" value="0.24270833333333333" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/layout/juns_fw_common_tips_layout.xml" value="0.24270833333333333" />
+        <entry key="..\:/work/ASwork/juns_sdk/sdk_framework/src/main/res/layout/juns_fw_common_webview_holder_layout.xml" value="0.40745672436750996" />
         <entry key="..\:/work/ASwork/juns_sdk/sdk_test/src/main/res/layout/juns_demo_act.xml" value="0.20208333333333334" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_lenovo/src/main/res/drawable/juns_icon_background.xml" value="0.1" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_lenovo/src/main/res/layout/base_html_layout.xml" value="0.15896739130434784" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_lenovo/src/main/res/layout/com_lenovo_game_activate_dialog.xml" value="0.28306159420289856" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_lenovo/src/main/res/layout/com_lenovo_game_drag_float.xml" value="0.1" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_lenovo/src/main/res/layout/com_lenovo_game_float_content.xml" value="0.28306159420289856" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_lenovo/src/main/res/layout/com_lenovo_game_startgame_loading.xml" value="0.28306159420289856" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_lenovo/src/main/res/layout/com_lenovo_game_web_error.xml" value="0.28306159420289856" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_lenovo/src/main/res/layout/com_lenovo_game_webad_dialog.xml" value="0.28306159420289856" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_lenovo/src/main/res/layout/com_lenovo_layout_pay_coupons.xml" value="0.28306159420289856" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_lenovo/src/main/res/layout/com_lenovo_lsf_activity_base_layout.xml" value="0.15896739130434784" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_lenovo/src/main/res/layout/com_lenovo_lsf_activity_regist_by_phone_step1.xml" value="0.15896739130434784" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_lenovo/src/main/res/layout/juns_demo_act.xml" value="0.15896739130434784" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_lenovo/src/main/res/mipmap-anydpi-v26/juns_icon.xml" value="0.1" />
         <entry key="..\:/work/ASwork/juns_sdk/usdk_uc/src/main/res/drawable/bg_loading_view.xml" value="0.22708333333333333" />
         <entry key="..\:/work/ASwork/juns_sdk/usdk_uc/src/main/res/layout/loading_view.xml" value="0.25625" />
+        <entry key="..\:/work/ASwork/juns_sdk/usdk_xiao7/src/main/res/layout/juns_demo_act.xml" value="0.13451086956521738" />
         <entry key="..\:/work/ASwork/juns_sdk/usdk_xiao7eclipse/src/main/res/drawable/x7_waxpay_selection_selector.xml" value="0.25462962962962965" />
         <entry key="..\:/work/ASwork/juns_sdk/usdk_xiao7eclipse/src/main/res/layout/activity_demo_main.xml" value="0.17604166666666668" />
         <entry key="..\:/work/ASwork/juns_sdk/usdk_xiao7eclipse/src/main/res/layout/juns_demo_act.xml" value="0.17604166666666668" />

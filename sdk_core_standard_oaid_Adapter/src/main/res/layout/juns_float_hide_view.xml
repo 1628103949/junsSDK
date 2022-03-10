@@ -43,7 +43,7 @@
                     android:gravity="center"
                     android:text="@string/juns_drag_to_hide"
                     android:textColor="#ffffff"
-                    android:textSize="15sp" />
+                    android:textSize="15dp" />
 
             </LinearLayout>
 

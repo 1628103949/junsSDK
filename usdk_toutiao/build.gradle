@@ -15,9 +15,7 @@ android {
         manifestPlaceholders.put("APPLOG_SCHEME", "union_game")
         multiDexEnabled true
 
-        ndk {
-            abiFilters 'armeabi-v7a'
-        }
+
     }
 
     // 配置结构

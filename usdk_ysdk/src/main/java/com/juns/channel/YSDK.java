@@ -115,7 +115,7 @@ public class YSDK extends OPlatformSDK {
     @Override
     public void pay(Activity activity, HashMap<String, String> payParams) {
         logger.print("ysdkpayinfo"+payParams.toString());
-        doPay(activity, payParams.get(JunSConstants.PAY_M_ORDER_ID), payParams.get(JunSConstants.PAY_M_DATA));
+        doPay(payParams.get(JunSConstants.PAY_M_ORDER_ID), payParams.get(JunSConstants.PAY_M_DATA));
     }
 
     @Override
@@ -143,28 +143,6 @@ public class YSDK extends OPlatformSDK {
             showLoginView();
         }else{
             YSDKApi.autoLogin();
-//            ysdkAutoLoginDialog = new YSDKAutoLoginDialog(activity, new YSDKAutoLoginDialog.AutoCallback() {
-//                @Override
-//                public void onSwitchAccount() {
-//                    showLoginView();
-//                }
-//            });
-//            ysdkAutoLoginDialog.showAnim(new FadeEnter()).dismissAnim(new FadeExit()).dimEnabled(true).show();
-//            TimerTask task = new TimerTask(){
-//                public void run(){
-//                    //execute the task
-//                    activity.runOnUiThread(new Runnable() {
-//                        @Override
-//                        public void run() {
-//                            ysdkAutoLoginDialog.dismiss();
-//                            loginToSever(userLoginRet);
-//                        }
-//                    });
-//
-//                }
-//            };
-//            Timer timer = new Timer();
-//            timer.schedule(task, 2000);
 
         }
 
@@ -227,7 +205,7 @@ public class YSDK extends OPlatformSDK {
         return ysdkPayJson.toString();
     }
 
-    private void doPay(Context context, String moid, String mData) {
+    private void doPay(String moid, String mData) {
         try {
             JSONObject dataJson = new JSONObject(mData);
             int gcradio = dataJson.getInt("gcradio");   //兑换比例
@@ -350,7 +328,7 @@ public class YSDK extends OPlatformSDK {
     @Override
     public void onResume(Activity mainAct) {
         //YSDKApi.onResume(mainAct);
-        YSDKApi.showDebugIcon(mainAct);
+        //YSDKApi.showDebugIcon(mainAct);
     }
 
     @Override
@@ -447,79 +425,7 @@ public class YSDK extends OPlatformSDK {
         }
     }
 
-//    public void executeInstruction(AntiAddictRet ret) {
-//        final int modal = ret.modal;
-//        switch (ret.type) {
-//            case AntiAddictRet.TYPE_TIPS:
-//            case AntiAddictRet.TYPE_LOGOUT:
-//                if (!mAntiAddictExecuteState) {
-//                    mAntiAddictExecuteState = true;
-//                    AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-//                    builder.setTitle(ret.title);
-//                    builder.setMessage(ret.content);
-//                    builder.setPositiveButton("知道了",
-//                            new DialogInterface.OnClickListener() {
-//                                public void onClick(DialogInterface dialog,
-//                                                    int whichButton) {
-//                                    if (modal == 1) {
-//                                        // 强制用户下线
-//                                        YSDKApi.logout();
-//                                        //回到游戏登录界面
-//                                        Bus.getDefault().post(new OLogoutEv());
-//                                    }
-//                                    changeExecuteState(false);
-//                                }
-//                            });
-//                    builder.setCancelable(false);
-//                    builder.show();
-//                    // 已执行指令
-//                    YSDKApi.reportAntiAddictExecute(ret, System.currentTimeMillis());
-//                }
-//
-//                break;
-//
-//            case AntiAddictRet.TYPE_OPEN_URL:
-//                if (!mAntiAddictExecuteState) {
-//                    mAntiAddictExecuteState = true;
-//                    View popwindowView = View.inflate(mContext, ResUtil.getLayoutID("pop_window_web_layout", mContext), null);
-//                    WebView webView = popwindowView.findViewById(ResUtil.getID("pop_window_webview", mContext));
-//                    Button closeButton = popwindowView.findViewById(ResUtil.getID("pop_window_close", mContext));
-//
-//                    WebSettings settings = webView.getSettings();
-//                    settings.setJavaScriptEnabled(true);
-//                    webView.setWebViewClient(new WebViewClient());
-//                    webView.loadUrl(ret.url);
-//
-//                    final PopupWindow popupWindow = new PopupWindow(popwindowView, 1000, 1000);
-//                    popupWindow.setTouchable(true);
-//                    popupWindow.setOutsideTouchable(false);
-//                    popupWindow.setBackgroundDrawable(new BitmapDrawable());
-//
-//                    closeButton.setOnClickListener(new View.OnClickListener() {
-//                        @Override
-//                        public void onClick(View v) {
-//                            if (modal == 1) {
-//                                YSDKApi.logout();
-//                                //回到游戏登录界面
-//                                Bus.getDefault().post(new OLogoutEv());
-//                            }
-//                            popupWindow.dismiss();
-//                            changeExecuteState(false);
-//                        }
-//                    });
-//
-//                    popupWindow.showAtLocation(popwindowView, Gravity.CENTER, 0, 0);
-//                    // 已执行指令
-//                    YSDKApi.reportAntiAddictExecute(ret, System.currentTimeMillis());
-//                }
-//                break;
-//
-//        }
-//    }
 
-//    private void changeExecuteState(boolean state) {
-//        mAntiAddictExecuteState = state;
-//    }
 
     /**
      * YSDK通过UserListener抽象类中的方法将授权或查询结果回调给游戏。
@@ -614,14 +520,14 @@ public class YSDK extends OPlatformSDK {
 
                 case eFlag.Login_NotRegisterRealName:
                     YSDK.logger.print("您的账号没有进行实名认证，请实名认证后重试");
-                    Bus.getDefault().post(OLoginEv.getFail(JunSConstants.Status.CHANNEL_ERR, "您的账号没有进行实名认证，请实名认证后重试"));
-                    showLoginView();
+                    //Bus.getDefault().post(OLoginEv.getFail(JunSConstants.Status.CHANNEL_ERR, "您的账号没有进行实名认证，请实名认证后重试"));
+                    //showLoginView();
                     break;
 
                 case eFlag.Login_NeedRegisterRealName:
                     YSDK.logger.print("您的账号没有进行实名认证，请完成实名认证后重试");
-                    Bus.getDefault().post(OLoginEv.getFail(JunSConstants.Status.CHANNEL_ERR, "您的账号没有进行实名认证，请完成实名认证后重试"));
-                    showLoginView();
+                    //Bus.getDefault().post(OLoginEv.getFail(JunSConstants.Status.CHANNEL_ERR, "您的账号没有进行实名认证，请完成实名认证后重试"));
+                    //showLoginView();
                     break;
 
                 case eFlag.Login_Free_Login_Auth_Failed:

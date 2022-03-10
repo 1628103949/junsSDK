@@ -54,7 +54,7 @@
                     android:background="@drawable/com_lenovo_lsf_ad_button_bg"
                     android:textColor="#ffffff"
                     android:text="@string/com_lenovo_lsf_watch_text"
-                    android:textSize="@dimen/com_lenovo_lsf_ad_btn_text_size"
+                    android:textSize="16sp"
                     android:visibility="visible" />
             </FrameLayout>
             <!-- @drawable/com_lenovo_lsf_ad_button_bg -->
@@ -83,7 +83,7 @@
             <View
                 android:id="@+id/common_list_item_real_dash_other0"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/common_list_dash_height"
+                android:layout_height="1dp"
                 android:background="#eaeaea" />
 
             <TextView

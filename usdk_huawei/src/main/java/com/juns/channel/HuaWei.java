@@ -53,6 +53,7 @@ import com.juns.sdk.core.platform.event.OInitEv;
 import com.juns.sdk.core.platform.event.OLoginEv;
 import com.juns.sdk.core.platform.event.OLogoutEv;
 import com.juns.sdk.core.platform.event.OPayEv;
+import com.juns.sdk.framework.common.ToastUtil;
 import com.juns.sdk.framework.log.LogFactory;
 import com.juns.sdk.framework.log.TNLog;
 import com.juns.sdk.framework.view.common.ViewUtils;
@@ -117,9 +118,11 @@ public class HuaWei extends OPlatformSDK {
                     if (statusCode == JosStatusCodes.JOS_PRIVACY_PROTOCOL_REJECTED) {
                         //showLog("has reject the protocol");
                         //在此处实现退出游戏或者重新调用初始化接口
-                        Bus.getDefault().post(OInitEv.getFail(statusCode,"拒绝协议"));
+                        ToastUtil.showLong(mContext,"需要同意隐私协议才能继续游戏！");
+                        //Bus.getDefault().post(OInitEv.getFail(statusCode,"拒绝协议"));
                     }
-                    Bus.getDefault().post(OInitEv.getFail(statusCode,e.getMessage()));
+                    init((Activity) mContext);
+                    //Bus.getDefault().post(OInitEv.getFail(statusCode,e.getMessage()));
                     //在此处实现其他错误码的处理
                 }
                 //showLog("init failed, " + e.getMessage());

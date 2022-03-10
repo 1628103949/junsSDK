@@ -13,6 +13,7 @@ import com.juns.sdk.core.platform.OPlatformUtils;
 import com.juns.sdk.core.platform.event.OExitEv;
 import com.juns.sdk.core.platform.event.OInitEv;
 import com.juns.sdk.core.platform.event.OLoginEv;
+import com.juns.sdk.core.platform.event.OLogoutEv;
 import com.juns.sdk.core.platform.event.OPayEv;
 import com.juns.sdk.core.sdk.flow.MPayFlow;
 import com.juns.sdk.framework.log.LogFactory;
@@ -60,6 +61,7 @@ public class MeiZu extends OPlatformSDK {
             @Override
             public void onLoginResult(int code, MzAccountInfo mzAccountInfo, String msg) {
                 //TODO 在这里处理登出逻辑
+                Bus.getDefault().post(new OLogoutEv());
                 //Bus.getDefault().post(OLoginEv.getSucc(mzAccountInfo.getUid()));
             }
         });

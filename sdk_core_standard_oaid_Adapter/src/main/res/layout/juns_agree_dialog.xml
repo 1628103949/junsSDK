@@ -30,7 +30,7 @@
                     android:gravity="center"
                     android:text="@string/juns_user_service_agreement_title"
                     android:textColor="#3C3939"
-                    android:textSize="15sp"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -60,7 +60,7 @@
                     android:background="@drawable/juns_cancel_btn"
                     android:text="@string/juns_refuse"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textSize="16dp" />
 
                 <Button
                     android:id="@+id/accept_btn"
@@ -70,7 +70,7 @@
                     android:background="@drawable/juns_confirm_btn"
                     android:text="@string/juns_accept"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textSize="16dp" />
 
             </RelativeLayout>
 
@@ -85,7 +85,7 @@
                 android:gravity="center"
                 android:text="@string/juns_to_accept_agreement"
                 android:textColor="#9B9B9B"
-                android:textSize="11sp" />
+                android:textSize="11dp" />
 
         </LinearLayout>
 

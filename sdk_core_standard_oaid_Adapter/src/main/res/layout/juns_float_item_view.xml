@@ -34,7 +34,7 @@
                 android:layout_centerHorizontal="true"
                 android:text="@string/juns_name"
                 android:textColor="#ffffff"
-                android:textSize="13sp" />
+                android:textSize="13dp" />
 
             <View
                 android:id="@+id/red_view"

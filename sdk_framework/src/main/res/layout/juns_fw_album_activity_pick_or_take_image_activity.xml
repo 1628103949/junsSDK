@@ -37,7 +37,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="20dp"
                 android:textColor="@color/juns_fw_album_white"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -91,7 +91,7 @@
                     android:ellipsize="end"
                     android:singleLine="true"
                     android:textColor="@drawable/juns_fw_album_choose_directory_bg"
-                    android:textSize="16sp" />
+                    android:textSize="16dp" />
             </FrameLayout>
 
             <View
@@ -109,7 +109,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:textColor="#ededed"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
         </RelativeLayout>
     </RelativeLayout>
 

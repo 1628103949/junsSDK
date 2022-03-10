@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/lenovo_game_iv_webad_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="end"
+        android:src="@drawable/com_lenovo_game_webad_close"
+        />
+    <FrameLayout
+        android:id="@+id/lenovo_game_fl_webad_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="3dp"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:background="@drawable/com_lenovo_game_webad_corner_bg"
+        >
+    </FrameLayout>
+    <CheckBox
+        android:id="@+id/lenovo_game_ck_no_notify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@drawable/com_lenovo_lsf_btn_adv_checkbox"
+        android:text=" 不再显示本期公告"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/com_lenovo_game_white"
+        android:textSize="13sp" />
+</LinearLayout>

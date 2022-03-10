@@ -12,9 +12,7 @@ android {
         applicationId "com.tldjb.ttsdk.two"
         versionCode 1
         versionName '1.0.0'
-        ndk {
-            abiFilters 'armeabi-v7a'
-        }
+
     }
 
     // 配置结构
@@ -130,7 +128,7 @@ dependencies {
     implementation 'com.android.support:support-core-utils:28.0.0'
     implementation 'com.android.support:support-core-ui:28.0.0'
     implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
-    implementation project(path: ':mid_oaid1.0.10')
+    implementation project(path: ':mid_oaid1.0.13')
 }
 
 repositories {

@@ -21,7 +21,7 @@
             android:text="@string/juns_update"
             android:textColor="#333333"
             android:textStyle="bold"
-            android:textSize="16sp" />
+            android:textSize="16dp" />
 
         <TextView
             android:id="@+id/content_tv"
@@ -33,7 +33,7 @@
             android:gravity="left"
             android:text="@string/juns_update_default_tips"
             android:textColor="#333333"
-            android:textSize="15sp" />
+            android:textSize="15dp" />
 
         <RelativeLayout
             android:id="@+id/normal_rl"
@@ -56,7 +56,7 @@
                 android:paddingRight="5dp"
                 android:text="@string/juns_begin_update"
                 android:textColor="#B03B3A"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
 
             <Button
                 android:id="@+id/cancel_btn"
@@ -70,7 +70,7 @@
                 android:paddingRight="5dp"
                 android:text="@string/juns_update_later"
                 android:textColor="#747474"
-                android:textSize="16sp"
+                android:textSize="16dp"
                 android:visibility="visible" />
         </RelativeLayout>
 
@@ -106,7 +106,7 @@
                     android:layout_height="wrap_content"
                     android:text="1M/S"
                     android:textColor="#969696"
-                    android:textSize="12sp"
+                    android:textSize="12dp"
                     android:visibility="gone" />
 
                 <TextView
@@ -116,7 +116,7 @@
                     android:layout_alignParentRight="true"
                     android:text="0MB/0MB"
                     android:textColor="#969696"
-                    android:textSize="12sp" />
+                    android:textSize="12dp" />
 
             </RelativeLayout>
 

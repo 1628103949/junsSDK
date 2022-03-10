@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#a3a3a3">
+    <item android:id="@android:id/mask"
+          android:drawable="@color/com_lenovo_lsf_item" />
+    <item>		
+        <selector xmlns:android="http://schemas.android.com/apk/res/android" >
+   			<!-- <item android:state_pressed="true" android:drawable="@drawable/com_lenovo_lsf_get_captcha_button_pressed"/>  -->
+    		<!-- <item android:state_focused="true" android:drawable="@drawable/com_lenovo_lsf_get_captcha_button_focused"/>  -->
+    		<!-- <item android:state_enabled="false" android:drawable="@drawable/com_lenovo_lsf_get_captcha_button_disable"/>  -->
+    		<item android:drawable="@drawable/com_lenovo_lsf_get_captcha_button_default"/>
+		</selector>
+    </item>
+</ripple>

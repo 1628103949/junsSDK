@@ -1,5 +1,7 @@
 package com.juns.sdk.core.http.params;
 
+
+
 import android.util.Log;
 
 import com.juns.sdk.core.api.JunSConstants;
@@ -40,6 +42,8 @@ public class CommonParam extends RequestParams {
             junSJson.put("duid", SDKData.getSDKDuid());
             junSJson.put("androidid", SDKData.getSdkAndroidId());
             junSJson.put("oaid", SDKData.getSdkOaid());
+          //  junSJson.put("adchannelid", HumeSDK.getChannel(SDKCore.getMainAct()));
+          //  Log.i("adchannelid","11"+HumeSDK.getChannel(SDKCore.getMainAct()));
         } catch (JSONException e) {
             e.printStackTrace();
         }

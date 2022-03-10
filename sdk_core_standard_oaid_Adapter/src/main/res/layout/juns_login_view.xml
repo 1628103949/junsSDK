@@ -80,7 +80,7 @@
                 android:textColor="#333333"
                 android:textColorHint="#747474"
                 android:textCursorDrawable="@null"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
 
             <FrameLayout
                 android:id="@+id/user_null_view"
@@ -136,7 +136,7 @@
                 android:textColor="#333333"
                 android:textColorHint="#747474"
                 android:textCursorDrawable="@null"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
 
             <FrameLayout
                 android:id="@+id/pwd_null_view"
@@ -178,7 +178,7 @@
                 android:gravity="center_vertical"
                 android:text="@string/juns_find_pwd"
                 android:textColor="#f7633b"
-                android:textSize="14sp" />
+                android:textSize="14dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -268,7 +268,7 @@
             android:scrollHorizontally="true"
             android:singleLine="true"
             android:textColor="#9B9B9B"
-            android:textSize="14sp"
+            android:textSize="14dp"
             android:visibility="visible" />
 
         <LinearLayout

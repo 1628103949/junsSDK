@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,7 +39,7 @@ import org.json.JSONObject;
  * Author: ranger
  */
 public class DemoActivity extends Activity implements View.OnClickListener {
-    private String appkey = "2021SANGUOZHINUPUTONG";
+    private String appkey = "2020AndroidDemoKeyAppkey";
     private Toast mToast;
     private Handler mHandler = new Handler(Looper.getMainLooper());
 
@@ -59,6 +60,10 @@ public class DemoActivity extends Activity implements View.OnClickListener {
         }
 //        Log.e("testParm","1111"+JunSEncrypt.decryptInfo(
 //                "7tA3xSHT7EjOYx4gIb1lsTlWiM"));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P){
+            WindowManager.LayoutParams lp = getWindow().getAttributes();
+            lp.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
+        }
         setContentView(R.layout.juns_demo_act);
         retTv = (TextView) findViewById(R.id.retTv);
 
@@ -71,38 +76,8 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                 //SDK注销成功
                 //【注意】游戏收到回调后，先回调游戏登录界面，再调用SDK登录方法，重新进游戏
                 showToast("SDK注销成功！");
-                //再次调用SDK登录方法，重新登录
-                JunSSdkApi.getInstance().sdkLogin(DemoActivity.this, new JunSCallback() {
-                    @Override
-                    public void onSuccess(String userInfo) {
-                        //SDK登录成功，登录成功userInfo里包含帐号的token以及帐号相关信息，详情参考文档。
-                        //【注意】：
-                        //1. 获取到token后，游戏用该token通过服务端验证接口获取真实的uid，具体参考服务端接入文档；
-                        try {
-                            JSONObject userJson = new JSONObject(userInfo);
-                            String token = userJson.getString("token");
-                            String userId = userJson.getString("userId");
-                            int isadult = userJson.getInt("isadult");
-                            String userName = userJson.getString("userName");
-                            showToast("SDK登录成功：" +
-                                    "\ntoken --> " + token +
-                                    "\nuserId --> " + userId +
-                                    "\nisadult --> " + isadult +
-                                    "\nuserName --> " + userName);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
+                //游戏回到登录界面
 
-                    @Override
-                    public void onFail(int code, String msg) {
-                        //SDK登录失败，message中为失败原因具体信息
-                        //建议游戏收到此回调后，无需提示原因信息给玩家，重新调用SDK登录接口。
-                        showToast("SDK登录失败：" +
-                                "\ncode --> " + code +
-                                "\nmsg --> " + msg);
-                    }
-                });
             }
         });
 
@@ -117,18 +92,7 @@ public class DemoActivity extends Activity implements View.OnClickListener {
         findViewById(R.id.updateDataBtn).setOnClickListener(this);
         findViewById(R.id.getConfigBtn).setOnClickListener(this);
         findViewById(R.id.sdkIsLoginBtn).setOnClickListener(this);
-//        final ViewGroup listParent = findViewById(R.id.content_ly);
-//        NotchFit.fit(this, NotchScreenType.TRANSLUCENT, new OnNotchCallBack() {
-//            @Override
-//            public void onNotchReady(NotchProperty notchProperty) {
-//                if(notchProperty.isNotchEnable()){
-//                    ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) listParent.getLayoutParams();
-//                    marginLayoutParams.leftMargin = notchProperty.getNotchHeight();
-//                    listParent.requestLayout();
-//                }
-//            }
-//        });
-        //NotchFit.fitUnUse(this);
+
     }
 
     @Override
@@ -190,7 +154,7 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                 showToast("SDK初始化失败，重新调用SDK初始化接口！" +
                         "\ncode --> " + code +
                         "\nmsg --> " + msg);
-//                doSDKInit();
+
             }
         });
     }
@@ -256,7 +220,7 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                                     "\nuserId --> " + userId +
                                     "\nisadult --> " + isadult +
                                     "\nuserName --> " + userName);
-                            Log.e("fwinfo", SDKData.getFloatWindowData());
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -404,6 +368,7 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                                 .submitParty("土豆家")
                                 //角色创建时间，单位：秒，获取服务器存储的时间，不可用手机本地时间，无则不传，【选传】
                                 .submitTimeCreate(System.currentTimeMillis() / 1000)
+                                .submitPower("999999")
                                 //CP扩展字段，无则不传，【选传】
                                // .submitExt("CP扩展字段")
                                 .submitType(JunSConstants.SUBMIT_TYPE_CREATE)

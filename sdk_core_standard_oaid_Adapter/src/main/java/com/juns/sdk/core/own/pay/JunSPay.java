@@ -1,6 +1,7 @@
 package com.juns.sdk.core.own.pay;
 
 import android.app.Activity;
+import android.util.Log;
 
 import com.juns.sdk.core.api.JunSConstants;
 import com.juns.sdk.core.own.event.JSPayEv;
@@ -76,6 +77,8 @@ public class JunSPay {
         urlParams.put("sign", EncryptUtils.encryptMD5ToString(preSign).toLowerCase());
 
         String payUrl = JunSUtils.buildUrlParams(payParams.get(JunSConstants.PAY_M_URL), urlParams);
+
+       // Log.e("guoinfo","payurl:"+payUrl);
         showPayDialog(payUrl);
     }
 

@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
     <base-config cleartextTrafficPermitted="true" />
+<!--    <domain-config>-->
+<!--        <domain includeSubdomains="true">lenovomm.com</domain>-->
+<!--        <pin-set expiration="2031-01-01">-->
+<!--            <pin digest="SHA-256">r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E=</pin>-->
+<!--        </pin-set>-->
+<!--    </domain-config>-->
 </network-security-config>

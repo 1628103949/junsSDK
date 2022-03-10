@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
+import android.util.Log;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
@@ -53,7 +54,6 @@ public class SdkWebViewClient extends WebViewClient {
         if (mWevViewCallback != null) {
             mWevViewCallback.shouldOverrideUrlLoading(view, url);
         }
-
         //微信H5支付处理
         if (url.startsWith(JunSEncrypt.decryptInfo("M2GegRdWFVw/OjuhMV1xkd9Dfj5MZ21F0vckuCTyYMg="))) {
             Intent intent = new Intent();
@@ -97,6 +97,7 @@ public class SdkWebViewClient extends WebViewClient {
 
         if (url.startsWith("tel:")) {
             mContext.startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse(url)));
+            return true;
         }
 
         return super.shouldOverrideUrlLoading(view, url);

@@ -6,15 +6,13 @@ android {
     buildToolsVersion rootProject.ext.androidBuildToolsVersion
 
     defaultConfig {
-        minSdkVersion rootProject.ext.androidMinSdkVersion
+        minSdkVersion 26
         targetSdkVersion rootProject.ext.androidTargetSdkVersion
 
         applicationId "com.bswhl.Lenovo"
         versionCode 1
         versionName '1.0.0'
-        ndk {
-            abiFilters "armeabi-v7a","x86"
-        }
+
     }
 
     // 配置结构
@@ -106,7 +104,7 @@ dependencies {
     implementation 'com.android.support:support-v4:28.0.0'
     // implementation project(path: ':LenovoLib')
     implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
-    implementation project(path: ':mid_oaid1.0.13')
+    implementation project(path: ':mid_oaid1.0.25')
 }
 
 repositories {

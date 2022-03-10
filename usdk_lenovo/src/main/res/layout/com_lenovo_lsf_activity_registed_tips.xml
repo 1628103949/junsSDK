@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/title_back"
+            style="@style/com_lenovo_lsf_login_title_back_imageview" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:fillViewport="true"
+        android:background="@color/com_lenovo_lsf_appcolor">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/com_lenovo_lsf_appcolor"
+            android:id="@+id/rl_subtitle">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:text="@string/com_lenovo_lsf_string_registed_title"
+                android:textColor="@color/com_lenovo_lsf_account_setting_item_function_description_font_color"
+                android:textSize="@dimen/com_lenovo_lsf_title_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="36dp"
+                android:text="@string/com_lenovo_lsf_string_registed_send"
+                android:textColor="@color/com_lenovo_lsf_account_setting_subtitle_font_color"
+                android:textSize="@dimen/com_lenovo_lsf_content_text_font_size" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_subtitle"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="36dp"
+                android:text="@string/com_lenovo_lsf_string_registed_send"
+                android:textColor="@color/com_lenovo_lsf_registed_email"
+                android:textSize="@dimen/com_lenovo_lsf_content_text_font_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_subtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_email"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="36dp"
+                android:text="@string/com_lenovo_lsf_string_registed_tips"
+                android:textColor="@color/com_lenovo_lsf_account_setting_subtitle_font_color"
+                android:textSize="@dimen/com_lenovo_lsf_content_text_font_size" />
+
+
+            <Button
+                android:id="@+id/b_done"
+                style="@style/com_lenovo_lsf_button.commit.blue"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="47dp"
+                android:enabled="true"
+                android:layout_below="@+id/tv_subtitle2"
+                android:layout_marginTop="180dp"
+                android:stateListAnimator="@anim/button_anim"
+                android:text="@string/com_lenovo_lsf_string_registed_done"
+                android:textColor="@color/com_lenovo_lsf_list_item_white"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageView
+        style="@style/com_lenovo_lsf_login_title_logo_imageview"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/com_lenovo_lsf_login_lenovo" />
+</RelativeLayout>

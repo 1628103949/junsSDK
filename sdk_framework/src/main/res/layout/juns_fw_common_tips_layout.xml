@@ -19,7 +19,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/juns_fw_common_tips"
             android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="15dp" />
 
         <TextView
             android:id="@+id/tn_common_tl_content_tv"
@@ -32,7 +32,7 @@
             android:gravity="center"
             android:text="@string/juns_fw_tiny_game"
             android:textColor="#000000"
-            android:textSize="12sp" />
+            android:textSize="12dp" />
 
         <LinearLayout
             android:id="@+id/tn_common_tl_type1_ll"
@@ -59,7 +59,7 @@
                     android:background="@drawable/juns_fw_btn_bg_tran"
                     android:text="@string/juns_fw_common_cancel"
                     android:textColor="#FB4F4F"
-                    android:textSize="15sp" />
+                    android:textSize="15dp" />
 
                 <View
                     android:layout_width="1px"
@@ -74,7 +74,7 @@
                     android:background="@drawable/juns_fw_btn_bg_tran"
                     android:text="@string/juns_fw_common_confirm"
                     android:textColor="#FB4F4F"
-                    android:textSize="15sp" />
+                    android:textSize="15dp" />
 
             </LinearLayout>
 
@@ -98,7 +98,7 @@
                 android:gravity="center"
                 android:text="@string/juns_fw_common_confirm"
                 android:textColor="#4B749D"
-                android:textSize="15sp" />
+                android:textSize="15dp" />
 
         </LinearLayout>
 

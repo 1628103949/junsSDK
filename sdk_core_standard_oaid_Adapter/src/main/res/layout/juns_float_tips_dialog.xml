@@ -18,7 +18,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/juns_hide_tips"
             android:textColor="#505050"
-            android:textSize="17sp" />
+            android:textSize="17dp" />
 
         <RelativeLayout
             android:layout_width="match_parent"

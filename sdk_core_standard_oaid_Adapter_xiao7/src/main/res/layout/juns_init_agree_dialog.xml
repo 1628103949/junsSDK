@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/juns_fw_dialog_bg"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/init_info_agree_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/juns_user_service_agreement_title"
+                    android:textColor="#3C3939"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            <RelativeLayout
+                android:id="@+id/init_agree_ll"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_init_agree_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_init_agree"
+                android:text="确认"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

@@ -60,7 +60,7 @@
                     android:text="@string/juns_gzh"
                     android:textAllCaps="false"
                     android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
+                    android:textSize="12dp" />
 
                 <RelativeLayout
                     android:id="@+id/tel_rl"
@@ -76,7 +76,7 @@
                         android:layout_centerHorizontal="true"
                         android:text="@string/juns_service_tel"
                         android:textColor="#666666"
-                        android:textSize="12sp" />
+                        android:textSize="12dp" />
 
                     <ImageView
                         android:layout_width="12dp"

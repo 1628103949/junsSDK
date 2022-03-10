@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/com_lenovo_lsf_text_ripple_musk">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/com_lenovo_lsf_appcolor" />
+            <corners android:radius="2dp" />
+<!--            <padding android:bottom="4dp" android:left="8dp" android:right="8dp" android:top="8dp" />-->
+        </shape>
+    </item>
+</ripple>

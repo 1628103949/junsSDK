@@ -71,7 +71,7 @@
                 android:textColor="#333333"
                 android:textColorHint="#747474"
                 android:textCursorDrawable="@null"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
 
         </RelativeLayout>
 
@@ -107,7 +107,7 @@
                 android:textColor="#333333"
                 android:textColorHint="#747474"
                 android:textCursorDrawable="@null"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
 
             <FrameLayout
                 android:id="@+id/null_view"
@@ -126,7 +126,7 @@
                 android:background="@drawable/juns_fw_btn_bg_tran"
                 android:text="@string/juns_get_phone_code"
                 android:textColor="#f7633b"
-                android:textSize="12sp" />
+                android:textSize="12dp" />
 
         </RelativeLayout>
 
@@ -155,7 +155,7 @@
                 android:gravity="center_vertical"
                 android:text="@string/juns_i_agree"
                 android:textColor="#000000"
-                android:textSize="10sp" />
+                android:textSize="10dp" />
 
             <TextView
                 android:id="@+id/agree_tv"
@@ -168,7 +168,7 @@
                 android:gravity="center_vertical"
                 android:text="@string/juns_user_service_agreement"
                 android:textColor="#f7633b"
-                android:textSize="10sp" />
+                android:textSize="10dp" />
         </LinearLayout>
 
         <ImageButton

@@ -67,7 +67,7 @@
                 android:gravity="center_horizontal"
                 android:text="@string/juns_fw_common_net_error_tips"
                 android:textColor="#666666"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
 
             <Button
                 android:id="@+id/tn_common_wh_refresh_btn"
@@ -80,7 +80,7 @@
                 android:background="@drawable/juns_fw_btn_bg_red"
                 android:text="@string/juns_fw_common_refresh"
                 android:textColor="#ffffff"
-                android:textSize="16sp"
+                android:textSize="16dp"
                 android:textStyle="bold" />
 
         </RelativeLayout>

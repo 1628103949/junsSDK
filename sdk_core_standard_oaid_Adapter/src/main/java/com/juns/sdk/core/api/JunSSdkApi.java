@@ -51,8 +51,7 @@ public class JunSSdkApi implements IJunSSdk {
     @Override
     public void sdkLogin(Activity mainAct, JunSCallback callback) {
         logger.print("sdkLogin called.");
-//        JunsNotiDialog.showNoti(SDKCore.getMainAct(),"未成年登陆提示：" +
-//                "\n    您已被识别为未成年人，根据国家新闻出版署《关于防止未成年人沉迷网络游戏的通知》，非周五、周六、周日和法定节假日20时至21时，该游戏将不以任何形式为未成年人提供游戏服务！",false,190);
+
         mSDKCore.sdkLogin(mainAct, callback);
     }
 
@@ -71,7 +70,8 @@ public class JunSSdkApi implements IJunSSdk {
     @Override
     public boolean isLogined() {
         logger.print("isLogined called.");
-        return mSDKCore.isLogined();
+        //return mSDKCore.isLogined();
+        return false;
     }
 
     @Override
@@ -83,22 +83,29 @@ public class JunSSdkApi implements IJunSSdk {
     @Override
     public void sdkPay(final Activity mainAct, final JunSPayInfo payInfo, final JunSPayCallback callback) {
         logger.print("sdkPay called.");
-        payInfo.debugParam(mainAct, new ConfirmDialog.ConfirmCallback() {
+        logger.print("sdkPay called."+payInfo.toString());
+        mainAct.runOnUiThread(new Runnable() {
             @Override
-            public void onCancel() {
+            public void run() {
+                payInfo.debugParam(mainAct, new ConfirmDialog.ConfirmCallback() {
+                    @Override
+                    public void onCancel() {
 
-            }
+                    }
 
-            @Override
-            public void onConfirm() {
-                if (payInfo.checkParam()) {
-                    mSDKCore.sdkPay(mainAct, payInfo, callback);
-                } else {
-                    callback.onFinish(JunSConstants.Status.SDK_ERR, "param is illegal, please check!");
-                }
+                    @Override
+                    public void onConfirm() {
+                        if (payInfo.checkParam()) {
+                            mSDKCore.sdkPay(mainAct, payInfo, callback);
+                        } else {
+                            callback.onFinish(JunSConstants.Status.SDK_ERR, "param is illegal, please check!");
+                        }
 
+                    }
+                });
             }
         });
+
     }
 
     @Override

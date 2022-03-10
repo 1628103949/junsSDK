@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/com_lenovo_lsf_next_button"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:elevation="4dp"
+        android:background="@color/com_lenovo_lsf_next_button"
+        android:layout_gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/common_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/com_lenovo_lsf_vb_center_title_back_selector"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/common_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/common_title_back"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_layout"
+        android:background="@color/com_lenovo_lsf_appcolor"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            style="@style/com_lenovo_lsf_content"
+            android:background="@color/com_lenovo_lsf_appcolor"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_msg_tip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/com_lenovo_lsf_input_email"
+                android:textColor="#b6b6b6"
+                android:textSize="14sp"
+                android:visibility="gone"
+
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/re_accountname"
+                style="@style/com_lenovo_lsf_edit"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="8dp"
+                android:addStatesFromChildren="true"
+                android:gravity="center_vertical" >
+
+
+                <EditText
+                    android:id="@+id/at_account"
+                    style="@style/login_autocomplete_drop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:completionThreshold="1"
+                    android:dropDownAnchor="@+id/ll_register_by_email_account"
+                    android:dropDownHeight="118dp"
+                    android:hint="@string/com_lenovo_lsf_login_common_et_hint_phone"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:textAppearance="@style/com_lenovo_lsf_text.edit"
+                    android:textColor="#212121"
+                    android:textColorHint="#979797"
+                    android:textSize="14sp"
+                    android:privateImeOptions="actionNone"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <Button
+                    android:id="@+id/b_clearAccountName"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/com_lenovo_lsf_clear_edittext"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/com_lenovo_lsf_content_edittext_height"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/re_verify_code"
+                    style="@style/com_lenovo_lsf_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/com_lenovo_lsf_edite_background" >
+                <EditText
+                    android:id="@+id/verifyCode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/com_lenovo_lsf_input_verify_code"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="#212121"
+                    android:textColorHint="#979797"
+                    android:textSize="14sp" />
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/localVerifyCode"
+                    android:layout_width="106dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="8dp"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/com_lenovo_lsf_content_edittext_height"
+                android:layout_marginTop="@dimen/com_lenovo_lsf_findpwd_margin_top_of_reget_captcha"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/re_authen_code"
+                    style="@style/com_lenovo_lsf_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/com_lenovo_lsf_edite_background" >
+
+                    <EditText
+                        android:id="@+id/et_authen_code"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/com_lenovo_lsf_login_common_et_hint_sms_authen_code"
+                        android:textColor="#4d4d4d"
+                        android:textColorHint="#979797"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_get_sms_authen_code"
+                    android:layout_width="106dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/com_lenovo_lsf_horizon_margin_between_editext_and_button"
+                    android:background="@drawable/com_lenovo_lsf_textview_ripple_count"
+                    android:textColor="@drawable/com_lenovo_lsf_text_field_selector1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:enabled="false"
+                    android:text="@string/com_lenovo_lsf_string_send_sms_authen_code"
+                    android:textScaleX="0.9"
+                    android:textSize="@dimen/com_lenovo_lsf_edittext_hint_font_size" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_commonError"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textAppearance="@style/com_lenovo_lsf_text.error" />
+
+            <Button
+                android:id="@+id/b_login"
+                style="@style/com_lenovo_lsf_button.commit.blue"
+                android:enabled="false"
+                android:layout_marginTop="16dp"
+                android:text="@string/com_lenovo_lsf_login_common_button_login"
+                android:textColor="#42000000"
+                android:stateListAnimator="@anim/button_anim"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

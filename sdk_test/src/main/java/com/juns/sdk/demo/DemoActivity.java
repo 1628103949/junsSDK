@@ -24,7 +24,11 @@ import com.juns.sdk.core.api.JunSSubmitInfo;
 import com.juns.sdk.core.api.callback.JunSCallback;
 import com.juns.sdk.core.api.callback.JunSLogoutCallback;
 import com.juns.sdk.core.api.callback.JunSPayCallback;
+import com.juns.sdk.core.own.pay.PayDialog;
+import com.juns.sdk.core.sdk.SDKData;
 import com.juns.sdk.framework.utils.DeviceUtils;
+import com.juns.sdk.framework.view.dialog.BounceEnter.BounceBottomEnter;
+import com.juns.sdk.framework.view.dialog.ZoomExit.ZoomOutExit;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -35,7 +39,7 @@ import org.json.JSONObject;
  * Author: ranger
  */
 public class DemoActivity extends Activity implements View.OnClickListener {
-    private String appkey = "2021SANGUOZHINUPUTONG";
+    private String appkey = "2020AndroidDemoKeyAppkey";
     private Toast mToast;
     private Handler mHandler = new Handler(Looper.getMainLooper());
     private TextView retTv;
@@ -56,11 +60,10 @@ public class DemoActivity extends Activity implements View.OnClickListener {
             WindowManager.LayoutParams lp = getWindow().getAttributes();
             lp.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
         }
-//        Log.e("testParm","1111"+JunSEncrypt.decryptInfo(
-//                "7tA3xSHT7EjOYx4gIb1lsTlWiM"));
+
         setContentView(R.layout.juns_demo_act);
         retTv = (TextView) findViewById(R.id.retTv);
-        //new OaidUtil().init(this);
+
         //SDK初始化
         doSDKInit();
 
@@ -70,36 +73,7 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                 //SDK注销成功
                 //【注意】游戏收到回调后，先回调游戏登录界面，再调用SDK登录方法，重新进游戏
                 showToast("SDK注销成功！");
-                //再次调用SDK登录方法，重新登录
-                JunSSdkApi.getInstance().sdkLogin(DemoActivity.this, new JunSCallback() {
-                    @Override
-                    public void onSuccess(String userInfo) {
-                        //SDK登录成功，登录成功userInfo里包含帐号的token以及帐号相关信息，详情参考文档。
-                        //【注意】：
-                        //1. 获取到token后，游戏用该token通过服务端验证接口获取真实的uid，具体参考服务端接入文档；
-                        try {
-                            JSONObject userJson = new JSONObject(userInfo);
-                            String token = userJson.getString("token");
-                            String userId = userJson.getString("userId");
-                            String userName = userJson.getString("userName");
-                            showToast("SDK登录成功：" +
-                                    "\ntoken --> " + token +
-                                    "\nuserId --> " + userId +
-                                    "\nuserName --> " + userName);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
-
-                    @Override
-                    public void onFail(int code, String msg) {
-                        //SDK登录失败，message中为失败原因具体信息
-                        //建议游戏收到此回调后，无需提示原因信息给玩家，重新调用SDK登录接口。
-                        showToast("SDK登录失败：" +
-                                "\ncode --> " + code +
-                                "\nmsg --> " + msg);
-                    }
-                });
+                //回到游戏登录界面
             }
         });
 
@@ -174,7 +148,7 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                 showToast("SDK初始化失败，重新调用SDK初始化接口！" +
                         "\ncode --> " + code +
                         "\nmsg --> " + msg);
-//                doSDKInit();
+
             }
         });
     }
@@ -214,9 +188,7 @@ public class DemoActivity extends Activity implements View.OnClickListener {
         super.onSaveInstanceState(outState);
     }
 
-    private static void doLogin(){
 
-    }
     @Override
     public void onClick(View v) {
 
@@ -230,6 +202,7 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                         //【注意】：
                         //1. 获取到token后，游戏用该token通过服务端验证接口获取真实的uid，具体参考服务端接入文档；
                         try {
+
                             JSONObject userJson = new JSONObject(userInfo);
                             String token = userJson.getString("token");
                             String userId = userJson.getString("userId");
@@ -238,7 +211,17 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                                     "\ntoken --> " + token +
                                     "\nuserId --> " + userId +
                                     "\nuserName --> " + userName);
-//                            Log.e("fwinfo", SDKData.getFloatWindowData());
+
+                            //实名信息
+                            //-1:未认证，一般为联运渠道才会返回此值
+                            //0:为未成年
+                            //1:为已成年
+                            int isadult = userJson.getInt("isadult");
+                            showToast("SDK登录成功成功：" +
+                                    "\ntoken --> " + token +
+                                    "\nuserId --> " + userId +
+                                    "\nisadult --> " + isadult +
+                                    "\nuserName --> " + userName);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -301,13 +284,8 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                         return;
                     }
                 }
-                Handler mHandler = new Handler(Looper.getMainLooper());
-                mHandler.post(new Runnable() {
-                    @Override
-                    public void run() {
 
-                    }
-                });
+
                 JunSSdkApi.getInstance().sdkPay(DemoActivity.this, new JunSPayInfo.PayBuilder()
                         //CP订单号，全局唯一，不可重复，【必传】
                         .payOrderId(System.currentTimeMillis() + "")
@@ -364,7 +342,7 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                 break;
 
             case R.id.creatRoleBtn:
-                //new WXBind().bind(SDKCore.getMainAct());
+
                 JunSSdkApi.getInstance().sdkSubmitInfo(DemoActivity.this,
                         new JunSSubmitInfo.SubmitBuilder()
                                 //角色ID，建议数字【必传】
@@ -468,7 +446,7 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                 break;
 
             case R.id.upgradeDataBtn:
-                JunSSdkApi.getInstance().sdkDIYEvent(DemoActivity.this,"红包");
+                //JunSSdkApi.getInstance().sdkDIYEvent(DemoActivity.this,"红包");
                 JunSSdkApi.getInstance().sdkSubmitInfo(DemoActivity.this, new JunSSubmitInfo.SubmitBuilder()
                                 //角色ID，建议数字，【必传】
                                 .submitRoleId("100100")
@@ -577,32 +555,48 @@ public class DemoActivity extends Activity implements View.OnClickListener {
                 break;
         }
     }
-
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        if(event.getKeyCode() == KeyEvent.KEYCODE_BACK){
+            if(event.getAction() == KeyEvent.ACTION_UP){
+                onExit();
 
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            JunSSdkApi.getInstance().sdkGameExit(DemoActivity.this, new JunSCallback() {
-                @Override
-                public void onSuccess(String info) {
-                    //退出游戏成功，游戏在此进行退出游戏，销毁游戏资源相关操作。
-                    showToast("SDK退出成功！");
-                    DemoActivity.this.finish();
-                    System.exit(1);
-                }
-
-                @Override
-                public void onFail(int code, String msg) {
-                    //游戏无需处理，继续游戏。
-                    showToast("SDK退出失败！" +
-                            "\ncode --> " + code +
-                            "\nmsg --> " + msg);
-                }
-            });
+            }
             return true;
         }
-        return super.onKeyDown(keyCode, event);
+        //return true;
+        return super.dispatchKeyEvent(event);
     }
+
+
+    public void onExit(){
+
+    }
+//    @Override
+//    public boolean onKeyDown(int keyCode, KeyEvent event) {
+//
+//        if (keyCode == KeyEvent.KEYCODE_BACK || keyCode == KeyEvent.KEYCODE_ENDCALL) {
+//            JunSSdkApi.getInstance().sdkGameExit(DemoActivity.this, new JunSCallback() {
+//                @Override
+//                public void onSuccess(String info) {
+//                    //退出游戏成功，游戏在此进行退出游戏，销毁游戏资源相关操作。
+//                    showToast("SDK退出成功！");
+//                    DemoActivity.this.finish();
+//                    System.exit(1);
+//                }
+//
+//                @Override
+//                public void onFail(int code, String msg) {
+//                    //游戏无需处理，继续游戏。
+//                    showToast("SDK退出失败！" +
+//                            "\ncode --> " + code +
+//                            "\nmsg --> " + msg);
+//                }
+//            });
+//            return true;
+//        }
+//        return super.onKeyDown(keyCode, event);
+//    }
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {

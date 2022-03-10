@@ -12,9 +12,7 @@ android {
         applicationId "com.juns.sdk.demo"
         versionCode 1
         versionName '1.0.0'
-        ndk {
-            abiFilters 'armeabi-v7a','x86'
-        }
+
     }
 
     // 配置结构

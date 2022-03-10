@@ -13,9 +13,7 @@ android {
         applicationId "com.bswhl.mi"
         versionCode 19
         versionName '4.7'
-        ndk {
-            abiFilters 'armeabi-v7a','x86'
-        }
+
     }
 
     // 配置结构
@@ -106,7 +104,7 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
 
     implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
-    implementation project(path: ':mid_oaid1.0.10')
+    implementation project(path: ':mid_oaid1.0.13')
 }
 
 repositories {

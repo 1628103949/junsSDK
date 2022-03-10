@@ -32,14 +32,7 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name="com.juns.channel.SplashActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout|smallestScreenSize|fontScale|touchscreen|uiMode|layoutDirection"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+
 
         <activity
             android:name="com.juns.sdk.demo.DemoActivity"
@@ -47,11 +40,6 @@
             android:launchMode="standard"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
-            <intent-filter>
-                <action android:name="juns_game_action" />
-                <category android:name="juns_game_category" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <!-- JunS sdk components start -->
         <provider
@@ -66,6 +54,15 @@
         </provider>
         <!-- JunS sdk components end -->
         <!-- Xiaomi SDK Need -->
+        <activity android:name="com.juns.channel.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout|smallestScreenSize|fontScale|touchscreen|uiMode|layoutDirection"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="mainAct" android:value="com.juns.sdk.demo.DemoActivity" />
         <meta-data
             android:name="notch.config"
             android:value="portrait|landscape" />
@@ -149,7 +146,6 @@
             android:screenOrientation="behind"/>
 
 
-        <meta-data android:name="mainAct" android:value="com.juns.sdk.demo.DemoActivity" />
 
     </application>
 </manifest>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:background="#fafafa"
+    android:orientation="vertical" >
+    <View
+        android:id="@+id/iv_otherlogin_divider_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="#e8e8e8" />
+
+    <RelativeLayout
+        android:id="@+id/camera_info"
+        style="@style/com_lenovo_lsf_setting_item">
+        
+        <TextView
+            android:id="@android:id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/com_lenovo_lsf_account_setting_setting_item_margin_left"
+            android:duplicateParentState="true"
+            android:text="@string/com_lenovo_lsf_lenovo_avatar_camera"
+            android:textColor="@drawable/com_lenovo_lsf_list_item_text_field_selector"
+            android:textSize="@dimen/com_lenovo_lsf_account_setting_item_font_size_left" />
+
+        <TextView
+            android:id="@android:id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_camera_arrow" />
+
+        <TextView
+            android:id="@+id/tv_camera_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:background="@drawable/com_lenovo_lsf_go" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/iv_otherlogin_divider_phone1"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="#e8e8e8" />
+
+    <RelativeLayout
+        android:id="@+id/gallery_info"
+        style="@style/com_lenovo_lsf_setting_item" >
+
+        <TextView
+            android:id="@android:id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/com_lenovo_lsf_account_setting_setting_item_margin_left"
+            android:duplicateParentState="true"
+            android:text="@string/com_lenovo_lsf_lenovo_avatar_gallery"
+            android:textColor="@drawable/com_lenovo_lsf_list_item_text_field_selector"
+            android:textSize="@dimen/com_lenovo_lsf_account_setting_item_font_size_left" />
+
+        <TextView
+            android:id="@android:id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_gallery_arrow" />
+
+        <TextView
+            android:id="@+id/tv_gallery_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:background="@drawable/com_lenovo_lsf_go" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/iv_otherlogin_divider_phone2"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="#e8e8e8" />
+
+</LinearLayout>

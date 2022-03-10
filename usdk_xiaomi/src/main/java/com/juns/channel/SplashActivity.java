@@ -48,11 +48,6 @@ public class SplashActivity extends Activity {
         startActivity(intent);
         finish();
 
-//        Intent intent = new Intent();
-//        intent.setAction("juns_game_action");
-//        intent.addCategory("juns_game_category");
-//        startActivity(intent);
-//        finish();
     }
 
     private String getMetaDataValue(Context context, String meatName) {

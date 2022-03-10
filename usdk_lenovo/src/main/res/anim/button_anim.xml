@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:state_enabled="true">
+        <set>
+            <objectAnimator 
+                android:propertyName="translationZ"
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="8dp"
+                android:valueType="floatType"/>
+        </set>
+    </item>
+    <!-- 基本状态 -->
+    <item android:state_enabled="true">
+        <set>
+            <objectAnimator 
+                android:propertyName="translationZ"
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="2dp"
+                android:valueType="floatType"/>
+        </set>
+    </item>
+    <!-- disabled -->
+    <item android:state_enabled="false">
+        <set>
+            <objectAnimator 
+                android:propertyName="translationZ"
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueTo="0dp"
+                android:valueType="floatType"/>
+        </set>
+    </item>
+</rotate>
